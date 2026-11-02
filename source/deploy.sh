@@ -4,7 +4,7 @@ set -e
 cd /home/claude
 python3 build_site.py >/dev/null
 R=/home/claude/pascalelisbonhomes-site
-rm -rf $R/site && cp -r site $R/site && rm -f $R/site/SETUP.md
+rm -rf $R/site && cp -r site $R/site && rm -f $R/site/SETUP.md && date -u +%Y-%m-%dT%H:%M:%SZ > $R/site/version.txt
 cp pascale-site.html build_site.py add_homes.py SETUP.md robots.txt deploy.sh $R/source/
 cp img/share.png $R/source/img/
 cd $R
