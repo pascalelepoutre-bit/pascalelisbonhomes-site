@@ -279,3 +279,11 @@ print('built', sorted(os.listdir(OUT)))
 for root, _, files in os.walk(OUT):
     for fn in files:
         print(f'{os.path.getsize(os.path.join(root, fn))//1024:>5} KB  {os.path.join(root, fn)[len(OUT):]}')
+
+# Cache-busting: give style.css and site.js a version tag so browsers fetch new versions after each update
+import hashlib, glob as _g
+def _h(p): return hashlib.md5(open(p,'rb').read()).hexdigest()[:8]
+_cv, _jv = _h(f'{OUT}/style.css'), _h(f'{OUT}/site.js')
+for _p in _g.glob(f'{OUT}/**/*.html', recursive=True):
+    _s = open(_p).read().replace('href="/style.css"', f'href="/style.css?v={_cv}"').replace('src="/site.js"', f'src="/site.js?v={_jv}"')
+    open(_p, 'w').write(_s)
