@@ -44,4 +44,4 @@ bing.com/webmasters → Import from Google Search Console. One click.
 - Ask happy clients for a review there.
 
 ## 5. When something changes
-New listings, new photo, new text: ask Claude to rebuild the folder, then drag it onto Netlify again (Deploys → drag and drop).
+New listings, new photo, new text: just ask Claude. Claude updates the GitHub repository pascalelepoutre-bit/pascalelisbonhomes-site and Netlify publishes it automatically within a minute. No zip or drag and drop needed.
