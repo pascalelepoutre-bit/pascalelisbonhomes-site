@@ -1,0 +1,32 @@
+# Pascale Lepoutre – Estrela Real Estate
+# All search engines and AI search assistants are welcome.
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI search assistants (ChatGPT, Claude, Perplexity)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Everyone else
+User-agent: *
+Allow: /
+
+# Add your sitemap once the domain is live, for example:
+# Sitemap: https://pascalelepoutre.com/sitemap.xml
