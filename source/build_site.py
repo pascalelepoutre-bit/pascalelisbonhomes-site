@@ -38,7 +38,7 @@ ALTS = {
     'W-04BNAR': ('t2-estrela', 'T2 apartment with private terrace for sale in Estrela, Lisbon'),
     'W-02XVJ7': ('t3-unique-belem', 'T3 apartment with garage in the Unique Belém development, Lisbon'),
     'Último Porto': ('ultimo-porto', 'Inside Último Porto restaurant, by the port of Lisbon'),
-    'Maiz do Mar': ('maiz-do-mar', 'Inside Maiz do Mar, Mexican fusion restaurant in Lisbon'),
+    'Maiz do Mar': ('maiz-do-mar', 'Ceviche with toasted corn at Maiz do Mar, Mexican fusion restaurant in Lisbon'),
     'Clube de Jornalistas': ('clube-de-jornalistas', 'Clube de Jornalistas restaurant logo, Lapa, Lisbon'),
     'Baraza Yoga': ('baraza-yoga', 'The yoga room at Baraza Yoga, Lisbon'),
     'mvmt.studio': ('mvmt-studio', 'Inside mvmt.studio, movement classes in Lisbon'),
