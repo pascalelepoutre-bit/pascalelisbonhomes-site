@@ -550,6 +550,18 @@ footer{background:#1d1a17;color:#d9cfc0;padding-block:72px 36px}
 @media (max-width:760px){.foot{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 .hood-photo{margin:26px 0 4px}.hood-photo img{display:block;width:100%;height:auto;aspect-ratio:1200/905;object-fit:cover;border-radius:18px}.hood-photo figcaption{font-family:var(--hand);font-size:1.4rem;line-height:1.2;color:var(--muted);margin-top:8px}
+.mkt-upd{margin:48px auto 0;max-width:880px;background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:30px 32px;display:grid;gap:18px;position:relative;overflow:hidden}
+.mkt-upd::after{content:"";position:absolute;right:-70px;top:-70px;width:200px;height:200px;border-radius:50%;background:var(--sun);opacity:.45;pointer-events:none}
+.mkt-head{position:relative;z-index:1}.mkt-head .eyebrow{color:var(--gold)}.mkt-head h3{margin:6px 0 0}
+.mkt-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;position:relative;z-index:1}
+.mkt-stats div{background:var(--bg);border-radius:16px;padding:16px;display:grid;gap:4px}
+.mkt-stats b{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1;color:var(--gold)}
+.mkt-stats b.w{font-size:1.35rem;line-height:1.5rem}
+.mkt-stats span{font-size:.9rem;color:var(--muted);line-height:1.4}
+.mkt-txt{margin:0;color:var(--ink)}
+.mkt-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.mkt-foot small{color:var(--muted);font-size:.78rem}
+@media (max-width:640px){.mkt-upd{padding:22px 18px}.mkt-stats{grid-template-columns:1fr}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -650,6 +662,16 @@ footer{background:#1d1a17;color:#d9cfc0;padding-block:72px 36px}
         <div class="step"><div class="ring"><svg class="ico"><use href="#i-key"/></svg><small>4</small></div><h3>Offer to escritura</h3><p>I negotiate for you and follow the CPCV and the final deed with everyone involved.</p></div>
       </div>
       <p class="weekly"><svg class="ico"><use href="#i-chat"/></svg>Every week you get an update from me: viewings, feedback and interest. No need to chase me.</p>
+      <div class="mkt-upd" aria-labelledby="mkt-upd-h">
+        <div class="mkt-head"><p class="eyebrow">Lisbon market update · October 2026</p><h3 id="mkt-upd-h">Buyers are more selective</h3></div>
+        <div class="mkt-stats">
+          <div><b>+6,2%</b><span>Lisbon prices in a year, and slowing</span></div>
+          <div><b>−13%</b><span>Fewer sales, mostly older flats</span></div>
+          <div><b class="w">New builds</b><span>Still selling well</span></div>
+        </div>
+        <p class="mkt-txt">Portuguese buyers are holding up the market, while foreign buyers in the historic centre are at their lowest in almost 10 years. For owners, the right price from day one matters more than ever.</p>
+        <div class="mkt-foot"><a class="more" href="#studies">Get your free market study →</a><small>Source: Confidencial Imobiliário</small></div>
+      </div>
     </div>
   </section>
   <section id="studies" class="cream">

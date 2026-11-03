@@ -547,3 +547,15 @@ footer{background:#1d1a17;color:#d9cfc0;padding-block:72px 36px}
 @media (max-width:760px){.foot{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 .hood-photo{margin:26px 0 4px}.hood-photo img{display:block;width:100%;height:auto;aspect-ratio:1200/905;object-fit:cover;border-radius:18px}.hood-photo figcaption{font-family:var(--hand);font-size:1.4rem;line-height:1.2;color:var(--muted);margin-top:8px}
+.mkt-upd{margin:48px auto 0;max-width:880px;background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:30px 32px;display:grid;gap:18px;position:relative;overflow:hidden}
+.mkt-upd::after{content:"";position:absolute;right:-70px;top:-70px;width:200px;height:200px;border-radius:50%;background:var(--sun);opacity:.45;pointer-events:none}
+.mkt-head{position:relative;z-index:1}.mkt-head .eyebrow{color:var(--gold)}.mkt-head h3{margin:6px 0 0}
+.mkt-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;position:relative;z-index:1}
+.mkt-stats div{background:var(--bg);border-radius:16px;padding:16px;display:grid;gap:4px}
+.mkt-stats b{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1;color:var(--gold)}
+.mkt-stats b.w{font-size:1.35rem;line-height:1.5rem}
+.mkt-stats span{font-size:.9rem;color:var(--muted);line-height:1.4}
+.mkt-txt{margin:0;color:var(--ink)}
+.mkt-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.mkt-foot small{color:var(--muted);font-size:.78rem}
+@media (max-width:640px){.mkt-upd{padding:22px 18px}.mkt-stats{grid-template-columns:1fr}}
