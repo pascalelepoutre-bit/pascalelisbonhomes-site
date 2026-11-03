@@ -36,7 +36,13 @@ document.querySelectorAll('[role="tab"]').forEach(x=>x.addEventListener('click',
 
 
 const nf=document.getElementById('news-form');
-if(nf){nf.addEventListener('submit',e=>{const preview=/claude/.test(location.hostname)||location.protocol==='file:';if(preview||!nf.checkValidity()){e.preventDefault();if(nf.checkValidity()){nf.querySelector('.news-done').hidden=false;nf.querySelector('.news-row').hidden=true;}else{nf.reportValidity();}}});}
+if(nf){nf.addEventListener('submit',e=>{e.preventDefault();if(!nf.checkValidity()){nf.reportValidity();return;}
+  const done=()=>{nf.querySelector('.news-done').hidden=false;nf.querySelector('.news-row').hidden=true;const c=nf.querySelector('.consent');if(c)c.hidden=true;};
+  const preview=/claude/.test(location.hostname)||location.protocol==='file:';if(preview){done();return;}
+  const btn=nf.querySelector('button');btn.disabled=true;
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(nf)).toString()})
+   .then(r=>{if(!r.ok)throw 0;done();})
+   .catch(()=>{btn.disabled=false;const d=nf.querySelector('.news-done');d.hidden=false;d.textContent='Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225';});});}
 
 document.querySelectorAll('.pm-pin,.pm-note').forEach(g=>{const go=()=>{const el=document.getElementById(g.dataset.target);if(!el)return;el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1600);};
   g.addEventListener('click',go);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
