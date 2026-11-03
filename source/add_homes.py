@@ -118,7 +118,7 @@ def gallery(srcs, alt, pills):
 
 STUDIO_DESC = ("A charming studio in Pátio do Pinzaleiro, a quiet traditional courtyard a few steps from the Santos church, with its own entrance. "
   "Inside, the original Pombaline wooden structure, the gaiola, separates the living area from the kitchen and dining corner. "
-  "Sold furnished, with a history of regular rentals and a condominium fee of only € 20 a month. "
+  "Ideal as a pied-à-terre or as an investment: sold furnished, with a history of regular rentals and a condominium fee of only € 20 a month. "
   "Around the corner you have Madragoa's little streets and tascas, Jardim de Santos, the Museu de Arte Antiga and the river, "
   "and Santos station takes you to the Cascais beaches.")
 cards = []
@@ -142,13 +142,13 @@ _st = _json.load(open('/home/claude/studio-imgs.json'))
 _st_title = 'Studio with Pombaline charm, Pátio do Pinzaleiro'
 _st_price = eur(270000)
 cards.append(f'''        <article class="listing" data-area="Santos · Estrela" data-beds="0" data-feat="">
-          {gallery(_st, 'Furnished studio for sale at Pátio do Pinzaleiro, Santos, Lisbon', '<span class="pill mine">My listing</span>')}
+          {gallery(_st, 'Furnished studio for sale at Pátio do Pinzaleiro, Santos, Lisbon', '<span class="pill mine">My listing</span><span class="pill inv">Pied-à-terre or investment</span>')}
           <div class="info">
             <span class="parts">Santos · Estrela</span><span class="ref">Ref. W-04CD4V</span>
             <h3>{e(_st_title)}</h3>
             <p class="specs"><span>Studio</span><span>1 bathroom</span><span>30 m²</span></p>
             <p class="feat">{e(STUDIO_DESC)}</p>
-            <p class="hl"><span>Own entrance</span><span>Furnished</span><span>Condo fee € 20/month</span><span>Energy class C</span></p>
+            <p class="hl"><span>Pied-à-terre or investment</span><span>Own entrance</span><span>Furnished</span><span>Condo fee € 20/month</span><span>Energy class C</span></p>
             <p class="price">{_st_price}</p>
             <a class="more" href="{wa('W-04CD4V', 'Studio at Pátio do Pinzaleiro', 'Santos', _st_price)}" target="_blank" rel="noopener">Ask me about this home →</a>
           </div>
