@@ -31,6 +31,7 @@ for i, (s, name) in enumerate(starts):
 
 # ---------- 2. images: data URIs -> real files ----------
 ALTS = {
+    'W-04CD4V': ('studio-pinzaleiro-santos', 'Furnished studio for sale at Pátio do Pinzaleiro, Santos, Lisbon'),
     'W-04BZY4': ('necessidades', 'T4 apartment for sale on Calçada das Necessidades, Estrela, Lisbon, with a view of the 25 de Abril bridge'),
     'W-04BOIG': ('t4-lapa', 'T4 apartment with terrace for sale in Lapa, Lisbon'),
     'W-04BF4C': ('penthouse-lapa', 'Penthouse with private pool and river views for sale in Lapa, Lisbon'),
@@ -79,7 +80,9 @@ for k in views:
     def rep_img(m):
         alt = re.search(r'alt="([^"]*)"', m.group(2)).group(1).lower()
         slug = 'necessidades' if 'necessidades' in alt else ('living-room-sessions-logo' if 'living room' in alt else re.sub(r'[^a-z0-9]+', '-', alt)[:40].strip('-'))
-        src, _ = save_img(m.group(1), slug, 1400 if slug == 'necessidades' else 600)
+        if 'pinzaleiro' in alt:
+            n = re.search(r'photo (\d+)', alt); slug = 'studio-pinzaleiro-' + (n.group(1) if n else '1')
+        src, _ = save_img(m.group(1), slug, 1400 if slug == 'necessidades' else (800 if 'pinzaleiro' in slug else 600))
         return f'<img src="{src}" loading="lazy" decoding="async"{m.group(2)}>'
     views[k] = re.sub(r'<img src="data:image/\w+;base64,([A-Za-z0-9+/=]+)"([^>]*)>', rep_img, views[k])
     assert 'base64' not in views[k], k

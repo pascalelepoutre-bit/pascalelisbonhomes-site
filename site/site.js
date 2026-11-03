@@ -55,10 +55,6 @@ document.querySelectorAll('.gal').forEach(g=>{const tr=g.querySelector('.g-track
   g.querySelector('.g-prev').addEventListener('click',()=>go(-1));g.querySelector('.g-next').addEventListener('click',()=>go(1));
   tr.addEventListener('scroll',()=>{ct.textContent=(idx()+1)+' / '+n;},{passive:true});});
 
-function pickArea(a){const b=document.querySelector('#home-filter button[data-f="'+a+'"]');if(b)b.click();}
-document.querySelectorAll('[data-goarea]').forEach(a=>a.addEventListener('click',()=>setTimeout(()=>pickArea(a.dataset.goarea),0)));
-{const h=location.hash.slice(1).toLowerCase();const m={estrela:'Estrela',lapa:'Lapa',santos:'Santos'}[h];if(m&&document.getElementById('home-filter'))pickArea(m);}
-
 // open a neighbourhood tab from the URL, e.g. /neighbourhoods/#tab-lapa
 function tabFromHash(){const tb=document.getElementById(location.hash.slice(1));if(tb&&tb.getAttribute('role')==='tab'){sel(tb);markPins();const a=document.getElementById('areas');a&&a.scrollIntoView();}}
 window.addEventListener('hashchange',tabFromHash);tabFromHash();

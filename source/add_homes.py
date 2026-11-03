@@ -116,6 +116,11 @@ def gallery(srcs, alt, pills):
            f'<span class="g-count">1 / {n}</span>') if n > 1 else ''
     return f'<div class="photo gal"><div class="g-track">{imgs}</div>{nav}{pills}</div>'
 
+STUDIO_DESC = ("A charming studio in Pátio do Pinzaleiro, a quiet traditional courtyard a few steps from the Santos church, with its own entrance. "
+  "Inside, the original Pombaline wooden structure, the gaiola, separates the living area from the kitchen and dining corner. "
+  "Sold furnished, with a history of regular rentals and a condominium fee of only € 20 a month. "
+  "Around the corner you have Madragoa's little streets and tascas, Jardim de Santos, the Museu de Arte Antiga and the river, "
+  "and Santos station takes you to the Cascais beaches.")
 cards = []
 # my own listing: my bridge photo first, then the E&V photos
 mine = re.search(r'<article class="listing">\s*<div class="photo"[^>]*><span class="pill mine">.*?</article>', t, re.S).group(0)
@@ -130,6 +135,24 @@ mine_card = re.sub(r'<p class="feat">.*?</p>',
     '<p class="hl"><span>Investor opportunity</span><span>River and bridge view</span><span>Energy class F</span></p>\n            '
     '<p class="g-note">Interior photos show the identical apartment one floor below.</p>', mine_card, count=1, flags=re.S)
 cards.append(mine_card.replace('<article class="listing">', '<article class="listing" data-area="Estrela" data-beds="4" data-feat="river">', 1))
+
+# my second listing: studio at Pátio do Pinzaleiro, Santos (photos from the exposé, door number not shown)
+import json as _json
+_st = _json.load(open('/home/claude/studio-imgs.json'))
+_st_title = 'Studio with Pombaline charm, Pátio do Pinzaleiro'
+_st_price = eur(270000)
+cards.append(f'''        <article class="listing" data-area="Santos · Estrela" data-beds="0" data-feat="">
+          {gallery(_st, 'Furnished studio for sale at Pátio do Pinzaleiro, Santos, Lisbon', '<span class="pill mine">My listing</span>')}
+          <div class="info">
+            <span class="parts">Santos · Estrela</span><span class="ref">Ref. W-04CD4V</span>
+            <h3>{e(_st_title)}</h3>
+            <p class="specs"><span>Studio</span><span>1 bathroom</span><span>30 m²</span></p>
+            <p class="feat">{e(STUDIO_DESC)}</p>
+            <p class="hl"><span>Own entrance</span><span>Furnished</span><span>Condo fee € 20/month</span><span>Energy class C</span></p>
+            <p class="price">{_st_price}</p>
+            <a class="more" href="{wa('W-04CD4V', 'Studio at Pátio do Pinzaleiro', 'Santos', _st_price)}" target="_blank" rel="noopener">Ask me about this home →</a>
+          </div>
+        </article>''')
 
 for x in L:
     ref, area, title, price = x['ref'], x['area'], x['title'], x['price']
