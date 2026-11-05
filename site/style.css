@@ -187,7 +187,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:30;background:rgb(240 222 170
 
 
 
-/* gallery */.gal .g-track{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.gal .g-track::-webkit-scrollbar{display:none}.gal .g-track img{flex:0 0 100%;width:100%;height:100%;max-width:none;object-fit:cover;scroll-snap-align:start;display:block;color:transparent;font-size:0}.g-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border-radius:50%;border:0;background:rgb(255 255 255 / .85);color:#2a2420;font-size:1.3rem;line-height:1;cursor:pointer;opacity:0;transition:opacity .2s}.g-prev{left:10px}.g-next{right:10px}.listing:hover .g-btn,.g-btn:focus-visible{opacity:1}@media (hover:none){.g-btn{opacity:.9}}.g-count{position:absolute;right:12px;bottom:12px;z-index:2;background:rgb(42 36 32 / .6);color:#fff;font-size:.72rem;padding:3px 9px;border-radius:999px}.g-note{font-size:.78rem;color:var(--muted);font-style:italic}.listing .hl{margin-top:2px}#home-filter,#bed-filter{margin-bottom:12px}.tabs.beds{align-items:center;gap:6px}.tabs.beds button{padding:8px 16px}.f-label{font-family:var(--display);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-right:6px}@media (max-width:600px){#home-filter,.tabs.beds{gap:6px}#feat-filter button{padding:7px 11px}#home-filter button,.tabs.beds button{padding:8px 12px;font-size:.64rem;letter-spacing:.1em}.f-label{width:100%;text-align:center;margin:4px 0 0}}.f-none{text-align:center;color:var(--muted);margin:-12px 0 32px}.f-none a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
+/* gallery */.gal .g-track{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.gal .g-track::-webkit-scrollbar{display:none}.gal .g-track img{flex:0 0 100%;width:100%;height:100%;max-width:none;object-fit:cover;scroll-snap-align:start;display:block;color:transparent;font-size:0}.g-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:0;background:rgb(255 255 255 / .92);color:#2a2420;font-size:1.7rem;line-height:1;cursor:pointer;opacity:.85;transition:opacity .2s;box-shadow:0 2px 10px rgb(0 0 0 / .18)}.g-prev{left:10px}.g-next{right:10px}.listing:hover .g-btn,.g-btn:focus-visible{opacity:1}@media (hover:none){.g-btn{opacity:.95}}.g-count{position:absolute;right:12px;bottom:12px;z-index:2;background:rgb(42 36 32 / .6);color:#fff;font-size:.72rem;padding:3px 9px;border-radius:999px}.g-note{font-size:.78rem;color:var(--muted);font-style:italic}.listing .hl{margin-top:2px}#home-filter,#bed-filter{margin-bottom:12px}.tabs.beds{align-items:center;gap:6px}.tabs.beds button{padding:8px 16px}.f-label{font-family:var(--display);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-right:6px}@media (max-width:600px){#home-filter,.tabs.beds{gap:6px}#feat-filter button{padding:7px 11px}#home-filter button,.tabs.beds button{padding:8px 12px;font-size:.64rem;letter-spacing:.1em}.f-label{width:100%;text-align:center;margin:4px 0 0}}.f-none{text-align:center;color:var(--muted);margin:-12px 0 32px}.f-none a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
 .tabs button.on{background:var(--sun);border-color:var(--sun);color:#1d1a17}
 .ref{font-size:.75rem;color:var(--muted);letter-spacing:.06em;margin-top:-4px}
 @media (max-width:900px){.listings{grid-template-columns:1fr 1fr}}
@@ -427,6 +427,15 @@ section.tight{padding-top:56px}
 @media (max-width:860px){.abroad{grid-template-columns:1fr}}
 @media (max-width:480px){.abroad-list{grid-template-columns:1fr}}
 
+/* mortgage */
+.mort{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:center}
+.mort-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mort-q{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mort-q legend{font-size:.85rem;color:var(--muted);margin-bottom:6px;width:100%}
+.mort-form .consent{display:flex;gap:10px;align-items:flex-start;font-size:.82rem}
+.mort-done{font-weight:500}
+.mort-text h2{margin-bottom:18px}
+@media(max-width:820px){.mort{grid-template-columns:1fr}.mort-grid{grid-template-columns:1fr}}
 /* hood band + newsletter */
 #hood-band{border-top:1px solid var(--line)}
 .hb{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}

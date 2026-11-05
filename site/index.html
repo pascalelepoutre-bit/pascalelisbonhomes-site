@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&display=swap">
-<link rel="stylesheet" href="/style.css?v=8e8c560d">
+<link rel="stylesheet" href="/style.css?v=9aba7a74">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -469,7 +469,7 @@
         <p class="eyebrow">Looking to buy</p>
         <h2>Dreaming of a home in Lisbon? Let's find it together.</h2>
         <p>Together with my Engel &amp; Völkers colleagues I help buyers find their home in and around Estrela, often before it goes online. Moving from abroad? I made that move myself and know the way.</p>
-        <div class="ctas"><a class="btn fill" href="/buying/#search">Tell me what you're looking for</a></div>
+        <div class="ctas"><a class="btn fill" href="/buying/#search">Tell me what you're looking for</a><a class="btn" href="#mortgage">Need a mortgage?</a></div>
       </div>
       <ul class="buyer-points">
         <li><b>Off-market first</b><span>I hear about homes before they reach the portals.</span></li>
@@ -477,6 +477,41 @@
         <li><b>Your language</b><span>português, English, français or Nederlands.</span></li>
         <li><b>Trusted network</b><span>Lawyers, mortgage brokers and renovation contacts.</span></li>
       </ul>
+    </div>
+  </section>
+  <section id="mortgage" class="tight">
+    <div class="wrap mort">
+      <div class="mort-text">
+        <p class="eyebrow">Financing</p>
+        <h2>Need a mortgage? I'll connect you with a trusted broker.</h2>
+        <p>I work with ComparaJá, an independent credit broker that compares the Portuguese banks for you, free of charge. Leave your details and I'll introduce you personally, so you know your budget before you visit.</p>
+      </div>
+      <form class="leadform mort-form" id="mort-form" name="mortgage" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="mortgage">
+        <p hidden><label>Leave empty<input name="bot-field"></label></p>
+        <div class="mort-grid">
+          <label for="m-name">Name<input id="m-name" name="Name" required autocomplete="name"></label>
+          <label for="m-phone">Phone / WhatsApp<input id="m-phone" name="Phone" type="tel" required autocomplete="tel"></label>
+          <label for="m-email">Email<input id="m-email" name="Email" type="email" required autocomplete="email"></label>
+          <label for="m-price">Approximate purchase price<select id="m-price" name="Price"><option>Up to € 300.000</option><option selected>€ 300.000 – 500.000</option><option>€ 500.000 – 1.000.000</option><option>More than € 1.000.000</option></select></label>
+        </div>
+        <fieldset class="mort-q"><legend>Have you found a property?</legend>
+          <label class="chip"><input type="radio" name="Property found" value="Yes" id="m-f1"><span>Yes</span></label>
+          <label class="chip"><input type="radio" name="Property found" value="Still looking" id="m-f2" checked><span>Still looking</span></label>
+        </fieldset>
+        <fieldset class="mort-q"><legend>When are you planning to buy?</legend>
+          <label class="chip"><input type="radio" name="Timing" value="Within 3 months" id="m-t1"><span>Within 3 months</span></label>
+          <label class="chip"><input type="radio" name="Timing" value="3 to 6 months" id="m-t2" checked><span>3 to 6 months</span></label>
+          <label class="chip"><input type="radio" name="Timing" value="Later, just exploring" id="m-t3"><span>Later, just exploring</span></label>
+        </fieldset>
+        <fieldset class="mort-q"><legend>Do you live in Portugal?</legend>
+          <label class="chip"><input type="radio" name="Resident" value="Yes" id="m-r1" checked><span>Yes</span></label>
+          <label class="chip"><input type="radio" name="Resident" value="No, abroad" id="m-r2"><span>No, abroad</span></label>
+        </fieldset>
+        <label class="consent" for="m-ok"><input type="checkbox" id="m-ok" name="Consent" value="Yes" required> I agree that Pascale shares my details with her credit partner ComparaJá to contact me about financing.</label>
+        <button class="btn fill" type="submit">Connect me with a broker</button>
+        <p class="mort-done" hidden>Thank you! I'll be in touch within one working day.</p>
+      </form>
     </div>
   </section>
   <section id="faq" class="cream">
@@ -545,6 +580,6 @@
   </div>
 </footer>
 
-<script src="/site.js?v=b2adf7af" defer></script>
+<script src="/site.js?v=eb91b60a" defer></script>
 </body>
 </html>
