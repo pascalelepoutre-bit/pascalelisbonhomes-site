@@ -342,7 +342,7 @@
 390|Estou a comprar
 391|Para quem compra
 392|Sonha com uma casa em Lisboa? Vamos encontrá-la juntos.
-393|Um só contacto para todas as casas do mercado. Contacto as outras agências por si, marco as visitas e verifico os documentos antes de se apaixonar. Falo a sua língua, e eu própria fiz a mudança a partir do estrangeiro.
+393|Um só contacto para todas as casas do mercado. Contacto as outras agências por si, marco as visitas e verifico os documentos antes de se apaixonar. Falo a sua língua e já mudei de país várias vezes, por isso sei bem como é recomeçar noutro país.
 394|Precisa de crédito à habitação?
 395|Demora cerca de 3 minutos · gratuito e sem compromisso
 396|Primeiro, conversamos
