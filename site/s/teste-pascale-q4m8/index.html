@@ -73,6 +73,9 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .sum{list-style:none;padding:0;margin:0 0 14px}.sum li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.sum em{font-style:normal;color:var(--muted)}
 .send{display:block;width:100%;margin-top:14px;font:500 14px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:16px;border:0;border-radius:999px;background:var(--ink);color:#fff;cursor:pointer}.send[aria-busy="true"]{opacity:.6}
 .after{margin-top:14px}
+.cta-row{display:flex;justify-content:flex-end;margin-top:18px}.cta{background:var(--sun);border:0;font:600 14px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:16px 28px;border-radius:999px;cursor:pointer;color:var(--ink)}
+.backlink{background:none;border:0;padding:16px 0 0;font:500 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);cursor:pointer}
+@media (max-width:519px){.cta{width:100%}}
 .sent{background:#f1f8f3;border:1px solid #bfdccb;border-radius:14px;padding:16px;margin-top:14px}
 .bar{position:sticky;bottom:0;margin:14px -4px 0;background:rgba(255,253,249,.97);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:18px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));z-index:10;box-shadow:0 -4px 18px rgba(42,36,32,.06)}
 .bar-in{display:flex;align-items:center;gap:12px}
@@ -358,6 +361,7 @@ body.nlb .bar{bottom:58px}
 <g class="m-pin"><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">4</text></g>
 </g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="rn">3</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="">4</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
     </div>
+    <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div>
   </section>
 
   <section class="step house" data-id="santos" data-name="Santos-o-Velho, Madragoa" hidden>
@@ -451,7 +455,8 @@ body.nlb .bar{bottom:58px}
 </section>
 
   <section class="step final" hidden data-label="Enviar">
-    <h1 style="font-size:26px">Obrigada! Falta só um passo</h1>
+    <button type="button" class="backlink" id="backHouses">← Voltar às casas</button>
+    <h1 style="font-size:26px;margin-top:10px">Último passo</h1>
     <div class="box"><h3>A vossa opinião</h3><ul class="sum" id="sum"></ul>
       <h3>Quais querem visitar?</h3><div class="vis"><label><input type="checkbox" value="Santos-o-Velho, Madragoa"><span>1. Santos-o-Velho, Madragoa</span></label><label><input type="checkbox" value="Rua do Olival, Lapa"><span>2. Rua do Olival, Lapa</span></label><label><input type="checkbox" value="Calçada das Necessidades"><span>3. Calçada das Necessidades</span></label><label><input type="checkbox" value="Travessa da Costa, Estrela"><span>4. Travessa da Costa, Estrela</span></label></div>
       <h3 style="margin-top:14px">Quando podem visitar?</h3>
@@ -481,13 +486,13 @@ body.nlb .bar{bottom:58px}
 </form>
 <script>
 (function(){
-const CLIENT="Pascale teste", KEY="sel-test-r1d";
+const CLIENT="Pascale teste", KEY="sel-test-r1e";
 const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
 let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementById('midlbl');
 function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=>s.hidden=k!==cur);
  document.getElementById('prog').style.width=(cur/(steps.length-1)*100)+'%';
  const s=steps[cur]; const hi=houses.indexOf(s);
- rbar.hidden=hi<0; midl.hidden=hi>=0; syncBar();
+ rbar.hidden=hi<0; midl.hidden=true; document.querySelector('.bar').hidden=hi<0; syncBar();
  document.getElementById('lbl').textContent= s.dataset.label;
  document.getElementById('back').style.visibility=cur?'visible':'hidden';
  const go=document.getElementById('go'); go.hidden=cur===steps.length-1;
@@ -496,6 +501,8 @@ function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=
  window.scrollTo({top:0,behavior:'smooth'}); save();}
 document.getElementById('go').onclick=()=>show(cur+1);
 document.getElementById('back').onclick=()=>show(cur-1);
+document.getElementById('start').onclick=()=>show(1);
+document.getElementById('backHouses').onclick=()=>show(steps.length-2);
 // galleries
 document.querySelectorAll('.house').forEach(h=>{const g=h.querySelector('.gal'),ph=JSON.parse(g.dataset.photos),m=g.querySelector('.main'),c=g.querySelector('.cnt'),th=[...h.querySelectorAll('.th')];let i=0;
  function set(n){i=(n+ph.length)%ph.length;m.style.backgroundImage="url('"+ph[i]+"')";if(c)c.textContent=(i+1)+' / '+ph.length;th.forEach((t,k)=>t.classList.toggle('on',k===i));}
