@@ -795,7 +795,7 @@ h1{font-size:clamp(26px,4.2vw,34px)!important}
   btn.setAttribute('aria-busy','true'); btn.textContent='A enviar…';
   const body=new URLSearchParams({'form-name':'selection-feedback','cliente':'António e Mafalda','ronda':'1','opiniao':txt});
   try{
-   const r=await fetch('/api/form',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body.toString()});
+   const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body.toString()});
    if(!r.ok) throw new Error(r.status);
    const p=document.createElement('p');p.className='sent';
    p.textContent='Obrigada! Recebi a vossa opinião e volto a falar convosco em breve com os próximos passos. Pascale';
