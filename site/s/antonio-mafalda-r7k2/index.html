@@ -754,6 +754,34 @@ const t=c.querySelector('.react textarea');if(t&&!c.querySelector('.why-l')){con
 document.querySelectorAll('.facts > div').forEach(d=>{const k=d.querySelector('small')?.textContent.trim();if(I[k]&&!d.querySelector('svg'))d.insertAdjacentHTML('afterbegin','<svg viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>')})})();</script>
 
 
+<style id="site-layout-fix">
+/* Website version: steadier photo boxes (all browsers) and a more compact first step */
+.prop{display:flex!important;flex-direction:column}
+.prop>*{min-width:0}
+.prop .photo{display:block!important;width:auto!important;max-width:none;aspect-ratio:auto!important;height:clamp(200px,42vw,320px)!important;min-height:0!important;flex:none;margin:0!important;border-radius:0!important;background-size:cover!important;background-position:center!important;position:relative}
+.wrap{gap:24px!important;padding-block:24px 40px!important}
+header{gap:12px!important;padding-bottom:20px!important}
+.topart{max-height:56px;width:auto}
+h1{font-size:clamp(26px,4.2vw,34px)!important}
+.brief{gap:14px}
+.brief h3{margin:0}
+.cols{gap:14px 24px!important}
+.cols ul{margin:6px 0 0;padding-left:18px}
+.cols li{margin:2px 0;line-height:1.45}
+@media (min-width:900px){
+ .wrap{max-width:1040px!important}
+ header{grid-template-columns:auto 1fr;align-items:end;column-gap:28px}
+ header>.brand{grid-column:1}
+ header>.topart{grid-column:2;justify-self:end;grid-row:1}
+ header>.eyebrow,header>h1,header>.note{grid-column:1 / -1}
+ .brief{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:36px;align-items:start}
+ .brief>*{grid-column:1}
+ .brief>.mapa-box{grid-column:2;grid-row:1 / span 6;margin:0!important}
+ .cols{grid-template-columns:1fr 1fr!important}
+ .cols>div:nth-child(3){grid-column:1 / -1}
+ .mapa-legs{gap:10px 20px!important;font-size:14px}
+}
+</style>
 <form name="selection-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
 <input type="hidden" name="form-name" value="selection-feedback"><input name="cliente"><input name="ronda"><textarea name="opiniao"></textarea><input name="bot-field">
 </form>
