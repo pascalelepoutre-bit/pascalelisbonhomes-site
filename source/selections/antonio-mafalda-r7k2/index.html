@@ -100,10 +100,13 @@ textarea[rows="1"]{min-height:42px}
  .pcol{display:flex;flex-direction:column;background:var(--cream)}.pcol .gal{flex:1;display:flex}.pcol .gal .main{flex:1;height:auto;min-height:440px}
  .pcol .thumbs{padding:8px 10px 10px}
  .pad{padding:18px 22px 16px}.line{margin-bottom:10px}
- .intro-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;align-items:stretch}
- .intro-right{display:flex;flex-direction:column;align-self:stretch!important}.intro-right .cta-row{margin-top:auto!important;padding-top:14px;justify-content:center}.intro-right .mapbox{flex:1;display:flex;flex-direction:column}.intro-right .mapa{height:auto!important;aspect-ratio:620/440}.intro-right .leg{margin-top:auto;padding-top:12px}
+ .intro-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+ .pcols{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+ .intro-right{display:flex;flex-direction:column;align-self:stretch!important}.intro-right .cta-row{margin-top:auto!important;padding-top:14px;justify-content:center}.intro-right .mapbox{flex:1;display:flex;flex-direction:column}.intro-right .mapa{flex:1;height:auto!important;min-height:300px}.intro-right .leg{margin-top:12px}
  .intro-left .box{margin-top:14px}
- .intro .mapbox{margin-top:20px}.intro-right .cta-row{margin-top:14px}
+ .intro .mapbox{margin-top:20px}
+ .intro-grid>.cta-row{grid-column:2;justify-content:center;margin-top:0}
+ .intro-left .box.prof{margin-bottom:0}.intro-right .cta-row{margin-top:14px}
 }
 @media (max-width:519px){.rbar button{padding:10px 11px;font-size:13.5px}.bar .back{font-size:0!important;padding:10px 6px!important}.bar .back::before{content:"←";font-size:22px;color:var(--ink)}.bar .go.arrow{font-size:20px!important;padding:9px 18px!important;letter-spacing:0!important}.bar-in{gap:8px}}
 /* keep the bar clear of the hosting badge (Netlify) when it is present */
@@ -122,7 +125,7 @@ textarea[rows="1"]{min-height:42px}
         <p class="eyebrow i-txt" style="margin-top:20px">Seleção 1 · novembro 2026</p>
         <h1 class="i-txt">António e Mafalda, aqui está a vossa primeira seleção</h1>
         <p class="lead i-txt">Escolhi quatro casas perto de onde vivem: três prontas a habitar e uma para remodelar. Digam-me o que gostam e o que não gostam, e a próxima seleção fica ainda melhor.</p>
-        <div class="box prof"><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul>
+        <div class="box prof"><div class="pcols"><div><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul></div><div><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul></div></div>
           <p class="rq">Este perfil está certo?</p>
           <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
           <textarea id="pTxt" placeholder="O que mudariam? Por exemplo: o elevador é essencial."></textarea></div>
@@ -383,8 +386,8 @@ textarea[rows="1"]{min-height:42px}
 <g class="m-pin"><circle cx="545" cy="434" r="20"/><text x="545" y="441" text-anchor="middle">2</text></g>
 <g class="m-pin"><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">3</text></g>
 <g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">4</text></g>
-</g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="">3</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="rn">4</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
-      <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div></div>
+</g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="">3</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="rn">4</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div></div>
+      <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div>
     </div>
   </section>
 
