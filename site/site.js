@@ -29,6 +29,7 @@ const mb=document.getElementById('menu-btn'),ml=document.querySelector('.nav ul'
 mb.addEventListener('click',()=>{const o=ml.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
 ml.addEventListener('click',e=>{if(e.target.closest('a')){ml.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
 
+(function(){const c=document.getElementById('b-bo'),w=document.getElementById('bo-wrap');if(c&&w){c.addEventListener('change',()=>{w.hidden=!c.checked;if(c.checked)document.getElementById('bo-input').focus();});}})();
 const oth=document.getElementById('b-a7'),ow=document.getElementById('b-other-wrap');
 if(oth&&ow){oth.addEventListener('change',()=>{ow.hidden=!oth.checked;if(oth.checked)document.getElementById('b-other').focus();});}
 
@@ -170,9 +171,9 @@ function calc(){const p=num(f.querySelector('#c-price').value),loan=num(f.queryS
  else if(young&&p<=660982){I=(p-330539)*.08;S=(p-330539)*.008;}
  else{I=imt(p,use==='hpp'?HPP:SEC);S=p*.008;}
  const L=loan>0?loan*.006:0,B=loan>0?800:0,D=p>0?(loan>0?700:375):0,T=I+S+L+B+D;
- const set=(id,v)=>f.querySelector('#'+id).textContent=eur(v);
- set('o-imt',I);set('o-is',S);set('o-isl',L);set('o-bank',B);set('o-deed',D);set('o-tot',T);set('o-all',p+T);
- f.querySelectorAll('.o-loan').forEach(x=>x.style.display=loan>0?'':'none');f.querySelectorAll('.o-noloan').forEach(x=>x.style.display=loan>0?'none':'');}
+ const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=eur(v)};
+ set('o-imt',I);set('o-is',S);set('o-isl',L);set('o-bank',B);set('o-deed',D);set('o-tot',T);set('o-all',p+T);set('o-cash',Math.max(0,p-loan)+T);{const e=document.getElementById('o-pct');if(e)e.textContent=p>0?(T/p*100).toFixed(1).replace('.',',')+'%':'–'};
+ document.querySelectorAll('#costs .o-loan').forEach(x=>x.style.display=loan>0?'':'none');document.querySelectorAll('#costs .o-noloan').forEach(x=>x.style.display=loan>0?'none':'');}
 f.addEventListener('input',e=>{if(e.target.matches('#c-price,#c-loan')){const c=e.target.selectionStart,l=e.target.value.length;const n=num(e.target.value);e.target.value=n?grp(n):'';}calc();});
 f.addEventListener('change',calc);calc();})();
 
@@ -186,7 +187,7 @@ function setWhere(v){const r=document.querySelector('input[name="Where"][value="
 function sync(){const w=W(),lis=w==='In Lisbon'||w==='Both',bey=w==='Beyond Lisbon'||w==='Both';
  const fl=document.getElementById('q-lis'),fb=document.getElementById('q-bey');if(!fl||!fb)return;fl.hidden=!lis;fb.hidden=!bey;
  const clear=(fs)=>fs.querySelectorAll('input:checked').forEach(i=>{i.checked=false;i.dispatchEvent(new Event('change',{bubbles:true}))});
- if(!lis){clear(fl);const ow=document.getElementById('b-other-wrap');if(ow)ow.hidden=true;}if(!bey)clear(fb);
+ if(!lis){clear(fl);const ow=document.getElementById('b-other-wrap');if(ow)ow.hidden=true;}if(!bey){clear(fb);const bw=document.getElementById('bo-wrap');if(bw)bw.hidden=true;}
  document.querySelectorAll('.chip.bx').forEach(c=>{c.hidden=!bey;if(!bey)clear(c);});
  const lift=document.querySelector('input[name="Must-haves"][value="Lift"]');if(lift){const off=w==='Beyond Lisbon';lift.parentNode.hidden=off;if(off&&lift.checked)clear(lift.parentNode);}}
 function apply(a){if(!a)return;setWhere('Beyond Lisbon');if(a==='beyond')return;
@@ -213,7 +214,7 @@ pins.forEach(g=>{const n=g.dataset.f;const k=L().filter(x=>x.dataset.area.includ
 (function(){const bs=document.querySelectorAll('#home-filter [data-f]');if(!bs.length)return;const L=[...document.querySelectorAll('#all-homes .listing[data-area]')];
 bs.forEach(b=>{const n=b.dataset.f;const k=n?L.filter(x=>x.dataset.area.includes(n)).length:L.length;const s=document.createElement('span');s.className='f-count';s.textContent=k;b.appendChild(s);});})();
 
-(function(){const c=document.querySelector('.bl-count');if(c)c.textContent=document.querySelectorAll('.beyond-sale .listing').length;})();
+(function(){const c=document.querySelector('.bl-count');if(c)c.textContent=document.querySelectorAll('.listing.beyond').length;})();
 
 /* market study: street suggestions while typing (all Lisbon streets, Estrela area first) */
 (function(){const inp=document.getElementById('s-addr');if(!inp)return;let data=null,loading=null,sel=-1,items=[];

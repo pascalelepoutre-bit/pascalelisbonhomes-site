@@ -312,7 +312,7 @@
 351|Fusion mexicaine
 353|Juste à côté de chez moi. La cuisine fusion mexicaine du chef Rodrigo : des produits très frais, des plats pleins de saveurs et une équipe toujours si sympathique. Tout petit, mais tellement chaleureux, et j’y suis toujours heureuse.
 356|Douceur
-358|Mon gâteau au chocolat préféré depuis des années, bien avant de connaître Carlos, l’homme qui le fait. Aujourd’hui nous sommes amis, et j’y suis toujours aussi accro. C’est juste en face du Mercado de Campo de Ourique, et il y a aussi un petit kiosque sur l’Avenida da Liberdade, celui où je vais le plus parce qu’il est plus près. Goûtez-le une fois et vous comprendrez le nom.
+358|Mon gâteau au chocolat préféré depuis des années, bien avant de connaître Carlos, l’homme qui le fait. Aujourd’hui nous sommes amis, et j’y suis toujours aussi accro. C’est juste en face du Mercado de Campo de Ourique, et il y a aussi un petit kiosque sur l’Avenida da Liberdade, celui où je vais le plus parce qu’il est près du bureau. Goûtez-le une fois et vous comprendrez le nom.
 361|Après près de quinze ans de yoga, c’est ici que je me retrouve. Des professeurs très qualifiés et une ambiance accueillante. Quand je cherchais mon logement, vivre près de ce studio faisait partie de mes indispensables.
 362|Bouger
 364|Juste en face du Museu de Arte Antiga, et là où je sors de ma zone de confort. Des professeurs formidables, une ambiance vraiment accueillante et beaucoup de cours différents. J’en ressors souvent fière, et tout aussi souvent courbaturée le lendemain.
@@ -393,7 +393,7 @@
 443|À 1h15 de Lisbonne
 444|L’Alentejo
 445|À moins de 2h de Lisbonne
-446|Nouveau à Arrábida : huit villas avec piscine privée →
+446|Nouveau dans l’Arrábida : huit villas avec piscine privée →
 447|Vous cherchez sur la Côte d’Argent, à Cascais, en Algarve ou à Porto ? Je vous mets en contact avec un collègue de confiance sur place.
 448|Questions des acheteurs
 449|Ce que les acheteurs me demandent le plus
@@ -716,3 +716,12 @@
 874|Plan du rez-de-chaussée
 875|Plan du niveau -1
 876|Site du projet ↗
+877|Nouveau dans l’Arrábida
+878|Huit villas avec piscine privée, à 45 minutes de Lisbonne
+879|Découvrir le projet →
+880|Les villas Enigma Collection dans le parc naturel de l’Arrábida
+881|Hors de Lisbonne · Arrábida
+882|par ex. Cascais, Côte d’Argent, Algarve
+883|du prix d'achat
+884|Apport personnel nécessaire
+885|Prix moins le prêt, plus tous les frais

@@ -314,7 +314,7 @@
 351|Fusão mexicana
 353|Mesmo ao lado da minha casa. A cozinha de fusão mexicana do chef Rodrigo: ingredientes muito frescos, pratos cheios de sabor e uma equipa sempre tão simpática. Pequenino, mas tão acolhedor, e fico sempre feliz por lá estar.
 356|Um doce
-358|O meu bolo de chocolate preferido há anos, muito antes de conhecer o Carlos, o homem por trás dele. Hoje somos amigos, e continuo igualmente viciada. Fica mesmo em frente ao Mercado de Campo de Ourique, e há também um pequeno quiosque na Avenida da Liberdade, aquele a que vou mais, porque fica mais perto. Prove uma vez e vai perceber o nome.
+358|O meu bolo de chocolate preferido há anos, muito antes de conhecer o Carlos, o homem por trás dele. Hoje somos amigos, e continuo igualmente viciada. Fica mesmo em frente ao Mercado de Campo de Ourique, e há também um pequeno quiosque na Avenida da Liberdade, aquele a que vou mais, porque fica perto do escritório. Prove uma vez e vai perceber o nome.
 361|Depois de quase quinze anos de yoga, é aqui que volto a mim. Professores muito qualificados e um ambiente acolhedor. Quando procurava a minha casa, viver perto deste estúdio era um dos meus pontos indispensáveis.
 362|Movimento
 364|Mesmo em frente ao Museu de Arte Antiga, e onde saio da minha zona de conforto. Ótimos professores, um ambiente muito acolhedor e muitas aulas diferentes. Saio muitas vezes orgulhosa, e muitas vezes também dorida no dia seguinte.
@@ -544,7 +544,7 @@
 613|Parque natural
 614|Condomínio fechado
 615|Em construção
-616|A partir de 1.600.000 €
+616|A partir de € 1.600.000
 617|Pergunte-me por este projeto →
 618|Perguntas frequentes
 619|As perguntas que quem vende e quem compra mais me fazem. Não encontra a sua? Envie-me uma mensagem, respondo num dia útil.
@@ -717,3 +717,12 @@
 874|Planta do piso 0
 875|Planta do piso -1
 876|Site do projeto ↗
+877|Novo na Arrábida
+878|Oito moradias com piscina privada, a 45 minutos de Lisboa
+879|Descobrir o projeto →
+880|As moradias Enigma Collection no Parque Natural da Arrábida
+881|Fora de Lisboa · Arrábida
+882|p. ex. Cascais, Costa de Prata, Algarve
+883|do preço de compra
+884|Capital próprio necessário
+885|Preço menos o crédito, mais todos os custos
