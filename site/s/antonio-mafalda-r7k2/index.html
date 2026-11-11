@@ -2,6 +2,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Seleção António e Mafalda · Pascale Lepoutre</title>
 <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta property="og:title" content="Seleção 1 para António e Mafalda">
+<meta property="og:description" content="4 casas escolhidas para vocês · Pascale Lepoutre, Engel &amp; Völkers Lisboa">
+<meta property="og:image" content="https://pascalelisbonhomes.com/img/share.png">
+<meta property="og:url" content="https://pascalelisbonhomes.com/s/antonio-mafalda-r7k2/">
+<meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&family=Inter:wght@300;400;500&display=swap">
 <style>
@@ -67,6 +72,7 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .final .vis input{width:20px;height:20px;accent-color:var(--gold)}
 .sum{list-style:none;padding:0;margin:0 0 14px}.sum li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.sum em{font-style:normal;color:var(--muted)}
 .send{display:block;width:100%;margin-top:14px;font:500 14px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:16px;border:0;border-radius:999px;background:var(--ink);color:#fff;cursor:pointer}.send[aria-busy="true"]{opacity:.6}
+.after{margin-top:14px}
 .sent{background:#f1f8f3;border:1px solid #bfdccb;border-radius:14px;padding:16px;margin-top:14px}
 .bar{position:sticky;bottom:0;margin:14px -4px 0;background:rgba(255,253,249,.97);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:18px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));z-index:10;box-shadow:0 -4px 18px rgba(42,36,32,.06)}
 .bar-in{display:flex;align-items:center;gap:12px}
@@ -448,10 +454,16 @@ body.nlb .bar{bottom:58px}
     <h1 style="font-size:26px">Obrigada! Falta só um passo</h1>
     <div class="box"><h3>A vossa opinião</h3><ul class="sum" id="sum"></ul>
       <h3>Quais querem visitar?</h3><div class="vis"><label><input type="checkbox" value="Santos-o-Velho, Madragoa"><span>1. Santos-o-Velho, Madragoa</span></label><label><input type="checkbox" value="Rua do Olival, Lapa"><span>2. Rua do Olival, Lapa</span></label><label><input type="checkbox" value="Calçada das Necessidades"><span>3. Calçada das Necessidades</span></label><label><input type="checkbox" value="Travessa da Costa, Estrela"><span>4. Travessa da Costa, Estrela</span></label></div>
+      <h3 style="margin-top:14px">Quando podem visitar?</h3>
+      <div class="btns" id="wBtns"><button type="button" data-v="Sábado 14 de novembro">Sábado 14 nov.</button><button type="button" data-v="A partir de 23 de novembro">A partir de 23 nov.</button><button type="button" data-v="Outra data">Outra data</button></div>
       <h3 style="margin-top:14px">Mais alguma coisa?</h3>
       <textarea id="oTxt" placeholder="Por exemplo: escadas não são problema até ao 2.º andar."></textarea>
       <button type="button" class="send" id="send">Enviar a minha opinião</button>
     </div>
+    <div class="box after" id="afterSend" hidden><h3>Enquanto esperam</h3>
+      <p style="margin:0 0 10px">Têm mais perguntas sobre a compra? No meu site encontram tudo num só lugar:</p>
+      <div class="links"><a href="/pt/buying/" target="_blank" rel="noopener">Guia para comprar casa em Lisboa ↗</a><a href="/pt/buying/#calc" target="_blank" rel="noopener">Calcular os custos de compra, IMT e selo ↗</a></div>
+      <p style="margin:0;font-size:14px;color:var(--muted)">Ou escrevam-me diretamente por WhatsApp: <a href="https://wa.me/351920609225" style="color:var(--ink)">920 609 225</a></p></div>
   </section>
 
   <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · +351 920 609 225</footer>
@@ -501,11 +513,12 @@ function text(){const L=['Olá Pascale, a nossa opinião sobre a seleção 1:'];
  const pv=val(document.getElementById('pBtns')),pt=document.getElementById('pTxt').value.trim();L.push('Perfil: '+(pv||'sem resposta')+(pt?' · '+pt:''));
  houses.forEach(h=>{const t=h.querySelector('textarea').value.trim();L.push(h.dataset.name+': '+(val(h.querySelector('.btns'))||'sem opinião')+(t?' · '+t:''));});
  const v=[...document.querySelectorAll('.vis input:checked')].map(i=>i.value);L.push('Queremos visitar: '+(v.length?v.join(', '):'ainda não sabemos'));
+ const w=val(document.getElementById('wBtns'));if(w)L.push('Quando: '+w);
  const o=document.getElementById('oTxt').value.trim();if(o)L.push('Outros: '+o);L.push(CLIENT);return L.join('\n');}
-function save(){try{const st={c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('textarea').value])};localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+function save(){try{const st={c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,w:val(document.getElementById('wBtns')),v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('textarea').value])};localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
 function load(){let st;try{st=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}if(!st)return 0;
  const press=(b,v)=>b.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));
- press(document.getElementById('pBtns'),st.p);document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
+ press(document.getElementById('pBtns'),st.p);press(document.getElementById('wBtns'),st.w);document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
  (st.v||[]).forEach((c,k)=>{const i=document.querySelectorAll('.vis input')[k];if(i)i.checked=c;});
  (st.h||[]).forEach((x,k)=>{const h=houses[k];if(!h)return;press(h.querySelector('.btns'),x[0]);h.querySelector('textarea').value=x[1]||'';});return st.c||0;}
 // max 3 visits
@@ -513,7 +526,8 @@ document.querySelectorAll('.vis input').forEach(i=>i.addEventListener('change',(
 // send through the website form (email to Pascale); WhatsApp only as fallback
 document.getElementById('send').addEventListener('click',async function(){const btn=this,txt=text();btn.setAttribute('aria-busy','true');btn.textContent='A enviar…';
  try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({'form-name':'selection-feedback','cliente':CLIENT,'ronda':'1','opiniao':txt}).toString()});if(!r.ok)throw 0;
-  const p=document.createElement('p');p.className='sent';p.textContent='Obrigada! Recebi a vossa opinião e volto a falar convosco em breve com os próximos passos. Pascale';btn.replaceWith(p);try{localStorage.removeItem(KEY)}catch(e){}
+  const p=document.createElement('p');p.className='sent';p.innerHTML='<b>Obrigada!</b> Recebi a vossa opinião e volto a falar convosco em breve com os próximos passos.<br>Pascale';btn.replaceWith(p);
+  const more=document.getElementById('afterSend');if(more){more.hidden=false;document.querySelector('.bar').hidden=true;setTimeout(()=>p.scrollIntoView({behavior:'smooth',block:'start'}),50);}try{localStorage.removeItem(KEY)}catch(e){}
  }catch(e){btn.removeAttribute('aria-busy');btn.textContent='Enviar por WhatsApp';btn.onclick=()=>window.open('https://wa.me/351920609225?text='+encodeURIComponent(txt),'_blank');alert('Não foi possível enviar agora. Carreguem outra vez para enviar por WhatsApp.');}});
 load();show(0);
 const nb=()=>{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');};nb();setTimeout(nb,800);setTimeout(nb,2500);
