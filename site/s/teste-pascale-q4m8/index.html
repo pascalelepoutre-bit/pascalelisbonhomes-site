@@ -83,6 +83,8 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .bar .mid{flex:1;text-align:center;font-size:12.5px;color:var(--muted)}.dots{display:flex;justify-content:center;gap:6px;margin-bottom:3px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--sand)}.dots i.on{background:var(--gold)}
 .bar .go{background:var(--sun);border:0;font:600 13px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:13px 22px;border-radius:999px;cursor:pointer;color:var(--ink)}
 footer{margin-top:26px;font-size:12px;color:var(--muted)}
+.react .rbar{justify-content:flex-start;flex:none;margin:2px 0 4px}.react .rbar button{padding:10px 18px;font-size:15px}
+.pad .bar{margin:14px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;padding:12px 0 0;background:none}
 /* compact: less scrolling */
 .row2{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;margin:0 0 12px}.row2 .more{margin:0}.row2 .links{margin:0}.row2 .more[open]{flex-basis:100%}
 .why{margin-bottom:10px}.why li{margin:2px 0}.note{margin-bottom:8px}.react{padding-top:10px}.rq{margin-bottom:4px}
@@ -408,7 +410,7 @@ textarea[rows="1"]{min-height:42px}
 </details>
     <div class="links"><a href="https://www.idealista.pt/imovel/35466924/" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Santos-o-Velho,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
     <div class="react">
-      <p class="rq">O vosso comentário</p>
+      <p class="rq">O que acham desta casa?</p>
       <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
@@ -430,7 +432,7 @@ textarea[rows="1"]{min-height:42px}
 </details>
     <div class="links"><a href="https://www.idealista.pt/imovel/35418249/" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+do+Olival,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
     <div class="react">
-      <p class="rq">O vosso comentário</p>
+      <p class="rq">O que acham desta casa?</p>
       <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
@@ -452,7 +454,7 @@ textarea[rows="1"]{min-height:42px}
 </details>
     <div class="links"><a href="https://www.engelvoelkers.com/pt/pt/exposes/371d72a6-6fc6-5537-aee9-520f9070c929" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Travessa+da+Costa,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
     <div class="react">
-      <p class="rq">O vosso comentário</p>
+      <p class="rq">O que acham desta casa?</p>
       <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
@@ -474,7 +476,7 @@ textarea[rows="1"]{min-height:42px}
 </details>
     <div class="links"><a href="https://www.google.com/maps/search/?api=1&query=Calçada+das+Necessidades,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
     <div class="react">
-      <p class="rq">O vosso comentário</p>
+      <p class="rq">O que acham desta casa?</p>
       <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
@@ -502,7 +504,7 @@ textarea[rows="1"]{min-height:42px}
 <nav class="bar" aria-label="Navegação"><div class="bar-in">
   <button type="button" class="back" id="back">← Voltar</button>
   <div class="mid" id="midlbl"><span id="lbl"></span></div>
-  <div class="rbar" id="rbar" hidden><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não</button></div>
+  <div class="rbar" id="rbar" hidden><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
   <button type="button" class="go" id="go">Começar →</button>
 </div></nav>
   <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · +351 920 609 225</footer>
@@ -519,11 +521,11 @@ let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementB
 function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=>s.hidden=k!==cur);
  document.getElementById('prog').style.width=(cur/(steps.length-1)*100)+'%';
  const s=steps[cur]; const hi=houses.indexOf(s);
- rbar.hidden=hi<0; midl.hidden=true; document.querySelector('.bar').hidden=hi<0; syncBar();
+ rbar.hidden=hi<0; midl.hidden=true; document.querySelector('.bar').hidden=hi<0; place(); syncBar();
  document.getElementById('lbl').textContent= s.dataset.label;
  document.getElementById('back').style.visibility=cur?'visible':'hidden';
  const go=document.getElementById('go'); go.hidden=cur===steps.length-1;
- go.textContent= cur===0?'Ver as casas →': (hi>=0?(window.innerWidth<520?'→':(cur===steps.length-2?'Concluir →':'Seguinte →')):'Seguinte →'); go.classList.toggle('arrow',hi>=0&&window.innerWidth<520);
+ go.textContent= cur===0?'Ver as casas →': (cur===steps.length-2?'Concluir →':'Seguinte →');
  if(s.classList.contains('final'))summary();
  window.scrollTo({top:0,behavior:'smooth'}); save();}
 document.getElementById('go').onclick=()=>show(cur+1);
@@ -540,6 +542,9 @@ document.querySelectorAll('.house').forEach(h=>{const g=h.querySelector('.gal'),
 document.querySelectorAll('.btns').forEach(b=>b.querySelectorAll('button').forEach(x=>{x.setAttribute('aria-pressed','false');x.addEventListener('click',()=>{b.querySelectorAll('button').forEach(y=>y.setAttribute('aria-pressed','false'));x.setAttribute('aria-pressed','true');save();});}));
 document.querySelectorAll('textarea,.vis input').forEach(t=>t.addEventListener('input',save));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
+function place(){const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
+ if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}
+window.addEventListener('resize',()=>{place();});
 function syncBar(){const h=steps[cur];if(!h.classList.contains('house'))return;const v=val(h.querySelector('.btns'));rbar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===v)));}
 rbar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{const h=steps[cur];h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===b.dataset.v)));syncBar();save();}));
 const val=b=>(b&&b.querySelector('[aria-pressed="true"]')||{}).dataset?.v||'';
