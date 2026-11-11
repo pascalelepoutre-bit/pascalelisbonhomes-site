@@ -350,7 +350,7 @@ for LANG in LANGS:
     p404 = re.sub(r'<link rel="canonical"[^>]*>\n', '', p404)
     p404 = re.sub(r'<script type="application/ld\+json">.*?</script>\n', '', p404, flags=re.S)
     open(f'{OUT}{PFX}/404.html', 'w').write(p404)
-    if PFX: redirects.append(f'{PFX}/*  {PFX}/404.html  404')
+    # Cloudflare Pages serves the nearest 404.html automatically (no 404 rules needed)
 website['inLanguage'] = 'en'
 open(f'{OUT}/_redirects', 'w').write('\n'.join(redirects) + '\n')
 KEEP = set(open('/home/claude/i18n/keep.txt', encoding='utf-8').read().splitlines())

@@ -2466,7 +2466,7 @@ if(nf){nf.addEventListener('submit',e=>{e.preventDefault();if(!nf.checkValidity(
   const done=()=>{nf.querySelector('.news-done').hidden=false;nf.querySelector('.news-row').hidden=true;const c=nf.querySelector('.consent');if(c)c.hidden=true;};
   const preview=/claude/.test(location.hostname)||location.protocol==='file:';if(preview){done();return;}
   const btn=nf.querySelector('button');btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(nf)).toString()})
+  fetch('/api/form',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(nf)).toString()})
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;const d=nf.querySelector('.news-done');d.hidden=false;d.textContent='Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225';});});}
 
@@ -2486,7 +2486,7 @@ if(rf){rf.addEventListener('submit',e=>{e.preventDefault();if(!rf.checkValidity(
   const done=()=>{[...rf.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(rf)).toString()})
+  fetch('/api/form',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(rf)).toString()})
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent='Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225';});});}
 
@@ -2498,7 +2498,7 @@ if(rf){rf.addEventListener('submit',e=>{e.preventDefault();if(!rf.checkValidity(
   const done=()=>{[...f.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',f.enctype==='multipart/form-data'?{method:'POST',body:new FormData(f)}:{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+  fetch('/api/form',f.enctype==='multipart/form-data'?{method:'POST',body:new FormData(f)}:{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent='Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225';});});});
 
@@ -2548,7 +2548,7 @@ if(mf){mf.addEventListener('submit',e=>{e.preventDefault();if(!mf.checkValidity(
   const done=()=>{[...mf.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(mf)).toString()})
+  fetch('/api/form',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(mf)).toString()})
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent='Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225';});});}
 
