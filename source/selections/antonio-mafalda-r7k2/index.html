@@ -89,6 +89,13 @@ footer{margin-top:26px;font-size:12px;color:var(--muted)}
 textarea[rows="1"]{min-height:42px}
 @media (min-width:900px){
  .wrap{max-width:1120px}
+ .intro h1{margin-top:10px;font-size:30px}.intro .lead{margin-bottom:12px}
+ .intro .box{padding:14px 16px}.intro .box ul{margin-bottom:8px}.intro .box li{margin:1px 0}
+ .intro .mapa{height:290px}
+ .intro .box.prof ul{columns:1}
+ .leg{grid-template-columns:1fr 1fr;gap:6px 14px;margin-top:10px}
+ .intro textarea{min-height:42px}
+ .cta-row{margin-top:12px}
  .house{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:stretch}
  .pcol{display:flex;flex-direction:column;background:var(--cream)}.pcol .gal{flex:1;display:flex}.pcol .gal .main{flex:1;height:auto;min-height:440px}
  .pcol .thumbs{padding:8px 10px 10px}
@@ -109,13 +116,13 @@ textarea[rows="1"]{min-height:42px}
   <section class="step intro" data-label="Início">
     <p class="eyebrow" style="margin-top:20px">Seleção 1 · novembro 2026</p>
     <h1>António e Mafalda, aqui está a vossa primeira seleção</h1>
-    <p class="lead">Escolhi três casas que encaixam no que me contaram, e uma quarta, um pouco diferente, para perceber o que pesa mais para vocês. Vejam cada uma com calma e digam-me o que gostam e o que não gostam. Com a vossa opinião, a próxima seleção fica ainda melhor.</p>
+    <p class="lead">Escolhi quatro casas perto de onde vivem: três prontas a habitar e uma para remodelar. Digam-me o que gostam e o que não gostam, e a próxima seleção fica ainda melhor.</p>
     <div class="intro-grid">
       <div class="box"><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul>
         <p class="rq">Este perfil está certo?</p>
         <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
         <textarea id="pTxt" placeholder="O que mudariam? Por exemplo: o elevador é essencial."></textarea></div>
-      <div class="box mapbox"><h3>As casas no mapa</h3><svg class="mapa" viewBox="270 140 620 440" role="img" aria-label="Mapa com as casas e a rua onde vivem agora">
+      <div class="box mapbox"><h3>As casas no mapa</h3><svg class="mapa" preserveAspectRatio="xMidYMid slice" viewBox="270 140 620 440" role="img" aria-label="Mapa com as casas e a rua onde vivem agora">
 <defs><clipPath id="mclip"><rect x="270" y="140" width="620" height="440" rx="14"/></clipPath></defs><g clip-path="url(#mclip)">
 <rect x="270" y="140" width="620" height="440" class="m-land"/>
 <polygon class="m-water" points="80,713 100,710 134,700 106,695 98,663 180,626 188,634 179,670 205,728 587,640 584,624 609,606 608,598 779,559 780,553 714,561 651,566 641,557 628,556 628,544 645,544 650,537 712,539 717,506 762,496 764,487 775,482 774,470 812,461 820,497 847,490 840,462 846,454 1022,413 1092,439 1100,1000 0,1000"/>
@@ -369,9 +376,9 @@ textarea[rows="1"]{min-height:42px}
 
 <g class="m-pin"><circle cx="700" cy="392" r="20"/><text x="700" y="399" text-anchor="middle">1</text></g>
 <g class="m-pin"><circle cx="545" cy="434" r="20"/><text x="545" y="441" text-anchor="middle">2</text></g>
-<g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">3</text></g>
-<g class="m-pin"><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">4</text></g>
-</g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="rn">3</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="">4</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
+<g class="m-pin"><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">3</text></g>
+<g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">4</text></g>
+</g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="">3</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="rn">4</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
     </div>
     <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div>
   </section>
@@ -420,36 +427,14 @@ textarea[rows="1"]{min-height:42px}
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
   </div>
-</section><section class="step house" data-id="necessidades" data-name="Calçada das Necessidades" hidden>
-  <div class="pcol"><div class="gal" data-photos='["https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/38/8d/330011165.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4b/bd/29/327104122.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/c5/f8/330011105.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4c/77/ab/330011151.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/72/b1/82/327104120.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/cf/0a/52/330011161.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b2/d4/7b/330011114.jpg"]'>
-    <div class="main" role="img" aria-label="Calçada das Necessidades" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg')"></div>
-    <span class="tag rn">Para remodelar</span><button type="button" class="nv prev" aria-label="Anterior">‹</button><button type="button" class="nv next" aria-label="Seguinte">›</button><span class="cnt">1 / 8</span>
-  </div>
-  <div class="thumbs"><button type="button" class="th" data-i="0" aria-label="Fotografia 1" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg')"></button><button type="button" class="th" data-i="1" aria-label="Fotografia 2" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/38/8d/330011165.jpg')"></button><button type="button" class="th" data-i="2" aria-label="Fotografia 3" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4b/bd/29/327104122.jpg')"></button><button type="button" class="th" data-i="3" aria-label="Fotografia 4" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/c5/f8/330011105.jpg')"></button><button type="button" class="th" data-i="4" aria-label="Fotografia 5" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4c/77/ab/330011151.jpg')"></button><button type="button" class="th" data-i="5" aria-label="Fotografia 6" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/72/b1/82/327104120.jpg')"></button><button type="button" class="th" data-i="6" aria-label="Fotografia 7" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/cf/0a/52/330011161.jpg')"></button><button type="button" class="th" data-i="7" aria-label="Fotografia 8" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b2/d4/7b/330011114.jpg')"></button></div></div>
-  <div class="pad">
-    <div class="head"><h2><span class="num rn">3</span>Calçada das Necessidades</h2><p class="price">595 000 €</p></div>
-    <p class="line">T4 · 120 m² · 3.º andar sem elevador · prédio de 1937</p>
-    <h3>Porquê esta casa</h3>
-    <ul class="why"><li>Muito sol ao longo de todo o dia.</li><li>Prédio de 1937 com detalhes de época e divisões generosas.</li><li>Com obras, dá para criar a sala grande com cozinha aberta que querem, dentro do vosso máximo.</li></ul>
-    <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Muita luz</li><li class="mid"><i>≈</i>Cozinha aberta, com obras</li><li class="ok"><i>✓</i>Perto de onde vivem</li><li class="ok"><i>✓</i>Com obras, abaixo dos 800 000 €</li></ul>
-    <p class="note"><b>A ter em conta:</b> Precisa de remodelação total e tem só uma casa de banho. Vou visitá-la no sábado.</p>
-    <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>120 m² área bruta</div><div><small>Quartos</small>4</div><div><small>Casas de banho</small>1</div><div><small>Piso</small>3.º, sem elevador</div><div><small>Construção</small>1937</div><div><small>Estado</small>Para remodelar</div></div>
-</details>
-    <div class="links"><a href="https://www.idealista.pt/imovel/35148407/" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Calçada+das+Necessidades,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
-    <div class="react">
-      <p class="rq">O vosso comentário</p>
-      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
-      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
-    </div>
-  </div>
 </section><section class="step house" data-id="costa" data-name="Travessa da Costa, Estrela" hidden>
-  <div class="pcol"><div class="gal" data-photos='["img/01.jpg"]'>
-    <div class="main" role="img" aria-label="Travessa da Costa, Estrela" style="background-image:url('img/01.jpg')"></div>
-    <span class="tag ex">Uma opção diferente</span>
+  <div class="pcol"><div class="gal" data-photos='["https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/db543573-2c7e-40cc-b493-cafa41ba937f/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/c2e878d3-caef-400d-ad36-86ae7325f124/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/a317e3ee-fa06-4235-8eb2-52e93d0c31a3/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/f63cedde-5720-4da9-b6ba-4245145b090a/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/24a94d91-d79e-44b7-8865-431e18c6e832/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/d871fdfe-dfd9-49e2-802c-02910139c78b/-/resize/1400x/", "https://uploadcare.engelvoelkers.com/4876c26a-0319-436a-8a4c-c09bfe02b2af/-/resize/1400x/"]'>
+    <div class="main" role="img" aria-label="Travessa da Costa, Estrela" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></div>
+    <span class="tag">Pronta a habitar</span><button type="button" class="nv prev" aria-label="Anterior">‹</button><button type="button" class="nv next" aria-label="Seguinte">›</button><span class="cnt">1 / 8</span>
   </div>
-  </div>
+  <div class="thumbs"><button type="button" class="th" data-i="0" aria-label="Fotografia 1" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></button><button type="button" class="th" data-i="1" aria-label="Fotografia 2" style="background-image:url('https://uploadcare.engelvoelkers.com/db543573-2c7e-40cc-b493-cafa41ba937f/-/resize/1400x/')"></button><button type="button" class="th" data-i="2" aria-label="Fotografia 3" style="background-image:url('https://uploadcare.engelvoelkers.com/c2e878d3-caef-400d-ad36-86ae7325f124/-/resize/1400x/')"></button><button type="button" class="th" data-i="3" aria-label="Fotografia 4" style="background-image:url('https://uploadcare.engelvoelkers.com/a317e3ee-fa06-4235-8eb2-52e93d0c31a3/-/resize/1400x/')"></button><button type="button" class="th" data-i="4" aria-label="Fotografia 5" style="background-image:url('https://uploadcare.engelvoelkers.com/f63cedde-5720-4da9-b6ba-4245145b090a/-/resize/1400x/')"></button><button type="button" class="th" data-i="5" aria-label="Fotografia 6" style="background-image:url('https://uploadcare.engelvoelkers.com/24a94d91-d79e-44b7-8865-431e18c6e832/-/resize/1400x/')"></button><button type="button" class="th" data-i="6" aria-label="Fotografia 7" style="background-image:url('https://uploadcare.engelvoelkers.com/d871fdfe-dfd9-49e2-802c-02910139c78b/-/resize/1400x/')"></button><button type="button" class="th" data-i="7" aria-label="Fotografia 8" style="background-image:url('https://uploadcare.engelvoelkers.com/4876c26a-0319-436a-8a4c-c09bfe02b2af/-/resize/1400x/')"></button></div></div>
   <div class="pad">
-    <div class="head"><h2><span class="num">4</span>Travessa da Costa, Estrela</h2><p class="price">750 000 €</p></div>
+    <div class="head"><h2><span class="num">3</span>Travessa da Costa, Estrela</h2><p class="price">750 000 €</p></div>
     <p class="line">T2 · 106 m² · 3.º andar com elevador · terraço e garagem</p>
     <h3>Porquê esta casa</h3>
     <ul class="why"><li>Mostro-vos esta casa para perceber o que pesa mais para vocês.</li><li>Terraço privativo de 20 m², garagem e elevador, num prédio todo reabilitado em 2023.</li><li>Sol a sul e a poente, com luz ao longo do dia.</li></ul>
@@ -464,13 +449,35 @@ textarea[rows="1"]{min-height:42px}
       <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
     </div>
   </div>
+</section><section class="step house" data-id="necessidades" data-name="Calçada das Necessidades" hidden>
+  <div class="pcol"><div class="gal" data-photos='["https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/38/8d/330011165.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4b/bd/29/327104122.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/c5/f8/330011105.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4c/77/ab/330011151.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/72/b1/82/327104120.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/cf/0a/52/330011161.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b2/d4/7b/330011114.jpg"]'>
+    <div class="main" role="img" aria-label="Calçada das Necessidades" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg')"></div>
+    <span class="tag rn">Para remodelar</span><button type="button" class="nv prev" aria-label="Anterior">‹</button><button type="button" class="nv next" aria-label="Seguinte">›</button><span class="cnt">1 / 8</span>
+  </div>
+  <div class="thumbs"><button type="button" class="th" data-i="0" aria-label="Fotografia 1" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ee/90/58/330011163.jpg')"></button><button type="button" class="th" data-i="1" aria-label="Fotografia 2" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/38/8d/330011165.jpg')"></button><button type="button" class="th" data-i="2" aria-label="Fotografia 3" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4b/bd/29/327104122.jpg')"></button><button type="button" class="th" data-i="3" aria-label="Fotografia 4" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/c5/f8/330011105.jpg')"></button><button type="button" class="th" data-i="4" aria-label="Fotografia 5" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4c/77/ab/330011151.jpg')"></button><button type="button" class="th" data-i="5" aria-label="Fotografia 6" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/72/b1/82/327104120.jpg')"></button><button type="button" class="th" data-i="6" aria-label="Fotografia 7" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/cf/0a/52/330011161.jpg')"></button><button type="button" class="th" data-i="7" aria-label="Fotografia 8" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b2/d4/7b/330011114.jpg')"></button></div></div>
+  <div class="pad">
+    <div class="head"><h2><span class="num rn">4</span>Calçada das Necessidades</h2><p class="price">595 000 €</p></div>
+    <p class="line">T4 · 120 m² · 3.º andar sem elevador · prédio de 1937</p>
+    <h3>Porquê esta casa</h3>
+    <ul class="why"><li>Muito sol ao longo de todo o dia.</li><li>Prédio de 1937 com detalhes de época e divisões generosas.</li><li>Com obras, dá para criar a sala grande com cozinha aberta que querem, dentro do vosso máximo.</li></ul>
+    <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Muita luz</li><li class="mid"><i>≈</i>Cozinha aberta, com obras</li><li class="ok"><i>✓</i>Perto de onde vivem</li><li class="ok"><i>✓</i>Com obras, abaixo dos 800 000 €</li></ul>
+    <p class="note"><b>A ter em conta:</b> Precisa de remodelação total e tem só uma casa de banho. Vou visitá-la no sábado.</p>
+    <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>120 m² área bruta</div><div><small>Quartos</small>4</div><div><small>Casas de banho</small>1</div><div><small>Piso</small>3.º, sem elevador</div><div><small>Construção</small>1937</div><div><small>Estado</small>Para remodelar</div></div>
+</details>
+    <div class="links"><a href="https://www.idealista.pt/imovel/35148407/" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Calçada+das+Necessidades,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
+    <div class="react">
+      <p class="rq">O vosso comentário</p>
+      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
+    </div>
+  </div>
 </section>
 
   <section class="step final" hidden data-label="Enviar">
     <button type="button" class="backlink" id="backHouses">← Voltar às casas</button>
     <h1 style="font-size:26px;margin-top:10px">Último passo</h1>
     <div class="box"><h3>A vossa opinião</h3><ul class="sum" id="sum"></ul>
-      <h3>Quais querem visitar?</h3><div class="vis"><label><input type="checkbox" value="Santos-o-Velho, Madragoa"><span>1. Santos-o-Velho, Madragoa</span></label><label><input type="checkbox" value="Rua do Olival, Lapa"><span>2. Rua do Olival, Lapa</span></label><label><input type="checkbox" value="Calçada das Necessidades"><span>3. Calçada das Necessidades</span></label><label><input type="checkbox" value="Travessa da Costa, Estrela"><span>4. Travessa da Costa, Estrela</span></label></div>
+      <h3>Quais querem visitar?</h3><div class="vis"><label><input type="checkbox" value="Santos-o-Velho, Madragoa"><span>1. Santos-o-Velho, Madragoa</span></label><label><input type="checkbox" value="Rua do Olival, Lapa"><span>2. Rua do Olival, Lapa</span></label><label><input type="checkbox" value="Travessa da Costa, Estrela"><span>3. Travessa da Costa, Estrela</span></label><label><input type="checkbox" value="Calçada das Necessidades"><span>4. Calçada das Necessidades</span></label></div>
       <h3 style="margin-top:14px">Quando podem visitar?</h3>
       <div class="btns" id="wBtns"><button type="button" data-v="Sábado 14 de novembro">Sábado 14 nov.</button><button type="button" data-v="A partir de 23 de novembro">A partir de 23 nov.</button><button type="button" data-v="Outra data">Outra data</button></div>
       <h3 style="margin-top:14px">Mais alguma coisa?</h3>
@@ -498,7 +505,7 @@ textarea[rows="1"]{min-height:42px}
 </form>
 <script>
 (function(){
-const CLIENT="Ant\u00f3nio e Mafalda", KEY="sel-am-r1e";
+const CLIENT="Ant\u00f3nio e Mafalda", KEY="sel-am-r1f";
 const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
 let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementById('midlbl');
 function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=>s.hidden=k!==cur);
