@@ -377,7 +377,7 @@ open(f'{OUT}/robots.txt', 'w').write(robots)
 
 # Google Search Console verification file
 open(f'{OUT}/google8c8b8ec375dc62f8.html', 'w').write('google-site-verification: google8c8b8ec375dc62f8.html')
-open(f'{OUT}/_headers', 'w').write('/*\n  X-Frame-Options: SAMEORIGIN\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Strict-Transport-Security: max-age=31536000\n/img/*\n  Cache-Control: public, max-age=31536000, immutable\n/*.css\n  Cache-Control: public, max-age=86400\n/*.js\n  Cache-Control: public, max-age=86400\n')
+open(f'{OUT}/_headers', 'w').write('/*\n  X-Frame-Options: SAMEORIGIN\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Strict-Transport-Security: max-age=31536000\n/img/*\n  Cache-Control: public, max-age=31536000, immutable\n/*.css\n  Cache-Control: public, max-age=86400\n/*.js\n  Cache-Control: public, max-age=86400\n/s/*\n  X-Robots-Tag: noindex, nofollow\n')
 
 print('built', sorted(os.listdir(OUT)))
 for root, _, files in os.walk(OUT):
