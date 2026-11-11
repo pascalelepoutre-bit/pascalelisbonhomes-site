@@ -65,7 +65,7 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .rbar button[data-v="Adoro"][aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}.rbar button[data-v="Talvez"][aria-pressed="true"]{background:var(--sun);border-color:var(--gold)}.rbar button[data-v="Não é para nós"][aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 .bar .back{min-width:44px}.bar .go.arrow{padding:13px 16px}
 .progress{height:4px;background:var(--line);border-radius:4px;margin:12px 0 0;overflow:hidden}.progress i{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
-@media (max-width:759px){.intro-grid .mapbox{order:-1}}
+@media (max-width:899px){.intro-left,.intro-right{display:contents}.cta-row{order:4}.intro-grid{display:flex;flex-direction:column;gap:14px}.i-txt{order:1}.intro-grid .mapbox{order:2}.intro-grid .prof{order:3}.intro h1{margin:0}.intro .lead{margin:0}}
 
 .react{border-top:1px solid var(--line);padding-top:14px}.rq{margin:0 0 8px;font-weight:500}
 .final .vis label{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:#fff;cursor:pointer}
@@ -89,7 +89,7 @@ footer{margin-top:26px;font-size:12px;color:var(--muted)}
 textarea[rows="1"]{min-height:42px}
 @media (min-width:900px){
  .wrap{max-width:1120px}
- .intro h1{margin-top:10px;font-size:30px}.intro .lead{margin-bottom:12px}
+ .intro h1{margin:8px 0 8px;font-size:30px}.intro .lead{margin-bottom:12px}
  .intro .box{padding:14px 16px}.intro .box ul{margin-bottom:8px}.intro .box li{margin:1px 0}
  .intro .mapa{height:290px}
  .intro .box.prof ul{columns:1}
@@ -100,7 +100,10 @@ textarea[rows="1"]{min-height:42px}
  .pcol{display:flex;flex-direction:column;background:var(--cream)}.pcol .gal{flex:1;display:flex}.pcol .gal .main{flex:1;height:auto;min-height:440px}
  .pcol .thumbs{padding:8px 10px 10px}
  .pad{padding:18px 22px 16px}.line{margin-bottom:10px}
- .intro-grid{grid-template-columns:1fr 1.15fr}
+ .intro-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;align-items:stretch}
+ .intro-right{display:flex;flex-direction:column;align-self:stretch!important}.intro-right .cta-row{margin-top:auto!important;padding-top:14px}.intro-right .mapbox{flex:1;display:flex;flex-direction:column}.intro-right .mapa{height:auto!important;aspect-ratio:620/440}.intro-right .leg{margin-top:auto;padding-top:12px}
+ .intro-left .box{margin-top:14px}
+ .intro .mapbox{margin-top:20px}.intro-right .cta-row{margin-top:14px}
 }
 @media (max-width:519px){.rbar button{padding:10px 11px;font-size:13.5px}.bar .back{font-size:0!important;padding:10px 6px!important}.bar .back::before{content:"←";font-size:22px;color:var(--ink)}.bar .go.arrow{font-size:20px!important;padding:9px 18px!important;letter-spacing:0!important}.bar-in{gap:8px}}
 /* keep the bar clear of the hosting badge (Netlify) when it is present */
@@ -114,15 +117,17 @@ textarea[rows="1"]{min-height:42px}
   <div class="progress"><i id="prog"></i></div>
 
   <section class="step intro" data-label="Início">
-    <p class="eyebrow" style="margin-top:20px">Seleção 1 · novembro 2026</p>
-    <h1>António e Mafalda, aqui está a vossa primeira seleção</h1>
-    <p class="lead">Escolhi quatro casas perto de onde vivem: três prontas a habitar e uma para remodelar. Digam-me o que gostam e o que não gostam, e a próxima seleção fica ainda melhor.</p>
     <div class="intro-grid">
-      <div class="box"><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul>
-        <p class="rq">Este perfil está certo?</p>
-        <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
-        <textarea id="pTxt" placeholder="O que mudariam? Por exemplo: o elevador é essencial."></textarea></div>
-      <div class="box mapbox"><h3>As casas no mapa</h3><svg class="mapa" preserveAspectRatio="xMidYMid slice" viewBox="270 140 620 440" role="img" aria-label="Mapa com as casas e a rua onde vivem agora">
+      <div class="intro-left">
+        <p class="eyebrow i-txt" style="margin-top:20px">Seleção 1 · novembro 2026</p>
+        <h1 class="i-txt">António e Mafalda, aqui está a vossa primeira seleção</h1>
+        <p class="lead i-txt">Escolhi quatro casas perto de onde vivem: três prontas a habitar e uma para remodelar. Digam-me o que gostam e o que não gostam, e a próxima seleção fica ainda melhor.</p>
+        <div class="box prof"><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul>
+          <p class="rq">Este perfil está certo?</p>
+          <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
+          <textarea id="pTxt" placeholder="O que mudariam? Por exemplo: o elevador é essencial."></textarea></div>
+      </div>
+      <div class="intro-right"><div class="box mapbox"><h3>As casas no mapa</h3><svg class="mapa" preserveAspectRatio="xMidYMid slice" viewBox="270 140 620 440" role="img" aria-label="Mapa com as casas e a rua onde vivem agora">
 <defs><clipPath id="mclip"><rect x="270" y="140" width="620" height="440" rx="14"/></clipPath></defs><g clip-path="url(#mclip)">
 <rect x="270" y="140" width="620" height="440" class="m-land"/>
 <polygon class="m-water" points="80,713 100,710 134,700 106,695 98,663 180,626 188,634 179,670 205,728 587,640 584,624 609,606 608,598 779,559 780,553 714,561 651,566 641,557 628,556 628,544 645,544 650,537 712,539 717,506 762,496 764,487 775,482 774,470 812,461 820,497 847,490 840,462 846,454 1022,413 1092,439 1100,1000 0,1000"/>
@@ -379,8 +384,8 @@ textarea[rows="1"]{min-height:42px}
 <g class="m-pin"><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">3</text></g>
 <g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">4</text></g>
 </g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="">3</b><span>Travessa da Costa, Estrela<small>cerca de 8 min a pé de onde vivem</small></span></li><li><b class="rn">4</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
+      <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div></div>
     </div>
-    <div class="cta-row"><button type="button" class="cta" id="start">Ver as casas →</button></div>
   </section>
 
   <section class="step house" data-id="santos" data-name="Santos-o-Velho, Madragoa" hidden>
