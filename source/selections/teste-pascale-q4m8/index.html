@@ -1,320 +1,88 @@
-<!doctype html><html lang="pt"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Seleção Pascale teste · Pascale Lepoutre</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/favicon.svg"></head><body>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&display=swap">
+<!doctype html><html lang="pt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Seleção Pascale teste · Pascale Lepoutre</title>
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&family=Inter:wght@300;400;500&display=swap">
 <style>
-[hidden]{display:none!important}
-/* Layout: one calm column, a personal note, then three property cards stacked, each with its own soft tint, and a feedback bar at the end. Same palette and type as pascalelisbonhomes.com */
-:root{
-  --bg:#fffdf9; --cream:#fcf3e3; --sand:#f2e0c2; --sun:#f7d98b; --peach:#fbe6d4;
-  --ink:#2a2420; --muted:#6f655a; --line:#efe3d0; --gold:#b08429; --red:#c8102e; --ok:#2e7d4f; --card:#ffffff;
-  --t1:#f3e7d3; --t2:#e7efe6; --t3:#f6e3d6;
-  --display:"Syne", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  --body:"Inter", -apple-system, "Segoe UI", Arial, sans-serif;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#15120f; --cream:#1e1a15; --sand:#2e271e; --sun:#6b5520; --peach:#33261d;
-  --ink:#f4ede3; --muted:#b5aa98; --line:#352d24; --gold:#d6ab52; --ok:#6cc08b; --card:#1c1814;
-  --t1:#2a2219; --t2:#1d241c; --t3:#2b1f19; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#15120f; --cream:#1e1a15; --sand:#2e271e; --sun:#6b5520; --peach:#33261d;
-  --ink:#f4ede3; --muted:#b5aa98; --line:#352d24; --gold:#d6ab52; --ok:#6cc08b; --card:#1c1814;
-  --t1:#2a2219; --t2:#1d241c; --t3:#2b1f19; color-scheme:dark}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;font-weight:300}
-.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px;display:grid;gap:40px}
-.brand{font-family:var(--display);letter-spacing:.28em;text-transform:uppercase;font-size:13px;font-weight:500}
-.brand small{display:block;letter-spacing:.18em;color:var(--muted);font-family:var(--body);font-size:11px;margin-top:6px}
-header{display:grid;gap:22px;border-bottom:1px solid var(--line);padding-bottom:32px}
-.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500}
-h1{font-family:var(--display);font-weight:500;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0;text-wrap:balance}
-.note{color:var(--muted);max-width:60ch;margin:0}
-.crit{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;background:var(--cream)}
-.prop{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid}
-.photo{aspect-ratio:16/9;max-width:100%;display:grid;place-items:end start;padding:18px 20px;position:relative}
-.photo span{font-size:12px;color:var(--muted);letter-spacing:.06em}
-.photo::after{content:"";position:absolute;inset:18px;border:1px solid var(--gold);opacity:.35;border-radius:10px;pointer-events:none}
-.p1 .photo{background:var(--t1)} .p2 .photo{background:var(--t2)} .p3 .photo{background:var(--t3)}
-.body{padding:24px 22px 26px;display:grid;gap:16px}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0;text-wrap:balance}
-.price{font-family:var(--display);color:var(--gold);font-size:20px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.facts div{background:var(--card);padding:10px 12px;display:grid;gap:2px;min-width:0}
-.facts b{font-weight:500;font-size:15px;font-variant-numeric:tabular-nums}
-.facts small{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
-.mine{border-left:2px solid var(--sun);padding-left:14px;margin:0;color:var(--ink)}
-.mine em{display:block;font-style:normal;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.watch{font-size:14px;color:var(--muted);margin:0}
-.more{justify-self:start;display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
-.more:hover{color:var(--gold)}
-.more:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.react{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px}
-.react p{margin:0;font-size:13px;color:var(--muted)}
-.btns{display:flex;gap:8px;flex-wrap:wrap}
-.btns button{font:inherit;font-size:14px;font-weight:400;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer}
-.btns button[aria-pressed="true"]{background:var(--sun);border-color:var(--sun);color:#2a2420}
-.btns button:focus-visible,textarea:focus-visible,.send:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-textarea{font:inherit;font-size:14px;width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);color:var(--ink);resize:vertical;min-height:44px}
-.brief{border:1px solid var(--line);border-radius:18px;padding:24px 22px;display:grid;gap:16px;background:var(--bg)}
-.brief h3{font-family:var(--display);font-weight:500;font-size:20px;margin:0;text-wrap:balance}
-.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.cols b{font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.cols ul{margin:8px 0 0;padding-left:18px;display:grid;gap:4px;font-size:15px}
-.p4 .photo{background:var(--peach)}
-.photo.has{background-size:cover!important;background-position:center!important}.photo.has>span:not(.tag){display:none}.photo.has::after{display:none}
-.surprise{border-color:var(--gold)}
-.fits{display:grid;gap:10px}
-.fit small{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
-.fit ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
-.fit li{display:inline-flex;align-items:center;gap:6px;font-size:13px;line-height:1.3;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
-.fit li i{font-style:normal;font-weight:600;font-size:12px}
-.fit li.y{border-color:var(--ok)} .fit li.y i{color:var(--ok)}
-.fit li.p i{color:var(--gold)}
-.fit li.n{color:var(--muted);background:transparent} .fit li.n i{color:var(--red)}
-.tag.ev{background:#fff;padding:7px 14px;border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,.15);line-height:0}.tag.ev .evlogo{height:14px;width:auto;display:block}
-.tag{position:absolute;top:28px;left:30px;background:var(--sun);color:#2a2420;font-size:12px;letter-spacing:.08em;padding:5px 12px;border-radius:999px;font-weight:500}
-@media (max-width:560px){.cols{grid-template-columns:1fr}}
-.final{background:var(--cream);border-radius:18px;padding:26px 22px;display:grid;gap:14px}
-.final h3{font-family:var(--display);font-weight:500;margin:0;font-size:20px}
-.send{display:inline-flex;justify-self:start;align-items:center;gap:10px;background:var(--sun);color:#2a2420;text-decoration:none;font-family:var(--display);letter-spacing:.16em;text-transform:uppercase;font-size:13px;padding:14px 22px;border-radius:999px;font-weight:500}
-.preview{font-size:13px;color:var(--muted);white-space:pre-wrap;background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:12px 14px;margin:0}
-footer{font-size:12px;color:var(--muted);text-align:left;border-top:1px solid var(--line);padding-top:20px}
-@media (max-width:560px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--sun);color:#2a2420;font-size:14px;margin-right:10px;vertical-align:middle;font-family:var(--body)}
-
-.wz-prog{display:grid;gap:8px}.wz-prog p{margin:0;font-family:var(--display);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.wz-bar{height:6px;border-radius:99px;background:var(--line);overflow:hidden}.wz-bar i{display:block;height:100%;background:var(--sun);border-radius:99px;transition:width .35s}
-.wz-nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.wz-back{background:none;border:0;font:500 13px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:10px 4px}
-.wz-next{background:var(--sun);border:0;color:#2a2420;font-family:var(--display);letter-spacing:.16em;text-transform:uppercase;font-size:13px;padding:14px 26px;border-radius:999px;font-weight:500;cursor:pointer;margin-left:auto}
-.wz-next:focus-visible,.wz-back:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-header.compact .eyebrow,header.compact h1,header.compact .note{display:none}
-.sum{display:grid;gap:10px;margin:0;padding:0;list-style:none}
-.sum li{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:8px}
-.sum .th{width:64px;height:48px;border-radius:10px;background:var(--cream) center/cover no-repeat}
-.sum b{font-weight:500;font-size:14px;display:block}.sum small{color:var(--muted);font-size:12px}
-.sum .r{font-size:12px;border-radius:999px;padding:4px 10px;background:var(--line);white-space:nowrap}
-.sum .r.Adoro{background:var(--sun)}.sum .r.Talvez{background:var(--cream)}
-.sum button{all:unset;cursor:pointer;color:var(--gold);font-size:12px;text-decoration:underline}
-
-/* compact v2 */
-.facts{display:flex!important;flex-wrap:wrap;gap:2px 16px;background:none!important;border:0!important;border-radius:0!important}
-.facts div{background:none!important;padding:0!important;display:flex!important;gap:6px;align-items:baseline}
-.facts b{font-size:14px}
-.photo{aspect-ratio:2/1!important}
-.fits{gap:6px!important}
-.fit{display:flex;gap:8px;align-items:baseline}
-.fit small{flex:0 0 auto;margin:0!important;width:72px}
-.fit li{padding:3px 9px!important;font-size:12.5px!important}
-.react textarea{display:block;min-height:0;height:auto}
-.body{padding:16px 18px 18px!important;gap:12px!important}
-.prop h2{font-size:20px!important;line-height:1.2}
-.price{font-size:18px!important}
-.mine{font-size:15px;line-height:1.5}
-.mine em{display:none!important}
-.watch{font-size:13.5px!important}
-.react{padding-top:12px!important;gap:8px!important}
-.react p{display:none}
-.more{font-size:12px!important}
-
-
-/* layout v3: smaller photo, airier text */
-.photo{aspect-ratio:5/2!important}
-.body{gap:14px!important}
-.mine{line-height:1.65!important}
-@media (min-width:700px){
- .prop{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
- .prop .photo{aspect-ratio:auto!important;height:100%;min-height:260px}
- .body{padding:22px 24px!important}
-}
-.vis{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
-.vis button{font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
-.vis button[aria-pressed="true"]{border-color:var(--ok);background:var(--ok);color:#fff}
-.vis button:disabled{opacity:.4;cursor:default}
-.vis-hint{margin:0;font-size:13px;color:var(--muted)}
-
-/* tighter v4 */
-.wrap{padding-block:20px 40px!important;gap:20px!important}
-header.compact{padding-bottom:12px!important;gap:0!important}
-header.compact .brand{font-size:11px}
-header.compact .brand small{display:inline;margin:0 0 0 10px;font-size:10px}
-@media (min-width:700px){.prop{grid-template-columns:minmax(0,4fr) minmax(0,7fr)!important}}
-
-/* colours v5 */
-.btns button[data-v="Adoro"]{border-color:var(--ok);color:var(--ok);background:rgba(46,125,79,.10)}
-.btns button[data-v="Talvez"]{border-color:#d9a400;color:#8a6a00;background:rgba(245,197,24,.16)}
-.btns button[data-v="Não é para nós"]{border-color:var(--red);color:var(--red);background:rgba(200,16,46,.08)}
-.btns button[data-v="Adoro"][aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
-.btns button[data-v="Talvez"][aria-pressed="true"]{background:#f5c518;border-color:#f5c518;color:#2a2420}
-.btns button[data-v="Não é para nós"][aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
-.sum .r.Adoro{background:var(--ok)!important;color:#fff}
-.sum .r.Talvez{background:#f5c518!important;color:#2a2420}
-.sum .r.Não{background:var(--red)!important;color:#fff}
-.more{justify-self:start;display:inline-flex!important;align-items:center;gap:8px;border:1px solid var(--sun)!important;border-radius:999px;padding:9px 18px!important;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;color:#2a2420!important;background:var(--sun);text-decoration:none}
-.more:hover{filter:brightness(.95)}
-.more::after{content:"→"}
-
-/* map v6 */
-:root{--mland:#efe6d6;--mroad:#ffffff;--mmaj:#f6dfa8;--water:#cfe1ea}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--mland:#241f19;--mroad:#3b3229;--mmaj:#5a4a2a;--water:#1d2f38}}
-:root[data-theme="dark"]{--mland:#241f19;--mroad:#3b3229;--mmaj:#5a4a2a;--water:#1d2f38}
-.mapa-box{display:grid;gap:10px;margin-top:4px}
-.mapa-t{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:500}
+:root{--bg:#fffdf9;--cream:#fcf3e3;--sand:#f2e0c2;--sun:#f7d98b;--ink:#2a2420;--muted:#6f655a;--line:#efe3d0;--gold:#b08429;--ok:#2e7d4f;--card:#fff;--red:#c8102e;
+--mland:#efe6d6;--mroad:#fff;--mmaj:#f6dfa8;--water:#d3e4ea;--display:"Syne","Avenir Next",Arial,sans-serif;--body:"Inter",-apple-system,"Segoe UI",Arial,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.55 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left)) 120px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.brand{font:500 12px var(--display);letter-spacing:.24em;text-transform:uppercase}.brand small{display:block;font:400 10px var(--body);letter-spacing:.16em;color:var(--muted);margin-top:3px}
+.topart{height:38px;width:auto;fill:none;stroke:var(--ink);stroke-width:2}.topart .g{stroke:var(--gold)}
+h1{font:500 clamp(26px,5vw,34px)/1.15 var(--display);margin:22px 0 8px;text-wrap:balance}
+.eyebrow{font:500 11px var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.lead{color:var(--muted);margin:0 0 18px;max-width:60ch}
+.intro-grid{display:grid;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.box h3,.pad h3{font:500 11px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.box ul{margin:0 0 12px;padding-left:18px}.box li{margin:3px 0}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btns button{font:400 15px var(--body);padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--cream);color:var(--ink);cursor:pointer}
+.btns button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.b-love[aria-pressed="true"]{background:var(--ok)!important;border-color:var(--ok)!important}
+.b-no[aria-pressed="true"]{background:var(--red)!important;border-color:var(--red)!important}
+.b-maybe[aria-pressed="true"]{background:var(--sun)!important;border-color:var(--gold)!important;color:var(--ink)!important}
+textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid var(--sand);border-radius:12px;min-height:56px;resize:vertical;background:#fff}
 .mapa{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
-.m-land{fill:var(--mland)} .m-water{fill:var(--water)}
-.m-r,.m-t,.m-m{fill:none;stroke-linecap:round;stroke-linejoin:round}
-.m-r{stroke:var(--mroad);stroke-width:2.6} .m-t{stroke:var(--mroad);stroke-width:4.5} .m-m{stroke:var(--mmaj);stroke-width:6.5}
-.m-area{font:600 15px var(--body);letter-spacing:.3em;fill:var(--muted);opacity:.55}
-.m-water-l{font:italic 14px var(--body);fill:var(--muted)}
-.m-road{font:10px var(--body);fill:var(--muted)}
-.m-pin circle{fill:var(--ink);stroke:var(--card);stroke-width:3} .m-pin text{font:600 21px var(--body);fill:var(--bg)}
-.m-pin.ev circle{fill:#E60000} .m-pin.ev text{fill:#fff}
-.m-home circle{fill:var(--ok);stroke:var(--card);stroke-width:3} .m-home path{fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round}
-.m-home-l{font:600 15px var(--body);fill:var(--ok)}
-.mapa-leg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px 16px;font-size:14px}
-.mapa-leg li{display:grid;grid-template-columns:22px 1fr;gap:0 8px;align-items:center}.mapa-leg span{grid-column:2}
-.mapa-leg b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:12px;flex:0 0 auto}
-.mapa-leg li.ev b{background:#E60000;color:#fff}
-.mapa-leg span{color:var(--muted);font-size:12.5px}
-.maplink{justify-self:start;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
-
-/* groups v7 */
-.grp{justify-self:start;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--cream);color:var(--muted);border:1px solid var(--line)}
-.grp.rn{background:rgba(176,132,41,.14);color:var(--gold);border-color:rgba(176,132,41,.35)}
-.m-pin.rn circle{fill:var(--gold)} .m-pin.rn text{fill:#fff}
-.mapa-legs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 24px}
-.mapa-legs small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.mapa-legs .mapa-leg{grid-template-columns:1fr}
-.mapa-leg li.rn b{background:var(--gold);color:#fff}
-.price s.old{font-size:.7em;color:var(--muted);margin-right:6px}
-
-.gal{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch}
-.gthumb{flex:0 0 110px;height:78px;border-radius:10px;border:1px solid var(--line);background:center/cover no-repeat;scroll-snap-align:start;cursor:pointer;position:relative;padding:0}
-.gthumb span{position:absolute;inset:auto 0 0 0;font:11px var(--body);color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55));padding:10px 6px 4px;border-radius:0 0 10px 10px;text-align:left;line-height:1.2}
-.gthumb[aria-pressed="true"]{outline:2px solid var(--gold);outline-offset:1px}
-
-.gthumb{flex:0 0 150px!important;height:105px!important}
-.lb{position:fixed;inset:0;z-index:50;background:rgba(10,8,6,.94);display:grid;grid-template-rows:auto 1fr auto;padding:max(12px,env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
-.lb[hidden]{display:none!important}
-.lb-top{display:flex;justify-content:space-between;align-items:center;color:#fff;font:14px var(--body)}
-.lb-x,.lb-nav{background:rgba(255,255,255,.14);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer;display:grid;place-items:center}
-.lb-stage{display:grid;place-items:center;min-height:0;position:relative}
-.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
-.lb-nav{position:absolute;top:50%;transform:translateY(-50%)}
-.lb-prev{left:4px}.lb-next{right:4px}
-.lb-cap{color:#f3ece2;text-align:center;font:15px var(--body);padding-top:10px}
-.prop .photo.has{cursor:zoom-in}
-
-/* photos v8: show the whole picture, less cropping */
-.photo{aspect-ratio:3/2!important}
-@media (min-width:700px){.prop .photo{aspect-ratio:3/2!important;height:auto!important;min-height:0!important;align-self:start;margin:14px 0 14px 14px;border-radius:12px}}
-@media (min-width:700px){.prop{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}}
-.lb-nav[hidden]{display:none!important}
-.prop.p5 .photo.has{background-position:right center!important}
-
-/* layout v9: photo full width on top, info below, on every screen */
-@media (min-width:700px){.prop{grid-template-columns:1fr!important}.prop .photo{aspect-ratio:16/9!important;height:auto!important;min-height:0!important;margin:0!important;border-radius:0!important;align-self:stretch}.body{padding:22px 26px!important}}
-
-/* compact v10: shorter main photo so a home fits on one screen */
-.photo{aspect-ratio:2/1!important}
-@media (min-width:700px){.prop .photo{aspect-ratio:12/5!important}}
-.gthumb{flex:0 0 120px!important;height:80px!important}
-
-/* compact v11 */
-@media (min-width:700px){.prop .photo{aspect-ratio:3/1!important}}
-.photo{aspect-ratio:12/5!important}
-.body{gap:9px!important;padding:12px 16px 14px!important}
-.grp{font-size:10px!important;padding:2px 8px!important}
-.facts{gap:0 14px!important}.facts b{font-size:13.5px!important}.facts small{font-size:10px!important}
-.fit li{padding:2px 8px!important;font-size:12px!important}.fits{gap:4px!important}.fit ul{gap:4px!important}
-.mine{font-size:14px!important;line-height:1.5!important;padding-left:10px!important}
-.watch{font-size:12.5px!important;line-height:1.4}
-.more,.maplink{display:inline-flex!important;margin-right:10px}
-.more{padding:6px 14px!important}
-.react{padding-top:8px!important;gap:6px!important}
-.btns button{padding:6px 14px!important;font-size:13.5px!important}
-.react textarea{min-height:0!important;height:44px!important;font-size:13px!important;padding:8px 10px!important}
-.wrap{gap:12px!important;padding-block:12px 24px!important}
-header.compact{padding-bottom:8px!important}
-.prog{gap:4px!important}
-.gthumb{height:64px!important;flex-basis:96px!important}
-.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
-
-.grp-on{position:absolute;left:12px;bottom:10px;z-index:2;font:500 10px var(--body);letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.92);color:#5a4f44}
-.grp-on.rn{background:rgba(176,132,41,.95);color:#fff}
-.photo.has>span.grp-on{display:inline-block!important}
-@media (min-width:700px){.prop .photo{aspect-ratio:7/2!important}}
-.gthumb span{display:none}
-@media (max-width:699px){.top{flex-wrap:nowrap!important;align-items:center!important}.prop h2{font-size:17px!important}.price{font-size:15px!important;text-align:right}.price s.old{display:block}.mine{font-size:13.5px!important}}
-
-/* v12: title above photo, boxed facts */
-.prop>.top{padding:12px 16px 10px;margin:0}
-.facts{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px!important;background:var(--line)!important;border:1px solid var(--line)!important;border-radius:10px!important;overflow:hidden}
-.facts div{background:var(--card)!important;padding:6px 10px!important;display:grid!important;gap:1px!important;align-content:start}
-.facts small{font-size:9.5px!important;letter-spacing:.1em}
-.facts b{font-size:13.5px!important;line-height:1.25}
-@media (min-width:700px){.facts{grid-template-columns:repeat(6,minmax(0,1fr))}}
-.prop .photo{margin:0!important;border-radius:0!important}
-
-.zoom-hint{position:absolute;top:10px;right:10px;z-index:2;display:inline-flex!important;align-items:center;gap:6px;font:500 11px var(--body);letter-spacing:.06em;padding:5px 10px;border-radius:999px;background:rgba(20,16,12,.62);color:#fff!important;pointer-events:none}
-.zoom-hint svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2}
-
-.photo-link{position:absolute;inset:0;z-index:1}
-.fit li.y{background:rgba(46,125,79,.09)!important}
-.react textarea{border:1.5px solid var(--gold)!important;background:var(--card)!important;height:52px!important;font-size:13.5px!important;color:var(--ink)}
-.react textarea::placeholder{color:#8a7d6c;opacity:1}
-.why-l{font-size:12px;color:var(--ink);font-weight:500;margin:2px 0 -2px}
-
-/* polish v15 */
-.body{padding:16px 20px 20px!important;gap:12px!important}
-.prop>.top{padding:14px 20px 12px!important}
-.watch{background:var(--cream);border-radius:10px;padding:8px 12px;color:var(--ink)!important;display:flex;gap:8px;align-items:flex-start}
-.watch::before{content:"!";flex:0 0 18px;height:18px;border-radius:50%;background:var(--gold);color:#fff;font:600 11px/18px var(--body);text-align:center;margin-top:1px}
-.mine{border-left-color:var(--gold)!important}
-.react{background:var(--cream);border:0!important;border-radius:14px;padding:14px!important;margin-top:4px}
-.react::before{content:"A vossa opinião";font:500 11px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.why-l{margin-top:4px!important}
-
-/* facts v16: filled boxes with icons */
-.facts{background:transparent!important;border:0!important;gap:6px!important;border-radius:0!important;overflow:visible!important}
-.facts div{background:var(--cream)!important;border-radius:10px;padding:8px 10px!important;grid-template-columns:22px 1fr;column-gap:8px!important;align-items:center}
-.facts div svg{grid-row:1 / span 2;width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.facts small{color:var(--muted)!important}
-.facts b{font-weight:600!important}
-@media (max-width:699px){.facts div{grid-template-columns:1fr!important;padding:7px 9px!important}.facts div svg{display:none}}
-
-.topart{width:100%;max-width:240px;height:auto;display:block;margin:2px 0 -4px}
-.topart *{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.topart .g{stroke:var(--gold)}
-</style>
-
+.m-land{fill:var(--mland)}.m-water{fill:var(--water)}
+.m-r,.m-t,.m-m{fill:none;stroke-linecap:round;stroke-linejoin:round}.m-r{stroke:var(--mroad);stroke-width:2.6}.m-t{stroke:var(--mroad);stroke-width:4.5}.m-m{stroke:var(--mmaj);stroke-width:6.5}
+.m-area{font:600 15px var(--body);letter-spacing:.3em;fill:var(--muted);opacity:.55}.m-water-l{font:italic 14px var(--body);fill:var(--muted)}.m-road{font:10px var(--body);fill:var(--muted)}
+.m-pin circle{fill:var(--ink);stroke:#fff;stroke-width:3}.m-pin text{font:600 21px var(--body);fill:#fff}.m-pin.rn circle{fill:var(--gold)}
+.m-home circle{fill:var(--ok);stroke:#fff;stroke-width:3}.m-home path{fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round}.m-home-l{font:600 15px var(--body);fill:var(--ok)}
+.leg{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}.leg li{display:flex;gap:10px;align-items:flex-start}
+.leg b,.num{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:600 13px var(--body)}.leg b.rn,.num.rn{background:var(--gold)}
+.leg small{display:block;color:var(--muted);font-size:12.5px}
+.house{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:14px}
+.gal{position:relative}.gal .main{height:clamp(220px,52vw,380px);background:center 55%/cover no-repeat var(--sand)}
+.tag{position:absolute;left:12px;bottom:12px;font:500 11px var(--body);letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.93);padding:5px 11px;border-radius:999px}.tag.rn{background:var(--gold);color:#fff}
+.nv{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font:400 26px/1 var(--body);cursor:pointer;color:var(--ink)}.nv.prev{left:10px}.nv.next{right:10px}
+.cnt{position:absolute;right:12px;bottom:12px;font:12px var(--body);background:rgba(0,0,0,.55);color:#fff;padding:3px 9px;border-radius:999px}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding:8px 10px 0}.th{flex:none;width:64px;height:46px;border-radius:8px;border:2px solid transparent;background:center/cover no-repeat var(--sand);cursor:pointer}.th.on{border-color:var(--gold)}
+.pad{padding:16px 18px 20px}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.head h2{font:500 clamp(20px,4.2vw,24px)/1.2 var(--display);margin:0;display:flex;gap:10px;align-items:center}
+.price{font:600 clamp(19px,4vw,22px) var(--display);color:var(--gold);margin:0;white-space:nowrap}
+.line{margin:4px 0 14px;color:var(--muted);font-size:15px}
+.why{margin:0 0 14px;padding-left:18px}.why li{margin:4px 0}
+.fit{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:6px}
+.fit li{font-size:13.5px;padding:4px 11px;border-radius:999px;border:1px solid}.fit i{font-style:normal;margin-right:5px;font-weight:600}
+.fit .ok{border-color:#bfdccb;color:var(--ok);background:#f1f8f3}.fit .mid{border-color:var(--sand);color:#8a6a1f;background:var(--cream)}
+.note{font-size:14.5px;background:var(--cream);border-radius:12px;padding:10px 13px;margin:0 0 10px}
+.more{margin:0 0 16px}.more summary{cursor:pointer;font-size:14px;color:var(--gold);font-weight:500;padding:6px 0}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}.facts div{background:var(--cream);border-radius:10px;padding:8px 10px;font-size:14px}.facts small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.maplink{font-size:14px;color:var(--ink)}
+.react{border-top:1px solid var(--line);padding-top:14px}.rq{margin:0 0 8px;font-weight:500}
+.final .vis label{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:#fff;cursor:pointer}
+.final .vis input{width:20px;height:20px;accent-color:var(--gold)}
+.sum{list-style:none;padding:0;margin:0 0 14px}.sum li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.sum em{font-style:normal;color:var(--muted)}
+.send{display:block;width:100%;margin-top:14px;font:500 14px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:16px;border:0;border-radius:999px;background:var(--ink);color:#fff;cursor:pointer}.send[aria-busy="true"]{opacity:.6}
+.sent{background:#f1f8f3;border:1px solid #bfdccb;border-radius:14px;padding:16px;margin-top:14px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,253,249,.97);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:10px max(14px,env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom));z-index:10}
+.bar-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.bar .back{background:none;border:0;font:500 13px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:12px 6px}
+.bar .mid{flex:1;text-align:center;font-size:12.5px;color:var(--muted)}.dots{display:flex;justify-content:center;gap:6px;margin-bottom:3px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--sand)}.dots i.on{background:var(--gold)}
+.bar .go{background:var(--sun);border:0;font:600 13px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:13px 22px;border-radius:999px;cursor:pointer;color:var(--ink)}
+footer{margin-top:26px;font-size:12px;color:var(--muted)}
+@media (min-width:760px){.intro-grid{grid-template-columns:1fr 1fr;align-items:start}.facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head><body>
 <div class="wrap">
-  <header>
-    <div class="brand">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div>
-    <svg class="topart" viewBox="0 0 520 120" aria-hidden="true"><line x1="0" y1="110" x2="520" y2="110"/>
-<path d="M40 110V58h46v52M40 58l23-16 23 16M52 70h8v10h-8zM68 70h8v10h-8z"/>
-<rect x="110" y="44" width="70" height="66"/><path d="M126 44v-10a19 19 0 0 1 38 0v10M136 26a9 9 0 0 1 18 0M145 17v-9"/><circle class="g" cx="145" cy="5" r="3"/><path d="M135 110V92a10 10 0 0 1 20 0v18"/>
-<path d="M200 110V66h40v44M200 66l20-14 20 14M210 76h8v10h-8zM224 76h8v10h-8z"/>
-<rect class="g" x="258" y="64" width="96" height="34" rx="6"/><path d="M258 90h96M270 72h14v12h-14zM292 72h14v12h-14zM314 72h14v12h-14z"/><circle cx="276" cy="102" r="5"/><circle cx="336" cy="102" r="5"/><path d="M306 64l-10-20 22-8"/>
-<path d="M374 110V52h44v58M374 52l22-15 22 15M386 64h8v10h-8zM400 64h8v10h-8zM386 82h8v10h-8z"/>
-<path d="M460 110V72"/><circle class="g" cx="460" cy="58" r="16"/><path d="M490 110V84"/><circle cx="490" cy="74" r="11"/></svg>
-    <div class="eyebrow">Seleção 1 · novembro 2026</div>
-    <h1>Pascale teste, aqui está a vossa primeira seleção</h1>
-    <p class="note">Escolhi cinco casas perto de onde vivem: três prontas a habitar e duas para remodelar, para percebermos juntos o que preferem. Digam-me o que gostam e o que não gostam em cada uma.</p>
-  </header>
+  <div class="top"><div class="brand">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div>
+  <svg class="topart" viewBox="0 0 520 120" aria-hidden="true"><line x1="0" y1="110" x2="520" y2="110"/><path d="M40 110V58h46v52M40 58l23-16 23 16M52 70h8v10h-8zM68 70h8v10h-8z"/><rect x="110" y="44" width="70" height="66"/><path d="M126 44v-10a19 19 0 0 1 38 0v10M135 110V92a10 10 0 0 1 20 0v18"/><path d="M200 110V66h40v44M200 66l20-14 20 14"/><rect class="g" x="258" y="64" width="96" height="34" rx="6"/><circle cx="276" cy="102" r="5"/><circle cx="336" cy="102" r="5"/><path d="M306 64l-10-20 22-8"/><path d="M374 110V52h44v58M374 52l22-15 22 15"/><circle class="g" cx="446" cy="70" r="12"/><path d="M446 82v28"/></svg></div>
 
-  <section class="brief" aria-labelledby="brief-h">
-    <div class="eyebrow">O vosso perfil de procura</div>
-    <h3 id="brief-h">O que é essencial e o que é só um bónus?</h3>
-    <div class="cols">
-      <div><b>Essencial</b><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul></div>
-      <div><b>Seria bom</b><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul></div>
-      <div><b>Não pode ser</b><ul><li>Nada por agora</li></ul></div>
-    </div>
-    <div class="react brief-react"><p>Este perfil está certo?</p>
-      <div class="btns" id="briefBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
-      <textarea id="cb" placeholder="O que mudariam? Por exemplo: o elevador é essencial, a varanda é só um bónus."></textarea>
-    </div>
-    <div class="mapa-box"><b class="mapa-t">As cinco casas no mapa</b><svg class="mapa" viewBox="270 140 620 440" role="img" aria-label="Mapa com as seis casas e a rua onde vivem agora">
+  <section class="step intro" data-label="Início">
+    <p class="eyebrow" style="margin-top:20px">Seleção 1 · novembro 2026</p>
+    <h1>Pascale teste, aqui está a vossa primeira seleção</h1>
+    <p class="lead">Escolhi três casas que encaixam no que me contaram. Vejam cada uma com calma e digam-me o que gostam e o que não gostam. Com a vossa opinião, a próxima seleção fica ainda melhor.</p>
+    <div class="intro-grid">
+      <div class="box"><h3>Essencial para vocês</h3><ul><li>Perto de onde vivem agora</li><li>T2 ou T3, 80 m² ou mais</li><li>Sala grande com cozinha aberta</li><li>Muita luz</li><li>Idealmente até 633 000 €, no máximo 800 000 € com obras</li></ul><h3>Seria bom</h3><ul><li>Varanda ou terraço</li><li>Duas casas de banho</li><li>Garagem para o carro elétrico</li></ul>
+        <p class="rq">Este perfil está certo?</p>
+        <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
+        <textarea id="pTxt" placeholder="O que mudariam? Por exemplo: o elevador é essencial."></textarea></div>
+      <div class="box"><h3>As três casas no mapa</h3><svg class="mapa" viewBox="270 140 620 440" role="img" aria-label="Mapa com as três casas e a rua onde vivem agora">
 <defs><clipPath id="mclip"><rect x="270" y="140" width="620" height="440" rx="14"/></clipPath></defs><g clip-path="url(#mclip)">
 <rect x="270" y="140" width="620" height="440" class="m-land"/>
 <polygon class="m-water" points="80,713 100,710 134,700 106,695 98,663 180,626 188,634 179,670 205,728 587,640 584,624 609,606 608,598 779,559 780,553 714,561 651,566 641,557 628,556 628,544 645,544 650,537 712,539 717,506 762,496 764,487 775,482 774,470 812,461 820,497 847,490 840,462 846,454 1022,413 1092,439 1100,1000 0,1000"/>
@@ -565,248 +333,149 @@ header.compact{padding-bottom:8px!important}
 <text class="m-road" x="640" y="486" transform="rotate(-17 640 486)" text-anchor="middle">Av. 24 de Julho</text>
 <text class="m-road" x="700" y="415" transform="rotate(-33 700 415)" text-anchor="middle">Janelas Verdes</text>
 <g class="m-home"><circle cx="405" cy="452" r="17"/><path d="M399 453 L405 446 L411 453 M401 452 V458 H409 V452"/></g><text class="m-home-l" x="377" y="488" text-anchor="middle">Onde vivem agora</text>
-<g class="m-pin "><circle cx="316" cy="301" r="20"/><text x="316" y="308" text-anchor="middle">1</text></g>
-<g class="m-pin "><circle cx="545" cy="434" r="20"/><text x="545" y="441" text-anchor="middle">2</text></g>
-<g class="m-pin "><circle cx="532" cy="162" r="20"/><text x="532" y="169" text-anchor="middle">3</text></g>
-<g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">4</text></g>
-<g class="m-pin rn"><circle cx="472" cy="392" r="20"/><text x="472" y="399" text-anchor="middle">5</text></g>
 
-</g></svg><div class="mapa-legs"><div><small>Prontas a habitar</small><ol class="mapa-leg"><li class=""><b>1</b>Travessa da Costa<span>~8 min a pé de onde vivem agora</span></li><li class=""><b>2</b>Rua do Olival<span>~6 min a pé de onde vivem agora</span></li><li class=""><b>3</b>Travessa das Almas<span>~14 min a pé de onde vivem agora</span></li></ol></div><div><small>Para remodelar</small><ol class="mapa-leg"><li class="rn"><b>4</b>Calçada das Necessidades<span>~8 min a pé de onde vivem agora</span></li><li class="rn"><b>5</b>Rua Joaquim Casimiro, T2+1<span>~4 min a pé de onde vivem agora</span></li></ol></div></div></div>
+<g class="m-pin"><circle cx="700" cy="392" r="20"/><text x="700" y="399" text-anchor="middle">1</text></g>
+<g class="m-pin"><circle cx="545" cy="434" r="20"/><text x="545" y="441" text-anchor="middle">2</text></g>
+<g class="m-pin rn"><circle cx="445" cy="290" r="20"/><text x="445" y="297" text-anchor="middle">3</text></g>
+</g></svg><ol class="leg"><li><b class="">1</b><span>Santos-o-Velho, Madragoa<small>Santos-o-Velho, morada exata a confirmar</small></span></li><li><b class="">2</b><span>Rua do Olival, Lapa<small>cerca de 6 min a pé de onde vivem</small></span></li><li><b class="rn">3</b><span>Calçada das Necessidades<small>cerca de 8 min a pé de onde vivem</small></span></li></ol></div>
+    </div>
   </section>
 
-  <article class="prop p1" data-name="1. Travessa da Costa, Estrela">
-    <div class="top"><h2><span class="num">1</span>Travessa da Costa, Estrela</h2><div class="price">750 000 €</div></div>
-    <div class="photo has" role="img" aria-label="Travessa da Costa, Estrela" style="background:url(img/01.jpg)"><span class="grp-on">Pronta a habitar</span><span class="tag ev"><svg class="evlogo" viewBox="6 8 228 28" role="img" aria-label="Engel &amp; Völkers"><path fill="#E60000" d="M103.852 24.8098C104.207 23.946 104.384 22.8998 104.384 21.6808H106.472C106.472 23.5285 106.088 25.0833 105.33 26.3359C105.671 26.6574 106.002 26.8782 106.323 26.9982C106.645 27.1181 107.029 27.1757 107.47 27.1757H107.979V29.1097H107.571C107.149 29.1097 106.774 29.0953 106.453 29.057C106.131 29.0234 105.834 28.9562 105.56 28.8554C105.287 28.7546 105.032 28.6202 104.797 28.4475C104.562 28.2795 104.303 28.0635 104.034 27.8092C102.849 28.793 101.313 29.2873 99.4271 29.2873C97.7666 29.2873 96.4757 28.9082 95.559 28.1547C94.6424 27.4013 94.1865 26.3359 94.1865 24.9634C94.1865 23.9988 94.4361 23.1637 94.9352 22.4679C95.4343 21.772 96.2549 21.1289 97.3923 20.5339C96.8836 19.9388 96.5141 19.3821 96.2837 18.8542C96.0533 18.3263 95.943 17.7936 95.943 17.2513C95.943 16.2339 96.2885 15.4133 96.9844 14.7846C97.6802 14.1559 98.5968 13.844 99.7342 13.844C100.872 13.844 101.788 14.1511 102.484 14.7606C103.18 15.3701 103.525 16.1859 103.525 17.2033C103.525 17.9664 103.295 18.643 102.839 19.2381C102.378 19.8332 101.625 20.4235 100.574 21.0186L103.857 24.8098H103.852ZM98.6112 21.9352C97.8818 22.3095 97.3539 22.7174 97.0228 23.1589C96.6916 23.6004 96.5285 24.1187 96.5285 24.709C96.5285 25.5585 96.8356 26.2207 97.4451 26.7054C98.0545 27.1901 98.8704 27.4301 99.8878 27.4301C100.972 27.4301 101.879 27.1325 102.609 26.5375L98.616 21.9304L98.6112 21.9352ZM99.3983 19.67C100.128 19.2813 100.636 18.907 100.924 18.5519C101.212 18.1967 101.356 17.7696 101.356 17.2801C101.356 16.7378 101.217 16.3251 100.934 16.0468C100.656 15.7684 100.262 15.6292 99.7486 15.6292C99.2351 15.6292 98.8368 15.7588 98.5392 16.0228C98.2417 16.2867 98.0929 16.6562 98.0929 17.1313C98.0929 17.4865 98.1889 17.8608 98.3857 18.2495C98.5824 18.6382 98.9136 19.1133 99.3887 19.6748L99.3983 19.67Z"/><path fill="#0D0D0D" d="M8 14.3527H21.2309V16.949H10.8746V22.2903H19.7048V24.8866H10.8746V30.8422H21.4613V33.4385H8V14.3527ZM24.7198 14.3527H28.3335L37.4949 29.6473V14.3527H40.2927V33.4385H36.679L27.5177 18.144V33.4385H24.7198V14.3527ZM53.2165 23.4613H61.538V33.4385H59.4505L59.2201 30.3335C58.9466 30.895 58.5818 31.3989 58.1259 31.8452C57.6652 32.2963 57.1373 32.6755 56.5374 32.9922C55.9328 33.3041 55.2753 33.5537 54.5506 33.7313C53.8308 33.9088 53.0725 34 52.2759 34C50.9706 34 49.7804 33.7649 48.715 33.2993C47.6448 32.8338 46.7282 32.1668 45.9652 31.3029C45.2021 30.4391 44.607 29.3977 44.1847 28.1836C43.7624 26.9694 43.5513 25.6161 43.5513 24.1236C43.5513 22.6311 43.7768 21.177 44.2279 19.91C44.679 18.6479 45.3173 17.5633 46.1475 16.6659C46.9778 15.7684 47.976 15.0726 49.1373 14.5783C50.2987 14.0888 51.5944 13.8392 53.0197 13.8392C54.1235 13.8392 55.1409 13.988 56.0719 14.2855C57.0029 14.5831 57.8284 15.0102 58.5386 15.5717C59.2489 16.1332 59.8344 16.805 60.2951 17.5969C60.7558 18.3839 61.0677 19.2717 61.2357 20.2556H58.3083C57.9867 19.1038 57.3437 18.1968 56.3887 17.5441C55.4289 16.8914 54.2723 16.5651 52.9142 16.5651C51.964 16.5651 51.1001 16.7283 50.3179 17.0594C49.5356 17.3905 48.8686 17.8608 48.3071 18.4703C47.7456 19.0798 47.3137 19.8092 47.0114 20.6587C46.7042 21.5081 46.5554 22.4583 46.5554 23.5093V24.3251C46.5554 25.4097 46.6994 26.3839 46.9874 27.2382C47.2753 28.0972 47.6928 28.8218 48.2351 29.4121C48.7774 30.0072 49.4349 30.4631 50.2075 30.7846C50.9802 31.1062 51.8488 31.2693 52.8134 31.2693C53.7108 31.2693 54.5458 31.135 55.3185 30.8614C56.0911 30.5927 56.7582 30.2184 57.3149 29.7433C57.8764 29.2681 58.3179 28.7067 58.6394 28.0636C58.9609 27.4205 59.1241 26.7151 59.1241 25.952H53.2213V23.4565L53.2165 23.4613ZM65.2285 14.3527H78.4594V16.949H68.1031V22.2903H76.9333V24.8866H68.1031V30.8422H78.6898V33.4385H65.2285V14.3527ZM81.9483 14.3527H84.823V30.8422H93.9555V33.4385H81.9435V14.3527H81.9483ZM108.439 14.3527H111.544L116.914 30.2568L122.284 14.3527H125.212L118.57 33.4385H115.11L108.444 14.3527H108.439ZM135.309 33.9952C133.936 33.9952 132.679 33.7505 131.542 33.2562C130.404 32.7667 129.425 32.0708 128.605 31.183C127.779 30.2903 127.146 29.2346 126.695 28.0012C126.243 26.7726 126.018 25.4097 126.018 23.9172C126.018 22.4247 126.248 21.0618 126.704 19.8332C127.165 18.6047 127.798 17.5441 128.614 16.6515C129.43 15.7588 130.404 15.0678 131.542 14.5783C132.679 14.0888 133.936 13.8392 135.309 13.8392C136.681 13.8392 137.939 14.084 139.076 14.5783C140.213 15.0726 141.188 15.7636 142.003 16.6515C142.819 17.5441 143.453 18.6047 143.913 19.8332C144.374 21.0618 144.6 22.4247 144.6 23.9172C144.6 25.4097 144.374 26.7726 143.923 28.0012C143.472 29.2298 142.838 30.2903 142.013 31.183C141.192 32.0756 140.209 32.7667 139.076 33.2562C137.939 33.7457 136.686 33.9952 135.309 33.9952ZM135.309 31.2741C136.259 31.2741 137.118 31.111 137.891 30.7798C138.663 30.4487 139.321 29.9784 139.863 29.3689C140.405 28.7594 140.833 28.03 141.135 27.1806C141.442 26.3311 141.596 25.3905 141.596 24.3539V23.4901C141.596 22.4535 141.442 21.5129 141.135 20.6635C140.828 19.814 140.401 19.0846 139.849 18.4751C139.297 17.8656 138.635 17.3953 137.862 17.0642C137.089 16.7331 136.24 16.5699 135.304 16.5699C134.368 16.5699 133.519 16.7331 132.746 17.0642C131.973 17.3953 131.311 17.8656 130.759 18.4751C130.207 19.0846 129.78 19.814 129.473 20.6635C129.166 21.5129 129.017 22.4535 129.017 23.4901V24.3539C129.017 25.3905 129.171 26.3311 129.473 27.1806C129.78 28.03 130.203 28.7594 130.745 29.3689C131.287 29.9784 131.949 30.4487 132.732 30.7798C133.514 31.111 134.368 31.2741 135.299 31.2741H135.309ZM131.11 10H133.907V12.7211H131.11V10ZM136.705 10H139.503V12.7211H136.705V10ZM147.849 14.3527H150.723V30.8422H159.856V33.4385H147.844V14.3527H147.849ZM162.711 14.3527H165.586V23.7397L174.824 14.3527H178.438L170.726 22.0888L178.74 33.4385H175.256L168.744 24.0756L165.586 27.2574V33.4385H162.711V14.3527ZM181.135 14.3527H194.366V16.949H184.009V22.2903H192.84V24.8866H184.009V30.8422H194.596V33.4385H181.135V14.3527ZM197.855 14.3527H206.685C207.582 14.3527 208.393 14.4775 209.113 14.7223C209.833 14.967 210.447 15.3173 210.956 15.7636C211.465 16.2148 211.858 16.7523 212.141 17.3809C212.42 18.0096 212.559 18.7151 212.559 19.4925C212.559 20.6107 212.276 21.5753 211.705 22.3815C211.138 23.1878 210.327 23.7876 209.276 24.1764C209.939 24.3635 210.442 24.6803 210.788 25.1314C211.134 25.5825 211.402 26.2448 211.589 27.1278L212.861 33.4385H209.91L208.763 27.5357C208.696 27.147 208.595 26.8254 208.47 26.5807C208.341 26.3359 208.173 26.1392 207.961 25.9952C207.75 25.8512 207.481 25.7505 207.16 25.6881C206.838 25.6257 206.431 25.5969 205.941 25.5969H200.724V33.4337H197.85V14.3527H197.855ZM206.075 23.183C207.16 23.183 208.033 22.8998 208.696 22.3287C209.358 21.7624 209.689 20.9946 209.689 20.0252C209.689 19.0558 209.363 18.2927 208.71 17.7217C208.057 17.1554 207.179 16.8674 206.075 16.8674H200.734V23.1782H206.075V23.183ZM217.703 27.5069C217.958 30.1368 219.714 31.4517 222.973 31.4517C225.905 31.4517 227.374 30.4007 227.374 28.2987C227.374 27.5501 227.172 26.9694 226.764 26.5423C226.356 26.12 225.651 25.7696 224.652 25.5009L219.892 24.1524C218.399 23.7301 217.3 23.1254 216.595 22.3479C215.889 21.5657 215.539 20.5483 215.539 19.2957C215.539 17.5633 216.149 16.2244 217.372 15.2741C218.591 14.3239 220.314 13.8488 222.536 13.8488C224.892 13.8488 226.692 14.3911 227.93 15.4757C229.168 16.5603 229.821 18.1584 229.888 20.2603H227.062C226.942 18.8878 226.529 17.8992 225.828 17.2945C225.123 16.6947 224.009 16.3923 222.483 16.3923C219.82 16.3923 218.49 17.2849 218.49 19.0654C218.49 19.7085 218.678 20.2268 219.052 20.6155C219.426 21.0042 220.06 21.3257 220.962 21.5849L225.718 22.9334C227.364 23.4085 228.544 24.0372 229.255 24.8146C229.965 25.5969 230.325 26.6575 230.325 27.9964C230.325 29.9112 229.677 31.3941 228.377 32.4355C227.081 33.4769 225.233 34 222.843 34C220.453 34 218.471 33.4433 217.104 32.3347C215.736 31.2262 214.997 29.6185 214.877 27.5117H217.703V27.5069Z"/></svg></span><span>Fotografias · Travessa da Costa</span></div>
-    <div class="body">
-      <div class="facts"><div><small>Área</small><b>106 m²</b></div><div><small>Quartos</small><b>2</b></div><div><small>WC</small><b>2</b></div><div><small>Piso</small><b>3.º, elevador</b></div><div><small>Exterior</small><b>Terraço 20 m²</b></div><div><small>Garagem</small><b>Sim</b></div></div>
-      <div class="fits"><div class="fit"><small>Essencial</small><ul><li class="y"><i aria-hidden="true">✓</i>Perto de onde vivem</li><li class="y"><i aria-hidden="true">✓</i>Sala com cozinha aberta</li><li class="y"><i aria-hidden="true">✓</i>Muita luz, sul e poente</li><li class="y"><i aria-hidden="true">✓</i>Até 800 000 €</li></ul></div><div class="fit"><small>Seria bom</small><ul><li class="y"><i aria-hidden="true">✓</i>Terraço</li><li class="y"><i aria-hidden="true">✓</i>2 casas de banho</li><li class="y"><i aria-hidden="true">✓</i>Garagem</li></ul></div></div>
-      <p class="mine"><em>A minha opinião</em>Prédio reabilitado em 2023, pronto a habitar, e a sala abre diretamente para o terraço: ótimo para receber amigos. Está à venda com a Engel &amp; Völkers, por isso tenho acesso direto a todas as informações.</p>
-      <p class="watch">A ter em conta: está acima dos 633 000 €, mas dentro do vosso máximo e sem obras.</p>
-      <div class="links"><a class="more" href="https://www.engelvoelkers.com/pt/pt/exposes/371d72a6-6fc6-5537-aee9-520f9070c929" target="_blank" rel="noopener">Ver todas as fotografias</a> <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Travessa+da+Costa%2C+Lisboa" target="_blank" rel="noopener">Ver no mapa</a></div>
-      <div class="react"><p>O que acham?</p>
-        <div class="btns"><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
-        <textarea id="c1" placeholder="Por exemplo: o terraço e a garagem são perfeitos, mas o preço preocupa-nos."></textarea>
-      </div>
+  <section class="step house" data-id="santos" data-name="Santos-o-Velho, Madragoa" hidden>
+  <div class="gal" data-photos='["https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/a4/c4/9c/335413014.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c6/63/c9/335413028.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/83/57/5f/335413011.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/58/d5/1a/335413027.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/3d/0e/da/335413018.jpg", "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/52/91/6f/335413010.jpg"]'>
+    <div class="main" role="img" aria-label="Santos-o-Velho, Madragoa" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/a4/c4/9c/335413014.jpg')"></div>
+    <span class="tag">Pronta a habitar</span><button type="button" class="nv prev" aria-label="Anterior">‹</button><button type="button" class="nv next" aria-label="Seguinte">›</button><span class="cnt">1 / 6</span>
+  </div>
+  <div class="thumbs"><button type="button" class="th" data-i="0" aria-label="Fotografia 1" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/a4/c4/9c/335413014.jpg')"></button><button type="button" class="th" data-i="1" aria-label="Fotografia 2" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c6/63/c9/335413028.jpg')"></button><button type="button" class="th" data-i="2" aria-label="Fotografia 3" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/83/57/5f/335413011.jpg')"></button><button type="button" class="th" data-i="3" aria-label="Fotografia 4" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/58/d5/1a/335413027.jpg')"></button><button type="button" class="th" data-i="4" aria-label="Fotografia 5" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/3d/0e/da/335413018.jpg')"></button><button type="button" class="th" data-i="5" aria-label="Fotografia 6" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/52/91/6f/335413010.jpg')"></button></div>
+  <div class="pad">
+    <div class="head"><h2><span class="num">1</span>Santos-o-Velho, Madragoa</h2><p class="price">645 000 €</p></div>
+    <p class="line">T2 · 100 m² · 3.º andar com elevador</p>
+    <h3>Porquê esta casa</h3>
+    <ul class="why"><li>Prédio antigo com charme, todo reabilitado, e com elevador.</li><li>Sala cheia de luz, com vista sobre o rio.</li><li>Cozinha aberta para a sala, que pode fechar com portadas brancas quando quiserem.</li></ul>
+    <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Cozinha aberta</li><li class="ok"><i>✓</i>Muita luz</li><li class="ok"><i>✓</i>2 casas de banho</li><li class="mid"><i>≈</i>645 000 €, um pouco acima dos 633 000 €</li></ul>
+    <p class="note"><b>A ter em conta:</b> Fica em Santos, um pouco mais longe de onde vivem agora do que as outras.</p>
+    <details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>100 m² área bruta</div><div><small>Quartos</small>2, um em suite com closet</div><div><small>Casas de banho</small>2, ambas com banheira</div><div><small>Piso</small>3.º, com elevador</div><div><small>Exterior</small>Vista rio</div><div><small>Estado</small>Remodelado, pronto a habitar</div></div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Santos-o-Velho,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></details>
+    <div class="react">
+      <p class="rq">O que acham desta casa?</p>
+      <div class="btns"><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea placeholder="Porquê? Uma frase chega."></textarea>
     </div>
-  </article>
-  <article class="prop p2" data-name="2. Rua do Olival, duplex">
-    <div class="top"><h2><span class="num">2</span>Rua do Olival</h2><div class="price"><s class="old">690 000 €</s> 650 000 €</div></div>
-    <div class="photo has" role="img" aria-label="Rua do Olival" style="background:url(img/02.jpg)"><span class="grp-on">Pronta a habitar</span><span>Fotografias · Rua do Olival</span></div>
-    <div class="body">
-      <div class="facts"><div><small>Área</small><b>160 m²</b></div><div><small>Quartos</small><b>2</b></div><div><small>WC</small><b>2</b></div><div><small>Piso</small><b>3.º, sem elevador</b></div><div><small>Exterior</small><b>Não</b></div><div><small>Garagem</small><b>Não</b></div></div>
-      <div class="fits"><div class="fit"><small>Essencial</small><ul><li class="y"><i aria-hidden="true">✓</i>Perto de onde vivem</li><li class="y"><i aria-hidden="true">✓</i>Sala com cozinha integrada</li><li class="y"><i aria-hidden="true">✓</i>Sala luminosa</li><li class="y"><i aria-hidden="true">✓</i>Até 800 000 €</li></ul></div><div class="fit"><small>Seria bom</small><ul><li class="n"><i aria-hidden="true">✗</i>Varanda ou terraço</li><li class="y"><i aria-hidden="true">✓</i>2 casas de banho</li><li class="n"><i aria-hidden="true">✗</i>Garagem</li></ul></div></div>
-      <p class="mine"><em>A minha opinião</em>A sala de 48 m² com a cozinha integrada é exatamente o que me descreveram, e o duplex tem vista sobre o rio.</p>
-      <p class="watch">Boa notícia: o preço acaba de baixar de 690 000 € para 650 000 €. A ter em conta: terceiro andar sem elevador.</p>
-      <div class="links"><a class="more" href="https://www.idealista.pt/imovel/35418249/" target="_blank" rel="noopener">Ver todas as fotografias</a> <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rua+do+Olival%2C+Lisboa" target="_blank" rel="noopener">Ver no mapa</a></div>
-      <div class="react"><p>O que acham?</p>
-        <div class="btns"><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
-        <textarea id="c2" placeholder="Por exemplo: a sala com cozinha é perfeita, mas as escadas preocupam-nos."></textarea>
-      </div>
+  </div>
+</section><section class="step house" data-id="olival" data-name="Rua do Olival, Lapa" hidden>
+  <div class="gal" data-photos='["img/02.jpg"]'>
+    <div class="main" role="img" aria-label="Rua do Olival, Lapa" style="background-image:url('img/02.jpg')"></div>
+    <span class="tag">Pronta a habitar</span>
+  </div>
+  
+  <div class="pad">
+    <div class="head"><h2><span class="num">2</span>Rua do Olival, Lapa</h2><p class="price">650 000 €</p></div>
+    <p class="line">T2 duplex · 3.º andar sem elevador · vista rio</p>
+    <h3>Porquê esta casa</h3>
+    <ul class="why"><li>Sala de 48 m² com a cozinha integrada, exatamente o que me descreveram.</li><li>Duplex com vista sobre o rio.</li><li>O preço acabou de baixar de 690 000 € para 650 000 €.</li></ul>
+    <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Cozinha aberta</li><li class="ok"><i>✓</i>Sala luminosa</li><li class="ok"><i>✓</i>2 casas de banho</li><li class="ok"><i>✓</i>Perto de onde vivem</li></ul>
+    <p class="note"><b>A ter em conta:</b> O preço por m² é baixo para a Lapa. Se gostarem, verificamos primeiro a documentação. Terceiro andar sem elevador.</p>
+    <details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>A confirmar na documentação</div><div><small>Quartos</small>2</div><div><small>Casas de banho</small>2</div><div><small>Piso</small>3.º, sem elevador, duplex</div><div><small>Exterior</small>Vista rio</div><div><small>Estado</small>Pronto a habitar</div></div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rua+do+Olival,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></details>
+    <div class="react">
+      <p class="rq">O que acham desta casa?</p>
+      <div class="btns"><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea placeholder="Porquê? Uma frase chega."></textarea>
     </div>
-  </article>
-  <article class="prop p3" data-name="3. Travessa das Almas, Lapa">
-    <div class="top"><h2><span class="num">3</span>Travessa das Almas, Lapa</h2><div class="price">742 000 €</div></div>
-    <div class="photo has" role="img" aria-label="Travessa das Almas, Lapa" style="background:url(img/03.jpg)"><span class="grp-on">Pronta a habitar</span><span>Fotografias · Travessa das Almas</span></div>
-    <div class="body">
-      <div class="facts"><div><small>Área</small><b>88 m²</b></div><div><small>Quartos</small><b>2 suites</b></div><div><small>WC</small><b>2</b></div><div><small>Piso</small><b>2.º, sem elevador</b></div><div><small>Exterior</small><b>Terraço 90 m²</b></div><div><small>Garagem</small><b>Não</b></div></div>
-      <div class="fits"><div class="fit"><small>Essencial</small><ul><li class="p"><i aria-hidden="true">≈</i>A 14 minutos de onde vivem</li><li class="y"><i aria-hidden="true">✓</i>Sala com cozinha aberta</li><li class="y"><i aria-hidden="true">✓</i>Muita luz</li><li class="y"><i aria-hidden="true">✓</i>Até 800 000 €</li></ul></div><div class="fit"><small>Seria bom</small><ul><li class="y"><i aria-hidden="true">✓</i>Terraço</li><li class="y"><i aria-hidden="true">✓</i>2 casas de banho</li><li class="n"><i aria-hidden="true">✗</i>Garagem</li></ul></div></div>
-      <p class="mine"><em>A minha opinião</em>Numa rua tranquila, num prédio de 2018 com uma fachada de azulejos premiada. O terraço de 90 m² liga-se à sala: perfeito para receber amigos.</p>
-      <p class="watch">A ter em conta: segundo andar sem elevador.</p>
-      <div class="links"><a class="more" href="https://www.idealista.pt/imovel/35457835/" target="_blank" rel="noopener">Ver todas as fotografias</a> <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Travessa+das+Almas%2C+Lisboa" target="_blank" rel="noopener">Ver no mapa</a></div>
-      <div class="react"><p>O que acham?</p>
-        <div class="btns"><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
-        <textarea id="c3" placeholder="Por exemplo: o terraço é um sonho, mas precisamos de uma sala maior."></textarea>
-      </div>
+  </div>
+</section><section class="step house" data-id="necessidades" data-name="Calçada das Necessidades" hidden>
+  <div class="gal" data-photos='["img/04.jpg", "img/05.jpg", "img/07.jpg", "img/09.jpg", "img/11.jpg", "img/13.jpg", "img/15.jpg", "img/17.jpg"]'>
+    <div class="main" role="img" aria-label="Calçada das Necessidades" style="background-image:url('img/04.jpg')"></div>
+    <span class="tag rn">Para remodelar</span><button type="button" class="nv prev" aria-label="Anterior">‹</button><button type="button" class="nv next" aria-label="Seguinte">›</button><span class="cnt">1 / 8</span>
+  </div>
+  <div class="thumbs"><button type="button" class="th" data-i="0" aria-label="Fotografia 1" style="background-image:url('img/04.jpg')"></button><button type="button" class="th" data-i="1" aria-label="Fotografia 2" style="background-image:url('img/05.jpg')"></button><button type="button" class="th" data-i="2" aria-label="Fotografia 3" style="background-image:url('img/07.jpg')"></button><button type="button" class="th" data-i="3" aria-label="Fotografia 4" style="background-image:url('img/09.jpg')"></button><button type="button" class="th" data-i="4" aria-label="Fotografia 5" style="background-image:url('img/11.jpg')"></button><button type="button" class="th" data-i="5" aria-label="Fotografia 6" style="background-image:url('img/13.jpg')"></button><button type="button" class="th" data-i="6" aria-label="Fotografia 7" style="background-image:url('img/15.jpg')"></button><button type="button" class="th" data-i="7" aria-label="Fotografia 8" style="background-image:url('img/17.jpg')"></button></div>
+  <div class="pad">
+    <div class="head"><h2><span class="num rn">3</span>Calçada das Necessidades</h2><p class="price">595 000 €</p></div>
+    <p class="line">T4 · 120 m² · 3.º andar sem elevador · prédio de 1937</p>
+    <h3>Porquê esta casa</h3>
+    <ul class="why"><li>Muito sol ao longo de todo o dia.</li><li>Prédio de 1937 com detalhes de época e divisões generosas.</li><li>Com obras, dá para criar a sala grande com cozinha aberta que querem, dentro do vosso máximo.</li></ul>
+    <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Muita luz</li><li class="mid"><i>≈</i>Cozinha aberta, com obras</li><li class="ok"><i>✓</i>Perto de onde vivem</li><li class="ok"><i>✓</i>Com obras, abaixo dos 800 000 €</li></ul>
+    <p class="note"><b>A ter em conta:</b> Precisa de remodelação total e tem só uma casa de banho. Vou visitá-la no sábado.</p>
+    <details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>120 m² área bruta</div><div><small>Quartos</small>4</div><div><small>Casas de banho</small>1</div><div><small>Piso</small>3.º, sem elevador</div><div><small>Construção</small>1937</div><div><small>Estado</small>Para remodelar</div></div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Calçada+das+Necessidades,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></details>
+    <div class="react">
+      <p class="rq">O que acham desta casa?</p>
+      <div class="btns"><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea placeholder="Porquê? Uma frase chega."></textarea>
     </div>
-  </article>
-  <article class="prop p4 rn" data-name="4. Calçada das Necessidades">
-    <div class="top"><h2><span class="num">4</span>Calçada das Necessidades</h2><div class="price">595 000 €</div></div>
-    <div class="photo has" role="img" aria-label="Calçada das Necessidades" style="background:url(img/04.jpg)"><span class="grp-on rn">Para remodelar</span><span>Fotografias · Calçada das Necessidades</span></div>
-    <div class="body">
-      <div class="facts"><div><small>Área</small><b>120 m²</b></div><div><small>Quartos</small><b>4</b></div><div><small>WC</small><b>1</b></div><div><small>Piso</small><b>3.º, sem elevador</b></div><div><small>Exterior</small><b>Varanda, vista rio</b></div><div><small>Garagem</small><b>Não</b></div></div>
-      <div class="gal" aria-label="Fotografias"><button type="button" class="gthumb" data-full="img/05.jpg" aria-label="Vista sobre o rio e a ponte" style="background-image:url(img/06.jpg)"><span>Vista sobre o rio e a ponte</span></button><button type="button" class="gthumb" data-full="img/07.jpg" aria-label="Vista a partir da varanda" style="background-image:url(img/08.jpg)"><span>Vista a partir da varanda</span></button><button type="button" class="gthumb" data-full="img/09.jpg" aria-label="Entrada do prédio, azulejos" style="background-image:url(img/10.jpg)"><span>Entrada do prédio, azulejos</span></button><button type="button" class="gthumb" data-full="img/11.jpg" aria-label="Sala com varanda" style="background-image:url(img/12.jpg)"><span>Sala com varanda</span></button><button type="button" class="gthumb" data-full="img/13.jpg" aria-label="Quarto com porta de sacada" style="background-image:url(img/14.jpg)"><span>Quarto com porta de sacada</span></button><button type="button" class="gthumb" data-full="img/15.jpg" aria-label="Entrada e corredor" style="background-image:url(img/16.jpg)"><span>Entrada e corredor</span></button><button type="button" class="gthumb" data-full="img/17.jpg" aria-label="Quarto" style="background-image:url(img/18.jpg)"><span>Quarto</span></button></div>
-      <div class="fits"><div class="fit"><small>Essencial</small><ul><li class="y"><i aria-hidden="true">✓</i>Perto de onde vivem</li><li class="p"><i aria-hidden="true">≈</i>Cozinha aberta, com obras</li><li class="y"><i aria-hidden="true">✓</i>Muita luz</li><li class="y"><i aria-hidden="true">✓</i>Com obras, cerca de 800 000 €</li></ul></div><div class="fit"><small>Seria bom</small><ul><li class="y"><i aria-hidden="true">✓</i>Varanda com vista rio</li><li class="p"><i aria-hidden="true">≈</i>2 casas de banho, com obras</li><li class="n"><i aria-hidden="true">✗</i>Garagem</li></ul></div></div>
-      <p class="mine"><em>A minha opinião</em>Um projeto à vossa medida: prédio de 1937 com detalhes de época, muita luz, vista sobre o rio e a ponte, e 120 m² para criar a sala grande com cozinha aberta. Abaixo dos 633 000 €, o que deixa folga para as obras.</p>
-      <p class="watch">A ter em conta: precisa de obras completas, e é um terceiro andar sem elevador.</p>
-      <div class="links"><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Cal%C3%A7ada+das+Necessidades+42%2C+Lisboa" target="_blank" rel="noopener">Ver no mapa</a></div>
-      <div class="react"><p>O que acham?</p>
-        <div class="btns"><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
-        <textarea id="c4" placeholder="Por exemplo: adoramos a ideia de remodelar, mas o terceiro andar sem elevador preocupa-nos."></textarea>
-      </div>
-    </div>
-  </article>
-  <article class="prop p5 rn" data-name="5. Rua Joaquim Casimiro, T2+1">
-    <div class="top"><h2><span class="num">5</span>Rua Joaquim Casimiro, T2+1</h2><div class="price">550 000 €</div></div>
-    <div class="photo has" role="img" aria-label="Rua Joaquim Casimiro, T2+1" style="background:url(img/19.jpg)"><span class="grp-on rn">Para remodelar</span><span>Fotografias · Rua Joaquim Casimiro, T2+1</span></div>
-    <div class="body">
-      <div class="facts"><div><small>Área</small><b>110 m²</b></div><div><small>Quartos</small><b>2 + 1</b></div><div><small>WC</small><b>1</b></div><div><small>Piso</small><b>3.º, sem elevador</b></div><div><small>Exterior</small><b>Varanda, vista rio</b></div><div><small>Garagem</small><b>Não</b></div></div>
-      <div class="fits"><div class="fit"><small>Essencial</small><ul><li class="y"><i aria-hidden="true">✓</i>Perto de onde vivem</li><li class="p"><i aria-hidden="true">≈</i>Cozinha aberta, com obras</li><li class="p"><i aria-hidden="true">≈</i>Sol à tarde</li><li class="y"><i aria-hidden="true">✓</i>Com obras, abaixo dos 800 000 €</li></ul></div><div class="fit"><small>Seria bom</small><ul><li class="y"><i aria-hidden="true">✓</i>Varanda com vista rio</li><li class="n"><i aria-hidden="true">✗</i>2 casas de banho</li><li class="n"><i aria-hidden="true">✗</i>Garagem</li></ul></div></div>
-      <p class="mine"><em>A minha opinião</em>Era um T5, transformado num T2+1 com boas áreas. A varanda virada a poente, com vista sobre o rio e a ponte, tem espaço para uma mesa de refeições, e fica a poucos minutos a pé de onde vivem.</p>
-      <p class="watch">A ter em conta: a agência vai publicar novas fotografias em breve, e é um terceiro andar sem elevador.</p>
-      <div class="links"><a class="more" href="https://www.idealista.pt/imovel/35281770/" target="_blank" rel="noopener">Ver todas as fotografias</a> <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Joaquim+Casimiro%2C+Lisboa" target="_blank" rel="noopener">Ver no mapa</a></div>
-      <div class="react"><p>O que acham?</p>
-        <div class="btns"><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
-        <textarea id="c5" placeholder="Por exemplo: gostamos da varanda, mas queremos ver as novas fotografias."></textarea>
-      </div>
-    </div>
-  </article>
+  </div>
+</section>
 
-  <section class="final">
-    <h3>A vossa seleção</h3>
-    <ul class="sum" id="sum"></ul>
-    <h3>Quais querem visitar?</h3>
-    <p class="vis-hint">Escolham no máximo 3.</p>
-    <ul class="vis" id="vis"></ul>
-    <h3>Mais alguma coisa que devo saber?</h3>
-    <textarea id="c0" placeholder="Por exemplo: escadas não são problema até ao 2.º andar, ou gostávamos de ver também Santos."></textarea>
-    <a class="send" id="send" href="#">Enviar a minha opinião</a>
-    <p class="preview" id="preview" hidden></p>
+  <section class="step final" hidden data-label="Enviar">
+    <h1 style="font-size:26px">Obrigada! Falta só um passo</h1>
+    <div class="box"><h3>A vossa opinião</h3><ul class="sum" id="sum"></ul>
+      <h3>Quais querem visitar?</h3><div class="vis"><label><input type="checkbox" value="Santos-o-Velho, Madragoa"><span>1. Santos-o-Velho, Madragoa</span></label><label><input type="checkbox" value="Rua do Olival, Lapa"><span>2. Rua do Olival, Lapa</span></label><label><input type="checkbox" value="Calçada das Necessidades"><span>3. Calçada das Necessidades</span></label></div>
+      <h3 style="margin-top:14px">Mais alguma coisa?</h3>
+      <textarea id="oTxt" placeholder="Por exemplo: escadas não são problema até ao 2.º andar."></textarea>
+      <button type="button" class="send" id="send">Enviar a minha opinião</button>
+    </div>
   </section>
 
-  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · +351 920 609 225<br></footer>
+  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · +351 920 609 225</footer>
 </div>
 
-<script>
-const props=[...document.querySelectorAll('.prop')];
-const bb=[...document.querySelectorAll('#briefBtns button')];
-bb.forEach(b=>{b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>{bb.forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');build();});});
-props.forEach(p=>p.querySelectorAll('.btns button').forEach(b=>{
-  b.setAttribute('aria-pressed','false');
-  b.addEventListener('click',()=>{p.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');build();});
-}));
-document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',build));
-function build(){
-  let lines=['Olá Pascale, a nossa opinião sobre a seleção 1:'];
-  const bv=document.querySelector('#briefBtns [aria-pressed="true"]');const bc=document.getElementById('cb').value.trim();
-  lines.push('Perfil de procura: '+(bv?bv.dataset.v:'sem resposta')+(bc?' · '+bc:''));
-  props.forEach(p=>{
-    const v=p.querySelector('[aria-pressed="true"]');const c=p.querySelector('textarea').value.trim();
-    lines.push(p.dataset.name+': '+(v?v.dataset.v:'sem opinião')+(c?' · '+c:''));
-  });
-  const vs=[...document.querySelectorAll('#vis button[aria-pressed="true"]')].map(b=>b.dataset.n);lines.push('Queremos visitar: '+(vs.length?vs.join(', '):'ainda não sabemos'));
-  const o=document.getElementById('c0').value.trim(); if(o) lines.push('Outros: '+o);
-  lines.push('Pascale teste');
-  const txt=lines.join('\n');
-  document.getElementById('preview').textContent=txt;
-  document.getElementById('send').href='https://wa.me/351920609225?text='+encodeURIComponent(txt);
-}
-build();
+<nav class="bar" aria-label="Navegação"><div class="bar-in">
+  <button type="button" class="back" id="back">← Voltar</button>
+  <div class="mid"><div class="dots" id="dots"></div><span id="lbl"></span></div>
+  <button type="button" class="go" id="go">Começar →</button>
+</div></nav>
 
-(function(){const head=document.querySelector('header'),brief=document.querySelector('.brief'),fin=document.querySelector('section.final');
- const steps=[[brief],...props.map(p=>[p]),[fin]];const N=steps.length;const all=steps.flat();
- const prog=document.createElement('div');prog.className='wz-prog';prog.innerHTML='<p></p><div class="wz-bar"><i></i></div>';head.after(prog);
- const nav=document.createElement('div');nav.className='wz-nav';nav.innerHTML='<button type="button" class="wz-back">← Voltar</button><button type="button" class="wz-next">Seguinte →</button>';fin.after(nav);
- const sum=document.getElementById('sum');let i=0;
- function renderSum(){sum.textContent='';props.forEach((p,k)=>{const v=p.querySelector('.btns [aria-pressed="true"]');const li=document.createElement('li');const th=document.createElement('span');th.className='th';const ph=p.querySelector('.photo');if(ph&&ph.style.backgroundImage)th.style.backgroundImage=ph.style.backgroundImage;
-  const t=document.createElement('div');const b=document.createElement('b');b.textContent=(p.querySelector('.num')?p.querySelector('.num').textContent+'. ':'')+[...p.querySelector('h2').childNodes].filter(n=>n.nodeType===3).map(n=>n.textContent).join('').trim();const s=document.createElement('small');s.textContent=(()=>{const pr=p.querySelector('.price').cloneNode(true);pr.querySelector('s')?.remove();return pr.textContent.trim()})();t.append(b,s);
-  const r=document.createElement('span');if(v){r.className='r '+v.dataset.v.split(' ')[0];r.textContent=v.dataset.v}else{const e=document.createElement('button');e.type='button';e.textContent='Dar opinião';e.onclick=()=>show(k+1);r.append(e)}
-  li.append(th,t,r);sum.append(li)})}
- function show(n){i=n;all.forEach(el=>el.hidden=!steps[i].includes(el));head.classList.toggle('compact',i!==0);
-  prog.querySelector('p').textContent=i===0?'O vosso perfil':i===N-1?'Resumo e envio':'Casa '+i+' de '+(N-2);prog.querySelector('i').style.width=((i+1)/N*100)+'%';
-  nav.querySelector('.wz-back').style.visibility=i===0?'hidden':'visible';const nx=nav.querySelector('.wz-next');nx.hidden=i===N-1;nx.textContent=i===0?'Ver as casas →':i===N-2?'Ver o resumo →':'Seguinte →';
-  if(i===N-1){renderSum();renderVis();}try{window.scrollTo({top:0,behavior:'smooth'})}catch(_){window.scrollTo(0,0)}}
- nav.querySelector('.wz-next').onclick=()=>show(Math.min(N-1,i+1));nav.querySelector('.wz-back').onclick=()=>show(Math.max(0,i-1));show(0);})();
-</script><script>document.querySelectorAll(".react .btns button").forEach(b=>b.addEventListener("click",()=>b.closest(".react").classList.add("voted")));</script><script>
-function renderVis(){const box=document.getElementById('vis');if(!box)return;const keep=new Set([...box.querySelectorAll('[aria-pressed="true"]')].map(b=>b.dataset.n).concat(window.__visKeep||[]));window.__visKeep=[];box.textContent='';
- const liked=[...document.querySelectorAll('.prop')].filter(p=>{const v=p.querySelector('.btns [aria-pressed="true"]');return v&&(v.dataset.v==='Adoro'||v.dataset.v==='Talvez')});
- const hint=document.querySelector('.vis-hint');
- if(!liked.length){if(hint)hint.textContent='Marquem primeiro Adoro ou Talvez nas casas de que gostaram.';return}
- if(hint)hint.textContent='Escolham no máximo 3.';
- liked.forEach(p=>{const li=document.createElement('li');const b=document.createElement('button');b.type='button';b.dataset.n=p.dataset.name;b.textContent=p.dataset.name;b.setAttribute('aria-pressed',keep.has(p.dataset.name)?'true':'false');
-  b.addEventListener('click',()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');sync();if(typeof build==='function')build();});li.appendChild(b);box.appendChild(li)});
- function sync(){const on=box.querySelectorAll('[aria-pressed="true"]').length;box.querySelectorAll('button').forEach(x=>{x.disabled=on>=3&&x.getAttribute('aria-pressed')!=='true'})}
- sync();if(typeof build==='function')build();}
-</script><script>
-(function(){const KEY='sel-test-r1';
- function save(){try{const st={b:(document.querySelector('#briefBtns [aria-pressed="true"]')||{}).dataset?.v||'',t:{},p:{},v:[...document.querySelectorAll('#vis [aria-pressed="true"]')].map(b=>b.dataset.n)};
-  document.querySelectorAll('textarea[id]').forEach(t=>st.t[t.id]=t.value);
-  document.querySelectorAll('.prop').forEach(p=>{const v=p.querySelector('.btns [aria-pressed="true"]');if(v)st.p[p.dataset.name]=v.dataset.v});
-  localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
- function load(){let st;try{st=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}if(!st)return;
-  if(st.b){const b=[...document.querySelectorAll('#briefBtns button')].find(x=>x.dataset.v===st.b);if(b)b.click()}
-  Object.entries(st.t||{}).forEach(([id,v])=>{const t=document.getElementById(id);if(t)t.value=v});
-  document.querySelectorAll('.prop').forEach(p=>{const v=st.p&&st.p[p.dataset.name];if(v){const b=p.querySelector('.btns [data-v="'+v+'"]');if(b)b.click()}});
-  window.__visKeep=st.v||[];
-  if(typeof build==='function')build();}
- load();
- document.addEventListener('click',()=>setTimeout(save,0));document.addEventListener('input',save);
-})();
-</script><script>document.querySelectorAll('.gal').forEach(g=>{const ph=g.closest('.prop').querySelector('.photo');g.querySelectorAll('.gthumb').forEach(t=>t.addEventListener('click',()=>{}))});</script><div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Fotografias">
-  <div class="lb-top"><span id="lbN"></span><button type="button" class="lb-x" id="lbX" aria-label="Fechar">✕</button></div>
-  <div class="lb-stage"><img id="lbImg" alt=""><button type="button" class="lb-nav lb-prev" id="lbP" aria-label="Anterior">‹</button><button type="button" class="lb-nav lb-next" id="lbNx" aria-label="Seguinte">›</button></div>
-  <div class="lb-cap" id="lbC"></div>
-</div>
-<script>(function(){const lb=document.getElementById('lb'),img=document.getElementById('lbImg'),cap=document.getElementById('lbC'),num=document.getElementById('lbN'),P=document.getElementById('lbP'),Nx=document.getElementById('lbNx');let list=[],i=0;
-function show(k){i=(k+list.length)%list.length;img.src=list[i].src;img.alt=list[i].cap;cap.textContent=list[i].cap;num.textContent=list.length>1?(i+1)+' / '+list.length:'';P.hidden=Nx.hidden=list.length<2}
-function open(items,k){list=items;lb.hidden=false;document.body.style.overflow='hidden';show(k)}
-function close(){lb.hidden=true;document.body.style.overflow=''}
-const bg=el=>(el.style.backgroundImage||'').replace(/^url\(["']?/,'').replace(/["']?\)$/,'');
-document.querySelectorAll('.prop').forEach(card=>{const ph=card.querySelector('.photo');const g=card.querySelector('.gal');const name=card.querySelector('h2')?.textContent.replace(/^\d+/,'').trim()||'';
- const items=()=>{const main={src:bg(ph),cap:name};if(!g)return [main];return [main].concat([...g.querySelectorAll('.gthumb')].map(t=>({src:t.dataset.full,cap:t.getAttribute('aria-label')})))};
- if(g)g.querySelectorAll('.gthumb').forEach((t,k)=>t.addEventListener('click',()=>open(items(),k+1)));
- if(ph)ph.addEventListener('click',e=>{if(ph.querySelector('.photo-link'))return;if(!ph.classList.contains('has')||!bg(ph))return;open(items(),0)})});
-document.getElementById('lbX').onclick=close;P.onclick=()=>show(i-1);Nx.onclick=()=>show(i+1);
-lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-stage'))close()});
-document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
-let x0=null;lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)show(i+(dx<0?1:-1));x0=null});
-})();</script><script>document.querySelectorAll('.prop').forEach(c=>{const ph=c.querySelector('.photo.has');if(!ph)return;const n=c.querySelectorAll('.gthumb').length;const h=document.createElement('span');h.className='zoom-hint';h.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>'+(n?(n+1)+' fotos':'Ampliar');ph.appendChild(h)});</script><script>document.querySelectorAll('.prop').forEach(c=>{const m=c.querySelector('a.more');const ph=c.querySelector('.photo');if(m&&ph){const a=document.createElement('a');a.className='photo-link';a.href=m.href;a.target='_blank';a.rel='noopener';a.setAttribute('aria-label','Ver todas as fotografias');ph.appendChild(a);const h=ph.querySelector('.zoom-hint');if(h&&!c.querySelector('.gthumb'))h.remove();}
-const t=c.querySelector('.react textarea');if(t&&!c.querySelector('.why-l')){const l=document.createElement('div');l.className='why-l';l.textContent='Porquê? Contem-me o que pensam';t.before(l)}});</script><script>(function(){const I={'Área':'<path d="M3 9V3h6M21 9V3h-6M3 15v6h6M21 15v6h-6"/>','Quartos':'<path d="M3 18V8M3 14h18v4M21 18v-6a2 2 0 0 0-2-2H10v4M6 11.5a1.5 1.5 0 1 0 0-.01"/>','WC':'<path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0M8 19l-1 2M16 19l1 2"/>','Piso':'<path d="M4 20h4v-4h4v-4h4V8h4"/>','Exterior':'<path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/><circle cx="12" cy="12" r="4"/>','Garagem':'<path d="M5 16V11l2-5h10l2 5v5M5 16h14M5 16v2M19 16v2M7.5 13.5h.01M16.5 13.5h.01"/>'};
-document.querySelectorAll('.facts > div').forEach(d=>{const k=d.querySelector('small')?.textContent.trim();if(I[k]&&!d.querySelector('svg'))d.insertAdjacentHTML('afterbegin','<svg viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>')})})();</script>
-
-
-<style id="site-layout-fix">
-/* Website version: steadier photo boxes (all browsers) and a more compact first step */
-.prop{display:flex!important;flex-direction:column}
-.prop>*{min-width:0}
-.prop .photo{display:block!important;width:auto!important;max-width:none;aspect-ratio:auto!important;height:clamp(200px,42vw,320px)!important;min-height:0!important;flex:none;margin:0!important;border-radius:0!important;background-size:cover!important;background-position:center!important;position:relative}
-.wrap{gap:24px!important;padding-block:24px 40px!important}
-header{gap:12px!important;padding-bottom:20px!important}
-.topart{max-height:56px;width:auto}
-h1{font-size:clamp(26px,4.2vw,34px)!important}
-.brief{gap:14px}
-.brief h3{margin:0}
-.cols{gap:14px 24px!important}
-.cols ul{margin:6px 0 0;padding-left:18px}
-.cols li{margin:2px 0;line-height:1.45}
-@media (min-width:900px){
- .wrap{max-width:1040px!important}
- header{grid-template-columns:auto 1fr;align-items:end;column-gap:28px}
- header>.brand{grid-column:1}
- header>.topart{grid-column:2;justify-self:end;grid-row:1}
- header>.eyebrow,header>h1,header>.note{grid-column:1 / -1}
- .brief{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:36px;align-items:start}
- .brief>*{grid-column:1}
- .brief>.mapa-box{grid-column:2;grid-row:1 / span 6;margin:0!important}
- .cols{grid-template-columns:1fr 1fr!important}
- .cols>div:nth-child(3){grid-column:1 / -1}
- .mapa-legs{gap:10px 20px!important;font-size:14px}
-}
-</style>
-<script id="wz-scrolltop">document.addEventListener("click",e=>{if(e.target.closest(".wz-next,.wz-back"))setTimeout(()=>window.scrollTo({top:0,behavior:"smooth"}),30)});</script>
 <form name="selection-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
 <input type="hidden" name="form-name" value="selection-feedback"><input name="cliente"><input name="ronda"><textarea name="opiniao"></textarea><input name="bot-field">
 </form>
-<style>.sent{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0}.send[aria-busy="true"]{opacity:.6;pointer-events:none}</style>
 <script>
 (function(){
- const btn=document.getElementById('send');
- btn.addEventListener('click',async function(e){
-  e.preventDefault(); if(typeof build==='function')build();
-  const txt=document.getElementById('preview').textContent;
-  btn.setAttribute('aria-busy','true'); btn.textContent='A enviar…';
-  const body=new URLSearchParams({'form-name':'selection-feedback','cliente':'Pascale teste','ronda':'1','opiniao':txt});
-  try{
-   const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body.toString()});
-   if(!r.ok) throw new Error(r.status);
-   const p=document.createElement('p');p.className='sent';
-   p.textContent='Obrigada! Recebi a vossa opinião e volto a falar convosco em breve com os próximos passos. Pascale';
-   btn.replaceWith(p);
-  }catch(err){
-   btn.removeAttribute('aria-busy'); btn.textContent='Enviar por WhatsApp';
-   btn.href='https://wa.me/351920609225?text='+encodeURIComponent(txt); btn.target='_blank';
-   alert('Não foi possível enviar agora. Por favor carreguem outra vez para enviar por WhatsApp.');
-  }
- },true);
+const CLIENT="Pascale teste", KEY="sel-test-r1b";
+const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
+let cur=0; const dots=document.getElementById('dots');
+steps.forEach(()=>dots.appendChild(document.createElement('i')));
+function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=>s.hidden=k!==cur);
+ [...dots.children].forEach((d,k)=>d.classList.toggle('on',k<=cur));
+ const s=steps[cur]; const hi=houses.indexOf(s);
+ document.getElementById('lbl').textContent= hi>=0?('Casa '+(hi+1)+' de '+houses.length): s.dataset.label;
+ document.getElementById('back').style.visibility=cur?'visible':'hidden';
+ const go=document.getElementById('go'); go.hidden=cur===steps.length-1;
+ go.textContent= cur===0?'Ver as casas →': (cur===steps.length-2?'Concluir →':'Seguinte →');
+ if(s.classList.contains('final'))summary();
+ window.scrollTo({top:0,behavior:'smooth'}); save();}
+document.getElementById('go').onclick=()=>show(cur+1);
+document.getElementById('back').onclick=()=>show(cur-1);
+// galleries
+document.querySelectorAll('.house').forEach(h=>{const g=h.querySelector('.gal'),ph=JSON.parse(g.dataset.photos),m=g.querySelector('.main'),c=g.querySelector('.cnt'),th=[...h.querySelectorAll('.th')];let i=0;
+ function set(n){i=(n+ph.length)%ph.length;m.style.backgroundImage="url('"+ph[i]+"')";if(c)c.textContent=(i+1)+' / '+ph.length;th.forEach((t,k)=>t.classList.toggle('on',k===i));}
+ g.querySelector('.prev')?.addEventListener('click',()=>set(i-1));g.querySelector('.next')?.addEventListener('click',()=>set(i+1));
+ th.forEach(t=>t.addEventListener('click',()=>set(+t.dataset.i)));set(0);
+ let x0=null;m.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});m.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)set(i+(dx<0?1:-1));x0=null;});});
+// reactions
+document.querySelectorAll('.btns').forEach(b=>b.querySelectorAll('button').forEach(x=>{x.setAttribute('aria-pressed','false');x.addEventListener('click',()=>{b.querySelectorAll('button').forEach(y=>y.setAttribute('aria-pressed','false'));x.setAttribute('aria-pressed','true');save();});}));
+document.querySelectorAll('textarea,.vis input').forEach(t=>t.addEventListener('input',save));
+document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
+const val=b=>(b&&b.querySelector('[aria-pressed="true"]')||{}).dataset?.v||'';
+function summary(){const ul=document.getElementById('sum');ul.textContent='';houses.forEach(h=>{const li=document.createElement('li');li.innerHTML='<span></span><em></em>';li.firstChild.textContent=h.dataset.name;li.lastChild.textContent=val(h.querySelector('.btns'))||'sem opinião';ul.appendChild(li);});}
+function text(){const L=['Olá Pascale, a nossa opinião sobre a seleção 1:'];
+ const pv=val(document.getElementById('pBtns')),pt=document.getElementById('pTxt').value.trim();L.push('Perfil: '+(pv||'sem resposta')+(pt?' · '+pt:''));
+ houses.forEach(h=>{const t=h.querySelector('textarea').value.trim();L.push(h.dataset.name+': '+(val(h.querySelector('.btns'))||'sem opinião')+(t?' · '+t:''));});
+ const v=[...document.querySelectorAll('.vis input:checked')].map(i=>i.value);L.push('Queremos visitar: '+(v.length?v.join(', '):'ainda não sabemos'));
+ const o=document.getElementById('oTxt').value.trim();if(o)L.push('Outros: '+o);L.push(CLIENT);return L.join('\n');}
+function save(){try{const st={c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('textarea').value])};localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+function load(){let st;try{st=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}if(!st)return 0;
+ const press=(b,v)=>b.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));
+ press(document.getElementById('pBtns'),st.p);document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
+ (st.v||[]).forEach((c,k)=>{const i=document.querySelectorAll('.vis input')[k];if(i)i.checked=c;});
+ (st.h||[]).forEach((x,k)=>{const h=houses[k];if(!h)return;press(h.querySelector('.btns'),x[0]);h.querySelector('textarea').value=x[1]||'';});return st.c||0;}
+// max 3 visits
+document.querySelectorAll('.vis input').forEach(i=>i.addEventListener('change',()=>{const on=document.querySelectorAll('.vis input:checked').length;document.querySelectorAll('.vis input').forEach(x=>x.disabled=on>=3&&!x.checked);}));
+// send through the website form (email to Pascale); WhatsApp only as fallback
+document.getElementById('send').addEventListener('click',async function(){const btn=this,txt=text();btn.setAttribute('aria-busy','true');btn.textContent='A enviar…';
+ try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({'form-name':'selection-feedback','cliente':CLIENT,'ronda':'1','opiniao':txt}).toString()});if(!r.ok)throw 0;
+  const p=document.createElement('p');p.className='sent';p.textContent='Obrigada! Recebi a vossa opinião e volto a falar convosco em breve com os próximos passos. Pascale';btn.replaceWith(p);try{localStorage.removeItem(KEY)}catch(e){}
+ }catch(e){btn.removeAttribute('aria-busy');btn.textContent='Enviar por WhatsApp';btn.onclick=()=>window.open('https://wa.me/351920609225?text='+encodeURIComponent(txt),'_blank');alert('Não foi possível enviar agora. Carreguem outra vez para enviar por WhatsApp.');}});
+show(load());
 })();
 </script>
 </body></html>
