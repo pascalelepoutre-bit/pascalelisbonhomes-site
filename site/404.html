@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Page not found | Pascale Lepoutre | Lisbon Homes</title>
 <meta name="description" content="This page does not exist.">
+
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pascale Lepoutre | Lisbon Homes">
@@ -21,8 +22,10 @@
 <!-- Google Search Console: paste the verification tag here only if you don't verify through DNS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&display=swap">
-<link rel="stylesheet" href="/style.css?v=9aba7a74">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
+<link rel="stylesheet" href="/style.css?v=d3ad3de2">
+<!-- Cloudflare Web Analytics: cookieless visitor statistics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ab5d0e89d55f41bdb7433cca6967af08"}'></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -42,19 +45,20 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/">Pascale Lepoutre</a>
+    <a class="brand" href="/"><span>Pascale Lepoutre</span><img class="ev-logo" src="photos/brand/engel-voelkers-logo.png" alt="Engel &amp; Völkers" width="591" height="64"></a>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/#services">Selling</a></li>
+      <li><a href="/selling/">Selling</a></li>
       <li><a href="/buying/">Buying</a></li>
       <li><a href="/neighbourhoods/">Neighbourhoods</a></li>
       <li><a href="/market-report/">Market</a></li>
       <li><a href="/for-sale/">For sale</a></li>
       <li><a href="/my-lisbon/">My Lisbon</a></li>
-      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/faq/">FAQ</a></li>
     </ul>
+    <details class="lang-sw"><summary aria-label="Language"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.4 2.4 2.4 13.6 0 16M12 4c-2.4 2.4-2.4 13.6 0 16"/></svg>EN</summary><div><a href="/pt/404.html" hreflang="pt" lang="pt">PT<span> · Português</span></a><a href="/404.html" hreflang="en" lang="en" aria-current="true">EN<span> · English</span></a><a href="/fr/404.html" hreflang="fr" lang="fr">FR<span> · Français</span></a><a href="/nl/404.html" hreflang="nl" lang="nl">NL<span> · Nederlands</span></a></div></details>
     <button class="menu" id="menu-btn" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    <a class="btn" href="/#contact"><svg class="ico" style="width:15px;height:15px"><use href="#i-phone"/></svg>Book a call</a>
+    <a class="btn" href="https://calendar.app.google/ThCV6Y9NR81k7fhr6" target="_blank" rel="noopener"><svg class="ico" style="width:15px;height:15px"><use href="#i-phone"/></svg>Book a call</a>
   </div>
 </header>
 
@@ -72,33 +76,60 @@
 </main>
 
 <footer>
+<a class="wa-float" href="https://wa.me/351920609225?text=Hi%20Pascale%2C%20" target="_blank" rel="noopener" aria-label="Message Pascale on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.5-.4z"/></svg></a>
+
+      <div class="ref-modal" id="ref-modal" hidden role="dialog" aria-modal="true" aria-label="Buying or selling elsewhere in Portugal"><div class="ref-box"><button type="button" class="ref-x" data-close aria-label="Close">×</button>
+      <form class="leadform mort-form" id="ref-form" name="referral" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="referral"><input type="hidden" name="Site language" value="EN">
+        <p hidden><label>Leave empty<input name="bot-field"></label></p>
+        <fieldset class="mort-q"><legend>I would like to</legend>
+          <label class="chip"><input type="radio" name="Pedido" value="Comprar" id="r-p1" checked><span>Buy</span></label>
+          <label class="chip"><input type="radio" name="Pedido" value="Vender" id="r-p2"><span>Sell</span></label>
+        </fieldset>
+        <div class="mort-grid">
+          <label for="r-name">Name<input id="r-name" name="Nome" required autocomplete="name"></label>
+          <label for="r-phone">Phone / WhatsApp<input id="r-phone" name="Telefone" type="tel" inputmode="tel" required autocomplete="tel" placeholder="+351 912 345 678"></label>
+          <label for="r-email">Email<input id="r-email" name="Email" type="email" required autocomplete="email"></label>
+          <label for="r-lang">Preferred language<select id="r-lang" name="Lingua"><option>Português</option><option selected>English</option><option>Français</option><option>Nederlands</option></select></label>
+          <label for="r-region">Region<select id="r-region" name="Regiao"><option>Costa da Caparica</option><option>Arrábida</option><option>Comporta</option><option>Silver Coast</option><option>Alentejo</option><option>Cascais</option><option>Algarve</option><option>Porto</option><option>Other</option></select></label>
+          <label for="r-budget">Budget<select id="r-budget" name="Orcamento"><option>Up to € 750.000</option><option>€750,000 – €1,000,000</option><option selected>€1,000,000 – €1,500,000</option><option>€1,500,000 – €3,000,000</option><option>Above € 3.000.000</option><option>Selling, not buying</option></select></label>
+          <label for="r-time">Timing<select id="r-time" name="Prazo"><option>As soon as possible</option><option selected>Within 6 months</option><option>Within a year</option><option>Just exploring</option></select></label>
+        </div>
+        <label for="r-details">What are you looking for, or what would you like to sell?<textarea id="r-details" name="Detalhes" rows="3" placeholder="e.g. a 3-bedroom house with garden, budget €600k · or: my 2-bedroom flat in Porto"></textarea></label>
+        <label class="consent" for="r-ok"><input type="checkbox" id="r-ok" name="Consentimento" value="Sim" required> I agree that Pascale shares my details with a trusted colleague in that region, who will contact me.</label>
+        <button class="btn fill" type="submit">Send</button>
+        <p class="mort-done" hidden>Thank you! I'll be in touch within one working day.</p>
+      </form>
+      </div></div>
   <div class="wrap">
     <div class="foot">
       <div>
         <h3>Pascale Lepoutre</h3>
+        <p class="f-ev"><img class="ev-logo-f" src="photos/brand/engel-voelkers-logo-white-red.png" alt="Engel &amp; Völkers" width="591" height="64"></p>
         <p>Real estate consultant, Engel &amp; Völkers. Specialised in Estrela.</p>
+        <p class="f-lang"><b>I speak</b><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.4 2.4 2.4 13.6 0 16M12 4c-2.4 2.4-2.4 13.6 0 16"/></svg><a href="/pt/404.html" hreflang="pt">PT</a><a href="/404.html" hreflang="en" aria-current="true">EN</a><a href="/fr/404.html" hreflang="fr">FR</a><a href="/nl/404.html" hreflang="nl">NL</a></p>
       </div>
       <div>
         <h3>Contact</h3>
-        <ul>
-          <li class="line"><a class="flink" href="https://wa.me/351920609225?text=Hi%20Pascale%2C%20" target="_blank" rel="noopener">WhatsApp +351 920 609 225</a> <button class="copy" id="c1" data-t="+351 920 609 225">Copy</button></li>
-          <li class="line"><a class="flink" href="mailto:pascale.lepoutre@engelvoelkers.com">pascale.lepoutre@engelvoelkers.com</a> <button class="copy" id="c2" data-t="pascale.lepoutre@engelvoelkers.com">Copy</button></li>
-          <li><a class="flink" href="https://www.instagram.com/pascalelisbonhomes/" target="_blank" rel="noopener">Instagram @pascalelisbonhomes</a></li>
-          <li><a class="flink" href="https://www.facebook.com/profile.php?id=61596316672646" target="_blank" rel="noopener">Facebook Pascale Lepoutre | Lisbon Homes</a></li>
+        <ul class="f-contact">
+          <li class="line"><a class="flink" href="https://wa.me/351920609225?text=Hi%20Pascale%2C%20" target="_blank" rel="noopener"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9.5 9.5c.3 2 2.5 4.6 5 5l1-1.2-1.8-1-.8.8c-1-.4-2-1.4-2.4-2.4l.8-.8-1-1.8z"/></svg>+351 920 609 225</a> <button class="copy" id="c1" data-t="+351 920 609 225">Copy</button></li>
+          <li class="line"><a class="flink" href="mailto:pascale.lepoutre@engelvoelkers.com"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>pascale.lepoutre@engelvoelkers.com</a> <button class="copy" id="c2" data-t="pascale.lepoutre@engelvoelkers.com">Copy</button></li>
         </ul>
-      </div>
-      <div>
-        <h3>Languages</h3>
-        <ul><li>Português</li><li>English</li><li>Français</li><li>Nederlands</li></ul>
+        <div class="f-social">
+          <a href="https://wa.me/351920609225?text=Hi%20Pascale%2C%20" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9.5 9.5c.3 2 2.5 4.6 5 5l1-1.2-1.8-1-.8.8c-1-.4-2-1.4-2.4-2.4l.8-.8-1-1.8z"/></svg></a>
+          <a href="https://www.instagram.com/pascalelisbonhomes/" target="_blank" rel="noopener" aria-label="Instagram @pascalelisbonhomes" title="Instagram"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61596316672646" target="_blank" rel="noopener" aria-label="Facebook Pascale Lepoutre, Lisbon Homes" title="Facebook"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M13.2 20v-6.5h2.3M13.2 13.5V11c0-1.3.8-2 2-2h1.3M10.8 13.5h2.4"/></svg></a>
+          <a href="https://www.linkedin.com/in/pascale-lepoutre-2809b07/" target="_blank" rel="noopener" aria-label="LinkedIn Pascale Lepoutre" title="LinkedIn"><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 10.5V16M8.5 8v.01M11.8 16v-5.5M11.8 13c0-1.6 1-2.5 2.2-2.5s2 .8 2 2.4V16"/></svg></a>
+        </div>
       </div>
     </div>
     <div class="legal">
-      <span>© 2026 Pascale Lepoutre</span>
-      <span>EV MMC Portugal – Mediação Imobiliária, Unipessoal Lda. · AMI 15208</span>
+      <span>© 2026 Pascale Lepoutre · All rights reserved. Texts and photos may not be reused without permission.</span>
+      <span>EV MMC Portugal – Mediação Imobiliária, Unipessoal Lda. · AMI 15208 · <a class="flink" href="/privacy/">Privacy policy</a></span>
     </div>
   </div>
 </footer>
 
-<script src="/site.js?v=eb91b60a" defer></script>
+<script src="/site.js?v=87d57165" defer></script>
 </body>
 </html>

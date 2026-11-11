@@ -1,0 +1,697 @@
+1|Accueil
+2|Vendre
+3|Acheter
+4|Quartiers
+5|Marché
+6|À vendre
+7|Ma Lisbonne
+8|Questions
+9|Prendre rendez-vous
+10|Votre conseillère immobilière à Lisbonne
+11|Votre maison à Lisbonne,
+12|entre de
+13|bonnes
+14|mains
+15|Vendre ou acheter à Estrela et dans les quartiers alentour ? Je vous aide à obtenir le bon prix et le bon logement, et je reste à vos côtés de la première visite jusqu’à l’acte de vente.
+16|Je veux vendre
+17|Je veux acheter
+18|Étude de marché gratuite
+19|Votre experte d’Estrela
+21|À propos
+22|Bonjour, je suis Pascale. Enchantée !
+23|Je suis conseillère immobilière chez Engel &amp; Völkers à Lisbonne. Belge de naissance, citoyenne du monde dans l’âme : j’ai vécu au Brésil et au Kenya, je suis arrivée au Portugal pour la première fois comme étudiante Erasmus il y a vingt ans, et j’ai finalement fait de Lisbonne ma maison. Je sais ce que c’est de commencer une nouvelle vie dans un autre pays.
+24|Quand j’ai acheté mon propre appartement, j’ai visité près de 40 biens : je sais donc ce qui fait dire oui à un acheteur. Aujourd’hui, je vis à Lapa et je suis spécialisée dans la paroisse d’Estrela et les quartiers alentour. J’adore vivre ici : le fleuve, la lumière, et la plage à seulement 25 minutes.
+25|Les gens aiment travailler avec moi pour ce que je suis. Je ne m’engage que dans ce en quoi je crois vraiment, mais quand je m’engage, je vais jusqu’au bout. Personnelle, structurée et honnête : un plan clair, des nouvelles régulières et pas de surprises.
+27|Comment puis-je vous aider ?
+28|Vendre ou acheter, je suis de votre côté
+29|Du premier appel jusqu’aux clés
+30|Je veux vendre
+31|Le bon prix dès le premier jour, un beau marketing et des nouvelles de ma part chaque semaine.
+32|Je veux acheter
+33|Un seul contact pour tous les biens du marché. J’organise les visites et je vérifie les documents.
+34|Commencer ma recherche
+36|Une approche personnelle, avec un réseau mondial derrière
+37|Une interlocutrice qui connaît votre rue, et des collègues dans le monde entier qui amènent des acheteurs chaque jour.
+38|fondé à Hambourg
+39|pays
+40|agences dans le monde
+41|personnes
+42|Besoin d’un avocat, d’un conseiller fiscal ou d’un courtier en crédit ? Je vous présente des personnes de confiance.
+43|Mes quartiers
+44|Estrela, et tout ce qui l’entoure
+45|Sept quartiers que je connais rue par rue
+53|Vous rêvez de la côte ou de la campagne ? Caparica, Arrábida, Comporta, l’Alentejo.
+54|Au-delà de Lisbonne&nbsp;→
+55|À vendre à Estrela et alentour
+56|Une sélection de biens de mon propre portefeuille et de mes collègues Engel &amp; Völkers. L’un d’eux vous intéresse ? Écrivez-moi directement. Je vous envoie tous les détails et j’organise votre visite.
+57|✦ Nouveau
+58|Mon mandat
+59|Investissement
+62|4 chambres
+63|1 salle de bain
+64|Opportunité d’investissement à Estrela, avec vue sur le fleuve et le pont. Demandez-moi l’étude investisseur avec le rendement locatif attendu.
+65|Demandez-moi ce bien →
+69|Studio · Pátio do Pinzaleiro
+70|Studio
+71|Pied-à-terre ou investissement : un charmant studio meublé avec entrée indépendante, dans une cour tranquille près de l’église de Santos, avec Madragoa et le fleuve au coin de la rue.
+74|T4 avec terrasse, ascenseur et garage
+75|2 salles de bain
+76|Terrasse orientée ouest, vue dégagée, rénové en 2016, près du Museu de Arte Antiga.
+78|Penthouse avec piscine privée et vue sur le fleuve
+79|4 salles de bain
+80|Duplex avec une terrasse de 163 m² et une piscine à débordement, vue sur le Tage et le pont.
+81|Voir tous les biens à Estrela, Lapa &amp; Santos
+82|Des nouvelles de temps en temps
+83|Les nouvelles de Lisbonne, depuis mon quartier
+84|Seulement quand il y a quelque chose à partager : les vrais prix, les nouveaux biens sur le marché et mes adresses préférées. Court et joyeux, sans spam.
+85|Laisser vide
+86|E-mail
+87|S’inscrire
+88|J’accepte de recevoir de temps en temps des nouvelles de Pascale et je peux me désinscrire à tout moment.
+89|Merci ! Vous êtes sur la liste.
+90|Pour les vendeurs
+91|Vendre votre bien à Lisbonne
+92|Le bon prix dès le premier jour, un marketing fort, et quelqu’un de votre côté qui parle votre langue.
+93|Une visite de 10 minutes
+94|Je viens voir votre bien et j’écoute vos projets et votre calendrier.
+95|Les vrais prix de vente dans le quartier, sans engagement. C’est vous qui décidez du prix.
+96|Documents &amp; mandat
+97|Si vous décidez de vendre, je vous guide pour chaque document et nous signons le mandat.
+98|Lancement premium
+99|Photos professionnelles et une présentation premium dès la signature, puis les portails et le réseau Engel &amp; Völkers dans le monde entier. Seuls des acheteurs sérieux visitent.
+100|De l’offre à l’escritura
+101|Je négocie et je reste à vos côtés jusqu’à l’acte.
+102|Des nouvelles de ma part chaque semaine. Inutile de me relancer.
+103|Le bon prix
+104|Le bon prix dès le premier jour : plus de visites, de meilleures offres
+105|la baisse moyenne quand un bien démarre trop haut
+106|mois, le délai moyen de vente à Estrela
+107|Trop cher ? Vous aidez vos voisins à vendre.
+108|Les acheteurs comparent, puis achètent le bien mieux placé un peu plus loin dans la rue.
+109|Qui commence trop haut finit souvent plus bas.
+110|Après des mois en ligne, vous perdez votre pouvoir de négociation.
+111|Au bon prix ? Les acheteurs sérieux arrivent vite.
+112|Plus de visites dès les premières semaines, et des offres proches de votre prix.
+113|Demandez votre étude de marché gratuite
+114|Voir l’étude de marché complète d’Estrela →
+115|Combien vaut votre bien aujourd’hui ?
+116|Je vous dirai honnêtement ce que vaut votre bien.
+117|En l’état, après travaux ou loué : je prépare l’étude adaptée à votre bien. Pour commencer, il me faut seulement votre adresse. Pour l’étude elle-même, j’ai besoin de votre caderneta predial et, si possible, de votre certificat énergétique. Vous pouvez les joindre directement dans le formulaire. Gratuit et sans engagement.
+118|Recevoir mon étude de marché gratuite
+119|Votre nom et votre numéro suffisent. Je vous appelle pour organiser une courte visite, car une bonne étude commence toujours chez vous.
+120|Nom
+121|Téléphone / WhatsApp
+122|E-mail · facultatif
+123|Rue et numéro · facultatif, mais cela fait gagner du temps au téléphone
+124|Où se trouve votre bien ?
+125|Estrela, Lapa, Santos ou à proximité
+126|Ailleurs à Lisbonne
+127|En dehors de Lisbonne
+128|Quelle ville ou région ?
+129|Chambres
+130|Maison / villa
+131|Quand pensez-vous vendre ?
+132|Simple curiosité
+133|Dans les 6 mois
+134|Le plus vite possible
+135|Envoyer ma demande
+136|Merci ! Je vous contacte sous un jour ouvrable pour organiser votre étude de marché gratuite. Vous n’avez pas encore joint vos documents ? Envoyez-moi votre caderneta predial et, si possible, votre certificat énergétique par e-mail ou WhatsApp.
+137|Vendre depuis l’étranger ou un bien hérité
+138|Vous n’êtes pas à Lisbonne ? Votre bien est entre de bonnes mains avec moi.
+139|Beaucoup de propriétaires à Estrela et Lapa vivent à l’étranger, ou ont hérité d’un bien avec leur famille. Je parle votre langue et je m’occupe de tout ici, pour que vous n’ayez pas à prendre l’avion à chaque étape.
+140|Parlez-moi de votre situation
+141|Dans votre langue
+142|português, English, français ou Nederlands, par WhatsApp ou en visio.
+143|En votre nom
+144|Clés, photos, visites et démarches : tout est géré ici.
+145|Un héritage en famille ?
+146|Chacun reçoit la même information au même moment, et je vous aide avec les documents, avec des avocats de confiance.
+147|Vous vendez en dehors de Lisbonne ? Je vous mets en contact avec un collègue de confiance dans votre région.
+148|En savoir plus&nbsp;→
+149|Questions fréquentes
+150|Questions des vendeurs
+151|Ce que les propriétaires me demandent le plus
+152|Dois-je signer un mandat exclusif ?
+153|Non. L’exclusivité n’est jamais obligatoire : c’est toujours vous qui choisissez. Je vous explique les avantages pour que vous puissiez décider. Avec un mandat exclusif, votre bien apparaît avec un seul prix et une seule belle présentation, je peux investir dans des photos professionnelles et un vrai marketing, et vous avez un seul interlocuteur avec des nouvelles chaque semaine. Et exclusif ne veut pas dire moins d’acheteurs : je partage mes biens avec d’autres agences, pour que leurs acheteurs puissent aussi visiter.
+154|Qui fixe le prix ?
+155|Vous, toujours. J’analyse les ventes récentes et les annonces actuelles de biens similaires dans le quartier, ainsi que l’état de votre bien, l’étage, la lumière et l’espace extérieur. J’explique tout dans une étude de marché écrite, pour que vous puissiez choisir le prix demandé sur la base de faits réels. Même chose pour les offres : je vous conseille, mais c’est vous qui décidez du prix de vente final.
+156|De quoi avez-vous besoin pour commencer ?
+157|Pour votre étude de marché gratuite, votre caderneta predial, votre certificat énergétique si possible, et une courte visite chez vous. Avant que votre bien soit mis en ligne, il me faut tous les documents : caderneta predial, certidão permanente, certificat énergétique, ainsi que la pièce d’identité et le NIF de chaque propriétaire. Je vous aide à demander ce qui manque. Une fois le dossier complet, nous signons le mandat, et le shooting photo suit le jour même ou le lendemain.
+158|Quand dois-je payer votre commission ?
+159|Seulement quand votre bien est vendu. La commission est convenue à l’avance dans le mandat et se paie moitié au CPCV et moitié à l’escritura.
+160|Combien de temps prend une vente ?
+161|Trouver le bon acheteur dépend du prix, de l’état du bien et de la demande. Avec le bon prix et un dossier complet, les biens à Estrela et alentour trouvent généralement un acheteur en quelques mois. Ensuite, tout va vite au Portugal : le compromis (CPCV) est généralement signé en une à trois semaines, et l’acte suit souvent un à deux mois plus tard. C’est pourquoi je prépare vos documents dès le départ, pour que rien ne ralentisse la vente.
+162|Voir toutes les questions →
+163|Votre recherche
+164|Dites-moi ce que vous cherchez
+165|Environ 3 minutes, presque tout en un clic. Cela nous fait gagner du temps au téléphone, évite les allers-retours d’e-mails et vous aide à bien réfléchir à ce qui compte vraiment pour vous. Plus j’en sais, mieux je peux vous aider.
+166|Prenez votre temps, je prends le mien pour vous
+167|À propos de vous
+168|Langue préférée
+173|Quand êtes-vous le plus disponible pour les appels et les visites ?
+174|En semaine le matin
+175|En semaine l’après-midi
+176|En semaine le soir
+177|Le week-end
+178|Le logement que vous cherchez
+179|Où cherchez-vous ?
+180|À Lisbonne
+181|Au-delà de Lisbonne
+182|Pour quoi faire ?
+183|Résidence principale
+184|Maison de vacances
+185|Combien de chambres ?
+186|4 ou plus
+187|Quels quartiers de Lisbonne ?
+190|Autre
+191|Quelles régions au-delà de Lisbonne ?
+193|Arrábida &amp; Sesimbra
+196|Quelle autre région ?
+197|Surface minimale
+198|Envisageriez-vous un bien à rénover ?
+199|Non, seulement prêt à habiter
+200|Petits travaux, oui
+201|Oui, rénovation complète
+202|Ce qui compte pour vous
+203|Indispensables
+204|jusqu’à 3 choix
+205|Ascenseur
+206|Balcon ou terrasse
+207|Parking
+208|Vue sur le fleuve
+209|Beaucoup de lumière
+210|Jardin
+211|Piscine
+212|Près de la plage
+213|Un peu de terrain
+214|Vue sur la mer
+215|Quel autre indispensable ?
+216|Ce serait bien
+217|Cave / débarras
+218|Jardin ou patio
+219|Rue calme
+220|Bureau à la maison
+221|Quel autre souhait ?
+222|Rédhibitoire
+223|Rez-de-chaussée
+224|Plus de 3 étages sans ascenseur
+225|Rue passante
+226|Quel autre point rédhibitoire ?
+227|Qu’est-ce qui vous rend heureux chez vous ?
+228|Ce n’est pas une exigence : cela m’aide à comprendre ce que « chez soi » veut dire pour vous.
+229|Budget
+230|Prix d’achat maximum du bien
+231|Jusqu’à 400 k€
+232|Plus de 3 M€
+233|Montant maximum exact, si vous le connaissez · facultatif
+234|Aurez-vous besoin d’un crédit ?
+235|Non, achat comptant
+236|Oui
+237|Je ne sais pas encore
+238|Avez-vous déjà un accord de principe de la banque ?
+239|Oui, nous en avons un
+240|En cours
+241|Pas encore
+242|Pour quel montant ?
+243|Voulez-vous que je vous présente la courtière en crédit avec qui je travaille ? Elle compare plusieurs banques, sans frais pour vous.
+244|Oui, volontiers
+245|Non, merci
+246|Nous en avons déjà un
+247|Quand
+248|Quand aimeriez-vous acheter ?
+249|Dans les 3 mois
+250|Rien ne presse
+251|Cela dépend-il de quelque chose ?
+252|Avant d’acheter, vous devez…
+253|Rien, nous sommes prêts
+254|Vendre un autre bien
+255|Obtenir l’accord de la banque
+256|Mettre fin à un bail
+257|Autre chose que je devrais savoir ?
+258|Vos réponses servent uniquement à trouver votre logement et ne sont jamais partagées.
+259|Envoyer ma recherche
+260|Merci ! Je reviens vers vous sous un jour ouvrable avec une première sélection.
+261|Sept quartiers que je connais rue par rue. Mon secteur est la paroisse d’Estrela, et je vis à Lapa.
+262|Voir l’étude de marché d’Estrela →
+263|Mon secteur
+264|Vert, calme et classique. Ici, la vie tourne autour du Jardim da Estrela et du dôme blanc de la basilique, avec le tram 28 qui passe en grinçant. Les acheteurs viennent pour les élégants immeubles du début du XXe siècle, les hauts plafonds et les parquets, et pour une vraie vie de quartier près du centre.
+267|La Rua de São Bento et ses antiquaires
+268|Tram 28
+269|Le marché en bref · prix affichés
+270|sur un an · paroisse d’Estrela, sept. 2026
+271|Le conseil de Pascale
+272|Promenez-vous dans les rues autour du jardin. Certains des plus beaux immeubles se trouvent à un pâté de maisons des grands axes.
+273|Mon port d’attache · paroisse d’Estrela
+274|Le quartier des ambassades de Lisbonne et l’une de ses adresses les plus prestigieuses. Des rues calmes et pentues avec des palacetes, des jardins derrière de hauts murs et, depuis les étages supérieurs, de larges vues sur le Tage. Les biens y sont rares sur le marché et les acheteurs sont souvent prêts à attendre le bon.
+275|Plages de Caparica à ~25 min
+276|Ambassades et résidences
+278|Vue sur le fleuve depuis la colline
+279|sur un an · paroisse d’Estrela, Lapa incl., sept. 2026
+280|Regardez les étages supérieurs. C’est là que se trouvent les célèbres vues sur le fleuve de Lapa.
+281|Fait partie de la paroisse d’Estrela
+282|Entre Lapa et le fleuve, Santos mêle boutiques de design et ateliers à des rues résidentielles tranquilles. À l’écart des zones les plus touristiques, mais près de l’eau, du train pour Cascais et du pont vers la rive sud.
+283|Le quartier du design de Santos
+284|Les quais et l’Avenida 24 de Julho
+285|Gare de Santos
+287|Madragoa juste à côté
+288|sur un an · paroisse d’Estrela, Santos incl., sept. 2026
+289|Certaines rues sont animées le soir, d’autres totalement calmes. Je vous montre lesquelles.
+290|Autour d’Estrela
+291|Un village dans la ville. Des rues droites et plates, des commerces de proximité, des cafés et l’un des marchés préférés de Lisbonne. Les familles l’adorent pour sa commodité au quotidien et son fort esprit de quartier.
+294|Terminus du tram 28 à Prazeres
+295|La Rua Ferreira Borges, rue commerçante
+296|sur un an · paroisse de Campo de Ourique, sept. 2026
+297|Des rues plates et tout à pied. Parfait si vous ne voulez pas dépendre d’une voiture.
+298|Près du fleuve et en pleine transformation. D’anciens espaces industriels sont devenus la LX Factory et de nouveaux projets résidentiels sortent de terre. Un bon rapport qualité-prix pour les acheteurs qui voient loin.
+301|Gare d’Alcântara-Mar
+302|Promenade au bord du fleuve
+303|sur un an · paroisse d’Alcântara, sept. 2026
+304|De nouveaux projets transforment le quartier. Demandez-moi lesquels arrivent avant qu’ils ne soient en ligne.
+305|Sur la colline au-dessus de Belém, Ajuda est calme et résidentielle, avec le Palácio da Ajuda et l’un des plus anciens jardins botaniques de Lisbonne. Une vraie vie de quartier, près du fleuve et du parc de Monsanto.
+308|La forêt de Monsanto toute proche
+309|Vues sur le Tage
+310|sur un an · paroisse d’Ajuda, sept. 2026
+311|Les prix sont plus bas qu’à Belém ou Estrela : votre budget va donc plus loin. Demandez-moi quelles rues ont la vue sur le fleuve.
+312|De l’espace, de la lumière et le bord du fleuve, avec des rues résidentielles plus calmes juste derrière les monuments. Près des villas du Restelo et de bonnes écoles, avec un accès facile à la côte.
+315|MAAT et CCB
+316|Jardins au bord du fleuve
+317|sur un an · paroisse de Belém, sept. 2026
+318|De l’espace, de la lumière et le fleuve, et le centre à un court trajet le long de l’eau.
+319|Prix affichés : prix moyen au m² des biens mis en vente, rapport de prix idealista, septembre 2026.
+320|Étude de marché d’Estrela · 12 mois jusqu’à septembre 2026
+321|Ce qui se passe vraiment quand vous vendez à Estrela
+322|Les vrais prix de vente, pas les prix affichés. Comparés à l’ensemble de Lisbonne. La paroisse d’Estrela comprend Lapa, Santos et Prazeres.
+323|L’écart de prix
+324|Les biens sont affichés bien au-dessus de ce que les acheteurs paient vraiment
+325|à Estrela
+326|Lisbonne : −19 %
+327|Ce que cela signifie, en moyenne
+328|Affiché à
+329|Vendu en réalité
+330|C’est pourquoi le bon prix dès le premier jour compte : les acheteurs sérieux viennent tout de suite, et personne ne perd des mois.
+331|Prix affiché
+332|Prix de vente réel
+333|Biens anciens à Estrela, 2011–2026
+334|Source : SIR – Confidencial Imobiliário, paroisse d’Estrela et municipalité de Lisbonne, 12 mois jusqu’à septembre 2026. Prix de vente, écart de prix, baisses de prix et biens vendus : tous les biens. Délai de vente, typologie et graphique des prix : biens anciens. Graphique redessiné à partir de l’évolution du prix/m² du SIR. © IMOESTATÍSTICA – TOUS DROITS RÉSERVÉS.
+335|Le bon prix pour mon bien ?
+336|Ce qui se vend à Estrela
+337|T4+ et maisons
+338|Les appartements de deux chambres sont les biens les plus vendus à Estrela.
+339|Prix de vente moyen
+340|le prix auquel les biens à Estrela se sont vraiment vendus
+341|Lisbonne : 5 900 €/m²
+342|Baisses de prix
+343|en moyenne, le premier prix affiché baisse avant que le bien soit vendu
+344|Lisbonne : −6,1 %
+345|Délai de vente
+346|6 mois
+347|un mois de plus qu’à Lisbonne. Avec un écart de prix plus grand, les biens qui démarrent trop haut attendent plus longtemps un acheteur.
+348|Lisbonne : 5 mois
+349|Mes adresses préférées
+350|Là où je mange, je bouge, j’écoute de la musique et je prends soin de moi. Les adresses que je recommande aux amis et aux clients qui viennent d’arriver.
+351|Fusion mexicaine
+353|Juste à côté de chez moi. La cuisine fusion mexicaine du chef Rodrigo : des produits très frais, des plats pleins de saveurs et une équipe toujours si sympathique. Tout petit, mais tellement chaleureux, et j’y suis toujours heureuse.
+356|Douceur
+358|Mon gâteau au chocolat préféré depuis des années, bien avant de connaître Carlos, l’homme qui le fait. Aujourd’hui nous sommes amis, et j’y suis toujours aussi accro. C’est juste en face du Mercado de Campo de Ourique, et il y a aussi un petit kiosque sur l’Avenida da Liberdade, celui où je vais le plus parce qu’il est plus près. Goûtez-le une fois et vous comprendrez le nom.
+361|Après près de quinze ans de yoga, c’est ici que je me retrouve. Des professeurs très qualifiés et une ambiance accueillante. Quand je cherchais mon logement, vivre près de ce studio faisait partie de mes indispensables.
+362|Bouger
+364|Juste en face du Museu de Arte Antiga, et là où je sors de ma zone de confort. Des professeurs formidables, une ambiance vraiment accueillante et beaucoup de cours différents. J’en ressors souvent fière, et tout aussi souvent courbaturée le lendemain.
+365|Curieux ? Venez faire un cours gratuit avec moi →
+366|Déjeuner au bord de l’eau
+368|L’adresse que je préférerais presque garder secrète. Pleine de Lisboètes, et on y arrive d’une drôle de façon : en traversant un petit pont pour entrer dans le port. Un poisson grillé au charbon incroyable, juste au bord de l’eau. Il peut y avoir du monde, mais cela fait partie du charme.
+369|Déjeuner au jardin
+371|Un restaurant caché avec jardin dans une vieille maison, avec une jolie terrasse. Je voulais y aller depuis longtemps et j’y suis enfin allée récemment : des plats pleins de saveurs, et on ne mange jamais trop, ce que j’adore.
+372|Se poser
+373|Le jardin du Museu de Arte Antiga
+374|Mon endroit préféré pour me poser. Beaucoup de gens ne savent pas que le musée a un si joli jardin, avec l’une des plus belles vues sur le fleuve et le pont. La rénovation est presque terminée, et j’ai hâte qu’il rouvre.
+375|Concerts
+377|Dans un ancien entrepôt portuaire au bord du fleuve, à Alcântara, le musée propose souvent de beaux concerts à des prix très justes : piano, jazz et musiques du monde entier. Une soirée culturelle facile, près de chez soi.
+378|Lever du soleil, au bord du fleuve…
+379|Courir
+380|De chez moi jusqu’à Belém, aller-retour
+381|Je cours régulièrement le long du fleuve au lever du soleil, de chez moi jusqu’à Belém et retour. La lumière sur l’eau et sur le pont est magique. Et un petit secret que peu de gens connaissent : on peut faire des tours du port, entre les bateaux et les conteneurs.
+382|Le dernier dimanche du mois…
+383|Musique
+385|Le dernier dimanche de chaque mois, vous me trouverez à un concert en appartement, chez quelqu’un et souvent ici même dans le quartier. Je découvre de nouveaux lieux et de nouvelles personnes, et à chaque fois je retombe amoureuse de Lisbonne, et de la vie.
+386|À bientôt dans le quartier
+387|Rencontrons-nous dans le quartier
+388|Que vous vendiez, achetiez ou soyez simplement curieux de Lisbonne, j’aimerais beaucoup vous rencontrer.
+389|Je vends
+390|J’achète
+391|Pour les acheteurs
+392|Vous rêvez d’un logement à Lisbonne ? Trouvons-le ensemble.
+393|Un seul contact pour tous les biens du marché. Je contacte les autres agences pour vous, j’organise les visites et je vérifie les documents avant que vous ne tombiez amoureux. Je parle votre langue, et j’ai moi-même fait le grand saut depuis l’étranger.
+394|Besoin d’un crédit ?
+395|Environ 3 minutes · gratuit et sans engagement
+396|D’abord, on se parle
+397|Un appel ou une visio : comment vous vivez, où vous aimeriez être, quel budget vous semble juste et ce que vous ne voulez vraiment pas.
+398|Votre sélection personnelle
+399|Je vous envoie une page privée avec les biens qui correspondent, toutes agences confondues. Vous réagissez, j’affine, tour après tour.
+400|Les visites, un seul contact
+401|Je relance les autres agents, j’organise vos visites et je vérifie d’abord les documents. Parfois, j’entends parler d’un bien avant qu’il soit en ligne.
+402|Jusqu’à la remise des clés
+403|Je négocie le prix et les conditions, je vérifie chaque document avec l’avocat et je reste à vos côtés jusqu’à l’acte.
+404|« Pour trouver mon propre logement à Lisbonne, j’ai fait près de 40 visites. Je connais l’excitation et les doutes, et j’aimerais vous rendre les choses plus faciles. »
+405|Frais d’achat
+406|Combien cela va-t-il vraiment coûter ?
+407|En plus du prix, vous payez l’IMT, le droit de timbre et l’acte. Indiquez le prix et voyez tout de suite une estimation.
+408|À titre indicatif, sur la base des barèmes officiels de l’IMT 2026 pour le Portugal continental. L’IMT est calculé sur le prix ou sur la valeur fiscale du bien, la plus élevée des deux. Vérifiez toujours les montants finaux avec votre avocat ou votre banque.
+409|Taux officiels de l’IMT
+410|Prix d’achat
+411|Le bien sera
+412|Ma résidence principale
+413|Une résidence secondaire ou un investissement
+414|J’ai 35 ans ou moins et c’est mon premier logement
+415|Montant du crédit, le cas échéant
+416|IMT, droits de mutation
+417|Droit de timbre sur l’achat, 0,8 %
+418|Droit de timbre sur le crédit, 0,6 %
+419|Acte et registre foncier, Casa Pronta
+420|Total des frais en plus du prix
+421|Prix plus frais
+422|Financement
+423|Besoin d’un crédit ? Je vous mets en contact avec une courtière de confiance.
+424|Je travaille avec ComparaJá, un courtier en crédit indépendant qui compare les banques portugaises pour vous, gratuitement. Laissez vos coordonnées et je vous présente personnellement, pour que vous connaissiez votre budget avant de visiter.
+425|Me mettre en contact avec un courtier
+426|Prix d’achat approximatif
+427|Jusqu’à 300 000 €
+428|Plus de 1 000 000 €
+429|Avez-vous trouvé un bien ?
+430|Je cherche encore
+431|Quand pensez-vous acheter ?
+432|Dans 3 à 6 mois
+433|Plus tard, je me renseigne
+434|Vivez-vous au Portugal ?
+435|Non, à l’étranger
+436|J’accepte que Pascale transmette mes coordonnées à son partenaire crédit ComparaJá pour me contacter au sujet du financement.
+437|Merci ! Je vous contacte sous un jour ouvrable.
+438|L’océan, la nature et l’espace, près de la ville
+439|Des endroits où je vais moi-même, et que j’adore faire découvrir
+440|Vous cherchez une maison de plage exceptionnelle, une quinta ou une résidence secondaire à proximité de Lisbonne ? Pour un petit nombre d’acheteurs prêts à se lancer, je mène une recherche personnelle et discrète : je trouve, visite et compare les meilleurs biens, souvent avant qu’ils n’arrivent sur les portails, avec des collègues Engel &amp; Völkers de confiance qui connaissent chaque région par cœur.
+441|À 20 min de Lisbonne
+442|À 45 min de Lisbonne
+443|À 1h15 de Lisbonne
+444|L’Alentejo
+445|À moins de 2h de Lisbonne
+446|Nouveau à Arrábida : huit villas avec piscine privée →
+447|Vous cherchez sur la Côte d’Argent, à Cascais, en Algarve ou à Porto ? Je vous mets en contact avec un collègue de confiance sur place.
+448|Questions des acheteurs
+449|Ce que les acheteurs me demandent le plus
+450|Comment me préparer financièrement à acheter ?
+451|Connaissez votre budget total, y compris l’IMT, le droit de timbre, l’acte et les frais d’enregistrement en plus du prix. Si vous avez besoin d’un crédit, obtenez un accord de principe avant de visiter ; les non-résidents doivent généralement prévoir un apport plus important. Je vous aide à vous préparer et je vous mets en contact avec des courtiers de confiance : contactez-moi tôt.
+452|Puis-je acheter depuis l’étranger ?
+453|Oui. Il vous faut un numéro fiscal portugais (NIF) et un compte bancaire portugais. Je peux vous présenter un avocat de confiance qui vous aide pour les deux et peut même signer pour vous avec une procuration, pour que vous n’ayez pas à venir à chaque étape.
+454|Combien de temps prend un achat ?
+455|Moins longtemps que dans beaucoup d’autres pays, et moins que ce que la plupart des gens imaginent. Mon propre achat est aussi allé très vite. Une fois votre offre acceptée, le compromis (CPCV) est généralement signé en une à trois semaines, avec un acompte d’au moins 10 % du prix, parfois plus. L’acte suit souvent un à deux mois plus tard. Un achat comptant peut se faire en quatre à six semaines au total ; avec un crédit, comptez deux à trois mois. C’est pourquoi je vous aide à préparer vos documents et votre financement avant de faire une offre.
+456|Combien puis-je emprunter ?
+457|Pour une résidence principale, les banques portugaises prêtent généralement jusqu’à 90 % de la valeur, pour une résidence secondaire ou un investissement jusqu’à 80 %. Il vous faut donc de l’épargne pour le reste du prix, plus les taxes et frais d’achat. Le montant exact dépend de vos revenus : un courtier peut vous le dire en une conversation.
+458|Puis-je obtenir un crédit si je ne vis pas au Portugal ?
+459|Oui, plusieurs banques portugaises prêtent aux non-résidents. Elles demandent généralement un apport plus important et plus de documents : commencez tôt, avant de faire une offre.
+460|Le courtier en crédit me coûte-t-il quelque chose ?
+461|Non. La courtière avec qui je travaille compare plusieurs banques pour vous, sans frais pour vous. Demandez-moi et je vous la présente personnellement.
+462|Me mettre en contact avec un courtier en crédit
+463|Biens à vendre à Estrela, Lapa &amp; Santos
+464|Mes propres biens et ceux de mes collègues Engel &amp; Völkers dans la paroisse d’Estrela. L’un d’eux vous intéresse ? Écrivez-moi directement. Je vous envoie tous les détails et j’organise votre visite.
+465|Tous
+466|Au-delà de Lisbonne &rarr;
+467|Peu importe
+468|Indispensable
+469|Terrasse ou balcon
+470|Garage
+471|Les filtres se basent sur les détails de chaque annonce. Vous ne savez pas si un bien remplit ce critère ? Demandez-moi, je vérifie chaque bien pour vous.
+472|Effacer les filtres ✕
+473|Aucun bien ne correspond à ces choix pour le moment.
+474|et je vous préviens dès qu’un bien se présente.
+475|Un appartement de quatre chambres entre Estrela, Lapa et Alcântara, avec vue sur le fleuve et le pont. Il est vendu loué, avec un bail de 1984 : il s’adresse donc à des investisseurs à long terme plutôt qu’à des acheteurs qui veulent y habiter. Demandez-moi l’étude investisseur avec le rendement locatif attendu.
+476|Opportunité pour investisseurs
+477|Vue sur le fleuve et le pont
+478|Classe énergétique F
+479|Les photos intérieures montrent l’appartement identique un étage plus bas.
+480|Studio au charme pombalin, Pátio do Pinzaleiro
+481|Un charmant studio dans le Pátio do Pinzaleiro, une cour traditionnelle et tranquille à quelques pas de l’église de Santos, avec entrée indépendante. À l’intérieur, la structure en bois pombaline d’origine, la gaiola, sépare le séjour de la cuisine et du coin repas. Idéal comme pied-à-terre ou investissement : vendu meublé, avec un historique de locations régulières et des charges de copropriété de seulement 20 € par mois. Au coin de la rue, les ruelles et tascas de Madragoa, le Jardim de Santos, le Museu de Arte Antiga et le fleuve, et depuis la gare de Santos, le train vous emmène aux plages de Cascais.
+482|Pied-à-terre ou investissement
+483|Entrée indépendante
+484|Meublé
+485|Charges 20 €/mois
+486|Classe énergétique C
+488|T1 meublé Rua de Buenos Aires
+489|1 chambre
+490|Un élégant T1 en rez-de-chaussée dans l’une des rues les plus recherchées de Lapa, avec séjour et salle à manger ouverts et cuisine intégrée. Vendu meublé : vous pouvez emménager ou le louer tout de suite.
+491|Investissement ou premier logement
+493|T2 lumineux avec balcons
+494|2 chambres
+495|Un T2 baigné de lumière au 2e étage, dans une rue calme de Lapa, avec un grand séjour et une cuisine qui donnent tous deux sur des balcons. Bon à savoir : il est vendu avec un usufruit viager, c’est donc un investissement à long terme plutôt qu’un logement à habiter maintenant.
+496|Balcons
+497|Vendu avec usufruit
+499|T2 dans un immeuble entièrement rénové
+500|Au 4e étage d’un immeuble où chaque appartement a eu son propre projet d’architecture et d’éclairage. Finitions de qualité, cuisine entièrement équipée avec beaucoup de rangements, et le Largo de Santos avec ses restaurants et ses boutiques à votre porte.
+501|Immeuble rénové
+502|À côté du Largo de Santos
+504|T2 meublé avec vue sur le fleuve
+505|Dans un immeuble typiquement portugais avec vue sur le fleuve. Deux chambres (dont une suite), deux salles de bain, un séjour avec salle à manger et une cuisine entièrement équipée. Vendu entièrement meublé : prêt à habiter ou à louer.
+506|Suite parentale
+508|10 biens disponibles
+509|Infante Residences : appartements neufs T1 et T2+1
+510|T1 à T2+1
+511|56 à 116 m²
+512|Un nouveau programme de luxe au 34 de l’Avenida Infante Santo. Appartements T1 et T2+1 avec chambres en suite, cuisine ouverte sur le séjour et bureau dans les plus grands. Dix biens disponibles, de 555 000 € à 1 015 000 €.
+513|Neuf
+514|Place de parking
+515|Climatisation
+516|À partir de 555 000 €
+518|T2 au bord du fleuve sur l’Avenida 24 de Julho
+519|3 salles de bain
+520|Entièrement rénové sur un projet de l’architecte Ricardo Rosa, avec vue sur le Tage, le pont du 25-Avril et le Cristo Rei. Beaucoup de lumière naturelle, bien ensoleillé toute la journée et des finitions raffinées.
+521|Rénové
+522|Projet d’architecte
+524|T2 avec jardin et piscine
+525|Dans une résidence avec jardin tropical, piscine et concierge 24 h/24, chose rare en plein Estrela. Lumineux, avec vue sur le jardin et le fleuve. Cuisine avec cellier et balcon, débarras et place de parking inclus.
+526|Concierge
+528|T2 avec terrasse privée et garage
+529|Prêt à habiter sur la Travessa da Costa, dans un immeuble entièrement rénové en 2023. Troisième étage avec ascenseur, orienté sud et ouest, avec une généreuse terrasse et une place de parking privée. Classe énergétique B.
+530|Terrasse
+531|Classe énergétique B
+533|Appartement pombalin avec vue sur le fleuve
+534|2 chambres + 3 pièces
+535|Dans un élégant immeuble pombalin avec vue de face sur le fleuve et deux entrées indépendantes. Deux chambres avec petits balcons, plus trois pièces modulables pour un bureau, un dressing ou des invités, et un spacieux séjour avec salle à manger.
+536|Immeuble historique
+538|T4 en duplex près du Jardim da Estrela
+539|Un duplex plein de caractère avec parquet massif et une très belle lumière. Séjour, salle à manger séparée, cuisine et salle de bain en bas ; à l’étage, les chambres avec placards intégrés et une deuxième salle de bain. Débarras dans l’immeuble.
+541|Parquet massif
+542|T4+1 avec terrasse, ascenseur et garage
+543|Un immeuble ancien à Lapa avec ce qui est si rare à Lisbonne : garage, ascenseur et terrasse privée. Séjour orienté sud, salle à manger avec hauts plafonds et parquets d’origine. Cuisine, salles de bain et installations rénovées en 2016.
+544|Orienté sud
+546|Maison rénovée avec 3 suites
+547|3 suites
+548|Une maison entière sur trois niveaux, entièrement réhabilitée en gardant son charme d’origine. Séjour, cuisine moderne et patio au niveau de l’entrée, deux suites au-dessus, et le dernier étage entièrement dédié à la suite parentale.
+549|Patio
+550|Maison indépendante
+552|T2 design au Santos Townhouse
+553|Un immeuble historique avec une belle façade en azulejos, entre Lapa et Santos. Intérieurs contemporains signés par des designers renommés : séjour lumineux, cuisine ouverte, deux chambres (dont une suite) et un coin bureau. Troisième étage avec ascenseur.
+554|Façade en azulejos
+555|Intérieurs design
+557|Terrain avec projet approuvé pour une maison avec piscine
+558|Terrain de 137 m²
+559|350 m² approuvés
+560|Dans l’une des rues résidentielles les plus calmes d’Estrela, avec le projet d’architecture déjà approuvé par la mairie de Lisbonne : les travaux peuvent commencer tout de suite. Une maison de 3 chambres avec jardin et piscine, plus une cour de 36 m².
+561|Projet approuvé
+562|Piscine prévue
+563|Cour
+565|Penthouse T3 rénové
+566|3 chambres
+567|Un penthouse entièrement rénové dans un immeuble historique de Santos, au design contemporain. Des pièces bien proportionnées, éclairées par de nombreuses fenêtres, un grand séjour avec salle à manger, une cuisine soigneusement conçue et trois chambres.
+568|Penthouse
+570|T4+1 avec vue sur le fleuve, Infante Santo
+571|4 suites
+572|5 salles de bain
+573|Sur l’Avenida Infante Santo, avec vue sur le Tage. Quatre chambres en suite plus un bureau, de généreux espaces baignés de lumière et une place de parking. Cinquième étage.
+574|Bureau
+576|Villa contemporaine à Necessidades
+577|6 salles de bain
+578|Une villa contemporaine singulière sur quatre niveaux, avec son propre ascenseur entre les étages. Trois suites spacieuses, une pièce supplémentaire au dernier étage, des finitions de grande qualité, vue sur le fleuve et parking.
+579|Ascenseur privé
+581|Immeuble de 4 appartements avec licence AL
+582|4 appartements
+583|8 salles de bain
+584|Un immeuble du début du XXe siècle avec un appartement d’environ 75 m² par étage, avec une licence de location saisonnière (AL). Près du fleuve, des ambassades, du Jardim da Estrela et du tram 28 : une forte demande des visiteurs comme des résidents.
+585|Immeuble entier
+586|Licence AL
+588|Loft au bord du fleuve dans un bâtiment de Gustave Eiffel
+589|Un loft en duplex avec mezzanine dans un bâtiment emblématique conçu à l’origine par Gustave Eiffel. Espace ouvert avec baies panoramiques et vue dégagée sur le Tage, hauts plafonds, cheminée, cuisine haut de gamme et deux places de parking.
+590|Cheminée
+591|2 places de parking
+593|Maison contemporaine avec piscine
+594|Une maison contemporaine sur trois niveaux, avec de grandes baies qui font entrer la lumière toute la journée et relient l’intérieur à l’extérieur. Piscine privée, une mezzanine pour une salle de sport ou un atelier, et du stationnement pour trois voitures. Près des quais et de Santos.
+595|Piscine privée
+596|3 places de parking
+597|Mezzanine pour salle de sport
+598|Un penthouse en duplex avec double hauteur sous plafond et des baies du sol au plafond qui encadrent le Tage et le pont du 25-Avril. Séjour, salle à manger et cuisine ouverts, une galerie à l’étage, une terrasse avec piscine privée et deux places de parking.
+599|Votre bien ici ?
+600|Vous pensez vendre à Estrela ou alentour ?
+601|J’ai des acheteurs qui cherchent dans le quartier. Demandez une étude de marché gratuite et découvrez ce que vaut votre bien aujourd’hui.
+602|Prix et disponibilités tels que publiés par Engel &amp; Völkers. Les surfaces sont l’área bruta privativa. Mis à jour en novembre 2026.
+603|Un nouveau projet que j’adore
+604|À 45 minutes de Lisbonne, dans le parc naturel de l’Arrábida
+606|Programme neuf
+607|La Enigma Collection : huit villas avec piscine privée
+608|2 pièces polyvalentes
+609|environ 300 m²
+610|Terrain de 374 m²
+611|Huit villas contemporaines en bois, chacune avec sa piscine à débordement, sur un même versant au cœur du parc naturel de l’Arrábida. Des séjours avec 6 mètres de hauteur sous plafond s’ouvrent sur les jardins et les collines. Une résidence fermée avec des espaces communs, près des plages de Setúbal et de Sesimbra. Livraison prévue au printemps 2027.
+612|Piscine à débordement privée
+613|Parc naturel
+614|Résidence fermée
+615|En construction
+616|À partir de 1 600 000 €
+617|Demandez-moi ce projet →
+618|Questions fréquentes
+619|Les questions que les vendeurs et les acheteurs me posent le plus. Vous ne trouvez pas la vôtre ? Envoyez-moi un message, je réponds sous un jour ouvrable.
+620|Crédit
+621|Vendez-vous uniquement des biens de luxe ?
+622|Non. Engel &amp; Völkers a une image premium, mais le premium tient au service, pas au prix. Je travaille avec tous types de biens, du studio au grand appartement familial, dès lors que je crois pouvoir bien les vendre pour vous.
+623|Pourquoi demandez-vous autant de documents ?
+624|Parce que la loi l’exige. Au Portugal, tout agent immobilier doit identifier le vendeur et l’acheteur et remplir un formulaire de lutte contre le blanchiment d’argent. C’est obligatoire pour chaque vente. Je vous demanderai votre pièce d’identité (Cartão de Cidadão ou passeport) et votre NIF, et pour les acheteurs aussi l’origine des fonds. Tout vérifier tôt vous protège et évite des problèmes plus tard, au compromis ou à l’acte.
+625|Ai-je besoin d’un certificat énergétique ?
+626|Oui. Un certificado energético valide est obligatoire pour mettre un bien en vente au Portugal. Si vous n’en avez pas, je peux vous mettre en contact avec un expert certifié.
+627|Vous cherchez un logement en dehors de Lisbonne ?
+628|Mon secteur est Estrela et les quartiers alentour. Pour un petit nombre d’acheteurs, je cherche aussi moi-même à Costa da Caparica, Arrábida &amp; Sesimbra, Comporta et dans l’Alentejo.
+629|Vous cherchez sur la Côte d’Argent, à Cascais, en Algarve ou à Porto ? Je vous présente un collègue Engel &amp; Völkers de confiance sur place.
+630|Pourquoi obtenir un accord de principe avant de visiter ?
+631|Vous savez exactement combien vous pouvez dépenser, et les vendeurs prennent votre offre au sérieux.
+632|Confidentialité
+633|Politique de confidentialité
+634|Dernière mise à jour : novembre 2026. Je fais court et clair : ce que je collecte, pourquoi, et ce que vous pouvez me demander à tout moment.
+635|Qui je suis
+636|Ce site appartient à Pascale Lepoutre, conseillère immobilière travaillant avec EV MMC Portugal – Mediação Imobiliária, Unipessoal Lda., Engel &amp; Völkers Lisboa, AMI 15208. Pour toute question sur vos données, écrivez à
+638|Ce que je collecte
+639|Uniquement ce que vous m’envoyez vous-même via les formulaires ou par WhatsApp : votre nom, votre numéro de téléphone, votre e-mail, l’adresse ou la rue de votre bien, ce que vous cherchez, comme le budget, les quartiers et le calendrier, et les documents que vous choisissez de joindre, comme votre caderneta predial ou votre certificat énergétique.
+640|Pourquoi je les utilise
+641|Pour répondre à votre question et préparer votre étude de marché gratuite.
+642|Pour chercher des biens qui correspondent à ce que vous cherchez.
+643|Pour vous envoyer des nouvelles de temps en temps, seulement si vous vous êtes inscrit. Vous pouvez vous désinscrire à tout moment.
+644|Pour vous présenter à mon partenaire crédit ComparaJá, seulement si vous avez coché la case pour l’accepter.
+645|J’utilise vos données parce que vous m’avez demandé de vous contacter, pour préparer un mandat avec vous, ou parce que vous avez donné votre consentement.
+646|Qui les voit
+647|Engel &amp; Völkers Lisboa, l’agence avec laquelle je travaille, où vos coordonnées sont enregistrées dans notre système clients.
+648|ComparaJá, seulement avec votre consentement, pour le financement.
+649|Un collègue de confiance dans une autre région du Portugal, seulement avec votre consentement, quand vous me demandez de vous mettre en contact.
+650|Les services qui font fonctionner ce site et ses formulaires, Netlify, et WhatsApp quand vous m’y écrivez.
+651|Je ne vends jamais vos données. Quand une vente ou un achat se fait, la loi portugaise m’oblige à identifier vendeurs et acheteurs, et ces informations sont conservées comme la loi l’exige.
+652|Combien de temps je les garde
+653|Tant que nous sommes en contact au sujet d’une vente ou d’un achat, et jusqu’à deux ans après notre dernier contact, sauf si la loi exige plus longtemps. Les abonnés à la newsletter restent sur la liste jusqu’à leur désinscription.
+654|Vos droits
+655|Vous pouvez me demander à tout moment de consulter, corriger ou supprimer vos données, d’arrêter de les utiliser, ou de retirer votre consentement. Il suffit de m’envoyer un e-mail. Vous pouvez aussi déposer une réclamation auprès de l’autorité portugaise de protection des données, la CNPD, sur
+657|Cookies et statistiques de visite
+658|Ce site n’utilise pas de cookies de suivi ni de publicité. Les polices sont chargées depuis Google Fonts, ce qui signifie que votre navigateur se connecte aux serveurs de Google pour les afficher. Pour savoir combien de personnes visitent le site et quelles pages elles lisent, j’utilise Cloudflare Web Analytics. Il compte les visites sans cookies et sans collecter de données personnelles : il ne peut donc pas vous identifier. Pour vous éviter de tout retaper, votre nom, votre téléphone et votre e-mail sont mémorisés uniquement dans votre propre navigateur, sur votre appareil, afin de pré-remplir les autres formulaires. Rien n’est envoyé avant que vous appuyiez sur envoyer.
+659|Je souhaite
+660|Acheter
+661|Vendre
+662|Région
+664|Côte d’Argent
+668|Jusqu’à 750 000 €
+669|Plus de 3 000 000 €
+670|Je vends, je n’achète pas
+671|Calendrier
+672|Dans l’année
+673|Je me renseigne
+674|Que cherchez-vous, ou que souhaitez-vous vendre ?
+675|J’accepte que Pascale transmette mes coordonnées à un collègue de confiance dans cette région, qui me contactera.
+676|Envoyer
+677|Conseillère immobilière, Engel &amp; Völkers. Spécialiste d’Estrela.
+678|Je parle
+683|Contact
+684|Copier
+685|© 2026 Pascale Lepoutre · Tous droits réservés. Les textes et les photos ne peuvent pas être réutilisés sans autorisation.
+687|Ouvrir le menu
+688|Pascale Lepoutre souriante parmi des oiseaux de paradis à Lisbonne
+689|Pascale Lepoutre avec le tram 28 à Lisbonne
+690|Votre adresse e-mail
+691|Pascale Lepoutre devant une porte rouge à Lisbonne
+692|Fermer
+693|ex. Rua de São Bento 120, Lapa
+694|ex. Cascais, Comporta, Porto
+695|ex. Príncipe Real, Graça
+696|Soyez précis, ex. à distance de marche de la St. Julian's School
+697|Écrivez ici
+698|Par exemple : le soleil du matin dans la cuisine, une rue calme, de la place pour cuisiner pour des amis.
+699|Par exemple : 650 000 €
+700|Par exemple : 450 000 €
+701|Par exemple : nous travaillons à la maison et avons besoin d’un bureau.
+702|Carte des quartiers
+703|Biens vendus par typologie : T2 41 %, T0 à T1 27 %, T3 20 %, T4 et maisons 12 %
+704|Pascale Lepoutre souriante devant une porte verte à Lisbonne
+705|Ceviche au maïs grillé chez Maiz do Mar
+707|Une part du gâteau au chocolat sur la calçada de Lisbonne
+708|La salle de yoga de Baraza
+710|À l’intérieur de mvmt.studio
+712|La terrasse de l’Último Porto, avec Lapa en arrière-plan
+714|La terrasse du jardin du Clube de Jornalistas, Lapa
+715|Jacarandas en fleurs dans le jardin du Museu Nacional de Arte Antiga
+717|Logo du Museu do Oriente
+719|Course au lever du soleil le long du fleuve près du MAAT, avec le pont du 25-Avril
+720|Une chanteuse lors d’une Lisbon Living Room Session, dans un salon du quartier
+722|Pascale Lepoutre dans un escalier à Lisbonne
+723|Filtrer par quartier
+724|Nombre de chambres
+725|Appartement T4 à vendre Calçada das Necessidades, Estrela, Lisbonne, avec vue sur le pont du 25-Avril
+730|Photo précédente
+731|Photo suivante
+732|Studio meublé à vendre au Pátio do Pinzaleiro, Santos, Lisbonne
+738|T1 meublé Rua de Buenos Aires, à vendre à Lapa, Lisbonne
+843|La Enigma Collection, huit villas avec piscine privée dans le parc naturel de l’Arrábida
+844|Séjour avec vue sur les collines de l’Arrábida
+845|Suite avec vue sur la montagne
+846|Villas et jardins à flanc de colline, Arrábida
+847|Écrire à Pascale sur WhatsApp
+848|Acheter ou vendre ailleurs au Portugal
+849|ex. une maison de 3 chambres avec jardin, budget 600 k€ · ou : mon appartement de 2 chambres à Porto
+852|Facebook Pascale Lepoutre, Lisbon Homes
+854|LinkedIn Pascale Lepoutre
+@|€1M – €1.5M|1 M€ – 1,5 M€
+@|€1.5M – €3M|1,5 M€ – 3 M€
+@|A slice of O Melhor Bolo de Chocolate do Mundo on Lisbon calçada, Campo de Ourique|Une part du Melhor Bolo de Chocolate do Mundo sur la calçada de Lisbonne, Campo de Ourique
+@|Ceviche with toasted corn at Maiz do Mar, Mexican fusion restaurant in Lisbon|Ceviche au maïs grillé chez Maiz do Mar, restaurant de fusion mexicaine à Lisbonne
+@|Inside mvmt.studio, movement classes in Lisbon|À l’intérieur de mvmt.studio, cours de mouvement à Lisbonne
+@|Inside Último Porto restaurant, by the port of Lisbon|À l’intérieur du restaurant Último Porto, au bord du port de Lisbonne
+@|Jacarandas in bloom in the garden of the Museu Nacional de Arte Antiga, Lapa, Lisbon|Jacarandas en fleurs dans le jardin du Museu Nacional de Arte Antiga, Lapa, Lisbonne
+@|Museu do Oriente logo, Fundação Oriente, Lisbon|Logo du Museu do Oriente, Fundação Oriente, Lisbonne
+@|Penthouse with private pool and river views for sale in Lapa, Lisbon|Penthouse avec piscine privée et vue sur le fleuve à vendre à Lapa, Lisbonne
+@|Sunrise run along the river by MAAT, with the 25 de Abril bridge, Lisbon|Course au lever du soleil le long du fleuve près du MAAT, avec le pont du 25-Avril, Lisbonne
+@|T4 apartment with terrace for sale in Lapa, Lisbon|Appartement T4 avec terrasse à vendre à Lapa, Lisbonne
+@|The garden terrace of Clube de Jornalistas restaurant, Lapa, Lisbon|La terrasse du jardin du restaurant Clube de Jornalistas, Lapa, Lisbonne
+@|The yoga room at Baraza Yoga, Lisbon|La salle de yoga de Baraza Yoga, Lisbonne
+@|asked ≈ €7.200/m²|affiché ≈ 7 200 €/m²
+@|sold ≈ €5.700/m²|vendu ≈ 5 700 €/m²
+@|the gap|l’écart
+@|Almada · south bank|Almada · rive sud
+@|My focus · Estrela parish|Mon secteur · paroisse d’Estrela
+@|home base|mon port d’attache
+@|Lisbon: € 5.900/m²|Lisbonne : 5 900 €/m²
+@|Add your documents now|Joindre vos documents maintenant
+@|· optional|· facultatif
+@|Energy certificate, if possible|Certificat énergétique, si possible
+@|· optional, but very helpful|· facultatif, mais très utile
+@|Optional, but very helpful|Facultatif, mais très utile
+@|PDF or photo, up to 8 MB in total. I'll need them for the study anyway, so if not now, you can send them later.|PDF ou photo, 8 Mo maximum au total. J’en aurai de toute façon besoin pour l’étude : si ce n’est pas maintenant, vous pourrez les envoyer plus tard.
+@|Kind words|Quelques mots
+@|What my clients say|Ce que disent mes clients
+@|Your review|Votre avis
+@|How was it to work with me?|Comment s’est passée notre collaboration ?
+@|Thank you for taking a moment. A few honest sentences help other people decide, and they mean a lot to me.|Merci de prendre un moment. Quelques phrases sincères aident d’autres personnes à se décider, et elles comptent beaucoup pour moi.
+@|Your name|Votre nom
+@|Where are you from?|D’où venez-vous ?
+@|e.g. Belgium, Lisbon, Canada|ex. Belgique, Lisbonne, Canada
+@|What did we do together?|Qu’avons-nous fait ensemble ?
+@|I sold my home|J’ai vendu mon bien
+@|I bought a home|J’ai acheté un bien
+@|Something else|Autre chose
+@|Which home or area, and when? · optional|Quel bien ou quartier, et quand ? · facultatif
+@|e.g. a T3 in Lapa, 2027|ex. un T3 à Lapa, 2027
+@|What did you like? What made the difference for you?|Qu’avez-vous apprécié ? Qu’est-ce qui a fait la différence pour vous ?
+@|How may I show your name?|Comment puis-je afficher votre nom ?
+@|First name and initial|Prénom et initiale
+@|Full name|Nom complet
+@|Anonymous|Anonyme
+@|I agree that Pascale shows my review on her website and social media, as chosen above.|J’accepte que Pascale affiche mon avis sur son site et ses réseaux sociaux, comme choisi ci-dessus.
+@|Send my review|Envoyer mon avis
+@|Thank you so much! Your words mean a lot to me.|Merci beaucoup ! Vos mots comptent beaucoup pour moi.

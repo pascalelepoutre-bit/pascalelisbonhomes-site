@@ -1,0 +1,696 @@
+1|Home
+2|Verkopen
+3|Kopen
+4|Buurten
+5|Markt
+6|Te koop
+7|Mijn Lissabon
+8|Vragen
+9|Plan een gesprek
+10|Je vastgoedconsulent in Lissabon
+11|Je huis in Lissabon,
+12|in
+13|goede
+14|handen
+15|Verkopen of kopen in Estrela en de buurten eromheen? Ik help je aan de juiste prijs en de juiste woning, en ik sta naast je van het eerste bezoek tot de akte.
+16|Ik wil verkopen
+17|Ik wil kopen
+18|Gratis marktstudie
+19|Jouw persoonlijke Estrela-expert
+21|Over mij
+22|Hallo, ik ben Pascale. Aangenaam!
+23|Ik ben vastgoedconsulent bij Engel &amp; Völkers in Lissabon. Belgisch van geboorte, wereldburger in hart en nieren: ik woonde in Brazilië en Kenia, kwam twintig jaar geleden voor het eerst naar Portugal als Erasmusstudent, en maakte uiteindelijk van Lissabon mijn thuis. Ik weet hoe het voelt om een nieuw leven te beginnen in een ander land.
+24|Toen ik mijn eigen appartement kocht, bezocht ik bijna 40 woningen, dus ik weet wat een koper ja doet zeggen. Vandaag woon ik in Lapa en ben ik gespecialiseerd in de parochie Estrela en de buurten eromheen. Ik woon hier graag: de rivier, het licht en het strand op amper 25 minuten.
+25|Mensen werken graag met me samen om wie ik ben. Ik werk alleen aan dingen waar ik echt in geloof, maar als ik ervoor ga, ga ik door tot we het doel bereiken. Persoonlijk, gestructureerd en eerlijk: een duidelijk plan, regelmatige updates en geen verrassingen.
+27|Hoe kan ik helpen?
+28|Verkopen of kopen, ik sta aan jouw kant
+29|Van het eerste gesprek tot de sleutels
+30|Ik wil verkopen
+31|Vanaf dag één de juiste prijs, mooie marketing en elke week een update van mij.
+32|Ik wil kopen
+33|Eén aanspreekpunt voor elke woning op de markt. Ik plan de bezichtigingen en controleer de papieren.
+34|Start mijn zoektocht
+36|Een persoonlijke aanpak, met een wereldwijd netwerk erachter
+37|Eén persoonlijk aanspreekpunt dat jouw straat kent, en collega's over de hele wereld die elke dag kopers aanbrengen.
+38|opgericht in Hamburg
+39|landen
+40|kantoren wereldwijd
+41|mensen
+42|Een advocaat, belastingadviseur of kredietadviseur nodig? Ik stel je voor aan mensen die ik vertrouw.
+43|Mijn buurten
+44|Estrela, en alles eromheen
+45|Zeven buurten die ik straat per straat ken
+53|Droom je van de kust of het platteland? Caparica, Arrábida, Comporta, de Alentejo.
+54|Buiten Lissabon&nbsp;→
+55|Te koop in en rond Estrela
+56|Een selectie woningen uit mijn eigen portefeuille en die van mijn collega's bij Engel &amp; Völkers. Interesse in een woning? Stuur me gewoon een bericht. Ik stuur je alle details en regel je bezichtiging.
+57|✦ Nieuw
+58|Mijn listing
+59|Investering
+62|4 slaapkamers
+63|1 badkamer
+64|Investeringskans in Estrela, met uitzicht op de rivier en de brug. Vraag me de investeerdersstudie met het verwachte huurrendement.
+65|Vraag me naar deze woning →
+69|Studio · Pátio do Pinzaleiro
+70|Studio
+71|Een pied-à-terre of investering: een charmante, gemeubelde studio met eigen ingang op een rustige binnenplaats bij de kerk van Santos, met Madragoa en de rivier om de hoek.
+74|T4 met terras, lift en garage
+75|2 badkamers
+76|Terras op het westen, open uitzicht, gerenoveerd in 2016, vlak bij het Museu de Arte Antiga.
+78|Penthouse met privézwembad en uitzicht op de rivier
+79|4 badkamers
+80|Duplex met een terras van 163 m² en een overloopzwembad, met uitzicht op de Taag en de brug.
+81|Bekijk alle woningen in Estrela, Lapa &amp; Santos
+82|Af en toe nieuws
+83|Nieuws uit Lissabon, vanuit mijn buurt
+84|Alleen als er iets te delen valt: echte prijzen, nieuwe woningen op de markt en mijn favoriete lokale tips. Kort en vrolijk, geen spam.
+85|Leeg laten
+86|E-mail
+87|Inschrijven
+88|Ik ga akkoord om af en toe nieuws van Pascale te ontvangen en kan me op elk moment uitschrijven.
+89|Dank je! Je staat op de lijst.
+90|Voor verkopers
+91|Je woning verkopen in Lissabon
+92|Vanaf dag één de juiste prijs, sterke marketing en iemand aan jouw kant die jouw taal spreekt.
+93|Een bezoek van 10 minuten
+94|Ik kom je woning bekijken en luister naar je plannen en timing.
+95|Echte verkoopprijzen in de buurt, zonder verplichting. Jij beslist over de prijs.
+96|Documenten &amp; contract
+97|Als je beslist om te verkopen, begeleid ik je bij elk document en tekenen we de bemiddelingsovereenkomst.
+98|Premium lancering
+99|Professionele foto's en een premium presentatie meteen na de ondertekening, daarna de portalen en het wereldwijde netwerk van Engel &amp; Völkers. Alleen serieuze kopers komen kijken.
+100|Van bod tot escritura
+101|Ik onderhandel en blijf bij je tot de akte.
+102|Elke week een update van mij. Je hoeft me niet achterna te zitten.
+103|De juiste prijs
+104|Vanaf dag één de juiste prijs: meer bezoeken, betere biedingen
+105|de gemiddelde korting als een woning te hoog start
+106|maanden, de gemiddelde verkooptijd in Estrela
+107|Te hoog? Dan help je je buren verkopen.
+108|Kopers vergelijken en kopen dan de beter geprijsde woning verderop in de straat.
+109|Wie te hoog start, eindigt vaak lager.
+110|Na maanden online verlies je je onderhandelingspositie.
+111|Juist geprijsd? Dan komen serieuze kopers snel.
+112|Meer bezoeken in de eerste weken, en biedingen dicht bij je prijs.
+113|Vraag je gratis marktstudie aan
+114|Bekijk het volledige marktrapport van Estrela →
+115|Wat is je woning vandaag waard?
+116|Ik zeg je eerlijk wat je woning waard is.
+117|Zoals ze nu is, na renovatie of verhuurd: ik maak de studie die bij jouw woning past. Om te beginnen heb ik alleen je adres nodig. Voor de studie zelf heb ik je caderneta predial nodig, en indien mogelijk je energiecertificaat. Je kunt ze hier meteen in het formulier toevoegen. Gratis en vrijblijvend.
+118|Vraag mijn gratis marktstudie aan
+119|Je naam en nummer volstaan. Ik bel je om een kort bezoek in te plannen, want een goede studie begint altijd bij jou thuis.
+120|Naam
+121|Telefoon / WhatsApp
+122|E-mail · optioneel
+123|Straat en huisnummer · optioneel, maar het bespaart tijd aan de telefoon
+124|Waar ligt je woning?
+125|Estrela, Lapa, Santos of in de buurt
+126|Elders in Lissabon
+127|Buiten Lissabon
+128|Welke stad of regio?
+129|Slaapkamers
+130|Huis / villa
+131|Wanneer denk je aan verkopen?
+132|Gewoon nieuwsgierig
+133|Binnen 6 maanden
+134|Zo snel mogelijk
+135|Verstuur mijn aanvraag
+136|Dank je! Ik neem binnen één werkdag contact op om je gratis marktstudie in te plannen. Nog geen documenten toegevoegd? Stuur me je caderneta predial, en indien mogelijk je energiecertificaat, via e-mail of WhatsApp.
+137|Verkopen vanuit het buitenland of een geërfde woning
+138|Niet in Lissabon? Je woning is in goede handen bij mij.
+139|Veel eigenaars in Estrela en Lapa wonen in het buitenland, of erfden een woning samen met hun familie. Ik spreek jouw taal en regel hier alles, zodat je niet voor elke stap het vliegtuig hoeft te nemen.
+140|Vertel me over je situatie
+141|In jouw taal
+142|português, English, français of Nederlands, via WhatsApp of videogesprek.
+143|Namens jou
+144|Sleutels, foto's, bezichtigingen en papierwerk: alles wordt hier geregeld.
+145|Samen met familie geërfd?
+146|Iedereen krijgt dezelfde informatie op hetzelfde moment, en ik help met de documenten samen met betrouwbare advocaten.
+147|Verkopen buiten Lissabon? Ik breng je in contact met een betrouwbare collega in jouw regio.
+148|Meer info&nbsp;→
+149|Veelgestelde vragen
+150|Vragen van verkopers
+151|Wat eigenaars me het vaakst vragen
+152|Moet ik een exclusief contract tekenen?
+153|Nee. Exclusiviteit is nooit verplicht: jij kiest altijd. Ik leg je de voordelen uit zodat je kunt beslissen. Met een exclusief contract verschijnt je woning met één prijs en één mooie presentatie, kan ik investeren in professionele foto's en echte marketing, en heb je één aanspreekpunt met elke week een update. En exclusief betekent niet minder kopers: ik deel mijn woningen met andere kantoren, zodat hun kopers ook kunnen komen kijken.
+154|Wie bepaalt de prijs?
+155|Jij, altijd. Ik kijk naar recente verkopen en het huidige aanbod van vergelijkbare woningen in de buurt, en naar de staat van je woning, de verdieping, het licht en de buitenruimte. Ik leg alles uit in een schriftelijke marktstudie, zodat je de vraagprijs kiest op basis van echte feiten. Hetzelfde geldt voor biedingen: ik adviseer je, maar jij beslist over de uiteindelijke verkoopprijs.
+156|Wat heb je van mij nodig om te beginnen?
+157|Voor je gratis marktstudie je caderneta predial, indien mogelijk je energiecertificaat, en een kort bezoek aan je woning. Voor je woning online gaat, heb ik alle documenten nodig: caderneta predial, certidão permanente, energiecertificaat, en de identiteitskaart en het NIF van elke eigenaar. Ik help je aanvragen wat ontbreekt. Zodra alles compleet is, tekenen we de bemiddelingsovereenkomst, en de fotoshoot volgt dezelfde of de volgende dag.
+158|Wanneer betaal ik je commissie?
+159|Alleen als je woning verkocht is. De commissie wordt vooraf vastgelegd in de bemiddelingsovereenkomst en wordt voor de helft betaald bij de CPCV en voor de helft bij de escritura.
+160|Hoelang duurt een verkoop?
+161|De juiste koper vinden hangt af van prijs, staat en vraag. Met de juiste prijs en een volledig dossier vinden woningen in en rond Estrela meestal binnen enkele maanden een koper. Daarna gaat alles snel in Portugal: de voorlopige koopovereenkomst (CPCV) wordt meestal binnen één tot drie weken getekend, en de akte volgt vaak één tot twee maanden later. Daarom bereid ik je documenten vanaf het begin voor, zodat niets de verkoop vertraagt.
+162|Bekijk alle vragen →
+163|Jouw zoektocht
+164|Vertel me wat je zoekt
+165|Ongeveer 3 minuten, bijna alles met één tik. Het bespaart ons tijd aan de telefoon en heen-en-weer gemail, en het helpt je goed na te denken over wat echt belangrijk is voor jou. Hoe meer ik weet, hoe beter ik je kan helpen.
+166|Neem je tijd, ik neem de mijne voor jou
+167|Over jou
+168|Voorkeurstaal
+173|Wanneer ben je het best bereikbaar voor gesprekken en bezoeken?
+174|Weekdagen 's ochtends
+175|Weekdagen 's middags
+176|Weekdagen 's avonds
+177|Weekends
+178|De woning die je zoekt
+179|Waar zoek je?
+180|In Lissabon
+181|Buiten Lissabon
+182|Waarvoor?
+183|Eigen woning
+184|Vakantiewoning
+185|Hoeveel slaapkamers?
+186|4 of meer
+187|Welke buurten in Lissabon?
+190|Andere
+191|Welke regio's buiten Lissabon?
+193|Arrábida &amp; Sesimbra
+196|Welke andere regio?
+197|Minimale oppervlakte
+198|Zou je een woning om te renoveren overwegen?
+199|Nee, alleen instapklaar
+200|Kleine werken, ja
+201|Ja, volledige renovatie
+202|Wat belangrijk is voor jou
+203|Must-haves
+204|kies er maximaal 3
+205|Lift
+206|Balkon of terras
+207|Parkeerplaats
+208|Uitzicht op de rivier
+209|Veel licht
+210|Tuin
+211|Zwembad
+212|Dicht bij het strand
+213|Een stukje grond
+214|Zeezicht
+215|Welke andere must-have?
+216|Pluspunten
+217|Berging
+218|Tuin of patio
+219|Rustige straat
+220|Thuiskantoor
+221|Welk ander pluspunt?
+222|Dealbreakers
+223|Gelijkvloers
+224|Meer dan 3 verdiepingen zonder lift
+225|Drukke straat
+226|Welke andere dealbreaker?
+227|Waar word je thuis gelukkig van?
+228|Geen vereiste: het helpt me te begrijpen wat thuis voor jou betekent.
+229|Budget
+230|Maximale aankoopprijs van de woning
+231|Tot €400k
+232|Meer dan €3M
+233|Exact maximum, als je het weet · optioneel
+234|Heb je een lening nodig?
+235|Nee, ik koop cash
+236|Ja
+237|Weet ik nog niet
+238|Heb je al een principeakkoord van de bank?
+239|Ja, dat hebben we
+240|In aanvraag
+241|Nog niet
+242|Voor welk bedrag?
+243|Zal ik je voorstellen aan de kredietadviseur met wie ik werk? Zij vergelijkt verschillende banken, zonder kosten voor jou.
+244|Ja, graag
+245|Nee, dank je
+246|We hebben er al een
+247|Wanneer
+248|Wanneer wil je kopen?
+249|Binnen 3 maanden
+250|Geen haast
+251|Hangt het van iets af?
+252|Voor je kunt kopen, moet je…
+253|Niets, we zijn er klaar voor
+254|Een andere woning verkopen
+255|Goedkeuring van de bank krijgen
+256|Een huurcontract beëindigen
+257|Nog iets wat ik moet weten?
+258|Je antwoorden worden alleen gebruikt om je woning te vinden, en nooit gedeeld.
+259|Verstuur mijn zoekopdracht
+260|Dank je! Ik kom binnen één werkdag bij je terug met een eerste selectie.
+261|Zeven buurten die ik straat per straat ken. Mijn focus is de parochie Estrela, en ik woon in Lapa.
+262|Bekijk het marktrapport van Estrela →
+263|Mijn focusgebied
+264|Groen, rustig en klassiek. Het leven draait hier rond de Jardim da Estrela en de witte koepel van de basiliek, met tram 28 die voorbij ratelt. Kopers komen voor de elegante gebouwen uit het begin van de 20e eeuw, hoge plafonds en houten vloeren, en voor een echt buurtgevoel dicht bij het centrum.
+267|De Rua de São Bento en haar antiekwinkels
+268|Tram 28
+269|De markt in het kort · vraagprijzen
+270|op een jaar · parochie Estrela, sep. 2026
+271|Pascales tip
+272|Wandel door de zijstraten rond het park. Enkele van de mooiste gebouwen liggen maar één blok van de grote wegen.
+273|Mijn thuisbasis · parochie Estrela
+274|De ambassadewijk van Lissabon en een van de meest prestigieuze adressen. Rustige, hellende straten met palacetes, tuinen achter hoge muren en, vanaf de hogere verdiepingen, weidse uitzichten over de Taag. Woningen hier komen zelden op de markt en kopers zijn vaak bereid te wachten op de juiste.
+275|Stranden van Caparica op ~25 min
+276|Ambassades en residenties
+278|Uitzicht op de rivier vanaf de heuvel
+279|op een jaar · parochie Estrela, incl. Lapa, sep. 2026
+280|Kijk naar de hogere verdiepingen. Daar vind je de beroemde rivierzichten van Lapa.
+281|Deel van de freguesia Estrela
+282|Tussen Lapa en de rivier mengt Santos designwinkels en ateliers met rustige woonstraten. Weg van de drukste toeristische zones, maar dicht bij het water, de trein naar Cascais en de brug naar de zuideroever.
+283|Designwijk Santos
+284|De rivierkant en de Avenida 24 de Julho
+285|Treinstation Santos
+287|Madragoa ernaast
+288|op een jaar · parochie Estrela, incl. Santos, sep. 2026
+289|Sommige straten zijn 's avonds levendig, andere helemaal rustig. Ik laat je zien welke welke zijn.
+290|Rond Estrela
+291|Een dorp in de stad. Rechte, vlakke straten, buurtwinkels, cafés en een van de geliefdste markten van Lissabon. Gezinnen houden ervan om het dagelijkse gemak en het sterke gemeenschapsgevoel.
+294|Eindhalte van tram 28 in Prazeres
+295|Winkelstraat Rua Ferreira Borges
+296|op een jaar · parochie Campo de Ourique, sep. 2026
+297|Vlakke straten en alles op loopafstand. Perfect als je niet van een auto afhankelijk wilt zijn.
+298|Dicht bij de rivier en volop in verandering. Voormalige industriële ruimtes werden LX Factory en er verrijzen nieuwe woonprojecten. Goede waarde voor kopers die vooruitkijken.
+301|Station Alcântara-Mar
+302|Wandelpromenade langs de rivier
+303|op een jaar · parochie Alcântara, sep. 2026
+304|Nieuwe projecten veranderen de buurt. Vraag me welke eraan komen voor ze online staan.
+305|Op de heuvel boven Belém is Ajuda rustig en residentieel, met het Palácio da Ajuda en een van de oudste botanische tuinen van Lissabon. Een echt buurtgevoel, dicht bij de rivier en het Monsanto-park.
+308|Bospark Monsanto vlakbij
+309|Uitzicht over de Taag
+310|op een jaar · parochie Ajuda, sep. 2026
+311|De prijzen liggen lager dan in Belém of Estrela, dus je budget gaat verder. Vraag me welke straten uitzicht op de rivier hebben.
+312|Ruimte, licht en de rivieroever, met rustigere woonstraten net achter de monumenten. Dicht bij de villa's van Restelo en goede scholen, met vlotte toegang tot de kust.
+315|MAAT en CCB
+316|Tuinen langs de rivier
+317|op een jaar · parochie Belém, sep. 2026
+318|Ruimte, licht en de rivier, en het centrum op een kort ritje langs het water.
+319|Vraagprijzen: gemiddelde prijs per m² van woningen die te koop staan, prijsrapport van idealista, september 2026.
+320|Marktrapport Estrela · 12 maanden tot september 2026
+321|Wat er echt gebeurt als je verkoopt in Estrela
+322|Echte verkoopprijzen, geen vraagprijzen. Vergeleken met heel Lissabon. De parochie Estrela omvat Lapa, Santos en Prazeres.
+323|Het prijsverschil
+324|Woningen staan veel hoger te koop dan wat kopers echt betalen
+325|in Estrela
+326|Lissabon: −19%
+327|Wat dat gemiddeld betekent
+328|Te koop voor
+329|Echt verkocht voor
+330|Daarom is de juiste prijs vanaf dag één zo belangrijk: serieuze kopers komen meteen, en niemand verliest maanden.
+331|Vraagprijs
+332|Echte verkoopprijs
+333|Bestaande woningen in Estrela, 2011–2026
+334|Bron: SIR – Confidencial Imobiliário, parochie Estrela en gemeente Lissabon, 12 maanden tot september 2026. Verkoopprijs, prijsverschil, prijsverlagingen en verkochte woningen: alle woningen. Verkooptijd, typologie en prijsgrafiek: bestaande woningen. Grafiek hertekend op basis van de evolutie van de prijs/m² van SIR. © IMOESTATÍSTICA – ALLE RECHTEN VOORBEHOUDEN.
+335|De juiste prijs voor mijn woning?
+336|Wat verkoopt in Estrela
+337|T4+ en huizen
+338|Appartementen met twee slaapkamers zijn de meest verkochte woningen in Estrela.
+339|Gemiddelde verkoopprijs
+340|waarvoor woningen in Estrela echt verkocht zijn
+341|Lissabon: € 5.900/m²
+342|Prijsverlagingen
+343|gemiddeld daalt de eerste vraagprijs voor de woning verkocht is
+344|Lissabon: −6,1%
+345|Verkooptijd
+346|6 maanden
+347|een maand langer dan in Lissabon. Met een groter prijsverschil wachten woningen die te hoog starten langer op een koper.
+348|Lissabon: 5 maanden
+349|Mijn favoriete plekken
+350|Waar ik eet, beweeg, naar muziek luister en voor mezelf zorg. De plekken die ik aanraad aan vrienden en klanten die hier nieuw zijn.
+351|Mexicaanse fusion
+353|Vlak naast mijn deur. De Mexicaanse fusionkeuken van chef Rodrigo: heel verse ingrediënten, gerechten vol smaak en altijd zo'n vriendelijk team. Piepklein, maar zo gezellig, en ik ben altijd blij als ik er ben.
+356|Zoete zonde
+358|Al jaren mijn favoriete chocoladetaart, lang voor ik Carlos leerde kennen, de man erachter. Nu zijn we vrienden, en ik ben er nog even verslaafd aan. De zaak ligt recht tegenover de Mercado de Campo de Ourique, en er is ook een kiosk op de Avenida da Liberdade, waar ik het vaakst naartoe ga omdat die dichterbij ligt. Proef het één keer en je begrijpt de naam.
+361|Na bijna vijftien jaar yoga kom ik hier weer bij mezelf. Zeer bekwame leraren en een warme sfeer. Toen ik zelf een woning zocht, was dicht bij deze studio wonen een van mijn must-haves.
+362|Bewegen
+364|Recht tegenover het Museu de Arte Antiga, en de plek waar ik uit mijn comfortzone stap. Fijne leraren, een heel warme sfeer en veel verschillende lessen. Ik ga vaak trots naar huis, en net zo vaak met spierpijn de dag erna.
+365|Nieuwsgierig? Probeer een gratis les met mij →
+366|Lunch aan het water
+368|De plek die ik bijna liever geheim hou. Vol locals, en je komt er op een grappige manier: via een bruggetje de haven in. Heerlijke vis van de houtskoolgrill, pal aan het water. Het kan er druk zijn, maar dat hoort bij de charme.
+369|Lunch in de tuin
+371|Een verborgen tuinrestaurant in een oud huis, met een heerlijk terras. Ik wilde er al lang naartoe en ging er onlangs eindelijk heen: gerechten vol smaak, en je eet nooit te veel, wat ik geweldig vind.
+372|Tot rust komen
+373|De tuin van het Museu de Arte Antiga
+374|Mijn favoriete plek om tot rust te komen. Veel mensen weten niet dat het museum zo'n mooie tuin heeft, met een van de beste uitzichten op de rivier en de brug. De renovatie is bijna klaar, en ik kijk ernaar uit dat hij weer opengaat.
+375|Concerten
+377|In een voormalig havenpakhuis aan de rivier in Alcântara organiseert het museum vaak mooie concerten tegen heel eerlijke prijzen: piano, jazz en muziek uit de hele wereld. Een makkelijke culturele avond, dicht bij huis.
+378|Zonsopgang, aan de rivier…
+379|Lopen
+380|Van mijn huis naar Belém en terug
+381|Ik loop regelmatig langs de rivier bij zonsopgang, van mijn huis naar Belém en terug. Het licht op het water en de brug is magisch. En een klein geheim dat weinig mensen kennen: je kunt rondjes lopen rond de haven, tussen de boten en de containers.
+382|Laatste zondag van de maand…
+383|Muziek
+385|Op de laatste zondag van elke maand vind je me op een huiskamerconcert, bij iemand thuis en vaak hier in de buurt. Ik ontdek nieuwe plekken en nieuwe mensen, en elke keer word ik opnieuw verliefd op Lissabon, en op het leven.
+386|Tot ziens in de buurt
+387|Laten we elkaar ontmoeten in de buurt
+388|Of je nu verkoopt, koopt of gewoon nieuwsgierig bent naar Lissabon, ik ontmoet je graag.
+389|Ik verkoop
+390|Ik koop
+391|Voor kopers
+392|Droom je van een woning in Lissabon? Laten we ze samen vinden.
+393|Eén aanspreekpunt voor elke woning op de markt. Ik contacteer de andere kantoren voor jou, plan de bezichtigingen en controleer de documenten voor je verliefd wordt. Ik spreek jouw taal, en ik heb de stap vanuit het buitenland zelf gezet.
+394|Een lening nodig?
+395|Duurt ongeveer 3 minuten · gratis en vrijblijvend
+396|Eerst praten we
+397|Een telefoon- of videogesprek: hoe je woont, waar je graag zou zijn, welk budget goed voelt en wat je echt niet wilt.
+398|Jouw persoonlijke selectie
+399|Ik stuur je een privépagina met de woningen die passen, van alle kantoren. Jij reageert, ik verfijn, ronde na ronde.
+400|Bezichtigingen, één aanspreekpunt
+401|Ik zit achter de andere makelaars aan, plan je bezichtigingen en controleer eerst de papieren. Soms hoor ik van een woning nog voor ze online staat.
+402|Tot je de sleutels in handen hebt
+403|Ik onderhandel over de prijs en de voorwaarden, controleer elk document met de advocaat en blijf bij je tot de akte.
+404|"Voor mijn eigen woning in Lissabon deed ik bijna 40 bezichtigingen. Ik ken de opwinding en de twijfels, en ik maak het je graag makkelijker."
+405|Aankoopkosten
+406|Wat gaat het echt kosten?
+407|Bovenop de prijs betaal je IMT, zegelrecht en de akte. Vul de prijs in en zie meteen een schatting.
+408|Alleen indicatief, op basis van de officiële IMT-tabellen 2026 voor het Portugese vasteland. IMT wordt berekend op de prijs of op de fiscale waarde van de woning, de hoogste van de twee. Controleer de definitieve bedragen altijd met je advocaat of bank.
+409|Officiële IMT-tarieven
+410|Aankoopprijs
+411|De woning wordt
+412|Mijn hoofdverblijf
+413|Een tweede woning of investering
+414|Ik ben 35 of jonger en dit is mijn eerste woning
+415|Bedrag van de lening, indien van toepassing
+416|IMT, overdrachtsbelasting
+417|Zegelrecht op de aankoop, 0,8%
+418|Zegelrecht op de lening, 0,6%
+419|Akte en kadaster, Casa Pronta
+420|Totale kosten bovenop de prijs
+421|Prijs plus kosten
+422|Financiering
+423|Een lening nodig? Ik breng je in contact met een betrouwbare kredietadviseur.
+424|Ik werk met ComparaJá, een onafhankelijke kredietadviseur die de Portugese banken gratis voor je vergelijkt. Laat je gegevens achter en ik stel je persoonlijk voor, zodat je je budget kent voor je gaat kijken.
+425|Breng me in contact met een kredietadviseur
+426|Geschatte aankoopprijs
+427|Tot € 300.000
+428|Meer dan € 1.000.000
+429|Heb je al een woning gevonden?
+430|Nog aan het zoeken
+431|Wanneer ben je van plan te kopen?
+432|Over 3 tot 6 maanden
+433|Later, ik oriënteer me
+434|Woon je in Portugal?
+435|Nee, in het buitenland
+436|Ik ga ermee akkoord dat Pascale mijn gegevens deelt met haar kredietpartner ComparaJá, zodat ComparaJá contact met me opneemt over financiering.
+437|Dank je! Ik neem binnen één werkdag contact op.
+438|Oceaan, natuur en ruimte, dicht bij de stad
+439|Plekken waar ik zelf graag kom, en die ik je graag laat zien
+440|Op zoek naar een uitzonderlijk strandhuis, een quinta of een tweede woning vlak bij Lissabon? Voor een klein aantal kopers die klaar zijn om de stap te zetten, doe ik een persoonlijke, discrete zoektocht: ik vind, bezoek en vergelijk de beste woningen, vaak voor ze op de portalen komen, samen met betrouwbare collega's van Engel &amp; Völkers die elke regio door en door kennen.
+441|20 min van Lissabon
+442|45 min van Lissabon
+443|1u15 van Lissabon
+444|De Alentejo
+445|minder dan 2u van Lissabon
+446|Nieuw in Arrábida: acht villa's met privézwembad →
+447|Zoek je aan de Zilverkust, in Cascais, de Algarve of Porto? Ik breng je in contact met een betrouwbare collega daar.
+448|Vragen van kopers
+449|Wat kopers me het vaakst vragen
+450|Hoe bereid ik me financieel voor op een aankoop?
+451|Ken je totale budget, inclusief IMT, zegelrecht, akte- en registratiekosten bovenop de prijs. Heb je een lening nodig, vraag dan een principeakkoord aan voor je gaat kijken; niet-residenten hebben meestal een grotere eigen inbreng nodig. Ik help je je voor te bereiden en breng je in contact met betrouwbare kredietadviseurs, dus neem op tijd contact op.
+452|Kan ik vanuit het buitenland kopen?
+453|Ja. Je hebt een Portugees fiscaal nummer (NIF) en een Portugese bankrekening nodig. Ik kan je voorstellen aan een betrouwbare advocaat die je met beide helpt en zelfs voor je kan tekenen met een volmacht, zodat je niet voor elke stap hoeft over te vliegen.
+454|Hoelang duurt een aankoop?
+455|Korter dan in veel andere landen, en korter dan de meeste mensen verwachten. Mijn eigen aankoop ging ook heel snel. Zodra je bod aanvaard is, wordt de voorlopige koopovereenkomst (CPCV) meestal binnen één tot drie weken getekend, met een voorschot van minstens 10% van de prijs, soms meer. De akte volgt vaak één tot twee maanden later. Een aankoop zonder lening kan in totaal in vier tot zes weken; met een lening reken je op twee tot drie maanden. Daarom help ik je je documenten en financiering voor te bereiden voor je een bod doet.
+456|Hoeveel kan ik lenen?
+457|Voor een eigen woning lenen Portugese banken meestal tot 90% van de waarde, voor een tweede woning of investering tot 80%. Je hebt dus spaargeld nodig voor de rest van de prijs, plus de aankoopbelastingen en kosten. Hoeveel precies hangt af van je inkomen: een kredietadviseur vertelt het je in één gesprek.
+458|Kan ik een lening krijgen als ik niet in Portugal woon?
+459|Ja, verschillende Portugese banken lenen aan niet-residenten. Ze vragen meestal een grotere eigen inbreng en meer documenten, dus begin op tijd, voor je een bod doet.
+460|Kost de kredietadviseur me iets?
+461|Nee. De kredietadviseur met wie ik werk vergelijkt verschillende banken voor je, zonder kosten voor jou. Vraag het me en ik stel je persoonlijk voor.
+462|Breng me in contact met een kredietadviseur
+463|Woningen te koop in Estrela, Lapa &amp; Santos
+464|Mijn eigen woningen en die van mijn collega's bij Engel &amp; Völkers in de parochie Estrela. Interesse in een woning? Stuur me gewoon een bericht. Ik stuur je alle details en regel je bezichtiging.
+465|Alle
+466|Buiten Lissabon &rarr;
+467|Maakt niet uit
+468|Must-have
+469|Terras of balkon
+470|Garage
+471|De filters gebruiken de gegevens van elke advertentie. Niet zeker of een woning het heeft? Vraag het me gewoon, ik controleer elke woning voor je.
+472|Filters wissen ✕
+473|Er zijn op dit moment geen woningen die aan deze keuzes voldoen.
+474|en ik laat je weten zodra er een opduikt.
+475|Een appartement met vier slaapkamers tussen Estrela, Lapa en Alcântara, met uitzicht op de rivier en de brug. Het wordt verkocht met een huurder onder een huurcontract uit 1984, dus het is voor investeerders op lange termijn en niet om zelf te bewonen. Vraag me de investeerdersstudie met het verwachte huurrendement.
+476|Kans voor investeerders
+477|Uitzicht op rivier en brug
+478|Energieklasse F
+479|De interieurfoto's tonen het identieke appartement één verdieping lager.
+480|Studio met pombalijnse charme, Pátio do Pinzaleiro
+481|Een charmante studio in het Pátio do Pinzaleiro, een rustige, traditionele binnenplaats op een paar stappen van de kerk van Santos, met eigen ingang. Binnen scheidt de originele pombalijnse houtstructuur, de gaiola, de leefruimte van de keuken en de eethoek. Ideaal als pied-à-terre of als investering: gemeubeld verkocht, met een geschiedenis van regelmatige verhuur en een bijdrage voor de mede-eigendom van amper € 20 per maand. Om de hoek liggen de straatjes en tascas van Madragoa, de Jardim de Santos, het Museu de Arte Antiga en de rivier, en vanaf station Santos ben je zo aan de stranden van Cascais.
+482|Pied-à-terre of investering
+483|Eigen ingang
+484|Gemeubeld
+485|Gemeenschappelijke kosten € 20/maand
+486|Energieklasse C
+488|Gemeubelde T1 in de Rua de Buenos Aires
+489|1 slaapkamer
+490|Een stijlvolle T1 op het gelijkvloers in een van de meest gegeerde straten van Lapa, met een open woon- en eetkamer en een geïntegreerde keuken. Gemeubeld verkocht, dus je kunt er meteen intrekken of het verhuren.
+491|Investering of eerste woning
+493|Lichte T2 met balkons
+494|2 slaapkamers
+495|Een lichtrijke T2 op de 2e verdieping in een rustige straat in Lapa, met een grote woonkamer en een keuken die allebei uitkomen op balkons. Goed om te weten: hij wordt verkocht met levenslang vruchtgebruik, dus het is een investering op lange termijn en geen woning om nu in te trekken.
+496|Balkons
+497|Verkocht met vruchtgebruik
+499|T2 in een volledig gerenoveerd gebouw
+500|Op de 4e verdieping van een gebouw waar elk appartement een eigen architectuur- en lichtplan kreeg. Kwaliteitsvolle afwerking, een volledig uitgeruste keuken met veel bergruimte, en de Largo de Santos met zijn restaurants en winkels voor de deur.
+501|Gerenoveerd gebouw
+502|Naast de Largo de Santos
+504|Gemeubelde T2 met uitzicht op de rivier
+505|In een typisch Portugees gebouw met uitzicht op de rivier. Twee slaapkamers (waarvan één en suite), twee badkamers, een woon- en eetkamer en een volledig uitgeruste keuken. Volledig gemeubeld verkocht: klaar om in te wonen of te verhuren.
+506|En suite
+508|10 woningen beschikbaar
+509|Infante Residences: nieuwe T1- en T2+1-appartementen
+510|1 tot 2+1 slaapkamers
+511|56 tot 116 m²
+512|Een nieuw luxeproject op de Avenida Infante Santo 34. T1- en T2+1-appartementen met slaapkamers en suite, een open keuken en woonkamer, en een thuiskantoor in de grotere. Tien woningen beschikbaar, van € 555.000 tot € 1.015.000.
+513|Nieuwbouw
+514|Parkeerplaats
+515|Airconditioning
+516|Vanaf € 555.000
+518|T2 aan de rivier op de Avenida 24 de Julho
+519|3 badkamers
+520|Volledig gerenoveerd en ontworpen door architect Ricardo Rosa, met uitzicht op de Taag, de 25 de Abril-brug en Cristo Rei. Veel natuurlijk licht, de hele dag zon en een verfijnde afwerking.
+521|Gerenoveerd
+522|Architectenontwerp
+524|T2 met tuin en zwembad
+525|In een residentie met tropische tuin, zwembad en 24-uursconciërge, zeldzaam midden in Estrela. Lichtrijk, met uitzicht op de tuin en de rivier. Keuken met voorraadkamer en balkon, berging en een parkeerplaats inbegrepen.
+526|Conciërge
+528|T2 met privéterras en garage
+529|Instapklaar in de Travessa da Costa, in een gebouw dat in 2023 volledig gerenoveerd werd. Derde verdieping met lift, gericht op het zuiden en westen, met een royaal terras en een eigen parkeerplaats. Energieklasse B.
+530|Terras
+531|Energieklasse B
+533|Pombalijns appartement met uitzicht op de rivier
+534|2 slaapkamers + 3 kamers
+535|In een elegant pombalijns gebouw met frontaal uitzicht op de rivier en twee aparte ingangen. Twee slaapkamers met kleine balkons, plus drie flexibele kamers voor een kantoor, inloopkast of gasten, en een ruime woon- en eetkamer.
+536|Historisch gebouw
+538|T4-duplex bij de Jardim da Estrela
+539|Een karaktervolle duplex met massief houten vloeren en prachtig licht. Beneden een woonkamer, aparte eetkamer, keuken en badkamer; boven de slaapkamers met inbouwkasten en een tweede badkamer. Berging in het gebouw.
+541|Massief houten vloeren
+542|T4+1 met terras, lift en garage
+543|Een historisch pand in Lapa met wat in Lissabon zo zeldzaam is: garage, lift en een privéterras. Woonkamer op het zuiden, een formele eetkamer met hoge plafonds en originele houten vloeren. Keuken, badkamers en installaties gerenoveerd in 2016.
+544|Op het zuiden
+546|Gerenoveerd huis met 3 suites
+547|3 suites
+548|Een heel huis over drie verdiepingen, volledig gerestaureerd met behoud van de originele charme. Woonkamer, moderne keuken en patio op de inkomverdieping, twee suites erboven, en de bovenste verdieping helemaal voor de mastersuite.
+549|Patio
+550|Vrijstaand huis
+552|Design-T2 in het Santos Townhouse
+553|Een historisch gebouw met een prachtige tegelgevel, tussen Lapa en Santos. Eigentijdse interieurs van bekende ontwerpers: een lichte woonkamer, open keuken, twee slaapkamers (waarvan één en suite) en een werkhoek. Derde verdieping met lift.
+554|Tegelgevel
+555|Designinterieur
+557|Perceel met goedgekeurd project voor een huis met zwembad
+558|Perceel van 137 m²
+559|350 m² goedgekeurd
+560|In een van de rustigste woonstraten van Estrela, met het architectuurproject al goedgekeurd door de stad Lissabon, zodat de bouw meteen kan starten. Een huis met 3 slaapkamers, tuin en zwembad, plus een binnenplaats van 36 m².
+561|Goedgekeurd project
+562|Zwembad gepland
+563|Binnenplaats
+565|Gerenoveerde T3-penthouse
+566|3 slaapkamers
+567|Een volledig gerenoveerde penthouse in een historisch gebouw in Santos, met een eigentijds ontwerp. Goed geproportioneerde kamers met licht uit veel ramen, een grote woon- en eetkamer, een zorgvuldig ontworpen keuken en drie slaapkamers.
+568|Penthouse
+570|T4+1 met uitzicht op de rivier aan de Infante Santo
+571|4 suites
+572|5 badkamers
+573|Op de Avenida Infante Santo, met uitzicht op de Taag. Vier slaapkamers en suite plus een kantoor, royale ruimtes vol licht en een parkeerplaats. Vijfde verdieping.
+574|Kantoor
+576|Eigentijdse villa in Necessidades
+577|6 badkamers
+578|Een bijzondere eigentijdse villa over vier verdiepingen, met een eigen lift tussen de niveaus. Drie ruime suites, een extra kamer op de bovenste verdieping, afwerking van hoge kwaliteit, uitzicht op de rivier en parkeergelegenheid.
+579|Privélift
+581|Gebouw met 4 appartementen en AL-vergunning
+582|4 appartementen
+583|8 badkamers
+584|Een gebouw uit het begin van de 20e eeuw met één appartement van ongeveer 75 m² per verdieping, met een vergunning voor toeristische verhuur (AL). Dicht bij de rivier, de ambassades, de Jardim da Estrela en tram 28: veel vraag van zowel bezoekers als bewoners.
+585|Volledig gebouw
+586|AL-vergunning
+588|Loft aan de rivier in een gebouw van Gustave Eiffel
+589|Een duplexloft met mezzanine in een iconisch gebouw dat oorspronkelijk werd ontworpen door Gustave Eiffel. Open ruimte met panoramische ramen en vrij uitzicht op de Taag, hoge plafonds, een open haard, een premium keuken en twee parkeerplaatsen.
+590|Open haard
+591|2 parkeerplaatsen
+593|Eigentijds huis met zwembad
+594|Een eigentijds huis over drie verdiepingen, met grote ramen die de hele dag licht binnenbrengen en binnen en buiten verbinden. Privézwembad, een mezzanine voor een fitnessruimte of atelier, en parkeerplaats voor drie auto's. Dicht bij de rivierkant en Santos.
+595|Privézwembad
+596|3 parkeerplaatsen
+597|Mezzanine voor fitness
+598|Een duplexpenthouse met dubbele plafondhoogte en ramen van vloer tot plafond die de Taag en de 25 de Abril-brug omlijsten. Open woon-, eet- en keukenruimte, een galerij boven, een terras met privézwembad en twee parkeerplaatsen.
+599|Jouw woning hier?
+600|Denk je erover te verkopen in Estrela of omgeving?
+601|Ik heb kopers die in de buurt zoeken. Vraag een gratis marktstudie aan en ontdek wat je woning vandaag waard is.
+602|Prijzen en beschikbaarheid zoals gepubliceerd door Engel &amp; Völkers. Oppervlaktes zijn de área bruta privativa. Bijgewerkt in november 2026.
+603|Een nieuw project waar ik van hou
+604|45 minuten van Lissabon, in het natuurpark van Arrábida
+606|Nieuwbouwproject
+607|De Enigma Collection: acht villa's met privézwembad
+608|2 multifunctionele kamers
+609|ongeveer 300 m²
+610|Perceel van 374 m²
+611|Acht eigentijdse villa's in hout, elk met een eigen overloopzwembad, op één heuvelflank in het natuurpark van Arrábida. Woonkamers met een plafondhoogte van 6 meter openen op de tuinen en de heuvels. Een afgesloten domein met gemeenschappelijke tuinen, dicht bij de stranden van Setúbal en Sesimbra. Oplevering gepland in de lente van 2027.
+612|Privé-overloopzwembad
+613|Natuurpark
+614|Afgesloten domein
+615|In aanbouw
+616|Vanaf € 1.600.000
+617|Vraag me ernaar →
+618|Veelgestelde vragen
+619|De vragen die verkopers en kopers me het vaakst stellen. Staat jouw vraag er niet bij? Stuur me een bericht, ik antwoord binnen één werkdag.
+620|Financiering
+621|Verkoop je alleen luxewoningen?
+622|Nee. Engel &amp; Völkers heeft een premium imago, maar premium gaat over de service, niet over de prijs. Ik werk met allerlei woningen, van studio's tot grote familieappartementen, zolang ik geloof dat ik ze goed voor je kan verkopen.
+623|Waarom vraag je zoveel documenten?
+624|Omdat de wet het vereist. In Portugal moet elke vastgoedmakelaar zowel de verkoper als de koper identificeren en een formulier ter voorkoming van witwassen invullen. Dat is verplicht bij elke verkoop. Ik vraag je identiteitsbewijs (Cartão de Cidadão of paspoort) en NIF, en aan kopers ook waar het geld vandaan komt. Alles vroeg controleren beschermt je en voorkomt problemen later, bij de voorlopige koopovereenkomst of de akte.
+625|Heb ik een energiecertificaat nodig?
+626|Ja. Een geldig certificado energético is verplicht om een woning in Portugal te koop te zetten. Heb je er geen, dan breng ik je in contact met een erkende expert.
+627|Op zoek naar een woning buiten Lissabon?
+628|Mijn focus ligt op Estrela en de buurten eromheen. Voor een klein aantal kopers zoek ik ook zelf in Costa da Caparica, Arrábida &amp; Sesimbra, Comporta en de Alentejo.
+629|Zoek je aan de Zilverkust, in Cascais, de Algarve of Porto? Ik stel je voor aan een betrouwbare collega van Engel &amp; Völkers daar.
+630|Waarom een principeakkoord vragen voor je gaat kijken?
+631|Je weet precies hoeveel je kunt uitgeven, en verkopers nemen je bod serieus.
+632|Privacy
+633|Privacybeleid
+634|Laatst bijgewerkt: november 2026. Ik hou het kort en duidelijk: wat ik verzamel, waarom, en wat je me op elk moment kunt vragen.
+635|Wie ik ben
+636|Deze website is van Pascale Lepoutre, vastgoedconsulent bij EV MMC Portugal – Mediação Imobiliária, Unipessoal Lda., Engel &amp; Völkers Lisboa, AMI 15208. Voor elke vraag over je gegevens kun je schrijven naar
+638|Wat ik verzamel
+639|Alleen wat je me zelf stuurt via de formulieren of WhatsApp: je naam, telefoonnummer, e-mail, het adres of de straat van je woning, wat je zoekt, zoals budget, buurten en timing, en de documenten die je zelf toevoegt, zoals je caderneta predial of energiecertificaat.
+640|Waarom ik ze gebruik
+641|Om je vraag te beantwoorden en je gratis marktstudie voor te bereiden.
+642|Om woningen te zoeken die passen bij wat je zoekt.
+643|Om je af en toe nieuws te sturen, alleen als je je hebt ingeschreven. Je kunt je op elk moment uitschrijven.
+644|Om je voor te stellen aan mijn kredietpartner ComparaJá, alleen als je het vakje hebt aangevinkt om akkoord te gaan.
+645|Ik gebruik je gegevens omdat je me vroeg contact op te nemen, om met jou een bemiddelingsovereenkomst voor te bereiden, of omdat je je toestemming gaf.
+646|Wie ze ziet
+647|Engel &amp; Völkers Lisboa, het kantoor waarmee ik werk, waar je gegevens worden opgeslagen in ons klantensysteem.
+648|ComparaJá, alleen met je toestemming, voor financiering.
+649|Een betrouwbare collega in een andere regio van Portugal, alleen met je toestemming, als je me vraagt je in contact te brengen.
+650|De diensten die deze website en haar formulieren laten werken, Netlify, en WhatsApp als je me daar een bericht stuurt.
+651|Ik verkoop je gegevens nooit. Wanneer een verkoop of aankoop doorgaat, verplicht de Portugese wet me om verkopers en kopers te identificeren, en die informatie wordt bewaard zoals de wet het vereist.
+652|Hoelang ik ze bewaar
+653|Zolang we contact hebben over verkopen of kopen, en tot twee jaar na ons laatste contact, tenzij de wet langer vereist. Nieuwsbriefabonnees blijven op de lijst tot ze zich uitschrijven.
+654|Je rechten
+655|Je kunt me op elk moment vragen om je gegevens in te zien, te verbeteren of te wissen, om ze niet langer te gebruiken, of om je toestemming in te trekken. Stuur me gewoon een e-mail. Je kunt ook een klacht indienen bij de Portugese gegevensbeschermingsautoriteit, CNPD, op
+657|Cookies en bezoekersstatistieken
+658|Deze website gebruikt geen tracking- of advertentiecookies. De lettertypes worden geladen via Google Fonts, wat betekent dat je browser verbinding maakt met de servers van Google om ze te tonen. Om te begrijpen hoeveel mensen de site bezoeken en welke pagina's ze lezen, gebruik ik Cloudflare Web Analytics. Dat telt bezoeken zonder cookies en zonder persoonsgegevens te verzamelen, dus het kan je niet identificeren. Om je typwerk te besparen, worden je naam, telefoonnummer en e-mail alleen in je eigen browser onthouden, op je toestel, zodat de andere formulieren al ingevuld zijn. Er wordt niets verstuurd tot je op verzenden drukt.
+659|Ik wil graag
+660|Kopen
+661|Verkopen
+662|Regio
+664|Zilverkust
+668|Tot € 750.000
+669|Meer dan € 3.000.000
+670|Verkopen, niet kopen
+671|Timing
+672|Binnen een jaar
+673|Ik oriënteer me
+674|Wat zoek je, of wat wil je verkopen?
+675|Ik ga ermee akkoord dat Pascale mijn gegevens deelt met een betrouwbare collega in die regio, die contact met me zal opnemen.
+676|Versturen
+677|Vastgoedconsulent, Engel &amp; Völkers. Gespecialiseerd in Estrela.
+678|Ik spreek
+683|Contact
+684|Kopiëren
+685|© 2026 Pascale Lepoutre · Alle rechten voorbehouden. Teksten en foto's mogen niet zonder toestemming worden hergebruikt.
+687|Menu openen
+688|Pascale Lepoutre glimlachend tussen paradijsvogelbloemen in Lissabon
+689|Pascale Lepoutre met tram 28 in Lissabon
+690|Je e-mailadres
+691|Pascale Lepoutre aan een rode deur in Lissabon
+692|Sluiten
+693|bv. Rua de São Bento 120, Lapa
+694|bv. Cascais, Comporta, Porto
+695|bv. Príncipe Real, Graça
+696|Wees specifiek, bv. op loopafstand van St. Julian's School
+697|Typ het hier
+698|Bijvoorbeeld: ochtendzon in de keuken, een rustige straat, ruimte om voor vrienden te koken.
+699|Bijvoorbeeld: € 650.000
+700|Bijvoorbeeld: € 450.000
+701|Bijvoorbeeld: we werken thuis en hebben een kantoor nodig.
+702|Kaart van de buurten
+703|Verkochte woningen per typologie: T2 41%, T0 tot T1 27%, T3 20%, T4 en huizen 12%
+704|Pascale Lepoutre glimlachend aan een groene deur in Lissabon
+705|Ceviche met geroosterde maïs bij Maiz do Mar
+707|Een stuk chocoladetaart op de Lissabonse calçada
+708|De yogaruimte van Baraza
+710|Binnen in mvmt.studio
+712|Het terras van Último Porto, met zicht op Lapa
+714|Het tuinterras van Clube de Jornalistas, Lapa
+715|Bloeiende jacaranda's in de tuin van het Museu Nacional de Arte Antiga
+717|Logo van het Museu do Oriente
+719|Hardlopen bij zonsopgang langs de rivier bij MAAT, met de 25 de Abril-brug
+720|Een zangeres tijdens een Lisbon Living Room Session, in een woonkamer in de buurt
+722|Pascale Lepoutre op een trap in Lissabon
+723|Filteren op buurt
+724|Aantal slaapkamers
+725|T4-appartement te koop in de Calçada das Necessidades, Estrela, Lissabon, met uitzicht op de 25 de Abril-brug
+730|Vorige foto
+731|Volgende foto
+732|Gemeubelde studio te koop in het Pátio do Pinzaleiro, Santos, Lissabon
+738|Gemeubelde T1 in de Rua de Buenos Aires, te koop in Lapa, Lissabon
+843|De Enigma Collection, acht villa's met privézwembad in het natuurpark van Arrábida
+844|Woonkamer met uitzicht op de heuvels van Arrábida
+845|Suite met uitzicht op de bergen
+846|Villa's en tuinen op de heuvelflank, Arrábida
+847|Stuur Pascale een bericht via WhatsApp
+848|Kopen of verkopen elders in Portugal
+849|bv. een huis met 3 slaapkamers en tuin, budget €600k · of: mijn appartement met 2 slaapkamers in Porto
+852|Facebook Pascale Lepoutre, Lisbon Homes
+854|LinkedIn Pascale Lepoutre
+@|A slice of O Melhor Bolo de Chocolate do Mundo on Lisbon calçada, Campo de Ourique|Een stuk van O Melhor Bolo de Chocolate do Mundo op de Lissabonse calçada, Campo de Ourique
+@|Ceviche with toasted corn at Maiz do Mar, Mexican fusion restaurant in Lisbon|Ceviche met geroosterde maïs bij Maiz do Mar, Mexicaans fusionrestaurant in Lissabon
+@|Inside mvmt.studio, movement classes in Lisbon|Binnen in mvmt.studio, bewegingslessen in Lissabon
+@|Inside Último Porto restaurant, by the port of Lisbon|Binnen in restaurant Último Porto, aan de haven van Lissabon
+@|Jacarandas in bloom in the garden of the Museu Nacional de Arte Antiga, Lapa, Lisbon|Bloeiende jacaranda's in de tuin van het Museu Nacional de Arte Antiga, Lapa, Lissabon
+@|Museu do Oriente logo, Fundação Oriente, Lisbon|Logo van het Museu do Oriente, Fundação Oriente, Lissabon
+@|Penthouse with private pool and river views for sale in Lapa, Lisbon|Penthouse met privézwembad en uitzicht op de rivier te koop in Lapa, Lissabon
+@|Sunrise run along the river by MAAT, with the 25 de Abril bridge, Lisbon|Hardlopen bij zonsopgang langs de rivier bij MAAT, met de 25 de Abril-brug, Lissabon
+@|T4 apartment with terrace for sale in Lapa, Lisbon|T4-appartement met terras te koop in Lapa, Lissabon
+@|The garden terrace of Clube de Jornalistas restaurant, Lapa, Lisbon|Het tuinterras van restaurant Clube de Jornalistas, Lapa, Lissabon
+@|The yoga room at Baraza Yoga, Lisbon|De yogaruimte van Baraza Yoga, Lissabon
+@|asked ≈ €7.200/m²|gevraagd ≈ €7.200/m²
+@|sold ≈ €5.700/m²|verkocht ≈ €5.700/m²
+@|the gap|het verschil
+@|Almada · south bank|Almada · zuideroever
+@|My focus · Estrela parish|Mijn focus · parochie Estrela
+@|home base|thuisbasis
+@|€1M – €1.5M|€1M – €1,5M
+@|€1.5M – €3M|€1,5M – €3M
+@|Add your documents now|Voeg je documenten nu toe
+@|· optional|· optioneel
+@|Energy certificate, if possible|Energiecertificaat, indien mogelijk
+@|· optional, but very helpful|· optioneel, maar heel handig
+@|Optional, but very helpful|Optioneel, maar heel handig
+@|PDF or photo, up to 8 MB in total. I'll need them for the study anyway, so if not now, you can send them later.|PDF of foto, maximaal 8 MB in totaal. Ik heb ze sowieso nodig voor de studie, dus als het nu niet lukt, kun je ze later sturen.
+@|Kind words|Lieve woorden
+@|What my clients say|Wat mijn klanten zeggen
+@|Your review|Jouw review
+@|How was it to work with me?|Hoe was het om met mij samen te werken?
+@|Thank you for taking a moment. A few honest sentences help other people decide, and they mean a lot to me.|Bedankt dat je even de tijd neemt. Een paar eerlijke zinnen helpen anderen beslissen, en ze betekenen veel voor mij.
+@|Your name|Je naam
+@|Where are you from?|Waar kom je vandaan?
+@|e.g. Belgium, Lisbon, Canada|bv. België, Lissabon, Canada
+@|What did we do together?|Wat hebben we samen gedaan?
+@|I sold my home|Ik heb mijn woning verkocht
+@|I bought a home|Ik heb een woning gekocht
+@|Something else|Iets anders
+@|Which home or area, and when? · optional|Welke woning of buurt, en wanneer? · optioneel
+@|e.g. a T3 in Lapa, 2027|bv. een T3 in Lapa, 2027
+@|What did you like? What made the difference for you?|Wat vond je fijn? Wat maakte voor jou het verschil?
+@|How may I show your name?|Hoe mag ik je naam tonen?
+@|First name and initial|Voornaam en initiaal
+@|Full name|Volledige naam
+@|Anonymous|Anoniem
+@|I agree that Pascale shows my review on her website and social media, as chosen above.|Ik ga ermee akkoord dat Pascale mijn review toont op haar website en sociale media, zoals hierboven gekozen.
+@|Send my review|Verstuur mijn review
+@|Thank you so much! Your words mean a lot to me.|Heel hartelijk bedankt! Je woorden betekenen veel voor mij.
