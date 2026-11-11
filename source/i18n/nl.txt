@@ -724,3 +724,5 @@
 883|van de aankoopprijs
 884|Eigen inbreng nodig
 885|Prijs min de lening, plus alle kosten
+886|Vorige woningen
+887|Meer woningen

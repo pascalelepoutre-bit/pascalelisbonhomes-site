@@ -725,3 +725,5 @@
 883|du prix d'achat
 884|Apport personnel nécessaire
 885|Prix moins le prêt, plus tous les frais
+886|Biens précédents
+887|Plus de biens

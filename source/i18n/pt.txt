@@ -12,7 +12,7 @@
 12|em
 13|boas
 14|mãos
-15|Vender ou comprar na Estrela e nos bairros à volta? Ajudo-o a conseguir o preço certo e a casa certa, e fico ao seu lado da primeira visita até à escritura.
+15|Vender ou comprar casa no bairro da Estrela e arredores? Se vende, ajudo-o a conseguir o valor certo. Se compra, ajudo-o a encontrar a casa certa. E acompanho-o desde a primeira visita até à escritura.
 16|Quero vender
 17|Quero comprar
 18|Estudo de mercado gratuito
@@ -21,7 +21,7 @@
 22|Olá, sou a Pascale. Muito prazer!
 23|Sou consultora imobiliária na Engel &amp; Völkers em Lisboa. Belga de nascimento, cidadã do mundo de coração: vivi no Brasil e no Quénia, vim pela primeira vez para Portugal como estudante Erasmus há vinte anos e acabei por fazer de Lisboa a minha casa. Sei o que é começar uma vida nova noutro país.
 24|Quando comprei o meu próprio apartamento, visitei quase 40 imóveis, por isso sei o que faz um comprador dizer que sim. Hoje vivo na Lapa e sou especialista na freguesia da Estrela e nos bairros à volta. Adoro viver aqui: o rio, a luz e a praia a apenas 25 minutos.
-25|As pessoas gostam de trabalhar comigo por ser quem sou. Só trabalho naquilo em que acredito de verdade, mas quando acredito, não paro até chegarmos ao objetivo. Pessoal, organizada e honesta: um plano claro, notícias regulares e sem surpresas.
+25|As pessoas gostam de trabalhar comigo por ser quem sou. Só trabalho naquilo em que acredito de verdade, mas quando acredito, não paro até chegarmos ao objetivo. Tratamento personalizado, organizado e honesto: um plano claro, notícias regulares e sem surpresas.
 27|Como posso ajudar?
 28|Vender ou comprar, estou do seu lado
 29|Da primeira chamada até às chaves
@@ -38,7 +38,7 @@
 41|pessoas
 42|Precisa de um advogado, de um consultor fiscal ou de um intermediário de crédito? Apresento-lhe pessoas da minha confiança.
 43|Os meus bairros
-44|A Estrela, e tudo o que está à volta
+44|A Estrela e tudo o que está à volta
 45|Sete bairros que conheço rua a rua
 53|A sonhar com a costa ou o campo? Caparica, Arrábida, Comporta, o Alentejo.
 54|Fora de Lisboa&nbsp;→
@@ -233,7 +233,7 @@
 258|As suas respostas só servem para encontrar a sua casa e nunca são partilhadas.
 259|Enviar a minha procura
 260|Obrigada! Respondo-lhe num dia útil com uma primeira seleção.
-261|Sete bairros que conheço rua a rua. O meu foco é a freguesia da Estrela, e vivo na Lapa.
+261|Sete bairros que conheço rua a rua. O meu foco é a freguesia da Estrela. Vivo na Lapa.
 262|Ver o relatório de mercado da Estrela →
 263|A minha zona
 264|Verde, calma e clássica. A vida aqui gira à volta do Jardim da Estrela e da cúpula branca da basílica, com o elétrico 28 a passar. Os compradores vêm pelos elegantes prédios do início do século XX, pés-direitos altos e soalhos de madeira, e por um verdadeiro ambiente de bairro perto do centro.
@@ -413,7 +413,7 @@
 461|Não. A intermediária com quem trabalho compara vários bancos por si, sem qualquer custo. Fale comigo e apresento-a pessoalmente.
 462|Pôr-me em contacto com um intermediário de crédito
 463|Casas à venda na Estrela, Lapa e Santos
-464|Os meus imóveis e os dos meus colegas da Engel &amp; Völkers na freguesia da Estrela. Gostou de algum? Envie-me uma mensagem. Mando-lhe todos os detalhes e marco a sua visita.
+464|Estes são os meus imóveis e dos meus colegas da Engel &amp; Völkers na freguesia da Estrela. Gostou de algum? Envie-me uma mensagem. Mando-lhe todos os detalhes e marco a sua visita.
 465|Todas
 466|Fora de Lisboa &rarr;
 467|Indiferente
@@ -726,3 +726,5 @@
 883|do preço de compra
 884|Capital próprio necessário
 885|Preço menos o crédito, mais todos os custos
+886|Casas anteriores
+887|Mais casas
