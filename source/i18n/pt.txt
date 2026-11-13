@@ -240,7 +240,7 @@
 267|A Rua de São Bento e os seus antiquários
 268|Elétrico 28
 269|O mercado em resumo · preços pedidos
-270|num ano · freguesia da Estrela, set. 2026
+270|freguesia da Estrela, set. 2026
 271|A dica da Pascale
 272|Passeie pelas ruas laterais à volta do jardim. Alguns dos prédios mais bonitos estão a um só quarteirão das avenidas principais.
 273|A minha base · freguesia da Estrela
@@ -248,7 +248,7 @@
 275|Praias da Caparica a ~25 min
 276|Embaixadas e residências
 278|Vista rio do alto da colina
-279|num ano · freguesia da Estrela, incl. Lapa, set. 2026
+279|freguesia da Estrela, incl. Lapa, set. 2026
 280|Olhe para os andares de cima. É aí que estão as famosas vistas de rio da Lapa.
 281|Parte da freguesia da Estrela
 282|Entre a Lapa e o rio, Santos mistura lojas de design e ateliers com ruas residenciais tranquilas. Longe das zonas mais turísticas, mas perto da água, do comboio para Cascais e da ponte para a margem sul.
@@ -256,28 +256,28 @@
 284|Zona ribeirinha e Avenida 24 de Julho
 285|Estação de comboios de Santos
 287|A Madragoa mesmo ao lado
-288|num ano · freguesia da Estrela, incl. Santos, set. 2026
+288|freguesia da Estrela, incl. Santos, set. 2026
 289|Algumas ruas são animadas à noite, outras completamente calmas. Eu mostro-lhe quais são quais.
 290|À volta da Estrela
 291|Uma aldeia dentro da cidade. Ruas direitas e planas, comércio local, cafés e um dos mercados preferidos de Lisboa. As famílias adoram-no pela comodidade do dia a dia e pelo forte espírito de comunidade.
 294|Fim da linha do elétrico 28, nos Prazeres
 295|Rua Ferreira Borges, a rua das compras
-296|num ano · freguesia de Campo de Ourique, set. 2026
+296|freguesia de Campo de Ourique, set. 2026
 297|Ruas planas e tudo a pé. Perfeito se não quiser depender do carro.
 298|Perto do rio e em plena transformação. Antigos espaços industriais deram lugar à LX Factory e estão a nascer novos projetos residenciais. Boa relação qualidade-preço para compradores que pensam no futuro.
 301|Estação de Alcântara-Mar
 302|Passeio ribeirinho
-303|num ano · freguesia de Alcântara, set. 2026
+303|freguesia de Alcântara, set. 2026
 304|Novos projetos estão a mudar a zona. Pergunte-me quais estão para chegar antes de aparecerem online.
 305|Na colina acima de Belém, a Ajuda é tranquila e residencial, com o Palácio da Ajuda e um dos jardins botânicos mais antigos de Lisboa. Um verdadeiro ambiente de bairro, perto do rio e do parque de Monsanto.
 308|Parque florestal de Monsanto ao lado
 309|Vistas sobre o Tejo
-310|num ano · freguesia da Ajuda, set. 2026
+310|freguesia da Ajuda, set. 2026
 311|Os preços são mais baixos do que em Belém ou na Estrela, por isso o seu orçamento rende mais. Pergunte-me que ruas têm vista rio.
 312|Espaço, luz e a frente ribeirinha, com ruas residenciais mais tranquilas logo atrás dos monumentos. Perto das moradias do Restelo e de boas escolas, com acesso fácil à costa.
 315|MAAT e CCB
 316|Jardins à beira-rio
-317|num ano · freguesia de Belém, set. 2026
+317|freguesia de Belém, set. 2026
 318|Espaço, luz e o rio, e o centro a um curto trajeto ao longo da água.
 319|Preços pedidos: preço médio por m² das casas anunciadas para venda, relatório de preços idealista, setembro de 2026.
 320|Relatório de mercado da Estrela · 12 meses até setembro de 2026

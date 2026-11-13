@@ -138,7 +138,8 @@ js = script[len('<script>'):-len('</script>')]
 router = js[js.index("const VIEWS="):js.index("window.addEventListener('hashchange',fromHash);fromHash();") + len("window.addEventListener('hashchange',fromHash);fromHash();")]
 menu = ("const mb=document.getElementById('menu-btn'),ml=document.querySelector('.nav ul');\n"
         "mb.addEventListener('click',()=>{const o=ml.classList.toggle('open');mb.setAttribute('aria-expanded',o);});\n"
-        "ml.addEventListener('click',e=>{if(e.target.closest('a')){ml.classList.remove('open');mb.setAttribute('aria-expanded','false');}});")
+        "ml.addEventListener('click',e=>{if(e.target.closest('a')){ml.classList.remove('open');mb.setAttribute('aria-expanded','false');}});\n"
+        "(function(){const strip=p=>p.replace(/^\\/(pt|fr|nl)(?=\\/)/,'');const cp=strip(location.pathname);document.querySelectorAll('.nav ul a').forEach(a=>{const ap=strip(new URL(a.href,location.href).pathname);if(ap!=='/'&&cp.startsWith(ap))a.setAttribute('aria-current','page');});})();")
 js = js.replace(router, menu)
 # landmark band click handler no longer needed (it now links to the tab)
 js = re.sub(r"document\.querySelectorAll\('\.hb-item'\).*?\n", '', js)

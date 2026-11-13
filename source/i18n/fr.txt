@@ -238,7 +238,7 @@
 267|La Rua de São Bento et ses antiquaires
 268|Tram 28
 269|Le marché en bref · prix affichés
-270|sur un an · paroisse d’Estrela, sept. 2026
+270|paroisse d’Estrela, sept. 2026
 271|Le conseil de Pascale
 272|Promenez-vous dans les rues autour du jardin. Certains des plus beaux immeubles se trouvent à un pâté de maisons des grands axes.
 273|Mon port d’attache · paroisse d’Estrela
@@ -246,7 +246,7 @@
 275|Plages de Caparica à ~25 min
 276|Ambassades et résidences
 278|Vue sur le fleuve depuis la colline
-279|sur un an · paroisse d’Estrela, Lapa incl., sept. 2026
+279|paroisse d’Estrela, Lapa incl., sept. 2026
 280|Regardez les étages supérieurs. C’est là que se trouvent les célèbres vues sur le fleuve de Lapa.
 281|Fait partie de la paroisse d’Estrela
 282|Entre Lapa et le fleuve, Santos mêle boutiques de design et ateliers à des rues résidentielles tranquilles. À l’écart des zones les plus touristiques, mais près de l’eau, du train pour Cascais et du pont vers la rive sud.
@@ -254,28 +254,28 @@
 284|Les quais et l’Avenida 24 de Julho
 285|Gare de Santos
 287|Madragoa juste à côté
-288|sur un an · paroisse d’Estrela, Santos incl., sept. 2026
+288|paroisse d’Estrela, Santos incl., sept. 2026
 289|Certaines rues sont animées le soir, d’autres totalement calmes. Je vous montre lesquelles.
 290|Autour d’Estrela
 291|Un village dans la ville. Des rues droites et plates, des commerces de proximité, des cafés et l’un des marchés préférés de Lisbonne. Les familles l’adorent pour sa commodité au quotidien et son fort esprit de quartier.
 294|Terminus du tram 28 à Prazeres
 295|La Rua Ferreira Borges, rue commerçante
-296|sur un an · paroisse de Campo de Ourique, sept. 2026
+296|paroisse de Campo de Ourique, sept. 2026
 297|Des rues plates et tout à pied. Parfait si vous ne voulez pas dépendre d’une voiture.
 298|Près du fleuve et en pleine transformation. D’anciens espaces industriels sont devenus la LX Factory et de nouveaux projets résidentiels sortent de terre. Un bon rapport qualité-prix pour les acheteurs qui voient loin.
 301|Gare d’Alcântara-Mar
 302|Promenade au bord du fleuve
-303|sur un an · paroisse d’Alcântara, sept. 2026
+303|paroisse d’Alcântara, sept. 2026
 304|De nouveaux projets transforment le quartier. Demandez-moi lesquels arrivent avant qu’ils ne soient en ligne.
 305|Sur la colline au-dessus de Belém, Ajuda est calme et résidentielle, avec le Palácio da Ajuda et l’un des plus anciens jardins botaniques de Lisbonne. Une vraie vie de quartier, près du fleuve et du parc de Monsanto.
 308|La forêt de Monsanto toute proche
 309|Vues sur le Tage
-310|sur un an · paroisse d’Ajuda, sept. 2026
+310|paroisse d’Ajuda, sept. 2026
 311|Les prix sont plus bas qu’à Belém ou Estrela : votre budget va donc plus loin. Demandez-moi quelles rues ont la vue sur le fleuve.
 312|De l’espace, de la lumière et le bord du fleuve, avec des rues résidentielles plus calmes juste derrière les monuments. Près des villas du Restelo et de bonnes écoles, avec un accès facile à la côte.
 315|MAAT et CCB
 316|Jardins au bord du fleuve
-317|sur un an · paroisse de Belém, sept. 2026
+317|paroisse de Belém, sept. 2026
 318|De l’espace, de la lumière et le fleuve, et le centre à un court trajet le long de l’eau.
 319|Prix affichés : prix moyen au m² des biens mis en vente, rapport de prix idealista, septembre 2026.
 320|Étude de marché d’Estrela · 12 mois jusqu’à septembre 2026

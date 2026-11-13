@@ -28,6 +28,7 @@ document.querySelectorAll('form.leadform').forEach(f=>{
 const mb=document.getElementById('menu-btn'),ml=document.querySelector('.nav ul');
 mb.addEventListener('click',()=>{const o=ml.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
 ml.addEventListener('click',e=>{if(e.target.closest('a')){ml.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+(function(){const strip=p=>p.replace(/^\/(pt|fr|nl)(?=\/)/,'');const cp=strip(location.pathname);document.querySelectorAll('.nav ul a').forEach(a=>{const ap=strip(new URL(a.href,location.href).pathname);if(ap!=='/'&&cp.startsWith(ap))a.setAttribute('aria-current','page');});})();
 
 (function(){const c=document.getElementById('b-bo'),w=document.getElementById('bo-wrap');if(c&&w){c.addEventListener('change',()=>{w.hidden=!c.checked;if(c.checked)document.getElementById('bo-input').focus();});}})();
 const oth=document.getElementById('b-a7'),ow=document.getElementById('b-other-wrap');
