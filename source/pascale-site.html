@@ -1048,7 +1048,30 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
 .mk2-stats .mk-card{padding:14px 18px}
 .mk2-row .mk-chart svg{max-height:210px}
 }
-.gap-mini{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.gap-mini b{font-family:var(--display);font-weight:400;font-size:2rem;color:var(--gold);line-height:1}.gap-mini span{font-size:.9rem}.gap-mini .gm-l{color:var(--muted);font-size:.8rem}.nav ul a[aria-current="page"]{color:#1d1a17!important;font-weight:600;text-decoration:underline;text-decoration-color:#b08429;text-decoration-thickness:2px;text-underline-offset:8px}</style>
+.gap-mini{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.gap-mini b{font-family:var(--display);font-weight:400;font-size:2rem;color:var(--gold);line-height:1}.gap-mini span{font-size:.9rem}.gap-mini .gm-l{color:var(--muted);font-size:.8rem}.nav ul a[aria-current="page"]{color:#1d1a17!important;font-weight:600;text-decoration:underline;text-decoration-color:#b08429;text-decoration-thickness:2px;text-underline-offset:8px}.ty-note{display:block;margin-top:6px;font-size:.74rem;line-height:1.35;color:var(--muted,#7a7069)}.mk3-gap{grid-template-columns:1.2fr 1.8fr;padding:0!important;gap:0!important;overflow:hidden}
+.mk3-left{background:var(--sun);padding:18px 28px;display:grid;gap:4px;align-content:center}
+.mk3-left .mk-l,.mk3-left .mk-c{color:#5c4a2a}
+.mk3-left .mk-v{color:var(--ink);font-size:clamp(2.1rem,3.2vw,2.7rem)!important;line-height:1.05}
+.mk3-left .mk-cmp{border-color:rgb(0 0 0 / .14);color:var(--ink)}
+.mk3-left .gap-eg{background:none;padding:8px 0 0;gap:2px}
+.mk3-left .gap-eg-l{color:#5c4a2a}
+.mk3-left .gap-row{font-size:.88rem}
+.mk3-left .gap-row b{font-size:1.05rem;color:#6e5f45}
+.mk3-left .gap-row.sold b{color:var(--ink);font-size:1.2rem}
+.mk3-left .btn{justify-self:start;margin-top:8px;font-size:.62rem;padding:12px 18px;background:var(--ink);border-color:var(--ink);color:#fffdf9}
+.mk3-chart{padding:18px 24px 16px;display:grid;gap:8px;align-content:space-between;min-width:0}
+.mk3-chart .gap-h{font-size:1.15rem;margin:0}
+.mk3-chart svg{width:100%;height:auto;max-height:none}
+.gap-br{fill:none;stroke:var(--ink);stroke-width:1.5}.gap-pill{fill:var(--sun)}
+.gap-brt{font-family:var(--display);font-size:16px;font-weight:600;fill:var(--ink)}
+.mk3-row{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:12px;margin-top:12px;align-items:stretch}
+.mk3-row .mk-card{padding:14px 18px;gap:4px}
+.mk3-row .mk-v{font-size:clamp(1.6rem,2.4vw,2.1rem)!important}
+.mk3-row .mk-c{font-size:.82rem;line-height:1.35}.mk3-row .mk-cmp{margin-top:2px;padding-top:5px}.mk3-row .mk-card{padding:12px 18px!important}
+.mk3-row .mk-typo{gap:6px}
+.mk3-row .ty-bar{height:32px}
+@media(max-width:900px){.mk3-gap{grid-template-columns:1fr}.mk3-row{grid-template-columns:1fr 1fr}.mk3-row .mk-typo{grid-column:1/-1}}
+</style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9"/></symbol>
@@ -1670,17 +1693,23 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
       <div class="mk-head">
         <p class="eyebrow">Estrela market report · 12 months to September 2026</p>
         <h1 style="font-size:clamp(1.7rem,3.4vw,2.5rem)">What really happens when you sell in Estrela</h1>
-        <p class="sub">Real sale prices of resale homes, not asking prices. Compared with Lisbon as a whole. The Estrela parish includes Lapa, Santos and Prazeres.</p>
+        <p class="sub">Real sale prices, not asking prices. Estrela includes Lapa, Santos and Prazeres.</p>
       </div>
-      <div class="mk2-stats">
-        <div class="mk-card big"><span class="mk-l">The price gap</span><b class="mk-v">−20,9%</b><span class="mk-c">between the asking price and the real sale price</span><span class="mk-cmp">Lisbon: −14,4%</span></div>
-        <div class="mk-card"><span class="mk-l">Price reductions</span><b class="mk-v">−8,6%</b><span class="mk-c">the first asking price comes down before the sale</span><span class="mk-cmp">Lisbon: −7,5%</span></div>
-        <div class="mk-card"><span class="mk-l">Time to sell</span><b class="mk-v">6 months</b><span class="mk-c">a month longer than in Lisbon</span><span class="mk-cmp">Lisbon: 5 months</span></div>
-      </div>
-      <div class="mk2-row">
-        <div class="mk-card mk-chart">
+      <div class="mk-card mk3-gap">
+        <div class="mk3-left">
+          <span class="mk-l">The price gap</span>
+          <b class="mk-v">−20,9%</b>
+          <span class="mk-c">between the asking price and the real sale price</span>
+          <span class="mk-cmp">Lisbon: −14,4%</span>
+          <div class="gap-eg"><span class="gap-eg-l">What that means, on average</span>
+            <div class="gap-row"><span>Listed at</span><b>€ 1.000.000</b></div>
+            <div class="gap-row sold"><span>Really sold for</span><b>€ 791.000</b></div>
+          </div>
+          <a class="btn fill" href="#contact">The right price for my home?</a>
+        </div>
+        <div class="mk-chart mk3-chart">
           <h3 class="gap-h">Homes are listed far above what buyers really pay</h3>
-          <svg viewBox="0 0 700 300" role="img" aria-label="Average asking price and real sale price per m² in Estrela, 2011 to 2026. Both rose strongly; asking prices stay clearly above sale prices.">
+          <svg viewBox="0 18 700 274" preserveAspectRatio="xMinYMid meet" role="img" aria-label="Average asking price and real sale price per m² in Estrela, 2011 to 2026. Both rose strongly; asking prices stay clearly above sale prices.">
             <line x1="56" y1="262.0" x2="684" y2="262.0" class="cg"/><text x="48" y="266.0" class="cy">0</text><line x1="56" y1="186.4" x2="684" y2="186.4" class="cg"/><text x="48" y="190.4" class="cy">2,5k</text><line x1="56" y1="110.8" x2="684" y2="110.8" class="cg"/><text x="48" y="114.8" class="cy">5k</text><line x1="56" y1="35.1" x2="684" y2="35.1" class="cg"/><text x="48" y="39.1" class="cy">7,5k</text><text x="56.0" y="284" class="cx">2011</text><text x="177.5" y="284" class="cx">2014</text><text x="299.1" y="284" class="cx">2017</text><text x="420.6" y="284" class="cx">2020</text><text x="542.2" y="284" class="cx">2023</text><text x="663.7" y="284" class="cx">2026</text>
             <path d="M56.0,177.9 L66.1,178.8 L76.3,183.0 L86.4,184.3 L96.5,184.6 L106.6,184.9 L116.8,184.9 L126.9,188.2 L137.0,186.4 L147.2,187.3 L157.3,188.2 L167.4,189.7 L177.5,189.4 L187.7,188.8 L197.8,187.0 L207.9,184.3 L218.1,182.1 L228.2,180.9 L238.3,180.3 L248.5,180.0 L258.6,174.9 L268.7,172.8 L278.8,164.3 L289.0,160.1 L299.1,152.5 L309.2,149.5 L319.4,143.1 L329.5,140.4 L339.6,134.9 L349.7,132.5 L359.9,124.4 L370.0,119.8 L380.1,114.7 L390.3,112.0 L400.4,108.3 L410.5,110.1 L420.6,108.3 L430.8,106.8 L440.9,107.1 L451.0,108.9 L461.2,108.9 L471.3,105.6 L481.4,104.1 L491.5,100.2 L501.7,99.0 L511.8,92.6 L521.9,90.8 L532.1,85.6 L542.2,82.3 L552.3,80.2 L562.5,74.8 L572.6,73.5 L582.7,71.4 L592.8,67.2 L603.0,63.9 L613.1,62.0 L623.2,58.4 L633.4,55.4 L643.5,50.6 L653.6,47.8 L663.7,43.6 L673.9,43.6 L684.0,43.6 L684.0,89.6 L673.9,89.3 L663.7,91.1 L653.6,92.0 L643.5,94.7 L633.4,96.5 L623.2,101.7 L613.1,103.5 L603.0,103.2 L592.8,108.9 L582.7,115.9 L572.6,120.7 L562.5,123.5 L552.3,125.3 L542.2,122.9 L532.1,121.9 L521.9,121.6 L511.8,122.2 L501.7,127.1 L491.5,130.7 L481.4,136.5 L471.3,138.0 L461.2,137.7 L451.0,137.4 L440.9,137.7 L430.8,135.9 L420.6,137.7 L410.5,138.3 L400.4,136.5 L390.3,139.2 L380.1,141.0 L370.0,144.6 L359.9,151.6 L349.7,156.7 L339.6,161.6 L329.5,166.4 L319.4,171.9 L309.2,177.0 L299.1,183.7 L289.0,187.0 L278.8,190.3 L268.7,195.8 L258.6,197.3 L248.5,198.5 L238.3,201.2 L228.2,203.9 L218.1,206.3 L207.9,208.2 L197.8,214.8 L187.7,215.4 L177.5,214.8 L167.4,215.7 L157.3,212.1 L147.2,211.5 L137.0,211.5 L126.9,211.5 L116.8,212.1 L106.6,208.5 L96.5,205.7 L86.4,204.8 L76.3,199.4 L66.1,194.8 L56.0,193.3 Z" class="c-gap"/>
             <polyline points="56.0,177.9 66.1,178.8 76.3,183.0 86.4,184.3 96.5,184.6 106.6,184.9 116.8,184.9 126.9,188.2 137.0,186.4 147.2,187.3 157.3,188.2 167.4,189.7 177.5,189.4 187.7,188.8 197.8,187.0 207.9,184.3 218.1,182.1 228.2,180.9 238.3,180.3 248.5,180.0 258.6,174.9 268.7,172.8 278.8,164.3 289.0,160.1 299.1,152.5 309.2,149.5 319.4,143.1 329.5,140.4 339.6,134.9 349.7,132.5 359.9,124.4 370.0,119.8 380.1,114.7 390.3,112.0 400.4,108.3 410.5,110.1 420.6,108.3 430.8,106.8 440.9,107.1 451.0,108.9 461.2,108.9 471.3,105.6 481.4,104.1 491.5,100.2 501.7,99.0 511.8,92.6 521.9,90.8 532.1,85.6 542.2,82.3 552.3,80.2 562.5,74.8 572.6,73.5 582.7,71.4 592.8,67.2 603.0,63.9 613.1,62.0 623.2,58.4 633.4,55.4 643.5,50.6 653.6,47.8 663.7,43.6 673.9,43.6 684.0,43.6" class="c-ask"/>
@@ -1688,26 +1717,21 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
             <circle cx="684.0" cy="43.6" r="4" class="c-ask-d"/>
             <circle cx="684.0" cy="89.6" r="5" class="c-sale-d"/>
             <text x="461.2" y="127.3" class="c-gap-t">the gap</text>
-          </svg>
+          <path d="M692,44.5 H697 V88.7 H692" class="gap-br"/><rect x="612" y="110" width="84" height="30" rx="15" class="gap-pill"/><text x="654" y="130" class="gap-brt" text-anchor="middle">−20,9%</text></svg>
           <div class="ty-leg"><span><i class="lg-ask"></i>Asking price</span><span><i class="lg-sale"></i>Real sale price</span><span class="lg-note">Resale homes in Estrela, 2011–2026</span></div>
         </div>
-        <div class="mk2-side mk2-3">
-          <div class="mk-card mk2-eg"><div class="gap-eg"><span class="gap-eg-l">What that means, on average</span>
-              <div class="gap-row"><span>Listed at</span><b>€ 1.000.000</b></div>
-              <div class="gap-row sold"><span>Really sold for</span><b>€ 791.000</b></div>
-            </div>
-          
-            <p class="gap-why">That's why the right price from day one matters: serious buyers come straight away, and nobody loses months.</p>
-            <a class="btn fill" href="#contact">The right price for my home?</a>
-          </div>
-          <div class="mk-card mk-typo">
+      </div>
+      <div class="mk3-row">
+        <div class="mk-card"><span class="mk-l">Price reductions</span><b class="mk-v">−8,6%</b><span class="mk-c">the first asking price comes down before the sale</span><span class="mk-cmp">Lisbon: −7,5%</span></div>
+        <div class="mk-card"><span class="mk-l">Time to sell</span><b class="mk-v">6 months</b><span class="mk-c">a month longer than in Lisbon</span><span class="mk-cmp">Lisbon: 5 months</span></div>
+        <div class="mk-card mk-typo">
           <span class="mk-l">What sells in Estrela</span>
           <div class="ty-bar" role="img" aria-label="Homes sold by typology: T2 41%, T0 to T1 27%, T3 20%, T4 and houses 12%">
             <span style="flex:41" class="ty1">41%</span><span style="flex:27" class="ty2">27%</span><span style="flex:20" class="ty3">20%</span><span style="flex:12" class="ty4">12%</span>
           </div>
           <div class="ty-leg"><span><i class="ty1"></i>T2</span><span><i class="ty2"></i>T0–T1</span><span><i class="ty3"></i>T3</span><span><i class="ty4"></i>T4+ and houses</span></div>
           <span class="mk-c">Two-bedroom apartments are the most sold homes in Estrela.</span>
-        </div>
+          <span class="ty-note">T0 = studio · T1 = 1 bedroom · T2 = 2 bedrooms, and so on</span>
         </div>
       </div>
       <p class="mk-src">Source: SIR – Confidencial Imobiliário, report of 30 October 2026, Estrela parish and Lisbon municipality, 12 months to September 2026. All figures: resale homes. Chart redrawn from the SIR price/m² evolution. © IMOESTATÍSTICA – ALL RIGHTS RESERVED.</p>
@@ -1937,6 +1961,7 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
       <div class="faq">
         <details><summary>How do I prepare financially to buy?</summary><p>Know your total budget, including IMT, stamp duty, deed and registration fees on top of the price. If you need a mortgage, get a pre-approval before you visit; non-residents usually need a larger down payment. I help you prepare and connect you with trusted mortgage brokers, so contact me early.</p></details>
         <details><summary>Can I buy from abroad?</summary><p>Yes. You need a Portuguese tax number (NIF) and a Portuguese bank account. I can introduce you to a trusted lawyer who helps with both and can even sign for you with a power of attorney, so you don't need to fly in for every step.</p></details>
+        <details><summary>What do T1, T2 and T3 mean?</summary><p>In Portugal, homes are described by their number of bedrooms. A T0 is a studio, a T1 has one bedroom, a T2 two, and so on. A T2+1 has an extra room that doesn't officially count as a bedroom, for example because it has no window. It's often used as an office or a walk-in closet.</p></details>
         <details><summary>How long does buying take?</summary><p>Faster than in many other countries, and faster than most people expect. My own purchase went very quickly too. Once your offer is accepted, the promissory contract (CPCV) is usually signed within one to three weeks, with a deposit of at least 10% of the price, sometimes more. The deed often follows one to two months later. A cash purchase can be done in about four to six weeks in total; with a mortgage, count on two to three months. That's why I help you prepare your documents and financing before you make an offer.</p></details>
        <details><summary>How much can I borrow?</summary><p>For your own home, Portuguese banks usually lend up to 90% of the value, for a second home or an investment up to 80%. So you need savings for the rest of the price, plus the purchase taxes and fees. How much exactly depends on your income: a broker can tell you in one conversation.</p></details> <details><summary>Can I get a mortgage if I don't live in Portugal?</summary><p>Yes, several Portuguese banks lend to non-residents. They usually ask for a bigger down payment and more documents, so start early, before you make an offer.</p></details> <details><summary>Does the mortgage broker cost me anything?</summary><p>No. The broker I work with compares several banks for you, at no cost to you. Ask me and I'll introduce you personally.</p></details> </div>
       <p class="center" style="margin-top:22px"><button class="btn fill" type="button" data-open="modal-mort-form">Put me in touch with a mortgage broker</button></p><p class="center" style="margin-top:22px"><a class="more" href="#faq">See all questions →</a></p>
@@ -2330,6 +2355,7 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
       <div class="faq">
         <details><summary>How do I prepare financially to buy?</summary><p>Know your total budget, including IMT, stamp duty, deed and registration fees on top of the price. If you need a mortgage, get a pre-approval before you visit; non-residents usually need a larger down payment. I help you prepare and connect you with trusted mortgage brokers, so contact me early.</p></details>
         <details><summary>Can I buy from abroad?</summary><p>Yes. You need a Portuguese tax number (NIF) and a Portuguese bank account. I can introduce you to a trusted lawyer who helps with both and can even sign for you with a power of attorney, so you don't need to fly in for every step.</p></details>
+        <details><summary>What do T1, T2 and T3 mean?</summary><p>In Portugal, homes are described by their number of bedrooms. A T0 is a studio, a T1 has one bedroom, a T2 two, and so on. A T2+1 has an extra room that doesn't officially count as a bedroom, for example because it has no window. It's often used as an office or a walk-in closet.</p></details>
         <details><summary>How long does buying take?</summary><p>Faster than in many other countries, and faster than most people expect. My own purchase went very quickly too. Once your offer is accepted, the promissory contract (CPCV) is usually signed within one to three weeks, with a deposit of at least 10% of the price, sometimes more. The deed often follows one to two months later. A cash purchase can be done in about four to six weeks in total; with a mortgage, count on two to three months. That's why I help you prepare your documents and financing before you make an offer.</p></details>
         <details><summary>Looking for a home outside Lisbon?</summary><p>My focus is Estrela and the neighbourhoods around it. For a small number of buyers I also search myself in Costa da Caparica, Arrábida &amp; Sesimbra, Comporta and the Alentejo. <a href="#outside">Beyond Lisbon&nbsp;→</a> Looking on the Silver Coast, in Cascais, the Algarve or Porto? I'll introduce you to a trusted Engel &amp; Völkers colleague there.</p></details>
       </div> <h2 class="faq-h" id="faq-mortgage">Mortgage</h2> <div class="faq"> <details><summary>How much can I borrow?</summary><p>For your own home, Portuguese banks usually lend up to 90% of the value, for a second home or an investment up to 80%. So you need savings for the rest of the price, plus the purchase taxes and fees. How much exactly depends on your income: a broker can tell you in one conversation.</p></details> <details><summary>Can I get a mortgage if I don't live in Portugal?</summary><p>Yes, several Portuguese banks lend to non-residents. They usually ask for a bigger down payment and more documents, so start early, before you make an offer.</p></details> <details><summary>Why get a pre-approval before visiting?</summary><p>You know exactly how much you can spend, and sellers take your offer seriously.</p></details> <details><summary>Does the mortgage broker cost me anything?</summary><p>No. The broker I work with compares several banks for you, at no cost to you. Ask me and I'll introduce you personally.</p></details> </div> <p class="center" style="margin-top:22px"><a class="btn fill" href="#mortgage">Put me in touch with a mortgage broker</a></p>

@@ -280,7 +280,7 @@
 319|Vraagprijzen: gemiddelde prijs per m² van woningen die te koop staan, prijsrapport van idealista, september 2026.
 320|Marktrapport Estrela · 12 maanden tot september 2026
 321|Wat er echt gebeurt als je verkoopt in Estrela
-322|Echte verkoopprijzen van bestaande woningen, geen vraagprijzen. Vergeleken met heel Lissabon. De parochie Estrela omvat Lapa, Santos en Prazeres.
+322|Echte verkoopprijzen, geen vraagprijzen. Estrela omvat Lapa, Santos en Prazeres.
 323|Het prijsverschil
 324|Woningen staan veel hoger te koop dan wat kopers echt betalen
 325|in Estrela
@@ -726,3 +726,6 @@
 885|Prijs min de lening, plus alle kosten
 886|Vorige woningen
 887|Meer woningen
+888|T0 = studio · T1 = 1 slaapkamer · T2 = 2 slaapkamers, enzovoort
+889|Wat betekenen T1, T2 en T3?
+890|In Portugal worden woningen beschreven volgens het aantal slaapkamers. Een T0 is een studio, een T1 heeft één slaapkamer, een T2 twee, enzovoort. Een T2+1 heeft een extra kamer die officieel niet als slaapkamer telt, bijvoorbeeld omdat er geen raam is. Die wordt vaak gebruikt als bureau of inloopkast.

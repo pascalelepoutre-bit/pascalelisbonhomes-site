@@ -282,7 +282,7 @@
 319|Preços pedidos: preço médio por m² das casas anunciadas para venda, relatório de preços idealista, setembro de 2026.
 320|Relatório de mercado da Estrela · 12 meses até setembro de 2026
 321|O que acontece realmente quando vende na Estrela
-322|Preços reais de venda de casas usadas, não preços pedidos. Comparados com Lisboa no seu todo. A freguesia da Estrela inclui a Lapa, Santos e os Prazeres.
+322|Preços reais de venda, não preços pedidos. A Estrela inclui a Lapa, Santos e os Prazeres.
 323|A diferença de preço
 324|As casas são anunciadas muito acima do que os compradores pagam realmente
 325|na Estrela
@@ -728,3 +728,6 @@
 885|Preço menos o crédito, mais todos os custos
 886|Casas anteriores
 887|Mais casas
+888|T0 = estúdio · T1 = 1 quarto · T2 = 2 quartos, e assim por diante
+889|O que significam T1, T2 e T3?
+890|Em Portugal, as casas são descritas pelo número de quartos. Um T0 é um estúdio, um T1 tem um quarto, um T2 tem dois, e assim por diante. Um T2+1 tem uma divisão extra que não conta oficialmente como quarto, por exemplo porque não tem janela. Muitas vezes é usada como escritório ou closet.

@@ -280,7 +280,7 @@
 319|Prix affichés : prix moyen au m² des biens mis en vente, rapport de prix idealista, septembre 2026.
 320|Étude de marché d’Estrela · 12 mois jusqu’à septembre 2026
 321|Ce qui se passe vraiment quand vous vendez à Estrela
-322|Les vrais prix de vente des biens anciens, pas les prix affichés. Comparés à l’ensemble de Lisbonne. La paroisse d’Estrela comprend Lapa, Santos et Prazeres.
+322|Les vrais prix de vente, pas les prix affichés. Estrela comprend Lapa, Santos et Prazeres.
 323|L’écart de prix
 324|Les biens sont affichés bien au-dessus de ce que les acheteurs paient vraiment
 325|à Estrela
@@ -727,3 +727,6 @@
 885|Prix moins le prêt, plus tous les frais
 886|Biens précédents
 887|Plus de biens
+888|T0 = studio · T1 = 1 chambre · T2 = 2 chambres, et ainsi de suite
+889|Que signifient T1, T2 et T3 ?
+890|Au Portugal, les logements sont décrits par leur nombre de chambres. Un T0 est un studio, un T1 a une chambre, un T2 deux, et ainsi de suite. Un T2+1 a une pièce en plus qui ne compte pas officiellement comme chambre, par exemple parce qu'elle n'a pas de fenêtre. Elle sert souvent de bureau ou de dressing.
