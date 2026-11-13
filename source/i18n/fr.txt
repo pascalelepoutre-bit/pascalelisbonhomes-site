@@ -280,7 +280,7 @@
 319|Prix affichés : prix moyen au m² des biens mis en vente, rapport de prix idealista, septembre 2026.
 320|Étude de marché d’Estrela · 12 mois jusqu’à septembre 2026
 321|Ce qui se passe vraiment quand vous vendez à Estrela
-322|Les vrais prix de vente, pas les prix affichés. Comparés à l’ensemble de Lisbonne. La paroisse d’Estrela comprend Lapa, Santos et Prazeres.
+322|Les vrais prix de vente des biens anciens, pas les prix affichés. Comparés à l’ensemble de Lisbonne. La paroisse d’Estrela comprend Lapa, Santos et Prazeres.
 323|L’écart de prix
 324|Les biens sont affichés bien au-dessus de ce que les acheteurs paient vraiment
 325|à Estrela
@@ -292,17 +292,17 @@
 331|Prix affiché
 332|Prix de vente réel
 333|Biens anciens à Estrela, 2011–2026
-334|Source : SIR – Confidencial Imobiliário, paroisse d’Estrela et municipalité de Lisbonne, 12 mois jusqu’à septembre 2026. Prix de vente, écart de prix, baisses de prix et biens vendus : tous les biens. Délai de vente, typologie et graphique des prix : biens anciens. Graphique redessiné à partir de l’évolution du prix/m² du SIR. © IMOESTATÍSTICA – TOUS DROITS RÉSERVÉS.
+334|Source : SIR – Confidencial Imobiliário, rapport du 30 octobre 2026, paroisse d’Estrela et municipalité de Lisbonne, 12 mois jusqu’à septembre 2026. Tous les chiffres : biens anciens. Graphique redessiné à partir de l’évolution du prix/m² du SIR. © IMOESTATÍSTICA – TOUS DROITS RÉSERVÉS.
 335|Le bon prix pour mon bien ?
 336|Ce qui se vend à Estrela
 337|T4+ et maisons
 338|Les appartements de deux chambres sont les biens les plus vendus à Estrela.
 339|Prix de vente moyen
-340|le prix auquel les biens à Estrela se sont vraiment vendus
-341|Lisbonne : 5 900 €/m²
+340|entre le prix affiché et le prix de vente réel
+341|Lisbonne : −14,4 %
 342|Baisses de prix
 343|le premier prix affiché baisse avant la vente
-344|Lisbonne : −6,1 %
+344|Lisbonne : −7,5 %
 345|Délai de vente
 346|6 mois
 347|un mois de plus qu’à Lisbonne

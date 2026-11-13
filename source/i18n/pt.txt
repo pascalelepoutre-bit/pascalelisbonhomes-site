@@ -282,7 +282,7 @@
 319|Preços pedidos: preço médio por m² das casas anunciadas para venda, relatório de preços idealista, setembro de 2026.
 320|Relatório de mercado da Estrela · 12 meses até setembro de 2026
 321|O que acontece realmente quando vende na Estrela
-322|Preços reais de venda, não preços pedidos. Comparados com Lisboa no seu todo. A freguesia da Estrela inclui a Lapa, Santos e os Prazeres.
+322|Preços reais de venda de casas usadas, não preços pedidos. Comparados com Lisboa no seu todo. A freguesia da Estrela inclui a Lapa, Santos e os Prazeres.
 323|A diferença de preço
 324|As casas são anunciadas muito acima do que os compradores pagam realmente
 325|na Estrela
@@ -294,17 +294,17 @@
 331|Preço pedido
 332|Preço real de venda
 333|Casas usadas na Estrela, 2011–2026
-334|Fonte: SIR – Confidencial Imobiliário, freguesia da Estrela e concelho de Lisboa, 12 meses até setembro de 2026. Preço de venda, diferença de preço, descidas de preço e casas vendidas: todas as casas. Tempo de venda, tipologia e gráfico de preços: casas usadas. Gráfico redesenhado a partir da evolução do preço/m² do SIR. © IMOESTATÍSTICA – TODOS OS DIREITOS RESERVADOS.
+334|Fonte: SIR – Confidencial Imobiliário, relatório de 30 de outubro de 2026, freguesia da Estrela e concelho de Lisboa, 12 meses até setembro de 2026. Todos os valores: casas usadas. Gráfico redesenhado a partir da evolução do preço/m² do SIR. © IMOESTATÍSTICA – TODOS OS DIREITOS RESERVADOS.
 335|O preço certo para a minha casa?
 336|O que se vende na Estrela
 337|T4+ e moradias
 338|Os T2 são as casas mais vendidas na Estrela.
 339|Preço médio de venda
-340|o valor pelo qual as casas na Estrela foram realmente vendidas
-341|Lisboa: 5.900 €/m²
+340|entre o preço pedido e o preço real de venda
+341|Lisboa: −14,4%
 342|Descidas de preço
 343|o primeiro preço pedido desce antes da venda
-344|Lisboa: −6,1%
+344|Lisboa: −7,5%
 345|Tempo de venda
 346|6 meses
 347|mais um mês do que em Lisboa

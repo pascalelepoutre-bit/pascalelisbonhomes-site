@@ -280,7 +280,7 @@
 319|Vraagprijzen: gemiddelde prijs per m² van woningen die te koop staan, prijsrapport van idealista, september 2026.
 320|Marktrapport Estrela · 12 maanden tot september 2026
 321|Wat er echt gebeurt als je verkoopt in Estrela
-322|Echte verkoopprijzen, geen vraagprijzen. Vergeleken met heel Lissabon. De parochie Estrela omvat Lapa, Santos en Prazeres.
+322|Echte verkoopprijzen van bestaande woningen, geen vraagprijzen. Vergeleken met heel Lissabon. De parochie Estrela omvat Lapa, Santos en Prazeres.
 323|Het prijsverschil
 324|Woningen staan veel hoger te koop dan wat kopers echt betalen
 325|in Estrela
@@ -292,17 +292,17 @@
 331|Vraagprijs
 332|Echte verkoopprijs
 333|Bestaande woningen in Estrela, 2011–2026
-334|Bron: SIR – Confidencial Imobiliário, parochie Estrela en gemeente Lissabon, 12 maanden tot september 2026. Verkoopprijs, prijsverschil, prijsverlagingen en verkochte woningen: alle woningen. Verkooptijd, typologie en prijsgrafiek: bestaande woningen. Grafiek hertekend op basis van de evolutie van de prijs/m² van SIR. © IMOESTATÍSTICA – ALLE RECHTEN VOORBEHOUDEN.
+334|Bron: SIR – Confidencial Imobiliário, rapport van 30 oktober 2026, parochie Estrela en gemeente Lissabon, 12 maanden tot september 2026. Alle cijfers: bestaande woningen. Grafiek hertekend op basis van de evolutie van de prijs/m² van SIR. © IMOESTATÍSTICA – ALLE RECHTEN VOORBEHOUDEN.
 335|De juiste prijs voor mijn woning?
 336|Wat verkoopt in Estrela
 337|T4+ en huizen
 338|Appartementen met twee slaapkamers zijn de meest verkochte woningen in Estrela.
 339|Gemiddelde verkoopprijs
-340|waarvoor woningen in Estrela echt verkocht zijn
-341|Lissabon: € 5.900/m²
+340|tussen de vraagprijs en de echte verkoopprijs
+341|Lissabon: −14,4%
 342|Prijsverlagingen
 343|de eerste vraagprijs daalt voor de verkoop
-344|Lissabon: −6,1%
+344|Lissabon: −7,5%
 345|Verkooptijd
 346|6 maanden
 347|een maand langer dan in Lissabon
