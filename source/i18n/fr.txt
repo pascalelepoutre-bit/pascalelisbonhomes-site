@@ -78,8 +78,8 @@
 96|Documents &amp; mandat
 97|Si vous décidez de vendre, je vous guide pour chaque document et nous signons le mandat.
 98|Lancement premium
-99|Photos professionnelles et une présentation premium dès la signature, puis les portails et le réseau Engel &amp; Völkers dans le monde entier. Seuls des acheteurs sérieux visitent.
-100|De l’offre à l’escritura
+99|Des photos professionnelles, puis votre bien sur les principaux sites immobiliers au Portugal et le réseau mondial Engel &amp; Völkers. Je vérifie chaque acheteur avant une visite.
+100|De l’offre à l’acte de vente
 101|Je négocie et je reste à vos côtés jusqu’à l’acte.
 102|Des nouvelles de ma part chaque semaine. Inutile de me relancer.
 103|Le bon prix
@@ -301,11 +301,11 @@
 340|le prix auquel les biens à Estrela se sont vraiment vendus
 341|Lisbonne : 5 900 €/m²
 342|Baisses de prix
-343|en moyenne, le premier prix affiché baisse avant que le bien soit vendu
+343|le premier prix affiché baisse avant la vente
 344|Lisbonne : −6,1 %
 345|Délai de vente
 346|6 mois
-347|un mois de plus qu’à Lisbonne. Avec un écart de prix plus grand, les biens qui démarrent trop haut attendent plus longtemps un acheteur.
+347|un mois de plus qu’à Lisbonne
 348|Lisbonne : 5 mois
 349|Mes adresses préférées
 350|Là où je mange, je bouge, j’écoute de la musique et je prends soin de moi. Les adresses que je recommande aux amis et aux clients qui viennent d’arriver.

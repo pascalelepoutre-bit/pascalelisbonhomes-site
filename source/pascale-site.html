@@ -1004,7 +1004,51 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
 .rev figcaption span{color:#8a7d6c}
 .review-page{max-width:720px;margin:0 auto}
 .review-page .sub{margin-bottom:28px}
-/* first title on every page: same gap under the header at every width */.page-head,.buy-hero,[data-view="market-report"]>#market{padding-top:calc(var(--hh,70px) + 48px)!important}.bl-teaser{margin-top:-70px!important}.bl-teaser .weekly{max-width:880px}.bl-teaser .more{white-space:nowrap}@media(max-width:700px){.bl-teaser{margin-top:-60px!important}.bl-teaser .weekly{flex-wrap:wrap;justify-content:center;text-align:center;border-radius:22px;gap:8px 10px;padding:16px 20px}.bl-teaser .weekly .ico{display:none}.bl-teaser .more{flex-basis:100%;margin:0!important}}@media(min-width:900px){#about .text{padding-bottom:48px!important}}#help{padding-top:40px!important}#services>.deco{display:none}</style>
+/* first title on every page: same gap under the header at every width */.page-head,.buy-hero,[data-view="market-report"]>#market{padding-top:calc(var(--hh,70px) + 48px)!important}.bl-teaser{margin-top:-70px!important}.bl-teaser .weekly{max-width:880px}.bl-teaser .more{white-space:nowrap}@media(max-width:700px){.bl-teaser{margin-top:-60px!important}.bl-teaser .weekly{flex-wrap:wrap;justify-content:center;text-align:center;border-radius:22px;gap:8px 10px;padding:16px 20px}.bl-teaser .weekly .ico{display:none}.bl-teaser .more{flex-basis:100%;margin:0!important}}@media(min-width:900px){#about .text{padding-bottom:48px!important}}#help{padding-top:40px!important}#services>.deco{display:none}
+/* market report on one screen (desktop) */
+.mk2-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mk2-stats .mk-card{padding:18px 20px;gap:4px}
+.mk2-stats .mk-v{font-size:clamp(1.7rem,2.6vw,2.3rem)!important}
+.mk2-stats .mk-card.big{grid-row:auto}
+.mk2-stats .mk-c{font-size:.84rem;line-height:1.4}
+.mk2-stats .mk-cmp{margin-top:4px;padding-top:6px}
+.mk2-row{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-top:14px;align-items:stretch}
+.mk2-row .mk-chart{padding:18px 22px;gap:6px}
+.mk2-row .gap-h{font-size:1.15rem;margin:0}
+.mk2-row .mk-chart svg{max-height:230px}
+.mk2-side{display:grid;gap:14px;align-content:start}
+.mk2-eg{padding:18px 22px;gap:10px}
+.mk2-eg .gap-why{font-size:.9rem;margin:0}
+.mk2-eg .btn{justify-self:start}
+.mk2-side .mk-typo{padding:18px 22px;gap:10px}
+.mk2-side .ty-bar{height:38px}
+[data-view="market-report"] .mk-src{margin-top:14px;max-width:none}
+[data-view="market-report"] .mk-head{margin-bottom:20px}
+[data-view="market-report"] .mk-head .eyebrow{margin-bottom:10px!important}
+[data-view="market-report"] .mk-head h1{margin-bottom:6px}
+@media (max-width:900px){.mk2-stats{grid-template-columns:1fr 1fr}.mk2-row{grid-template-columns:1fr}}
+
+@media (min-width:901px){
+#market.mk1{padding-top:124px!important;padding-bottom:24px!important}
+.mk2-stats .mk-c{font-size:.8rem;line-height:1.3}
+.mk2-stats .mk-l{font-size:.66rem}
+.mk2-row .mk-chart svg{max-height:200px}
+[data-view="market-report"] .mk-head h1{font-size:clamp(1.6rem,2.8vw,2.2rem)!important}
+[data-view="market-report"] .mk-head{margin-bottom:16px}
+.mk2-eg .gap-eg{padding:0;background:none}
+}
+
+@media (min-width:901px){
+.mk2-row{grid-template-columns:1.25fr 1.6fr}
+.mk2-side.mk2-3{grid-template-columns:1fr 1fr;align-items:stretch}
+.mk2-eg{gap:8px}
+.mk2-eg .gap-row{font-size:.9rem}
+.mk2-eg .gap-row b{font-size:1.15rem}
+.mk2-eg .btn{font-size:.62rem;padding:12px 18px}
+.mk2-stats .mk-card{padding:14px 18px}
+.mk2-row .mk-chart svg{max-height:210px}
+}
+.gap-mini{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.gap-mini b{font-family:var(--display);font-weight:400;font-size:2rem;color:var(--gold);line-height:1}.gap-mini span{font-size:.9rem}.gap-mini .gm-l{color:var(--muted);font-size:.8rem}</style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9"/></symbol>
@@ -1242,10 +1286,10 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
     <div class="wrap">
       <div class="steps five">
         <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><path d="M12 16h40a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H28l-10 8v-8h-6a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z"/><path d="M20 27h24M20 34h16"/></svg><small>1</small></div><h3>A 10-minute visit</h3><p>I come to see your home and hear your plans and timing.</p></div>
-        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><path d="M10 30 26 17l16 13"/><path d="M14 27v20h24V27"/><path d="M22 47V36h8v11"/><circle cx="44" cy="40" r="8"/><path d="m50 46 7 7"/></svg><small>2</small></div><h3>Free market study</h3><p>Real sale prices nearby, without commitment. You decide the price.</p></div>
+        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><path d="M10 30 26 17l16 13"/><path d="M14 27v20h24V27"/><path d="M22 47V36h8v11"/><circle cx="44" cy="40" r="8"/><path d="m50 46 7 7"/></svg><small>2</small></div><h3>Free market study</h3><p>What homes in your neighbourhood really sold for, without commitment. You decide the price.</p></div>
         <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><path d="M18 10h20l10 10v34H18z"/><path d="M38 10v10h10"/><path d="M24 30h18M24 37h18M24 44h10"/></svg><small>3</small></div><h3>Documents &amp; contract</h3><p>If you decide to sell, I guide you through every document and we sign the mediation contract.</p></div>
-        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><rect x="9" y="20" width="46" height="30" rx="5"/><path d="M22 20l4-6h12l4 6"/><circle cx="32" cy="35" r="9"/><circle cx="32" cy="35" r="4"/><path d="M46 26h3"/></svg><small>4</small></div><h3>Premium launch</h3><p>Pro photos and a premium presentation right after signing, then the portals and the Engel &amp; Völkers network worldwide. Only serious buyers visit.</p></div>
-        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><circle cx="20" cy="32" r="9"/><circle cx="20" cy="32" r="3"/><path d="M29 32h26M47 32v7M53 32v5"/><path d="M14 16q4-6 10-2M40 50q6 2 9-3"/></svg><small>5</small></div><h3>Offer to escritura</h3><p>I negotiate and stay with you until the deed.</p></div>
+        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><rect x="9" y="20" width="46" height="30" rx="5"/><path d="M22 20l4-6h12l4 6"/><circle cx="32" cy="35" r="9"/><circle cx="32" cy="35" r="4"/><path d="M46 26h3"/></svg><small>4</small></div><h3>Premium launch</h3><p>Professional photos, then your home on the main property websites in Portugal and the worldwide Engel &amp; Völkers network. I check every buyer before a visit.</p></div>
+        <div class="step"><div class="ring"><svg class="gl" viewBox="0 0 64 64"><circle cx="20" cy="32" r="9"/><circle cx="20" cy="32" r="3"/><path d="M29 32h26M47 32v7M53 32v5"/><path d="M14 16q4-6 10-2M40 50q6 2 9-3"/></svg><small>5</small></div><h3>From offer to deed</h3><p>I negotiate and stay with you until the deed.</p></div>
       </div>
       <p class="weekly"><svg class="ico"><use href="#i-chat"/></svg>A weekly update from me. No need to chase.</p>
       <div class="ev-band"><img src="photos/brand/engel-voelkers-logo.png" alt="Engel &amp; Völkers" width="591" height="64"><p>Your home, presented with Engel &amp; Völkers premium marketing and its international network of buyers.</p></div>
@@ -1621,25 +1665,21 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
 </div>
 <div class="view" data-view="market-report" hidden>
   
-  <section id="market" class="market" style="padding-top:clamp(120px,14vw,160px)">
+  <section id="market" class="market mk1" style="padding-top:clamp(120px,14vw,160px)">
     <div class="wrap">
       <div class="mk-head">
         <p class="eyebrow">Estrela market report · 12 months to September 2026</p>
         <h1 style="font-size:clamp(1.7rem,3.4vw,2.5rem)">What really happens when you sell in Estrela</h1>
         <p class="sub">Real sale prices, not asking prices. Compared with Lisbon as a whole. The Estrela parish includes Lapa, Santos and Prazeres.</p>
       </div>
-      <div class="mk-row2">
-        <div class="mk-left"><div class="mk-card mk-chart">
-          <span class="mk-l">The price gap</span>
+      <div class="mk2-stats">
+        <div class="mk-card big"><span class="mk-l">Average sale price</span><b class="mk-v">€ 6.085<small>/m²</small></b><span class="mk-c">what homes in Estrela really sold for</span><span class="mk-cmp">Lisbon: € 5.900/m²</span></div>
+        <div class="mk-card"><span class="mk-l">Price reductions</span><b class="mk-v">−8,0%</b><span class="mk-c">the first asking price comes down before the sale</span><span class="mk-cmp">Lisbon: −6,1%</span></div>
+        <div class="mk-card"><span class="mk-l">Time to sell</span><b class="mk-v">6 months</b><span class="mk-c">a month longer than in Lisbon</span><span class="mk-cmp">Lisbon: 5 months</span></div>
+      </div>
+      <div class="mk2-row">
+        <div class="mk-card mk-chart">
           <h3 class="gap-h">Homes are listed far above what buyers really pay</h3>
-          <div class="gap-ex">
-            <div class="gap-big"><b>−25%</b><span>in Estrela</span><small>Lisbon: −19%</small></div>
-            <div class="gap-eg"><span class="gap-eg-l">What that means, on average</span>
-              <div class="gap-row"><span>Listed at</span><b>€ 1.000.000</b></div>
-              <div class="gap-row sold"><span>Really sold for</span><b>€ 750.000</b></div>
-            </div>
-          </div>
-          <p class="gap-why">That's why the right price from day one matters: serious buyers come straight away, and nobody loses months.</p>
           <svg viewBox="0 0 700 300" role="img" aria-label="Average asking price and real sale price per m² in Estrela, 2011 to 2026. Both rose strongly; asking prices stay clearly above sale prices.">
             <line x1="56" y1="262.0" x2="684" y2="262.0" class="cg"/><text x="48" y="266.0" class="cy">0</text><line x1="56" y1="186.4" x2="684" y2="186.4" class="cg"/><text x="48" y="190.4" class="cy">2,5k</text><line x1="56" y1="110.8" x2="684" y2="110.8" class="cg"/><text x="48" y="114.8" class="cy">5k</text><line x1="56" y1="35.1" x2="684" y2="35.1" class="cg"/><text x="48" y="39.1" class="cy">7,5k</text><text x="56.0" y="284" class="cx">2011</text><text x="177.5" y="284" class="cx">2014</text><text x="299.1" y="284" class="cx">2017</text><text x="420.6" y="284" class="cx">2020</text><text x="542.2" y="284" class="cx">2023</text><text x="663.7" y="284" class="cx">2026</text>
             <path d="M56.0,177.9 L66.1,178.8 L76.3,183.0 L86.4,184.3 L96.5,184.6 L106.6,184.9 L116.8,184.9 L126.9,188.2 L137.0,186.4 L147.2,187.3 L157.3,188.2 L167.4,189.7 L177.5,189.4 L187.7,188.8 L197.8,187.0 L207.9,184.3 L218.1,182.1 L228.2,180.9 L238.3,180.3 L248.5,180.0 L258.6,174.9 L268.7,172.8 L278.8,164.3 L289.0,160.1 L299.1,152.5 L309.2,149.5 L319.4,143.1 L329.5,140.4 L339.6,134.9 L349.7,132.5 L359.9,124.4 L370.0,119.8 L380.1,114.7 L390.3,112.0 L400.4,108.3 L410.5,110.1 L420.6,108.3 L430.8,106.8 L440.9,107.1 L451.0,108.9 L461.2,108.9 L471.3,105.6 L481.4,104.1 L491.5,100.2 L501.7,99.0 L511.8,92.6 L521.9,90.8 L532.1,85.6 L542.2,82.3 L552.3,80.2 L562.5,74.8 L572.6,73.5 L582.7,71.4 L592.8,67.2 L603.0,63.9 L613.1,62.0 L623.2,58.4 L633.4,55.4 L643.5,50.6 L653.6,47.8 L663.7,43.6 L673.9,43.6 L684.0,43.6 L684.0,89.6 L673.9,89.3 L663.7,91.1 L653.6,92.0 L643.5,94.7 L633.4,96.5 L623.2,101.7 L613.1,103.5 L603.0,103.2 L592.8,108.9 L582.7,115.9 L572.6,120.7 L562.5,123.5 L552.3,125.3 L542.2,122.9 L532.1,121.9 L521.9,121.6 L511.8,122.2 L501.7,127.1 L491.5,130.7 L481.4,136.5 L471.3,138.0 L461.2,137.7 L451.0,137.4 L440.9,137.7 L430.8,135.9 L420.6,137.7 L410.5,138.3 L400.4,136.5 L390.3,139.2 L380.1,141.0 L370.0,144.6 L359.9,151.6 L349.7,156.7 L339.6,161.6 L329.5,166.4 L319.4,171.9 L309.2,177.0 L299.1,183.7 L289.0,187.0 L278.8,190.3 L268.7,195.8 L258.6,197.3 L248.5,198.5 L238.3,201.2 L228.2,203.9 L218.1,206.3 L207.9,208.2 L197.8,214.8 L187.7,215.4 L177.5,214.8 L167.4,215.7 L157.3,212.1 L147.2,211.5 L137.0,211.5 L126.9,211.5 L116.8,212.1 L106.6,208.5 L96.5,205.7 L86.4,204.8 L76.3,199.4 L66.1,194.8 L56.0,193.3 Z" class="c-gap"/>
@@ -1651,11 +1691,16 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
           </svg>
           <div class="ty-leg"><span><i class="lg-ask"></i>Asking price</span><span><i class="lg-sale"></i>Real sale price</span><span class="lg-note">Resale homes in Estrela, 2011–2026</span></div>
         </div>
-        <div class="mk-foot">
-        <p class="mk-src">Source: SIR – Confidencial Imobiliário, Estrela parish and Lisbon municipality, 12 months to September 2026. Sale price, price gap, price reductions and homes sold: all homes. Time to sell, typology and price chart: resale homes. Chart redrawn from the SIR price/m² evolution. © IMOESTATÍSTICA – ALL RIGHTS RESERVED.</p>
-        <a class="btn fill" href="#contact">The right price for my home?</a>
-      </div></div>
-        <div class="mk-side"><div class="mk-card mk-typo">
+        <div class="mk2-side mk2-3">
+          <div class="mk-card mk2-eg"><div class="gap-mini"><b>−25%</b><span>in Estrela</span><span class="gm-l">Lisbon: −19%</span></div><div class="gap-eg"><span class="gap-eg-l">What that means, on average</span>
+              <div class="gap-row"><span>Listed at</span><b>€ 1.000.000</b></div>
+              <div class="gap-row sold"><span>Really sold for</span><b>€ 750.000</b></div>
+            </div>
+          
+            <p class="gap-why">That's why the right price from day one matters: serious buyers come straight away, and nobody loses months.</p>
+            <a class="btn fill" href="#contact">The right price for my home?</a>
+          </div>
+          <div class="mk-card mk-typo">
           <span class="mk-l">What sells in Estrela</span>
           <div class="ty-bar" role="img" aria-label="Homes sold by typology: T2 41%, T0 to T1 27%, T3 20%, T4 and houses 12%">
             <span style="flex:41" class="ty1">41%</span><span style="flex:27" class="ty2">27%</span><span style="flex:20" class="ty3">20%</span><span style="flex:12" class="ty4">12%</span>
@@ -1663,15 +1708,9 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
           <div class="ty-leg"><span><i class="ty1"></i>T2</span><span><i class="ty2"></i>T0–T1</span><span><i class="ty3"></i>T3</span><span><i class="ty4"></i>T4+ and houses</span></div>
           <span class="mk-c">Two-bedroom apartments are the most sold homes in Estrela.</span>
         </div>
-        <div class="mk-grid">
-        <div class="mk-card big"><span class="mk-l">Average sale price</span><b class="mk-v">€ 6.085<small>/m²</small></b><span class="mk-c">what homes in Estrela really sold for</span><span class="mk-cmp">Lisbon: € 5.900/m²</span></div>
-        <div class="mk-card"><span class="mk-l">Price reductions</span><b class="mk-v">−8,0%</b><span class="mk-c">on average, the first asking price comes down before the home is sold</span><span class="mk-cmp">Lisbon: −6,1%</span></div>
-        <div class="mk-card"><span class="mk-l">Time to sell</span><b class="mk-v">6 months</b><span class="mk-c">a month longer than in Lisbon. With a bigger price gap, homes that start too high wait longer for a buyer.</span><span class="mk-cmp">Lisbon: 5 months</span></div>
-      </div>
         </div>
       </div>
-      
-      
+      <p class="mk-src">Source: SIR – Confidencial Imobiliário, Estrela parish and Lisbon municipality, 12 months to September 2026. Sale price, price gap, price reductions and homes sold: all homes. Time to sell, typology and price chart: resale homes. Chart redrawn from the SIR price/m² evolution. © IMOESTATÍSTICA – ALL RIGHTS RESERVED.</p>
     </div>
   </section>
   
