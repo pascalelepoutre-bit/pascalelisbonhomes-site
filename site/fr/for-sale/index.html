@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
-<link rel="stylesheet" href="/style.css?v=4d789031">
+<link rel="stylesheet" href="/style.css?v=f336346e">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -103,6 +103,7 @@
   <section class="tight" id="all-homes">
     <div class="wrap">
       
+      <div class="fbar">
       <div class="tabs" id="home-filter" aria-label="Filtrer par quartier">
         <button type="button" class="on" aria-pressed="true" data-f="">Tous</button>
         <button type="button" aria-pressed="false" data-f="Estrela">Estrela</button>
@@ -110,6 +111,7 @@
         <button type="button" aria-pressed="false" data-f="Santos">Santos</button>
         <a class="tab-link" href="#arrabida-project">Au-delà de Lisbonne &rarr;<span class="f-count bl-count"></span></a>
       </div>
+      <div class="fbar-row">
       <div class="tabs beds" id="bed-filter" aria-label="Nombre de chambres">
         <span class="f-label">Chambres</span>
         <button type="button" class="on" aria-pressed="true" data-b="0">Peu importe</button>
@@ -125,6 +127,8 @@
         <button type="button" aria-pressed="false" data-x="garden">Jardin</button>
         <button type="button" aria-pressed="false" data-x="lift">Ascenseur</button>
         <button type="button" aria-pressed="false" data-x="garage">Garage</button>
+      </div>
+      </div>
       </div>
       <p class="f-note">Les filtres se basent sur les détails de chaque annonce. Vous ne savez pas si un bien remplit ce critère ? Demandez-moi, je vérifie chaque bien pour vous.</p>
       <p style="text-align:center;margin:0"><button type="button" class="f-clear" id="f-clear" hidden>Effacer les filtres ✕</button></p>
