@@ -1,0 +1,730 @@
+1|Início
+2|Vender
+3|Comprar
+4|Bairros
+5|Mercado
+6|À venda
+7|A minha Lisboa
+8|Perguntas
+9|Marcar chamada
+10|A sua consultora imobiliária em Lisboa
+11|A sua casa em Lisboa,
+12|em
+13|boas
+14|mãos
+15|Vender ou comprar casa no bairro da Estrela e arredores? Se vende, ajudo-o a conseguir o valor certo. Se compra, ajudo-o a encontrar a casa certa. E acompanho-o desde a primeira visita até à escritura.
+16|Quero vender
+17|Quero comprar
+18|Estudo de mercado gratuito
+19|A sua especialista na Estrela
+21|Sobre mim
+22|Olá, sou a Pascale. Muito prazer!
+23|Sou consultora imobiliária na Engel &amp; Völkers em Lisboa. Belga de nascimento, cidadã do mundo de coração: vivi no Brasil e no Quénia, vim pela primeira vez para Portugal como estudante Erasmus há vinte anos e acabei por fazer de Lisboa a minha casa. Sei o que é começar uma vida nova noutro país.
+24|Quando comprei o meu próprio apartamento, visitei quase 40 imóveis, por isso sei o que faz um comprador dizer que sim. Hoje vivo na Lapa e sou especialista na freguesia da Estrela e nos bairros à volta. Adoro viver aqui: o rio, a luz e a praia a apenas 25 minutos.
+25|As pessoas gostam de trabalhar comigo por ser quem sou. Só trabalho naquilo em que acredito de verdade, mas quando acredito, não paro até chegarmos ao objetivo. Tratamento personalizado, organizado e honesto: um plano claro, notícias regulares e sem surpresas.
+27|Como posso ajudar?
+28|Vender ou comprar, estou do seu lado
+29|Da primeira chamada até às chaves
+30|Quero vender
+31|O preço certo desde o primeiro dia, um marketing bonito e notícias minhas todas as semanas.
+32|Quero comprar
+33|Um só contacto para todas as casas do mercado. Eu marco as visitas e verifico os documentos.
+34|Começar a minha procura
+36|Um acompanhamento pessoal, com uma rede global por trás
+37|Um contacto pessoal que conhece a sua rua, com o apoio de uma das principais marcas imobiliárias premium do mundo.
+38|fundada em Hamburgo
+39|países
+40|escritórios no mundo
+41|pessoas
+42|Precisa de um advogado, de um consultor fiscal ou de um intermediário de crédito? Apresento-lhe pessoas da minha confiança.
+43|Os meus bairros
+44|A Estrela e tudo o que está à volta
+45|Sete bairros que conheço rua a rua
+53|A sonhar com a costa ou o campo? Caparica, Arrábida, Comporta, o Alentejo.
+54|Fora de Lisboa&nbsp;→
+55|À venda na Estrela e arredores
+56|Uma seleção de casas da minha carteira e dos meus colegas da Engel &amp; Völkers. Gostou de alguma? Envie-me uma mensagem. Mando-lhe todos os detalhes e marco a sua visita.
+57|✦ Novo
+58|A minha angariação
+59|Investimento
+62|4 quartos
+63|1 casa de banho
+64|Oportunidade de investimento na Estrela, com vista sobre o rio e a ponte. Peça-me o estudo para investidores com a rentabilidade prevista.
+65|Pergunte-me por esta casa →
+67|Santos · Estrela
+69|Estúdio · Pátio do Pinzaleiro
+70|Estúdio
+71|Pied-à-terre ou investimento: um estúdio mobilado cheio de charme, com entrada própria, num pátio tranquilo junto à igreja de Santos, com a Madragoa e o rio ao virar da esquina.
+72|Lapa · Estrela
+74|T4 com terraço, elevador e garagem
+75|2 casas de banho
+76|Terraço virado a poente, vistas desafogadas, renovado em 2016, perto do Museu de Arte Antiga.
+78|Penthouse com piscina privada e vista rio
+79|4 casas de banho
+80|Duplex com terraço de 163 m² e piscina infinita, com vista sobre o Tejo e a ponte.
+81|Ver todas as casas na Estrela, Lapa e Santos
+82|Novidades de vez em quando
+83|Notícias de Lisboa, do meu bairro
+84|Só quando há algo que vale a pena partilhar: preços reais, casas novas no mercado e as minhas dicas locais preferidas. Curto e alegre, sem spam.
+85|Deixar vazio
+86|Email
+87|Subscrever
+88|Aceito receber novidades ocasionais da Pascale e posso cancelar a qualquer momento.
+89|Obrigada! Está na lista.
+90|Para quem vende
+91|Vender a sua casa em Lisboa
+92|O preço certo desde o primeiro dia, um marketing forte e alguém do seu lado que fala a sua língua.
+93|Uma visita de 10 minutos
+94|Vou ver a sua casa e ouvir os seus planos e o seu calendário.
+95|Preços reais de venda na zona, sem compromisso. Quem decide o preço é você.
+96|Documentos e contrato
+97|Se decidir vender, acompanho-o em cada documento e assinamos o contrato de mediação.
+98|Lançamento premium
+99|Fotografias profissionais e uma apresentação premium logo após a assinatura, depois os portais e a rede da Engel &amp; Völkers no mundo inteiro. Só visitam compradores sérios.
+100|Da proposta à escritura
+101|Negoceio por si e fico consigo até à escritura.
+102|Notícias minhas todas as semanas. Não precisa de andar atrás de mim.
+103|O preço certo
+104|O preço certo desde o primeiro dia: mais visitas, melhores propostas
+105|a descida média quando uma casa começa com um preço alto demais
+106|meses, o tempo médio de venda na Estrela
+107|Preço alto demais? Ajuda os vizinhos a vender.
+108|Os compradores comparam e acabam por comprar a casa com melhor preço na mesma rua.
+109|Quem começa alto demais acaba muitas vezes mais baixo.
+110|Depois de meses online, perde poder negocial.
+111|Preço certo? Os compradores sérios aparecem depressa.
+112|Mais visitas nas primeiras semanas, e propostas perto do seu preço.
+113|Peça o seu estudo de mercado gratuito
+114|Ver o relatório de mercado completo da Estrela →
+115|Quanto vale hoje a sua casa?
+116|Vou dizer-lhe com honestidade quanto vale a sua casa.
+117|Tal como está, depois de obras ou com inquilino: preparo o estudo que se adapta à sua casa. Para começar só preciso da morada. Para o estudo em si preciso da caderneta predial e, se possível, do certificado energético. Pode juntá-los aqui mesmo no formulário. Gratuito e sem compromisso.
+118|Quero o meu estudo de mercado gratuito
+119|Basta o seu nome e número. Ligo-lhe para marcar uma visita curta, porque um bom estudo começa sempre na sua casa.
+120|Nome
+121|Telefone / WhatsApp
+122|Email · opcional
+123|Rua e número · opcional, mas poupa tempo ao telefone
+124|Onde fica a sua casa?
+125|Estrela, Lapa, Santos ou arredores
+126|Noutro sítio em Lisboa
+127|Fora de Lisboa
+128|Que cidade ou região?
+129|Quartos
+130|Moradia
+131|Quando pensa vender?
+132|Só por curiosidade
+133|Nos próximos 6 meses
+134|O mais depressa possível
+135|Enviar o meu pedido
+136|Obrigada! Entro em contacto num dia útil para marcarmos o seu estudo de mercado gratuito. Ainda não juntou os documentos? Envie-me a caderneta predial e, se possível, o certificado energético por email ou WhatsApp.
+137|Vender a partir do estrangeiro ou vender uma casa herdada
+138|Não está em Lisboa? A sua casa está em boas mãos comigo.
+139|Muitos proprietários na Estrela e na Lapa vivem no estrangeiro, ou herdaram uma casa em conjunto com a família. Falo a sua língua e trato de tudo aqui, para que não tenha de apanhar um avião a cada passo.
+140|Conte-me a sua situação
+141|Na sua língua
+142|português, English, français ou Nederlands, por WhatsApp ou videochamada.
+143|Em seu nome
+144|Chaves, fotografias, visitas e documentação: tudo tratado aqui.
+145|Herdou com a família?
+146|Todos recebem a mesma informação ao mesmo tempo, e ajudo com os documentos em conjunto com advogados de confiança.
+147|Vende fora de Lisboa? Ponho-o em contacto com um colega de confiança na sua região.
+148|Saber mais&nbsp;→
+149|Perguntas frequentes
+150|Perguntas de quem vende
+151|O que os proprietários mais me perguntam
+152|Tenho de assinar um contrato de exclusividade?
+153|Não. A exclusividade nunca é obrigatória: a escolha é sempre sua. Explico-lhe as vantagens para poder decidir. Com exclusividade, a sua casa aparece com um só preço e uma apresentação bonita, posso investir em fotografias profissionais e marketing a sério, e tem um só contacto com notícias todas as semanas. E exclusividade não significa menos compradores: partilho os meus imóveis com outras agências, para que os compradores delas também possam visitar.
+154|Quem decide o preço?
+155|Você, sempre. Analiso as vendas recentes e os anúncios atuais de casas semelhantes na zona, e o estado da sua casa, o andar, a luz e o espaço exterior. Explico tudo num estudo de mercado escrito, para que possa escolher o preço pedido com factos reais. O mesmo vale para as propostas: eu aconselho, mas é você quem decide o preço final de venda.
+156|Do que precisa de mim para começar?
+157|Para o estudo de mercado gratuito, a caderneta predial, o certificado energético se possível, e uma visita curta à sua casa. Antes de a casa ir para o mercado, preciso de todos os documentos: caderneta predial, certidão permanente, certificado energético e o documento de identificação e o NIF de cada proprietário. Ajudo-o a pedir o que faltar. Com tudo completo, assinamos o contrato de mediação e a sessão fotográfica é no mesmo dia ou no dia seguinte.
+158|Quando pago a sua comissão?
+159|Só quando a sua casa for vendida. A comissão é acordada à partida no contrato de mediação e é paga metade no CPCV e metade na escritura.
+160|Quanto tempo demora uma venda?
+161|Encontrar o comprador certo depende do preço, do estado da casa e da procura. Com o preço certo e um processo completo, as casas na Estrela e arredores costumam encontrar comprador em poucos meses. A partir daí, em Portugal tudo anda depressa: o contrato-promessa (CPCV) costuma ser assinado em uma a três semanas, e a escritura segue muitas vezes um a dois meses depois. Por isso preparo os seus documentos desde o início, para que nada atrase a venda.
+162|Ver todas as perguntas →
+163|A sua procura
+164|Diga-me o que procura
+165|Cerca de 3 minutos, quase tudo com um só toque. Poupa-nos tempo ao telefone e trocas de emails, e ajuda-o a pensar bem no que é realmente importante para si. Quanto mais souber, melhor o posso ajudar.
+166|Com calma: eu também lhe dedico o meu tempo
+167|Sobre si
+168|Língua preferida
+173|Quando está mais disponível para chamadas e visitas?
+174|Dias úteis de manhã
+175|Dias úteis à tarde
+176|Dias úteis ao fim do dia
+177|Fins de semana
+178|A casa que procura
+179|Onde procura?
+180|Em Lisboa
+181|Fora de Lisboa
+182|Para quê?
+183|Habitação própria
+184|Casa de férias
+185|Quantos quartos?
+186|4 ou mais
+187|Que zonas de Lisboa?
+190|Outra
+191|Que zonas fora de Lisboa?
+193|Arrábida e Sesimbra
+196|Que outra zona?
+197|Área mínima
+198|Consideraria uma casa para renovar?
+199|Não, só pronta a habitar
+200|Pequenas obras, sim
+201|Sim, renovação completa
+202|O que é importante para si
+203|Indispensável
+204|escolha até 3
+205|Elevador
+206|Varanda ou terraço
+207|Estacionamento
+208|Vista rio
+209|Muita luz
+210|Jardim
+211|Piscina
+212|Perto da praia
+213|Algum terreno
+214|Vista mar
+215|Que outro ponto indispensável?
+216|Seria bom ter
+217|Arrecadação
+218|Jardim ou pátio
+219|Rua tranquila
+220|Escritório em casa
+221|Que outro extra?
+222|Fora de questão
+223|Rés-do-chão
+224|Mais de 3 andares sem elevador
+225|Rua movimentada
+226|O que mais está fora de questão?
+227|O que o faz feliz em casa?
+228|Não é um requisito: ajuda-me a perceber o que significa casa para si.
+229|Orçamento
+230|Preço máximo de compra da casa
+231|Até 400 mil €
+232|Mais de 3 M€
+233|Valor máximo exato, se o souber · opcional
+234|Vai precisar de crédito à habitação?
+235|Não, pago a pronto
+236|Sim
+237|Ainda não sei
+238|Já tem uma pré-aprovação do banco?
+239|Sim, já temos
+240|Em curso
+241|Ainda não
+242|Para que montante?
+243|Quer que o apresente à intermediária de crédito com quem trabalho? Ela compara vários bancos, sem custos para si.
+244|Sim, por favor
+245|Não, obrigado
+246|Já temos um
+247|Quando
+248|Quando gostaria de comprar?
+249|Nos próximos 3 meses
+250|Sem pressa
+251|Depende de alguma coisa?
+252|Antes de comprar, precisa de…
+253|Nada, estamos prontos
+254|Vender outra casa
+255|Obter a aprovação do banco
+256|Terminar um contrato de arrendamento
+257|Mais alguma coisa que eu deva saber?
+258|As suas respostas só servem para encontrar a sua casa e nunca são partilhadas.
+259|Enviar a minha procura
+260|Obrigada! Respondo-lhe num dia útil com uma primeira seleção.
+261|Sete bairros que conheço rua a rua. O meu foco é a freguesia da Estrela. Vivo na Lapa.
+262|Ver o relatório de mercado da Estrela →
+263|A minha zona
+264|Verde, calma e clássica. A vida aqui gira à volta do Jardim da Estrela e da cúpula branca da basílica, com o elétrico 28 a passar. Os compradores vêm pelos elegantes prédios do início do século XX, pés-direitos altos e soalhos de madeira, e por um verdadeiro ambiente de bairro perto do centro.
+267|A Rua de São Bento e os seus antiquários
+268|Elétrico 28
+269|O mercado em resumo · preços pedidos
+270|num ano · freguesia da Estrela, set. 2026
+271|A dica da Pascale
+272|Passeie pelas ruas laterais à volta do jardim. Alguns dos prédios mais bonitos estão a um só quarteirão das avenidas principais.
+273|A minha base · freguesia da Estrela
+274|O bairro das embaixadas de Lisboa e uma das suas moradas mais prestigiadas. Ruas tranquilas e inclinadas com palacetes, jardins atrás de muros altos e, dos andares de cima, vistas largas sobre o Tejo. Aqui as casas raramente chegam ao mercado e os compradores muitas vezes estão dispostos a esperar pela certa.
+275|Praias da Caparica a ~25 min
+276|Embaixadas e residências
+278|Vista rio do alto da colina
+279|num ano · freguesia da Estrela, incl. Lapa, set. 2026
+280|Olhe para os andares de cima. É aí que estão as famosas vistas de rio da Lapa.
+281|Parte da freguesia da Estrela
+282|Entre a Lapa e o rio, Santos mistura lojas de design e ateliers com ruas residenciais tranquilas. Longe das zonas mais turísticas, mas perto da água, do comboio para Cascais e da ponte para a margem sul.
+283|Santos, o bairro do design
+284|Zona ribeirinha e Avenida 24 de Julho
+285|Estação de comboios de Santos
+287|A Madragoa mesmo ao lado
+288|num ano · freguesia da Estrela, incl. Santos, set. 2026
+289|Algumas ruas são animadas à noite, outras completamente calmas. Eu mostro-lhe quais são quais.
+290|À volta da Estrela
+291|Uma aldeia dentro da cidade. Ruas direitas e planas, comércio local, cafés e um dos mercados preferidos de Lisboa. As famílias adoram-no pela comodidade do dia a dia e pelo forte espírito de comunidade.
+294|Fim da linha do elétrico 28, nos Prazeres
+295|Rua Ferreira Borges, a rua das compras
+296|num ano · freguesia de Campo de Ourique, set. 2026
+297|Ruas planas e tudo a pé. Perfeito se não quiser depender do carro.
+298|Perto do rio e em plena transformação. Antigos espaços industriais deram lugar à LX Factory e estão a nascer novos projetos residenciais. Boa relação qualidade-preço para compradores que pensam no futuro.
+301|Estação de Alcântara-Mar
+302|Passeio ribeirinho
+303|num ano · freguesia de Alcântara, set. 2026
+304|Novos projetos estão a mudar a zona. Pergunte-me quais estão para chegar antes de aparecerem online.
+305|Na colina acima de Belém, a Ajuda é tranquila e residencial, com o Palácio da Ajuda e um dos jardins botânicos mais antigos de Lisboa. Um verdadeiro ambiente de bairro, perto do rio e do parque de Monsanto.
+308|Parque florestal de Monsanto ao lado
+309|Vistas sobre o Tejo
+310|num ano · freguesia da Ajuda, set. 2026
+311|Os preços são mais baixos do que em Belém ou na Estrela, por isso o seu orçamento rende mais. Pergunte-me que ruas têm vista rio.
+312|Espaço, luz e a frente ribeirinha, com ruas residenciais mais tranquilas logo atrás dos monumentos. Perto das moradias do Restelo e de boas escolas, com acesso fácil à costa.
+315|MAAT e CCB
+316|Jardins à beira-rio
+317|num ano · freguesia de Belém, set. 2026
+318|Espaço, luz e o rio, e o centro a um curto trajeto ao longo da água.
+319|Preços pedidos: preço médio por m² das casas anunciadas para venda, relatório de preços idealista, setembro de 2026.
+320|Relatório de mercado da Estrela · 12 meses até setembro de 2026
+321|O que acontece realmente quando vende na Estrela
+322|Preços reais de venda, não preços pedidos. Comparados com Lisboa no seu todo. A freguesia da Estrela inclui a Lapa, Santos e os Prazeres.
+323|A diferença de preço
+324|As casas são anunciadas muito acima do que os compradores pagam realmente
+325|na Estrela
+326|Lisboa: −19%
+327|O que isto significa, em média
+328|Anunciada por
+329|Vendida realmente por
+330|Por isso o preço certo desde o primeiro dia é tão importante: os compradores sérios aparecem logo, e ninguém perde meses.
+331|Preço pedido
+332|Preço real de venda
+333|Casas usadas na Estrela, 2011–2026
+334|Fonte: SIR – Confidencial Imobiliário, freguesia da Estrela e concelho de Lisboa, 12 meses até setembro de 2026. Preço de venda, diferença de preço, descidas de preço e casas vendidas: todas as casas. Tempo de venda, tipologia e gráfico de preços: casas usadas. Gráfico redesenhado a partir da evolução do preço/m² do SIR. © IMOESTATÍSTICA – TODOS OS DIREITOS RESERVADOS.
+335|O preço certo para a minha casa?
+336|O que se vende na Estrela
+337|T4+ e moradias
+338|Os T2 são as casas mais vendidas na Estrela.
+339|Preço médio de venda
+340|o valor pelo qual as casas na Estrela foram realmente vendidas
+341|Lisboa: 5.900 €/m²
+342|Descidas de preço
+343|em média, o primeiro preço pedido desce antes de a casa ser vendida
+344|Lisboa: −6,1%
+345|Tempo de venda
+346|6 meses
+347|mais um mês do que em Lisboa. Com uma diferença de preço maior, as casas que começam alto demais esperam mais tempo por um comprador.
+348|Lisboa: 5 meses
+349|Os meus sítios preferidos
+350|Onde como, me mexo, ouço música e cuido de mim. Os sítios que recomendo a amigos e clientes que acabaram de chegar.
+351|Fusão mexicana
+353|Mesmo ao lado da minha casa. A cozinha de fusão mexicana do chef Rodrigo: ingredientes muito frescos, pratos cheios de sabor e uma equipa sempre tão simpática. Pequenino, mas tão acolhedor, e fico sempre feliz por lá estar.
+356|Um doce
+358|O meu bolo de chocolate preferido há anos, muito antes de conhecer o Carlos, o homem por trás dele. Hoje somos amigos, e continuo igualmente viciada. Fica mesmo em frente ao Mercado de Campo de Ourique, e há também um pequeno quiosque na Avenida da Liberdade, aquele a que vou mais, porque fica perto do escritório. Prove uma vez e vai perceber o nome.
+361|Depois de quase quinze anos de yoga, é aqui que volto a mim. Professores muito qualificados e um ambiente acolhedor. Quando procurava a minha casa, viver perto deste estúdio era um dos meus pontos indispensáveis.
+362|Movimento
+364|Mesmo em frente ao Museu de Arte Antiga, e onde saio da minha zona de conforto. Ótimos professores, um ambiente muito acolhedor e muitas aulas diferentes. Saio muitas vezes orgulhosa, e muitas vezes também dorida no dia seguinte.
+365|Curioso? Experimente uma aula gratuita comigo →
+366|Almoço à beira-água
+368|O sítio que quase preferia manter em segredo. Cheio de gente de cá, e chega-se lá de uma forma engraçada: atravessando uma pequena ponte para dentro do porto. Peixe grelhado no carvão incrível, mesmo à beira da água. Pode ficar cheio, mas isso faz parte do encanto.
+369|Almoço no jardim
+371|Um restaurante escondido com jardim numa casa antiga, com uma esplanada encantadora. Há muito tempo que queria ir e finalmente fui há pouco: pratos com muito sabor, e nunca se come demais, o que adoro.
+372|Abrandar
+373|Jardim do Museu de Arte Antiga
+374|O meu sítio preferido para abrandar. Muita gente não sabe que o museu tem um jardim tão bonito, com uma das melhores vistas sobre o rio e a ponte. A renovação está quase terminada, e mal posso esperar pela reabertura.
+375|Concertos
+377|Num antigo armazém portuário à beira-rio, em Alcântara, o museu tem muitas vezes concertos lindos a preços muito justos: piano, jazz e música do mundo inteiro. Um serão cultural fácil, perto de casa.
+378|Nascer do sol, junto ao rio…
+379|Correr
+380|De minha casa até Belém, ida e volta
+381|Corro muitas vezes ao longo do rio ao nascer do sol, de minha casa até Belém e volta. A luz na água e na ponte é mágica. E um pequeno segredo que pouca gente conhece: dá para correr à volta do porto, entre os barcos e os contentores.
+382|Último domingo do mês…
+383|Música
+385|No último domingo de cada mês, encontra-me num concerto de sala, em casa de alguém e muitas vezes aqui mesmo no bairro. Descubro sítios novos e pessoas novas, e de cada vez volto a apaixonar-me por Lisboa, e pela vida.
+386|Até breve no bairro
+387|Encontramo-nos no bairro?
+388|Quer esteja a vender, a comprar ou simplesmente com curiosidade por Lisboa, vou gostar muito de o conhecer.
+389|Estou a vender
+390|Estou a comprar
+391|Para quem compra
+392|Sonha com uma casa em Lisboa? Vamos encontrá-la juntos.
+393|Um só contacto para todas as casas do mercado. Contacto as outras agências por si, marco as visitas e verifico os documentos antes de se apaixonar. Falo a sua língua e já mudei de país várias vezes, por isso sei bem como é recomeçar noutro país.
+394|Precisa de crédito à habitação?
+395|Demora cerca de 3 minutos · gratuito e sem compromisso
+396|Primeiro, conversamos
+397|Uma chamada ou videochamada: como vive, onde gostaria de estar, que orçamento lhe parece certo e o que não quer mesmo.
+398|A sua seleção pessoal
+399|Envio-lhe uma página privada com as casas que encaixam, de todas as agências. Você reage, eu afino, ronda após ronda.
+400|Visitas, um só contacto
+401|Eu trato com os outros agentes, marco as suas visitas e verifico os documentos primeiro. Às vezes sei de uma casa antes de ela aparecer online.
+402|Até ter as chaves na mão
+403|Negoceio o preço e as condições, verifico cada documento com o advogado e fico consigo até à escritura.
+404|"Para encontrar a minha casa em Lisboa fiz quase 40 visitas. Conheço o entusiasmo e as dúvidas, e gostava muito de lhe facilitar o caminho."
+405|Custos de compra
+406|Quanto vai custar realmente?
+407|Para além do preço, paga IMT, imposto do selo e a escritura. Com crédito à habitação, o banco cobra ainda as suas comissões. Indique o preço e veja logo uma estimativa.
+408|Apenas indicativo, com base nas tabelas oficiais de IMT de 2026 para Portugal continental. O IMT é calculado sobre o preço ou o valor patrimonial da casa, o que for mais alto. As comissões bancárias são uma média dos bancos portugueses. Os bancos pedem também seguros de vida e multirriscos, pagos mensalmente. Confirme sempre os valores finais com o seu advogado ou banco.
+409|Taxas oficiais de IMT
+410|Preço de compra
+411|A casa vai ser
+412|A minha habitação própria permanente
+413|Uma segunda casa ou investimento
+414|Tenho 35 anos ou menos e é a minha primeira casa
+415|Valor do crédito, se houver
+416|IMT, imposto sobre a transmissão
+417|Imposto do selo sobre a compra, 0,8%
+418|Imposto do selo sobre o crédito, 0,6%
+419|Escritura e registo predial, Casa Pronta
+420|Total de custos para além do preço
+421|Preço mais custos
+422|Financiamento
+423|Precisa de crédito à habitação? Ponho-o em contacto com uma intermediária de confiança.
+424|Trabalho com o ComparaJá, um intermediário de crédito independente que compara os bancos portugueses por si, sem custos. Deixe os seus dados e apresento-o pessoalmente, para que saiba o seu orçamento antes de visitar.
+425|Pôr-me em contacto com um intermediário
+426|Preço de compra aproximado
+427|Até 300.000 €
+428|Mais de 1.000.000 €
+429|Já encontrou um imóvel?
+430|Ainda à procura
+431|Quando pensa comprar?
+432|3 a 6 meses
+433|Mais tarde, estou só a explorar
+434|Vive em Portugal?
+435|Não, no estrangeiro
+436|Aceito que a Pascale partilhe os meus dados com o seu parceiro de crédito ComparaJá, para me contactarem sobre financiamento.
+437|Obrigada! Entro em contacto num dia útil.
+438|Mar, natureza e espaço, perto da cidade
+439|Sítios onde eu própria vou, e que adoro mostrar
+440|Procura uma casa de praia excecional, uma quinta ou uma segunda casa a pouca distância de Lisboa? Para um pequeno número de compradores prontos a avançar, faço uma procura pessoal e discreta: encontro, visito e comparo as melhores casas, muitas vezes antes de chegarem aos portais, com colegas de confiança da Engel &amp; Völkers que conhecem cada região de cor.
+441|A 20 min de Lisboa
+442|A 45 min de Lisboa
+443|A 1h15 de Lisboa
+444|O Alentejo
+445|A menos de 2h de Lisboa
+446|Novo na Arrábida: oito moradias com piscina privada →
+447|Procura na Costa de Prata, em Cascais, no Algarve ou no Porto? Ponho-o em contacto com um colega de confiança na região.
+448|Perguntas de quem compra
+449|O que os compradores mais me perguntam
+450|Como me preparo financeiramente para comprar?
+451|Conheça o seu orçamento total, incluindo IMT, imposto do selo, escritura e registo para além do preço. Se precisar de crédito, peça uma pré-aprovação antes de visitar; os não residentes precisam normalmente de uma entrada maior. Ajudo-o a preparar-se e ponho-o em contacto com intermediários de crédito de confiança, por isso fale comigo cedo.
+452|Posso comprar a partir do estrangeiro?
+453|Sim. Precisa de um número de contribuinte português (NIF) e de uma conta bancária portuguesa. Posso apresentá-lo a um advogado de confiança que ajuda com as duas coisas e pode até assinar por si com uma procuração, para que não tenha de vir a cada passo.
+454|Quanto tempo demora uma compra?
+455|Menos do que em muitos outros países, e menos do que a maioria das pessoas espera. A minha própria compra também foi muito rápida. Depois de a proposta ser aceite, o contrato-promessa (CPCV) costuma ser assinado em uma a três semanas, com um sinal de pelo menos 10% do preço, às vezes mais. A escritura segue muitas vezes um a dois meses depois. Uma compra a pronto pode fazer-se em cerca de quatro a seis semanas no total; com crédito, conte com dois a três meses. Por isso ajudo-o a preparar os documentos e o financiamento antes de fazer uma proposta.
+456|Quanto posso pedir emprestado?
+457|Para habitação própria, os bancos portugueses emprestam normalmente até 90% do valor, para uma segunda casa ou investimento até 80%. Precisa, portanto, de poupanças para o resto do preço, mais os impostos e custos da compra. O valor exato depende dos seus rendimentos: um intermediário diz-lhe numa só conversa.
+458|Posso ter crédito à habitação se não viver em Portugal?
+459|Sim, vários bancos portugueses emprestam a não residentes. Normalmente pedem uma entrada maior e mais documentos, por isso comece cedo, antes de fazer uma proposta.
+460|O intermediário de crédito cobra-me alguma coisa?
+461|Não. A intermediária com quem trabalho compara vários bancos por si, sem qualquer custo. Fale comigo e apresento-a pessoalmente.
+462|Pôr-me em contacto com um intermediário de crédito
+463|Casas à venda na Estrela, Lapa e Santos
+464|Estes são os meus imóveis e dos meus colegas da Engel &amp; Völkers na freguesia da Estrela. Gostou de algum? Envie-me uma mensagem. Mando-lhe todos os detalhes e marco a sua visita.
+465|Todas
+466|Fora de Lisboa &rarr;
+467|Indiferente
+468|Indispensável
+469|Terraço ou varanda
+470|Garagem
+471|Os filtros usam os dados de cada anúncio. Não tem a certeza se uma casa cumpre este critério? Pergunte-me, verifico cada casa por si.
+472|Limpar filtros ✕
+473|Neste momento nenhuma casa corresponde a estas escolhas.
+474|e aviso-o quando surgir uma.
+475|Um apartamento T4 entre a Estrela, a Lapa e Alcântara, com vista sobre o rio e a ponte. É vendido com inquilino, com um contrato de arrendamento de 1984, por isso é para investidores de longo prazo e não para habitar. Peça-me o estudo para investidores com a rentabilidade prevista.
+476|Oportunidade para investidores
+477|Vista rio e ponte
+478|Classe energética F
+479|As fotografias do interior mostram o apartamento idêntico um andar abaixo.
+480|Estúdio com charme pombalino, Pátio do Pinzaleiro
+481|Um estúdio cheio de charme no Pátio do Pinzaleiro, um pátio tradicional e tranquilo a poucos passos da igreja de Santos, com entrada própria. No interior, a estrutura original pombalina em madeira, a gaiola, separa a sala da cozinha e do canto de refeições. Ideal como pied-à-terre ou investimento: vendido mobilado, com um histórico de arrendamentos regulares e um condomínio de apenas 20 € por mês. Ao virar da esquina tem as ruelas e tascas da Madragoa, o Jardim de Santos, o Museu de Arte Antiga e o rio, e a estação de Santos leva-o às praias de Cascais.
+482|Pied-à-terre ou investimento
+483|Entrada própria
+484|Mobilado
+485|Condomínio 20 €/mês
+486|Classe energética C
+488|T1 mobilado na Rua de Buenos Aires
+489|1 quarto
+490|Um T1 elegante no rés-do-chão numa das ruas mais procuradas da Lapa, com sala de estar e de jantar em open space e cozinha integrada. Vendido mobilado, por isso pode mudar-se ou arrendá-lo de imediato.
+491|Investimento ou primeira casa
+493|T2 luminoso com varandas
+494|2 quartos
+495|Um T2 cheio de luz no 2.º andar, numa rua tranquila da Lapa, com uma sala grande e uma cozinha que dão ambas para varandas. Importante: é vendido com usufruto vitalício, por isso é um investimento de longo prazo e não uma casa para habitar já.
+496|Varandas
+497|Vendido com usufruto
+499|T2 num prédio totalmente renovado
+500|No 4.º andar de um prédio em que cada apartamento teve o seu próprio projeto de arquitetura e de iluminação. Acabamentos de qualidade, cozinha totalmente equipada com muita arrumação, e o Largo de Santos com os seus restaurantes e lojas à porta.
+501|Prédio renovado
+502|Junto ao Largo de Santos
+504|T2 mobilado com vista rio
+505|Num prédio tipicamente português com vista sobre o rio. Dois quartos (um em suite), duas casas de banho, sala de estar e de jantar e cozinha totalmente equipada. Vendido totalmente mobilado: pronto a habitar ou a arrendar.
+506|Suite
+508|10 casas disponíveis
+509|Infante Residences: T1 e T2+1 novos
+510|T1 a T2+1
+511|56 a 116 m²
+512|Um novo empreendimento de luxo na Avenida Infante Santo 34. Apartamentos T1 e T2+1 com quartos em suite, cozinha aberta para a sala e escritório nos maiores. Dez casas disponíveis, de 555.000 € a 1.015.000 €.
+513|Construção nova
+514|Lugar de estacionamento
+515|Ar condicionado
+516|A partir de 555.000 €
+518|T2 à beira-rio na Avenida 24 de Julho
+519|3 casas de banho
+520|Totalmente renovado, com projeto do arquiteto Ricardo Rosa e vista sobre o Tejo, a Ponte 25 de Abril e o Cristo Rei. Muita luz natural, bom sol todo o dia e acabamentos requintados.
+521|Renovado
+522|Projeto de arquiteto
+524|T2 com jardim e piscina
+525|Num condomínio com jardim tropical, piscina e porteiro 24 horas, algo raro no meio da Estrela. Luminoso, com vista sobre o jardim e o rio. Cozinha com despensa e varanda, arrecadação e lugar de estacionamento incluídos.
+526|Porteiro
+528|T2 com terraço privado e garagem
+529|Pronto a habitar na Travessa da Costa, num prédio totalmente renovado em 2023. Terceiro andar com elevador, virado a sul e poente, com um terraço generoso e lugar de estacionamento privado. Classe energética B.
+530|Terraço
+531|Classe energética B
+533|Apartamento pombalino com vista rio
+534|2 quartos + 3 divisões
+535|Num elegante prédio pombalino com vista frontal para o rio e duas entradas independentes. Dois quartos com pequenas varandas, mais três divisões flexíveis para escritório, closet ou hóspedes, e uma sala de estar e de jantar espaçosa.
+536|Prédio histórico
+538|T4 duplex perto do Jardim da Estrela
+539|Um duplex com carácter, soalho de madeira maciça e uma luz muito bonita. Sala de estar, sala de jantar separada, cozinha e casa de banho em baixo; em cima os quartos com roupeiros embutidos e uma segunda casa de banho. Arrecadação no prédio.
+541|Soalho de madeira maciça
+542|T4+1 com terraço, elevador e garagem
+543|Um prédio de época na Lapa com o que é tão raro em Lisboa: garagem, elevador e terraço privado. Sala virada a sul, sala de jantar com pé-direito alto e soalhos originais. Cozinha, casas de banho e infraestruturas renovadas em 2016.
+544|Virado a sul
+546|Moradia renovada com 3 suites
+547|3 suites
+548|Uma casa inteira em três pisos, totalmente reabilitada mantendo o seu charme original. Sala, cozinha moderna e pátio no piso de entrada, duas suites em cima, e o último piso inteiro para a suite principal.
+549|Pátio
+550|Moradia independente
+552|T2 de design no Santos Townhouse
+553|Um prédio histórico com uma bonita fachada de azulejos, entre a Lapa e Santos. Interiores contemporâneos assinados por designers conhecidos: sala luminosa, cozinha aberta, dois quartos (um em suite) e uma zona de trabalho. Terceiro andar com elevador.
+554|Fachada de azulejos
+555|Interiores de design
+557|Lote com projeto aprovado para moradia com piscina
+558|Lote de 137 m²
+559|350 m² aprovados
+560|Numa das ruas residenciais mais tranquilas da Estrela, com o projeto de arquitetura já aprovado pela Câmara Municipal de Lisboa, para que a obra possa começar já. Uma moradia com 3 quartos, jardim e piscina, mais um pátio de 36 m².
+561|Projeto aprovado
+562|Piscina prevista
+563|Pátio interior
+565|Penthouse T3 renovada
+566|3 quartos
+567|Uma penthouse totalmente renovada num prédio histórico de Santos, com design contemporâneo. Divisões bem proporcionadas com luz de muitas janelas, uma sala de estar e de jantar grande, uma cozinha cuidadosamente desenhada e três quartos.
+568|Penthouse
+570|T4+1 com vista rio na Infante Santo
+571|4 suites
+572|5 casas de banho
+573|Na Avenida Infante Santo, com vista sobre o Tejo. Quatro quartos em suite mais um escritório, espaços generosos cheios de luz e lugar de estacionamento. Quinto andar.
+574|Escritório
+576|Moradia contemporânea nas Necessidades
+577|6 casas de banho
+578|Uma moradia contemporânea singular em quatro pisos, com elevador próprio entre os níveis. Três suites espaçosas, uma divisão extra no último piso, acabamentos de grande qualidade, vista rio e estacionamento.
+579|Elevador privado
+581|Prédio com 4 apartamentos e licença AL
+582|4 apartamentos
+583|8 casas de banho
+584|Um prédio do início do século XX com um apartamento de cerca de 75 m² por piso, com licença de alojamento local (AL). Perto do rio, das embaixadas, do Jardim da Estrela e do elétrico 28: muita procura tanto de visitantes como de residentes.
+585|Prédio inteiro
+586|Licença AL
+588|Loft à beira-rio num edifício de Gustave Eiffel
+589|Um loft duplex com mezanino num edifício icónico projetado originalmente por Gustave Eiffel. Open space com janelas panorâmicas e vistas desafogadas sobre o Tejo, pés-direitos altos, lareira, cozinha premium e dois lugares de estacionamento.
+590|Lareira
+591|2 lugares de estacionamento
+593|Moradia contemporânea com piscina
+594|Uma moradia contemporânea em três pisos, com grandes janelas que trazem luz todo o dia e ligam o interior ao exterior. Piscina privada, um mezanino para ginásio ou atelier, e estacionamento para três carros. Perto da zona ribeirinha e de Santos.
+595|Piscina privada
+596|3 lugares de estacionamento
+597|Mezanino para ginásio
+598|Uma penthouse duplex com pé-direito duplo e janelas do chão ao teto que enquadram o Tejo e a Ponte 25 de Abril. Sala, zona de jantar e cozinha em open space, uma galeria em cima, terraço com piscina privada e dois lugares de estacionamento.
+599|A sua casa aqui?
+600|Pensa vender na Estrela ou arredores?
+601|Tenho compradores à procura na zona. Peça um estudo de mercado gratuito e saiba quanto vale hoje a sua casa.
+602|Preços e disponibilidade tal como publicados pela Engel &amp; Völkers. As áreas são a área bruta privativa. Atualizado em novembro de 2026.
+603|Um novo projeto de que gosto muito
+604|A 45 minutos de Lisboa, no Parque Natural da Arrábida
+606|Empreendimento novo
+607|A Enigma Collection: oito moradias com piscina privada
+608|2 divisões polivalentes
+609|cerca de 300 m²
+610|Lote de 374 m²
+611|Oito moradias contemporâneas em madeira, cada uma com a sua piscina infinita, numa única encosta dentro do Parque Natural da Arrábida. Salas com 6 metros de pé-direito abertas para os jardins e as colinas. Um condomínio fechado com espaços comuns, perto das praias de Setúbal e de Sesimbra. Conclusão prevista para a primavera de 2027.
+612|Piscina infinita privada
+613|Parque natural
+614|Condomínio fechado
+615|Em construção
+616|A partir de € 1.600.000
+617|Pergunte-me por este projeto →
+618|Perguntas frequentes
+619|As perguntas que quem vende e quem compra mais me fazem. Não encontra a sua? Envie-me uma mensagem, respondo num dia útil.
+620|Crédito à habitação
+621|Só vende casas de luxo?
+622|Não. A Engel &amp; Völkers tem uma imagem premium, mas premium tem a ver com o serviço, não com o preço. Trabalho com todo o tipo de casas, de estúdios a grandes apartamentos de família, desde que acredite que as posso vender bem por si.
+623|Porque pede tantos documentos?
+624|Porque a lei o exige. Em Portugal, todos os mediadores imobiliários têm de identificar o vendedor e o comprador e preencher um formulário de prevenção do branqueamento de capitais. É obrigatório em todas as vendas. Peço-lhe o documento de identificação (Cartão de Cidadão ou passaporte) e o NIF, e aos compradores também a origem dos fundos. Verificar tudo cedo protege-o e evita problemas mais tarde, no contrato-promessa ou na escritura.
+625|Preciso de certificado energético?
+626|Sim. É obrigatório ter um certificado energético válido para anunciar um imóvel em Portugal. Se não tiver, posso pô-lo em contacto com um perito certificado.
+627|Procura uma casa fora de Lisboa?
+628|O meu foco é a Estrela e os bairros à volta. Para um pequeno número de compradores procuro também eu própria na Costa da Caparica, na Arrábida e Sesimbra, na Comporta e no Alentejo.
+629|Procura na Costa de Prata, em Cascais, no Algarve ou no Porto? Apresento-o a um colega de confiança da Engel &amp; Völkers na região.
+630|Porquê pedir uma pré-aprovação antes de visitar?
+631|Sabe exatamente quanto pode gastar, e os vendedores levam a sua proposta a sério.
+632|Privacidade
+633|Política de privacidade
+634|Última atualização: novembro de 2026. Mantenho isto curto e claro: o que recolho, porquê, e o que me pode pedir a qualquer momento.
+635|Quem sou
+636|Este site pertence a Pascale Lepoutre, consultora imobiliária a trabalhar com a EV MMC Portugal – Mediação Imobiliária, Unipessoal Lda., Engel &amp; Völkers Lisboa, AMI 15208. Para qualquer questão sobre os seus dados, escreva para
+638|O que recolho
+639|Só o que me envia diretamente através dos formulários ou por WhatsApp: o seu nome, número de telefone, email, a morada ou a rua do seu imóvel, o que procura, como orçamento, zonas e prazos, e os documentos que decida enviar, como a caderneta predial ou o certificado energético.
+640|Para que uso
+641|Para responder à sua pergunta e preparar o seu estudo de mercado gratuito.
+642|Para procurar casas que correspondam ao que procura.
+643|Para lhe enviar novidades ocasionais, só se tiver subscrito. Pode cancelar a qualquer momento.
+644|Para o apresentar ao meu parceiro de crédito ComparaJá, só se tiver assinalado a caixa de consentimento.
+645|Uso os seus dados porque me pediu que o contactasse, para preparar um contrato de mediação consigo, ou porque deu o seu consentimento.
+646|Quem os vê
+647|A Engel &amp; Völkers Lisboa, a agência com que trabalho, onde os seus dados ficam registados no nosso sistema de clientes.
+648|O ComparaJá, só com o seu consentimento, para financiamento.
+649|Um colega de confiança noutra região de Portugal, só com o seu consentimento, quando me pede para o pôr em contacto.
+650|Os serviços que fazem funcionar este site e os seus formulários, a Netlify, e o WhatsApp quando me envia mensagens por lá.
+651|Nunca vendo os seus dados. Quando uma venda ou compra avança, a lei portuguesa obriga-me a identificar vendedores e compradores, e essa informação é guardada como a lei exige.
+652|Durante quanto tempo os guardo
+653|Enquanto estivermos em contacto sobre a venda ou a compra, e até dois anos depois do nosso último contacto, a não ser que a lei exija mais tempo. Os subscritores da newsletter ficam na lista até cancelarem.
+654|Os seus direitos
+655|Pode, a qualquer momento, pedir-me para consultar, corrigir ou apagar os seus dados, pedir que deixe de os usar, ou retirar o seu consentimento. Basta enviar-me um email. Pode também apresentar uma reclamação à autoridade portuguesa de proteção de dados, a CNPD, em
+657|Cookies e estatísticas de visitas
+658|Este site não usa cookies de rastreio nem de publicidade. As fontes são carregadas a partir do Google Fonts, o que significa que o seu browser se liga aos servidores da Google para as mostrar. Para perceber quantas pessoas visitam e que páginas leem, uso o Cloudflare Web Analytics. Conta as visitas sem cookies e sem recolher dados pessoais, por isso não o pode identificar. Para lhe poupar trabalho, o seu nome, telefone e email ficam guardados apenas no seu próprio browser, no seu dispositivo, para que os outros formulários já venham preenchidos. Nada é enviado até carregar em enviar.
+659|Gostaria de
+660|Comprar
+661|Vender
+662|Região
+664|Costa de Prata
+668|Até 750.000 €
+669|Mais de 3.000.000 €
+670|Vender, não comprar
+671|Prazo
+672|Dentro de um ano
+673|Só a explorar
+674|O que procura, ou o que gostaria de vender?
+675|Aceito que a Pascale partilhe os meus dados com um colega de confiança nessa região, que me irá contactar.
+676|Enviar
+677|Consultora imobiliária, Engel &amp; Völkers. Especialista na Estrela.
+678|Falo
+683|Contacto
+684|Copiar
+685|© 2026 Pascale Lepoutre · Todos os direitos reservados. Os textos e as fotografias não podem ser reutilizados sem autorização.
+687|Abrir menu
+688|Pascale Lepoutre a sorrir entre flores de ave-do-paraíso em Lisboa
+689|Pascale Lepoutre com o elétrico 28 em Lisboa
+690|O seu endereço de email
+691|Pascale Lepoutre junto a uma porta vermelha em Lisboa
+692|Fechar
+693|p. ex. Rua de São Bento 120, Lapa
+694|p. ex. Cascais, Comporta, Porto
+695|p. ex. Príncipe Real, Graça
+696|Seja concreto, p. ex. a uma distância a pé da St. Julian's School
+697|Escreva aqui
+698|Por exemplo: sol da manhã na cozinha, uma rua tranquila, espaço para cozinhar para os amigos.
+699|Por exemplo: 650.000 €
+700|Por exemplo: 450.000 €
+701|Por exemplo: trabalhamos a partir de casa e precisamos de um escritório.
+702|Mapa dos bairros
+703|Casas vendidas por tipologia: T2 41%, T0 a T1 27%, T3 20%, T4 e moradias 12%
+704|Pascale Lepoutre a sorrir junto a uma porta verde em Lisboa
+705|Ceviche com milho tostado no Maiz do Mar
+707|Uma fatia do bolo de chocolate na calçada de Lisboa
+708|A sala de yoga do Baraza
+710|Dentro do mvmt.studio
+712|A esplanada do Último Porto, com a Lapa ao fundo
+714|A esplanada do jardim do Clube de Jornalistas, Lapa
+715|Jacarandás em flor no jardim do Museu Nacional de Arte Antiga
+717|Logótipo do Museu do Oriente
+719|Corrida ao nascer do sol ao longo do rio junto ao MAAT, com a Ponte 25 de Abril
+720|Uma cantora a atuar numa Lisbon Living Room Session, numa sala de estar do bairro
+722|Pascale Lepoutre numa escadaria em Lisboa
+723|Filtrar por bairro
+724|Número de quartos
+725|Apartamento T4 à venda na Calçada das Necessidades, Estrela, Lisboa, com vista para a Ponte 25 de Abril
+730|Fotografia anterior
+731|Fotografia seguinte
+732|Estúdio mobilado à venda no Pátio do Pinzaleiro, Santos, Lisboa
+738|T1 mobilado na Rua de Buenos Aires, à venda na Lapa, Lisboa
+843|A Enigma Collection, oito moradias com piscina privada no Parque Natural da Arrábida
+844|Sala com vista para a serra da Arrábida
+845|Suite com vista para a serra
+846|Moradias e jardins na encosta, Arrábida
+847|Enviar mensagem à Pascale por WhatsApp
+848|Comprar ou vender noutro ponto de Portugal
+849|p. ex. uma moradia T3 com jardim, orçamento 600 mil € · ou: o meu T2 no Porto
+852|Facebook Pascale Lepoutre, Lisbon Homes
+854|LinkedIn Pascale Lepoutre
+@|€1M – €1.5M|1 M€ – 1,5 M€
+@|€1.5M – €3M|1,5 M€ – 3 M€
+@|A slice of O Melhor Bolo de Chocolate do Mundo on Lisbon calçada, Campo de Ourique|Uma fatia d'O Melhor Bolo de Chocolate do Mundo na calçada de Lisboa, Campo de Ourique
+@|Ceviche with toasted corn at Maiz do Mar, Mexican fusion restaurant in Lisbon|Ceviche com milho tostado no Maiz do Mar, restaurante de fusão mexicana em Lisboa
+@|Inside mvmt.studio, movement classes in Lisbon|Dentro do mvmt.studio, aulas de movimento em Lisboa
+@|Inside Último Porto restaurant, by the port of Lisbon|Dentro do restaurante Último Porto, junto ao porto de Lisboa
+@|Jacarandas in bloom in the garden of the Museu Nacional de Arte Antiga, Lapa, Lisbon|Jacarandás em flor no jardim do Museu Nacional de Arte Antiga, Lapa, Lisboa
+@|Museu do Oriente logo, Fundação Oriente, Lisbon|Logótipo do Museu do Oriente, Fundação Oriente, Lisboa
+@|Penthouse with private pool and river views for sale in Lapa, Lisbon|Penthouse com piscina privada e vista rio à venda na Lapa, Lisboa
+@|Sunrise run along the river by MAAT, with the 25 de Abril bridge, Lisbon|Corrida ao nascer do sol ao longo do rio junto ao MAAT, com a Ponte 25 de Abril, Lisboa
+@|T4 apartment with terrace for sale in Lapa, Lisbon|Apartamento T4 com terraço à venda na Lapa, Lisboa
+@|The garden terrace of Clube de Jornalistas restaurant, Lapa, Lisbon|A esplanada do jardim do restaurante Clube de Jornalistas, Lapa, Lisboa
+@|The yoga room at Baraza Yoga, Lisbon|A sala de yoga do Baraza Yoga, Lisboa
+@|asked ≈ €7.200/m²|pedido ≈ 7.200 €/m²
+@|sold ≈ €5.700/m²|vendido ≈ 5.700 €/m²
+@|the gap|a diferença
+@|Almada · south bank|Almada · margem sul
+@|My focus · Estrela parish|O meu foco · freguesia da Estrela
+@|home base|a minha base
+@|Add your documents now|Juntar já os seus documentos
+@|· optional|· opcional
+@|Energy certificate, if possible|Certificado energético, se possível
+@|· optional, but very helpful|· opcional, mas muito útil
+@|Optional, but very helpful|Opcional, mas muito útil
+@|PDF or photo, up to 8 MB in total. I'll need them for the study anyway, so if not now, you can send them later.|PDF ou fotografia, até 8 MB no total. Vou precisar deles para o estudo de qualquer forma, por isso, se não for agora, pode enviá-los mais tarde.
+@|Kind words|Palavras simpáticas
+@|What my clients say|O que dizem os meus clientes
+@|Your review|A sua opinião
+@|How was it to work with me?|Como foi trabalhar comigo?
+@|Thank you for taking a moment. A few honest sentences help other people decide, and they mean a lot to me.|Obrigada por dedicar um momento. Algumas frases sinceras ajudam outras pessoas a decidir, e significam muito para mim.
+@|Your name|O seu nome
+@|Where are you from?|De onde é?
+@|e.g. Belgium, Lisbon, Canada|p. ex. Bélgica, Lisboa, Canadá
+@|What did we do together?|O que fizemos juntos?
+@|I sold my home|Vendi a minha casa
+@|I bought a home|Comprei uma casa
+@|Something else|Outra coisa
+@|Which home or area, and when? · optional|Que casa ou zona, e quando? · opcional
+@|e.g. a T3 in Lapa, 2027|p. ex. um T3 na Lapa, 2027
+@|What did you like? What made the difference for you?|De que gostou? O que fez a diferença para si?
+@|How may I show your name?|Como posso mostrar o seu nome?
+@|First name and initial|Nome próprio e inicial
+@|Full name|Nome completo
+@|Anonymous|Anónimo
+@|I agree that Pascale shows my review on her website and social media, as chosen above.|Aceito que a Pascale mostre a minha opinião no site e nas redes sociais dela, como escolhido acima.
+@|Send my review|Enviar a minha opinião
+@|Thank you so much! Your words mean a lot to me.|Muito obrigada! As suas palavras significam muito para mim.
+856|Comissões bancárias: avaliação, dossier e formalização, estimativa
+857|Procura casa?
+858|Ainda não encontrou a casa certa?
+859|Diga-me o que procura. Procuro em todas as agências e envio-lhe uma seleção pessoal.
+860|Classe energética E
+861|Energia
+862|Com crédito à habitação? Some cerca de 800 € de comissões bancárias e 0,6% de imposto do selo sobre o crédito. Indique o valor do crédito acima para os incluir. É uma estimativa: confirme sempre os valores finais com o seu banco.
+863|Os bancos pedem também seguros de vida e multirriscos, pagos todos os meses para além da prestação. Todos os valores são estimativas: confirme-os sempre com o seu banco e o seu advogado.
+864|Página oficial Engel &amp; Völkers ↗
+865|A sua casa, apresentada com o marketing premium da Engel &amp; Völkers e a sua rede internacional de compradores.
+866|Marcar uma visita →
+867|Fotografia profissional e uma apresentação premium da sua casa
+868|A sua casa em engelvoelkers.com e nos portais internacionais
+869|Compradores da rede Engel &amp; Völkers em todo o mundo
+870|Uma das moradias de duas águas com o seu jardim
+871|A baía do Portinho da Arrábida
+872|A costa turquesa do Parque Natural da Arrábida
+873|A estrada costeira da Arrábida
+874|Planta do piso 0
+875|Planta do piso -1
+876|Site do projeto ↗
+877|Novo na Arrábida
+878|Oito moradias com piscina privada, a 45 minutos de Lisboa
+879|Descobrir o projeto →
+880|As moradias Enigma Collection no Parque Natural da Arrábida
+881|Fora de Lisboa · Arrábida
+882|p. ex. Cascais, Costa de Prata, Algarve
+883|do preço de compra
+884|Capital próprio necessário
+885|Preço menos o crédito, mais todos os custos
+886|Casas anteriores
+887|Mais casas
