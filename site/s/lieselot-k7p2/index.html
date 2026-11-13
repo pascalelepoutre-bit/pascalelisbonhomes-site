@@ -526,7 +526,7 @@ textarea[rows="1"]{min-height:42px}
 </div>
 
 <form name="selection-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-<input type="hidden" name="form-name" value="selection-feedback"><input name="cliente"><input name="ronda"><textarea name="opiniao"></textarea><input name="bot-field">
+<input type="hidden" name="form-name" value="selection-feedback"><input name="cliente"><input name="ronda"><textarea name="opiniao"></textarea><input name="respostas"><input name="bot-field">
 </form>
 <script>
 (function(){
@@ -582,11 +582,14 @@ function load(){let st;try{st=JSON.parse(localStorage.getItem(KEY)||'null')}catc
 document.querySelectorAll('.vis input').forEach(i=>i.addEventListener('change',()=>{const on=document.querySelectorAll('.vis input:checked').length;document.querySelectorAll('.vis input').forEach(x=>x.disabled=on>=3&&!x.checked);}));
 // send through the website form (email to Pascale); WhatsApp only as fallback
 document.getElementById('send').addEventListener('click',async function(){const btn=this,txt=text();btn.setAttribute('aria-busy','true');btn.textContent='Versturen…';
- try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({'form-name':'selection-feedback','cliente':CLIENT,'ronda':'1','opiniao':txt}).toString()});if(!r.ok)throw 0;
+ try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({'form-name':'selection-feedback','cliente':CLIENT,'ronda':'1','opiniao':txt,'respostas':VURL()}).toString()});if(!r.ok)throw 0;
   const fin=btn.closest('.final');fin.querySelectorAll(':scope > *').forEach(x=>x.hidden=x.id!=='afterSend');document.querySelector('.bar').hidden=true;document.getElementById('prog')&&(document.getElementById('prog').parentElement.hidden=true);window.scrollTo({top:0,behavior:'smooth'});
   try{localStorage.removeItem(KEY)}catch(e){}
  }catch(e){btn.removeAttribute('aria-busy');btn.textContent='Via WhatsApp versturen';btn.onclick=()=>window.open('https://wa.me/351920609225?text='+encodeURIComponent(txt),'_blank');alert('Versturen lukte niet. Klik nog eens om via WhatsApp te versturen.');}});
+function VURL(){try{save();const j=localStorage.getItem(KEY)||'';return location.origin+location.pathname+'#ver='+btoa(unescape(encodeURIComponent(j))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}catch(e){return ''}}
+const VW=location.hash.indexOf('#ver=')===0;if(VW){try{let b=location.hash.slice(5).replace(/-/g,'+').replace(/_/g,'/');while(b.length%4)b+='=';localStorage.setItem(KEY,decodeURIComponent(escape(atob(b))));}catch(e){}}
 load();show(0);
+if(VW){const sb=document.getElementById('send');if(sb){sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}
 const nb=()=>{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');};nb();setTimeout(nb,800);setTimeout(nb,2500);
 })();
 </script>
