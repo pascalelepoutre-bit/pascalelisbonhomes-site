@@ -731,3 +731,5 @@
 888|T0 = estúdio · T1 = 1 quarto · T2 = 2 quartos, e assim por diante
 889|O que significam T1, T2 e T3?
 890|Em Portugal, as casas são descritas pelo número de quartos. Um T0 é um estúdio, um T1 tem um quarto, um T2 tem dois, e assim por diante. Um T2+1 tem uma divisão extra que não conta oficialmente como quarto, por exemplo porque não tem janela. Muitas vezes é usada como escritório ou closet.
+891|Ler mais
+892|Ler menos

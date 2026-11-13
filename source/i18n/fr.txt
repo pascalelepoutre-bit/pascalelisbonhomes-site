@@ -730,3 +730,5 @@
 888|T0 = studio · T1 = 1 chambre · T2 = 2 chambres, et ainsi de suite
 889|Que signifient T1, T2 et T3 ?
 890|Au Portugal, les logements sont décrits par leur nombre de chambres. Un T0 est un studio, un T1 a une chambre, un T2 deux, et ainsi de suite. Un T2+1 a une pièce en plus qui ne compte pas officiellement comme chambre, par exemple parce qu'elle n'a pas de fenêtre. Elle sert souvent de bureau ou de dressing.
+891|Lire la suite
+892|Réduire
