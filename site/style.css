@@ -1083,3 +1083,15 @@ footer .copy{font-size:.6rem;padding:3px 8px;margin-left:6px;vertical-align:1px}
 .fbar .tabs .tab-link:hover{background:none;color:#c8102e}
 .fbar .tabs .tab-link .f-count{display:none!important}
 @media(max-width:700px){.fbar .tabs .tab-link{margin-left:0}.fbar .tabs .tab-link::before{display:none}}
+.listing .photo{aspect-ratio:3/2!important;height:auto!important}
+.listing .g-track img{height:100%;object-fit:cover}
+.listing .info{gap:6px!important;padding-top:18px!important;padding-bottom:20px!important}
+.listing .feat{-webkit-line-clamp:3!important;font-size:.92rem}
+.listing .hl{display:flex;flex-wrap:wrap;gap:6px}
+.listing .hl span{font-size:.78rem;padding:5px 12px!important}
+.listing .g-note{font-size:.74rem;margin:0}
+.listing .specs{margin:0}
+.listing .info{display:flex!important;flex-direction:column}.l-foot{margin-top:auto!important;display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;margin-top:6px;padding-top:12px;border-top:1px solid var(--line)}
+.l-foot .price{margin:0!important;grid-row:span 2}
+.l-foot .ev-link{justify-self:end;font-size:.78rem;margin:0!important}
+.l-foot .more{justify-self:end;margin:0!important}
