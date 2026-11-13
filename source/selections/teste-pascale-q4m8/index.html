@@ -31,7 +31,7 @@ h1{font:500 clamp(26px,5vw,34px)/1.15 var(--display);margin:22px 0 8px;text-wrap
 .b-love[aria-pressed="true"]{background:var(--ok)!important;border-color:var(--ok)!important}
 .b-no[aria-pressed="true"]{background:var(--red)!important;border-color:var(--red)!important}
 .b-maybe[aria-pressed="true"]{background:var(--sun)!important;border-color:var(--gold)!important;color:var(--ink)!important}
-textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid var(--sand);border-radius:12px;min-height:56px;resize:vertical;background:#fff}
+textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid var(--sand);border-radius:12px;min-height:56px;resize:none;overflow:hidden;background:#fff}
 .mapa{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
 .m-land{fill:var(--mland)}.m-water{fill:var(--water)}
 .m-r,.m-t,.m-m{fill:none;stroke-linecap:round;stroke-linejoin:round}.m-r{stroke:var(--mroad);stroke-width:2.6}.m-t{stroke:var(--mroad);stroke-width:4.5}.m-m{stroke:var(--mmaj);stroke-width:6.5}
@@ -536,7 +536,7 @@ let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementB
 function show(i){cur=Math.max(0,Math.min(steps.length-1,i));steps.forEach((s,k)=>s.hidden=k!==cur);
  document.getElementById('prog').style.width=(cur/(steps.length-1)*100)+'%';
  const s=steps[cur]; const hi=houses.indexOf(s);
- rbar.hidden=hi<0; midl.hidden=true; document.querySelector('.bar').hidden=hi<0; place(); syncBar();
+ rbar.hidden=hi<0; midl.hidden=true; document.querySelector('.bar').hidden=hi<0; place(); syncBar(); steps[cur].querySelectorAll('textarea').forEach(grow);
  document.getElementById('lbl').textContent= s.dataset.label;
  document.getElementById('back').style.visibility=cur?'visible':'hidden';
  const go=document.getElementById('go'); go.hidden=cur===steps.length-1;
@@ -556,6 +556,8 @@ document.querySelectorAll('.house').forEach(h=>{const g=h.querySelector('.gal'),
 // reactions
 document.querySelectorAll('.btns').forEach(b=>b.querySelectorAll('button').forEach(x=>{x.setAttribute('aria-pressed','false');x.addEventListener('click',()=>{b.querySelectorAll('button').forEach(y=>y.setAttribute('aria-pressed','false'));x.setAttribute('aria-pressed','true');save();});}));
 document.querySelectorAll('textarea,.vis input').forEach(t=>t.addEventListener('input',save));
+function grow(t){t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}
+document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
 function place(){const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
  if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}
