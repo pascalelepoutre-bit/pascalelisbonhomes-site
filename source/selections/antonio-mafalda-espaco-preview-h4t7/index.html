@@ -11,13 +11,41 @@
 :root{--bg:#fffdf9;--card:#fff;--cream:#fcf3e3;--sand:#f2e0c2;--sun:#f7d98b;--gold:#b08429;--ink:#2a2420;--muted:#6f655a;--line:#efe3d0;--ok:#2e7d4f;--display:"Syne","Avenir Next",Arial,sans-serif;--body:"Inter",-apple-system,"Segoe UI",Arial,sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 .wrap{max-width:1080px;margin:0 auto;padding:22px 22px 60px}
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px}
 .brand{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center;font:500 12px var(--display);letter-spacing:.24em;text-transform:uppercase}
 .brand img{grid-row:span 2;width:42px;height:42px;border-radius:50%;object-fit:cover}
 .brand small{display:block;font:400 10px var(--body);letter-spacing:.16em;color:var(--muted);margin-top:3px}
-nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 26px}
-nav.tabs a{font:500 14px var(--body);text-decoration:none;color:var(--ink);padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
-nav.tabs a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:34px;overflow-x:auto;scrollbar-width:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 30px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;font:600 12px var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:17px 0 15px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.tabs a:hover{color:var(--ink)}nav.tabs a.on{color:var(--ink);border-bottom-color:var(--ink)}
+nav.tabs .sm{display:none}
+@media(max-width:600px){nav.tabs{gap:18px;margin:0 -16px 24px;padding:0 16px}nav.tabs a{font-size:11px;letter-spacing:.12em}nav.tabs .lg{display:none}nav.tabs .sm{display:inline}}
+.appts{display:grid;gap:10px;margin:12px 0}
+.appt{display:grid;grid-template-columns:86px 1fr;background:#fff;border:1px solid var(--sun);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ink)}
+.appt .ad{background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 6px;text-align:center}
+.appt .ad b{font:500 22px/1 var(--display)}.appt .ad small{font:600 10px var(--body);letter-spacing:.12em;text-transform:uppercase;margin-top:6px;opacity:.8}
+.appt .ai{padding:12px 14px;display:flex;flex-direction:column;gap:2px}.appt .ai strong{font:600 16px var(--body)}.appt .ai span{color:var(--muted);font-size:14px}.appt .ai em{font:normal 600 12px var(--body);letter-spacing:.06em;color:var(--gold);margin-top:2px}
+.ntext{margin:4px 0 0}
+.vwhen{display:inline-flex;border:1px solid var(--ink);border-radius:12px;overflow:hidden;margin:0 0 10px}
+.vwhen .d{background:var(--ink);color:#fff;font:600 11px var(--body);letter-spacing:.14em;text-transform:uppercase;padding:9px 12px;display:flex;align-items:center}
+.vwhen .t{font:500 20px/1 var(--display);padding:8px 14px;display:flex;align-items:center}
+.vimg{position:relative}.vimg .tag{position:absolute;top:12px;left:12px}
+.with{font-size:14px;font-weight:600;color:var(--gold);margin:-6px 0 12px}
+.vbtns{display:flex;flex-wrap:wrap;gap:8px}
+.answers{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;margin:0 0 22px}
+.ahd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px}.ahd h3{margin:0}
+.lock{flex:none;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 10px}
+.lock::before{content:"";display:inline-block;width:9px;height:7px;border:1.5px solid currentColor;border-radius:2px;margin-right:6px;vertical-align:-1px;box-shadow:inset 0 0 0 0}
+.alist{list-style:none;margin:0;padding:0}.alist li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.alist .hn{width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 13px var(--body)}
+.ah{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}.alist p{margin:4px 0 0;color:var(--muted)}
+.rx{font:600 12px var(--body);padding:4px 11px;border-radius:999px;background:var(--sand)}.rx.love{background:#e4f1e6;color:var(--ok)}.rx.maybe{background:var(--sun)}.rx.no{background:#f6e1e1;color:#a3262a}
+.ax{margin:12px 0 0;font-size:15px}.ax span{font-weight:600}
+.pn{display:flex;justify-content:space-between;gap:12px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+.pn a{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px 18px;min-width:140px}
+.pn a.nx{text-align:right;margin-left:auto;background:var(--ink);color:#fff;border-color:var(--ink)}
+.pn small{font:600 10px var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.7}.pn b{font:500 17px var(--display)}
 section.pane{display:none}section.pane.on{display:block}
 .eyebrow{font:600 12px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
 h1{font:500 clamp(30px,4.6vw,46px)/1.08 var(--display);margin:0 0 10px}
@@ -39,7 +67,7 @@ h3{font:600 18px/1.25 var(--body);margin:6px 0 2px}
 .tag{display:inline-block;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--sand)}
 .tag.done{background:#e4f1e6;color:var(--ok)}.tag.today{background:var(--sun)}.tag.next{background:var(--cream)}
 .vlist,.slist{display:grid;gap:14px}
-.vcard,.scard{display:grid;grid-template-columns:240px 1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.vcard,.scard{display:grid;grid-template-columns:260px 1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .vimg{background:#eee center/cover}
 .vbody .btn{margin:0 6px 6px 0}.vbody,.sbody{padding:18px 20px}.when{font-weight:600;margin:4px 0 0}.addr{color:var(--muted);margin:0 0 12px}
 .embed{margin:0 0 22px}.embed iframe{width:100%;height:820px;border:1px solid var(--line);border-radius:20px;background:#fff;display:block;margin-bottom:10px}@media(max-width:760px){.embed iframe{height:760px}}
@@ -63,16 +91,14 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 @media(max-width:760px){.hero,.grid3{grid-template-columns:1fr}.vcard,.scard{grid-template-columns:1fr}.vimg{min-height:170px}.wrap{padding:16px 16px 50px}}
 </style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
-<nav class="tabs" aria-label="Menu">
-  <a href="#inicio" data-t="inicio">Início</a><a href="#selecoes" data-t="selecoes">Seleções</a><a href="#visitas" data-t="visitas">Visitas</a><a href="#projeto" data-t="projeto">Projeto</a><a href="#passos" data-t="passos">Próximos passos</a>
-</nav>
+<nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#projeto" data-t="projeto"><span class="lg">Projeto</span><span class="sm">Projeto</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
 
 <section class="pane" id="p-inicio">
   <p class="eyebrow">O vosso espaço</p>
   <h1>Olá António e Mafalda</h1>
   <p class="lead">Aqui encontram tudo num só lugar: as casas que escolhi para vocês, as visitas e os próximos passos.</p>
   <div class="hero">
-    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje · duas visitas</p><p>12h30 · Calçada das Necessidades 42, encontramo-nos à porta. Logo a seguir, 13h15 · Travessa da Costa 12, com o Duarte. No fim, contem-me como correram.</p>
+    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje · duas visitas</p><div class="appts"><a class="appt" href="#visitas"><span class="ad"><b>12h30</b><small>Sáb 14 nov</small></span><span class="ai"><strong>Calçada das Necessidades 42</strong><span>Encontramo-nos à porta</span><em>Com a Pascale</em></span></a><a class="appt" href="#visitas"><span class="ad"><b>13h15</b><small>Sáb 14 nov</small></span><span class="ai"><strong>Travessa da Costa 12</strong><span>Logo a seguir</span><em>Com a Pascale e o Duarte</em></span></a></div><p class="ntext">No fim, contem-me como correram: está tudo na página Visitas.</p>
       <div class="row"><a class="btn" href="#projeto">Ver o projeto Calçada</a><a class="btn ghost" href="#visitas">Ver as visitas</a></div></div>
     <div class="card learn"><p class="eyebrow">O que procuram</p><ul><li>Sala grande com cozinha aberta, para receber amigos</li><li>Muita luz e casas com carácter</li><li>Obras são bem-vindas, para renovar ao vosso gosto</li><li>Espaço exterior é um grande plus</li><li>Quartos podem ser pequenos</li><li>Perto de Alcântara, Necessidades, Prazeres e Lapa</li><li>Ideal até 633 mil, máximo 800 mil com obras</li></ul></div>
   </div>
@@ -81,51 +107,48 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
     <a class="go" href="#visitas"><b>Visitas</b><span>As visitas marcadas e como correram</span></a>
     <a class="go" href="#passos"><b>Próximos passos</b><span>Do sim à escritura, passo a passo</span></a>
   </div>
+  <nav class="pn" aria-label="Anterior e seguinte"><span></span><a class="nx" href="#selecoes"><small>Seguinte</small><b>Seleções →</b></a></nav>
 </section>
 
 <section class="pane" id="p-selecoes">
   <p class="eyebrow">Seleções</p><h2>As casas que escolhi para vocês</h2>
   <p class="lead">Cada seleção fica melhor com a vossa opinião. A próxima seleção chega depois das visitas, com o que aprendi convosco.</p>
   <div class="embed"><iframe src="selecao-1/" title="Seleção" loading="lazy"></iframe><a class="btn ghost" href="selecao-1/" target="_blank">Abrir em ecrã inteiro ↗</a></div>
-  <div class="slist"><article class="scard">
-  <div class="simgs"><div style="background-image:url(https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/04/25/85/335413009.jpg)"></div><div style="background-image:url(https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9c/2c/41/332085202.jpg)"></div><div style="background-image:url(https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/)"></div><div style="background-image:url(/s/antonio-mafalda-r7k2/img/13.jpg)"></div></div>
-  <div class="sbody">
-    <span class="tag done">Respondida</span>
-    <h3>Seleção 1</h3>
-    <p class="muted">11 de novembro · 4 casas · respondida</p>
-    <a class="btn" href="selecao-1/">Ver seleção →</a>
-  </div>
-</article></div>
+  <div class="answers"><div class="ahd"><div><p class="eyebrow">Seleção 1 · as vossas respostas</p><h3>Enviadas a 11 de novembro</h3></div><span class="lock">Respostas fechadas</span></div>
+<ol class="alist"><li><span class="hn">1</span><div><div class="ah"><b>Santos-o-Velho, Madragoa</b><span class="rx no">Não é para nós</span></div><p>A casa é gira, mas achamos que falta um bocado de personalidade</p></div></li><li><span class="hn">2</span><div><div class="ah"><b>Rua do Olival, Lapa</b><span class="rx no">Não é para nós</span></div><p>O quarto é demasiado grande, mas a sala é muito gira mas pequena</p></div></li><li><span class="hn">3</span><div><div class="ah"><b>Travessa da Costa, Estrela</b><span class="rx maybe">Talvez</span></div><p>Gostamos muito da casa, especialmente o espaço exterior e da sala. Os quartos parecem muito pequenos em geral, mas OK</p></div></li><li><span class="hn">4</span><div><div class="ah"><b>Calçada das Necessidades, Estrela</b><span class="rx love">Adoro</span></div><p>Gostamos muito do apartamento, especialmente porque há possibilidade de o podermos renovar à nossa medida e gosto. Dependeria muito do custo esperado das obras, e se o preço da casa seria negociável</p></div></li></ol><p class="ax"><span>Querem visitar:</span> Travessa da Costa e Calçada das Necessidades</p><p class="ax"><span>Quando:</span> Sábado, 14 de novembro</p></div>
+  <div class="slist"></div>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#inicio"><small>Anterior</small><b>← Início</b></a><a class="nx" href="#visitas"><small>Seguinte</small><b>Visitas →</b></a></nav>
 </section>
 
 <section class="pane" id="p-visitas">
   <p class="eyebrow">Visitas</p><h2>As vossas visitas</h2>
   <p class="lead">Depois de cada visita, contem-me como correu. Demora um minuto e ajuda-me a encontrar a casa certa.</p>
   <div class="vlist"><article class="vcard today">
-  <div class="vimg" style="background-image:url('/s/antonio-mafalda-r7k2/img/13.jpg')"></div>
+  <div class="vimg" style="background-image:url('/s/antonio-mafalda-r7k2/img/13.jpg')"><span class="tag today">Hoje</span></div>
   <div class="vbody">
-    <span class="tag today">Hoje</span>
+    <div class="vwhen"><span class="d">Sáb 14 nov</span><span class="t">12h30</span></div>
     <h3>Calçada das Necessidades</h3>
-    <p class="when">Sábado, 14 de novembro · 12h30</p>
     <p class="addr">Calçada das Necessidades 42, Estrela</p>
-    <button type="button" class="btn ghost" data-visit="0">Como correu?</button> <a class="btn" href="#projeto">O vosso projeto: custos e obras</a>
+    <p class="with">Com a Pascale</p>
+    <div class="vbtns"><button type="button" class="btn ghost" data-visit="0">Como correu?</button> <a class="btn" href="#projeto">O vosso projeto: custos e obras</a></div>
     
   </div>
 </article>
 <article class="vcard today">
-  <div class="vimg" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></div>
+  <div class="vimg" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"><span class="tag today">Hoje</span></div>
   <div class="vbody">
-    <span class="tag today">Hoje</span>
+    <div class="vwhen"><span class="d">Sáb 14 nov</span><span class="t">13h15</span></div>
     <h3>Travessa da Costa</h3>
-    <p class="when">Sábado, 14 de novembro · 13h15</p>
     <p class="addr">Travessa da Costa 12, Estrela</p>
-    <button type="button" class="btn ghost" data-visit="1">Como correu?</button>
+    <p class="with">Com a Pascale e o Duarte</p>
+    <div class="vbtns"><button type="button" class="btn ghost" data-visit="1">Como correu?</button></div>
     
   </div>
 </article></div>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#selecoes"><small>Anterior</small><b>← Seleções</b></a><a class="nx" href="#projeto"><small>Seguinte</small><b>Projeto →</b></a></nav>
 </section>
 
-<section class="pane" id="p-projeto"><p class="eyebrow">Projeto</p><h2>Projeto Calçada das Necessidades</h2><p class="lead">Compra, obras e impostos · o custo total e o valor depois · ideias para a planta</p><div class="embed"><iframe src="projeto-necessidades/" title="Projeto Calçada das Necessidades" loading="lazy" style="height:1100px"></iframe><a class="btn ghost" href="projeto-necessidades/" target="_blank">Abrir em ecrã inteiro ↗</a></div></section>
+<section class="pane" id="p-projeto"><p class="eyebrow">Projeto</p><h2>Projeto Calçada das Necessidades</h2><p class="lead">Compra, obras e impostos · o custo total e o valor depois · ideias para a planta</p><div class="embed"><iframe src="projeto-necessidades/" title="Projeto Calçada das Necessidades" loading="lazy" style="height:1100px"></iframe><a class="btn ghost" href="projeto-necessidades/" target="_blank">Abrir em ecrã inteiro ↗</a></div><nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#visitas"><small>Anterior</small><b>← Visitas</b></a><a class="nx" href="#passos"><small>Seguinte</small><b>Próximos passos →</b></a></nav></section>
 <section class="pane" id="p-passos">
   <p class="eyebrow">Próximos passos</p><h2>Do sim à escritura</h2>
   <p class="lead">Acompanho-vos em cada passo. Assim sabem sempre onde estamos e o que vem a seguir.</p>
@@ -135,6 +158,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <li class="later"><span class="dot">4</span><div><h4>CPCV </h4><p>O contrato-promessa de compra e venda, com o sinal. Verificamos antes todos os documentos.</p></div></li>
 <li class="later"><span class="dot">5</span><div><h4>Crédito habitação </h4><p>Avaliação bancária e aprovação final do crédito.</p></div></li>
 <li class="later"><span class="dot">6</span><div><h4>Escritura </h4><p>A assinatura final e a entrega das chaves. A casa é vossa.</p></div></li></ol>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#projeto"><small>Anterior</small><b>← Projeto</b></a><span></span></nav>
 </section>
 
 <footer class="foot"><span>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers</span><span><a href="https://wa.me/351920609225">WhatsApp 920 609 225</a> · <a href="https://pascalelisbonhomes.com">pascalelisbonhomes.com</a></span></footer>
