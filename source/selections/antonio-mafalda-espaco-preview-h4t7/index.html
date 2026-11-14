@@ -42,6 +42,7 @@ h3{font:600 18px/1.25 var(--body);margin:6px 0 2px}
 .vcard,.scard{display:grid;grid-template-columns:240px 1fr;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .vimg{background:#eee center/cover}
 .vbody,.sbody{padding:18px 20px}.when{font-weight:600;margin:4px 0 0}.addr{color:var(--muted);margin:0 0 12px}
+.embed{margin:0 0 22px}.embed iframe{width:100%;height:820px;border:1px solid var(--line);border-radius:20px;background:#fff;display:block;margin-bottom:10px}@media(max-width:760px){.embed iframe{height:760px}}
 .simgs{display:grid;grid-template-columns:1fr 1fr;gap:2px}.simgs div{background:#eee center/cover;min-height:80px}
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:4px;max-width:720px}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -70,8 +71,8 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
   <h1>Olá António e Mafalda</h1>
   <p class="lead">Aqui encontram tudo num só lugar: as casas que escolhi para vocês, as visitas e os próximos passos.</p>
   <div class="hero">
-    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje às 13h30 · Calçada das Necessidades 42</p><p>Encontramo-nos à porta. Depois da visita, contem-me como correu, e também a Travessa da Costa de quinta-feira.</p>
-      <div class="row"><a class="btn" href="#visitas" data-visit="0">Como correu a Travessa da Costa?</a><a class="btn ghost" href="#visitas">Ver as visitas</a></div></div>
+    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje · duas visitas</p><p>12h · Calçada das Necessidades 42, encontramo-nos à porta. Depois, 13h15 · Travessa da Costa 12, com o Duarte. No fim, contem-me como correram.</p>
+      <div class="row"><a class="btn" href="#visitas">Ver as visitas</a></div></div>
     <div class="card learn"><p class="eyebrow">O que procuram</p><ul><li>Sala grande com cozinha aberta, para receber amigos</li><li>Muita luz e casas com carácter</li><li>Obras são bem-vindas, para renovar ao vosso gosto</li><li>Espaço exterior é um grande plus</li><li>Quartos podem ser pequenos</li><li>Perto de Alcântara, Necessidades, Prazeres e Lapa</li><li>Ideal até 633 mil, máximo 800 mil com obras</li></ul></div>
   </div>
   <div class="grid3">
@@ -84,13 +85,14 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <section class="pane" id="p-selecoes">
   <p class="eyebrow">Seleções</p><h2>As casas que escolhi para vocês</h2>
   <p class="lead">Cada seleção fica melhor com a vossa opinião. A próxima seleção chega depois das visitas, com o que aprendi convosco.</p>
+  <div class="embed"><iframe src="selecao-1/" title="Seleção" loading="lazy"></iframe><a class="btn ghost" href="selecao-1/" target="_blank">Abrir em ecrã inteiro ↗</a></div>
   <div class="slist"><article class="scard">
   <div class="simgs"><div style="background-image:url(https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/04/25/85/335413009.jpg)"></div><div style="background-image:url(https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9c/2c/41/332085202.jpg)"></div><div style="background-image:url(https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/)"></div><div style="background-image:url(/s/antonio-mafalda-r7k2/img/13.jpg)"></div></div>
   <div class="sbody">
     <span class="tag done">Respondida</span>
     <h3>Seleção 1</h3>
     <p class="muted">11 de novembro · 4 casas · respondida</p>
-    <a class="btn" href="/s/antonio-mafalda-r7k2/">Ver seleção →</a>
+    <a class="btn" href="selecao-1/">Ver seleção →</a>
   </div>
 </article></div>
 </section>
@@ -98,23 +100,23 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <section class="pane" id="p-visitas">
   <p class="eyebrow">Visitas</p><h2>As vossas visitas</h2>
   <p class="lead">Depois de cada visita, contem-me como correu. Demora um minuto e ajuda-me a encontrar a casa certa.</p>
-  <div class="vlist"><article class="vcard done">
-  <div class="vimg" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></div>
-  <div class="vbody">
-    <span class="tag done">Feita</span>
-    <h3>Travessa da Costa</h3>
-    <p class="when">Quinta, 12 de novembro · 17h</p>
-    <p class="addr">Travessa da Costa 12, Estrela</p>
-    <button type="button" class="btn ghost" data-visit="0">Como correu?</button>
-  </div>
-</article>
-<article class="vcard today">
+  <div class="vlist"><article class="vcard today">
   <div class="vimg" style="background-image:url('/s/antonio-mafalda-r7k2/img/13.jpg')"></div>
   <div class="vbody">
     <span class="tag today">Hoje</span>
     <h3>Calçada das Necessidades</h3>
-    <p class="when">Sábado, 14 de novembro · 13h30</p>
+    <p class="when">Sábado, 14 de novembro · 12h</p>
     <p class="addr">Calçada das Necessidades 42, Estrela</p>
+    <button type="button" class="btn ghost" data-visit="0">Como correu?</button>
+  </div>
+</article>
+<article class="vcard today">
+  <div class="vimg" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></div>
+  <div class="vbody">
+    <span class="tag today">Hoje</span>
+    <h3>Travessa da Costa</h3>
+    <p class="when">Sábado, 14 de novembro · 13h15</p>
+    <p class="addr">Travessa da Costa 12, Estrela</p>
     <button type="button" class="btn ghost" data-visit="1">Como correu?</button>
   </div>
 </article></div>
@@ -146,7 +148,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <form name="visit-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="cliente"><input name="visita"><textarea name="opiniao"></textarea><input name="bot-field"></form>
 
 <script>
-const CLIENT="António e Mafalda",VISITS=[{"name": "Travessa da Costa", "when": "Quinta, 12 de novembro · 17h"}, {"name": "Calçada das Necessidades", "when": "Sábado, 14 de novembro · 13h30"}];
+const CLIENT="António e Mafalda",VISITS=[{"name": "Calçada das Necessidades", "when": "Sábado, 14 de novembro · 12h"}, {"name": "Travessa da Costa", "when": "Sábado, 14 de novembro · 13h15"}];
 function tab(t){if(!document.getElementById('p-'+t))t='inicio';document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+t));document.querySelectorAll('nav.tabs a').forEach(a=>a.classList.toggle('on',a.dataset.t===t));window.scrollTo(0,0);}
 window.addEventListener('hashchange',()=>tab(location.hash.slice(1)));tab(location.hash.slice(1)||'inicio');
 const vd=document.getElementById('vd');let vi=0;
