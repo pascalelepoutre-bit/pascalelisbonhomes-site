@@ -71,7 +71,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
   <h1>Olá António e Mafalda</h1>
   <p class="lead">Aqui encontram tudo num só lugar: as casas que escolhi para vocês, as visitas e os próximos passos.</p>
   <div class="hero">
-    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje · duas visitas</p><p>12h · Calçada das Necessidades 42, encontramo-nos à porta. Depois, 13h15 · Travessa da Costa 12, com o Duarte. No fim, contem-me como correram.</p>
+    <div class="now"><p class="eyebrow">Agora</p><p class="big">Hoje · duas visitas</p><p>12h30 · Calçada das Necessidades 42, encontramo-nos à porta. Logo a seguir, 13h15 · Travessa da Costa 12, com o Duarte. No fim, contem-me como correram.</p>
       <div class="row"><a class="btn" href="#visitas">Ver as visitas</a></div></div>
     <div class="card learn"><p class="eyebrow">O que procuram</p><ul><li>Sala grande com cozinha aberta, para receber amigos</li><li>Muita luz e casas com carácter</li><li>Obras são bem-vindas, para renovar ao vosso gosto</li><li>Espaço exterior é um grande plus</li><li>Quartos podem ser pequenos</li><li>Perto de Alcântara, Necessidades, Prazeres e Lapa</li><li>Ideal até 633 mil, máximo 800 mil com obras</li></ul></div>
   </div>
@@ -105,7 +105,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
   <div class="vbody">
     <span class="tag today">Hoje</span>
     <h3>Calçada das Necessidades</h3>
-    <p class="when">Sábado, 14 de novembro · 12h</p>
+    <p class="when">Sábado, 14 de novembro · 12h30</p>
     <p class="addr">Calçada das Necessidades 42, Estrela</p>
     <button type="button" class="btn ghost" data-visit="0">Como correu?</button>
   </div>
@@ -148,7 +148,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <form name="visit-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="cliente"><input name="visita"><textarea name="opiniao"></textarea><input name="bot-field"></form>
 
 <script>
-const CLIENT="António e Mafalda",VISITS=[{"name": "Calçada das Necessidades", "when": "Sábado, 14 de novembro · 12h"}, {"name": "Travessa da Costa", "when": "Sábado, 14 de novembro · 13h15"}];
+const CLIENT="António e Mafalda",VISITS=[{"name": "Calçada das Necessidades", "when": "Sábado, 14 de novembro · 12h30"}, {"name": "Travessa da Costa", "when": "Sábado, 14 de novembro · 13h15"}];
 function tab(t){if(!document.getElementById('p-'+t))t='inicio';document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+t));document.querySelectorAll('nav.tabs a').forEach(a=>a.classList.toggle('on',a.dataset.t===t));window.scrollTo(0,0);}
 window.addEventListener('hashchange',()=>tab(location.hash.slice(1)));tab(location.hash.slice(1)||'inicio');
 const vd=document.getElementById('vd');let vi=0;
