@@ -1,0 +1,242 @@
+P='https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.'
+S='/image;s=1280x1024;q=80'
+CS='https://media.casasapo.pt/Z1440x1080/'
+UC=lambda i:'https://uploadcare.engelvoelkers.com/'+i+'/-/resize/1400x/'
+IDL='https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/'
+iv=lambda L:[P+x+S for x in L]
+cs=lambda L:[CS+x for x in L]
+J='eyJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ'
+HOUSES=[
+ dict(id='casimiro',name='Rua Joaquim Casimiro, Lapa',price='695 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 110 m² · 1.º andar · pátio privativo',
+  photos=iv(['eyJmbiI6IjM1OXNvcnhudjN3dTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.rHevQHoH18QgxgkazWi0gQy-xg12zJkeEIxW3kS2VIU','eyJmbiI6Imtyc2tibjkwYWxlMi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ImgBhI4VJdlmynoXPIZCnQTa8sBN0j_8-gpiq9JVNbs','eyJmbiI6ImxuYmU1MDZqcGtnbDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.nTobWvQAyyxm81Qla_i6MDRlNkZROgVgVU7hSWZQegM','eyJmbiI6InY3MHJkeG1qa2ViNC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.VDzsg8tjsRvjfH7MEfSjuJTzkjU6OWdJ0UA5kGwy4zo','eyJmbiI6InZudDRoaDVqYTE3dDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KylkB1-hav3eu3CH5vTBlVHOmZdUJrIX4SmXt9pkPFI']),
+  link='https://www.imovirtual.com/pt/anuncio/t3-elegante-e-repleto-de-charme-na-lapa-ID1i8hT',
+  why=['Sala e zona de refeições em open space, exatamente o que me descreveram.','Tetos trabalhados, muita luz e carácter em todas as divisões.','Um pequeno pátio privativo nas traseiras, raro nesta zona.'],
+  fit=[('ok','Sala grande com cozinha aberta'),('ok','Charme e luz'),('ok','3 quartos'),('mid','695 000 €, à venda desde abril: há margem para negociar')],
+  note='Prédio de 1975. Confirmo na visita o pé-direito, o estado das casas de banho e o condomínio.',
+  facts=[('Área','110 m²'),('Quartos','3'),('Piso','1.º'),('Exterior','Pátio privativo'),('Construção','1975'),('Energia','Classe C')],
+  maps='Rua Joaquim Casimiro, Lisboa'),
+ dict(id='bica',name='Travessa do Cabral, Bica',price='490 000 €',state='Para recuperar',ready=False,
+  line='T4 · 115 m² · dois pátios interiores',
+  photos=iv(['eyJmbiI6ImlpamJ1d2EyM21udzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.3_Wsb_AKM8X-GscfY2FSkAadoyByBjg6OcyWxNphlFc','eyJmbiI6ImV1N2h0ZGdvYXFqMjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-Dpn8GMS5pUb_DhJ6y5tdMGV8Ve5Bmrp4JE2GGEax5A','eyJmbiI6InlwY2I0cmlrOGU5ejEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.qy9vLVJ8DAmk675rZusT3c3tVTJmNg6AGHEnWhhz7Zc','eyJmbiI6InBjOW5mY2h1NGdncy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.vh3U5r0XnYXs8Gt-r8Me7Ir9qGF-q9wpsQiEODkJrlo','eyJmbiI6Imh3NTIxNnQzN2Uzay1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.aYDQlHZx9qKUDXEiCSlC3aCPovX9vRf5AaBEbfrNlUc']),
+  link='https://www.imovirtual.com/pt/anuncio/apartamento-t4-para-recuperar-na-bica-misericor-ID1j8Xj',
+  why=['Um verdadeiro projeto para remodelar à vossa medida, num dos bairros mais autênticos de Lisboa.','Quatro quartos e dois pátios interiores: espaço para crescer.','Entre Santos e o Cais do Sodré, a poucos minutos a pé do vosso trabalho.'],
+  fit=[('ok','Remodelar ao vosso gosto'),('ok','Espaço para família'),('ok','Perto do rio e do comboio'),('ok','Com obras, bem abaixo dos 800 000 €')],
+  note='Precisa de obras completas e tem só uma casa de banho. A Bica pode ser animada à noite: confirmo o ruído da rua.',
+  facts=[('Área','115 m²'),('Quartos','4'),('Casas de banho','1'),('Exterior','2 pátios interiores'),('Estado','Para recuperar'),('Energia','Classe C')],
+  maps='Travessa do Cabral, Lisboa'),
+ dict(id='boahora',name='Calçada da Boa Hora, Alcântara',price='499 000 €',state='Pronta a habitar',ready=True,
+  line='T2 · 89 m² · varanda',
+  photos=cs(['OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7d1.jpg','OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7ca.jpg','OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7d5.jpg','OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7d9.jpg','OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7dd.jpg','OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7e0.jpg']),
+  link='https://casa.sapo.pt/comprar-apartamento-t2-lisboa-alcantara-cc1678a4-d813-11f1-9c13-060000000051.html',
+  why=['Traça lisboeta com sancas e soalho, renovada com cuidado.','Cozinha bonita e uma varanda.','Muito abaixo do vosso orçamento, perto de Belém, do rio e do comboio.'],
+  fit=[('ok','Charme e luz'),('mid','Cozinha separada da sala'),('mid','2 quartos'),('ok','499 000 €, abaixo do limite do IMT Jovem')],
+  note='Só tem dois quartos. Estacionamento possível em avença por 90 € por mês.',
+  facts=[('Área','89 m² área bruta privativa'),('Quartos','2'),('Exterior','Varanda'),('Estado','Remodelado')],
+  maps='Calçada da Boa Hora, Lisboa'),
+ dict(id='esperanca',name='Rua da Esperança, Santos',price='880 000 €',state='Para remodelar',ready=False,
+  line='T3+2 · 165 m² · pé-direito de 3,32 m',
+  photos=iv(['eyJmbiI6Im91cDg0bjhrdTRzYi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.M1YC7VAG5-XhLMNCbwqqDeXCUAqpBdxAOwo8DD4kbGY','eyJmbiI6ImRwNmh4MHh3Znd6djEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.XvexbpHzQNBjSxm6IijKoY3FXpvLQS8qoNOVXxwxQwg','eyJmbiI6IjJldW1vNjhyMWo0MjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.x21aF0LpZI9re484Pv1lC6ie4NEkx-t1KV4vNKyRru8','eyJmbiI6ImllMmJ2MHNsbjV0ay1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.S13jlbm1gdF_OheQ-9zOdH81Kw59d9dhNN9j8mjkMo0','eyJmbiI6IjZhejVrMnViNTQ0ODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.QeGwWUAgUYRjQB-0jCPla6aXB1x8j3B0ZMyuUYVO01k']),
+  link='https://www.imovirtual.com/pt/anuncio/t3-2-na-estrela-santos-o-velho-centro-de-lisboa-ID1h2UI',
+  why=['Prédio antigo com fachada de azulejos, tetos altos de 3,32 m, soalho de tábua corrida e portadas de madeira.','Janelas em três fachadas, com sol ao longo do dia.','Muito espaço: dá para a sala grande que querem e quartos para a família.'],
+  fit=[('ok','Grandes volumes e carácter'),('ok','Espaço para família'),('ok','Muita luz'),('mid','Só cabe no orçamento com uma boa negociação')],
+  note='Precisa de remodelação. Está à venda desde agosto de 2025, por isso vale a pena perguntar quanto o proprietário aceita.',
+  facts=[('Área','165 m²'),('Tipologia','T3+2'),('Pé-direito','3,32 m'),('Exposição','Oeste, sudeste e noroeste'),('Estado','Para remodelar'),('Energia','Classe D')],
+  maps='Rua da Esperança, Lisboa'),
+ dict(id='marques',name='Calçada Marquês de Abrantes, Santos',price='975 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 165 m² · 2.º andar · prédio pombalino',
+  photos=iv(['eyJmbiI6InlxaWxpMDd2dDVkcDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DCViDs6JxtTfsTX04CGNhflJDEMwaP1oT5Xe7zelZO4','eyJmbiI6IjR3bnd3cTBmNTljZzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Io4NzRy-R-4lB4dEpMRi3lzfA4QQhb04kVhXVFkzbnM','eyJmbiI6IjY5a2V2N2NsNDEyMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ivpRo_sVPwehaxa-pVYF_CNrC1m71Mu10C04aLEoK-o','eyJmbiI6IjJnNzU1dm9vOWlpMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NmFK2ezpu30e9Tk0H4yUC4dK0arMtiuu9OxDOhQG1wk','eyJmbiI6ImRsaHdiNGsyZTQyMDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.IC6Rjs7Pjzb4xF-gr0He9qCc57DDsBwcNUNwcWhFqV4']),
+  link='https://www.imovirtual.com/pt/anuncio/charmoso-t3-na-calcada-marques-dabrantes-ID1hk7X',
+  why=['Totalmente recuperado em 2026, mantendo a traça original: pé-direito alto e tetos de madeira.','Sala espaçosa ligada à cozinha, duas suites.','Grandes volumes e muita personalidade, em Santos.'],
+  fit=[('ok','Sala com cozinha integrada'),('ok','Pé-direito alto e carácter'),('ok','3 quartos, 2 suites'),('mid','975 000 €: muito acima, só com uma descida grande')],
+  note='Mostro-vos esta casa como referência do que procuram. Está à venda há muito tempo; pergunto o que o proprietário aceitaria.',
+  facts=[('Área','165 m²'),('Quartos','3, dois em suite'),('Piso','2.º'),('Estado','Recuperado em 2026'),('Prédio','Pombalino, áreas comuns em obras'),('Energia','Classe E')],
+  maps='Calçada do Marquês de Abrantes, Lisboa'),
+ dict(id='boavista',name='Rua da Boavista, Santos',price='670 000 €',state='Pronta a habitar',ready=True,
+  line='Duplex T3 · 104 m² · 4.º andar · sala a sul',
+  photos=iv(['eyJmbiI6Im50eW50ZjhpdzJuNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tPwwwlxt0RtKxjVfb7SbUF7R5VjZ7kQTCuLL1aTOV9g','eyJmbiI6ImE3YzU5dWhsamNpay1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.rK70yGsfNe6T9ut_HgBjhPee79mw4jC1yefQVFcaMH0','eyJmbiI6IjU5bWhqbDJzeHByajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2_pfW-MrZYslftYltFleuO5m-4y8K8dwwhOPTpKUyBc','eyJmbiI6IjM4bXVmcnZ5OXFxZi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.4LD8MH08Lp7tPs_fYMGvgoUFObROMUYQt9vJxMjGudc','eyJmbiI6IjI4Z25vdTlmd3J0Zi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.HOsu3yKtJ8r4frDF8h91M1pmeK_Bw40TC5LavmIQuvE']),
+  link='https://www.imovirtual.com/pt/anuncio/duplex-t3-com-vista-santos-o-velho-lisboa-ID1iBoi',
+  why=['Edifício histórico totalmente reabilitado, com a traça original preservada.','Sala e varanda viradas a sul, com muita luz.','Em Santos, perto do Cais do Sodré, onde trabalham.'],
+  fit=[('ok','Luz a sul'),('ok','Carácter'),('ok','3 quartos'),('mid','670 000 €, um pouco acima do limite do IMT Jovem')],
+  note='Duplex num 4.º andar: confirmo se há elevador e como é a cozinha.',
+  facts=[('Área','104 m² no portal, cerca de 147 m² segundo a descrição'),('Tipologia','T3 duplex'),('Piso','4.º'),('Exposição','Sul'),('Energia','Classe C')],
+  maps='Rua da Boavista, Lisboa'),
+ dict(id='becoolival',name='Rua Joaquim Casimiro / Beco do Olival, Lapa',price='725 000 €',state='Para remodelar',ready=False,
+  line='T4+1 · 185 m² área bruta privativa · 3.º andar · vista rio',
+  photos=iv(['eyJmbiI6InNzZGE4OW9qZDdiZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.e-PWQzerrhVSsWD60IJHyRcbD4d8p91teMfzfM7syGA','eyJmbiI6ImU1Nm4xejY2ZWR6ZzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HsEcg0qA-QzDIni_tNO8Xuo3sNwkhITehetug1V4cqs','eyJmbiI6ImE3eWtvYzZhZzgxajEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.SVQ-vPeZ_geH4-eyxOxUpHtD_KQvKDrA8q7CjWWkPdk','eyJmbiI6IjRkOXVxNW5kM3lnZjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8KTAnpD4AaqqYj_NLuE8-MGOw8AZKQQKnuCK66NmR7g','eyJmbiI6InIxdXhhaGd1eWp1NzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.oOGkLmZ1SPQQoB4vV7b05GQynEJJtd_qV223uPyWaYg']),
+  link='https://www.imovirtual.com/pt/anuncio/apartamento-t4-para-venda-ID1j4R0',
+  why=['Muito espaço: sala de 30 m² com varanda e vista rio, mais sala de jantar e salinha.','Soalho de tábua corrida e quatro quartos, um deles em suite.','Dá para criar a sala grande com cozinha aberta e ainda ter quartos para todos.'],
+  fit=[('ok','Espaço para família'),('ok','Vista rio e varanda'),('mid','Cozinha aberta, com obras'),('mid','Com obras, perto dos 800 000 €')],
+  note='3.º andar sem elevador, prédio de 1951. Precisa de atualização.',
+  facts=[('Área','185 m² área bruta privativa'),('Quartos','4, um em suite'),('Casas de banho','2'),('Piso','3.º, sem elevador'),('Construção','1951'),('Energia','Classe D')],
+  maps='Rua Joaquim Casimiro 2, Lisboa'),
+ dict(id='algesrio',name='Algés, vista rio',price='660 000 €',state='Para atualizar',ready=False,
+  line='T3 · 137 m² · 3.º andar sem elevador',
+  photos=cs(['OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2605.jpg','OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2608.jpg','OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd260c.jpg','OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2611.jpg','OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2619.jpg','OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2622.jpg']),
+  link='https://casa.sapo.pt/comprar-apartamento-t3-oeiras-alges-linda-a-velha-e-cruz-quebrada-dafundo-ad8a4d7f-d821-11f1-b6e5-060000000058.html',
+  why=['Vista sobre o Tejo e muita luz.','Duas salas que se podem unir numa sala grande.','Perto da estação de Algés.'],
+  fit=[('ok','Vista rio e luz'),('ok','3 quartos, 2 casas de banho'),('mid','Cozinha fechada'),('mid','Rua com muito trânsito')],
+  note='Fica numa rua movimentada: confirmo de que lado ficam os quartos.',
+  facts=[('Área','137 m² área bruta'),('Quartos','3'),('Casas de banho','2'),('Piso','3.º, sem elevador')],
+  maps='Algés, Oeiras'),
+ dict(id='madragoa',name='Rua das Madres, Madragoa',price='690 000 €',state='Pronta a habitar',ready=True,
+  line='T3 duplex · 130 m² · 3.º andar · vista frontal de rio',
+  photos=cs(['OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4a5.jpg','OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4a8.jpg','OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb49b.jpg','OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4a1.jpg','OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4bb.jpg','OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4bf.jpg']),
+  link='https://casa.sapo.pt/comprar-apartamento-t3-lisboa-estrela-madragoa-(lapa)-0361affd-010b-11f1-b7cf-060000000058.html',
+  why=['Vista frontal de rio e muita luz.','Prédio típico com janelas de sacada e azulejos.','Suite, closet e uma sala extra que pode ser quarto.'],
+  fit=[('ok','Vista rio e luz'),('ok','3 quartos'),('mid','Cozinha semiaberta, abrir exige obras'),('mid','Só cabe com uma descida de preço')],
+  note='3.º andar sem elevador. O piso de cima tem tetos inclinados.',
+  facts=[('Área','130 m² área bruta privativa'),('Tipologia','T3 duplex'),('Casas de banho','2'),('Piso','3.º, sem elevador')],
+  maps='Rua das Madres, Lisboa'),
+ dict(id='saobento',name='São Bento',price='649 000 €',state='Pronta a habitar',ready=True,
+  line='T2+1 · 130 m² · remodelado por arquiteto',
+  photos=[UC(i) for i in ['20367ee3-b0ec-4b47-a7a4-a9f6fe0f23e9','11642d33-556d-40ea-91fd-bb8e9a93f200','4af56219-669f-4b35-9760-d11efef10cb7','9b1114be-3ea4-4421-8130-4d6ce3035728','acbab6d2-84f1-4399-94b3-986bd603ef63','f40f8b48-f0b8-4496-b32b-1ab75018b0a7']],
+  link='https://www.engelvoelkers.com/pt/pt/exposes/680ebb62-ee39-53fc-acb5-b13428f4e26b',
+  why=['Prédio pombalino com a gaiola original à vista, remodelado por arquiteto.','Sala de estar e jantar ampla, com muito sol.','Um imóvel Engel & Völkers, por isso marco a visita facilmente.'],
+  fit=[('ok','Carácter'),('ok','Muita luz'),('mid','T2+1: o terceiro quarto é pequeno'),('ok','649 000 €, o preço já desceu')],
+  note='Confirmo se o +1 serve de quarto e como é a cozinha.',
+  facts=[('Área','130 m² área bruta'),('Quartos','2 + 1'),('Casas de banho','2'),('Estado','Remodelado')],
+  maps='Rua de São Bento, Lisboa'),
+ dict(id='borja',name='Rua do Borja, Prazeres',price='750 000 €',state='Pronta a habitar',ready=True,
+  line='T2 · 128 m² área bruta · rés do chão com elevador · jardim e garagem',
+  photos=[IDL+'67/e0/88/335277530.jpg'],
+  link='https://www.idealista.pt/imovel/35463691/',
+  why=['Terraço privativo com jardim, raro em Lisboa.','Garagem com pré-instalação para o carro elétrico.','Prédio de 2012, sem obras.'],
+  fit=[('ok','Exterior e garagem'),('mid','2 quartos'),('mid','Construção recente, menos carácter'),('mid','750 000 €')],
+  note='Venda direta do proprietário: confirmo primeiro se aceita trabalhar comigo.',
+  facts=[('Área','128 m² área bruta'),('Quartos','2'),('Casas de banho','2'),('Piso','Rés do chão, com elevador'),('Garagem','Sim'),('Construção','2012')],
+  maps='Rua do Borja 63, Lisboa'),
+ dict(id='trinas',name='Rua das Trinas, Lapa',price='600 000 €',state='Pronta a habitar',ready=True,
+  line='T2 · 90 m² · 2 casas de banho',
+  photos=cs(['OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f2.jpg','OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f3.jpg','OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f4.jpg','OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f5.jpg','OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f6.jpg','OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f7.jpg']),
+  link='https://casa.sapo.pt/comprar-apartamento-t2-lisboa-estrela-lapa-63d19934-ad2c-11f1-bc59-060000000052.html',
+  why=['Sala de estar e jantar ampla e luminosa.','Cozinha espaçosa e duas casas de banho completas.','O preço desceu de 620 000 € para 600 000 €.'],
+  fit=[('ok','Muita luz'),('ok','Sala grande'),('mid','2 quartos'),('ok','600 000 €, abaixo do limite do IMT Jovem')],
+  note='Só tem dois quartos.',
+  facts=[('Área','90 m²'),('Quartos','2'),('Casas de banho','2'),('Estado','Pronto a habitar')],
+  maps='Rua das Trinas, Lisboa'),
+]
+
+AREA=dict(casimiro=110,bica=115,boahora=89,esperanca=165,marques=165,boavista=104,becoolival=185,algesrio=137,madragoa=130,saobento=130,borja=128,trinas=90)
+for h in HOUSES:
+    pr=int(''.join(c for c in h['price'] if c.isdigit()))
+    h['ppm']=f"{round(pr/AREA[h['id']]):,}".replace(',',' ')+' €/m²'
+
+GEO=dict(casimiro=(38.70647,-9.166925),bica=(38.70938,-9.14603),boahora=(38.70135,-9.19193),esperanca=(38.70828,-9.1544),marques=(38.70775,-9.15542),boavista=(38.708973,-9.150368),becoolival=(38.705032,-9.167217),algesrio=(38.70054,-9.23334),madragoa=(38.70895,-9.15445),saobento=(38.71546,-9.1543),borja=(38.7108,-9.16911),trinas=(38.71019,-9.1592))
+for h in HOUSES: h['geo']=GEO[h['id']]
+
+# 15/11: per house: unique feature, kitchen and floor plan first, with captions
+def ivp(x): return P+x+S
+def csp(x): return CS+x
+NEWPH=dict(
+ casimiro=[(ivp('eyJmbiI6IjM1OXNvcnhudjN3dTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.rHevQHoH18QgxgkazWi0gQy-xg12zJkeEIxW3kS2VIU'),'Sala'),
+  (ivp('eyJmbiI6Iml1bGw5dnVsbGY2OC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.jYmqkT08Kglv_F92ioRLWt-xYaHHzCjw0OgTRb5UCzQ'),'Pátio privativo'),
+  (ivp('eyJmbiI6IjE1NThteWVldG9zYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Wb5G73QyyirsgclP1yTlYd_2_GvQIP7cg56vXOD1f2s'),'Cozinha'),
+  (ivp('eyJmbiI6InRka3p2bDBnMHJiOS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.uUOEZrC7QZ60EhgAuA-x-EhbRF7MwcGMXwSBdAHzwUc'),'Cozinha'),
+  (ivp('eyJmbiI6ImxuYmU1MDZqcGtnbDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.nTobWvQAyyxm81Qla_i6MDRlNkZROgVgVU7hSWZQegM'),'Sala'),
+  (ivp('eyJmbiI6Imd0eHRleHA2ZW04MDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._u28_7NC7O5Imkb-PWsfh3SXbGeqSaIJtNtpEfb56qk'),'Quarto'),
+  (ivp('eyJmbiI6ImhlaG5qd3h2MGlkZzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.QEoxgqdLWdTTMjpKkL7yBM3HD-jDrqUXbpDV41CaiNQ'),'Planta'),
+  (ivp('eyJmbiI6InBsazJmdzMyaHVpZDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.LVpJbgZKWBl3Xgewjr0NqygUUYzxD9-KmjCJV3mtK1I'),'Planta')],
+ bica=[(ivp('eyJmbiI6ImV1N2h0ZGdvYXFqMjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-Dpn8GMS5pUb_DhJ6y5tdMGV8Ve5Bmrp4JE2GGEax5A'),'Sala'),
+  (ivp('eyJmbiI6Imh3eG5qZTZ6MmV4dC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.zNg0kVUwND2-m7Qp-az4IncvHU_-jVbFlrLmLoYuc4o'),'Pátio interior'),
+  (ivp('eyJmbiI6IjVnamdjcnpoMjJwajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pfrG1sdKdjDPGS0OCt4rwFiznmfNo4mzjZXWKE45ask'),'Cozinha'),
+  (ivp('eyJmbiI6ImQ5bmZvdWtmMDlwci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.QGm0YOLj6XCAHOJ9hTPJjKnklyYn3ayeaLxpOTWRAgU'),'Exterior'),
+  (ivp('eyJmbiI6InBjOW5mY2h1NGdncy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.vh3U5r0XnYXs8Gt-r8Me7Ir9qGF-q9wpsQiEODkJrlo'),'Sala'),
+  (ivp('eyJmbiI6Inp1M2lwOWRsY3FkajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ONENpJy8QupR3BlSiA5PcbXYyf2e8POMtYx_wuAUAIk'),'Sala')],
+ boavista=[(ivp('eyJmbiI6Im50eW50ZjhpdzJuNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tPwwwlxt0RtKxjVfb7SbUF7R5VjZ7kQTCuLL1aTOV9g'),'Sala'),
+  (ivp('eyJmbiI6IjN1cTV5ZTh1OXViNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.KKWSeYWdYGy4Lcs56Jux3Q_2JVdJHNQBqiA74iL5tdg'),'Varanda e vista'),
+  (ivp('eyJmbiI6IjdzczNmbWRvNjV4LUVDT1NZU1RFTSIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.lxaeGAeJrwW0gZY2_CdJFE-29WeJf9I_c9yHPlDTS4k'),'Cozinha'),
+  (ivp('eyJmbiI6InM2Y3k2M2trdmliYi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.S4NQdt7hKoWCGoWE--htfrf8MmvQniz6YKEuGNBnu_w'),'Cozinha'),
+  (ivp('eyJmbiI6IjU5bWhqbDJzeHByajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2_pfW-MrZYslftYltFleuO5m-4y8K8dwwhOPTpKUyBc'),'Sala'),
+  (ivp('eyJmbiI6IjRveTBwMWhhNnR2bjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fqyYKPG_pOYKlgf7rt4uGG0yhz6G2PtzJSxxNnEecU0'),'Planta'),
+  (ivp('eyJmbiI6Im8xdWU5dHNlYXNoYzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.sVGO4FKIBZuW7MrevkWfy_YnfTN1blMbAC36Q6xg51Y'),'Planta')],
+ becoolival=[(ivp('eyJmbiI6InNzZGE4OW9qZDdiZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.e-PWQzerrhVSsWD60IJHyRcbD4d8p91teMfzfM7syGA'),'Sala'),
+  (ivp('eyJmbiI6InIxdXhhaGd1eWp1NzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.oOGkLmZ1SPQQoB4vV7b05GQynEJJtd_qV223uPyWaYg'),'Vista rio'),
+  (ivp('eyJmbiI6InB2aWZqcmJuYnBjYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.YZkzh-csaC7E-JMiZEm4PauJFBmEUrqW7LtAaGElNnw'),'Cozinha'),
+  (ivp('eyJmbiI6ImsxNDB5d3huY2pscjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8yF29HygUpEL1j5ih7apUXEtSz7GOLIvoFyNziSKZSA'),'Cozinha'),
+  (ivp('eyJmbiI6ImtmdzI4cDRsMXMzMy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.n7RhAsbvGkXnlPrj914EK29jjeROT6tbnSVZYjn1Bok'),'Sala de jantar'),
+  (ivp('eyJmbiI6ImlnaWJxbTExbGEycDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ceYahRDKG6C_9xieGXIE8LFxsMO6GsmaMyeTxT3TUz8'),'Planta')],
+ boahora=[(csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb80f.jpg'),'Sala'),
+  (csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7ca.jpg'),'Varanda com vista'),
+  (csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7d5.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7d9.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb82a.jpg'),'Sala de jantar'),
+  (csp('OAYES/S5/C5462/P31369153/Tphoto/IDc1a7de01-0000-0500-0000-00001accb7ea.jpg'),'Quarto')],
+ algesrio=[(csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2611.jpg'),'Sala'),
+  (csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd262c.jpg'),'Estrutura pombalina original à vista'),
+  (csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2608.jpg'),'Vista rio'),
+  (csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd265c.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd2661.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C3796/P31370251/Tphoto/ID0bacde01-0000-0500-0000-00001acd266a.jpg'),'Planta')],
+ madragoa=[(csp('OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4a5.jpg'),'Sala'),
+  (csp('OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4a8.jpg'),'Vista rio'),
+  (csp('OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb4c3.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000185cb49b.jpg'),'Sala'),
+  (csp('OAYES/S5/C1320/P29285166/Tphoto/ID2edbbe01-0000-0500-0000-0000186987c3.jpg'),'Planta')],
+ trinas=[(csp('OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f2.jpg'),'Sala'),
+  (csp('OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5f9.jpg'),'Varanda'),
+  (csp('OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5fb.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d5fc.jpg'),'Cozinha'),
+  (csp('OAYES/S5/C9984/P31004269/Tphoto/ID6d16d901-0000-0500-0000-00001a58d609.jpg'),'Vista')],
+)
+for h in HOUSES:
+    if h['id'] in NEWPH:
+        h['photos']=[u for u,c in NEWPH[h['id']]]; h['caps']=[c for u,c in NEWPH[h['id']]]
+for h in HOUSES:
+    if h['id']=='algesrio': h['why']=['Vista sobre o Tejo e muita luz.','A estrutura pombalina original de madeira está à vista: um detalhe raro e cheio de carácter.','Duas salas que se podem unir numa sala grande, perto da estação de Algés.']
+    if h['id']=='boahora': h['line']='T2 · 89 m² · varanda com vista'
+NOPLAN={'bica':'Planta a pedir à agência.','boahora':'Planta a pedir à agência.','trinas':'Planta a pedir à agência.','borja':'Planta a pedir ao proprietário.'}
+for h in HOUSES:
+    if h['id'] in NOPLAN: h['facts']=h['facts']+[('Planta',NOPLAN[h['id']])]
+AG=dict(casimiro='CENTURY21 Polo Central II',bica='KW Sol Oeiras',boahora='KW Área',esperanca='RB Real Estate',marques='Open Book, JLL, Dils, Independent Brokers',boavista="Porta da Frente Christie's",becoolival='RE/MAX Siimgroup',algesrio='KW Ábaco',madragoa='JLL Residential',saobento='Engel & Völkers · onze listing',borja='Particular · Nuno · mogelijk ook Knight Frank',trinas='Wanted Real Estate')
+for h in HOUSES: h['agency']=AG[h['id']]
+
+# 15/11: back in, Pascale talked to them and they may reconsider
+_IDL='https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/'
+IDL=_IDL
+_R1=[
+  dict(id='santos', n=1, name='Santos-o-Velho, Madragoa', price='645 000 €', state='Pronta a habitar', ready=True,
+       line='T2 · 100 m² · 3.º andar com elevador',
+       photos=[IDL+'04/25/85/335413009.jpg', IDL+'a4/c4/9c/335413014.jpg', IDL+'64/7d/b8/335413013.jpg', IDL+'c6/63/c9/335413028.jpg',
+               IDL+'3e/f0/a9/335413012.jpg', IDL+'d0/ea/52/335413017.jpg', IDL+'f8/63/bf/335413015.jpg', IDL+'52/91/6f/335413010.jpg'],
+       link='https://www.idealista.pt/imovel/35466924/',
+       why=['Prédio antigo com charme, todo reabilitado, e com elevador.',
+            'Sala cheia de luz, com vista sobre o rio.',
+            'Cozinha aberta para a sala, que pode fechar com portadas brancas quando quiserem.'],
+       fit=[('ok','Cozinha aberta'),('ok','Muita luz'),('ok','2 casas de banho'),('mid','645 000 €, um pouco acima dos 633 000 €')],
+       note='Fica em Santos, um pouco mais longe de onde vivem agora do que as outras.',
+       facts=[('Área','100 m² área bruta'),('Quartos','2, um em suite com closet'),('Casas de banho','2, ambas com banheira'),
+              ('Piso','3.º, com elevador'),('Exterior','Vista rio'),('Estado','Remodelado, pronto a habitar')],
+       pin=(700,392), walk='Santos-o-Velho, morada exata a confirmar', maps='Santos-o-Velho, Lisboa'),
+  dict(id='olival', n=2, name='Rua do Olival, Lapa', price='650 000 €', state='Pronta a habitar', ready=True,
+       line='T2 duplex · 3.º andar sem elevador · vista rio',
+       photos=[IDL+'9c/2c/41/332085202.jpg', IDL+'a7/b5/34/332085164.jpg', IDL+'72/87/5d/332085179.jpg', IDL+'dd/ec/d6/332085177.jpg',
+               IDL+'b7/7e/88/332085182.jpg', IDL+'96/21/6e/332085224.jpg', IDL+'73/94/b1/332085186.jpg', IDL+'92/82/eb/332085193.jpg'],
+       link='https://www.idealista.pt/imovel/35418249/',
+       why=['Sala de 48 m² com a cozinha integrada, exatamente o que me descreveram.',
+            'No piso de cima, uma suite de cerca de 43 m². Vista sobre o rio.',
+            'O preço acabou de baixar de 690 000 € para 650 000 €.'],
+       fit=[('ok','Cozinha aberta'),('ok','Sala luminosa'),('ok','2 casas de banho'),('ok','Perto de onde vivem')],
+       note='O preço por m² é baixo para a Lapa. Se gostarem, verificamos primeiro a documentação. Terceiro andar sem elevador.',
+       facts=[('Área','A confirmar na documentação'),('Quartos','2'),('Casas de banho','2'),
+              ('Piso','3.º, sem elevador, duplex'),('Construção','1988'),('Estado','Pronto a habitar')],
+       pin=(545,434), walk='cerca de 6 min a pé de onde vivem', maps='Rua do Olival, Lisboa'),
+  ]
+for d in _R1:
+    d.pop('n',None);d.pop('pin',None);d.pop('walk',None)
+    if d['id']=='santos':
+        d['note']='Na primeira seleção acharam que faltava personalidade. Volto a mostrar porque cumpre muito do essencial: cozinha aberta, luz, vista rio e elevador. Só dois quartos.'
+    if d['id']=='olival':
+        d['note']='Na primeira seleção acharam a sala pequena para o quarto grande. Peço a planta: com obras ligeiras a sala pode crescer. Só dois quartos, terceiro andar sem elevador.'
+        d['link']='https://www.idealista.pt/imovel/35418249/'
+    HOUSES.append(d)
+GEO.update(santos=(38.7079,-9.1572),olival=(38.7058,-9.1650))
+AREA.update(santos=100,olival=110)
+AG.update(santos='Agência a confirmar, anúncio Idealista',olival='Agência a confirmar, anúncio Idealista')
+for h in HOUSES:
+    h['geo']=GEO[h['id']];h['agency']=AG[h['id']]
+    pr=int(''.join(c for c in h['price'] if c.isdigit()));h['ppm']=f"{round(pr/AREA[h['id']]):,}".replace(',',' ')+' €/m²'
+for h in HOUSES:
+    if h['id']=='olival': h['ppm']='€/m² a confirmar'
+for h in HOUSES:
+    if h['id']=='olival': h['agency']='RE/MAX Telheiras · agente 969 003 714'

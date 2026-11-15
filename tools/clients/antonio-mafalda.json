@@ -1,0 +1,139 @@
+{
+ "client": "António e Mafalda",
+ "greet": "António e Mafalda",
+ "now": {
+  "title": "Hoje · duas visitas",
+  "text": "No fim, contem-me como correram: está tudo na página Visitas.",
+  "buttons": [
+   [
+    "Ver o projeto Calçada",
+    "#projeto",
+    null
+   ],
+   [
+    "Ver as visitas",
+    "#visitas",
+    null
+   ]
+  ]
+ },
+ "learned": [
+  "Sala grande com cozinha aberta, para receber amigos",
+  "Muita luz e casas com carácter",
+  "Obras são bem-vindas, para renovar ao vosso gosto",
+  "Espaço exterior é um grande plus",
+  "Quartos podem ser pequenos",
+  "Perto de Alcântara, Necessidades, Prazeres e Lapa",
+  "Ideal até 633 mil, máximo 800 mil com obras"
+ ],
+ "next_selection": "A próxima seleção chega depois das visitas, com o que aprendi convosco.",
+ "selections": [
+  {
+   "title": "Seleção 1",
+   "meta": "11 de novembro · 4 casas · respondida",
+   "answered": true,
+   "href": "selecao-1/",
+   "imgs": [
+    "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/04/25/85/335413009.jpg",
+    "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9c/2c/41/332085202.jpg",
+    "https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/",
+    "/s/antonio-mafalda-r7k2/img/13.jpg"
+   ],
+   "embed": "selecao-1/",
+   "answers": {
+    "sent": "11 de novembro",
+    "houses": [
+     {
+      "house": "Santos-o-Velho, Madragoa",
+      "reaction": "Não é para nós",
+      "comment": "A casa é gira, mas achamos que falta um bocado de personalidade"
+     },
+     {
+      "house": "Rua do Olival, Lapa",
+      "reaction": "Não é para nós",
+      "comment": "O quarto é demasiado grande, mas a sala é muito gira mas pequena"
+     },
+     {
+      "house": "Travessa da Costa, Estrela",
+      "reaction": "Talvez",
+      "comment": "Gostamos muito da casa, especialmente o espaço exterior e da sala. Os quartos parecem muito pequenos em geral, mas OK"
+     },
+     {
+      "house": "Calçada das Necessidades, Estrela",
+      "reaction": "Adoro",
+      "comment": "Gostamos muito do apartamento, especialmente porque há possibilidade de o podermos renovar à nossa medida e gosto. Dependeria muito do custo esperado das obras, e se o preço da casa seria negociável"
+     }
+    ],
+    "extra": [
+     [
+      "Querem visitar:",
+      "Travessa da Costa e Calçada das Necessidades"
+     ],
+     [
+      "Quando:",
+      "Sábado, 14 de novembro"
+     ]
+    ]
+   }
+  }
+ ],
+ "visits": [
+  {
+   "name": "Calçada das Necessidades",
+   "when": "Sábado, 14 de novembro · 12h30",
+   "addr": "Calçada das Necessidades 42, Estrela",
+   "status": "today",
+   "img": "/s/antonio-mafalda-r7k2/img/13.jpg",
+   "project": "#projeto",
+   "day": "Sáb 14 nov",
+   "time": "12h30",
+   "note": "Encontramo-nos à porta",
+   "with": "Com a Pascale"
+  },
+  {
+   "name": "Travessa da Costa",
+   "when": "Sábado, 14 de novembro · 13h15",
+   "addr": "Travessa da Costa 12, Estrela",
+   "status": "today",
+   "img": "https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/",
+   "day": "Sáb 14 nov",
+   "time": "13h15",
+   "note": "Logo a seguir",
+   "with": "Com a Pascale e o Duarte"
+  }
+ ],
+ "steps": [
+  [
+   "Conhecer-vos",
+   "O que procuram, o orçamento e o crédito, com a Jessica da ComparaJá."
+  ],
+  [
+   "Seleções e visitas",
+   "Escolho casas para vocês, dão a vossa opinião e visitamos as melhores."
+  ],
+  [
+   "Proposta",
+   "Quando encontrarem a casa, preparo convosco a proposta e negocio com o vendedor."
+  ],
+  [
+   "CPCV",
+   "O contrato-promessa de compra e venda, com o sinal. Verificamos antes todos os documentos."
+  ],
+  [
+   "Crédito habitação",
+   "Avaliação bancária e aprovação final do crédito."
+  ],
+  [
+   "Escritura",
+   "A assinatura final e a entrega das chaves. A casa é vossa."
+  ]
+ ],
+ "current_step": 1,
+ "projects": [
+  {
+   "title": "Projeto Calçada das Necessidades",
+   "meta": "Compra, obras e impostos · o custo total e o valor depois · ideias para a planta",
+   "href": "projeto-necessidades/"
+  }
+ ]
+}
