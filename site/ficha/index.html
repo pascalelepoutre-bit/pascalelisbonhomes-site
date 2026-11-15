@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ficha de visita">
+<meta name="theme-color" content="#fffdf9">
+<title>Ficha de visita · Pascale Lepoutre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fffdf9;--card:#fff;--cream:#fcf3e3;--sand:#f2e0c2;--sun:#f7d98b;--gold:#b08429;--ink:#2a2420;--muted:#6f655a;--line:#efe3d0;--ok:#2e7d4f;--red:#c8102e;
+--display:"Syne","Avenir Next",Arial,sans-serif;--body:"Inter",-apple-system,"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body);-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:18px 18px calc(40px + env(safe-area-inset-bottom))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.logo{font:500 17px var(--body);letter-spacing:.12em}.logo i{font-style:normal;color:var(--red)}
+.lang{display:flex;gap:4px}.lang button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font:600 12px var(--body);letter-spacing:.08em;color:var(--muted)}
+.lang button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.steps{display:flex;gap:6px;margin:0 0 18px}.steps span{flex:1;height:4px;border-radius:4px;background:var(--line)}.steps span.on{background:var(--ink)}
+.eyebrow{font:600 11px var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+h1{font:500 30px/1.15 var(--display);margin:0 0 6px}
+h2{font:500 20px/1.2 var(--display);margin:0 0 12px}
+.lead{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin:0 0 16px}
+label.f{display:block;font:600 12px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+input[type=text],input[type=date],input[type=time],input[type=number],textarea{width:100%;font:400 17px var(--body);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin:0 0 14px;-webkit-appearance:none;appearance:none}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--sun);border-color:var(--gold)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.seg button{flex:1;min-width:110px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:13px 14px;font:500 16px var(--body);color:var(--ink)}
+.seg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rate{border-top:1px solid var(--line);padding:14px 0}
+.rate:first-of-type{border-top:0;padding-top:4px}
+.rate b{display:block;font:600 16px var(--body);margin:0 0 8px}
+.scale{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.scale button{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 2px;font:500 12px/1.2 var(--body);color:var(--ink);min-height:52px}
+.scale button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.scale button.on.c5,.scale button.on.c4{background:var(--ok);border-color:var(--ok)}
+.scale button.on.c0,.scale button.on.c1{background:var(--red);border-color:var(--red)}
+.yn{display:flex;gap:10px}.yn button{flex:1;border:1px solid var(--line);background:#fff;border-radius:14px;padding:16px;font:600 18px var(--body)}
+.yn button.on.y{background:var(--ok);color:#fff;border-color:var(--ok)}.yn button.on.n{background:var(--ink);color:#fff;border-color:var(--ink)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--muted);margin:4px 0 14px}
+.consent input{width:26px;height:26px;flex:none;accent-color:var(--ink);margin:0}
+details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor:pointer;font-weight:600}
+.sig{position:relative;border:1.5px dashed var(--gold);border-radius:16px;background:#fff;height:200px;touch-action:none;overflow:hidden}
+.sig canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+.sig .ph{position:absolute;left:0;right:0;bottom:44px;text-align:center;color:#c9b99c;font:500 14px var(--body);pointer-events:none}
+.sig .ln{position:absolute;left:24px;right:24px;bottom:38px;border-bottom:1px solid var(--line);pointer-events:none}
+.sigbar{display:flex;justify-content:space-between;align-items:center;margin:8px 0 14px;font-size:13px;color:var(--muted)}
+.link{background:none;border:0;color:var(--ink);font:600 14px var(--body);text-decoration:underline;padding:6px}
+.btn{display:block;width:100%;border:0;border-radius:999px;padding:18px;font:600 17px var(--body);background:var(--ink);color:#fff;margin:10px 0 0}
+.btn.sun{background:var(--sun);color:var(--ink)}.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.4}
+.err{color:var(--red);font-size:14px;margin:8px 0 0;min-height:1em}
+.sum{font-size:15px}.sum p{margin:2px 0}.sum b{font-weight:600}
+.done{text-align:center;padding:30px 10px}
+.done .tick{width:64px;height:64px;border-radius:50%;background:var(--ok);color:#fff;font-size:34px;display:grid;place-items:center;margin:0 auto 14px}
+.hand{background:var(--cream);border-radius:20px;padding:22px;text-align:center;margin:0 0 16px}
+.hand p{margin:0 0 6px;color:var(--muted)}
+.hide{display:none!important}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:520px){h1{font-size:25px}.scale button{font-size:10.5px;padding:8px 1px}.row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="logo">ENGEL<i>&amp;</i>VÖLKERS</div>
+    <div class="lang"><button data-l="pt" class="on">PT</button><button data-l="en">EN</button></div></div>
+  <div class="steps"><span></span><span></span><span></span><span></span></div>
+
+  <!-- 1 · Pascale: visit details -->
+  <section id="s1">
+    <p class="eyebrow">Ficha de visita · 1 de 4</p>
+    <h1>Dados da visita</h1>
+    <p class="lead">Confirme os dados antes de entregar ao cliente.</p>
+    <div class="card">
+      <div class="row2">
+        <div><label class="f">Data</label><input type="date" id="v_date"></div>
+        <div><label class="f">Hora da visita</label><input type="time" id="v_time"></div>
+      </div>
+      <label class="f">Imóvel, morada</label><input type="text" id="v_addr" placeholder="Rua, n.º, andar, Lisboa">
+      <div class="row2">
+        <div><label class="f">ID do imóvel</label><input type="text" id="v_id" placeholder="W-0…"></div>
+        <div><label class="f">Preço do imóvel, €</label><input type="text" id="v_price" inputmode="numeric" placeholder="595 000"></div>
+      </div>
+      <label class="f">Tipo</label>
+      <div class="seg" id="v_type"><button data-v="Venda" class="on">Venda</button><button data-v="Arrendamento">Arrendamento</button></div>
+      <label class="f">Consultor(es)</label><input type="text" id="v_cons" value="Pascale Lepoutre">
+    </div>
+    <button class="btn" id="go2">Entregar ao cliente →</button>
+  </section>
+
+  <!-- 2 · Client: opinion -->
+  <section id="s2" class="hide">
+    <p class="eyebrow" data-t="e2">Ficha de visita · 2 de 4</p>
+    <h1 data-t="h2">O que achou deste imóvel?</h1>
+    <p class="lead" id="addr2"></p>
+    <div class="card" id="rates"></div>
+    <div class="card">
+      <h2 data-t="buy">Compraria este imóvel?</h2>
+      <div class="yn" id="yn"><button class="y" data-v="Sim" data-t="yes">Sim</button><button class="n" data-v="Não" data-t="no">Não</button></div>
+    </div>
+    <div class="card">
+      <label class="f" data-t="obs">Outras observações</label>
+      <textarea id="obs" data-tp="obsp" placeholder="O que gostou, o que não gostou…"></textarea>
+    </div>
+    <p class="err" id="err2"></p>
+    <button class="btn" id="go3" data-t="next">Seguinte →</button>
+    <button class="btn ghost" id="back1" data-t="back">← Voltar</button>
+  </section>
+
+  <!-- 3 · Client: identification + signature -->
+  <section id="s3" class="hide">
+    <p class="eyebrow" data-t="e3">Ficha de visita · 3 de 4</p>
+    <h1 data-t="h3">Os seus dados e assinatura</h1>
+    <div class="card">
+      <label class="f" data-t="name">Nome completo</label><input type="text" id="c_name" autocomplete="name">
+      <label class="f" data-t="cc">Cartão de Cidadão ou Passaporte n.º</label><input type="text" id="c_cc" autocomplete="off">
+      <label class="consent"><input type="checkbox" id="c_ok"><span data-t="ok">Confirmo que visitei este imóvel através da Engel &amp; Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.</span></label>
+      <details><summary data-t="gdpr">Proteção de dados</summary><p>Responsável: EV MMC Portugal – Mediação Imobiliária Unipessoal, Lda. Propósito: intermediação imobiliária. Legitimação: execução de um contrato. Os dados podem ser partilhados com prestadores de serviços e terceiros envolvidos na transmissão do imóvel, como notários e registos, e comunicados a organismos públicos por obrigação legal. Pode aceder, retificar e eliminar os seus dados. Conservação: sete anos, salvo prazo legal superior. Mais informação: engelvoelkers.com/es-pt/portugal/privacypolicy</p></details>
+      <label class="f" data-t="sigc">Assinatura</label>
+      <div class="sig" id="sigC"><div class="ln"></div><div class="ph" data-t="sighere">Assine aqui com o dedo</div><canvas></canvas></div>
+      <div class="sigbar"><span id="sigCname"></span><button class="link" data-clear="sigC" data-t="clear">Limpar</button></div>
+    </div>
+    <p class="err" id="err3"></p>
+    <button class="btn" id="go4" data-t="give">Concluir e devolver à consultora →</button>
+    <button class="btn ghost" id="back2" data-t="back">← Voltar</button>
+  </section>
+
+  <!-- 4 · Pascale: check + sign -->
+  <section id="s4" class="hide">
+    <div class="hand"><p>Obrigada!</p><b>Pode devolver o telemóvel à consultora.</b></div>
+    <p class="eyebrow">Ficha de visita · 4 de 4</p>
+    <h1>Assinatura da consultora</h1>
+    <div class="card sum" id="sum"></div>
+    <div class="card">
+      <label class="f">Consultor(a)</label>
+      <div class="sig" id="sigP"><div class="ln"></div><div class="ph">Assine aqui</div><canvas></canvas></div>
+      <div class="sigbar"><label class="small"><input type="checkbox" id="keepP" checked> Guardar a minha assinatura neste aparelho</label><button class="link" data-clear="sigP">Limpar</button></div>
+      <label class="f">Proprietário, se presente</label>
+      <div class="sig" id="sigO" style="height:150px"><div class="ln"></div><div class="ph">Opcional</div><canvas></canvas></div>
+      <div class="sigbar"><span></span><button class="link" data-clear="sigO">Limpar</button></div>
+    </div>
+    <p class="err" id="err4"></p>
+    <button class="btn" id="make">Gerar ficha em PDF</button>
+    <button class="btn ghost" id="back3">← Voltar</button>
+  </section>
+
+  <!-- 5 · Done -->
+  <section id="s5" class="hide">
+    <div class="done"><div class="tick">✓</div><h1>Ficha pronta</h1><p class="lead" id="doneTxt">A visita ficou registada. Envie o PDF para o seu email para o carregar no CRM.</p></div>
+    <button class="btn sun" id="share">Enviar o PDF</button>
+    <button class="btn ghost" id="dl">Descarregar o PDF</button>
+    <button class="btn ghost" id="again">Nova ficha</button>
+  </section>
+
+  <form name="ficha-visita" method="POST" data-netlify="true" netlify-honeypot="bot" hidden>
+    <input name="bot"><input name="cliente"><input name="imovel"><input name="visita"><input name="compraria"><input name="respostas">
+  </form>
+</div>
+
+<script src="jspdf.min.js"></script>
+<script>
+(function(){
+var Q=new URLSearchParams(location.search);
+var ITEMS=['Localização','Preço','Áreas','Qualidade Acabamentos','Exposição Solar','Vista'];
+var ITEMS_EN=['Location','Price','Size of rooms','Quality of finishes','Sun exposure','View'];
+var SCALE=['Muito Mau','Mau','Suficiente','Bom','Muito Bom','Excelente'];
+var SCALE_EN=['Very poor','Poor','Fair','Good','Very good','Excellent'];
+var T={pt:{e2:'Ficha de visita · 2 de 4',h2:'O que achou deste imóvel?',buy:'Compraria este imóvel?',yes:'Sim',no:'Não',obs:'Outras observações',obsp:'O que gostou, o que não gostou…',next:'Seguinte →',back:'← Voltar',e3:'Ficha de visita · 3 de 4',h3:'Os seus dados e assinatura',name:'Nome completo',cc:'Cartão de Cidadão ou Passaporte n.º',ok:'Confirmo que visitei este imóvel através da Engel & Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.',gdpr:'Proteção de dados',sigc:'Assinatura',sighere:'Assine aqui com o dedo',clear:'Limpar',give:'Concluir e devolver à consultora →',
+  mRate:'Falta avaliar: ',mBuy:'Responda se compraria o imóvel.',mName:'Escreva o seu nome.',mCC:'Escreva o n.º do Cartão de Cidadão ou Passaporte.',mOk:'Marque a confirmação.',mSig:'Assine no quadro.'},
+ en:{e2:'Viewing form · 2 of 4',h2:'What did you think of this property?',buy:'Would you buy this property?',yes:'Yes',no:'No',obs:'Other comments',obsp:'What you liked, what you didn’t…',next:'Next →',back:'← Back',e3:'Viewing form · 3 of 4',h3:'Your details and signature',name:'Full name',cc:'ID card or passport number',ok:'I confirm I visited this property through Engel & Völkers and I authorise the processing of my data for the real estate brokerage.',gdpr:'Data protection',sigc:'Signature',sighere:'Sign here with your finger',clear:'Clear',give:'Finish and hand back →',
+  mRate:'Still to rate: ',mBuy:'Please say if you would buy it.',mName:'Please write your name.',mCC:'Please write your ID or passport number.',mOk:'Please tick the confirmation.',mSig:'Please sign in the box.'}};
+var L='pt', S={type:'Venda',rates:{},buy:''};
+function $(i){return document.getElementById(i)}
+function show(n){[1,2,3,4,5].forEach(function(k){$('s'+k).classList.toggle('hide',k!==n)});
+  document.querySelectorAll('.steps span').forEach(function(s,i){s.classList.toggle('on',i<Math.min(n,4))});scrollTo(0,0)}
+function today(){var d=new Date();return d.toISOString().slice(0,10)}
+function now(){var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)}
+$('v_date').value=Q.get('d')||today(); $('v_time').value=Q.get('h')||now();
+$('v_addr').value=Q.get('m')||''; $('v_id').value=Q.get('id')||''; $('v_price').value=Q.get('p')||'';
+if(Q.get('c')) $('c_name').value=Q.get('c');
+if(Q.get('t')==='a'){S.type='Arrendamento';segSet('v_type','Arrendamento')}
+function segSet(id,v){document.querySelectorAll('#'+id+' button').forEach(function(b){b.classList.toggle('on',b.dataset.v===v)})}
+document.querySelectorAll('#v_type button').forEach(function(b){b.onclick=function(){S.type=b.dataset.v;segSet('v_type',S.type)}});
+
+function lang(l){L=l;document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
+  document.querySelectorAll('[data-t]').forEach(function(e){var k=e.dataset.t;if(T[l][k])e.textContent=T[l][k]});
+  document.querySelectorAll('[data-tp]').forEach(function(e){e.placeholder=T[l][e.dataset.tp]});
+  buildRates()}
+document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){lang(b.dataset.l)}});
+
+function buildRates(){var h='';ITEMS.forEach(function(it,i){h+='<div class="rate"><b>'+(L==='en'?ITEMS_EN[i]:it)+'</b><div class="scale">';
+  SCALE.forEach(function(s,k){h+='<button class="c'+k+(S.rates[it]===k?' on':'')+'" data-i="'+i+'" data-k="'+k+'">'+(L==='en'?SCALE_EN[k]:s)+'</button>'});h+='</div></div>'});
+  $('rates').innerHTML=h;
+  $('rates').querySelectorAll('button').forEach(function(b){b.onclick=function(){S.rates[ITEMS[+b.dataset.i]]=+b.dataset.k;buildRates()}})}
+buildRates();
+document.querySelectorAll('#yn button').forEach(function(b){b.onclick=function(){S.buy=b.dataset.v;document.querySelectorAll('#yn button').forEach(function(x){x.classList.toggle('on',x===b)})}});
+
+/* signature pads */
+function Pad(id){var box=$(id),c=box.querySelector('canvas'),ctx=c.getContext('2d'),drawing=false,empty=true,last=null,ph=box.querySelector('.ph');
+  function size(){var r=box.getBoundingClientRect(),d=window.devicePixelRatio||1;if(!r.width)return;var img=empty?null:c.toDataURL();
+    c.width=r.width*d;c.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#1d2433';ctx.lineWidth=2.4;
+    if(img){var im=new Image();im.onload=function(){ctx.drawImage(im,0,0,r.width,r.height)};im.src=img}}
+  function pos(e){var r=c.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
+  c.addEventListener('pointerdown',function(e){e.preventDefault();c.setPointerCapture(e.pointerId);drawing=true;last=pos(e);empty=false;ph.style.display='none';ctx.beginPath();ctx.arc(last.x,last.y,1.1,0,7);ctx.fillStyle='#1d2433';ctx.fill()});
+  c.addEventListener('pointermove',function(e){if(!drawing)return;e.preventDefault();var p=pos(e);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p});
+  ['pointerup','pointercancel','pointerleave'].forEach(function(t){c.addEventListener(t,function(){drawing=false})});
+  return {size:size,isEmpty:function(){return empty},
+    clear:function(){ctx.clearRect(0,0,c.width,c.height);empty=true;ph.style.display=''},
+    data:function(){return empty?null:c.toDataURL('image/png')},
+    load:function(src){var im=new Image();im.onload=function(){size();var r=box.getBoundingClientRect();ctx.drawImage(im,0,0,r.width,r.height);empty=false;ph.style.display='none'};im.src=src},
+    ratio:function(){return c.width?c.height/c.width:0.3}}}
+var P={sigC:Pad('sigC'),sigP:Pad('sigP'),sigO:Pad('sigO')};
+document.querySelectorAll('[data-clear]').forEach(function(b){b.onclick=function(){P[b.dataset.clear].clear()}});
+window.addEventListener('resize',function(){for(var k in P)P[k].size()});
+
+$('go2').onclick=function(){$('addr2').textContent=$('v_addr').value;show(2)};
+$('back1').onclick=function(){show(1)};
+$('go3').onclick=function(){var miss=ITEMS.filter(function(it){return S.rates[it]===undefined}).map(function(it){return L==='en'?ITEMS_EN[ITEMS.indexOf(it)]:it});
+  if(miss.length){$('err2').textContent=T[L].mRate+miss.join(', ');return}
+  if(!S.buy){$('err2').textContent=T[L].mBuy;return}
+  $('err2').textContent='';show(3);setTimeout(function(){P.sigC.size()},50)};
+$('back2').onclick=function(){show(2)};
+$('go4').onclick=function(){var e='';if(!$('c_name').value.trim())e=T[L].mName;else if(!$('c_cc').value.trim())e=T[L].mCC;else if(!$('c_ok').checked)e=T[L].mOk;else if(P.sigC.isEmpty())e=T[L].mSig;
+  $('err3').textContent=e;if(e)return;
+  var r=ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('<br>');
+  $('sum').innerHTML='<p><b>'+esc($('c_name').value)+'</b> · '+esc($('v_addr').value)+'</p><p class="small">'+r+'</p><p>Compraria: <b>'+S.buy+'</b></p>'+($('obs').value?'<p class="small">“'+esc($('obs').value)+'”</p>':'');
+  show(4);setTimeout(function(){P.sigP.size();P.sigO.size();try{var s=localStorage.getItem('ficha_sigP');if(s&&P.sigP.isEmpty())P.sigP.load(s)}catch(x){}},60)};
+$('back3').onclick=function(){show(3);setTimeout(function(){P.sigC.size()},50)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+/* PDF in the E&V layout */
+var BLOB=null,FNAME='';
+function fmtDate(d){var p=d.split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:d}
+function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W=210,x0=22,x1=188;
+  function logo(){doc.setFont('helvetica','normal');doc.setFontSize(19);var a='ENGEL',b='&',c='VÖLKERS';var wa=doc.getTextWidth(a),wb=doc.getTextWidth(b),wc=doc.getTextWidth(c),sx=(W-wa-wb-wc)/2;
+    doc.setTextColor(60,60,60);doc.text(a,sx,24);doc.setTextColor(200,16,46);doc.text(b,sx+wa,24);doc.setTextColor(60,60,60);doc.text(c,sx+wa+wb,24);doc.setTextColor(0,0,0)}
+  function foot(n){doc.setFontSize(7.5);doc.setFont('helvetica','normal');doc.text(n+' / 2',W/2,282,{align:'center'});
+    doc.text('EV MMC PORTUGAL – MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA., NIPC 514889748,',W/2,287,{align:'center'});doc.text('Sede social Avenida da Liberdade n.º 196-200, 7.º andar, 1250-147 Lisboa',W/2,291,{align:'center'})}
+  function field(label,val,x,y,w){doc.setFont('helvetica','normal');doc.setFontSize(10.5);doc.text(label,x,y);var lx=x+doc.getTextWidth(label)+1.5;doc.setLineWidth(.2);doc.line(lx,y+1,x+w,y+1);
+    doc.setFont('helvetica','bold');doc.text(String(val||''),lx+1,y-.5,{maxWidth:x+w-lx-1});doc.setFont('helvetica','normal')}
+  function box(x,y,on){doc.setLineWidth(.3);doc.rect(x,y-3.2,3.6,3.6);if(on){doc.setFont('helvetica','bold');doc.text('X',x+.6,y-.1);doc.setFont('helvetica','normal')}}
+  logo();doc.setFont('helvetica','bold');doc.setFontSize(11.5);doc.text('FICHA DE VISITA',W/2,44,{align:'center'});
+  var y=58;field('Data:',fmtDate($('v_date').value),x0,y,60);field('Hora da visita:',$('v_time').value,x0+70,y,52);
+  y+=12;field('Potencial Comprador/Arrendatário:',$('c_name').value,x0,y,x1-x0);
+  y+=8;field('Cartão de Cidadão/Passaporte n.º :',$('c_cc').value,x0,y,105);
+  y+=12;doc.setFontSize(10.5);box(x0+2,y,S.type==='Venda');doc.text('Venda',x0+8,y);y+=7;box(x0+2,y,S.type==='Arrendamento');doc.text('Arrendamento',x0+8,y);
+  y+=12;var lab='Foi efectuada, nesta data, visita ao imóvel sito na';doc.text(lab,x0,y);var lx=x0+doc.getTextWidth(lab)+1.5;doc.line(lx,y+1,x1,y+1);
+  var addr=$('v_addr').value,a1=doc.splitTextToSize(addr,x1-lx-2);doc.setFont('helvetica','bold');doc.text(a1[0]||'',lx+1,y-.5);
+  y+=8;doc.line(x0,y+1,x0+84,y+1);if(a1.length>1)doc.text(doc.splitTextToSize(a1.slice(1).join(' '),82)[0],x0+1,y-.5);doc.setFont('helvetica','normal');
+  doc.text('através da',x0+87,y);doc.setFont('helvetica','bold');doc.text('EV MMC PORTUGAL –',x0+106,y);y+=7;doc.text('MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA',x0,y);doc.setFont('helvetica','normal');doc.text('.',x0+doc.getTextWidth('MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA')+3,y);
+  y+=10;field('ID do Imóvel:',$('v_id').value,x0,y,58);field('Preço do Imóvel:',$('v_price').value,x0+70,y,56);doc.text('€',x0+128,y);
+  y+=12;doc.text('A preencher pelo potencial comprador/arrendatário (marcar com um X s.f.f.):',x0,y);
+  /* table */
+  y+=4;var cw=[47,19.5,19.5,22,19.5,19.5,19.5],hx=[x0];cw.forEach(function(w,i){hx.push(hx[i]+w)});var hh=12,rh=7.6;
+  doc.setLineWidth(.3);doc.rect(x0,y,hx[7]-x0,hh+rh*6);
+  for(var i=1;i<7;i++)doc.line(hx[i],y,hx[i],y+hh+rh*6);
+  doc.line(x0,y+hh,hx[7],y+hh);for(var r=1;r<6;r++)doc.line(x0,y+hh+rh*r,hx[7],y+hh+rh*r);
+  doc.setFontSize(9.5);var heads=[['Muito','Mau'],['Mau'],['Suficiente'],['Bom'],['Muito','Bom'],['Excelente']];
+  heads.forEach(function(h,k){var cx=(hx[k+1]+hx[k+2])/2;if(h.length===2){doc.text(h[0],cx,y+5,{align:'center'});doc.text(h[1],cx,y+9.5,{align:'center'})}else doc.text(h[0],cx,y+7.3,{align:'center'})});
+  ITEMS.forEach(function(it,r){var yy=y+hh+rh*r;doc.setFont('helvetica','bold');doc.setFontSize(9.8);doc.text(it,x0+1.5,yy+5.2);doc.setFont('helvetica','normal');
+    var k=S.rates[it];if(k!==undefined){doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('X',(hx[k+1]+hx[k+2])/2,yy+5.4,{align:'center'});doc.setFont('helvetica','normal')}});
+  y+=hh+rh*6+11;doc.setFontSize(10.5);doc.text('Compraria / arrendaria este imóvel?',x0,y);box(x0+72,y,S.buy==='Sim');doc.text('Sim',x0+78,y);box(x0+112,y,S.buy==='Não');doc.text('Não',x0+118,y);
+  y+=9;doc.text('Outras observações:',x0,y);var ox=x0+doc.getTextWidth('Outras observações:')+1.5;doc.line(ox,y+1,x1,y+1);
+  var ol=doc.splitTextToSize($('obs').value||'',x1-x0-2);doc.setFont('helvetica','bold');doc.setFontSize(10);
+  var first=doc.splitTextToSize($('obs').value||'',x1-ox-2);doc.text(first[0]||'',ox+1,y-.5);var rest=($('obs').value||'').slice((first[0]||'').length).trim();
+  var more=rest?doc.splitTextToSize(rest,x1-x0-2).slice(0,2):[];doc.setFont('helvetica','normal');
+  for(var m=0;m<2;m++){y+=8;doc.line(x0,y+1,x1,y+1);if(more[m]){doc.setFont('helvetica','bold');doc.text(more[m],x0+1,y-.5);doc.setFont('helvetica','normal')}}
+  /* signatures */
+  var sy=y+24,sw=[44,52,44],sx=[x0,x0+60,x1-44];
+  function sig(img,x,w,ratio){if(!img)return;var h=Math.min(w*ratio,20);doc.addImage(img,'PNG',x,sy-h-1,w,h,undefined,'FAST')}
+  sig(P.sigP.data(),sx[0],sw[0],P.sigP.ratio());sig(P.sigC.data(),sx[1],sw[1],P.sigC.ratio());sig(P.sigO.data(),sx[2],sw[2],P.sigO.ratio());
+  doc.setLineWidth(.2);sx.forEach(function(x,i){doc.line(x,sy,x+sw[i],sy)});doc.setFontSize(9.5);
+  doc.text('Consultor(es) Imobiliário(s)',sx[0]+sw[0]/2,sy+5,{align:'center'});doc.text('Potencial Comprador/Arrendatário',sx[1]+sw[1]/2,sy+5,{align:'center'});doc.text('Proprietário',sx[2]+sw[2]/2,sy+5,{align:'center'});
+  doc.setFontSize(8.5);doc.setTextColor(110,101,90);doc.text($('v_cons').value,sx[0]+sw[0]/2,sy+9.5,{align:'center'});doc.setTextColor(0,0,0);
+  foot(1);
+  /* page 2 GDPR */
+  doc.addPage();logo();doc.setFont('helvetica','bolditalic');doc.setFontSize(11);doc.setTextColor(200,16,46);doc.text('INFORMAÇÕES BÁSICAS SOBRE PROTEÇÃO DE DADOS',W/2,52,{align:'center'});doc.setTextColor(0,0,0);
+  var tx=x0-4,tw=x1-x0+8,ty=62;doc.setFont('helvetica','bold');doc.setFontSize(9.8);
+  var intro=doc.splitTextToSize('Informações básicas sobre proteção de dados: os dados pessoais recolhidos no âmbito do presente formulário serão tratados pela EV MMC PORTUGAL (Responsável pelo Tratamento), nos termos e de acordo com os limites decorrentes da autorização para tratamento conferida pela Lei n.º 83/2017 de 18 de agosto e no âmbito da alínea c) do n.º 1 do artigo 6.º do Regulamento Geral de Proteção de Dados (“RGDP”).',tw-4);
+  var ih=intro.length*4.6+4;doc.rect(tx,ty,tw,ih);doc.text(intro,tx+2,ty+5);ty+=ih;
+  var rows=[['Responsável','EV MMC PORTUGAL – MEDIAÇÃO IMOBILIÁRIA UNIPESSOAL, LDA.',1],['Propósito','Intermediação Imobiliária'],['Legitimação','Execução de um contrato'],
+   ['Destinatários','Em determinados casos, o acesso aos seus dados irá ser facilitado a fornecedores, responsáveis pelo processamento, que prestam serviços à nossa empresa. Poderão também ter acesso aos seus dados terceiros envolvidos no processo de transmissão de propriedades, como notários, gerentes ou registos, entre outros. Os dados poderão ser comunicados aos organismos públicos por obrigação legal.'],
+   ['Direitos','Aceder, retificar e eliminar dados, bem como outros direitos, conforme explicado nas informações adicionais. https://www.engelvoelkers.com/pt-pt/lisboa/arco/'],
+   ['Prazo e conservação','Sete anos, sem prejuízo da sua conservação por período superior, sempre que tal seja determinado por lei'],
+   ['Informação adicional','Veja a informação adicional em: https://www.engelvoelkers.com/es-pt/portugal/privacypolicy/']];
+  var c1=58;rows.forEach(function(rw){doc.setFont('helvetica',rw[2]?'bold':'normal');doc.setFontSize(9.5);var lines=doc.splitTextToSize(rw[1],tw-c1-4),h=Math.max(lines.length*4.4+3,7.5);
+    doc.rect(tx,ty,c1,h);doc.rect(tx+c1,ty,tw-c1,h);doc.text(lines,tx+c1+2,ty+5);doc.setFont('helvetica','bold');doc.text(rw[0],tx+2,ty+h/2+1.5);ty+=h});
+  doc.setFont('helvetica','normal');doc.setFontSize(11);doc.text('Assinatura do cliente:',x0,ty+28);
+  var cs=P.sigC.data();if(cs){var h2=Math.min(70*P.sigC.ratio(),24);doc.addImage(cs,'PNG',x0,ty+52-h2,70,h2,undefined,'FAST')}doc.line(x0,ty+53,x0+75,ty+53);
+  doc.setFontSize(8.5);doc.setTextColor(110,101,90);doc.text($('c_name').value+' · consentimento confirmado digitalmente a '+fmtDate($('v_date').value),x0,ty+58);doc.setTextColor(0,0,0);
+  foot(2);
+  return doc}
+
+$('make').onclick=function(){if(P.sigP.isEmpty()){$('err4').textContent='Assine como consultora.';return}$('err4').textContent='';
+  try{if($('keepP').checked)localStorage.setItem('ficha_sigP',P.sigP.data());else localStorage.removeItem('ficha_sigP')}catch(x){}
+  var doc=makePdf();BLOB=doc.output('blob');
+  var nm=$('c_name').value.trim().replace(/\s+/g,'_').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^\w-]/g,'');
+  var ad=$('v_addr').value.split(',')[0].trim().replace(/\s+/g,'_').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^\w-]/g,'');
+  FNAME='Ficha_visita_'+$('v_date').value+'_'+nm+'_'+ad+'.pdf';
+  /* record without the ID number */
+  var f=document.forms['ficha-visita'],fd=new URLSearchParams();fd.append('form-name','ficha-visita');fd.append('bot','');
+  fd.append('cliente',$('c_name').value);fd.append('imovel',$('v_addr').value+($('v_id').value?' · '+$('v_id').value:'')+($('v_price').value?' · '+$('v_price').value+' €':''));
+  fd.append('visita',fmtDate($('v_date').value)+' '+$('v_time').value+' · '+S.type);fd.append('compraria',S.buy);
+  fd.append('respostas',ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('\n')+'\nCompraria: '+S.buy+'\nObservações: '+($('obs').value||'—')+'\nAssinada pelo cliente: sim'+(P.sigO.isEmpty()?'':'\nAssinada pelo proprietário: sim'));
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()}).catch(function(){});
+  show(5)};
+$('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{type:'application/pdf'});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:FNAME}).catch(function(){})}else download()};
+function download(){var u=URL.createObjectURL(BLOB),a=document.createElement('a');a.href=u;a.download=FNAME;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1000)}
+$('dl').onclick=download;
+$('again').onclick=function(){location.href=location.pathname+location.search};
+show(1);
+})();
+</script>
+</body>
+</html>
