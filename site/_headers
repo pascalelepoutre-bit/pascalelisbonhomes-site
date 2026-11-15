@@ -14,3 +14,6 @@
   X-Robots-Tag: noindex, nofollow
 /ficha/*
   X-Robots-Tag: noindex, nofollow
+/s/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Referrer-Policy: no-referrer
