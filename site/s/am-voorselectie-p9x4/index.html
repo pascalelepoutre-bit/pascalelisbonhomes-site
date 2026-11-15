@@ -70,7 +70,7 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .react{border-top:1px solid var(--line);padding-top:14px}.rq{margin:0 0 8px;font-weight:500}
 .final .vis label{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:#fff;cursor:pointer}
 .final .vis input{width:20px;height:20px;accent-color:var(--gold)}
-.sum{list-style:none;padding:0;margin:0 0 14px}.sum li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.sum em{font-style:normal;color:var(--muted)}
+.sum{list-style:none;padding:0;margin:0 0 14px}.sum li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}.sum em{white-space:nowrap;flex:none;font-style:normal;color:var(--muted)}
 .send{display:block;width:100%;margin-top:14px;font:500 14px var(--display);letter-spacing:.14em;text-transform:uppercase;padding:16px;border:0;border-radius:999px;background:var(--ink);color:#fff;cursor:pointer}.send[aria-busy="true"]{opacity:.6}
 .ty{margin-top:6px}.ty-head{display:flex;gap:20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
 .ty-photo{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center;flex:none;border:3px solid var(--sun)}
@@ -134,6 +134,7 @@ textarea[rows="1"]{min-height:42px}
 .pbanner{background:var(--ink);color:#fff;text-align:center;padding:9px 14px;font:600 13px var(--body);letter-spacing:.04em}
 .rbar{flex-wrap:wrap}
 .pcap{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}
+.sum em{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}.sum em.v-yes{background:#e3f1e8;color:var(--ok)}.sum em.v-mid{background:#fbefc9;color:#8a6516}.sum em.v-no{background:#f8dfe2;color:var(--red)}.sum em.v-none{background:var(--cream);color:var(--muted)}
 </style></head><body>
 <div class="pbanner">Jouw tool · voorselectie voor António &amp; Mafalda · niet naar de klant sturen</div>
 <div class="wrap">
@@ -497,7 +498,7 @@ window.addEventListener('resize',()=>{place();});
 function syncBar(){const h=steps[cur];if(!h.classList.contains('house'))return;const v=val(h.querySelector('.btns'));rbar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===v)));}
 rbar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{const h=steps[cur];h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===b.dataset.v)));syncBar();save();}));
 const val=b=>(b&&b.querySelector('[aria-pressed="true"]')||{}).dataset?.v||'';
-function summary(){const ul=document.getElementById('sum');ul.textContent='';houses.forEach(h=>{const li=document.createElement('li');li.innerHTML='<span></span><em></em>';li.firstChild.textContent=h.dataset.name;li.lastChild.textContent=val(h.querySelector('.btns'))||'geen keuze';ul.appendChild(li);});}
+function summary(){const ul=document.getElementById('sum');ul.textContent='';houses.forEach(h=>{const li=document.createElement('li');li.innerHTML='<span></span><em></em>';li.firstChild.textContent=h.dataset.name;li.lastChild.textContent=val(h.querySelector('.btns'))||'geen keuze';{const v=val(h.querySelector('.btns'));li.lastChild.className=/Voorstellen|Adoro/.test(v)&&!/Niet/.test(v)?'v-yes':/Twijfel|Talvez/.test(v)?'v-mid':/Niet|Não/.test(v)?'v-no':'v-none';}ul.appendChild(li);});}
 function text(){const L=['VOORSELECTIE door Pascale, ronda 2:'];
  const pv=val(document.getElementById('pBtns')),pt=document.getElementById('pTxt').value.trim();L.push('Perfil: '+(pv||'sem resposta')+(pt?' · '+pt:''));
  houses.forEach(h=>{const t=h.querySelector('textarea').value.trim();L.push(h.dataset.name+': '+(val(h.querySelector('.btns'))||'geen keuze')+(t?' · '+t:''));});
