@@ -41,7 +41,7 @@ ALTS = {
     'Maiz do Mar': ('maiz-do-mar', 'Ceviche with toasted corn at Maiz do Mar, Mexican fusion restaurant in Lisbon'),
     'Clube de Jornalistas': ('clube-de-jornalistas', 'The garden terrace of Clube de Jornalistas restaurant, Lapa, Lisbon'),
     'Baraza Yoga': ('baraza-yoga', 'The yoga room at Baraza Yoga, Lisbon'),
-    'mvmt.studio': ('mvmt-studio', 'Inside mvmt.studio, movement classes in Lisbon'),
+    'mvmt.studio': ('mvmt-studio-2', 'Inside mvmt.studio, movement classes in Lisbon'),
     'Museu do Oriente': ('museu-do-oriente', 'Museu do Oriente logo, Fundação Oriente, Lisbon'),
     'Silvia Dias': ('silvia-dias-cabeleireiros', 'Silvia in her salon, Silvia Dias Cabeleireiros, Lisbon'),
     'From my home to Belém': ('sunrise-run-maat-lisbon', 'Sunrise run along the river by MAAT, with the 25 de Abril bridge, Lisbon'),
