@@ -7,7 +7,7 @@ from PIL import Image
 SRC = '/home/claude/pascale-site.html'
 OUT = '/home/claude/site'
 DOMAIN = 'https://pascalelisbonhomes.com'
-TODAY = '2026-11-10'
+TODAY = '2026-11-19'
 
 t = open(SRC, encoding='utf-8').read()
 shutil.rmtree(OUT, ignore_errors=True)
@@ -43,6 +43,7 @@ ALTS = {
     'Baraza Yoga': ('baraza-yoga', 'The yoga room at Baraza Yoga, Lisbon'),
     'mvmt.studio': ('mvmt-studio', 'Inside mvmt.studio, movement classes in Lisbon'),
     'Museu do Oriente': ('museu-do-oriente', 'Museu do Oriente logo, Fundação Oriente, Lisbon'),
+    'Silvia Dias': ('silvia-dias-cabeleireiros', 'Silvia in her salon, Silvia Dias Cabeleireiros, Lisbon'),
     'From my home to Belém': ('sunrise-run-maat-lisbon', 'Sunrise run along the river by MAAT, with the 25 de Abril bridge, Lisbon'),
     'O Melhor Bolo': ('o-melhor-bolo-de-chocolate', 'A slice of O Melhor Bolo de Chocolate do Mundo on Lisbon calçada, Campo de Ourique'),
     'Garden of the Museu': ('museu-arte-antiga-garden', 'Jacarandas in bloom in the garden of the Museu Nacional de Arte Antiga, Lapa, Lisbon'),
@@ -378,7 +379,7 @@ open(f'{OUT}/robots.txt', 'w').write(robots)
 
 # Google Search Console verification file
 open(f'{OUT}/google8c8b8ec375dc62f8.html', 'w').write('google-site-verification: google8c8b8ec375dc62f8.html')
-open(f'{OUT}/_headers', 'w').write('/*\n  X-Frame-Options: SAMEORIGIN\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Strict-Transport-Security: max-age=31536000\n/img/*\n  Cache-Control: public, max-age=31536000, immutable\n/*.css\n  Cache-Control: public, max-age=86400\n/*.js\n  Cache-Control: public, max-age=86400\n/s/*\n  X-Robots-Tag: noindex, nofollow\n')
+open(f'{OUT}/_headers', 'w').write('/*\n  X-Frame-Options: SAMEORIGIN\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Strict-Transport-Security: max-age=31536000\n/img/*\n  Cache-Control: public, max-age=31536000, immutable\n/*.css\n  Cache-Control: public, max-age=86400\n/*.js\n  Cache-Control: public, max-age=86400\n/s/*\n  X-Robots-Tag: noindex, nofollow\n/ficha/*\n  X-Robots-Tag: noindex, nofollow\n/s/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n  Referrer-Policy: no-referrer\n')
 
 print('built', sorted(os.listdir(OUT)))
 for root, _, files in os.walk(OUT):

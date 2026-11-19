@@ -309,7 +309,7 @@ $('make').onclick=function(){if(P.sigP.isEmpty()){$('err4').textContent='Assine 
   fd.append('cliente',$('c_name').value);fd.append('imovel',$('v_addr').value+($('v_id').value?' · '+$('v_id').value:'')+($('v_price').value?' · '+$('v_price').value+' €':''));
   fd.append('visita',fmtDate($('v_date').value)+' '+$('v_time').value+' · '+S.type);fd.append('compraria',S.buy);
   fd.append('respostas',ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('\n')+'\nCompraria: '+S.buy+'\nObservações: '+($('obs').value||'—')+'\nAssinada pelo cliente: sim'+(P.sigO.isEmpty()?'':'\nAssinada pelo proprietário: sim'));
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()}).catch(function(){});
+  (function(){var o={access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Ficha de visita'};fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot')o[k]=v});return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)})})().catch(function(){});
   show(5)};
 $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{type:'application/pdf'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:FNAME}).catch(function(){})}else download()};

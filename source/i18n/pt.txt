@@ -78,7 +78,7 @@
 94|Vou ver a sua casa e ouvir os seus planos e o seu calendário.
 95|Preços reais de venda na zona, sem compromisso. Quem decide o preço é você.
 96|Documentos e contrato
-97|Se decidir vender, acompanho-o em cada documento e assinamos o contrato de mediação.
+97|Verifico primeiro todos os documentos: certificado energético válido, caderneta predial e certidão permanente. Quando surge uma proposta, avançamos logo, sem perder semanas com papéis.
 98|Lançamento premium
 99|Fotografias profissionais e depois a sua casa nos principais sites imobiliários em Portugal e na rede mundial da Engel &amp; Völkers. Verifico cada comprador antes de uma visita.
 100|Da proposta à escritura
@@ -352,7 +352,7 @@
 400|Visitas, um só contacto
 401|Eu trato com os outros agentes, marco as suas visitas e verifico os documentos primeiro. Às vezes sei de uma casa antes de ela aparecer online.
 402|Até ter as chaves na mão
-403|Dou-lhe uma visão clara de todos os custos e um preço de oferta bem fundamentado, negoceio as condições, verifico cada documento com o advogado e fico consigo até à escritura.
+403|Dou-lhe uma visão clara de todos os custos e um preço de oferta bem fundamentado, negoceio as condições, verifico cada documento com o advogado e fico consigo até à escritura. Penso sempre à frente: soluções, não surpresas.
 404|"Para encontrar a minha casa em Lisboa fiz quase 40 visitas. Conheço o entusiasmo e as dúvidas, e gostava muito de lhe facilitar o caminho."
 405|Custos de compra
 406|Quanto vai custar realmente?
@@ -733,3 +733,11 @@
 890|Em Portugal, as casas são descritas pelo número de quartos. Um T0 é um estúdio, um T1 tem um quarto, um T2 tem dois, e assim por diante. Um T2+1 tem uma divisão extra que não conta oficialmente como quarto, por exemplo porque não tem janela. Muitas vezes é usada como escritório ou closet.
 891|Ler mais
 892|Ler menos
+893|Que área é usada para o preço por m²?
+894|Em Portugal, a área oficial de uma casa é a área bruta privativa. É a área total medida pelo exterior das paredes, e é a que consta da caderneta predial. Por isso, os preços por m² baseiam-se normalmente nela. A área útil conta apenas o chão das divisões, por dentro das paredes, por isso é sempre menor. A diferença é maior nos prédios antigos, com paredes grossas. Ao comparar casas, confirme sempre de que área se trata.
+895|Penso como o comprador: antecipo todas as perguntas e chego com soluções para documentos, custos e obras.
+896|Site
+
+@|Hairdresser|Cabeleireiro
+@|My hairdresser in the neighbourhood. Silvia has had her salon here for many years, she always finds a spot for me at the last minute, and she's always in a good mood. Most of her clients are locals, and that says it all.|A minha cabeleireira no bairro. A Silvia tem o seu salão aqui há muitos anos, arranja-me sempre uma vaga à última hora e está sempre bem-disposta. A maioria das clientes são do bairro, e isso diz tudo.
+@|Silvia in her salon, Silvia Dias Cabeleireiros, Lisbon|A Silvia no seu salão, Silvia Dias Cabeleireiros, Lisboa

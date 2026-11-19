@@ -41,12 +41,18 @@ function markPins(){document.querySelectorAll('.m-pin').forEach(g=>{const tb=doc
 document.querySelectorAll('[role="tab"]').forEach(x=>x.addEventListener('click',markPins));markPins();
 
 
+const W3F_KEY='4947213d-2aed-426f-ae63-a5d337eceac8';
+function w3f(f){const fd=new FormData(f);const o={};fd.forEach((v,k)=>{if(v instanceof File)return;if(k in o)o[k]+=', '+v;else o[k]=v;});
+ if(o['bot-field']||o['bot'])return Promise.resolve({ok:true});delete o['bot-field'];delete o['bot'];
+ const n=o['form-name']||f.getAttribute('name')||'form';delete o['form-name'];
+ o.access_key=W3F_KEY;o.subject='Website: '+n+(o.name||o.Name?' · '+(o.name||o.Name):'');o.from_name='pascalelisbonhomes.com';if(o.Email||o.email)o.replyto=o.Email||o.email;o.page=location.pathname;
+ return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)}).then(r=>r.json().then(j=>({ok:r.ok&&j.success})));}
 const nf=document.getElementById('news-form');
 if(nf){nf.addEventListener('submit',e=>{e.preventDefault();if(!nf.checkValidity()){nf.reportValidity();return;}
   const done=()=>{nf.querySelector('.news-done').hidden=false;nf.querySelector('.news-row').hidden=true;const c=nf.querySelector('.consent');if(c)c.hidden=true;};
   const preview=/claude/.test(location.hostname)||location.protocol==='file:';if(preview){done();return;}
   const btn=nf.querySelector('button');btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(nf)).toString()})
+  w3f(nf)
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;const d=nf.querySelector('.news-done');d.hidden=false;d.textContent=''+tr('Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225')+'';});});}
 
@@ -66,7 +72,7 @@ if(rf){rf.addEventListener('submit',e=>{e.preventDefault();if(!rf.checkValidity(
   const done=()=>{[...rf.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(rf)).toString()})
+  w3f(rf)
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent=''+tr('Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225')+'';});});}
 
@@ -78,7 +84,7 @@ if(rf){rf.addEventListener('submit',e=>{e.preventDefault();if(!rf.checkValidity(
   const done=()=>{[...f.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',f.enctype==='multipart/form-data'?{method:'POST',body:new FormData(f)}:{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+  w3f(f)
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent=''+tr('Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225')+'';});});});
 
@@ -128,7 +134,7 @@ if(mf){mf.addEventListener('submit',e=>{e.preventDefault();if(!mf.checkValidity(
   const done=()=>{[...mf.children].forEach(c=>{if(c!==d&&c.type!=='hidden')c.hidden=true;});d.hidden=false;try{d.scrollIntoView({block:'center',behavior:'smooth'})}catch(_){}};
   if(/claude/.test(location.hostname)||location.protocol==='file:'){done();return;}
   btn.disabled=true;
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(mf)).toString()})
+  w3f(mf)
    .then(r=>{if(!r.ok)throw 0;done();})
    .catch(()=>{btn.disabled=false;d.hidden=false;d.textContent=''+tr('Sorry, that did not go through. Please send me a message on WhatsApp: +351 920 609 225')+'';});});}
 

@@ -189,7 +189,7 @@ document.getElementById('vclose').onclick=()=>vd.close();
 function pick(k){const b=vd.querySelector('.opts[data-k="'+k+'"] [aria-pressed="true"]');return b?b.textContent:'sem resposta';}
 document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
  const txt='Visita: '+v.name+' · '+v.when+'\nNo geral: '+pick('geral')+'\nComentário: '+(vt.value.trim()||'—')+'\nPreço: '+pick('preco')+'\nE agora: '+pick('passo')+'\n'+CLIENT;
- try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({'form-name':'visit-feedback','cliente':CLIENT,'visita':v.name,'opiniao':txt}).toString()});if(!r.ok)throw 0;
+ try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(Object.assign({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Client page feedback'},{'form-name':'visit-feedback','cliente':CLIENT,'visita':v.name,'opiniao':txt}))});if(!r.ok)throw 0;
   document.getElementById('vok').hidden=false;document.getElementById('vsend').hidden=true;}
  catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(txt);}};
 </script></body></html>

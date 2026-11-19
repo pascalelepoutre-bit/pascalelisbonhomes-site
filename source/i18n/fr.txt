@@ -4,7 +4,7 @@
 4|Quartiers
 5|Marché
 6|À vendre
-7|Ma Lisbonne
+7|Mon Lisbonne
 8|Questions
 9|Prendre rendez-vous
 10|Votre conseillère immobilière à Lisbonne
@@ -76,7 +76,7 @@
 94|Je viens voir votre bien et j’écoute vos projets et votre calendrier.
 95|Les vrais prix de vente dans le quartier, sans engagement. C’est vous qui décidez du prix.
 96|Documents &amp; mandat
-97|Si vous décidez de vendre, je vous guide pour chaque document et nous signons le mandat.
+97|Je vérifie d’abord tous les documents : certificat énergétique valide, caderneta predial et certidão permanente. Quand une offre arrive, on avance vite, sans perdre des semaines en papiers.
 98|Lancement premium
 99|Des photos professionnelles, puis votre bien sur les principaux sites immobiliers au Portugal et le réseau mondial Engel &amp; Völkers. Je vérifie chaque acheteur avant une visite.
 100|De l’offre à l’acte de vente
@@ -350,7 +350,7 @@
 400|Les visites, un seul contact
 401|Je relance les autres agents, j’organise vos visites et je vérifie d’abord les documents. Parfois, j’entends parler d’un bien avant qu’il soit en ligne.
 402|Jusqu’à la remise des clés
-403|Je vous donne une vue claire de tous les coûts et un prix d’offre bien fondé, je négocie les conditions, je vérifie chaque document avec l’avocat et je reste à vos côtés jusqu’à l’acte.
+403|Je vous donne une vue claire de tous les coûts et un prix d’offre bien fondé, je négocie les conditions, je vérifie chaque document avec l’avocat et je reste à vos côtés jusqu’à l’acte. Je pense toujours un coup d’avance : des solutions, pas de surprises.
 404|« Pour trouver mon propre logement à Lisbonne, j’ai fait près de 40 visites. Je connais l’excitation et les doutes, et j’aimerais vous rendre les choses plus faciles. »
 405|Frais d’achat
 406|Combien cela va-t-il vraiment coûter ?
@@ -732,3 +732,11 @@
 890|Au Portugal, les logements sont décrits par leur nombre de chambres. Un T0 est un studio, un T1 a une chambre, un T2 deux, et ainsi de suite. Un T2+1 a une pièce en plus qui ne compte pas officiellement comme chambre, par exemple parce qu'elle n'a pas de fenêtre. Elle sert souvent de bureau ou de dressing.
 891|Lire la suite
 892|Réduire
+893|Quelle surface est utilisée pour le prix au m² ?
+894|Au Portugal, la surface officielle d'un logement est l'área bruta privativa. C'est la surface totale mesurée à l'extérieur des murs, et c'est celle qui figure sur la caderneta predial. C'est pourquoi les prix au m² se basent généralement sur elle. L'área útil ne compte que le sol des pièces, à l'intérieur des murs : elle est donc toujours plus petite. La différence est la plus grande dans les immeubles anciens aux murs épais. Quand vous comparez des biens, vérifiez toujours de quelle surface il s'agit.
+895|Je pense comme l’acheteur : j’anticipe chaque question et j’arrive avec des solutions pour les documents, les coûts et les travaux.
+896|Site web
+
+@|Hairdresser|Coiffeuse
+@|My hairdresser in the neighbourhood. Silvia has had her salon here for many years, she always finds a spot for me at the last minute, and she's always in a good mood. Most of her clients are locals, and that says it all.|Ma coiffeuse de quartier. Silvia a son salon ici depuis de nombreuses années, elle me trouve toujours une place à la dernière minute et elle est toujours de bonne humeur. La plupart de ses clientes sont du quartier, et ça dit tout.
+@|Silvia in her salon, Silvia Dias Cabeleireiros, Lisbon|Silvia dans son salon, Silvia Dias Cabeleireiros, Lisbonne
