@@ -240,3 +240,23 @@ for h in HOUSES:
     if h['id']=='olival': h['ppm']='€/m² a confirmar'
 for h in HOUSES:
     if h['id']=='olival': h['agency']='RE/MAX Telheiras · agente 969 003 714'
+
+# 19/11 weekly screening: new house
+_B7=dict(id='boahora7',name='Calçada da Boa Hora 7, Junqueira',price='795 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 128 m² · 2.º andar · varanda com vista rio',
+  photos=[IDL+x for x in ['db/4b/f2/333736704.jpg','d7/8f/ec/333736500.jpg','9e/ee/86/333736555.jpg','cf/f3/14/333736642.jpg','1a/6e/2b/333736703.jpg','7c/f3/a5/333736503.jpg','e6/f1/6e/333736641.jpg','03/e5/cb/333736502.jpg']],
+  caps=['Sala','Varanda com vista rio','Cozinha','Cozinha aberta para a sala','Sala','Sala de jantar','Quarto','Vista'],
+  link='https://www.idealista.pt/imovel/35449911/',
+  why=['Tetos altos, soalho de madeira e detalhes originais, renovado em 2020 com cuidado.','Sala grande e luminosa, com a cozinha integrada por portas de correr: aberta ou fechada, como quiserem.','Varanda ampla com vista sobre o rio, o MAAT e a ponte, numa rua calma perto de Belém e do comboio.'],
+  fit=[('ok','Pé-direito alto e carácter'),('ok','Cozinha semiaberta para a sala'),('ok','3 quartos, 2 casas de banho'),('mid','795 000 € sem obras: no limite do orçamento')],
+  note='Venda direta do proprietário, que pede para não ser contactado por agências: confirmo primeiro se aceita trabalhar comigo. 2.º andar sem elevador. Planta a pedir.',
+  facts=[('Área','128 m² área bruta'),('Quartos','3'),('Casas de banho','2'),('Piso','2.º, sem elevador'),('Exterior','Varanda com vista rio'),('Estado','Renovado em 2020'),('Planta','Planta a pedir ao proprietário.')],
+  maps='Calçada da Boa Hora 7, Lisboa')
+HOUSES.append(_B7)
+GEO.update(boahora7=(38.69985,-9.19195)); AREA.update(boahora7=128); AG.update(boahora7='Particular · Dimi, via Idealista')
+for h in HOUSES:
+    if h['id']=='boahora7':
+        h['geo']=GEO['boahora7'];h['agency']=AG['boahora7'];h['ppm']=f"{round(795000/128):,}".replace(',',' ')+' €/m²'
+    if h['id']=='algesrio':
+        h['price']='640 000 €';h['ppm']=f"{round(640000/137):,}".replace(',',' ')+' €/m²'
+        h['fit']=[('ok','Vista rio e luz'),('ok','3 quartos, 2 casas de banho'),('mid','Cozinha fechada'),('mid','Rua com muito trânsito')]

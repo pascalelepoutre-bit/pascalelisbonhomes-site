@@ -14,7 +14,9 @@ if KEEP:
     order=KEEP.split(',');HOUSES=sorted([h for h in HOUSES if h['id'] in order],key=lambda h:order.index(h['id']))
 for i,h in enumerate(HOUSES): h['n']=i+1
 MARKET={'casimiro':'Op de markt: volgens de advertentie beschikbaar sinds mei 2026, laatste update 7/10. Al een half jaar te koop: ruimte om te onderhandelen.',
- 'boavista':'Op de markt: laatste update 2/10. Prijshistoriek nog niet zichtbaar.'}
+ 'boavista':'Op de markt: laatste update 2/10. Prijshistoriek nog niet zichtbaar.',
+ 'algesrio':'Op de markt: gezien sinds 15/11. Prijs gezakt van 660 000 € naar 640 000 € (19/11).',
+ 'boahora7':'Op de markt: gezien op 19/11, rond 13/11 op Idealista gezet, laatste update 18/11. Particuliere verkoper, wil geen makelaars: eerst vragen of hij met mij wil werken.'}
 for h in HOUSES:
     if h['id'] in MARKET: h['market']=MARKET[h['id']]
     elif not h.get('market'): h['market']='Op de markt: nog onbekend. Ik volg de prijs vanaf nu elke week.'
