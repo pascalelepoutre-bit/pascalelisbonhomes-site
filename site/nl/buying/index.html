@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
-<link rel="stylesheet" href="/style.css?v=19237778">
+<link rel="stylesheet" href="/style.css?v=14b4d733">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -118,16 +118,27 @@
         <h2>Wat gaat het echt kosten?</h2>
         <p>Bovenop de prijs betaal je IMT, zegelrecht en de akte. Met een lening rekent de bank ook haar eigen kosten aan. Vul de prijs in en zie meteen een schatting.</p>
         <div class="calc-sum" aria-live="polite">
-          <p class="cs-label">Totale kosten bovenop de prijs</p>
-          <p class="cs-big" id="o-tot">–</p>
-          <p class="cs-pct"><span id="o-pct">–</span> van de aankoopprijs</p>
-          <dl>
-            <div><dt>Prijs plus kosten</dt><dd id="o-all">–</dd></div>
-            <div class="o-loan"><dt>Eigen inbreng nodig<small>Prijs min de lening, plus alle kosten</small></dt><dd id="o-cash">–</dd></div>
-          </dl>
-          <a class="btn fill" href="/nl/selling/#contact">Plan een gesprek</a>
+          <p class="cs-label">Jouw totale budget</p>
+          <p class="cs-big" id="o-grand">–</p>
+          <div class="cs-bar" aria-hidden="true"><i class="b-p" id="b-p"></i><i class="b-c" id="b-c"></i><i class="b-w" id="b-w"></i></div>
+          <ul class="cs-leg">
+            <li><span class="dot d-p"></span><span class="lg-t">Aankoopprijs</span><b id="l-p">–</b></li>
+            <li><span class="dot d-c"></span><span class="lg-t">Belastingen en kosten<small><span id="o-pct">–</span> van de prijs</small></span><b id="o-tot">–</b></li>
+            <li class="o-reno"><span class="dot d-w"></span><span class="lg-t">Renovatiewerken</span><b id="l-w">–</b></li>
+          </ul>
+          <div class="aru-save o-reno"><span class="as-ic">6%</span><p class="as-23">In een ARU kunnen deze werken <b id="as-s1">–</b> minder btw kosten.</p><p class="as-6">Dankzij de ARU bespaar je <b id="as-s2">–</b> btw op deze werken.</p></div>
+          <dl class="o-loan"><div><dt>Eigen inbreng nodig<small>Prijs min de lening, plus alle kosten</small></dt><dd id="o-cash">–</dd></div></dl>
         </div>
-        <p class="calc-note">Alleen indicatief, op basis van de officiële IMT-tabellen 2026 voor het Portugese vasteland. IMT wordt berekend op de prijs of op de fiscale waarde van de woning, de hoogste van de twee. De bankkosten zijn een gemiddelde van de Portugese banken. Banken vragen ook een schuldsaldoverzekering en een woningverzekering, maandelijks te betalen. Controleer de definitieve bedragen altijd met jouw advocaat of bank. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Officiële IMT-tarieven</a></p>
+        <p class="calc-note">Een schatting op basis van de officiële IMT-tabellen 2026 voor het Portugese vasteland. Bevestig de definitieve bedragen altijd met je bank en je advocaat. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Officiële IMT-tarieven</a></p>
+        <div class="aru-box">
+          <p class="aru-tag">ARU</p>
+          <h3>Renoveren in Lissabon? Kijk eerst naar de ARU</h3>
+          <p>Een ARU, Área de Reabilitação Urbana, is een zone die de stad heeft aangeduid voor renovatie. Grote delen van het centrum van Lissabon liggen in een ARU, waaronder veel van Estrela, Lapa en Santos.</p>
+          <div class="aru-vs"><div><span>Normaal</span><b>23%</b><small>Btw op de werken</small></div><div class="on"><span>In een ARU</span><b>6%</b><small>Btw op de werken</small></div></div>
+          <p class="aru-eg">Op € 100.000 aan werken zonder btw is dat € 6.000 btw in plaats van € 23.000.</p>
+          <ol class="aru-steps"><li>De stad bevestigt met een attest dat het gebouw in de ARU ligt.</li><li>Een aannemer voert de werken uit met een aannemingscontract.</li><li>Jouw architect of ingenieur bevestigt dat het om een echte renovatie van het gebouw gaat.</li></ol>
+          <p class="aru-me">Voor mijn klanten controleer ik of de woning in een ARU ligt en wat dat betekent voor hun plannen.</p>
+        </div>
       </div>
       <form class="calc" id="calc" onsubmit="return false">
         <div class="c-row">
@@ -138,16 +149,34 @@
           <label class="chip"><input type="radio" name="c-use" value="hpp" checked><span>Mijn hoofdverblijf</span></label>
           <label class="chip"><input type="radio" name="c-use" value="sec"><span>Een tweede woning of investering</span></label>
         </fieldset>
-        <label class="consent c-young"><input type="checkbox" id="c-young"> Ik ben 35 of jonger en dit is mijn eerste woning</label>
+        <fieldset class="mort-q c-young-q"><legend>35 jaar of jonger en je eerste woning?</legend>
+          <label class="chip"><input type="radio" name="c-yg" value="no" checked><span>Nee</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="one"><span>Ja, één van twee kopers</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="all"><span>Ja, alle kopers</span></label>
+        </fieldset>
+        <fieldset class="mort-q c-reno"><legend>Renovatiewerken</legend>
+          <label class="chip"><input type="radio" name="c-reno" value="0" checked><span>Geen werken</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1200"><span>Eenvoudig</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1500"><span>Goede kwaliteit</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1800"><span>Hoogwaardig</span></label>
+        </fieldset>
+        <div class="c-row o-reno"><label for="c-m2">Oppervlakte van de woning<span class="cin"><span>m²</span><input id="c-m2" inputmode="numeric" value="100" autocomplete="off"></span></label></div>
+        <fieldset class="mort-q o-reno"><legend>Btw op de werken</legend>
+          <label class="chip"><input type="radio" name="c-iva" value="23" checked><span>23%, normaal</span></label>
+          <label class="chip"><input type="radio" name="c-iva" value="6"><span>6%, in een ARU</span></label>
+        </fieldset>
         <dl class="calc-out">
           <div><dt>IMT, overdrachtsbelasting</dt><dd id="o-imt">–</dd></div>
           <div><dt>Zegelrecht op de aankoop, 0,8%</dt><dd id="o-is">–</dd></div>
           <div class="o-loan"><dt>Zegelrecht op de lening, 0,6%</dt><dd id="o-isl">–</dd></div>
           <div class="o-loan"><dt>Bankkosten: schatting van de woning, dossier en akte, geraamd</dt><dd id="o-bank">–</dd></div>
           <div><dt>Akte en kadaster, Casa Pronta</dt><dd id="o-deed">–</dd></div>
+          <div class="o-reno"><dt>Renovatiewerken, schatting</dt><dd id="o-reno">–</dd></div>
         </dl>
-        <p class="c-hint o-noloan">Met een lening? Reken op ongeveer € 800 bankkosten en 0,6% zegelrecht op de lening. Vul hierboven het bedrag van de lening in om ze mee te tellen. Dit is een schatting: controleer de definitieve bedragen altijd bij jouw bank.</p>
-        <p class="c-hint o-loan">Banken vragen ook een schuldsaldoverzekering en een woningverzekering, elke maand te betalen bovenop jouw aflossing. Alle bedragen zijn schattingen: controleer ze altijd bij jouw bank en jouw advocaat.</p>
+        <p class="c-hint o-noloan">Met een hypotheek? Vul hierboven het bedrag in om de bankkosten toe te voegen.</p>
+        <p class="c-hint o-reno">Per m², met btw, ontwerp en vergunningen. Een eerste idee: de offerte van de aannemer beslist.</p>
+        <p class="c-hint o-loan">De bank vraagt ook een levens- en woningverzekering, maandelijks te betalen.</p>
+        <div class="calc-sticky" aria-hidden="true"><span>Jouw totale budget</span><b id="o-grand2">–</b></div>
       </form>
     </div>
   </section>
@@ -277,6 +306,6 @@
   </div>
 </footer>
 
-<script src="/site.js?v=25d74e5a" defer></script>
+<script src="/site.js?v=7089b07d" defer></script>
 </body>
 </html>

@@ -743,3 +743,51 @@
 @|Your documents|Vos documents
 @|For the study I'll need your caderneta predial, and your energy certificate if you have one. No need to add them here: after sending this form, simply send them to me by WhatsApp or email.|Pour l'étude, j'aurai besoin de votre caderneta predial et, si vous l'avez, de votre certificat énergétique. Inutile de les joindre ici : après l'envoi de ce formulaire, envoyez-les-moi simplement par WhatsApp ou par e-mail.
 @|Thank you! I'll be in touch within one working day to plan your free market study. In the meantime, you can send me your caderneta predial, and your energy certificate if possible, by WhatsApp or email.|Merci ! Je vous recontacte dans un délai d'un jour ouvrable pour planifier votre étude de marché gratuite. En attendant, vous pouvez m'envoyer votre caderneta predial et, si possible, votre certificat énergétique par WhatsApp ou par e-mail.
+@|Renovation works|Travaux de rénovation
+@|No works|Pas de travaux
+@|Simple|Simple
+@|Good quality|Bonne qualité
+@|High-end|Haut de gamme
+@|Size of the home|Surface du logement
+@|VAT on the works|TVA sur les travaux
+@|23%, normal|23 %, normale
+@|6%, in an ARU|6 %, dans une ARU
+@|Renovation works, estimate|Travaux de rénovation, estimation
+@|Works per m², with VAT, project and permits: about € 1.200 for simple, € 1.500 for good quality and € 1.800 for high-end. A first idea only: the builder's quote decides.|Travaux au m², TVA, projet et permis compris : environ 1.200 € en simple, 1.500 € en bonne qualité et 1.800 € en haut de gamme. Une première idée seulement : c'est le devis de l'entrepreneur qui décide.
+@|Price, costs and works|Prix, frais et travaux
+@|What is an ARU, and why 6% VAT?|Qu'est-ce qu'une ARU, et pourquoi une TVA à 6 % ?
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos.|Une ARU, Área de Reabilitação Urbana, est une zone que la ville a désignée pour la rénovation. Une grande partie du centre de Lisbonne se trouve dans une ARU, dont une bonne part d'Estrela, de Lapa et de Santos.
+@|The big advantage: renovation works on a building in an ARU, done by a builder under a works contract, can be charged at 6% VAT instead of 23%. On € 100.000 of works before VAT, that is € 6.000 of VAT instead of € 23.000.|Le grand avantage : les travaux de rénovation d'un immeuble situé dans une ARU, réalisés par un entrepreneur sous contrat d'entreprise, peuvent être facturés avec une TVA de 6 % au lieu de 23 %. Pour 100.000 € de travaux hors TVA, cela fait 6.000 € de TVA au lieu de 23.000 €.
+@|The conditions: the city confirms with a certificate that the building is inside the ARU, and the works must count as a real renovation of the building, which your architect or engineer confirms. Before you buy, I check whether the home is in an ARU and what that means for your plans.|Les conditions : la ville confirme par un certificat que l'immeuble se trouve dans l'ARU, et les travaux doivent constituer une vraie rénovation de l'immeuble, ce que votre architecte ou ingénieur confirme. Avant votre achat, je vérifie si le logement est dans une ARU et ce que cela implique pour vos projets.
+@|What is an ARU, and what does it mean for me?|Qu'est-ce qu'une ARU, et qu'est-ce que cela change pour moi ?
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. Before you buy, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Une ARU, Área de Reabilitação Urbana, est une zone que la ville a désignée pour la rénovation. Une grande partie du centre de Lisbonne se trouve dans une ARU, dont une bonne part d'Estrela, de Lapa et de Santos. Si vous y achetez un logement et le rénovez, les travaux peuvent être facturés avec une TVA de 6 % au lieu de 23 %, à condition qu'un entrepreneur les réalise sous contrat d'entreprise et qu'il s'agisse d'une vraie rénovation de l'immeuble. La ville délivre un certificat attestant que l'immeuble est dans l'ARU, et votre architecte ou ingénieur confirme que les travaux remplissent les conditions. Pour une grosse rénovation, l'économie peut atteindre plusieurs dizaines de milliers d'euros. Avant votre achat, je vérifie si le logement est dans une ARU, et le calculateur de frais de la page Acheter vous montre tout de suite la différence.
+@|Found a home you like? Send me the link and I'll work out the real cost, including the works.|Vous avez trouvé un bien qui vous plaît ? Envoyez-moi le lien et je calcule le coût réel, travaux compris.
+@|Send me the link|Envoyez-moi le lien
+@|An estimate based on the official 2026 IMT tables for mainland Portugal. Always confirm the final amounts with your bank and your lawyer.|Une estimation basée sur les tables officielles d'IMT 2026 pour le Portugal continental. Confirmez toujours les montants finaux avec votre banque et votre avocat.
+@|With a mortgage? Fill in the amount above to add the bank costs.|Avec un crédit ? Indiquez le montant ci-dessus pour ajouter les frais bancaires.
+@|The bank also asks for life and home insurance, paid every month.|La banque demande aussi une assurance vie et habitation, payée chaque mois.
+@|Per m², with VAT, project and permits. A first idea: the builder's quote decides.|Au m², TVA, projet et permis compris. Une première idée : c'est le devis de l'entrepreneur qui décide.
+@|What will buying really cost? Calculate it →|Combien coûte vraiment un achat ? Calculez-le →
+@|Your total budget|Votre budget total
+@|Purchase price|Prix d'achat
+@|Taxes and fees|Taxes et frais
+@|of the price|du prix
+@|In an ARU, these works could cost|Dans une ARU, ces travaux pourraient coûter
+@|less in VAT.|de TVA en moins.
+@|Thanks to the ARU, you save|Grâce à l'ARU, vous économisez
+@|in VAT on these works.|de TVA sur ces travaux.
+@|Renovating in Lisbon? Check the ARU first|Rénover à Lisbonne ? Vérifiez d'abord l'ARU
+@|Normal|Normal
+@|In an ARU|Dans une ARU
+@|VAT on the works|TVA sur les travaux
+@|On € 100.000 of works before VAT, that is € 6.000 of VAT instead of € 23.000.|Pour 100.000 € de travaux hors TVA, cela fait 6.000 € de TVA au lieu de 23.000 €.
+@|The city confirms with a certificate that the building is in the ARU.|La ville confirme par un certificat que l'immeuble est dans l'ARU.
+@|A builder does the works under a works contract.|Un entrepreneur réalise les travaux sous contrat d'entreprise.
+@|Your architect or engineer confirms it is a real renovation of the building.|Votre architecte ou ingénieur confirme qu'il s'agit d'une vraie rénovation de l'immeuble.
+@|Before you buy, I check whether the home is in an ARU and what that means for your plans.|Avant votre achat, je vérifie si le logement est dans une ARU et ce que cela implique pour vos projets.
+@|35 or younger and buying your first home?|35 ans ou moins et premier achat ?
+@|No|Non
+@|Yes, one of two buyers|Oui, un des deux acheteurs
+@|Yes, every buyer|Oui, tous les acheteurs
+@|For my clients, I check whether the home is in an ARU and what that means for their plans.|Pour mes clients, je vérifie si le logement est dans une ARU et ce que cela implique pour leurs projets.
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. For my clients, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Une ARU, Área de Reabilitação Urbana, est une zone que la ville a désignée pour la rénovation. Une grande partie du centre de Lisbonne se trouve dans une ARU, dont une bonne part d'Estrela, de Lapa et de Santos. Si vous y achetez un logement et le rénovez, les travaux peuvent être facturés avec une TVA de 6 % au lieu de 23 %, à condition qu'un entrepreneur les réalise sous contrat d'entreprise et qu'il s'agisse d'une vraie rénovation de l'immeuble. La ville délivre un certificat attestant que l'immeuble est dans l'ARU, et votre architecte ou ingénieur confirme que les travaux remplissent les conditions. Pour une grosse rénovation, l'économie peut atteindre plusieurs dizaines de milliers d'euros. Pour mes clients, je vérifie si le logement est dans une ARU, et le calculateur de frais de la page Acheter vous montre tout de suite la différence.

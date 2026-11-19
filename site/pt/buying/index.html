@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
-<link rel="stylesheet" href="/style.css?v=19237778">
+<link rel="stylesheet" href="/style.css?v=14b4d733">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -118,16 +118,27 @@
         <h2>Quanto vai custar realmente?</h2>
         <p>Para além do preço, paga IMT, imposto do selo e a escritura. Com crédito à habitação, o banco cobra ainda as suas comissões. Indique o preço e veja logo uma estimativa.</p>
         <div class="calc-sum" aria-live="polite">
-          <p class="cs-label">Total de custos para além do preço</p>
-          <p class="cs-big" id="o-tot">–</p>
-          <p class="cs-pct"><span id="o-pct">–</span> do preço de compra</p>
-          <dl>
-            <div><dt>Preço mais custos</dt><dd id="o-all">–</dd></div>
-            <div class="o-loan"><dt>Capital próprio necessário<small>Preço menos o crédito, mais todos os custos</small></dt><dd id="o-cash">–</dd></div>
-          </dl>
-          <a class="btn fill" href="/pt/selling/#contact">Marcar chamada</a>
+          <p class="cs-label">O seu orçamento total</p>
+          <p class="cs-big" id="o-grand">–</p>
+          <div class="cs-bar" aria-hidden="true"><i class="b-p" id="b-p"></i><i class="b-c" id="b-c"></i><i class="b-w" id="b-w"></i></div>
+          <ul class="cs-leg">
+            <li><span class="dot d-p"></span><span class="lg-t">Preço de compra</span><b id="l-p">–</b></li>
+            <li><span class="dot d-c"></span><span class="lg-t">Impostos e custos<small><span id="o-pct">–</span> do preço</small></span><b id="o-tot">–</b></li>
+            <li class="o-reno"><span class="dot d-w"></span><span class="lg-t">Obras de remodelação</span><b id="l-w">–</b></li>
+          </ul>
+          <div class="aru-save o-reno"><span class="as-ic">6%</span><p class="as-23">Numa ARU, estas obras podiam custar <b id="as-s1">–</b> menos de IVA.</p><p class="as-6">Graças à ARU, poupa <b id="as-s2">–</b> de IVA nestas obras.</p></div>
+          <dl class="o-loan"><div><dt>Capital próprio necessário<small>Preço menos o crédito, mais todos os custos</small></dt><dd id="o-cash">–</dd></div></dl>
         </div>
-        <p class="calc-note">Apenas indicativo, com base nas tabelas oficiais de IMT de 2026 para Portugal continental. O IMT é calculado sobre o preço ou o valor patrimonial da casa, o que for mais alto. As comissões bancárias são uma média dos bancos portugueses. Os bancos pedem também seguros de vida e multirriscos, pagos mensalmente. Confirme sempre os valores finais com o seu advogado ou banco. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Taxas oficiais de IMT</a></p>
+        <p class="calc-note">Uma estimativa com base nas tabelas oficiais de IMT de 2026 para Portugal continental. Confirme sempre os valores finais com o seu banco e o seu advogado. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Taxas oficiais de IMT</a></p>
+        <div class="aru-box">
+          <p class="aru-tag">ARU</p>
+          <h3>Vai remodelar em Lisboa? Veja primeiro a ARU</h3>
+          <p>Uma ARU, Área de Reabilitação Urbana, é uma zona que a câmara definiu para ser reabilitada. Grande parte do centro de Lisboa está dentro de uma ARU, incluindo muito da Estrela, da Lapa e de Santos.</p>
+          <div class="aru-vs"><div><span>Normal</span><b>23%</b><small>IVA das obras</small></div><div class="on"><span>Numa ARU</span><b>6%</b><small>IVA das obras</small></div></div>
+          <p class="aru-eg">Em 100.000 € de obras sem IVA, são 6.000 € de IVA em vez de 23.000 €.</p>
+          <ol class="aru-steps"><li>A câmara confirma com uma certidão que o prédio está na ARU.</li><li>Um empreiteiro faz as obras com contrato de empreitada.</li><li>O seu arquiteto ou engenheiro confirma que é uma verdadeira reabilitação do edifício.</li></ol>
+          <p class="aru-me">Para os meus clientes, verifico se a casa está numa ARU e o que isso significa para os seus planos.</p>
+        </div>
       </div>
       <form class="calc" id="calc" onsubmit="return false">
         <div class="c-row">
@@ -138,16 +149,34 @@
           <label class="chip"><input type="radio" name="c-use" value="hpp" checked><span>A minha habitação própria permanente</span></label>
           <label class="chip"><input type="radio" name="c-use" value="sec"><span>Uma segunda casa ou investimento</span></label>
         </fieldset>
-        <label class="consent c-young"><input type="checkbox" id="c-young"> Tenho 35 anos ou menos e é a minha primeira casa</label>
+        <fieldset class="mort-q c-young-q"><legend>Até 35 anos e é a primeira casa?</legend>
+          <label class="chip"><input type="radio" name="c-yg" value="no" checked><span>Não</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="one"><span>Sim, um de dois compradores</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="all"><span>Sim, todos os compradores</span></label>
+        </fieldset>
+        <fieldset class="mort-q c-reno"><legend>Obras de remodelação</legend>
+          <label class="chip"><input type="radio" name="c-reno" value="0" checked><span>Sem obras</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1200"><span>Simples</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1500"><span>Boa qualidade</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1800"><span>Alto padrão</span></label>
+        </fieldset>
+        <div class="c-row o-reno"><label for="c-m2">Área da casa<span class="cin"><span>m²</span><input id="c-m2" inputmode="numeric" value="100" autocomplete="off"></span></label></div>
+        <fieldset class="mort-q o-reno"><legend>IVA das obras</legend>
+          <label class="chip"><input type="radio" name="c-iva" value="23" checked><span>23%, normal</span></label>
+          <label class="chip"><input type="radio" name="c-iva" value="6"><span>6%, numa ARU</span></label>
+        </fieldset>
         <dl class="calc-out">
           <div><dt>IMT, imposto sobre a transmissão</dt><dd id="o-imt">–</dd></div>
           <div><dt>Imposto do selo sobre a compra, 0,8%</dt><dd id="o-is">–</dd></div>
           <div class="o-loan"><dt>Imposto do selo sobre o crédito, 0,6%</dt><dd id="o-isl">–</dd></div>
           <div class="o-loan"><dt>Comissões bancárias: avaliação, dossier e formalização, estimativa</dt><dd id="o-bank">–</dd></div>
           <div><dt>Escritura e registo predial, Casa Pronta</dt><dd id="o-deed">–</dd></div>
+          <div class="o-reno"><dt>Obras de remodelação, estimativa</dt><dd id="o-reno">–</dd></div>
         </dl>
-        <p class="c-hint o-noloan">Com crédito à habitação? Some cerca de 800 € de comissões bancárias e 0,6% de imposto do selo sobre o crédito. Indique o valor do crédito acima para os incluir. É uma estimativa: confirme sempre os valores finais com o seu banco.</p>
-        <p class="c-hint o-loan">Os bancos pedem também seguros de vida e multirriscos, pagos todos os meses para além da prestação. Todos os valores são estimativas: confirme-os sempre com o seu banco e o seu advogado.</p>
+        <p class="c-hint o-noloan">Com crédito à habitação? Indique o valor acima para juntar os custos do banco.</p>
+        <p class="c-hint o-reno">Por m², com IVA, projeto e licenças. Uma primeira ideia: quem decide é o orçamento do empreiteiro.</p>
+        <p class="c-hint o-loan">O banco pede também seguro de vida e multirriscos, pagos todos os meses.</p>
+        <div class="calc-sticky" aria-hidden="true"><span>O seu orçamento total</span><b id="o-grand2">–</b></div>
       </form>
     </div>
   </section>
@@ -277,6 +306,6 @@
   </div>
 </footer>
 
-<script src="/site.js?v=25d74e5a" defer></script>
+<script src="/site.js?v=7089b07d" defer></script>
 </body>
 </html>

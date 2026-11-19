@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
-<link rel="stylesheet" href="/style.css?v=19237778">
+<link rel="stylesheet" href="/style.css?v=14b4d733">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -118,36 +118,65 @@
         <h2>Combien cela va-t-il vraiment coûter ?</h2>
         <p>En plus du prix, vous payez l’IMT, le droit de timbre et l’acte. Avec un crédit, la banque ajoute ses propres frais. Indiquez le prix et voyez tout de suite une estimation.</p>
         <div class="calc-sum" aria-live="polite">
-          <p class="cs-label">Total des frais en plus du prix</p>
-          <p class="cs-big" id="o-tot">–</p>
-          <p class="cs-pct"><span id="o-pct">–</span> du prix d'achat</p>
-          <dl>
-            <div><dt>Prix plus frais</dt><dd id="o-all">–</dd></div>
-            <div class="o-loan"><dt>Apport personnel nécessaire<small>Prix moins le prêt, plus tous les frais</small></dt><dd id="o-cash">–</dd></div>
-          </dl>
-          <a class="btn fill" href="/fr/selling/#contact">Prendre rendez-vous</a>
+          <p class="cs-label">Votre budget total</p>
+          <p class="cs-big" id="o-grand">–</p>
+          <div class="cs-bar" aria-hidden="true"><i class="b-p" id="b-p"></i><i class="b-c" id="b-c"></i><i class="b-w" id="b-w"></i></div>
+          <ul class="cs-leg">
+            <li><span class="dot d-p"></span><span class="lg-t">Prix d'achat</span><b id="l-p">–</b></li>
+            <li><span class="dot d-c"></span><span class="lg-t">Taxes et frais<small><span id="o-pct">–</span> du prix</small></span><b id="o-tot">–</b></li>
+            <li class="o-reno"><span class="dot d-w"></span><span class="lg-t">Travaux de rénovation</span><b id="l-w">–</b></li>
+          </ul>
+          <div class="aru-save o-reno"><span class="as-ic">6%</span><p class="as-23">Dans une ARU, ces travaux pourraient coûter <b id="as-s1">–</b> de TVA en moins.</p><p class="as-6">Grâce à l'ARU, vous économisez <b id="as-s2">–</b> de TVA sur ces travaux.</p></div>
+          <dl class="o-loan"><div><dt>Apport personnel nécessaire<small>Prix moins le prêt, plus tous les frais</small></dt><dd id="o-cash">–</dd></div></dl>
         </div>
-        <p class="calc-note">À titre indicatif, sur la base des barèmes officiels de l’IMT 2026 pour le Portugal continental. L’IMT est calculé sur le prix ou sur la valeur fiscale du bien, la plus élevée des deux. Les frais bancaires sont une moyenne des banques portugaises. Les banques demandent aussi une assurance décès et une assurance habitation, payées chaque mois. Vérifiez toujours les montants finaux avec votre avocat ou votre banque. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Taux officiels de l’IMT</a></p>
+        <p class="calc-note">Une estimation basée sur les tables officielles d'IMT 2026 pour le Portugal continental. Confirmez toujours les montants finaux avec votre banque et votre avocat. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Taux officiels de l’IMT</a></p>
+        <div class="aru-box">
+          <p class="aru-tag">ARU</p>
+          <h3>Rénover à Lisbonne ? Vérifiez d'abord l'ARU</h3>
+          <p>Une ARU, Área de Reabilitação Urbana, est une zone que la ville a désignée pour la rénovation. Une grande partie du centre de Lisbonne se trouve dans une ARU, dont une bonne part d'Estrela, de Lapa et de Santos.</p>
+          <div class="aru-vs"><div><span>Normal</span><b>23%</b><small>TVA sur les travaux</small></div><div class="on"><span>Dans une ARU</span><b>6%</b><small>TVA sur les travaux</small></div></div>
+          <p class="aru-eg">Pour 100.000 € de travaux hors TVA, cela fait 6.000 € de TVA au lieu de 23.000 €.</p>
+          <ol class="aru-steps"><li>La ville confirme par un certificat que l'immeuble est dans l'ARU.</li><li>Un entrepreneur réalise les travaux sous contrat d'entreprise.</li><li>Votre architecte ou ingénieur confirme qu'il s'agit d'une vraie rénovation de l'immeuble.</li></ol>
+          <p class="aru-me">Pour mes clients, je vérifie si le logement est dans une ARU et ce que cela implique pour leurs projets.</p>
+        </div>
       </div>
       <form class="calc" id="calc" onsubmit="return false">
         <div class="c-row">
-        <label for="c-price">Prix d’achat<span class="cin"><span>€</span><input id="c-price" inputmode="numeric" value="450.000" autocomplete="off"></span></label>
+        <label for="c-price">Prix d'achat<span class="cin"><span>€</span><input id="c-price" inputmode="numeric" value="450.000" autocomplete="off"></span></label>
         <label for="c-loan">Montant du crédit, le cas échéant<span class="cin"><span>€</span><input id="c-loan" inputmode="numeric" value="0" autocomplete="off"></span></label>
         </div>
         <fieldset class="mort-q"><legend>Le bien sera</legend>
           <label class="chip"><input type="radio" name="c-use" value="hpp" checked><span>Ma résidence principale</span></label>
           <label class="chip"><input type="radio" name="c-use" value="sec"><span>Une résidence secondaire ou un investissement</span></label>
         </fieldset>
-        <label class="consent c-young"><input type="checkbox" id="c-young"> J’ai 35 ans ou moins et c’est mon premier logement</label>
+        <fieldset class="mort-q c-young-q"><legend>35 ans ou moins et premier achat ?</legend>
+          <label class="chip"><input type="radio" name="c-yg" value="no" checked><span>Non</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="one"><span>Oui, un des deux acheteurs</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="all"><span>Oui, tous les acheteurs</span></label>
+        </fieldset>
+        <fieldset class="mort-q c-reno"><legend>Travaux de rénovation</legend>
+          <label class="chip"><input type="radio" name="c-reno" value="0" checked><span>Pas de travaux</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1200"><span>Simple</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1500"><span>Bonne qualité</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1800"><span>Haut de gamme</span></label>
+        </fieldset>
+        <div class="c-row o-reno"><label for="c-m2">Surface du logement<span class="cin"><span>m²</span><input id="c-m2" inputmode="numeric" value="100" autocomplete="off"></span></label></div>
+        <fieldset class="mort-q o-reno"><legend>TVA sur les travaux</legend>
+          <label class="chip"><input type="radio" name="c-iva" value="23" checked><span>23 %, normale</span></label>
+          <label class="chip"><input type="radio" name="c-iva" value="6"><span>6 %, dans une ARU</span></label>
+        </fieldset>
         <dl class="calc-out">
           <div><dt>IMT, droits de mutation</dt><dd id="o-imt">–</dd></div>
           <div><dt>Droit de timbre sur l’achat, 0,8 %</dt><dd id="o-is">–</dd></div>
           <div class="o-loan"><dt>Droit de timbre sur le crédit, 0,6 %</dt><dd id="o-isl">–</dd></div>
           <div class="o-loan"><dt>Frais bancaires : expertise, dossier et signature, estimation</dt><dd id="o-bank">–</dd></div>
           <div><dt>Acte et registre foncier, Casa Pronta</dt><dd id="o-deed">–</dd></div>
+          <div class="o-reno"><dt>Travaux de rénovation, estimation</dt><dd id="o-reno">–</dd></div>
         </dl>
-        <p class="c-hint o-noloan">Avec un crédit ? Ajoutez environ 800 € de frais bancaires et 0,6 % de droit de timbre sur le prêt. Indiquez le montant du crédit ci-dessus pour les inclure. Il s’agit d’une estimation : vérifiez toujours les montants définitifs auprès de votre banque.</p>
-        <p class="c-hint o-loan">Les banques demandent aussi une assurance décès et une assurance habitation, payées chaque mois en plus de la mensualité. Tous les montants sont des estimations : vérifiez-les toujours auprès de votre banque et de votre avocat.</p>
+        <p class="c-hint o-noloan">Avec un crédit ? Indiquez le montant ci-dessus pour ajouter les frais bancaires.</p>
+        <p class="c-hint o-reno">Au m², TVA, projet et permis compris. Une première idée : c'est le devis de l'entrepreneur qui décide.</p>
+        <p class="c-hint o-loan">La banque demande aussi une assurance vie et habitation, payée chaque mois.</p>
+        <div class="calc-sticky" aria-hidden="true"><span>Votre budget total</span><b id="o-grand2">–</b></div>
       </form>
     </div>
   </section>
@@ -277,6 +306,6 @@
   </div>
 </footer>
 
-<script src="/site.js?v=25d74e5a" defer></script>
+<script src="/site.js?v=7089b07d" defer></script>
 </body>
 </html>

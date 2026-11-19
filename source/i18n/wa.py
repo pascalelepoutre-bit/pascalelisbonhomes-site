@@ -6,6 +6,7 @@ P = {
  'fr': ("Bonjour Pascale, j'aimerais visiter ce bien :", "Quand pourrions-nous organiser une visite ?", "Bonjour Pascale, les villas Enigma Collection m'intéressent", "Pourriez-vous m'en dire plus et organiser une visite ?"),
  'nl': ("Hallo Pascale, ik zou deze woning graag bezoeken:", "Wanneer kunnen we een bezoek inplannen?", "Hallo Pascale, ik heb interesse in de Enigma Collection-villa's", "Kunt u me meer vertellen en een bezoek plannen?"),
 }
+COST = {'en': "Hi Pascale, I found a home I like and I'd like to know the real cost. Here is the link: ", 'pt': 'Olá Pascale, encontrei uma casa de que gosto e gostava de saber o custo real. Aqui está o link: ', 'fr': "Bonjour Pascale, j'ai trouvé un bien qui me plaît et j'aimerais connaître le coût réel. Voici le lien : ", 'nl': 'Hallo Pascale, ik heb een woning gevonden die me bevalt en ik wil graag de echte kosten weten. Hier is de link: '}
 GREET = {'en': 'Hi Pascale, ', 'pt': 'Olá Pascale, ', 'fr': 'Bonjour Pascale, ', 'nl': 'Hallo Pascale, '}
 # Words that need translating; T-codes stay as they are
 W = {
@@ -66,6 +67,8 @@ def localise_wa(html, lang):
             txt = a + '\n' + keep + '\n' + b
         elif lines[0].startswith("Hi Pascale, I'm interested in the Enigma Collection"):
             txt = c + '\n' + d
+        elif lines[0].startswith("Hi Pascale, I found a home I like"):
+            txt = COST[lang]
         elif txt.startswith('Hi Pascale, '):
             txt = GREET[lang] + txt[len('Hi Pascale, '):]
         return 'wa.me/351920609225?text=' + urllib.parse.quote(txt, safe='')

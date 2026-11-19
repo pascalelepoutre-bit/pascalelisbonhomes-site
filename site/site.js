@@ -171,17 +171,17 @@ const num=v=>+String(v).replace(/[^0-9]/g,'')||0;
 const grp=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.');const eur=n=>'€ '+grp(n);
 function imt(p,t,flat6){for(const [lim,r,d] of t){if(p<=lim)return Math.max(0,p*r-d);}return p<=1150853?p*.06:p*.075;}
 function calc(){const p=num(f.querySelector('#c-price').value),loan=num(f.querySelector('#c-loan').value);
- const use=f.querySelector('input[name=c-use]:checked').value;const yb=f.querySelector('#c-young');const young=use==='hpp'&&yb.checked;
- f.querySelector('.c-young').style.opacity=use==='hpp'?1:.4;yb.disabled=use!=='hpp';
- let I,S;
- if(young&&p<=330539){I=0;S=0;}
- else if(young&&p<=660982){I=(p-330539)*.08;S=(p-330539)*.008;}
- else{I=imt(p,use==='hpp'?HPP:SEC);S=p*.008;}
+ const use=f.querySelector('input[name=c-use]:checked').value;const yq=f.querySelector('.c-young-q');const yg=use==='hpp'?((f.querySelector('input[name=c-yg]:checked')||{}).value||'no'):'no';
+ yq.style.display=use==='hpp'?'':'none';yq.querySelectorAll('input').forEach(x=>x.disabled=use!=='hpp');
+ const nI=imt(p,use==='hpp'?HPP:SEC),nS=p*.008;let jI=nI,jS=nS;
+ if(p<=330539){jI=0;jS=0;}else if(p<=660982){jI=(p-330539)*.08;jS=(p-330539)*.008;}
+ const share=yg==='all'?1:yg==='one'?.5:0;const I=nI*(1-share)+jI*share,S=nS*(1-share)+jS*share;
  const L=loan>0?loan*.006:0,B=loan>0?800:0,D=p>0?(loan>0?700:375):0,T=I+S+L+B+D;
+ const rv=+((f.querySelector('input[name=c-reno]:checked')||{}).value||0),iva=+((f.querySelector('input[name=c-iva]:checked')||{}).value||23),m2=num(f.querySelector('#c-m2').value),W=rv?m2*rv*(iva===6?1.06/1.23:1):0;
  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=eur(v)};
- set('o-imt',I);set('o-is',S);set('o-isl',L);set('o-bank',B);set('o-deed',D);set('o-tot',T);set('o-all',p+T);set('o-cash',Math.max(0,p-loan)+T);{const e=document.getElementById('o-pct');if(e)e.textContent=p>0?(T/p*100).toFixed(1).replace('.',',')+'%':'–'};
- document.querySelectorAll('#costs .o-loan').forEach(x=>x.style.display=loan>0?'':'none');document.querySelectorAll('#costs .o-noloan').forEach(x=>x.style.display=loan>0?'none':'');}
-f.addEventListener('input',e=>{if(e.target.matches('#c-price,#c-loan')){const c=e.target.selectionStart,l=e.target.value.length;const n=num(e.target.value);e.target.value=n?grp(n):'';}calc();});
+ set('o-imt',I);set('o-is',S);set('o-isl',L);set('o-bank',B);set('o-deed',D);set('o-tot',T);set('o-all',p+T);set('o-cash',Math.max(0,p-loan)+T+W);set('o-grand',p+T+W);set('o-grand2',p+T+W);set('o-reno',W);set('l-p',p);set('l-w',W);{const G=p+T+W||1,bw=(id,v)=>{const e=document.getElementById(id);if(e)e.style.width=(v/G*100)+'%'};bw('b-p',p);bw('b-c',T);bw('b-w',W);const net=rv?m2*rv/1.23:0;set('as-s1',net*.17);set('as-s2',net*.17);document.querySelectorAll('#costs .as-23').forEach(x=>x.style.display=iva===6?'none':'');document.querySelectorAll('#costs .as-6').forEach(x=>x.style.display=iva===6?'':'none');}{const e=document.getElementById('o-pct');if(e)e.textContent=p>0?(T/p*100).toFixed(1).replace('.',',')+'%':'–'};
+ document.querySelectorAll('#costs .o-loan').forEach(x=>x.style.display=loan>0?'':'none');document.querySelectorAll('#costs .o-reno').forEach(x=>x.style.display=rv?'':'none');document.querySelectorAll('#costs .o-noloan').forEach(x=>x.style.display=loan>0?'none':'');}
+f.addEventListener('input',e=>{if(e.target.matches('#c-price,#c-loan,#c-m2')){const c=e.target.selectionStart,l=e.target.value.length;const n=num(e.target.value);e.target.value=n?grp(n):'';}calc();});
 f.addEventListener('change',calc);calc();})();
 
 document.querySelectorAll('#hood-band .hb-item svg path').forEach(p=>{const d=p.getAttribute('d')||'';if(/q10 -4 20 0/.test(d))p.classList.add('wave');else if(/z/.test(d)&&!/q/i.test(d)&&p.getBBox().width<60)p.classList.add('win');});

@@ -742,3 +742,51 @@
 @|Your documents|Jouw documenten
 @|For the study I'll need your caderneta predial, and your energy certificate if you have one. No need to add them here: after sending this form, simply send them to me by WhatsApp or email.|Voor de studie heb ik jouw caderneta predial nodig, en jouw energiecertificaat als je dat hebt. Je hoeft ze hier niet toe te voegen: stuur ze me na dit formulier gewoon via WhatsApp of e-mail.
 @|Thank you! I'll be in touch within one working day to plan your free market study. In the meantime, you can send me your caderneta predial, and your energy certificate if possible, by WhatsApp or email.|Dank je! Ik neem binnen één werkdag contact met je op om jouw gratis marktstudie in te plannen. Intussen kun je me jouw caderneta predial, en indien mogelijk jouw energiecertificaat, via WhatsApp of e-mail sturen.
+@|Renovation works|Renovatiewerken
+@|No works|Geen werken
+@|Simple|Eenvoudig
+@|Good quality|Goede kwaliteit
+@|High-end|Hoogwaardig
+@|Size of the home|Oppervlakte van de woning
+@|VAT on the works|Btw op de werken
+@|23%, normal|23%, normaal
+@|6%, in an ARU|6%, in een ARU
+@|Renovation works, estimate|Renovatiewerken, schatting
+@|Works per m², with VAT, project and permits: about € 1.200 for simple, € 1.500 for good quality and € 1.800 for high-end. A first idea only: the builder's quote decides.|Werken per m², met btw, ontwerp en vergunningen: ongeveer € 1.200 voor eenvoudig, € 1.500 voor goede kwaliteit en € 1.800 voor hoogwaardig. Alleen een eerste idee: de offerte van de aannemer beslist.
+@|Price, costs and works|Prijs, kosten en werken
+@|What is an ARU, and why 6% VAT?|Wat is een ARU, en waarom 6% btw?
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos.|Een ARU, Área de Reabilitação Urbana, is een zone die de stad heeft aangeduid voor renovatie. Grote delen van het centrum van Lissabon liggen in een ARU, waaronder veel van Estrela, Lapa en Santos.
+@|The big advantage: renovation works on a building in an ARU, done by a builder under a works contract, can be charged at 6% VAT instead of 23%. On € 100.000 of works before VAT, that is € 6.000 of VAT instead of € 23.000.|Het grote voordeel: renovatiewerken aan een gebouw in een ARU, uitgevoerd door een aannemer met een aannemingscontract, kunnen gefactureerd worden aan 6% btw in plaats van 23%. Op € 100.000 aan werken zonder btw is dat € 6.000 btw in plaats van € 23.000.
+@|The conditions: the city confirms with a certificate that the building is inside the ARU, and the works must count as a real renovation of the building, which your architect or engineer confirms. Before you buy, I check whether the home is in an ARU and what that means for your plans.|De voorwaarden: de stad bevestigt met een attest dat het gebouw in de ARU ligt, en de werken moeten een echte renovatie van het gebouw zijn, wat jouw architect of ingenieur bevestigt. Voor je koopt, controleer ik of de woning in een ARU ligt en wat dat betekent voor jouw plannen.
+@|What is an ARU, and what does it mean for me?|Wat is een ARU, en wat betekent dat voor mij?
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. Before you buy, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Een ARU, Área de Reabilitação Urbana, is een zone die de stad heeft aangeduid voor renovatie. Grote delen van het centrum van Lissabon liggen in een ARU, waaronder veel van Estrela, Lapa en Santos. Koop je daar een woning en renoveer je ze, dan kunnen de werken gefactureerd worden aan 6% btw in plaats van 23%, op voorwaarde dat een aannemer ze uitvoert met een aannemingscontract en dat het om een echte renovatie van het gebouw gaat. De stad levert een attest dat het gebouw in de ARU ligt, en jouw architect of ingenieur bevestigt dat de werken in aanmerking komen. Bij een grote renovatie kan dat tienduizenden euro's schelen. Voor je koopt, controleer ik of de woning in een ARU ligt, en in de kostencalculator op de pagina Kopen zie je meteen het verschil.
+@|Found a home you like? Send me the link and I'll work out the real cost, including the works.|Een woning gevonden die je bevalt? Stuur me de link en ik bereken de echte kosten, inclusief de werken.
+@|Send me the link|Stuur me de link
+@|An estimate based on the official 2026 IMT tables for mainland Portugal. Always confirm the final amounts with your bank and your lawyer.|Een schatting op basis van de officiële IMT-tabellen 2026 voor het Portugese vasteland. Bevestig de definitieve bedragen altijd met je bank en je advocaat.
+@|With a mortgage? Fill in the amount above to add the bank costs.|Met een hypotheek? Vul hierboven het bedrag in om de bankkosten toe te voegen.
+@|The bank also asks for life and home insurance, paid every month.|De bank vraagt ook een levens- en woningverzekering, maandelijks te betalen.
+@|Per m², with VAT, project and permits. A first idea: the builder's quote decides.|Per m², met btw, ontwerp en vergunningen. Een eerste idee: de offerte van de aannemer beslist.
+@|What will buying really cost? Calculate it →|Wat kost kopen echt? Bereken het →
+@|Your total budget|Jouw totale budget
+@|Purchase price|Aankoopprijs
+@|Taxes and fees|Belastingen en kosten
+@|of the price|van de prijs
+@|In an ARU, these works could cost|In een ARU kunnen deze werken
+@|less in VAT.|minder btw kosten.
+@|Thanks to the ARU, you save|Dankzij de ARU bespaar je
+@|in VAT on these works.|btw op deze werken.
+@|Renovating in Lisbon? Check the ARU first|Renoveren in Lissabon? Kijk eerst naar de ARU
+@|Normal|Normaal
+@|In an ARU|In een ARU
+@|VAT on the works|Btw op de werken
+@|On € 100.000 of works before VAT, that is € 6.000 of VAT instead of € 23.000.|Op € 100.000 aan werken zonder btw is dat € 6.000 btw in plaats van € 23.000.
+@|The city confirms with a certificate that the building is in the ARU.|De stad bevestigt met een attest dat het gebouw in de ARU ligt.
+@|A builder does the works under a works contract.|Een aannemer voert de werken uit met een aannemingscontract.
+@|Your architect or engineer confirms it is a real renovation of the building.|Jouw architect of ingenieur bevestigt dat het om een echte renovatie van het gebouw gaat.
+@|Before you buy, I check whether the home is in an ARU and what that means for your plans.|Voor je koopt, controleer ik of de woning in een ARU ligt en wat dat betekent voor jouw plannen.
+@|35 or younger and buying your first home?|35 jaar of jonger en je eerste woning?
+@|No|Nee
+@|Yes, one of two buyers|Ja, één van twee kopers
+@|Yes, every buyer|Ja, alle kopers
+@|For my clients, I check whether the home is in an ARU and what that means for their plans.|Voor mijn klanten controleer ik of de woning in een ARU ligt en wat dat betekent voor hun plannen.
+@|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. For my clients, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Een ARU, Área de Reabilitação Urbana, is een zone die de stad heeft aangeduid voor renovatie. Grote delen van het centrum van Lissabon liggen in een ARU, waaronder veel van Estrela, Lapa en Santos. Koop je daar een woning en renoveer je ze, dan kunnen de werken gefactureerd worden aan 6% btw in plaats van 23%, op voorwaarde dat een aannemer ze uitvoert met een aannemingscontract en dat het om een echte renovatie van het gebouw gaat. De stad levert een attest dat het gebouw in de ARU ligt, en jouw architect of ingenieur bevestigt dat de werken in aanmerking komen. Bij een grote renovatie kan dat tienduizenden euro's schelen. Voor mijn klanten controleer ik of de woning in een ARU ligt, en in de kostencalculator op de pagina Kopen zie je meteen het verschil.

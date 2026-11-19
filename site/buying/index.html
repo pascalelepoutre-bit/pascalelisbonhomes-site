@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&family=Lora:ital@1&display=swap">
-<link rel="stylesheet" href="/style.css?v=19237778">
+<link rel="stylesheet" href="/style.css?v=14b4d733">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -118,16 +118,27 @@
         <h2>What will it really cost?</h2>
         <p>On top of the price you pay IMT, stamp duty and the deed. With a mortgage, the bank adds its own fees. Fill in the price and see an estimate right away.</p>
         <div class="calc-sum" aria-live="polite">
-          <p class="cs-label">Total costs on top of the price</p>
-          <p class="cs-big" id="o-tot">–</p>
-          <p class="cs-pct"><span id="o-pct">–</span> of the purchase price</p>
-          <dl>
-            <div><dt>Price plus costs</dt><dd id="o-all">–</dd></div>
-            <div class="o-loan"><dt>Your own money needed<small>Price minus mortgage, plus all costs</small></dt><dd id="o-cash">–</dd></div>
-          </dl>
-          <a class="btn fill" href="/selling/#contact">Book a call</a>
+          <p class="cs-label">Your total budget</p>
+          <p class="cs-big" id="o-grand">–</p>
+          <div class="cs-bar" aria-hidden="true"><i class="b-p" id="b-p"></i><i class="b-c" id="b-c"></i><i class="b-w" id="b-w"></i></div>
+          <ul class="cs-leg">
+            <li><span class="dot d-p"></span><span class="lg-t">Purchase price</span><b id="l-p">–</b></li>
+            <li><span class="dot d-c"></span><span class="lg-t">Taxes and fees<small><span id="o-pct">–</span> of the price</small></span><b id="o-tot">–</b></li>
+            <li class="o-reno"><span class="dot d-w"></span><span class="lg-t">Renovation works</span><b id="l-w">–</b></li>
+          </ul>
+          <div class="aru-save o-reno"><span class="as-ic">6%</span><p class="as-23">In an ARU, these works could cost <b id="as-s1">–</b> less in VAT.</p><p class="as-6">Thanks to the ARU, you save <b id="as-s2">–</b> in VAT on these works.</p></div>
+          <dl class="o-loan"><div><dt>Your own money needed<small>Price minus mortgage, plus all costs</small></dt><dd id="o-cash">–</dd></div></dl>
         </div>
-        <p class="calc-note">Indicative only, based on the official 2026 IMT tables for mainland Portugal. IMT is calculated on the price or the tax value of the home, whichever is higher. Bank fees are an average of the Portuguese banks. Banks also ask for life and home insurance, paid monthly. Always check the final amounts with your lawyer or bank. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Official IMT rates</a></p>
+        <p class="calc-note">An estimate based on the official 2026 IMT tables for mainland Portugal. Always confirm the final amounts with your bank and your lawyer. <a href="https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimt/Pages/cimt17.aspx" target="_blank" rel="noopener">Official IMT rates</a></p>
+        <div class="aru-box">
+          <p class="aru-tag">ARU</p>
+          <h3>Renovating in Lisbon? Check the ARU first</h3>
+          <p>An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos.</p>
+          <div class="aru-vs"><div><span>Normal</span><b>23%</b><small>VAT on the works</small></div><div class="on"><span>In an ARU</span><b>6%</b><small>VAT on the works</small></div></div>
+          <p class="aru-eg">On € 100.000 of works before VAT, that is € 6.000 of VAT instead of € 23.000.</p>
+          <ol class="aru-steps"><li>The city confirms with a certificate that the building is in the ARU.</li><li>A builder does the works under a works contract.</li><li>Your architect or engineer confirms it is a real renovation of the building.</li></ol>
+          <p class="aru-me">For my clients, I check whether the home is in an ARU and what that means for their plans.</p>
+        </div>
       </div>
       <form class="calc" id="calc" onsubmit="return false">
         <div class="c-row">
@@ -138,16 +149,34 @@
           <label class="chip"><input type="radio" name="c-use" value="hpp" checked><span>My permanent home</span></label>
           <label class="chip"><input type="radio" name="c-use" value="sec"><span>A second home or investment</span></label>
         </fieldset>
-        <label class="consent c-young"><input type="checkbox" id="c-young"> I'm 35 or younger and this is my first home</label>
+        <fieldset class="mort-q c-young-q"><legend>35 or younger and buying your first home?</legend>
+          <label class="chip"><input type="radio" name="c-yg" value="no" checked><span>No</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="one"><span>Yes, one of two buyers</span></label>
+          <label class="chip"><input type="radio" name="c-yg" value="all"><span>Yes, every buyer</span></label>
+        </fieldset>
+        <fieldset class="mort-q c-reno"><legend>Renovation works</legend>
+          <label class="chip"><input type="radio" name="c-reno" value="0" checked><span>No works</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1200"><span>Simple</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1500"><span>Good quality</span></label>
+          <label class="chip"><input type="radio" name="c-reno" value="1800"><span>High-end</span></label>
+        </fieldset>
+        <div class="c-row o-reno"><label for="c-m2">Size of the home<span class="cin"><span>m²</span><input id="c-m2" inputmode="numeric" value="100" autocomplete="off"></span></label></div>
+        <fieldset class="mort-q o-reno"><legend>VAT on the works</legend>
+          <label class="chip"><input type="radio" name="c-iva" value="23" checked><span>23%, normal</span></label>
+          <label class="chip"><input type="radio" name="c-iva" value="6"><span>6%, in an ARU</span></label>
+        </fieldset>
         <dl class="calc-out">
           <div><dt>IMT, property transfer tax</dt><dd id="o-imt">–</dd></div>
           <div><dt>Stamp duty on the purchase, 0,8%</dt><dd id="o-is">–</dd></div>
           <div class="o-loan"><dt>Stamp duty on the mortgage, 0,6%</dt><dd id="o-isl">–</dd></div>
           <div class="o-loan"><dt>Bank fees: valuation, file and signing, estimate</dt><dd id="o-bank">–</dd></div>
           <div><dt>Deed and land registry, Casa Pronta</dt><dd id="o-deed">–</dd></div>
+          <div class="o-reno"><dt>Renovation works, estimate</dt><dd id="o-reno">–</dd></div>
         </dl>
-        <p class="c-hint o-noloan">With a mortgage? Add about € 800 in bank fees and 0,6% stamp duty on the loan. Fill in the mortgage amount above to include them. This is an estimate: always confirm the final amounts with your bank.</p>
-        <p class="c-hint o-loan">Banks also require life and home insurance, paid every month on top of your instalment. All amounts are estimates: always confirm them with your bank and your lawyer.</p>
+        <p class="c-hint o-noloan">With a mortgage? Fill in the amount above to add the bank costs.</p>
+        <p class="c-hint o-reno">Per m², with VAT, project and permits. A first idea: the builder's quote decides.</p>
+        <p class="c-hint o-loan">The bank also asks for life and home insurance, paid every month.</p>
+        <div class="calc-sticky" aria-hidden="true"><span>Your total budget</span><b id="o-grand2">–</b></div>
       </form>
     </div>
   </section>
@@ -277,6 +306,6 @@
   </div>
 </footer>
 
-<script src="/site.js?v=25d74e5a" defer></script>
+<script src="/site.js?v=7089b07d" defer></script>
 </body>
 </html>
