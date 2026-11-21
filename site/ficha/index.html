@@ -83,6 +83,7 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
         <div><label class="f">Data</label><input type="date" id="v_date"></div>
         <div><label class="f">Hora da visita</label><input type="time" id="v_time"></div>
       </div>
+      <label class="f">Cliente</label><input type="text" id="v_client" placeholder="Nome do cliente">
       <label class="f">Imóvel, morada</label><input type="text" id="v_addr" placeholder="Rua, n.º, andar, Lisboa">
       <div class="row2">
         <div><label class="f">ID do imóvel</label><input type="text" id="v_id" placeholder="W-0…"></div>
@@ -185,6 +186,7 @@ function now(){var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.g
 $('v_date').value=Q.get('d')||today(); $('v_time').value=Q.get('h')||now();
 $('v_addr').value=Q.get('m')||''; $('v_id').value=Q.get('id')||''; $('v_price').value=Q.get('p')||'';
 if(Q.get('c')) $('c_name').value=Q.get('c');
+$('v_client').value=$('c_name').value;$('v_client').oninput=function(){$('c_name').value=this.value};$('c_name').addEventListener('input',function(){$('v_client').value=this.value});
 if(Q.get('t')==='a'){S.type='Arrendamento';segSet('v_type','Arrendamento')}
 function segSet(id,v){document.querySelectorAll('#'+id+' button').forEach(function(b){b.classList.toggle('on',b.dataset.v===v)})}
 document.querySelectorAll('#v_type button').forEach(function(b){b.onclick=function(){S.type=b.dataset.v;segSet('v_type',S.type)}});
