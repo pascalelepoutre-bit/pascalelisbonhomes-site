@@ -240,4 +240,6 @@ document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
 document.querySelectorAll('.chg').forEach(b=>b.addEventListener('click',async()=>{if(b.disabled)return;const h=b.dataset.chg;b.disabled=true;b.textContent='A enviar…';
 try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:CLIENT+' · mudaram de ideia: '+h,cliente:CLIENT,casa:h,pedido:'Mudámos de ideia: queremos visitar'})});if(!r.ok)throw 0;b.textContent='Enviado ✓ A Pascale volta a falar convosco';}
 catch(e){b.disabled=false;b.textContent='Não foi enviado. Tentem de novo';}}));
+
+document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){a.target='_blank';a.rel='noopener';}});
 </script></body></html>

@@ -410,5 +410,7 @@ c.querySelector('.cpv').textContent=eur(v);
 c.querySelector('.crows').innerHTML='<div><span>Compra</span><span>'+eur(v)+'</span></div><div><span>Obras</span><span>'+eur(w)+'</span></div><div class="big '+(ok?'ok':'no')+'"><span>Compra + obras</span><span>'+eur(cw)+(ok?' ✓':' · acima de 800 000 €')+'</span></div><div><span>IMT</span><span>'+eur(i)+'</span></div><div><span>Imposto do Selo</span><span>'+eur(s)+'</span></div><div class="big"><span>Total com impostos</span><span>'+eur(cw+i+s)+'</span></div>';
 const t=c.querySelector('.ctot');t.textContent=eur(cw);t.className='ctot '+(ok?'ok':'no');};
 pr.addEventListener('input',run);jv.addEventListener('change',run);c.querySelectorAll('.cw button').forEach(b=>b.addEventListener('click',()=>{c.querySelectorAll('.cw button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));run();}));run();});})();
+
+document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){a.target='_blank';a.rel='noopener';}});
 </script>
 </body></html>
