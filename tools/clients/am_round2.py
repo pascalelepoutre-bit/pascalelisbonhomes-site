@@ -344,24 +344,22 @@ _C185=dict(id='casimiro185',name='Rua Joaquim Casimiro, 185 m², para remodelar'
 HOUSES.append(_C185)
 GEO.update(casimiro185=(38.705498,-9.167187)); AREA.update(casimiro185=185); AG.update(casimiro185='Century 21 CasaBela')
 _C185['geo']=GEO['casimiro185'];_C185['agency']=AG['casimiro185'];_C185['ppm']=f"{round(639000/185):,}".replace(',',' ')+' €/m²'
-_CALL={'casimiro170':' · ref KWPT-027353 · Catarina Gabriel 913 748 118',
- 'estrela102':' · ref KWPT-034228 · Lourdes Santos 917 546 499 · partilha sim, por confirmar por escrito',
- 'algesrio':' · ref KWPT-038048 · António Faria Blanc 917 221 639',
- 'casimiro185':' · ref C0506-00787 · 210 207 923 · Saúl Ribeiro',
- 'algesrep':' · ref 124991002-72 · 308 803 763',
- 'becoolival':' · ref 120521520-298 · provavelmente o mesmo que a C21 CasaBela',
- 'madragoa':' · ref 96142 · número no botão Contactar do Casa Sapo',
- 'boahora7':' · Idealista 35449911 · chat Idealista',
- 'santost5':' · ref W-049HVO · só ligar se tiverem interesse'}
-for h in HOUSES:
-    if h['id'] in _CALL: h['agency']+=_CALL[h['id']]
 # call round 23/11: [office called, agent called]
 DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0]}
-# 23/11 refs for every house
-_CALL2={'casimiro':' · ref C0492-00176 · 210 207 655',
- 'olival':' · ref 120181165-409 · escritório 218 763 674',
- 'boavista':' · ref PF40846 · 210 205 683',
- 'santos':' · One Advice Real Estate · ref Idealista 35466924 · 210 229 389',
- 'cruzq':' · ref Idealista 35497881 · chat Idealista'}
-for h in HOUSES:
-    if h['id'] in _CALL2: h['agency']+=_CALL2[h['id']]
+# contact card per house: office, reference, office phone, agent, agent phone, tip
+CONTACT={
+ 'casimiro170':('KW LEAD','KWPT-027353','211 977 898','Catarina Gabriel','913 748 118',''),
+ 'estrela102':('KW LEAD','KWPT-034228','211 977 898','Lourdes Santos','917 546 499','Escritório confirmou partilha por telefone, falta por escrito'),
+ 'algesrio':('KW Ábaco','KWPT-038048','217 920 620','António Faria Blanc','917 221 639',''),
+ 'casimiro185':('Century 21 CasaBela','C0506-00787','210 207 923','Saúl Ribeiro','',''),
+ 'casimiro':('Century 21 Polo Central II','C0492-00176','210 207 655','','',''),
+ 'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
+ 'becoolival':('RE/MAX Siimgroup','120521520-298','','','','Provavelmente o mesmo que a C21 CasaBela, 86 000 € mais caro'),
+ 'olival':('RE/MAX Telheiras','120181165-409','218 763 674','','969 003 714',''),
+ 'madragoa':('JLL Residential','96142','','','','Telefone no botão Contactar do Casa Sapo'),
+ 'boavista':("Porta da Frente Christie's",'PF40846','210 205 683','','',''),
+ 'santos':('One Advice Real Estate','Idealista 35466924','210 229 389','','',''),
+ 'boahora7':('Particular','Idealista 35449911','','Dimi','','Pelo chat do Idealista'),
+ 'cruzq':('Particular','Idealista 35497881','','Manel Theotónio','','Pelo chat do Idealista'),
+ 'santost5':('Engel & Völkers','W-049HVO','','Oscar Baptista','','Só ligar se tiverem interesse'),
+}
