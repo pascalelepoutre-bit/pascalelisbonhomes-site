@@ -53,12 +53,12 @@ h2{font:500 26px/1.15 var(--display);margin:0 0 6px}
 h3{font:600 18px/1.25 var(--body);margin:6px 0 2px}
 .lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 22px}
 .muted{color:var(--muted)}
-.hero{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.hero{display:grid;grid-template-columns:1fr;gap:18px}
 .now{background:#fbedc4;border:1px solid var(--sun);border-radius:20px;padding:26px;display:flex;flex-direction:column}
 .now .big{font:500 24px/1.2 var(--display);margin:4px 0 6px}
-.now .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:18px}
+.now .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;padding-top:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
-.learn{padding:26px}.learn ul{margin:10px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px}.learn li{margin:0;background:var(--cream,#f6efe3);border-radius:12px;padding:9px 12px;font-size:14.5px;line-height:1.35}
+.learn{padding:26px}.learn ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:8px}.learn li{margin:0;background:var(--cream,#f6efe3);border-radius:12px;padding:9px 12px;font-size:14.5px;line-height:1.35}
 .btn{display:inline-block;font:600 15px var(--body);padding:11px 20px;border-radius:999px;background:var(--sun);color:var(--ink);text-decoration:none;border:0;cursor:pointer}
 .btn.ghost{background:var(--card);border:1px solid var(--ink)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
@@ -118,9 +118,14 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 .old1{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border:1px solid #e8d8bc;border-radius:18px;padding:16px 18px;margin:6px 0 10px}.old1 h3{margin:2px 0 0;font-size:18px}
 .ah .rt{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}.ah .rt .vis{margin:0;font-size:12px}.ah .rt .chg{margin:0;font-size:12.5px;text-align:right}
 .now2{background:#fbedc4!important;color:#1d2733!important;border:1px solid var(--sun);box-shadow:none!important}.now2 .eyebrow{color:#a87a22!important}.now2 h3{color:#1d2733!important}.now2 p{color:#33423b!important}.now2 .here{background:#1d2733!important;color:#fff!important}.go2{background:var(--sun)!important;color:#1d2733!important;font-weight:600!important}.go2:hover{background:#e8c873!important}
+.lcols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}.lcols h4{font:600 12px var(--body);letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px;color:#a87a22}
+.lcols>div:first-child h4{color:#1d2733}.lcols>div:first-child li{background:#fbedc4}
+.ledit{margin-top:16px;border-top:1px solid var(--line,#eee);padding-top:14px}.chg2{background:#fff;border:1.5px solid #222;border-radius:999px;padding:9px 16px;font:600 14px inherit;cursor:pointer;color:#222}.chg2:hover{background:#222;color:#fff}
+#pBox textarea{width:100%;min-height:80px;margin:10px 0;border:1px solid var(--line,#ddd);border-radius:12px;padding:10px;font:inherit;box-sizing:border-box}
+@media(max-width:760px){.lcols{grid-template-columns:1fr}}
 </style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
-<nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
+<nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#procura" data-t="procura"><span class="lg">O que procuram</span><span class="sm">Procura</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
 
 <section class="pane" id="p-inicio">
   <p class="eyebrow">O vosso espaço</p>
@@ -130,14 +135,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
     <div class="now"><p class="eyebrow">Agora</p><p class="big">Nova seleção · 6 casas</p>
 <p class="ntext">De Santos a Algés, perto do rio e do comboio: três para remodelar, três prontas a habitar. Todas melhores do que a Calçada no preço, no espaço ou na localização.</p><p class="ntext"><b>Escolham quais querem visitar: quinta, sexta ou sábado.</b></p>
       <div class="row"><a class="btn" href="../antonio-mafalda-selecao2-eae4a8f64b3dbdd22c79ac69/" target="_blank">Ver a seleção 2 ↗</a><a class="btn ghost" href="#visitas">O que já vimos</a></div></div>
-    <div class="card learn"><p class="eyebrow">O que procuram</p><p class="forever">A vossa casa para sempre, onde a família vai crescer.</p><ul>
-<li>T3 ou T2+1 a sério</li>
-<li>Sala com cozinha aberta</li>
-<li>Luz, carácter, pé-direito alto</li>
-<li>Obras bem-vindas</li>
-<li>Perto do rio e do comboio</li>
-<li>Até 633 mil, máx. 800 mil com obras</li>
-</ul></div>
+    
   </div>
   <div class="nums"><p class="eyebrow">A vossa procura em números</p><div class="nrow">
 <div><b>45+</b><span>casas analisadas</span></div>
@@ -150,7 +148,21 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
     <a class="go" href="#visitas"><b>Visitas</b><span>As visitas feitas e o que acharam</span></a>
     <a class="go" href="#passos"><b>Próximos passos</b><span>Do sim à escritura, passo a passo</span></a>
   </div>
-  <nav class="pn" aria-label="Anterior e seguinte"><span></span><a class="nx" href="#selecoes"><small>Seguinte</small><b>Seleções →</b></a></nav>
+  <nav class="pn" aria-label="Anterior e seguinte"><span></span><a class="nx" href="#procura"><small>Seguinte</small><b>O que procuram →</b></a></nav>
+</section>
+
+<section class="pane" id="p-procura">
+  <p class="eyebrow">O que procuram</p><h2>A vossa casa para sempre</h2>
+  <p class="lead">O que aprendi convosco até agora. Se alguma coisa mudar, digam-me aqui em baixo e eu ajusto a procura.</p>
+  <div class="card learn"><div class="lhead"><p class="forever">A vossa casa para sempre, onde a família vai crescer.</p></div>
+<div class="lcols">
+<div><h4>Essencial</h4><ul><li>T3, ou T2+1 com um terceiro quarto a sério</li><li>Sala grande com cozinha aberta, ou possível de abrir</li><li>Luz em todas as divisões</li></ul></div>
+<div><h4>Seria bom</h4><ul><li>Varanda ou terraço</li><li>Segunda casa de banho</li><li>Garagem para carregar o carro elétrico</li></ul></div>
+<div><h4>Também importante</h4><ul><li>De Santos a Algés, perto do rio e do comboio, numa rua sossegada</li><li>Carácter e pé-direito alto, sem tetos baixos nem águas-furtadas</li><li>Obras bem-vindas · ideal até 633 mil, máximo 800 mil com obras</li></ul></div>
+</div>
+<div class="ledit"><button type="button" class="chg2" id="pBtn">Mudou alguma coisa? Acrescentar ou alterar</button>
+<div id="pBox" hidden><textarea id="pNote" placeholder="Por exemplo: afinal a garagem é essencial."></textarea><button type="button" class="btn" id="pSend">Enviar à Pascale</button><p id="pOk" hidden>Enviado ✓ Obrigada, a Pascale atualiza o vosso perfil.</p></div></div></div>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#inicio"><small>Anterior</small><b>← Início</b></a><a class="nx" href="#selecoes"><small>Seguinte</small><b>Seleções →</b></a></nav>
 </section>
 
 <section class="pane" id="p-selecoes">
@@ -165,7 +177,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
   <div class="answers"><div class="ahd"><div><p class="eyebrow">Seleção 1 · as vossas respostas</p><h3>Enviadas a 11 de novembro</h3></div><span class="lock">Respostas fechadas</span></div>
 <ol class="alist"><li><span class="hn">1</span><div><div class="ah"><b>Santos-o-Velho, Madragoa</b><span class="rt"><span class="rx no">Não é para nós</span><button type="button" class="chg" data-chg="Santos-o-Velho, Madragoa">Mudámos de ideia: queremos visitar</button></span></div><p>A casa é gira, mas achamos que falta um bocado de personalidade</p></div></li><li><span class="hn">2</span><div><div class="ah"><b>Rua do Olival, Lapa</b><span class="rt"><span class="rx no">Não é para nós</span><button type="button" class="chg" data-chg="Rua do Olival, Lapa">Mudámos de ideia: queremos visitar</button></span></div><p>O quarto é demasiado grande, mas a sala é muito gira mas pequena</p></div></li><li><span class="hn">3</span><div><div class="ah"><b>Travessa da Costa, Estrela</b><span class="rt"><span class="rx maybe">Talvez</span><span class="vis">Visitada ✓</span></span></div><p>Gostamos muito da casa, especialmente o espaço exterior e da sala. Os quartos parecem muito pequenos em geral, mas OK</p></div></li><li><span class="hn">4</span><div><div class="ah"><b>Calçada das Necessidades, Estrela</b><span class="rt"><span class="rx love">Adoro</span><span class="vis">Visitada ✓</span></span></div><p>Gostamos muito do apartamento, especialmente porque há possibilidade de o podermos renovar à nossa medida e gosto. Dependeria muito do custo esperado das obras, e se o preço da casa seria negociável</p></div></li></ol><p class="ax"><span>Querem visitar:</span> Travessa da Costa e Calçada das Necessidades</p><p class="ax"><span>Quando:</span> Sábado, 14 de novembro</p></div>
   <div class="slist"></div>
-  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#inicio"><small>Anterior</small><b>← Início</b></a><a class="nx" href="#visitas"><small>Seguinte</small><b>Visitas →</b></a></nav>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#procura"><small>Anterior</small><b>← O que procuram</b></a><a class="nx" href="#visitas"><small>Seguinte</small><b>Visitas →</b></a></nav>
 </section>
 
 <section class="pane" id="p-visitas">
@@ -249,5 +261,11 @@ document.querySelectorAll('.chg').forEach(b=>b.addEventListener('click',async()=
 try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:CLIENT+' · mudaram de ideia: '+h,cliente:CLIENT,casa:h,pedido:'Mudámos de ideia: queremos visitar'})});if(!r.ok)throw 0;b.textContent='Enviado ✓ A Pascale volta a falar convosco';}
 catch(e){b.disabled=false;b.textContent='Não foi enviado. Tentem de novo';}}));
 
+
+(()=>{const b=document.getElementById('pBtn'),box=document.getElementById('pBox');if(!b)return;b.onclick=()=>{box.hidden=!box.hidden;if(!box.hidden)document.getElementById('pNote').focus()};
+document.getElementById('pSend').onclick=async()=>{const t=document.getElementById('pNote').value.trim();if(!t)return;const sb=document.getElementById('pSend');sb.disabled=true;sb.textContent='A enviar…';
+try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:CLIENT+' · perfil: acrescentar ou alterar',cliente:CLIENT,perfil:t})});if(!r.ok)throw 0;
+sb.hidden=true;document.getElementById('pNote').hidden=true;document.getElementById('pOk').hidden=false;}
+catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(t);}};})();
 document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){a.target='_blank';a.rel='noopener';}});
 </script></body></html>
