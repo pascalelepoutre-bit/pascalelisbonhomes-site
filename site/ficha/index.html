@@ -352,7 +352,13 @@ if(CL){$('back1').style.display='none';
  $('sigP').closest('.card').style.display='none';$('make').textContent='Enviar a ficha à Pascale';
  $('doneTxt').textContent='Obrigada! A ficha seguiu para a Pascale. Se quiserem, enviem-lhe também o PDF.';$('share').textContent='Enviar o PDF à Pascale';$('again').style.display='none';
  var sp=document.querySelectorAll('.steps span');if(sp[3])sp[3].style.display='none';
- $('addr2').textContent=$('v_addr').value;show(2);}else show(1);
+ $('addr2').textContent=$('v_addr').value;
+ /* one button: send the record by email and open WhatsApp & co. with the signed PDF */
+ var g4=$('go4').onclick;$('go4').onclick=function(){g4();if($('s4').classList.contains('hide'))return;$('make').onclick();if(!BLOB)return;
+   var file=new File([BLOB],FNAME,{type:'application/pdf'});
+   if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:'Ficha de visita',text:'Ficha de visita para a Pascale'}).catch(function(){})}};
+ $('doneTxt').textContent='Obrigada! A Pascale já recebeu o aviso. Se ainda não enviaram o PDF, toquem no botão em baixo e escolham a Pascale no WhatsApp.';
+ show(2);}else show(1);
 })();
 </script>
 </body>
