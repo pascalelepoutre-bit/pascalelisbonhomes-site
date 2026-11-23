@@ -45,6 +45,14 @@ def calc(h):
       <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
       </div></details>'''
 
+
+HOME=os.environ.get('HOME_URL','../antonio-mafalda-espaco-preview-h4t7/')
+def scards():
+    out=''
+    for h in HOUSES:
+        out+=f'<li><button type="button" class="scard" data-hid="{h["id"]}"><span class="sth" style="background-image:url(\'{h["photos"][0]}\')"></span><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])}<small>{e(h["price"])} · {e(h["state"])}</small></span></button></li>'
+    return out
+
 def house(h):
     ph = h['photos']
     thumbs = ''.join(f'<button type="button" class="th" data-i="{i}" aria-label="Fotografia {i+1}" style="background-image:url(\'{p}\')"></button>' for i, p in enumerate(ph)) if len(ph) > 1 else ''
@@ -212,12 +220,30 @@ textarea[rows="1"]{{min-height:42px}}
 .bar .mid{{flex:1;text-align:center;font:600 11px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}}
 @media (max-width:519px){{.bar .back{{width:48px;height:48px;padding:0!important;font-size:0!important;letter-spacing:0!important}}.bar .back::before{{content:"←";font-size:20px!important;margin:0!important}}}}
 .price .ppm{{display:block;font:400 12.5px var(--body);color:var(--muted);text-align:right;letter-spacing:0}}
+.topnav{{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--sand)}}.tn-in{{max-width:1240px;margin:0 auto;display:flex;gap:8px;align-items:center;padding:8px 14px;overflow-x:auto}}
+.tn-home{{font:600 14px var(--body);color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:999px;background:var(--cream);white-space:nowrap}}.tn-b{{font:600 14px var(--body);border:1.5px solid var(--sand);background:#fff;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}}.tn-send{{margin-left:auto;background:var(--ink);color:#fff;border-color:var(--ink)}}
+.side{{display:none}}.scards{{list-style:none;margin:0;padding:0;display:grid;gap:8px}}.scard{{width:100%;display:flex;gap:10px;align-items:center;text-align:left;background:#fff;border:1.5px solid var(--sand);border-radius:14px;padding:8px;cursor:pointer;font:500 14px var(--body);color:var(--ink)}}.scard.on{{border-color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.08)}}.scard small{{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}}.scard b{{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 12px var(--body)}}.scard b.rn{{background:var(--gold)}}.sth{{flex:none;width:58px;height:46px;border-radius:9px;background:center/cover #eee}}.sc-send{{margin-top:8px}}.sc-send b{{background:var(--ok)}}
+#sideMap .mapbox{{margin:0 0 10px}}#sideMap #lmap{{height:220px;margin:6px 0 8px}}
+@media (min-width:980px){{.side{{display:block;position:fixed;left:max(14px,calc(50vw - 620px));top:58px;bottom:0;width:340px;overflow:auto;padding:12px 4px 90px 0}}.wrap{{margin-left:max(372px,calc(50vw - 620px + 372px));max-width:calc(100vw - 400px);margin-right:auto}}.tn-list{{display:none}}}}
+@media (min-width:1400px){{.wrap{{max-width:860px}}}}
+@media (max-width:979px){{.side.open{{display:block;position:fixed;inset:52px 0 0 0;z-index:49;background:var(--bg);overflow:auto;padding:12px 14px 100px}}}}
 #lmap{{height:340px;border-radius:12px;margin:4px 0 14px;z-index:0}}
 .lpin{{width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:600 13px/28px var(--body);text-align:center;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}}.lpin.rn{{background:var(--gold)}}.lpin.ref{{background:var(--red)}}.lpin.home{{background:#fff;color:var(--ink)}}
 .pbanner{{background:var(--ink);color:#fff;text-align:center;padding:9px 14px;font:600 13px var(--body);letter-spacing:.04em}}
 .pcap{{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
 </style></head><body>
+<nav class="topnav" aria-label="Menu"><div class="tn-in">
+  <a class="tn-home" href="{HOME}">⌂ O vosso espaço</a>
+  <button type="button" class="tn-b" id="tnStart">Seleção 2</button>
+  <button type="button" class="tn-b tn-list" id="tnList">As casas ☰</button>
+  <button type="button" class="tn-b tn-send" id="tnSend">Enviar</button>
+</div></nav>
+<aside class="side" id="side" aria-label="As casas"><div class="side-in">
+  <div id="sideMap"></div>
+  <ol class="scards">{scards()}</ol>
+  <button type="button" class="scard sc-send" id="scSend"><b>✓</b><span>Último passo<small>A vossa opinião e quando visitar</small></span></button>
+</div></aside>
 <div class="wrap">
   <div class="top"><div class="brand"><img class="av" src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div>
   <svg class="topart" viewBox="0 0 520 120" aria-hidden="true"><line x1="0" y1="110" x2="520" y2="110"/><path d="M40 110V58h46v52M40 58l23-16 23 16M52 70h8v10h-8zM68 70h8v10h-8z"/><rect x="110" y="44" width="70" height="66"/><path d="M126 44v-10a19 19 0 0 1 38 0v10M135 110V92a10 10 0 0 1 20 0v18"/><path d="M200 110V66h40v44M200 66l20-14 20 14"/><rect class="g" x="258" y="64" width="96" height="34" rx="6"/><circle cx="276" cy="102" r="5"/><circle cx="336" cy="102" r="5"/><path d="M306 64l-10-20 22-8"/><path d="M374 110V52h44v58M374 52l22-15 22 15"/><circle class="g" cx="446" cy="70" r="12"/><path d="M446 82v28"/></svg></div>
@@ -280,6 +306,9 @@ textarea[rows="1"]{{min-height:42px}}
 </form>
 <script>
 (function(){{
+const SIDE=document.getElementById('side');
+if(window.matchMedia('(min-width:980px)').matches){{const mb=document.querySelector('.mapbox');if(mb)document.getElementById('sideMap').append(mb);}}
+
 const CLIENT={json.dumps(CLIENT)}, KEY={json.dumps(KEY)};
 const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
 let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementById('midlbl');
@@ -349,17 +378,19 @@ M.fitBounds(pts,{{padding:[24,24]}});}}catch(e){{}}
 load();show(0);
 if(VW){{const sb=document.getElementById('send');if(sb){{sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}}
 const nb=()=>{{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');}};nb();setTimeout(nb,800);setTimeout(nb,2500);
+
+function sideSync(){{const s=steps[cur];document.querySelectorAll('.scard[data-hid]').forEach(c=>c.classList.toggle('on',s&&s.dataset.id===c.dataset.hid));document.getElementById('scSend').classList.toggle('on',s&&s.classList.contains('final'));}}
+const _show=show;show=function(i){{_show(i);sideSync();}};
+document.querySelectorAll('.scard[data-hid]').forEach(c=>c.addEventListener('click',()=>{{const h=houses.find(x=>x.dataset.id===c.dataset.hid);if(h){{show(steps.indexOf(h));window.scrollTo({{top:0}});}}SIDE.classList.remove('open');}}));
+const fin=steps.findIndex(s=>s.classList.contains('final'));
+document.getElementById('scSend').addEventListener('click',()=>{{show(fin);window.scrollTo({{top:0}});SIDE.classList.remove('open');}});
+document.getElementById('tnSend').addEventListener('click',()=>{{show(fin);window.scrollTo({{top:0}});SIDE.classList.remove('open');}});
+document.getElementById('tnStart').addEventListener('click',()=>{{show(0);window.scrollTo({{top:0}});SIDE.classList.remove('open');}});
+document.getElementById('tnList').addEventListener('click',()=>SIDE.classList.toggle('open'));
+sideSync();
 }})();
 
-(function(){{const eur=n=>Math.round(n).toLocaleString('pt-PT').replace(/\u202f|\.|,/g,' ')+' €';
-function imt(v,j){{const B=[[106346,0,0],[145470,.02,2126.92],[198347,.05,6491.02],[330539,.07,10457.96],[660982,.08,13763.35]];if(j){{if(v<=330539)return 0;if(v<=660982)return v*.08-26443.12;}}if(v>1150853)return v*.075;if(v>660982)return v*.06;for(const[l,r,d]of B)if(v<=l)return Math.max(0,v*r-d);return 0;}}
-function selo(v,j){{if(j){{if(v<=330539)return 0;if(v<=660982)return (v-330539)*.008;}}return v*.008;}}
-document.querySelectorAll('.calc').forEach(c=>{{const area=+c.dataset.area,pr=c.querySelector('.cpr'),jv=c.querySelector('.cjv');
-const run=()=>{{const v=+pr.value,w=+(c.querySelector('.cw [aria-pressed="true"]')||{{dataset:{{w:0}}}}).dataset.w*area,j=jv.checked,i=imt(v,j),s=selo(v,j),cw=v+w,ok=cw<=800000;
-c.querySelector('.cpv').textContent=eur(v);
-c.querySelector('.crows').innerHTML='<div><span>Compra</span><span>'+eur(v)+'</span></div><div><span>Obras</span><span>'+eur(w)+'</span></div><div class="big '+(ok?'ok':'no')+'"><span>Compra + obras</span><span>'+eur(cw)+(ok?' ✓':' · acima de 800 000 €')+'</span></div><div><span>IMT</span><span>'+eur(i)+'</span></div><div><span>Imposto do Selo</span><span>'+eur(s)+'</span></div><div class="big"><span>Total com impostos</span><span>'+eur(cw+i+s)+'</span></div>';
-const t=c.querySelector('.ctot');t.textContent=eur(cw);t.className='ctot '+(ok?'ok':'no');}};
-pr.addEventListener('input',run);jv.addEventListener('change',run);c.querySelectorAll('.cw button').forEach(b=>b.addEventListener('click',()=>{{c.querySelectorAll('.cw button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));run();}}));run();}});}})();
+
 
 document.querySelectorAll('a[href]').forEach(a=>{{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){{a.target='_blank';a.rel='noopener';}}}});
 </script>
