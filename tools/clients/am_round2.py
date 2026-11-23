@@ -425,3 +425,9 @@ for h in HOUSES:
 CLIENTNOTE['casimiro185']='O anúncio da Century 21 indica prédio com elevador: confirmo o andar na visita. Uma proposta realista ronda os 550 000 a 580 000 €, com obras feitas por fases: primeiro cozinha, casas de banho e instalações.'
 CLIENTFIT['casimiro185']=[('ok','Muito espaço para o futuro'),('ok','Preço baixo por m²: margem para obras'),('ok','Prédio com elevador, segundo o anúncio'),('mid','Obras completas, a fazer por fases')]
 CLIENTNOTE['casimiro']='Prédio de 1975, 1.º andar sem elevador. Confirmo na visita o pé-direito, o estado das casas de banho e o condomínio.'
+# 23/11 15:52 E&V system: Santos T5 is on the 4th floor
+for h in HOUSES:
+    if h['id']=='santost5':
+        h['line']='T5 · 145 m² · 4.º andar · vista rio'
+        h['facts']=[(k,'4.º' if k=='Piso' else v) for k,v in h['facts']]
+CLIENTNOTE['santost5']='4.º andar: confirmo se o prédio tem elevador. As três divisões interiores servem bem para escritório, closet ou arrumação.'
