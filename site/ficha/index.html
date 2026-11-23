@@ -251,6 +251,7 @@ $('go3').onclick=function(){var miss=ITEMS.filter(function(it){return S.rates[it
 $('back2').onclick=function(){show(2)};
 $('go4').onclick=function(){var e='';if(!$('c_name').value.trim())e=T[L].mName;else if(!$('c_cc').value.trim())e=T[L].mCC;else if(!$('c_ok').checked)e=T[L].mOk;else if(P.sigC.isEmpty())e=T[L].mSig;
   $('err3').textContent=e;if(e)return;
+  if(CL){try{if($('c_keep')&&$('c_keep').checked)localStorage.setItem('ficha_me',JSON.stringify({n:$('c_name').value.trim(),cc:$('c_cc').value.trim()}));else localStorage.removeItem('ficha_me')}catch(x){}}
   var r=ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('<br>');
   $('sum').innerHTML='<p><b>'+esc($('c_name').value)+'</b> · '+esc($('v_addr').value)+'</p><p class="small">'+r+'</p><p>Compraria: <b>'+S.buy+'</b></p>'+($('obs').value?'<p class="small">“'+esc($('obs').value)+'”</p>':'');
   show(4);setTimeout(function(){P.sigP.size();P.sigO.size();try{var s=localStorage.getItem('ficha_sigP');if(s&&P.sigP.isEmpty())P.sigP.load(s)}catch(x){}},60)};
@@ -341,7 +342,10 @@ $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{ty
 function download(){var u=URL.createObjectURL(BLOB),a=document.createElement('a');a.href=u;a.download=FNAME;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1000)}
 $('dl').onclick=download;
 $('again').onclick=function(){location.href=location.pathname+location.search};
-if(CL){$('back1').style.display='none';$('go4').textContent='Enviar a ficha à Pascale →';$('s2').querySelector('.eyebrow').textContent='Ficha de visita · 1 de 3';$('s3').querySelector('.eyebrow').textContent='Ficha de visita · 2 de 3';
+if(CL){$('back1').style.display='none';
+ (function(){var cc=$('c_cc'),lb=document.createElement('label');lb.className='small';lb.style.cssText='display:flex;gap:8px;align-items:center;margin:8px 0 4px';
+  lb.innerHTML='<input type="checkbox" id="c_keep" checked> Guardar o nome e o n.º neste telemóvel para as próximas fichas';cc.insertAdjacentElement('afterend',lb);
+  try{var me=JSON.parse(localStorage.getItem('ficha_me')||'null');if(me){if(me.n){$('c_name').value=me.n;}if(me.cc)cc.value=me.cc;}}catch(x){}})();$('go4').textContent='Enviar a ficha à Pascale →';$('s2').querySelector('.eyebrow').textContent='Ficha de visita · 1 de 3';$('s3').querySelector('.eyebrow').textContent='Ficha de visita · 2 de 3';
  var s4=$('s4');s4.querySelector('.hand').style.display='none';s4.querySelector('.eyebrow').textContent='Ficha de visita · 3 de 3';s4.querySelector('h1').textContent='Confirmar e enviar';
  $('sigP').closest('.card').style.display='none';$('make').textContent='Enviar a ficha à Pascale';
  $('doneTxt').textContent='Obrigada! A ficha seguiu para a Pascale. Se quiserem, enviem-lhe também o PDF.';$('share').textContent='Enviar o PDF à Pascale';$('again').style.display='none';
