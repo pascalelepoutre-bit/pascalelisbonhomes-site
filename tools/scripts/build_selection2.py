@@ -69,11 +69,6 @@ def house(h):
   <div class="pad">
     <div class="head"><h2><span class="num{'' if h['ready'] else ' rn'}">{h['n']}</span>{e(h['name'])}</h2><p class="price">{e(h['price'])}<small class="ppm">{e(h['ppm'])}</small></p></div>
     <p class="line">{e(h['line'])}</p>
-    <div class="react">
-      <p class="rlab">● A vossa resposta</p><p class="rq">O que acham desta casa?</p>
-      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
-      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
-    </div>
     <h3>Porquê esta casa</h3>
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
@@ -81,6 +76,11 @@ def house(h):
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts">{facts}</div>
 </details>
     <div class="links">{f'<a href="{h["link"]}" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a>' if h.get('link') else ''}<a href="https://www.google.com/maps/search/?api=1&query={e(h['maps']).replace(' ','+')}" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
+    <div class="react">
+      <p class="rlab">● A vossa resposta</p><p class="rq">O que acham desta casa?</p>
+      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
+    </div>
   </div>
 </section>'''
 
@@ -236,6 +236,7 @@ html,body{{overflow-x:hidden}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
 .react{{background:#fbedc4!important;border:1.5px solid var(--sun)!important;border-radius:16px!important;padding:14px 16px!important;margin:10px 0 16px!important}}.rlab{{display:inline-block;margin:0 0 6px;font:700 11px var(--body);letter-spacing:.12em;text-transform:uppercase;background:#1d2733;color:#fff;border-radius:999px;padding:4px 10px}}.react .rq{{font-weight:700!important;font-size:17px!important;margin:0 0 8px!important}}.react .rbar{{flex-wrap:wrap!important}}.react .rbar button{{font-weight:600!important;padding:10px 16px!important}}.react .rbar button:not([aria-pressed="true"]){{background:#fff!important;border:1.5px solid #1d2733!important}}.react textarea{{background:#fff}}
 .tn-wa{{font:600 14px var(--body);text-decoration:none;color:#fff;background:#2e7d4f;padding:8px 14px;border-radius:999px;white-space:nowrap}}
+@media (min-width:900px){{.react{{position:sticky;bottom:10px;z-index:5;box-shadow:0 -6px 18px rgba(0,0,0,.06)}}.react .bar{{margin:10px 0 0!important;border:0!important;border-top:1px solid #ecd9a2!important;padding:10px 0 0!important;background:none!important}}.react textarea{{min-height:0}}.react .rq{{display:inline-block;margin-right:8px!important}}}}
 </style></head><body>
 <nav class="topnav" aria-label="Menu"><div class="tn-in">
   <span class="tn-brand">Pascale Lepoutre<small>Engel &amp; Völkers</small></span><a class="tn-home" href="{HOME}">⌂ O vosso espaço</a>
@@ -343,7 +344,7 @@ function grow(t){{t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}
 document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
 function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
- if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}}
+ if(window.innerWidth>=900)react.appendChild(bar);else s.after(bar);}}
 window.addEventListener('resize',()=>{{place();}});
 function syncBar(){{const h=steps[cur];if(!h.classList.contains('house'))return;const v=val(h.querySelector('.btns'));rbar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===v)));}}
 rbar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{{const h=steps[cur];h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===b.dataset.v)));syncBar();save();}}));
