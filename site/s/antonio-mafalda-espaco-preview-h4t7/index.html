@@ -113,7 +113,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 .vis{font:600 12px inherit;color:#3f7a63;background:#e3efe9;border-radius:999px;padding:2px 9px;margin-left:6px;white-space:nowrap}.chg{background:none;border:0;padding:0;cursor:pointer;display:inline-block;margin-top:6px;font:600 13.5px inherit;color:#a87a22;text-decoration:none;border-bottom:1px solid currentColor}
 </style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
-<nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#custos" data-t="custos"><span class="lg">Custos</span><span class="sm">Custos</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
+<nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
 
 <section class="pane" id="p-inicio">
   <p class="eyebrow">O vosso espaço</p>
@@ -186,43 +186,11 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
     
   </div>
 </article></div>
-  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#selecoes"><small>Anterior</small><b>← Seleções</b></a><a class="nx" href="#custos"><small>Seguinte</small><b>Custos →</b></a></nav>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#selecoes"><small>Anterior</small><b>← Seleções</b></a><a class="nx" href="#passos"><small>Seguinte</small><b>Próximos passos →</b></a></nav>
 </section>
 
 
-<section class="pane" id="p-custos"><p class="eyebrow">Custos</p><h2>Quanto custa no total?</h2>
-<p class="lead">Escolham uma casa e mexam nos valores: o preço depende da negociação, e as obras do nível de acabamentos.</p>
-<div class="kc">
- <div class="ctl"><label class="ctl-l" for="kh">Casa</label><select id="kh"></select><label class="ka">Área <input id="ka" type="number" step="1" inputmode="numeric"> m² de área bruta privativa</label></div>
- <div class="ctl"><span class="ctl-l">Têm até 35 anos e é a vossa primeira casa?</span>
-  <div class="seg" id="ky"><button type="button" data-y="nao">Não</button><button type="button" data-y="um">Só um de nós</button><button type="button" data-y="dois">Sim, os dois</button></div>
-  <small>Com até 35 anos, na primeira casa para habitação própria, há isenção parcial de IMT e Imposto do Selo, o IMT Jovem.</small></div>
- <div class="ctl"><label for="kr">Preço de compra <output id="kpv"></output></label>
-  <input type="range" id="kr" step="5000"><div class="scale"><span id="krmin"></span><span id="krmax"></span></div>
-  <small>Começa no preço pedido. Os valores mais baixos mostram o efeito de uma negociação.</small></div>
- <div class="ctl"><span class="ctl-l">Obras</span>
-  <div class="seg two" id="ko"><button type="button" data-o="1">Com obras</button><button type="button" data-o="0">Sem obras</button></div>
-  <div id="kq"><label for="kw" style="margin-top:8px">Qualidade das obras <output id="kwv"></output></label>
-  <input type="range" id="kw" min="1000" max="2000" step="50">
-  <div class="scale-q"><span>Simples<br>1.000 €</span><span>Boa qualidade<br>1.500 €</span><span>Alto padrão<br>2.000 €</span></div>
-  <small>Por m², com IVA a 23%, projeto e licenças.</small></div>
-  <span class="ctl-l" style="margin-top:8px">IVA das obras</span>
-  <div class="seg two" id="ki"><button type="button" data-i="23">23% normal</button><button type="button" data-i="6">6% reabilitação ARU</button></div>
-  <small id="karu"></small></div>
- <table aria-label="Custo total">
-  <tr><td>Compra</td><td id="t-p"></td></tr>
-  <tr><td>Obras<small id="t-wn"></small></td><td id="t-w"></td></tr>
-  <tr class="sub"><td>Compra + obras<small>o vosso máximo é 800.000 €</small></td><td id="t-cw"></td></tr>
-  <tr><td>IMT e Imposto do Selo<small id="t-tn"></small></td><td id="t-t"></td></tr>
-  <tr><td>Escritura, registo e custos do crédito<small>estimativa: escritura e registos, avaliação e comissões do banco, Imposto do Selo de 0,6% sobre o empréstimo</small></td><td id="t-f"></td></tr>
-  <tr class="total"><td>Total</td><td id="t-tot"></td></tr>
- </table>
- <div class="bar" id="kbar"><i id="kbi"></i></div><div class="scale"><span>0 €</span><span>o vosso máximo: 800.000 €</span></div>
- <p class="verdict" id="kv" role="status"></p>
-</div>
-<p class="lead" style="font-size:14px;margin-top:12px">Atenção: o banco financia sobretudo a compra; as obras precisam de capital próprio ou de um crédito à parte. A Jessica, da ComparaJá, confirma as duas coisas.</p>
-<nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#visitas"><small>Anterior</small><b>← Visitas</b></a><a class="nx" href="#passos"><small>Seguinte</small><b>Próximos passos →</b></a></nav>
-</section>
+
 <section class="pane" id="p-passos">
   <p class="eyebrow">Próximos passos</p><h2>Do sim à escritura</h2>
   <p class="lead">Acompanho-vos em cada passo. Assim sabem sempre onde estamos e o que vem a seguir.</p>
@@ -232,7 +200,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <li class="later"><span class="dot">4</span><div><h4>CPCV </h4><p>O contrato-promessa de compra e venda, com o sinal. Verificamos antes todos os documentos.</p></div></li>
 <li class="later"><span class="dot">5</span><div><h4>Crédito habitação </h4><p>Avaliação bancária e aprovação final do crédito.</p></div></li>
 <li class="later"><span class="dot">6</span><div><h4>Escritura </h4><p>A assinatura final e a entrega das chaves. A casa é vossa.</p></div></li></ol>
-  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#custos"><small>Anterior</small><b>← Custos</b></a><span></span></nav>
+  <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#visitas"><small>Anterior</small><b>← Visitas</b></a><span></span></nav>
 </section>
 
 <footer class="foot"><span>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers</span><span><a href="https://wa.me/351920609225">WhatsApp 920 609 225</a> · <a href="https://pascalelisbonhomes.com">pascalelisbonhomes.com</a></span></footer>
@@ -267,28 +235,7 @@ document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
   document.getElementById('vok').hidden=false;document.getElementById('vsend').hidden=true;}
  catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(txt);}};
 
-(function(){const H=[["Algés, vista rio", 640000, 137, 1000, "Oeiras"], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 1000, "Lisboa"], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 1000, "Lisboa"], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0, "Lisboa"], ["Rua das Madres, Madragoa", 690000, 130, 0, "Lisboa"], ["Santos, vista rio, 145 m²", 770000, 145, 0, "Lisboa"], ["Calçada das Necessidades 3.º", 595000, 120, 1500, "Lisboa"]],FEES=8000,MAX=800000;
-const eur=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,".")+" €",$=id=>document.getElementById(id);
-let young="dois",iva=23,works=1;
-const taxN=p=>Math.max(0,p*0.08-13763.35)+p*0.008,taxJ=p=>Math.max(0,p-330539)*0.088;
-const tax=p=>p>660982?(p*0.06+p*0.008):(young==="dois"?taxJ(p):young==="um"?(taxN(p)+taxJ(p))/2:taxN(p));
-H.forEach((h,i)=>$("kh").add(new Option(h[0]+" · "+eur(h[1]),i)));$("kh").add(new Option("Outra casa",-1));
-function pick(){const i=+$("kh").value,r=$("kr");if(i>=0){const h=H[i];r.max=h[1];r.min=h[1]-Math.round(h[1]*.25/5000)*5000;r.value=h[1];$("ka").value=h[2];works=h[3]?1:0;$("kw").value=h[3]||1500;
- $("karu").textContent=h[4]==="Lisboa"?"Grande parte do centro de Lisboa fica na Área de Reabilitação Urbana. Numa empreitada de reabilitação o IVA pode ser 6%. O empreiteiro e a Câmara confirmam para este prédio.":"Em Oeiras há várias Áreas de Reabilitação Urbana. Confirmamos com a Câmara se este prédio está incluído; só aí o IVA pode ser 6%.";}
- else{r.min=300000;r.max=900000;r.value=600000;$("ka").value=100;works=1;$("kw").value=1500;$("karu").textContent="Numa Área de Reabilitação Urbana, uma empreitada de reabilitação pode ter IVA a 6%. Confirmamos para cada prédio.";}
- $("krmin").textContent=eur(+r.min);$("krmax").textContent=eur(+r.max);upd();}
-function upd(){const p=+$("kr").value,a=+$("ka").value||0,m=works?+$("kw").value:0,w=a*m*(iva===6?1.06/1.23:1),t=tax(p),cw=p+w,tot=cw+t+FEES,over=cw>MAX;
- $("kpv").textContent=eur(p)+(a?" · "+eur(p/a)+"/m²":"");$("kwv").textContent=m?eur(m)+"/m²":"Sem obras";
- $("t-p").textContent=eur(p);$("t-wn").textContent=m?"cerca de "+a+" m² × "+eur(m)+", com IVA a "+iva+"%, projeto e licenças":"pronta a habitar";$("t-w").textContent=eur(w);
- $("t-cw").textContent=eur(cw);const sr=$("t-cw").parentNode;sr.className="sub "+(over?"over":"ok");
- $("t-t").textContent=eur(t);$("t-tn").textContent=(p>660982?"acima de 660.982 € já não há IMT Jovem":{nao:"habitação própria, sem isenção",um:"com IMT Jovem para um dos dois, a metade da casa",dois:"com IMT Jovem: só pagam sobre a parte acima de 330.539 €"}[young])+". Tabelas de 2026.";
- $("t-f").textContent=eur(FEES);$("t-tot").textContent=eur(tot);
- $("kbi").style.width=Math.min(100,cw/MAX*100)+"%";$("kbar").classList.toggle("over",over);
- const v=$("kv");v.className="verdict "+(over?"over":"ok");v.textContent=over?"Compra e obras ficam "+eur(cw-MAX)+" acima do vosso máximo.":"Compra e obras dentro do vosso máximo, com "+eur(MAX-cw)+" de margem.";
- document.querySelectorAll("#ky button").forEach(b=>b.classList.toggle("on",b.dataset.y===young));document.querySelectorAll("#ki button").forEach(b=>b.classList.toggle("on",+b.dataset.i===iva));document.querySelectorAll("#ko button").forEach(b=>b.classList.toggle("on",+b.dataset.o===works));$("kq").classList.toggle("off",!works);}
-$("kh").addEventListener("change",pick);["kr","kw","ka"].forEach(id=>$(id).addEventListener("input",upd));
-document.querySelectorAll("#ky button").forEach(b=>b.addEventListener("click",()=>{young=b.dataset.y;upd();}));
-document.querySelectorAll("#ki button").forEach(b=>b.addEventListener("click",()=>{iva=+b.dataset.i;upd();}));document.querySelectorAll("#ko button").forEach(b=>b.addEventListener("click",()=>{works=+b.dataset.o;upd();}));pick();})();
+
 
 document.querySelectorAll('.chg').forEach(b=>b.addEventListener('click',async()=>{if(b.disabled)return;const h=b.dataset.chg;b.disabled=true;b.textContent='A enviar…';
 try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:CLIENT+' · mudaram de ideia: '+h,cliente:CLIENT,casa:h,pedido:'Mudámos de ideia: queremos visitar'})});if(!r.ok)throw 0;b.textContent='Enviado ✓ A Pascale volta a falar convosco';}
