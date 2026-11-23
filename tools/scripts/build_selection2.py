@@ -308,7 +308,7 @@ textarea[rows="1"]{{min-height:42px}}
 <script>
 (function(){{
 const SIDE=document.getElementById('side');
-if(window.matchMedia('(min-width:980px)').matches){{const mb=document.querySelector('.mapbox');if(mb)document.getElementById('sideMap').append(mb);}}
+{{const mq=window.matchMedia('(min-width:980px)'),mb=document.querySelector('.mapbox'),home=mb&&mb.parentNode,nx=mb&&mb.nextSibling;const place=()=>{{if(!mb)return;if(mq.matches)document.getElementById('sideMap').append(mb);else home.insertBefore(mb,nx);setTimeout(()=>{{try{{window.dispatchEvent(new Event('resize'))}}catch(e){{}}}},50);}};place();mq.addEventListener('change',place);}}
 
 const CLIENT={json.dumps(CLIENT)}, KEY={json.dumps(KEY)};
 const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
