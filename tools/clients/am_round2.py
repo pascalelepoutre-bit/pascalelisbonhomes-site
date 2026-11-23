@@ -356,7 +356,7 @@ CONTACT={
  'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
  'becoolival':('RE/MAX Siimgroup','120521520-298','','','','Provavelmente o mesmo que a C21 CasaBela, 86 000 € mais caro'),
  'olival':('RE/MAX Telheiras','120181165-409','218 763 674','','969 003 714',''),
- 'madragoa':('JLL Residential','96142','','','','Telefone no botão Contactar do Casa Sapo'),
+ 'madragoa':('JLL Residential','96142','215 564 203','','','Número do Casa Sapo, ref CasaSAPO_96142'),
  'boavista':("Porta da Frente Christie's",'PF40846','210 205 683','','',''),
  'santos':('One Advice Real Estate','Idealista 35466924','210 229 389','','',''),
  'boahora7':('Particular','Idealista 35449911','','Dimi','','Pelo chat do Idealista'),
