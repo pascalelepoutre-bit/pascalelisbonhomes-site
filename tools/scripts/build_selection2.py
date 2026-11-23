@@ -46,7 +46,7 @@ def calc(h):
       </div></details>'''
 
 
-HOME=os.environ.get('HOME_URL','../antonio-mafalda-espaco-preview-h4t7/')
+HOME=os.environ.get('HOME_URL','../antonio-mafalda-espaco-f881b1110756adfe66fb5785/')
 def scards():
     out=''
     for h in HOUSES:
