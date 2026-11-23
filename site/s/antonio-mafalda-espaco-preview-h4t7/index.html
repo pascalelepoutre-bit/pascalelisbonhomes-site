@@ -92,6 +92,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 .fb{background:var(--cream,#f6f1e7);border-radius:12px;padding:10px 13px;margin:8px 0 10px;font-size:14.5px}.fb p{margin:0 0 5px}.fb .dec{color:#a4520c;font-weight:500;margin:0}
 .proj{margin:6px 0 4px}.proj summary{cursor:pointer;font-weight:600;padding:10px 14px;border-radius:999px;background:var(--gold,#c9a45c);color:#1d2733;display:inline-block;list-style:none}.proj summary::-webkit-details-marker{display:none}.proj[open] summary{margin-bottom:10px}
 .nums{margin:18px 0}.nrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.nrow div{background:#fff;border:1px solid #e6dfd1;border-radius:14px;padding:12px 10px;text-align:center}.nrow b{display:block;font:600 28px var(--display,inherit);color:#1d2733}.nrow span{font-size:12.5px;color:#6b6457}.nsm{margin:6px 0 0;font-size:12px;color:#8a8272}@media(max-width:520px){.nrow{grid-template-columns:repeat(2,1fr)}}
+.sl{margin:4px 0 16px}.slh{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:600;margin-bottom:6px}.slh b{font-size:19px;color:#1d2733}.sl input{width:100%;accent-color:#c9a45c}.slm{display:flex;justify-content:space-between;font-size:11.5px;color:#8a8272}.ca{display:flex!important;align-items:center;gap:8px;font-weight:600}.ca input{width:90px!important;display:inline-block!important;margin:0!important}
 .calc1{background:#fff;border:1px solid #e6dfd1;border-radius:16px;padding:16px;max-width:640px}.calc1 .cl{display:block;margin:0 0 12px;font-size:14px;font-weight:600}.calc1 select,.calc1 input[type=number]{display:block;width:100%;margin-top:5px;padding:10px 12px;border:1px solid #d8d2c4;border-radius:10px;font:400 16px inherit;background:#fff}.c2{display:grid;grid-template-columns:2fr 1fr;gap:10px}#kr{width:100%;margin:0 0 14px}.cl small{font-weight:400;color:#8a8272}.cw{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.cw button{padding:8px 12px;border-radius:999px;border:1.5px solid #d8d2c4;background:#fff;font:500 13.5px inherit;cursor:pointer}.cw button[aria-pressed="true"]{background:#1d2733;border-color:#1d2733;color:#fff}.cj{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;margin:4px 0 12px}.crows div{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #f0ebe0;font-size:15px}.crows .big{font-weight:700}.crows .ok{color:#2b7a4b}.crows .no{color:#b3261e}.cfoot{margin:10px 0 0;font-size:12px;color:#8a8272}
 </style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
@@ -176,9 +177,9 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <p class="lead">Escolham uma casa, ajustem o preço e o tipo de obras, e vejam se cabe nos 800 000 €.</p>
 <div class="calc1">
 <label class="cl">Casa<select id="kh"></select></label>
-<div class="c2"><label class="cl">Preço de compra<input id="kp" type="number" step="5000" inputmode="numeric"></label><label class="cl">Área, m²<input id="ka" type="number" step="1" inputmode="numeric"></label></div>
-<input id="kr" type="range" step="5000" aria-label="Preço de compra">
-<div class="cl">Obras <small>valores médios por m²</small><div class="cw" id="kw"><button type="button" data-w="0">Sem obras</button><button type="button" data-w="500">Obras leves · 500 €/m²</button><button type="button" data-w="1500">Obras completas · 1 500 €/m²</button></div></div>
+<div class="sl"><div class="slh"><span>Preço de compra</span><b id="kpv"></b></div><input id="kr" type="range" step="5000" aria-label="Preço de compra"><div class="slm"><span id="krmin"></span><span id="krmax"></span></div></div>
+<div class="sl"><div class="slh"><span>Obras por m²</span><b id="kwv"></b></div><input id="kw" type="range" min="0" max="2000" step="100" aria-label="Obras por m²"><div class="slm"><span>sem obras</span><span>1 000</span><span>1 500</span><span>2 000 €/m²</span></div></div>
+<label class="cl ca">Área <input id="ka" type="number" step="1" inputmode="numeric"> m²</label>
 <label class="cj"><input type="checkbox" id="kj" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
 <div class="crows" id="kout"></div>
 <p class="cfoot">Estimativa com as taxas de 2026. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
@@ -229,16 +230,16 @@ document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
   document.getElementById('vok').hidden=false;document.getElementById('vsend').hidden=true;}
  catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(txt);}};
 
-(function(){const H=[["Algés, vista rio", 640000, 137, 500], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 500], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 500], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0], ["Rua das Madres, Madragoa", 690000, 130, 0], ["Santos, vista rio, 145 m²", 770000, 145, 0], ["Calçada das Necessidades 3.º", 595000, 120, 1500]];
+(function(){const H=[["Algés, vista rio", 640000, 137, 500], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 1000], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 500], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0], ["Rua das Madres, Madragoa", 690000, 130, 0], ["Santos, vista rio, 145 m²", 770000, 145, 0], ["Calçada das Necessidades 3.º", 595000, 120, 1500]];
 const eur=n=>Math.round(n).toLocaleString('pt-PT').replace(/[\u202f\u00a0.,]/g,' ')+' €';
 function imt(v,j){const B=[[106346,0,0],[145470,.02,2126.92],[198347,.05,6491.02],[330539,.07,10457.96],[660982,.08,13763.35]];if(j){if(v<=330539)return 0;if(v<=660982)return v*.08-26443.12;}if(v>1150853)return v*.075;if(v>660982)return v*.06;for(const[l,r,d]of B)if(v<=l)return Math.max(0,v*r-d);return 0;}
 function selo(v,j){if(j){if(v<=330539)return 0;if(v<=660982)return (v-330539)*.008;}return v*.008;}
-const kh=document.getElementById('kh'),kp=document.getElementById('kp'),ka=document.getElementById('ka'),kr=document.getElementById('kr'),kj=document.getElementById('kj'),kw=document.getElementById('kw'),out=document.getElementById('kout');
+const kh=document.getElementById('kh'),ka=document.getElementById('ka'),kr=document.getElementById('kr'),kj=document.getElementById('kj'),kw=document.getElementById('kw'),out=document.getElementById('kout');
 H.forEach((h,i)=>kh.add(new Option(h[0]+' · '+eur(h[1]),i)));kh.add(new Option('Outra casa',-1));
-const setW=w=>kw.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.w===w)));
-function pick(){const i=+kh.value;if(i>=0){const h=H[i];kp.value=h[1];ka.value=h[2];kr.max=h[1];kr.min=h[1]-Math.round(h[1]*.2/5000)*5000;kr.value=h[1];setW(h[3]);}else{kr.min=300000;kr.max=900000;}run();}
-function run(){const v=+kp.value||0,a=+ka.value||0,w=+((kw.querySelector('[aria-pressed="true"]')||{dataset:{w:0}}).dataset.w)*a,j=kj.checked,i=imt(v,j),s=selo(v,j),cw=v+w,ok=cw<=800000;
+function pick(){const i=+kh.value;if(i>=0){const h=H[i];kr.max=h[1];kr.min=h[1]-Math.round(h[1]*.25/5000)*5000;kr.value=h[1];ka.value=h[2];kw.value=h[3];}else{kr.min=300000;kr.max=900000;kr.value=600000;ka.value=100;kw.value=1000;}
+document.getElementById('krmin').textContent=eur(+kr.min);document.getElementById('krmax').textContent=eur(+kr.max);run();}
+function run(){const v=+kr.value,a=+ka.value||0,pm=+kw.value,w=pm*a,j=kj.checked,i=imt(v,j),s=selo(v,j),cw=v+w,ok=cw<=800000;
+document.getElementById('kpv').textContent=eur(v);document.getElementById('kwv').textContent=pm?eur(pm)+'/m² · '+eur(w):'Sem obras';
 out.innerHTML='<div><span>Compra</span><span>'+eur(v)+'</span></div><div><span>Obras</span><span>'+eur(w)+'</span></div><div class="big '+(ok?'ok':'no')+'"><span>Compra + obras</span><span>'+eur(cw)+(ok?' ✓':' · acima de 800 000 €')+'</span></div><div><span>IMT</span><span>'+eur(i)+'</span></div><div><span>Imposto do Selo</span><span>'+eur(s)+'</span></div><div class="big"><span>Total com impostos</span><span>'+eur(cw+i+s)+'</span></div>';}
-kh.addEventListener('change',pick);kp.addEventListener('input',()=>{kr.value=kp.value;run();});kr.addEventListener('input',()=>{kp.value=kr.value;run();});ka.addEventListener('input',run);kj.addEventListener('change',run);
-kw.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;setW(+b.dataset.w);run();});pick();})();
+kh.addEventListener('change',pick);kr.addEventListener('input',run);kw.addEventListener('input',run);ka.addEventListener('input',run);kj.addEventListener('change',run);pick();})();
 </script></body></html>
