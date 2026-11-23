@@ -318,7 +318,7 @@ $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{ty
 function download(){var u=URL.createObjectURL(BLOB),a=document.createElement('a');a.href=u;a.download=FNAME;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1000)}
 $('dl').onclick=download;
 $('again').onclick=function(){location.href=location.pathname+location.search};
-if(CL){$('back1').style.display='none';
+if(CL){$('back1').style.display='none';$('go4').textContent='Enviar a ficha à Pascale →';$('s2').querySelector('.eyebrow').textContent='Ficha de visita · 1 de 3';$('s3').querySelector('.eyebrow').textContent='Ficha de visita · 2 de 3';
  var s4=$('s4');s4.querySelector('.hand').style.display='none';s4.querySelector('.eyebrow').textContent='Ficha de visita · 3 de 3';s4.querySelector('h1').textContent='Confirmar e enviar';
  $('sigP').closest('.card').style.display='none';$('make').textContent='Enviar a ficha à Pascale';
  $('doneTxt').textContent='Obrigada! A ficha seguiu para a Pascale. Se quiserem, enviem-lhe também o PDF.';$('share').textContent='Enviar o PDF à Pascale';$('again').style.display='none';
