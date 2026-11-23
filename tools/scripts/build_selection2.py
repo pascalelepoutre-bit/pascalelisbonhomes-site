@@ -65,7 +65,6 @@ def house(h):
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
     <p class="note"><b>A ter em conta:</b> {e(h['note'])}</p>
-    {calc(h)}
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts">{facts}</div>
 </details>
     <div class="links">{f'<a href="{h["link"]}" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a>' if h.get('link') else ''}<a href="https://www.google.com/maps/search/?api=1&query={e(h['maps']).replace(' ','+')}" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
