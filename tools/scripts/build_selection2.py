@@ -38,7 +38,7 @@ def calc(h):
     opts=''.join(f'<button type="button" data-w="{v}" aria-pressed="{str(v==w0).lower()}">{l}</button>' for v,l in (('0','Sem obras'),('500','Obras leves'),('1500','Obras completas')))
     return f'''<details class="calc" data-price="{price}" data-area="{area}"><summary>Quanto custa no total? <span class="ctot"></span></summary>
       <div class="cbody">
-      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="{round(price*0.8/5000)*5000}" max="{price}" step="5000" value="{price}"></label>
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="{price-round(price*0.2/5000)*5000}" max="{price}" step="5000" value="{price}"></label>
       <div class="cl">Obras <small>≈ por m², para {area} m²</small><div class="cw">{opts}</div></div>
       <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
       <div class="crows"></div>
