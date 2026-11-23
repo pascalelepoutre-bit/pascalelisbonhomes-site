@@ -14,13 +14,16 @@ def ccard(h):
     c=CONTACT.get(h['id'])
     if not c: return '<p class="agb">'+e(h['agency'])+'</p>'
     off,ref,oph,ag,aph,tip=c
+    priv=off=='Particular'
     tel=lambda n:'<a href="tel:+351'+n.replace(' ','')+'">'+e(n)+'</a>'
-    cls=' priv' if off=='Particular' else (' ev' if off.startswith('Engel') else '')
-    rows='<div class="cr"><span>'+('Vendedor' if off=='Particular' else 'Agência')+'</span><b>'+e(off)+'</b>'+(tel(oph) if oph else '')+'</div>'
-    rows+='<div class="cr"><span>Referência</span><b class="sel">'+e(ref)+'</b></div>'
-    if ag or aph: rows+='<div class="cr"><span>'+('Contacto' if off=='Particular' else 'Agente')+'</span><b>'+e(ag or 'nome a pedir')+'</b>'+(tel(aph) if aph else '')+'</div>'
+    cb=lambda k,lab:'<input type="checkbox" class="'+k+'" title="'+lab+'" aria-label="'+lab+'">'
+    cls=' priv' if priv else (' ev' if off.startswith('Engel') else '')
+    rows=''
+    if not priv: rows+='<div class="cr">'+cb('tk1','Kantoor gebeld')+'<span>Agência</span><b>'+e(off)+'</b>'+(tel(oph) if oph else '')+'<em>Ref <b class="sel">'+e(ref)+'</b></em></div>'
+    rows+='<div class="cr">'+cb('tk2','Eigenaar gecontacteerd' if priv else 'Agent gebeld')+'<span>'+('Vendedor' if priv else 'Agente')+'</span><b>'+e(ag or 'nome a pedir')+'</b>'+(tel(aph) if aph else '')+('<em>Ref <b class="sel">'+e(ref)+'</b></em>' if priv else '')+'</div>'
     if tip: rows+='<p class="ctip">'+e(tip)+'</p>'
     return '<div class="ccard'+cls+'">'+rows+'</div>'
+
 DONE=globals().get('DONE',{})
 KEEP=os.environ.get('KEEP')
 if KEEP:
@@ -64,7 +67,7 @@ def house(h):
   {f'<div class="thumbs">{thumbs}</div>' if thumbs else ''}</div>
   <div class="pad">
     <div class="head"><h2><span class="num{'' if h['ready'] else ' rn'}">{h['n']}</span><a class="hlink" href="{e(h['link'])}" target="_blank" rel="noopener">{e(h['name'])} ↗</a></h2><p class="price">{e(h['price'])}<small class="ppm">{e(h['ppm'])}</small></p></div>
-    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}{ccard(h)}<div class="ticks">{('' if h['agency'].startswith('Particular') else '<label><input type="checkbox" class="tk1"> Kantoor gebeld</label>')}<label><input type="checkbox" class="tk2"> {'Eigenaar gecontacteerd' if h['agency'].startswith('Particular') else 'Agent gebeld'}</label></div><label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
+    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}{ccard(h)}<label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
     <h3>Porquê esta casa</h3>
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
@@ -221,7 +224,7 @@ textarea[rows="1"]{{min-height:42px}}
 .rbar{{flex-wrap:wrap}}
 .pcap{{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
-.ccard{{margin:4px 0 12px;padding:10px 14px;border-radius:14px;background:#eef3f9;border-left:4px solid #2b4a72;display:grid;gap:5px}}.ccard.priv{{background:#f4ecf8;border-color:#5b2d7a}}.ccard.ev{{background:#fbecee;border-color:var(--red)}}.cr{{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;font:400 15px var(--body)}}.cr span{{min-width:88px;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#6b7a8c}}.cr b{{font-weight:600}}.cr a{{color:#2b4a72;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor}}.cr .sel{{user-select:all}}.ctip{{margin:2px 0 0;font:500 13px var(--body);color:#a4520c}}.hlink{{color:inherit;text-decoration:none}}.hlink:hover{{text-decoration:underline}}\n.mkt{{margin:0 0 6px;font:500 13px var(--body);color:#a4520c}}.agb{{display:inline-block;margin:2px 0 10px;font:600 12.5px var(--body);padding:5px 12px;border-radius:999px;background:#e8eef6;color:#2b4a72}}.agb.priv{{background:#efe4f6;color:#5b2d7a}}.agb.ev{{background:#f8dfe2;color:var(--red)}}
+.ccard{{margin:4px 0 12px;padding:10px 14px;border-radius:14px;background:#eef3f9;border-left:4px solid #2b4a72;display:grid;gap:5px}}.ccard.priv{{background:#f4ecf8;border-color:#5b2d7a}}.ccard.ev{{background:#fbecee;border-color:var(--red)}}.cr{{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;font:400 15px var(--body)}}.cr input{{width:20px;height:20px;margin:0;accent-color:#2b7a4b;align-self:center;cursor:pointer}}.cr em{{margin-left:auto;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#6b7a8c;font-style:normal}}.cr em b{{font:600 15px var(--body);letter-spacing:0;text-transform:none;color:#1d2733}}.cr span{{min-width:72px;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#6b7a8c}}.cr b{{font-weight:600}}.cr a{{color:#2b4a72;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor}}.cr .sel{{user-select:all}}.ctip{{margin:2px 0 0;font:500 13px var(--body);color:#a4520c}}.hlink{{color:inherit;text-decoration:none}}.hlink:hover{{text-decoration:underline}}\n.mkt{{margin:0 0 6px;font:500 13px var(--body);color:#a4520c}}.agb{{display:inline-block;margin:2px 0 10px;font:600 12.5px var(--body);padding:5px 12px;border-radius:999px;background:#e8eef6;color:#2b4a72}}.agb.priv{{background:#efe4f6;color:#5b2d7a}}.agb.ev{{background:#f8dfe2;color:var(--red)}}
 .ticks{{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 10px}}.ticks label{{display:flex;align-items:center;gap:6px;font:500 14px var(--body);cursor:pointer}}.ticks input{{width:20px;height:20px;accent-color:#2b7a4b}}
 .agl{{display:block;margin:0 0 14px;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:#2b4a72}}.agl textarea{{display:block;width:100%;margin-top:6px;font:400 15px var(--body);letter-spacing:0;text-transform:none;border:1px solid #c9d6e6;background:#f4f7fb;border-radius:12px;padding:10px 12px;color:var(--ink);resize:vertical}}
 </style></head><body>
@@ -318,7 +321,7 @@ function grow(t){{t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}
 document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
 const DONE={json.dumps(DONE)};houses.forEach(h=>{{const d=DONE[h.dataset.id]||[];const a=h.querySelector('.tk1'),b=h.querySelector('.tk2');if(a&&d[0])a.checked=true;if(b&&d[1])b.checked=true;}});
-document.querySelectorAll('.ticks input').forEach(t=>t.addEventListener('change',save));
+document.querySelectorAll('.ccard input').forEach(t=>t.addEventListener('change',save));
 function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
  if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}}
 window.addEventListener('resize',()=>{{place();}});
