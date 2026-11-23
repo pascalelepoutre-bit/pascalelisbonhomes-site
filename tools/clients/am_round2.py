@@ -344,10 +344,10 @@ _C185=dict(id='casimiro185',name='Rua Joaquim Casimiro, 185 m², para remodelar'
 HOUSES.append(_C185)
 GEO.update(casimiro185=(38.705498,-9.167187)); AREA.update(casimiro185=185); AG.update(casimiro185='Century 21 CasaBela')
 _C185['geo']=GEO['casimiro185'];_C185['agency']=AG['casimiro185'];_C185['ppm']=f"{round(639000/185):,}".replace(',',' ')+' €/m²'
-_CALL={'casimiro170':' · ref KWPT-027353 · 21 197 7898 · Catarina Gabriel',
- 'estrela102':' · mesmo escritório, perguntar na mesma chamada',
- 'algesrio':' · ref KWPT-038048 · 21 792 0620',
- 'casimiro185':' · ref C0506-00787 · 21 020 7923 · Saúl Ribeiro',
+_CALL={'casimiro170':' · ref KWPT-027353 · Catarina Gabriel 913 748 118',
+ 'estrela102':' · ref KWPT-034228 · 211 977 898 · mesmo escritório que o 170 m²',
+ 'algesrio':' · ref KWPT-038048 · António Faria Blanc 917 221 639',
+ 'casimiro185':' · ref C0506-00787 · 210 207 923 · Saúl Ribeiro',
  'algesrep':' · ref 124991002-72 · 308 803 763',
  'becoolival':' · ref 120521520-298 · provavelmente o mesmo que a C21 CasaBela',
  'madragoa':' · ref 96142 · número no botão Contactar do Casa Sapo',
