@@ -166,8 +166,8 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
     <button class="btn ghost" id="again">Nova ficha</button>
   </section>
 
-  <form name="ficha-visita" method="POST" data-netlify="true" netlify-honeypot="bot" hidden>
-    <input name="bot"><input name="cliente"><input name="imovel"><input name="visita"><input name="compraria"><input name="respostas">
+  <form name="ficha-visita" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot" hidden>
+    <input name="bot"><input type="file" name="pdf"><input name="cliente"><input name="imovel"><input name="visita"><input name="compraria"><input name="respostas">
   </form>
 </div>
 
@@ -335,7 +335,9 @@ $('make').onclick=function(){if(!CL&&P.sigP.isEmpty()){$('err4').textContent='As
   fd.append('cliente',$('c_name').value);fd.append('imovel',$('v_addr').value+($('v_id').value?' · '+$('v_id').value:'')+($('v_price').value?' · '+$('v_price').value+' €':''));
   fd.append('visita',fmtDate($('v_date').value)+' '+$('v_time').value+' · '+S.type);fd.append('compraria',S.buy);
   fd.append('respostas',ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('\n')+'\nCompraria: '+S.buy+'\nObservações: '+($('obs').value||'—')+'\nAssinada pelo cliente: sim'+(P.sigO.isEmpty()?'':'\nAssinada pelo proprietário: sim'));
-  (function(){var o={access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Ficha de visita'};fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot')o[k]=v});return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)})})().catch(function(){});
+  (function(){if(/pascalelisbonhomes\.com$/.test(location.hostname)){var mf=new FormData();fd.forEach(function(v,k){mf.append(k,v)});mf.append('pdf',new File([BLOB],FNAME,{type:'application/pdf'}));
+    return fetch('/',{method:'POST',body:mf}).then(function(r){if(!r.ok)throw 0}).catch(function(){$('doneTxt').textContent='A ficha não seguiu automaticamente: enviem o PDF à Pascale com o botão em baixo.'})}
+  var o={access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Ficha de visita'};fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot')o[k]=v});return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)})})().catch(function(){});
   show(5)};
 $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{type:'application/pdf'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:FNAME}).catch(function(){})}else download()};
