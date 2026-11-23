@@ -345,7 +345,7 @@ HOUSES.append(_C185)
 GEO.update(casimiro185=(38.705498,-9.167187)); AREA.update(casimiro185=185); AG.update(casimiro185='Century 21 CasaBela')
 _C185['geo']=GEO['casimiro185'];_C185['agency']=AG['casimiro185'];_C185['ppm']=f"{round(639000/185):,}".replace(',',' ')+' €/m²'
 # call round 23/11: [office called, agent called]
-DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0]}
+DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0],'madragoa':[1,0]}
 # contact card per house: office, reference, office phone, agent, agent phone, tip
 CONTACT={
  'casimiro170':('KW LEAD','KWPT-027353','211 977 898','Catarina Gabriel','913 748 118',''),
@@ -356,7 +356,7 @@ CONTACT={
  'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
  'becoolival':('RE/MAX Siimgroup','120521520-298','','','','Provavelmente o mesmo que a C21 CasaBela, 86 000 € mais caro'),
  'olival':('RE/MAX Telheiras','120181165-409','218 763 674','','969 003 714',''),
- 'madragoa':('JLL Residential','96142','215 564 203','','','Número do Casa Sapo, ref CasaSAPO_96142'),
+ 'madragoa':('JLL Residential','96142','215 564 203','','','23/11: disponível, parceria possível. Para visitar, ligar de novo para a JLL com a ref 96142'),
  'boavista':("Porta da Frente Christie's",'PF40846','210 205 683','','',''),
  'santos':('One Advice Real Estate','Idealista 35466924','210 229 389','','',''),
  'boahora7':('Particular','Idealista 35449911','','Dimi','','Pelo chat do Idealista'),
