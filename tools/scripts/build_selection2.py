@@ -69,6 +69,11 @@ def house(h):
   <div class="pad">
     <div class="head"><h2><span class="num{'' if h['ready'] else ' rn'}">{h['n']}</span>{e(h['name'])}</h2><p class="price">{e(h['price'])}<small class="ppm">{e(h['ppm'])}</small></p></div>
     <p class="line">{e(h['line'])}</p>
+    <div class="react">
+      <p class="rlab">● A vossa resposta</p><p class="rq">O que acham desta casa?</p>
+      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
+      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
+    </div>
     <h3>Porquê esta casa</h3>
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
@@ -76,11 +81,6 @@ def house(h):
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts">{facts}</div>
 </details>
     <div class="links">{f'<a href="{h["link"]}" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a>' if h.get('link') else ''}<a href="https://www.google.com/maps/search/?api=1&query={e(h['maps']).replace(' ','+')}" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
-    <div class="react">
-      <p class="rq">O que acham desta casa?</p>
-      <div class="btns" hidden><button type="button" data-v="Adoro" class="b-love">Adoro</button><button type="button" data-v="Talvez" class="b-maybe">Talvez</button><button type="button" data-v="Não é para nós" class="b-no">Não é para nós</button></div>
-      <textarea rows="1" placeholder="Porquê? Uma frase chega."></textarea>
-    </div>
   </div>
 </section>'''
 
@@ -145,7 +145,7 @@ textarea{{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px
 .why{{margin:0 0 14px;padding-left:18px}}.why li{{margin:4px 0}}
 .fit{{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:6px}}
 .fit li{{font-size:13.5px;padding:4px 11px;border-radius:999px;border:1px solid}}.fit i{{font-style:normal;margin-right:5px;font-weight:600}}
-.fit .ok{{border-color:#3f7a63;color:#fff;background:#3f7a63;font-weight:600}}.fit .ok i{{color:#fff}}.fit .mid{{border-color:var(--sand);color:#8a6a1f;background:var(--cream)}}
+.fit .ok{{border-color:#b9d6c4;color:#2f6450;background:#e6f2ea;font-weight:600}}.fit .ok i{{color:#2f6450}}.fit .mid{{border-color:var(--sand);color:#8a6a1f;background:var(--cream)}}
 .calc{{margin:4px 0 12px;border:1px solid #e6dfd1;border-radius:14px;background:#fff}}.calc summary{{cursor:pointer;padding:12px 14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}}.calc summary::-webkit-details-marker{{display:none}}.ctot{{font-weight:700}}.ctot.ok{{color:#2b7a4b}}.ctot.no{{color:#b3261e}}.cbody{{padding:0 14px 12px}}.cl{{display:block;margin:6px 0 10px;font-size:14px}}.cl input{{width:100%}}.cl small{{color:#8a8272}}.cw{{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}}.cw button{{padding:7px 12px;border-radius:999px;border:1.5px solid #d8d2c4;background:#fff;font:500 13px inherit;cursor:pointer}}.cw button[aria-pressed="true"]{{background:#1d2733;border-color:#1d2733;color:#fff}}.cj{{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;margin:4px 0 10px}}.crows div{{display:flex;justify-content:space-between;padding:5px 0;border-top:1px solid #f0ebe0;font-size:14.5px}}.crows .big{{font-weight:700}}.crows .ok{{color:#2b7a4b}}.crows .no{{color:#b3261e}}.cfoot{{margin:8px 0 0;font-size:12px;color:#8a8272}}
 .note{{font-size:14.5px;background:var(--cream);border-radius:12px;padding:10px 13px;margin:0 0 10px}}
 .more{{margin:0 0 16px}}.more summary{{cursor:pointer;font-size:14px;color:var(--gold);font-weight:500;padding:6px 0}}
@@ -234,6 +234,7 @@ html,body{{overflow-x:hidden}}
 .pbanner{{background:var(--ink);color:#fff;text-align:center;padding:9px 14px;font:600 13px var(--body);letter-spacing:.04em}}
 .pcap{{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
+.react{{background:#fbedc4!important;border:1.5px solid var(--sun)!important;border-radius:16px!important;padding:14px 16px!important;margin:10px 0 16px!important}}.rlab{{display:inline-block;margin:0 0 6px;font:700 11px var(--body);letter-spacing:.12em;text-transform:uppercase;background:#1d2733;color:#fff;border-radius:999px;padding:4px 10px}}.react .rq{{font-weight:700!important;font-size:17px!important;margin:0 0 8px!important}}.react .rbar button{{font-weight:600!important;padding:11px 20px!important}}.react .rbar button:not([aria-pressed="true"]){{background:#fff!important;border:1.5px solid #1d2733!important}}.react textarea{{background:#fff}}
 </style></head><body>
 <nav class="topnav" aria-label="Menu"><div class="tn-in">
   <span class="tn-brand">Pascale Lepoutre<small>Engel &amp; Völkers</small></span><a class="tn-home" href="{HOME}">⌂ O vosso espaço</a>
