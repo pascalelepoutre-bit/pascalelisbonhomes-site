@@ -378,3 +378,30 @@ SUG={'casimiro185':('Voorstellen','Renoveren · nr. 1, alles klopt'),
  'cruzq':('Niet voorstellen','Niet · verhuurd, gebouw uit 1988'),
  'olival':('Niet voorstellen','Niet · T2, al gezien'),
  'santos':('Niet voorstellen','Niet · T2, al gezien')}
+# 23/11 Belém and Restelo, added after Pascale noticed nothing in Belém
+_BT=dict(id='belemt4',name='Belém T4 com logradouro, junto à Torre',price='700 000 €',state='Para remodelar',ready=False,
+  line='T4 · 135 m² · logradouro privado · prédio com elevador',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZ4aWVzZHR1Z25pMi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.yT9h2k95osVCDB_cJS_6-Cx5QmEC9FgUESyFy35x0Pk','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVhbjAwbGVjMjd3ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.6bLvJXv1sO3Ww_m8xhM_MXm8HL38Q32yWjuhnXFC2Lk','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp3ZGtqajRjeHBrdjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.dDMpfQeCnwE3AekLOb7L6MlDS2Xzb5vtP3_13-HelRw','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ4bGYweml3NW5lNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.f52Uuzx4JrWMAWNA6XJgYgYCwFGS2N1OINI0bfKF4KU','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1wZTc1eWN3MjA4bDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uj0m9EgrswDrgBoDyKuMxiSPmoDre75TSbNeq88yrl0','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgyOXd5dnF5b2wxMzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.qnuTRPM46eKCnq8IPD4PzgQlZlL-zCx0Cg6dArUgpjk']),
+  caps=['Logradouro','Sala','Cozinha','Varanda','Quarto','Exterior'],
+  link='https://www.imovirtual.com/pt/anuncio/t4-com-135m2-e-logradouro-privado-belem-home-p-ID1j97V',
+  why=['A dois passos da Torre de Belém, do rio e da estação de comboio de Belém.','135 m² e um logradouro privado: espaço para a família e para estar lá fora.','Para remodelar por inteiro: abrir a sala e a cozinha, criar uma suite, tudo à medida deles.'],
+  fit=[('ok','Localização junto ao rio e ao comboio'),('ok','4 quartos e logradouro privado'),('mid','Obras completas: 700 000 € mais obras passa os 800 000 €'),('mid','Negociar para perto de 650 000 €')],
+  note='KW LEAD, Sandra Ramos. Exclusivo, partilha 50/50 com todas as agências, segundo o anúncio. Terraço comum no topo do prédio.',
+  facts=[('Área','135 m², logradouro privado'),('Quartos','4'),('Construção','1963, prédio com elevador'),('Energia','C'),('Estado','Para remodelar por inteiro'),('Planta','Planta a pedir à agência.')],
+  maps='Travessa do Arco da Torre, Belém')
+_TV=dict(id='tristao',name='Rua Tristão Vaz 31, Restelo',price='625 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 106 m² · 6.º e último andar · 3 varandas',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBndGV2aWdsNGFyZTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.L2UpdtxWycG3RpHddOrcooNisQetqTk4MmjH6nwzOgE','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhmMjR3aHJ4bjh5eDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tlWMeMVpDTatXpYJ2GPE3Tl6WE9IQVkbyJx7sB3ooN4','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhvdWl1dWpma2JxNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ku59rYUGVDBBB1Jpqerz5RyAMlc7yIqiUm6dGvsuMMY','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im4ydXZob3Z6MzU4cTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.lfMzIYnY2TWJTiWB-Nh-6PwbvMZs5HZ2yIxFvDXFHFE','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZ0ZzNhYnh6NWdlcjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Dh8htTxX55rtngIsY6lj3fQBFaVSuPRYMbDxVsT81Ho']),
+  caps=['Vista','Sala','Sala','Varanda','Sala'],
+  link='https://www.imovirtual.com/pt/anuncio/t3-remodelado-106-m-ultimo-piso-3-varanda-ID1jc20',
+  why=['Último andar com três frentes: luz o dia todo e privacidade.','Vista desafogada sobre o rio e o mar a partir de duas das três varandas.','Totalmente remodelado, pronto a habitar, deixa margem no orçamento.'],
+  fit=[('ok','Luz e vista rio'),('ok','Remodelado, 625 000 €'),('mid','Prédio de 1972, pouco carácter antigo'),('mid','1 casa de banho mais 1 de serviço, a subir da estação')],
+  note='KW Select, Gonçalo Freitas. Restelo, cerca de 15 minutos a pé da estação de Belém.',
+  facts=[('Área','106 m² área bruta privativa, mais 8 m² de varandas'),('Quartos','3'),('Casas de banho','1 completa e 1 de serviço'),('Piso','6.º e último'),('Construção','1972'),('Planta','Planta no anúncio.')],
+  maps='Rua Tristão Vaz 31, Lisboa')
+for _h,_g,_a,_p in ((_BT,(38.69466,-9.21593),135,700000),(_TV,(38.7075,-9.20605),106,625000)):
+    HOUSES.append(_h);_h['geo']=_g;_h['agency']='KW LEAD' if _h is _BT else 'KW Select';_h['ppm']=f"{round(_p/_a):,}".replace(',',' ')+' €/m²'
+CONTACT['belemt4']=('KW LEAD','KWPT-038224','211 977 898','Sandra Ramos','','Exclusivo, partilha 50/50 com todas as agências')
+CONTACT['tristao']=('KW Select','KWPT-040339','','Gonçalo Freitas','','')
+SUG['belemt4']=('Voorstellen','Renoveren · naast Torre de Belém en de trein, 135 m² met tuin')
+SUG['tristao']=('Twijfel','Reserve verder · licht en rivierzicht, weinig karakter')
