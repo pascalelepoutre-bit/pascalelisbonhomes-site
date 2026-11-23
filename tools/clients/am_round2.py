@@ -357,3 +357,11 @@ for h in HOUSES:
     if h['id'] in _CALL: h['agency']+=_CALL[h['id']]
 # call round 23/11: [office called, agent called]
 DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0]}
+# 23/11 refs for every house
+_CALL2={'casimiro':' · ref C0492-00176 · 210 207 655',
+ 'olival':' · ref 120181165-409 · escritório 218 763 674',
+ 'boavista':' · ref PF40846 · 210 205 683',
+ 'santos':' · One Advice Real Estate · ref Idealista 35466924 · 210 229 389',
+ 'cruzq':' · ref Idealista 35497881 · chat Idealista'}
+for h in HOUSES:
+    if h['id'] in _CALL2: h['agency']+=_CALL2[h['id']]
