@@ -103,6 +103,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 .kc .seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.kc .seg.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .kc .seg button{font:600 14px inherit;padding:12px 6px;border-radius:12px;border:1.5px solid var(--kline);background:#fff;cursor:pointer}.kc .seg button.on{border-color:var(--ktile);background:var(--ktile);color:#fff}
 .kc .scale{display:flex;justify-content:space-between;font-size:13px;color:var(--kmuted)}
+.kc .scale-q{display:flex;justify-content:space-between;font-size:12px;color:var(--kmuted);text-align:center;line-height:1.3}.kc .scale-q span:first-child{text-align:left}.kc .scale-q span:last-child{text-align:right}#kq{display:grid;gap:6px}#kq.off{display:none}
 .kc .scale-q.abs{position:relative;height:34px;font-size:12px;color:var(--kmuted);line-height:1.3}.kc .scale-q.abs span{position:absolute;top:0;text-align:center}.kc .scale-q.abs span[style*="%"]{transform:translateX(-50%)}.kc .scale-q.abs span[style*="right"]{text-align:right}
 .kc .ka{display:flex!important;justify-content:flex-start!important;align-items:center;gap:8px;font-weight:500!important;font-size:14px!important;margin-top:4px}.kc .ka input{width:80px;padding:7px 9px;border:1.5px solid var(--kline);border-radius:10px;font:500 15px inherit}
 .kc table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.kc td{padding:9px 0;border-bottom:1px solid var(--kline);vertical-align:top}.kc td:last-child{text-align:right;white-space:nowrap;padding-left:12px}.kc td small{display:block;font-size:13px}
@@ -191,18 +192,19 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 <section class="pane" id="p-custos"><p class="eyebrow">Custos</p><h2>Quanto custa no total?</h2>
 <p class="lead">Escolham uma casa e mexam nos valores: o preço depende da negociação, e as obras do nível de acabamentos.</p>
 <div class="kc">
- <div class="ctl"><label class="ctl-l" for="kh">Casa</label><select id="kh"></select></div>
+ <div class="ctl"><label class="ctl-l" for="kh">Casa</label><select id="kh"></select><label class="ka">Área <input id="ka" type="number" step="1" inputmode="numeric"> m² de área bruta privativa</label></div>
  <div class="ctl"><span class="ctl-l">Têm até 35 anos e é a vossa primeira casa?</span>
   <div class="seg" id="ky"><button type="button" data-y="nao">Não</button><button type="button" data-y="um">Só um de nós</button><button type="button" data-y="dois">Sim, os dois</button></div>
   <small>Com até 35 anos, na primeira casa para habitação própria, há isenção parcial de IMT e Imposto do Selo, o IMT Jovem.</small></div>
  <div class="ctl"><label for="kr">Preço de compra <output id="kpv"></output></label>
   <input type="range" id="kr" step="5000"><div class="scale"><span id="krmin"></span><span id="krmax"></span></div>
   <small>Começa no preço pedido. Os valores mais baixos mostram o efeito de uma negociação.</small></div>
- <div class="ctl"><label for="kw">Qualidade das obras <output id="kwv"></output></label>
-  <input type="range" id="kw" min="0" max="2000" step="50">
-  <div class="scale-q abs"><span style="left:0">Sem obras<br>0 €</span><span style="left:50%">Simples<br>1.000 €</span><span style="left:75%">Boa qualidade<br>1.500 €</span><span style="right:0">Alto padrão<br>2.000 €</span></div>
-  <small>Por m², com IVA a 23%, projeto e licenças.</small>
-  <label class="ka">Área <input id="ka" type="number" step="1" inputmode="numeric"> m² de área bruta privativa</label>
+ <div class="ctl"><span class="ctl-l">Obras</span>
+  <div class="seg two" id="ko"><button type="button" data-o="1">Com obras</button><button type="button" data-o="0">Sem obras</button></div>
+  <div id="kq"><label for="kw" style="margin-top:8px">Qualidade das obras <output id="kwv"></output></label>
+  <input type="range" id="kw" min="1000" max="2000" step="50">
+  <div class="scale-q"><span>Simples<br>1.000 €</span><span>Boa qualidade<br>1.500 €</span><span>Alto padrão<br>2.000 €</span></div>
+  <small>Por m², com IVA a 23%, projeto e licenças.</small></div>
   <span class="ctl-l" style="margin-top:8px">IVA das obras</span>
   <div class="seg two" id="ki"><button type="button" data-i="23">23% normal</button><button type="button" data-i="6">6% reabilitação ARU</button></div>
   <small id="karu"></small></div>
@@ -266,15 +268,15 @@ document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
 
 (function(){const H=[["Algés, vista rio", 640000, 137, 1000, "Oeiras"], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 1000, "Lisboa"], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 1000, "Lisboa"], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0, "Lisboa"], ["Rua das Madres, Madragoa", 690000, 130, 0, "Lisboa"], ["Santos, vista rio, 145 m²", 770000, 145, 0, "Lisboa"], ["Calçada das Necessidades 3.º", 595000, 120, 1500, "Lisboa"]],FEES=8000,MAX=800000;
 const eur=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,".")+" €",$=id=>document.getElementById(id);
-let young="dois",iva=23;
+let young="dois",iva=23,works=1;
 const taxN=p=>Math.max(0,p*0.08-13763.35)+p*0.008,taxJ=p=>Math.max(0,p-330539)*0.088;
 const tax=p=>p>660982?(p*0.06+p*0.008):(young==="dois"?taxJ(p):young==="um"?(taxN(p)+taxJ(p))/2:taxN(p));
 H.forEach((h,i)=>$("kh").add(new Option(h[0]+" · "+eur(h[1]),i)));$("kh").add(new Option("Outra casa",-1));
-function pick(){const i=+$("kh").value,r=$("kr");if(i>=0){const h=H[i];r.max=h[1];r.min=h[1]-Math.round(h[1]*.25/5000)*5000;r.value=h[1];$("ka").value=h[2];$("kw").value=h[3];
+function pick(){const i=+$("kh").value,r=$("kr");if(i>=0){const h=H[i];r.max=h[1];r.min=h[1]-Math.round(h[1]*.25/5000)*5000;r.value=h[1];$("ka").value=h[2];works=h[3]?1:0;$("kw").value=h[3]||1500;
  $("karu").textContent=h[4]==="Lisboa"?"Grande parte do centro de Lisboa fica na Área de Reabilitação Urbana. Numa empreitada de reabilitação o IVA pode ser 6%. O empreiteiro e a Câmara confirmam para este prédio.":"Em Oeiras há várias Áreas de Reabilitação Urbana. Confirmamos com a Câmara se este prédio está incluído; só aí o IVA pode ser 6%.";}
- else{r.min=300000;r.max=900000;r.value=600000;$("ka").value=100;$("kw").value=1500;$("karu").textContent="Numa Área de Reabilitação Urbana, uma empreitada de reabilitação pode ter IVA a 6%. Confirmamos para cada prédio.";}
+ else{r.min=300000;r.max=900000;r.value=600000;$("ka").value=100;works=1;$("kw").value=1500;$("karu").textContent="Numa Área de Reabilitação Urbana, uma empreitada de reabilitação pode ter IVA a 6%. Confirmamos para cada prédio.";}
  $("krmin").textContent=eur(+r.min);$("krmax").textContent=eur(+r.max);upd();}
-function upd(){const p=+$("kr").value,a=+$("ka").value||0,m=+$("kw").value,w=a*m*(iva===6?1.06/1.23:1),t=tax(p),cw=p+w,tot=cw+t+FEES,over=cw>MAX;
+function upd(){const p=+$("kr").value,a=+$("ka").value||0,m=works?+$("kw").value:0,w=a*m*(iva===6?1.06/1.23:1),t=tax(p),cw=p+w,tot=cw+t+FEES,over=cw>MAX;
  $("kpv").textContent=eur(p)+(a?" · "+eur(p/a)+"/m²":"");$("kwv").textContent=m?eur(m)+"/m²":"Sem obras";
  $("t-p").textContent=eur(p);$("t-wn").textContent=m?"cerca de "+a+" m² × "+eur(m)+", com IVA a "+iva+"%, projeto e licenças":"pronta a habitar";$("t-w").textContent=eur(w);
  $("t-cw").textContent=eur(cw);const sr=$("t-cw").parentNode;sr.className="sub "+(over?"over":"ok");
@@ -282,8 +284,8 @@ function upd(){const p=+$("kr").value,a=+$("ka").value||0,m=+$("kw").value,w=a*m
  $("t-f").textContent=eur(FEES);$("t-tot").textContent=eur(tot);
  $("kbi").style.width=Math.min(100,cw/MAX*100)+"%";$("kbar").classList.toggle("over",over);
  const v=$("kv");v.className="verdict "+(over?"over":"ok");v.textContent=over?"Compra e obras ficam "+eur(cw-MAX)+" acima do vosso máximo.":"Compra e obras dentro do vosso máximo, com "+eur(MAX-cw)+" de margem.";
- document.querySelectorAll("#ky button").forEach(b=>b.classList.toggle("on",b.dataset.y===young));document.querySelectorAll("#ki button").forEach(b=>b.classList.toggle("on",+b.dataset.i===iva));}
+ document.querySelectorAll("#ky button").forEach(b=>b.classList.toggle("on",b.dataset.y===young));document.querySelectorAll("#ki button").forEach(b=>b.classList.toggle("on",+b.dataset.i===iva));document.querySelectorAll("#ko button").forEach(b=>b.classList.toggle("on",+b.dataset.o===works));$("kq").classList.toggle("off",!works);}
 $("kh").addEventListener("change",pick);["kr","kw","ka"].forEach(id=>$(id).addEventListener("input",upd));
 document.querySelectorAll("#ky button").forEach(b=>b.addEventListener("click",()=>{young=b.dataset.y;upd();}));
-document.querySelectorAll("#ki button").forEach(b=>b.addEventListener("click",()=>{iva=+b.dataset.i;upd();}));pick();})();
+document.querySelectorAll("#ki button").forEach(b=>b.addEventListener("click",()=>{iva=+b.dataset.i;upd();}));document.querySelectorAll("#ko button").forEach(b=>b.addEventListener("click",()=>{works=+b.dataset.o;upd();}));pick();})();
 </script></body></html>
