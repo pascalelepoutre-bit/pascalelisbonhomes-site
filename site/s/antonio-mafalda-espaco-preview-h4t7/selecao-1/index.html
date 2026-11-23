@@ -131,7 +131,18 @@ textarea[rows="1"]{min-height:42px}
 .locked .btns button,.locked #rbar button,.locked .final [data-v],.locked .vis label{pointer-events:none}
 .locked textarea{background:#faf6ee;border-color:var(--line)}
 .locked .react::after{content:"Resposta enviada a 11/11";display:block;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
-</style></head><body><div style="background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif">A vossa 1.ª seleção · respostas enviadas a 11/11</div>
+.box.prof{display:none}
+.topnav{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--sand)}.tn-in{max-width:1240px;margin:0 auto;display:flex;gap:8px;align-items:center;padding:8px 14px;overflow-x:auto}
+.tn-brand{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;margin-right:10px;white-space:nowrap;display:none}.tn-brand small{display:block;font-weight:500;letter-spacing:.1em;color:var(--muted);font-size:10px}
+.tn-home{font:600 14px var(--body);color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:999px;background:var(--cream);white-space:nowrap}.tn-b{font:600 14px var(--body);border:1.5px solid var(--sand);background:#fff;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}.tn-send{margin-left:auto;background:var(--ink);color:#fff;border-color:var(--ink)}
+.side{display:none}.scards{list-style:none;margin:0;padding:0;display:grid;gap:8px}.scard{width:100%;display:flex;gap:10px;align-items:center;text-align:left;background:#fff;border:1.5px solid var(--sand);border-radius:14px;padding:8px;cursor:pointer;font:500 14px var(--body);color:var(--ink)}.scard.on{border-color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.08)}.scard small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}.scard b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 12px var(--body)}.scard b.rn{background:var(--gold)}.sth{flex:none;width:58px;height:46px;border-radius:9px;background:center/cover #eee}
+#sideMap .mapbox{margin:0 0 10px;padding:10px}#sideMap .mapbox>*:not(h3):not(svg){display:none}
+@media (min-width:980px){.tn-brand{display:block}.wrap>.top,.wrap>.progress{display:none}.side{display:block;position:fixed;left:max(14px,calc(50vw - 620px));top:58px;bottom:0;width:340px;overflow:auto;padding:12px 4px 90px 0}.wrap{margin-left:max(372px,calc(50vw - 620px + 372px));max-width:calc(100vw - 400px);margin-right:auto}.tn-list{display:none}}
+@media (min-width:1400px){.wrap{max-width:860px}}
+@media (max-width:979px){.side.open{display:block;position:fixed;inset:52px 0 0 0;z-index:49;background:var(--bg);overflow:auto;padding:12px 14px 100px}}
+</style></head><body><nav class="topnav" aria-label="Menu"><div class="tn-in"><span class="tn-brand">Pascale Lepoutre<small>Engel &amp; Völkers</small></span>
+<a class="tn-home" href="../#selecoes">⌂ O vosso espaço</a><button type="button" class="tn-b" id="tnStart">Seleção 1</button><button type="button" class="tn-b tn-list" id="tnList">As casas ☰</button><button type="button" class="tn-b tn-send" id="tnSend">As vossas respostas</button></div></nav>
+<aside class="side" id="side" aria-label="As casas"><div class="side-in"><div id="sideMap"></div><ol class="scards"><li><button type="button" class="scard" data-hid="santos"><span class="sth" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/04/25/85/335413009.jpg')"></span><b class="">1</b><span>Santos-o-Velho, Madragoa<small>645 000 € · Pronta a habitar</small></span></button></li><li><button type="button" class="scard" data-hid="olival"><span class="sth" style="background-image:url('https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9c/2c/41/332085202.jpg')"></span><b class="">2</b><span>Rua do Olival, Lapa<small>650 000 € · Pronta a habitar</small></span></button></li><li><button type="button" class="scard" data-hid="costa"><span class="sth" style="background-image:url('https://uploadcare.engelvoelkers.com/9fe6912b-c700-46cc-a641-5db6700b6310/-/resize/1400x/')"></span><b class="">3</b><span>Travessa da Costa, Estrela<small>750 000 € · Pronta a habitar</small></span></button></li><li><button type="button" class="scard" data-hid="necessidades"><span class="sth" style="background-image:url('img/13.jpg')"></span><b class="rn">4</b><span>Calçada das Necessidades<small>595 000 € · Para remodelar</small></span></button></li></ol></div></aside><div style="background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif">A vossa 1.ª seleção · respostas enviadas a 11/11</div>
 <div class="wrap">
   <div class="top"><div class="brand"><img class="av" src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div>
   <svg class="topart" viewBox="0 0 520 120" aria-hidden="true"><line x1="0" y1="110" x2="520" y2="110"/><path d="M40 110V58h46v52M40 58l23-16 23 16M52 70h8v10h-8zM68 70h8v10h-8z"/><rect x="110" y="44" width="70" height="66"/><path d="M126 44v-10a19 19 0 0 1 38 0v10M135 110V92a10 10 0 0 1 20 0v18"/><path d="M200 110V66h40v44M200 66l20-14 20 14"/><rect class="g" x="258" y="64" width="96" height="34" rx="6"/><circle cx="276" cy="102" r="5"/><circle cx="336" cy="102" r="5"/><path d="M306 64l-10-20 22-8"/><path d="M374 110V52h44v58M374 52l22-15 22 15"/><circle class="g" cx="446" cy="70" r="12"/><path d="M446 82v28"/></svg></div>
@@ -538,6 +549,8 @@ textarea[rows="1"]{min-height:42px}
 </form>
 <script>
 (function(){
+const SIDE=document.getElementById('side');if(window.matchMedia('(min-width:980px)').matches){const mb=document.querySelector('.mapbox');if(mb)document.getElementById('sideMap').append(mb);}
+
 const CLIENT="Ant\u00f3nio e Mafalda", KEY="sel-am-respostas";
 const steps=[...document.querySelectorAll('.step')], houses=steps.filter(s=>s.classList.contains('house'));
 let cur=0; const rbar=document.getElementById('rbar'), midl=document.getElementById('midlbl');
@@ -597,6 +610,15 @@ document.getElementById('send').addEventListener('click',async function(){const 
 try{localStorage.setItem(KEY,JSON.stringify({"p": "", "w": "Sábado 14 de novembro", "pt": "", "o": "", "v": [false, false, true, true], "h": [["Não é para nós", "A casa é gira, mas achamos que falta um bocado de personalidade"], ["Não é para nós", "O quarto é demasiado grande, mas a sala é muito gira mas pequena"], ["Talvez", "Gostamos muito da casa, especialmente o espaço exterior e da sala. Os quartos parecem muito pequenos em geral, mas OK"], ["Adoro", "Gostamos muito do apartamento, especialmente porque há possibilidade de o podermos renovar à nossa medida e gosto. Dependeria muito do custo esperado das obras, e se o preço da casa seria negociável"]], "c": 0}))}catch(e){}
 load();document.body.classList.add('locked');document.querySelectorAll('textarea').forEach(t=>t.readOnly=true);document.querySelectorAll('.vis input').forEach(x=>x.disabled=true);show(0);{const b=document.getElementById('send');b.disabled=true;b.textContent='Respostas enviadas a 11/11';}
 const nb=()=>{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');};nb();setTimeout(nb,800);setTimeout(nb,2500);
+
+function sideSync(){const s=steps[cur];document.querySelectorAll('.scard[data-hid]').forEach(c=>c.classList.toggle('on',s&&s.dataset.id===c.dataset.hid));}
+const _show=show;show=function(i){_show(i);sideSync();};
+document.querySelectorAll('.scard[data-hid]').forEach(c=>c.addEventListener('click',()=>{const h=houses.find(x=>x.dataset.id===c.dataset.hid);if(h){show(steps.indexOf(h));window.scrollTo({top:0});}SIDE.classList.remove('open');}));
+const fin=steps.findIndex(s=>s.classList.contains('final'));
+document.getElementById('tnSend').addEventListener('click',()=>{show(fin);window.scrollTo({top:0});SIDE.classList.remove('open');});
+document.getElementById('tnStart').addEventListener('click',()=>{show(0);window.scrollTo({top:0});SIDE.classList.remove('open');});
+document.getElementById('tnList').addEventListener('click',()=>SIDE.classList.toggle('open'));
+sideSync();
 })();
 </script>
 </body></html>
