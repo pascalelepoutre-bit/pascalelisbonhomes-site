@@ -23,7 +23,11 @@ PROFILE = dict(
 e = html.escape
 svg=''
 def legend():
-    li = ''.join(f'<li><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])}<small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small></span></li>' for h in HOUSES)
+    li='';last=None
+    for h in HOUSES:
+        g='Prontas a habitar' if h['ready'] else 'Para remodelar ou atualizar'
+        if g!=last: li+=f'<li class="lg">{g}</li>';last=g
+        li+=f'<li><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])}<small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small></span></li>' 
     return f'<ol class="leg">{li}</ol>'
 
 def house(h):
@@ -101,7 +105,7 @@ textarea{{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px
 .m-area{{font:600 15px var(--body);letter-spacing:.3em;fill:var(--muted);opacity:.55}}.m-water-l{{font:italic 14px var(--body);fill:var(--muted)}}.m-road{{font:10px var(--body);fill:var(--muted)}}
 .m-pin circle{{fill:var(--ink);stroke:#fff;stroke-width:3}}.m-pin text{{font:600 21px var(--body);fill:#fff}}.m-pin.rn circle{{fill:var(--gold)}}
 .m-home circle{{fill:var(--ok);stroke:#fff;stroke-width:3}}.m-home path{{fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round}}.m-home-l{{font:600 15px var(--body);fill:var(--ok)}}
-.leg{{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}}.leg li{{display:flex;gap:10px;align-items:flex-start}}
+.leg li.lg{{display:block;margin:10px 0 0;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}}.leg{{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}}.leg li{{display:flex;gap:10px;align-items:flex-start}}
 .leg b,.num{{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:600 13px var(--body)}}.leg b.rn,.num.rn{{background:var(--gold)}}
 .leg small{{display:block;color:var(--muted);font-size:12.5px}}
 .house{{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:14px}}
