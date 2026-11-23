@@ -222,7 +222,7 @@ textarea[rows="1"]{{min-height:42px}}
 .price .ppm{{display:block;font:400 12.5px var(--body);color:var(--muted);text-align:right;letter-spacing:0}}
 .box.prof{{display:none}}
 .topnav{{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--sand)}}.tn-in{{max-width:1240px;margin:0 auto;display:flex;gap:8px;align-items:center;padding:8px 14px;overflow-x:auto}}
-.tn-brand{{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;margin-right:10px;white-space:nowrap;display:none}}.tn-brand small{{display:block;font-weight:500;letter-spacing:.1em;color:var(--muted);font-size:10px}}.tn-home{{font:600 14px var(--body);color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:999px;background:var(--cream);white-space:nowrap}}.tn-b{{font:600 14px var(--body);border:1.5px solid var(--sand);background:#fff;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}}.tn-send{{margin-left:auto;background:var(--ink);color:#fff;border-color:var(--ink)}}
+.tn-brand{{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;margin-right:10px;white-space:nowrap;display:none}}.tn-brand small{{display:block;font-weight:500;letter-spacing:.1em;color:var(--muted);font-size:10px}}.tn-home{{font:600 14px var(--body);color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:999px;background:var(--cream);white-space:nowrap}}.tn-b{{font:600 14px var(--body);border:1.5px solid var(--sand);background:#fff;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}}.tn-wa{{margin-left:auto}}.tn-send{{background:var(--ink);color:#fff;border-color:var(--ink)}}
 .side{{display:none}}.scards{{list-style:none;margin:0;padding:0;display:grid;gap:8px}}.scard{{width:100%;display:flex;gap:10px;align-items:center;text-align:left;background:#fff;border:1.5px solid var(--sand);border-radius:14px;padding:8px;cursor:pointer;font:500 14px var(--body);color:var(--ink)}}.scard.on{{border-color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.08)}}.scard small{{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}}.scard b{{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 12px var(--body)}}.scard b.rn{{background:var(--gold)}}.sth{{flex:none;width:58px;height:46px;border-radius:9px;background:center/cover #eee}}.sc-send{{margin-top:8px}}.sc-send b{{background:var(--ok)}}
 #sideMap .mapbox{{margin:0 0 10px;padding:10px}}#sideMap .mapbox>*:not(h3):not(#lmap){{display:none}}#sideMap #lmap{{height:220px;margin:6px 0 8px}}
 @media (min-width:980px){{.tn-brand{{display:block}}.wrap>.top,.wrap>.topart,.wrap>.progress{{display:none}}.side{{display:block;position:fixed;left:max(14px,calc(50vw - 620px));top:58px;bottom:0;width:340px;overflow:auto;padding:12px 4px 90px 0}}.wrap{{margin-left:max(372px,calc(50vw - 620px + 372px));max-width:calc(100% - 400px);margin-right:auto}}.tn-list{{display:none}}.intro-right{{display:none!important}}.intro-grid{{display:block!important;max-width:640px}}.intro .cta-row{{justify-content:flex-start!important;margin-top:22px}}.intro{{padding-top:30px}}}}
@@ -235,12 +235,13 @@ html,body{{overflow-x:hidden}}
 .pcap{{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
 .react{{background:#fbedc4!important;border:1.5px solid var(--sun)!important;border-radius:16px!important;padding:14px 16px!important;margin:10px 0 16px!important}}.rlab{{display:inline-block;margin:0 0 6px;font:700 11px var(--body);letter-spacing:.12em;text-transform:uppercase;background:#1d2733;color:#fff;border-radius:999px;padding:4px 10px}}.react .rq{{font-weight:700!important;font-size:17px!important;margin:0 0 8px!important}}.react .rbar button{{font-weight:600!important;padding:11px 20px!important}}.react .rbar button:not([aria-pressed="true"]){{background:#fff!important;border:1.5px solid #1d2733!important}}.react textarea{{background:#fff}}
+.tn-wa{{font:600 14px var(--body);text-decoration:none;color:#fff;background:#2e7d4f;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 </style></head><body>
 <nav class="topnav" aria-label="Menu"><div class="tn-in">
   <span class="tn-brand">Pascale Lepoutre<small>Engel &amp; Völkers</small></span><a class="tn-home" href="{HOME}">⌂ O vosso espaço</a>
   <button type="button" class="tn-b" id="tnStart">Seleção 2</button>
   <button type="button" class="tn-b tn-list" id="tnList">As casas ☰</button>
-  <button type="button" class="tn-b tn-send" id="tnSend">Enviar</button>
+  <a class="tn-wa" href="https://wa.me/351920609225" target="_blank" rel="noopener">WhatsApp</a><button type="button" class="tn-b tn-send" id="tnSend">Enviar</button>
 </div></nav>
 <aside class="side" id="side" aria-label="As casas"><div class="side-in">
   <div id="sideMap"></div>
@@ -301,7 +302,7 @@ html,body{{overflow-x:hidden}}
   <div class="rbar" id="rbar" hidden><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
   <button type="button" class="go" id="go">Começar →</button>
 </div></nav>
-  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · +351 920 609 225</footer>
+  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · <a href="https://wa.me/351920609225">WhatsApp 920 609 225</a></footer>
 </div>
 
 <form name="selection-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
