@@ -31,7 +31,7 @@ for h in sel:
     <p class="eyebrow">Para o António e a Mafalda · seleção 2</p>
     <h1>{e(h["name"])}</h1>
     <p class="lede">O custo total desta casa: compra, obras e impostos, para decidirem com números claros antes e depois da visita.</p>
-    <div class="facts">{''.join(f'<span>{e(b)}</span>' for _, b in h['facts'][:5])}<span>Preço pedido {eur(p)}</span><span>{e(h["state"])}</span></div>
+    <div class="facts">{''.join(f'<span>{e(b)}</span>' for k, b in h['facts'] if k not in ('Planta','Estado'))}<span>Preço pedido {eur(p)}</span><span>{e(h["state"])}</span></div>
   </header>''', s, count=1, flags=re.S)
     s = re.sub(r'<section class="photos".*?</section>', f'<section class="photos" aria-label="Fotografia"><img class="hero" src="{h["photos"][0]}" alt="{e(h["name"])}"></section>', s, count=1, flags=re.S)
     val = f'Entre {eur(round(a*6547/1000)*1000)} e {eur(round(a*7000/1000)*1000)}. Valor criado: <em id="r-gain"></em>.' if lisboa else 'A confirmar com os preços de venda em Algés. <em id="r-gain" hidden></em>'
