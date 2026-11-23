@@ -255,7 +255,7 @@ textarea[rows="1"]{{min-height:42px}}
       <div class="intro-left">
         <p class="eyebrow i-txt" style="margin-top:20px">Seleção 2 · novembro 2026</p>
         <h1 class="i-txt">{e(CLIENT)}, aqui está a vossa segunda seleção</h1>
-        <p class="lead i-txt">Depois da visita de sábado, alarguei a procura de Santos a Algés e afinei o vosso perfil: espaço para a família, carácter e luz. Há casas prontas a habitar e projetos para remodelar à vossa medida. Digam-me o que gostam e o que não gostam. O vosso perfil está no vosso espaço.</p>
+        <p class="lead i-txt">Depois da visita de sábado, alarguei a procura de Santos a Algés e afinei o vosso perfil: espaço para a família, carácter e luz. Há casas prontas a habitar e projetos para remodelar à vossa medida. Procuro a vossa casa para sempre, onde a família vai crescer. Digam-me o que gostam e o que não gostam.</p>
         <div class="box prof"><div class="pcols"><div><h3>Essencial para vocês</h3><ul>{ess}</ul></div><div><h3>Seria bom</h3><ul>{bon}</ul></div></div>
           <p class="rq">Este perfil está certo?</p>
           <div class="btns" id="pBtns"><button type="button" data-v="Está certo">Está certo</button><button type="button" data-v="Quero ajustar">Quero ajustar</button></div>
