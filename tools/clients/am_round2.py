@@ -324,7 +324,7 @@ _T5=dict(id='santost5',name='Santos, vista rio, 145 m²',price='770 000 €',sta
   why=['Vista frontal de rio na sala e num dos quartos, em pleno bairro de Santos.','145 m² num prédio pombalino com duas entradas, soalho e portadas originais.','Cozinha e duas casas de banho já renovadas, aquecimento nas divisões principais.'],
   fit=[('ok','Localização e vista rio'),('ok','Espaço: 145 m²'),('mid','2 quartos com janela, 3 divisões interiores'),('mid','Elevador a confirmar')],
   note='Imóvel Engel & Völkers, consultor Oscar Baptista. Partilha interna, sem partilha escrita com outra agência. Confirmar elevador e a rua exata.',
-  facts=[('Área','145 m²'),('Quartos','2 com janela, mais 3 divisões interiores'),('Casas de banho','2, renovadas'),('Piso','2.º'),('Construção','1937'),('Energia','C'),('Planta','Planta a pedir ao Oscar.')],
+  facts=[('Área','145 m²'),('Quartos','2 com janela, mais 3 divisões interiores'),('Casas de banho','2, renovadas'),('Piso','2.º'),('Construção','1937'),('Energia','C'),('Planta','Planta a pedir.')],
   maps='Santos, Lisboa')
 HOUSES.append(_T5)
 GEO.update(santost5=(38.7072,-9.1585)); AREA.update(santost5=145); AG.update(santost5='Engel & Völkers · Oscar Baptista')
@@ -412,3 +412,8 @@ SUG.update({'algesrio':('Voorstellen','Verder, bij de trein · beter dan de Cal�
  'boahora7':('Twijfel','Wacht op Dimi · ja is voorstellen, nee is niet'),
  'madragoa':('Twijfel','Reserve · 95 000 € meer dan de Calçada en nog werken'),
  'santost5':('Twijfel','Reserve · maar 2 echte slaapkamers, 770 000 €')})
+# notes shown to the clients on their page: no agency or commission details
+CLIENTNOTE={'casimiro185':'3.º andar sem elevador. Uma proposta realista ronda os 550 000 a 580 000 €, com obras feitas por fases: primeiro cozinha, casas de banho e instalações.',
+ 'casimiro170':'Prédio de traça tradicional. Confirmo na visita o pé-direito, o andar e o estado geral.',
+ 'santost5':'Confirmo se o prédio tem elevador. As três divisões interiores servem bem para escritório, closet ou arrumação.'}
+CLIENTFIT={'casimiro185':[('ok','Muito espaço para o futuro'),('ok','Preço baixo por m²: margem para obras'),('mid','Obras completas, a fazer por fases'),('mid','3.º andar sem elevador')]}

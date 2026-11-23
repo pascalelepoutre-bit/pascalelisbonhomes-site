@@ -12,6 +12,9 @@ exec(open('/home/claude/clients/am_round2.py').read())
 KEEP=os.environ.get('KEEP')
 if KEEP:
     order=KEEP.split(',');HOUSES=sorted([h for h in HOUSES if h['id'] in order],key=lambda h:order.index(h['id']))
+for h in HOUSES:
+    if h['id'] in globals().get('CLIENTNOTE',{}): h['note']=CLIENTNOTE[h['id']]
+    if h['id'] in globals().get('CLIENTFIT',{}): h['fit']=CLIENTFIT[h['id']]
 for i,h in enumerate(HOUSES): h['n']=i+1
 PROFILE = dict(
   ess=['Espaço para a família: T3, ou T2+1 com um terceiro quarto a sério','Sala grande com cozinha aberta, ou possível de abrir','Luz, carácter e pé-direito alto','De Santos a Algés, perto do rio e do comboio','Compra mais obras até 800 000 €'],
