@@ -417,3 +417,11 @@ CLIENTNOTE={'casimiro185':'3.º andar sem elevador. Uma proposta realista ronda 
  'casimiro170':'Prédio de traça tradicional. Confirmo na visita o pé-direito, o andar e o estado geral.',
  'santost5':'Confirmo se o prédio tem elevador. As três divisões interiores servem bem para escritório, closet ou arrumação.'}
 CLIENTFIT={'casimiro185':[('ok','Muito espaço para o futuro'),('ok','Preço baixo por m²: margem para obras'),('mid','Obras completas, a fazer por fases'),('mid','3.º andar sem elevador')]}
+# 23/11 15:45 Idealista links (Pascale prefers Idealista) and corrected lift info
+_IDL={'madragoa':'https://www.idealista.pt/imovel/34797349/','casimiro':'https://www.idealista.pt/imovel/34911053/',
+ 'casimiro185':'https://www.idealista.pt/imovel/35333441/','casimiro170':'https://www.idealista.pt/imovel/34792250/'}
+for h in HOUSES:
+    if h['id'] in _IDL: h['link']=_IDL[h['id']]
+CLIENTNOTE['casimiro185']='O anúncio da Century 21 indica prédio com elevador: confirmo o andar na visita. Uma proposta realista ronda os 550 000 a 580 000 €, com obras feitas por fases: primeiro cozinha, casas de banho e instalações.'
+CLIENTFIT['casimiro185']=[('ok','Muito espaço para o futuro'),('ok','Preço baixo por m²: margem para obras'),('ok','Prédio com elevador, segundo o anúncio'),('mid','Obras completas, a fazer por fases')]
+CLIENTNOTE['casimiro']='Prédio de 1975, 1.º andar sem elevador. Confirmo na visita o pé-direito, o estado das casas de banho e o condomínio.'
