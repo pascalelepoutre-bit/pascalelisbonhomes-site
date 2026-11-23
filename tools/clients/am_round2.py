@@ -260,3 +260,56 @@ for h in HOUSES:
     if h['id']=='algesrio':
         h['price']='640 000 €';h['ppm']=f"{round(640000/137):,}".replace(',',' ')+' €/m²'
         h['fit']=[('ok','Vista rio e luz'),('ok','3 quartos, 2 casas de banho'),('mid','Cozinha fechada'),('mid','Rua com muito trânsito')]
+
+# 23/11 search with Pascale: four more houses
+_T='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.'
+iv2=lambda L:[P+x[len(_T):]+S if x.startswith(_T) else P+x+S for x in L]
+_NEW=[
+ dict(id='casimiro170',name='Rua Joaquim Casimiro, 170 m², Lapa',price='770 000 €',state='Para atualizar',ready=False,
+  line='T3+3 · 170 m² · 3 salas · varandas',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9rMWRvdW81ZmM4NDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0JR0-jtIfj6UV3drOR_ZUdC6_Hx1t9RAV8V9vBEDPC4','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBpdHF0eTlkb21oazMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.lL1kUKWJm384HaetrjGSW4OwfgXoGixGYlykjTGNnxk','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd0a3k1N2YyZ2dtZzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.sxzPR6Ueg7WfmrPbqxLcSInk9eEeWGtapbuu8UA6tlQ','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inhva2N0cmI1MGU3eC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.RYBDCwqx2nEyKdibl5HOIMaHx4SlKI-hgEuwTw8C-ms','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhjNDBhNmpodjl6NjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.UyNtZAPIjfVP5akje1FgIlYYwZ0sg4sslPZ4gHz2IO4']),
+  caps=['Sala','Cozinha','Planta','Varanda','Quarto'],
+  link='https://www.imovirtual.com/pt/anuncio/apartamento-t3-3-com-170-m-varandas-e-grande-ID1j9X7',
+  why=['170 m² de área bruta privativa: espaço para a família e para o futuro.','Três salas que podem juntar numa sala grande, mais três quartos com boas áreas.','Prédio de traça tradicional na Lapa, perto do Jardim da Estrela e a descer para Santos.'],
+  fit=[('ok','Muito espaço, 3 quartos grandes'),('ok','Carácter e varandas'),('mid','Cozinha a abrir para a sala'),('mid','770 000 €: negociar para ter margem para obras')],
+  note='KW LEAD partilha a 50% com todas as agências, segundo o anúncio. Confirmar pé-direito e o andar.',
+  facts=[('Área','170 m² área bruta privativa'),('Quartos','3, mais 3 salas'),('Casas de banho','2'),('Exterior','Varandas'),('Estado','Pronto a habitar, para atualizar'),('Planta','Planta no anúncio.')],
+  maps='Rua Joaquim Casimiro, Lisboa'),
+ dict(id='cruzq',name='Largo São João, Cruz Quebrada',price='615 000 €',state='Arrendado',ready=True,
+  line='T3 · 120 m² · terraço e varanda · arrendado',
+  photos=[IDL+x for x in ['cb/d3/69/337513367.jpg','27/41/19/337513369.jpg','b7/58/28/337513377.jpg','c5/df/22/337513358.jpg','42/b3/22/337513336.jpg']],
+  caps=['Sala','Sala de jantar','Interior','Interior','Interior'],
+  link='https://www.idealista.pt/imovel/35497881/',
+  why=['Junto à estação da Cruz Quebrada e ao rio.','120 m² com terraço e varanda, 2 casas de banho.','Preço mais baixo da seleção, com margem no orçamento.'],
+  fit=[('ok','Comboio e rio a pé'),('ok','Terraço e varanda'),('no','Está arrendado, com inquilinos'),('mid','Prédio de 1988, pouco carácter antigo')],
+  note='Venda particular, Manel Theotónio. Arrendado com inquilinos: perguntar até quando e se sai livre. Entreplanta sem elevador.',
+  facts=[('Área','120 m² área bruta'),('Quartos','3'),('Casas de banho','2'),('Piso','Entreplanta, sem elevador'),('Construção','1988'),('Situação','Arrendado, com inquilinos'),('Planta','Planta a pedir ao proprietário.')],
+  maps='Largo São João 1, Cruz Quebrada'),
+ dict(id='algesrep',name='Avenida da República, Algés',price='679 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 146 m² · sala de 45 m² · 2 garagens',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImMyZzhhOTkwYnI0NjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.QQJlCjbBeI7CCPEeVh7_I_UsSq6CqibCKoDEGCI1WdQ','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhybG9yY2c3ZmoxcjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O2D5NBu1CmOTzngMEbs16tlvqWuxPNw78ocwE2fWjGs','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImF0MGIxcjR1end2NzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8Gdx_h-Yzq02o8va_DbPp67UKRVsmQvVvm0OD0JeJJ8','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRnMmQ2Z29mOWFvOTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.hp1JJEMBynpO_U2SbMb72WBO5sBSyLZ3NGRZEu1WJZ0']),
+  caps=['Sala de 45 m²','Cozinha','Exterior','Quarto'],
+  link='https://www.imovirtual.com/pt/anuncio/apartamento-t3-para-venda-ID1jfd9',
+  why=['146 m² com uma sala de 45 m² e muita luz.','Centro de Algés, com comboio, comércio e escolas a pé, vista parcial de rio.','Duas garagens em box, uma delas para o carro elétrico.'],
+  fit=[('ok','Muito espaço e sala grande'),('ok','Perto do comboio, 2 garagens'),('no','Prédio de 2000, sem carácter antigo'),('mid','Avenida movimentada')],
+  note='RE/MAX Happy. Prédio de 2000 com elevador e aquecimento central.',
+  facts=[('Área','146 m²'),('Quartos','3'),('Piso','2.º, com elevador'),('Construção','2000'),('Extras','2 garagens em box, arrecadação'),('Planta','Planta a pedir à agência.')],
+  maps='Avenida da República, Algés'),
+ dict(id='estrela102',name='Calçada da Estrela, 102 m²',price='620 000 €',state='Pronta a habitar',ready=True,
+  line='T3 · 102 m² úteis · 3.º andar · remodelado',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRnNGhiZDU5MXZ6ei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.UJGz5nfOHpuhZ4MzpI4pmZksec2gVGwJ8Z-4d8X3ILc','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRyNmNkNXVpaGRicTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.P5uOF7dg-dEyhtz3jXsRENfX8M2_6eIhS3GkFXqLqN8','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFibm5rNXVpazlpdjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.6d1y9lpJUQbP5g9iuwnF-oRx6BMA_tadq3yja7o5ln4','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1yOWFmd2JsMTI5bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tqBpJ9Xb7LDkPD16UP3wtAW-FIgmhpx_JJphZEro_fQ']),
+  caps=['Sala','Cozinha','Planta','Quarto'],
+  link='https://www.imovirtual.com/pt/anuncio/apartamento-t3-102-m-calcada-da-estrela-ID1j9RV',
+  why=['Remodelado há 3 anos: canalização, eletricidade e janelas novas.','Sala ampla e muito luminosa, junto ao Jardim da Estrela.','620 000 €: o preço deixa margem no orçamento.'],
+  fit=[('ok','Remodelado e luminoso'),('mid','3.º andar sem elevador'),('no','Prédio de 1984, pouco carácter'),('no','Longe do rio e do comboio, rua do elétrico')],
+  note='KW LEAD. 102 m² de área útil, área bruta a confirmar.',
+  facts=[('Área','102 m² área útil'),('Quartos','3'),('Piso','3.º, sem elevador'),('Construção','1984, remodelado há 3 anos'),('Planta','Planta no anúncio.')],
+  maps='Calçada da Estrela, Lisboa'),
+]
+HOUSES.extend(_NEW)
+GEO.update(casimiro170=(38.70618,-9.16705),cruzq=(38.6996,-9.2402),algesrep=(38.703396,-9.231186),estrela102=(38.71255,-9.15608))
+AREA.update(casimiro170=170,cruzq=120,algesrep=146,estrela102=102)
+AG.update(casimiro170='KW LEAD',cruzq='Particular · Manel Theotónio, via Idealista',algesrep='RE/MAX Happy',estrela102='KW LEAD')
+for h in _NEW:
+    h['geo']=GEO[h['id']];h['agency']=AG[h['id']]
+    p=int(h['price'].replace(' ','').replace('€',''));h['ppm']=f"{round(p/AREA[h['id']]):,}".replace(',',' ')+' €/m²'

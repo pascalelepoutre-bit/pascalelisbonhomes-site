@@ -16,7 +16,11 @@ for i,h in enumerate(HOUSES): h['n']=i+1
 MARKET={'casimiro':'Op de markt: volgens de advertentie beschikbaar sinds mei 2026, laatste update 7/10. Al een half jaar te koop: ruimte om te onderhandelen.',
  'boavista':'Op de markt: laatste update 2/10. Prijshistoriek nog niet zichtbaar.',
  'algesrio':'Op de markt: gezien sinds 15/11. Prijs gezakt van 660 000 € naar 640 000 € (19/11).',
- 'boahora7':'Op de markt: gezien op 19/11, rond 13/11 op Idealista gezet, laatste update 18/11. Particuliere verkoper, wil geen makelaars: eerst vragen of hij met mij wil werken.'}
+ 'boahora7':'Op de markt: gezien op 19/11, rond 13/11 op Idealista gezet, laatste update 18/11. Particuliere verkoper, wil geen makelaars: eerst vragen of hij met mij wil werken.',
+ 'casimiro170':'Op de markt: nieuw, gezien op 23/11. KW deelt 50/50 met alle agentschappen.',
+ 'cruzq':'Op de markt: nieuw sinds 22/11. Particulier, verhuurd met huurders: eerst vragen of het vrij komt.',
+ 'algesrep':'Op de markt: nieuw sinds 20/11.',
+ 'estrela102':'Op de markt: nieuw, gezien op 23/11.'}
 for h in HOUSES:
     if h['id'] in MARKET: h['market']=MARKET[h['id']]
     elif not h.get('market'): h['market']='Op de markt: nog onbekend. Ik volg de prijs vanaf nu elke week.'
