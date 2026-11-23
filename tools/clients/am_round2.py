@@ -329,3 +329,29 @@ _T5=dict(id='santost5',name='Santos, vista rio, 145 m²',price='770 000 €',sta
 HOUSES.append(_T5)
 GEO.update(santost5=(38.7072,-9.1585)); AREA.update(santost5=145); AG.update(santost5='Engel & Völkers · Oscar Baptista')
 _T5['geo']=GEO['santost5'];_T5['agency']=AG['santost5'];_T5['ppm']=f"{round(770000/145):,}".replace(',',' ')+' €/m²'
+
+# 23/11 Pascale: C21 CasaBela 185 m2 renovation project, plus refs and phones for the call round
+_C185=dict(id='casimiro185',name='Rua Joaquim Casimiro, 185 m², para remodelar',price='639 000 €',state='Para remodelar',ready=False,
+  line='T4+1 · 185 m² área bruta privativa · traça clássica',
+  photos=iv2(['eyJmbiI6Inl1aXRiMmxzamxubC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.9180pHr9VxFnNXmXZ1JhXFyLEPTBx0klHt2xnkjwUG0', 'eyJmbiI6InU2dzhvMmRxZG14aC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.IWsVtVhbbXz1L9ae4He1rFbfmq_dqHShv8RLGEj_iaI', 'eyJmbiI6InhnYTBkdXJkNW4zdjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.XsFBk8p0nwDeV2UcqDqLlmDKNGfzzZWnHyz7kB7P3FQ', 'eyJmbiI6IngwMGs2aDdwbXBlcDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.U8iuzkmEUCLDm8ptiznCIoaxuatuFy9uxN5QiSLtXPQ', 'eyJmbiI6IjBmMTFpbzR0dXlocy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.QD7M7UNSRFgl86dQtjeD-rfAxHnuQExXQDZSKHJk7oY', 'eyJmbiI6IjJxdHM2bmQwNW53NjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.h4gUQmjekYJuXoAfquRmFNEYiJnRK5Nv-e65iFhd_yY']),
+  caps=['Prédio','Sala','Sala','Sala','Sala','Corredor'],
+  link='https://www.imovirtual.com/pt/anuncio/185-m-na-estrela-apartamento-de-traca-classica-para-remodelar-ID1iSML',
+  why=['185 m² de área bruta privativa: o grande projeto de remodelação, à medida deles.','Tetos altos, soalho de madeira, duas salas e cinco divisões.','Prédio de 1951 com obras estruturais profundas há menos de 10 anos.'],
+  fit=[('ok','Muito espaço para o futuro'),('ok','Preço baixo por m²: margem para obras'),('mid','Obras completas a orçar'),('mid','Andar e elevador a confirmar')],
+  note='Century 21 CasaBela, Saúl Ribeiro. Provavelmente o mesmo apartamento que a RE/MAX Siimgroup anuncia a 725 000 €: aqui está 86 000 € mais barato.',
+  facts=[('Área','185 m² área bruta privativa'),('Divisões','2 salas e 5 divisões'),('Construção','1951, obras estruturais há menos de 10 anos'),('Estado','Para remodelar'),('Planta','Planta no anúncio.')],
+  maps='Rua Joaquim Casimiro, Lisboa')
+HOUSES.append(_C185)
+GEO.update(casimiro185=(38.705498,-9.167187)); AREA.update(casimiro185=185); AG.update(casimiro185='Century 21 CasaBela')
+_C185['geo']=GEO['casimiro185'];_C185['agency']=AG['casimiro185'];_C185['ppm']=f"{round(639000/185):,}".replace(',',' ')+' €/m²'
+_CALL={'casimiro170':' · ref KWPT-027353 · 21 197 7898 · Catarina Gabriel',
+ 'estrela102':' · mesmo escritório, perguntar na mesma chamada',
+ 'algesrio':' · ref KWPT-038048 · 21 792 0620',
+ 'casimiro185':' · ref C0506-00787 · 21 020 7923 · Saúl Ribeiro',
+ 'algesrep':' · ref 124991002-72 · 308 803 763',
+ 'becoolival':' · ref 120521520-298 · provavelmente o mesmo que a C21 CasaBela',
+ 'madragoa':' · ref 96142 · número no botão Contactar do Casa Sapo',
+ 'boahora7':' · Idealista 35449911 · chat Idealista',
+ 'santost5':' · ref W-049HVO · só ligar se tiverem interesse'}
+for h in HOUSES:
+    if h['id'] in _CALL: h['agency']+=_CALL[h['id']]
