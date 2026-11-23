@@ -229,7 +229,7 @@ document.getElementById('vsend').onclick=async()=>{const v=VISITS[vi];
   document.getElementById('vok').hidden=false;document.getElementById('vsend').hidden=true;}
  catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(txt);}};
 
-(function(){const H=[["Algés, vista rio", 640000, 137, 1500], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 500], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 1500], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0], ["Rua das Madres, Madragoa", 690000, 130, 0], ["Santos, vista rio, 145 m²", 770000, 145, 0], ["Calçada das Necessidades 3.º", 595000, 120, 1500]];
+(function(){const H=[["Algés, vista rio", 640000, 137, 500], ["Rua Joaquim Casimiro, 185 m², para remodelar", 639000, 185, 500], ["Rua Joaquim Casimiro, 170 m², Lapa", 770000, 170, 500], ["Rua Joaquim Casimiro, Lapa", 695000, 110, 0], ["Rua das Madres, Madragoa", 690000, 130, 0], ["Santos, vista rio, 145 m²", 770000, 145, 0], ["Calçada das Necessidades 3.º", 595000, 120, 1500]];
 const eur=n=>Math.round(n).toLocaleString('pt-PT').replace(/[\u202f\u00a0.,]/g,' ')+' €';
 function imt(v,j){const B=[[106346,0,0],[145470,.02,2126.92],[198347,.05,6491.02],[330539,.07,10457.96],[660982,.08,13763.35]];if(j){if(v<=330539)return 0;if(v<=660982)return v*.08-26443.12;}if(v>1150853)return v*.075;if(v>660982)return v*.06;for(const[l,r,d]of B)if(v<=l)return Math.max(0,v*r-d);return 0;}
 function selo(v,j){if(j){if(v<=330539)return 0;if(v<=660982)return (v-330539)*.008;}return v*.008;}
