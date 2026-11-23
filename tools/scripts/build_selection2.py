@@ -238,6 +238,7 @@ html,body{{overflow-x:clip}}
 .tn-wa{{font:600 14px var(--body);text-decoration:none;color:#fff;background:#2e7d4f;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 @media (min-width:900px){{.react{{position:sticky;bottom:10px;z-index:5;box-shadow:0 -6px 18px rgba(0,0,0,.06)}}.react .bar{{margin:10px 0 0!important;border:0!important;border-top:1px solid #ecd9a2!important;padding:10px 0 0!important;background:none!important}}.react textarea{{min-height:0;height:40px;margin:0}}.react .rlab{{display:none}}.react .rq{{font-size:16px!important;margin:0 0 6px!important}}.react .rbar{{margin:0 0 8px!important}}.react .rbar button{{padding:8px 12px!important;font-size:14px!important}}.react .bar .mid{{display:none}}.react{{padding:12px 14px!important}}.step.house{{overflow:clip!important}}}}
 .wa-btn{{display:inline-block;background:#2e7d4f;color:#fff!important;text-decoration:none!important;font-weight:600;padding:9px 16px;border-radius:999px;margin-left:4px}}
+.wa-btn{{display:inline;background:none;color:inherit!important;text-decoration:underline!important;font-weight:500;padding:0;border-radius:0;margin:0}}
 </style></head><body>
 <nav class="topnav" aria-label="Menu"><div class="tn-in">
   <span class="tn-brand">Pascale Lepoutre<small>Engel &amp; Völkers</small></span><a class="tn-home" href="{HOME}">⌂ O vosso espaço</a>
@@ -304,7 +305,7 @@ html,body{{overflow-x:clip}}
   <div class="rbar" id="rbar" hidden><button type="button" data-v="Adoro">Adoro</button><button type="button" data-v="Talvez">Talvez</button><button type="button" data-v="Não é para nós">Não é para nós</button></div>
   <button type="button" class="go" id="go">Começar →</button>
 </div></nav>
-  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · <a class="wa-btn" href="https://wa.me/351920609225">WhatsApp à Pascale</a></footer>
+  <footer>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers · <a class="wa-btn" href="https://wa.me/351920609225">WhatsApp 920 609 225</a></footer>
 </div>
 
 <form name="selection-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
