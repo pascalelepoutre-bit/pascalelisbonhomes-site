@@ -56,6 +56,7 @@ textarea{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px;
 .fit{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:6px}
 .fit li{font-size:13.5px;padding:4px 11px;border-radius:999px;border:1px solid}.fit i{font-style:normal;margin-right:5px;font-weight:600}
 .fit .ok{border-color:#bfdccb;color:var(--ok);background:#f1f8f3}.fit .mid{border-color:var(--sand);color:#8a6a1f;background:var(--cream)}
+.calc{margin:4px 0 12px;border:1px solid #e6dfd1;border-radius:14px;background:#fff}.calc summary{cursor:pointer;padding:12px 14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}.calc summary::-webkit-details-marker{display:none}.ctot{font-weight:700}.ctot.ok{color:#2b7a4b}.ctot.no{color:#b3261e}.cbody{padding:0 14px 12px}.cl{display:block;margin:6px 0 10px;font-size:14px}.cl input{width:100%}.cl small{color:#8a8272}.cw{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.cw button{padding:7px 12px;border-radius:999px;border:1.5px solid #d8d2c4;background:#fff;font:500 13px inherit;cursor:pointer}.cw button[aria-pressed="true"]{background:#1d2733;border-color:#1d2733;color:#fff}.cj{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;margin:4px 0 10px}.crows div{display:flex;justify-content:space-between;padding:5px 0;border-top:1px solid #f0ebe0;font-size:14.5px}.crows .big{font-weight:700}.crows .ok{color:#2b7a4b}.crows .no{color:#b3261e}.cfoot{margin:8px 0 0;font-size:12px;color:#8a8272}
 .note{font-size:14.5px;background:var(--cream);border-radius:12px;padding:10px 13px;margin:0 0 10px}
 .more{margin:0 0 16px}.more summary{cursor:pointer;font-size:14px;color:var(--gold);font-weight:500;padding:6px 0}
 .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}.facts div{background:var(--cream);border-radius:10px;padding:8px 10px;font-size:14px}.facts small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
@@ -169,6 +170,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>Vista sobre o Tejo e muita luz.</li><li>A estrutura pombalina original de madeira está à vista: um detalhe raro e cheio de carácter.</li><li>Duas salas que se podem unir numa sala grande, perto da estação de Algés.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Vista rio e luz</li><li class="ok"><i>✓</i>3 quartos, 2 casas de banho</li><li class="mid"><i>≈</i>Cozinha fechada</li><li class="mid"><i>≈</i>Rua com muito trânsito</li></ul>
     <p class="note"><b>A ter em conta:</b> Fica numa rua movimentada: confirmo de que lado ficam os quartos.</p>
+    <details class="calc" data-price="640000" data-area="137"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="510000" max="640000" step="5000" value="640000"></label>
+      <div class="cl">Obras <small>≈ por m², para 137 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="false">Sem obras</button><button type="button" data-w="500" aria-pressed="false">Obras leves</button><button type="button" data-w="1500" aria-pressed="true">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>137 m² área bruta</div><div><small>Quartos</small>3</div><div><small>Casas de banho</small>2</div><div><small>Piso</small>3.º, sem elevador</div></div>
 </details>
     <div class="links"><a href="https://casa.sapo.pt/comprar-apartamento-t3-oeiras-alges-linda-a-velha-e-cruz-quebrada-dafundo-ad8a4d7f-d821-11f1-b6e5-060000000058.html" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Algés,+Oeiras" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -191,6 +200,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>185 m² de área bruta privativa: o grande projeto de remodelação, à medida deles.</li><li>Tetos altos, soalho de madeira, duas salas e cinco divisões.</li><li>Prédio de 1951 com obras estruturais profundas há menos de 10 anos.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Muito espaço para o futuro</li><li class="ok"><i>✓</i>Preço baixo por m²: margem para obras</li><li class="mid"><i>≈</i>Obras completas, a fazer por fases</li><li class="mid"><i>≈</i>3.º andar sem elevador</li></ul>
     <p class="note"><b>A ter em conta:</b> 3.º andar sem elevador. Uma proposta realista ronda os 550 000 a 580 000 €, com obras feitas por fases: primeiro cozinha, casas de banho e instalações.</p>
+    <details class="calc" data-price="639000" data-area="185"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="510000" max="639000" step="5000" value="639000"></label>
+      <div class="cl">Obras <small>≈ por m², para 185 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="false">Sem obras</button><button type="button" data-w="500" aria-pressed="true">Obras leves</button><button type="button" data-w="1500" aria-pressed="false">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>185 m² área bruta privativa</div><div><small>Divisões</small>2 salas e 5 divisões</div><div><small>Construção</small>1951, obras estruturais há menos de 10 anos</div><div><small>Estado</small>Para remodelar</div><div><small>Planta</small>Planta no anúncio.</div></div>
 </details>
     <div class="links"><a href="https://www.imovirtual.com/pt/anuncio/185-m-na-estrela-apartamento-de-traca-classica-para-remodelar-ID1iSML" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Casimiro,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -213,6 +230,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>170 m² de área bruta privativa: espaço para a família e para o futuro.</li><li>Três salas que podem juntar numa sala grande, mais três quartos com boas áreas.</li><li>Prédio de traça tradicional na Lapa, perto do Jardim da Estrela e a descer para Santos.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Muito espaço, 3 quartos grandes</li><li class="ok"><i>✓</i>Carácter e varandas</li><li class="mid"><i>≈</i>Cozinha a abrir para a sala</li><li class="mid"><i>≈</i>770 000 €: negociar para ter margem para obras</li></ul>
     <p class="note"><b>A ter em conta:</b> Prédio de traça tradicional. Confirmo na visita o pé-direito, o andar e o estado geral.</p>
+    <details class="calc" data-price="770000" data-area="170"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="615000" max="770000" step="5000" value="770000"></label>
+      <div class="cl">Obras <small>≈ por m², para 170 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="false">Sem obras</button><button type="button" data-w="500" aria-pressed="false">Obras leves</button><button type="button" data-w="1500" aria-pressed="true">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>170 m² área bruta privativa</div><div><small>Quartos</small>3, mais 3 salas</div><div><small>Casas de banho</small>2</div><div><small>Exterior</small>Varandas</div><div><small>Estado</small>Pronto a habitar, para atualizar</div><div><small>Planta</small>Planta no anúncio.</div></div>
 </details>
     <div class="links"><a href="https://www.imovirtual.com/pt/anuncio/apartamento-t3-3-com-170-m-varandas-e-grande-ID1j9X7" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Casimiro,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -235,6 +260,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>Sala e zona de refeições em open space, exatamente o que me descreveram.</li><li>Tetos trabalhados, muita luz e carácter em todas as divisões.</li><li>Um pequeno pátio privativo nas traseiras, raro nesta zona.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Sala grande com cozinha aberta</li><li class="ok"><i>✓</i>Charme e luz</li><li class="ok"><i>✓</i>3 quartos</li><li class="mid"><i>≈</i>695 000 €, à venda desde abril: há margem para negociar</li></ul>
     <p class="note"><b>A ter em conta:</b> Prédio de 1975. Confirmo na visita o pé-direito, o estado das casas de banho e o condomínio.</p>
+    <details class="calc" data-price="695000" data-area="110"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="555000" max="695000" step="5000" value="695000"></label>
+      <div class="cl">Obras <small>≈ por m², para 110 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="true">Sem obras</button><button type="button" data-w="500" aria-pressed="false">Obras leves</button><button type="button" data-w="1500" aria-pressed="false">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>110 m²</div><div><small>Quartos</small>3</div><div><small>Piso</small>1.º</div><div><small>Exterior</small>Pátio privativo</div><div><small>Construção</small>1975</div><div><small>Energia</small>Classe C</div></div>
 </details>
     <div class="links"><a href="https://www.imovirtual.com/pt/anuncio/t3-elegante-e-repleto-de-charme-na-lapa-ID1i8hT" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Casimiro,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -257,6 +290,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>Vista frontal de rio e muita luz.</li><li>Prédio típico com janelas de sacada e azulejos.</li><li>Suite, closet e uma sala extra que pode ser quarto.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Vista rio e luz</li><li class="ok"><i>✓</i>3 quartos</li><li class="mid"><i>≈</i>Cozinha semiaberta, abrir exige obras</li><li class="mid"><i>≈</i>Só cabe com uma descida de preço</li></ul>
     <p class="note"><b>A ter em conta:</b> 3.º andar sem elevador. O piso de cima tem tetos inclinados.</p>
+    <details class="calc" data-price="690000" data-area="130"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="550000" max="690000" step="5000" value="690000"></label>
+      <div class="cl">Obras <small>≈ por m², para 130 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="true">Sem obras</button><button type="button" data-w="500" aria-pressed="false">Obras leves</button><button type="button" data-w="1500" aria-pressed="false">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>130 m² área bruta privativa</div><div><small>Tipologia</small>T3 duplex</div><div><small>Casas de banho</small>2</div><div><small>Piso</small>3.º, sem elevador</div></div>
 </details>
     <div class="links"><a href="https://casa.sapo.pt/comprar-apartamento-t3-lisboa-estrela-madragoa-(lapa)-0361affd-010b-11f1-b7cf-060000000058.html" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+das+Madres,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -279,6 +320,14 @@ textarea[rows="1"]{min-height:42px}
     <ul class="why"><li>Vista frontal de rio na sala e num dos quartos, em pleno bairro de Santos.</li><li>145 m² num prédio pombalino com duas entradas, soalho e portadas originais.</li><li>Cozinha e duas casas de banho já renovadas, aquecimento nas divisões principais.</li></ul>
     <ul class="fit" aria-label="O vosso essencial"><li class="ok"><i>✓</i>Localização e vista rio</li><li class="ok"><i>✓</i>Espaço: 145 m²</li><li class="mid"><i>≈</i>2 quartos com janela, 3 divisões interiores</li><li class="mid"><i>≈</i>Elevador a confirmar</li></ul>
     <p class="note"><b>A ter em conta:</b> Confirmo se o prédio tem elevador. As três divisões interiores servem bem para escritório, closet ou arrumação.</p>
+    <details class="calc" data-price="770000" data-area="145"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="615000" max="770000" step="5000" value="770000"></label>
+      <div class="cl">Obras <small>≈ por m², para 145 m²</small><div class="cw"><button type="button" data-w="0" aria-pressed="true">Sem obras</button><button type="button" data-w="500" aria-pressed="false">Obras leves</button><button type="button" data-w="1500" aria-pressed="false">Obras completas</button></div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts"><div><small>Área</small>145 m²</div><div><small>Quartos</small>2 com janela, mais 3 divisões interiores</div><div><small>Casas de banho</small>2, renovadas</div><div><small>Piso</small>2.º</div><div><small>Construção</small>1937</div><div><small>Energia</small>C</div><div><small>Planta</small>Planta a pedir.</div></div>
 </details>
     <div class="links"><a href="https://www.engelvoelkers.com/pt/pt/exposes/14792c85-7d90-588a-ab55-df10bebf1035" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Santos,+Lisboa" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -398,5 +447,15 @@ load();show(0);
 if(VW){const sb=document.getElementById('send');if(sb){sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}
 const nb=()=>{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');};nb();setTimeout(nb,800);setTimeout(nb,2500);
 })();
+
+(function(){const eur=n=>Math.round(n).toLocaleString('pt-PT').replace(/ |\.|,/g,' ')+' €';
+function imt(v,j){const B=[[106346,0,0],[145470,.02,2126.92],[198347,.05,6491.02],[330539,.07,10457.96],[660982,.08,13763.35]];if(j){if(v<=330539)return 0;if(v<=660982)return v*.08-26443.12;}if(v>1150853)return v*.075;if(v>660982)return v*.06;for(const[l,r,d]of B)if(v<=l)return Math.max(0,v*r-d);return 0;}
+function selo(v,j){if(j){if(v<=330539)return 0;if(v<=660982)return (v-330539)*.008;}return v*.008;}
+document.querySelectorAll('.calc').forEach(c=>{const area=+c.dataset.area,pr=c.querySelector('.cpr'),jv=c.querySelector('.cjv');
+const run=()=>{const v=+pr.value,w=+(c.querySelector('.cw [aria-pressed="true"]')||{dataset:{w:0}}).dataset.w*area,j=jv.checked,i=imt(v,j),s=selo(v,j),cw=v+w,ok=cw<=800000;
+c.querySelector('.cpv').textContent=eur(v);
+c.querySelector('.crows').innerHTML='<div><span>Compra</span><span>'+eur(v)+'</span></div><div><span>Obras</span><span>'+eur(w)+'</span></div><div class="big '+(ok?'ok':'no')+'"><span>Compra + obras</span><span>'+eur(cw)+(ok?' ✓':' · acima de 800 000 €')+'</span></div><div><span>IMT</span><span>'+eur(i)+'</span></div><div><span>Imposto do Selo</span><span>'+eur(s)+'</span></div><div class="big"><span>Total com impostos</span><span>'+eur(cw+i+s)+'</span></div>';
+const t=c.querySelector('.ctot');t.textContent=eur(cw);t.className='ctot '+(ok?'ok':'no');};
+pr.addEventListener('input',run);jv.addEventListener('change',run);c.querySelectorAll('.cw button').forEach(b=>b.addEventListener('click',()=>{c.querySelectorAll('.cw button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));run();}));run();});})();
 </script>
 </body></html>

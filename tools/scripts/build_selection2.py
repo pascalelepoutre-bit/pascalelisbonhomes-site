@@ -30,6 +30,21 @@ def legend():
         li+=f'<li><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])}<small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small></span></li>' 
     return f'<ol class="leg">{li}</ol>'
 
+
+def calc(h):
+    price=int(h['price'].replace(' ','').replace('€',''))
+    area=AREA.get(h['id']) or 100
+    w0='0' if h['ready'] else ('500' if h['id']=='casimiro185' else '1500')
+    opts=''.join(f'<button type="button" data-w="{v}" aria-pressed="{str(v==w0).lower()}">{l}</button>' for v,l in (('0','Sem obras'),('500','Obras leves'),('1500','Obras completas')))
+    return f'''<details class="calc" data-price="{price}" data-area="{area}"><summary>Quanto custa no total? <span class="ctot"></span></summary>
+      <div class="cbody">
+      <label class="cl">Preço de compra <b class="cpv"></b><input type="range" class="cpr" min="{round(price*0.8/5000)*5000}" max="{price}" step="5000" value="{price}"></label>
+      <div class="cl">Obras <small>≈ por m², para {area} m²</small><div class="cw">{opts}</div></div>
+      <label class="cj"><input type="checkbox" class="cjv" checked> IMT Jovem: até 35 anos, primeira habitação própria e permanente</label>
+      <div class="crows"></div>
+      <p class="cfoot">Estimativa. Os valores das obras são médias; o banco e o notário somam ainda alguns custos.</p>
+      </div></details>'''
+
 def house(h):
     ph = h['photos']
     thumbs = ''.join(f'<button type="button" class="th" data-i="{i}" aria-label="Fotografia {i+1}" style="background-image:url(\'{p}\')"></button>' for i, p in enumerate(ph)) if len(ph) > 1 else ''
@@ -50,6 +65,7 @@ def house(h):
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
     <p class="note"><b>A ter em conta:</b> {e(h['note'])}</p>
+    {calc(h)}
     <div class="row2"><details class="more"><summary>Mais detalhes</summary><div class="facts">{facts}</div>
 </details>
     <div class="links">{f'<a href="{h["link"]}" target="_blank" rel="noopener">Ver anúncio e todas as fotos ↗</a>' if h.get('link') else ''}<a href="https://www.google.com/maps/search/?api=1&query={e(h['maps']).replace(' ','+')}" target="_blank" rel="noopener">Ver no mapa ↗</a></div></div>
@@ -123,6 +139,7 @@ textarea{{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px
 .fit{{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:6px}}
 .fit li{{font-size:13.5px;padding:4px 11px;border-radius:999px;border:1px solid}}.fit i{{font-style:normal;margin-right:5px;font-weight:600}}
 .fit .ok{{border-color:#bfdccb;color:var(--ok);background:#f1f8f3}}.fit .mid{{border-color:var(--sand);color:#8a6a1f;background:var(--cream)}}
+.calc{{margin:4px 0 12px;border:1px solid #e6dfd1;border-radius:14px;background:#fff}}.calc summary{{cursor:pointer;padding:12px 14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}}.calc summary::-webkit-details-marker{{display:none}}.ctot{{font-weight:700}}.ctot.ok{{color:#2b7a4b}}.ctot.no{{color:#b3261e}}.cbody{{padding:0 14px 12px}}.cl{{display:block;margin:6px 0 10px;font-size:14px}}.cl input{{width:100%}}.cl small{{color:#8a8272}}.cw{{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}}.cw button{{padding:7px 12px;border-radius:999px;border:1.5px solid #d8d2c4;background:#fff;font:500 13px inherit;cursor:pointer}}.cw button[aria-pressed="true"]{{background:#1d2733;border-color:#1d2733;color:#fff}}.cj{{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;margin:4px 0 10px}}.crows div{{display:flex;justify-content:space-between;padding:5px 0;border-top:1px solid #f0ebe0;font-size:14.5px}}.crows .big{{font-weight:700}}.crows .ok{{color:#2b7a4b}}.crows .no{{color:#b3261e}}.cfoot{{margin:8px 0 0;font-size:12px;color:#8a8272}}
 .note{{font-size:14.5px;background:var(--cream);border-radius:12px;padding:10px 13px;margin:0 0 10px}}
 .more{{margin:0 0 16px}}.more summary{{cursor:pointer;font-size:14px;color:var(--gold);font-weight:500;padding:6px 0}}
 .facts{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}}.facts div{{background:var(--cream);border-radius:10px;padding:8px 10px;font-size:14px}}.facts small{{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}}
@@ -333,6 +350,16 @@ load();show(0);
 if(VW){{const sb=document.getElementById('send');if(sb){{sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}}
 const nb=()=>{{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');}};nb();setTimeout(nb,800);setTimeout(nb,2500);
 }})();
+
+(function(){{const eur=n=>Math.round(n).toLocaleString('pt-PT').replace(/\u202f|\.|,/g,' ')+' €';
+function imt(v,j){{const B=[[106346,0,0],[145470,.02,2126.92],[198347,.05,6491.02],[330539,.07,10457.96],[660982,.08,13763.35]];if(j){{if(v<=330539)return 0;if(v<=660982)return v*.08-26443.12;}}if(v>1150853)return v*.075;if(v>660982)return v*.06;for(const[l,r,d]of B)if(v<=l)return Math.max(0,v*r-d);return 0;}}
+function selo(v,j){{if(j){{if(v<=330539)return 0;if(v<=660982)return (v-330539)*.008;}}return v*.008;}}
+document.querySelectorAll('.calc').forEach(c=>{{const area=+c.dataset.area,pr=c.querySelector('.cpr'),jv=c.querySelector('.cjv');
+const run=()=>{{const v=+pr.value,w=+(c.querySelector('.cw [aria-pressed="true"]')||{{dataset:{{w:0}}}}).dataset.w*area,j=jv.checked,i=imt(v,j),s=selo(v,j),cw=v+w,ok=cw<=800000;
+c.querySelector('.cpv').textContent=eur(v);
+c.querySelector('.crows').innerHTML='<div><span>Compra</span><span>'+eur(v)+'</span></div><div><span>Obras</span><span>'+eur(w)+'</span></div><div class="big '+(ok?'ok':'no')+'"><span>Compra + obras</span><span>'+eur(cw)+(ok?' ✓':' · acima de 800 000 €')+'</span></div><div><span>IMT</span><span>'+eur(i)+'</span></div><div><span>Imposto do Selo</span><span>'+eur(s)+'</span></div><div class="big"><span>Total com impostos</span><span>'+eur(cw+i+s)+'</span></div>';
+const t=c.querySelector('.ctot');t.textContent=eur(cw);t.className='ctot '+(ok?'ok':'no');}};
+pr.addEventListener('input',run);jv.addEventListener('change',run);c.querySelectorAll('.cw button').forEach(b=>b.addEventListener('click',()=>{{c.querySelectorAll('.cw button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));run();}}));run();}});}})();
 </script>
 </body></html>'''
 
