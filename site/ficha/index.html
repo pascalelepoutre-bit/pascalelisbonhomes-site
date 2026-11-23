@@ -168,14 +168,14 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
 <script src="jspdf.min.js"></script>
 <script>
 (function(){
-var Q=new URLSearchParams(location.search);
+var Q=new URLSearchParams(location.search);var CL=Q.get('cl')==='1';
 var ITEMS=['Localização','Preço','Áreas','Qualidade Acabamentos','Exposição Solar','Vista'];
 var ITEMS_EN=['Location','Price','Size of rooms','Quality of finishes','Sun exposure','View'];
 var SCALE=['Muito Mau','Mau','Suficiente','Bom','Muito Bom','Excelente'];
 var SCALE_EN=['Very poor','Poor','Fair','Good','Very good','Excellent'];
-var T={pt:{e2:'Ficha de visita · 2 de 4',h2:'O que achou deste imóvel?',buy:'Compraria este imóvel?',yes:'Sim',no:'Não',obs:'Outras observações',obsp:'O que gostou, o que não gostou…',next:'Seguinte →',back:'← Voltar',e3:'Ficha de visita · 3 de 4',h3:'Os seus dados e assinatura',name:'Nome completo',cc:'Cartão de Cidadão ou Passaporte n.º',ok:'Confirmo que visitei este imóvel através da Engel & Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.',gdpr:'Proteção de dados',sigc:'Assinatura',sighere:'Assine aqui com o dedo',clear:'Limpar',give:'Concluir e devolver à consultora →',
+var T={pt:{e2:'Ficha de visita · 2 de 4',h2:'O que achou deste imóvel?',buy:'Compraria este imóvel?',yes:'Sim',no:'Não',obs:'Outras observações',obsp:'O que gostou, o que não gostou…',next:'Seguinte →',back:'← Voltar',e3:'Ficha de visita · 3 de 4',h3:'Os seus dados e assinatura',name:'Nome completo',cc:'Cartão de Cidadão ou Passaporte n.º',ok:'Confirmo que visitei este imóvel através da Engel & Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.',gdpr:'Proteção de dados',sigc:'Assinatura',sighere:'Assine aqui com o dedo',clear:'Limpar',give:(new URLSearchParams(location.search).get('cl')==='1')?'Enviar a ficha à Pascale →':'Concluir e devolver à consultora →',
   mRate:'Falta avaliar: ',mBuy:'Responda se compraria o imóvel.',mName:'Escreva o seu nome.',mCC:'Escreva o n.º do Cartão de Cidadão ou Passaporte.',mOk:'Marque a confirmação.',mSig:'Assine no quadro.'},
- en:{e2:'Viewing form · 2 of 4',h2:'What did you think of this property?',buy:'Would you buy this property?',yes:'Yes',no:'No',obs:'Other comments',obsp:'What you liked, what you didn’t…',next:'Next →',back:'← Back',e3:'Viewing form · 3 of 4',h3:'Your details and signature',name:'Full name',cc:'ID card or passport number',ok:'I confirm I visited this property through Engel & Völkers and I authorise the processing of my data for the real estate brokerage.',gdpr:'Data protection',sigc:'Signature',sighere:'Sign here with your finger',clear:'Clear',give:'Finish and hand back →',
+ en:{e2:'Viewing form · 2 of 4',h2:'What did you think of this property?',buy:'Would you buy this property?',yes:'Yes',no:'No',obs:'Other comments',obsp:'What you liked, what you didn’t…',next:'Next →',back:'← Back',e3:'Viewing form · 3 of 4',h3:'Your details and signature',name:'Full name',cc:'ID card or passport number',ok:'I confirm I visited this property through Engel & Völkers and I authorise the processing of my data for the real estate brokerage.',gdpr:'Data protection',sigc:'Signature',sighere:'Sign here with your finger',clear:'Clear',give:(new URLSearchParams(location.search).get('cl')==='1')?'Send the form to Pascale →':'Finish and hand back →',
   mRate:'Still to rate: ',mBuy:'Please say if you would buy it.',mName:'Please write your name.',mCC:'Please write your ID or passport number.',mOk:'Please tick the confirmation.',mSig:'Please sign in the box.'}};
 var L='pt', S={type:'Venda',rates:{},buy:''};
 function $(i){return document.getElementById(i)}
@@ -300,7 +300,7 @@ function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W
   foot(2);
   return doc}
 
-$('make').onclick=function(){if(P.sigP.isEmpty()){$('err4').textContent='Assine como consultora.';return}$('err4').textContent='';
+$('make').onclick=function(){if(!CL&&P.sigP.isEmpty()){$('err4').textContent='Assine como consultora.';return}$('err4').textContent='';
   try{if($('keepP').checked)localStorage.setItem('ficha_sigP',P.sigP.data());else localStorage.removeItem('ficha_sigP')}catch(x){}
   var doc=makePdf();BLOB=doc.output('blob');
   var nm=$('c_name').value.trim().replace(/\s+/g,'_').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^\w-]/g,'');
@@ -318,7 +318,12 @@ $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{ty
 function download(){var u=URL.createObjectURL(BLOB),a=document.createElement('a');a.href=u;a.download=FNAME;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1000)}
 $('dl').onclick=download;
 $('again').onclick=function(){location.href=location.pathname+location.search};
-show(1);
+if(CL){$('back1').style.display='none';
+ var s4=$('s4');s4.querySelector('.hand').style.display='none';s4.querySelector('.eyebrow').textContent='Ficha de visita · 3 de 3';s4.querySelector('h1').textContent='Confirmar e enviar';
+ $('sigP').closest('.card').style.display='none';$('make').textContent='Enviar a ficha à Pascale';
+ $('doneTxt').textContent='Obrigada! A ficha seguiu para a Pascale. Se quiserem, enviem-lhe também o PDF.';$('share').textContent='Enviar o PDF à Pascale';$('again').style.display='none';
+ var sp=document.querySelectorAll('.steps span');if(sp[3])sp[3].style.display='none';
+ $('addr2').textContent=$('v_addr').value;show(2);}else show(1);
 })();
 </script>
 </body>
