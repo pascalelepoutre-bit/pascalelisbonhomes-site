@@ -403,5 +403,5 @@ for _h,_g,_a,_p in ((_BT,(38.69466,-9.21593),135,700000),(_TV,(38.7075,-9.20605)
     HOUSES.append(_h);_h['geo']=_g;_h['agency']='KW LEAD' if _h is _BT else 'KW Select';_h['ppm']=f"{round(_p/_a):,}".replace(',',' ')+' €/m²'
 CONTACT['belemt4']=('KW LEAD','KWPT-038224','211 977 898','Sandra Ramos','','Exclusivo, partilha 50/50 com todas as agências')
 CONTACT['tristao']=('KW Select','KWPT-040339','','Gonçalo Freitas','','')
-SUG['belemt4']=('Voorstellen','Renoveren · naast Torre de Belém en de trein, 135 m² met tuin')
+SUG['belemt4']=('Niet voorstellen','Niet · 700 000 € plus werken is 835 000 € of meer')
 SUG['tristao']=('Twijfel','Reserve verder · licht en rivierzicht, weinig karakter')

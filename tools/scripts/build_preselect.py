@@ -374,7 +374,7 @@ L.marker([38.7062,-9.1738],{{icon:L.divIcon({{className:'',html:'<div class="lpi
 M.fitBounds(pts,{{padding:[24,24]}});}}catch(e){{}}
 const PRE={{"algesrio":"Voorstellen","casimiro":"Twijfel","boavista":"Twijfel","becoolival":"Twijfel","madragoa":"Twijfel"}};
 if(!localStorage.getItem(KEY)){{houses.forEach(h=>{{const v=PRE[h.dataset.id];if(v)h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));}});}}
-load();{{const SUG={json.dumps({k:v[0] for k,v in SUG.items()})},SK=KEY+':sug2311b';try{{if(!localStorage.getItem(SK)){{houses.forEach(h=>{{const v=SUG[h.dataset.id];if(v)h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));}});save();localStorage.setItem(SK,'1');}}}}catch(e){{}}}}legSync();show(0);
+load();{{const SUG={json.dumps({k:v[0] for k,v in SUG.items()})},SK=KEY+':sug2311c';try{{if(!localStorage.getItem(SK)){{houses.forEach(h=>{{const v=SUG[h.dataset.id];if(v)h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));}});save();localStorage.setItem(SK,'1');}}}}catch(e){{}}}}legSync();show(0);
 if(VW){{const sb=document.getElementById('send');if(sb){{sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}}
 const nb=()=>{{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');}};nb();setTimeout(nb,800);setTimeout(nb,2500);
 }})();
