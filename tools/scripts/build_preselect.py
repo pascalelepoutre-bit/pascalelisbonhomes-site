@@ -49,7 +49,11 @@ PROFILE = dict(
 e = html.escape
 svg=''
 def legend():
-    li = ''.join(f'<li><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])}<small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small></span></li>' for h in HOUSES)
+    def brand(h):
+        off=(CONTACT.get(h['id']) or (h['agency'],))[0]
+        k='priv' if off=='Particular' else 'kw' if off.startswith('KW') else 'c21' if 'entury' in off else 'remax' if 'RE/MAX' in off else 'jll' if 'JLL' in off else 'ev' if off.startswith('Engel') else 'pf' if 'Christie' in off else 'oth'
+        return f'<i class="br {k}">{e(off)}</i>'
+    li = ''.join(f'<li data-hid="{h["id"]}" role="button" tabindex="0"><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])} <em class="go">↗</em><small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small><span class="lb">{brand(h)}<i class="cs"></i></span></span></li>' for h in HOUSES)
     return f'<ol class="leg">{li}</ol>'
 
 def house(h):
@@ -127,6 +131,7 @@ textarea{{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px
 .m-area{{font:600 15px var(--body);letter-spacing:.3em;fill:var(--muted);opacity:.55}}.m-water-l{{font:italic 14px var(--body);fill:var(--muted)}}.m-road{{font:10px var(--body);fill:var(--muted)}}
 .m-pin circle{{fill:var(--ink);stroke:#fff;stroke-width:3}}.m-pin text{{font:600 21px var(--body);fill:#fff}}.m-pin.rn circle{{fill:var(--gold)}}
 .m-home circle{{fill:var(--ok);stroke:#fff;stroke-width:3}}.m-home path{{fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round}}.m-home-l{{font:600 15px var(--body);fill:var(--ok)}}
+.leg li[data-hid]{{cursor:pointer;padding:6px 8px;margin:0 -8px;border-radius:10px}}.leg li[data-hid]:hover{{background:#f3efe6}}.leg .go{{font-style:normal;color:var(--gold)}}.lb{{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}}.br,.cs{{font:600 11px var(--body);font-style:normal;padding:2px 9px;border-radius:999px;color:#fff;background:#6b7a8c}}.br.kw{{background:#b40101}}.br.c21{{background:#beaf87;color:#252526}}.br.remax{{background:#003da5}}.br.jll{{background:#e30613}}.br.ev{{background:#1d1d1b}}.br.pf{{background:#000}}.br.priv{{background:#5b2d7a}}.cs:empty{{display:none}}.cs{{background:#2b7a4b}}.cs.half{{background:#d9a23a;color:#2b2b2b}}
 .leg{{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}}.leg li{{display:flex;gap:10px;align-items:flex-start}}
 .leg b,.num{{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:600 13px var(--body)}}.leg b.rn,.num.rn{{background:var(--gold)}}
 .leg small{{display:block;color:var(--muted);font-size:12.5px}}
@@ -321,7 +326,10 @@ function grow(t){{t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}
 document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
 const DONE={json.dumps(DONE)};houses.forEach(h=>{{const d=DONE[h.dataset.id]||[];const a=h.querySelector('.tk1'),b=h.querySelector('.tk2');if(a&&d[0])a.checked=true;if(b&&d[1])b.checked=true;}});
-document.querySelectorAll('.ccard input').forEach(t=>t.addEventListener('change',save));
+document.querySelectorAll('.ccard input').forEach(t=>t.addEventListener('change',()=>{{save();legSync();}}));
+function legSync(){{document.querySelectorAll('.leg li[data-hid]').forEach(li=>{{const h=houses.find(x=>x.dataset.id===li.dataset.hid),cs=li.querySelector('.cs');if(!h||!cs)return;const a=(h.querySelector('.tk1')||{{}}).checked,b=(h.querySelector('.tk2')||{{}}).checked,priv=!h.querySelector('.tk1');cs.className='cs'+(b?'':' half');cs.textContent=b?(priv?'Contactado ✓':'Agente ✓'):(a?'Agência ✓':'');}});}}
+document.querySelectorAll('.leg li[data-hid]').forEach(li=>{{const go=()=>{{const h=houses.find(x=>x.dataset.id===li.dataset.hid);if(h){{show(steps.indexOf(h));window.scrollTo({{top:0}});}}}};li.addEventListener('click',go);li.addEventListener('keydown',ev=>{{if(ev.key==='Enter')go();}});}});
+setTimeout(legSync,0);
 function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
  if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}}
 window.addEventListener('resize',()=>{{place();}});
