@@ -313,3 +313,19 @@ AG.update(casimiro170='KW LEAD',cruzq='Particular · Manel Theotónio, via Ideal
 for h in _NEW:
     h['geo']=GEO[h['id']];h['agency']=AG[h['id']]
     p=int(h['price'].replace(' ','').replace('€',''));h['ppm']=f"{round(p/AREA[h['id']]):,}".replace(',',' ')+' €/m²'
+
+# 23/11 Pascale: E&V Santos T5 with river view
+_EVU='https://uploadcare.engelvoelkers.com/'
+_T5=dict(id='santost5',name='Santos, vista rio, 145 m²',price='770 000 €',state='Pronta a habitar',ready=True,
+  line='T5 · 145 m² · 2.º andar · vista rio',
+  photos=[_EVU+x+'/-/format/jpeg/-/scale_crop/1440x960/center/-/quality/lighter/' for x in ['b4eb64e8-c4d5-4506-9a62-b8f7fd906299', '0d970b89-fc60-4c07-bbda-c31a3810b0c6', '310868fe-5a8a-4143-8239-198ca9a9136d', '7882dbec-c336-435f-8fc2-b6754f5cb56b', '89ff00be-c4ff-46c1-9bb0-fb28422e5f0b', '47f0af6e-ec0c-4d81-b8bd-83f660f1c5b2', '33dc22d2-e1de-4aaf-b9d2-83344687b03c', 'ac3fdebc-e3ad-4eeb-b90d-a520f549dfa2']],
+  caps=['Sala com vista rio','Interior','Interior','Interior','Interior','Interior','Interior','Interior'],
+  link='https://www.engelvoelkers.com/pt/pt/exposes/14792c85-7d90-588a-ab55-df10bebf1035',
+  why=['Vista frontal de rio na sala e num dos quartos, em pleno bairro de Santos.','145 m² num prédio pombalino com duas entradas, soalho e portadas originais.','Cozinha e duas casas de banho já renovadas, aquecimento nas divisões principais.'],
+  fit=[('ok','Localização e vista rio'),('ok','Espaço: 145 m²'),('mid','2 quartos com janela, 3 divisões interiores'),('mid','Elevador a confirmar')],
+  note='Imóvel Engel & Völkers, consultor Oscar Baptista. Partilha interna, sem partilha escrita com outra agência. Confirmar elevador e a rua exata.',
+  facts=[('Área','145 m²'),('Quartos','2 com janela, mais 3 divisões interiores'),('Casas de banho','2, renovadas'),('Piso','2.º'),('Construção','1937'),('Energia','C'),('Planta','Planta a pedir ao Oscar.')],
+  maps='Santos, Lisboa')
+HOUSES.append(_T5)
+GEO.update(santost5=(38.7072,-9.1585)); AREA.update(santost5=145); AG.update(santost5='Engel & Völkers · Oscar Baptista')
+_T5['geo']=GEO['santost5'];_T5['agency']=AG['santost5'];_T5['ppm']=f"{round(770000/145):,}".replace(',',' ')+' €/m²'

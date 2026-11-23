@@ -20,7 +20,8 @@ MARKET={'casimiro':'Op de markt: volgens de advertentie beschikbaar sinds mei 20
  'casimiro170':'Op de markt: nieuw, gezien op 23/11. KW deelt 50/50 met alle agentschappen.',
  'cruzq':'Op de markt: nieuw sinds 22/11. Particulier, verhuurd met huurders: eerst vragen of het vrij komt.',
  'algesrep':'Op de markt: nieuw sinds 20/11.',
- 'estrela102':'Op de markt: nieuw, gezien op 23/11.'}
+ 'estrela102':'Op de markt: nieuw, gezien op 23/11.',
+ 'santost5':'Op de markt: E&V-pand van Oscar Baptista, op de E&V-site sinds minstens 1/11. Interne deling, geen schriftelijke partilha nodig.'}
 for h in HOUSES:
     if h['id'] in MARKET: h['market']=MARKET[h['id']]
     elif not h.get('market'): h['market']='Op de markt: nog onbekend. Ik volg de prijs vanaf nu elke week.'
