@@ -363,3 +363,18 @@ CONTACT={
  'cruzq':('Particular','Idealista 35497881','','Manel Theotónio','','Pelo chat do Idealista'),
  'santost5':('Engel & Völkers','W-049HVO','','Oscar Baptista','','Só ligar se tiverem interesse'),
 }
+# 23/11 Claude's proposal with Pascale: 2 to renovate, 2 nearby, 2 further
+SUG={'casimiro185':('Voorstellen','Renoveren · nr. 1, alles klopt'),
+ 'madragoa':('Voorstellen','Renoveren · alleen met een lagere prijs'),
+ 'casimiro':('Voorstellen','Dichtbij, instapklaar · open ruimte, plafonds, patio'),
+ 'santost5':('Voorstellen','Dichtbij · rivierzicht, maar 2 echte slaapkamers'),
+ 'algesrio':('Voorstellen','Verder, bij de trein · rivierzicht, ruimte voor werken'),
+ 'boahora7':('Voorstellen','Verder, bij de trein · op hun limiet, eigenaar wil geen makelaars'),
+ 'casimiro170':('Twijfel','Reserve · 770k laat weinig over voor werken'),
+ 'algesrep':('Twijfel','Reserve · veel ruimte, weinig karakter'),
+ 'boavista':('Twijfel',"Reserve · alleen als Christie's deelt"),
+ 'becoolival':('Niet voorstellen','Niet · zelfde flat als nr. 1, 86 000 € duurder'),
+ 'estrela102':('Niet voorstellen','Niet · tram, weinig karakter, ver van de rivier'),
+ 'cruzq':('Niet voorstellen','Niet · verhuurd, gebouw uit 1988'),
+ 'olival':('Niet voorstellen','Niet · T2, al gezien'),
+ 'santos':('Niet voorstellen','Niet · T2, al gezien')}

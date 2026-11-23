@@ -24,6 +24,7 @@ def ccard(h):
     if tip: rows+='<p class="ctip">'+e(tip)+'</p>'
     return '<div class="ccard'+cls+'">'+rows+'</div>'
 
+SUG=globals().get('SUG',{})
 DONE=globals().get('DONE',{})
 KEEP=os.environ.get('KEEP')
 if KEEP:
@@ -53,7 +54,7 @@ def legend():
         off=(CONTACT.get(h['id']) or (h['agency'],))[0]
         k='priv' if off=='Particular' else 'kw' if off.startswith('KW') else 'c21' if 'entury' in off else 'remax' if 'RE/MAX' in off else 'jll' if 'JLL' in off else 'ev' if off.startswith('Engel') else 'pf' if 'Christie' in off else 'oth'
         return f'<i class="br {k}">{e(off)}</i>'
-    li = ''.join(f'<li data-hid="{h["id"]}" role="button" tabindex="0"><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])} <em class="go">↗</em><small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small><span class="lb">{brand(h)}<i class="cs"></i></span></span></li>' for h in HOUSES)
+    li = ''.join(f'<li data-hid="{h["id"]}" role="button" tabindex="0"><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])} <em class="go">↗</em><small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small><span class="lb">{brand(h)}<i class="cs"></i></span>{('<span class="sg">'+e(SUG[h['id']][1])+'</span>') if h['id'] in SUG else ''}</span><span class="pk"><button type="button" data-v="Voorstellen" title="Voorstellen">✓</button><button type="button" data-v="Twijfel" title="Twijfel">?</button><button type="button" data-v="Niet voorstellen" title="Niet voorstellen">✕</button></span></li>' for h in HOUSES)
     return f'<ol class="leg">{li}</ol>'
 
 def house(h):
@@ -132,6 +133,7 @@ textarea{{width:100%;margin-top:10px;font:15px/1.4 var(--body);padding:10px 12px
 .m-pin circle{{fill:var(--ink);stroke:#fff;stroke-width:3}}.m-pin text{{font:600 21px var(--body);fill:#fff}}.m-pin.rn circle{{fill:var(--gold)}}
 .m-home circle{{fill:var(--ok);stroke:#fff;stroke-width:3}}.m-home path{{fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round}}.m-home-l{{font:600 15px var(--body);fill:var(--ok)}}
 .leg li[data-hid]{{cursor:pointer;padding:6px 8px;margin:0 -8px;border-radius:10px}}.leg li[data-hid]:hover{{background:#f3efe6}}.leg .go{{font-style:normal;color:var(--gold)}}.lb{{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}}.br,.cs{{font:600 11px var(--body);font-style:normal;padding:2px 9px;border-radius:999px;color:#fff;background:#6b7a8c}}.br.kw{{background:#b40101}}.br.c21{{background:#beaf87;color:#252526}}.br.remax{{background:#003da5}}.br.jll{{background:#e30613}}.br.ev{{background:#1d1d1b}}.br.pf{{background:#000}}.br.priv{{background:#5b2d7a}}.cs:empty{{display:none}}.cs{{background:#2b7a4b}}.cs.half{{background:#d9a23a;color:#2b2b2b}}
+.sg{{display:block;margin-top:3px;font:500 12.5px var(--body);color:#5c4a1e}}.pk{{flex:none;margin-left:auto;display:flex;gap:4px;align-self:center}}.pk button{{width:32px;height:32px;border-radius:50%;border:1.5px solid #d8d2c4;background:#fff;font:700 14px var(--body);color:#8a8272;cursor:pointer}}.pk button[aria-pressed="true"][data-v="Voorstellen"]{{background:#2b7a4b;border-color:#2b7a4b;color:#fff}}.pk button[aria-pressed="true"][data-v="Twijfel"]{{background:#d9a23a;border-color:#d9a23a;color:#fff}}.pk button[aria-pressed="true"][data-v="Niet voorstellen"]{{background:#9a9a9a;border-color:#9a9a9a;color:#fff}}.leg li.off>span{{opacity:.5}}
 .leg{{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}}.leg li{{display:flex;gap:10px;align-items:flex-start}}
 .leg b,.num{{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:600 13px var(--body)}}.leg b.rn,.num.rn{{background:var(--gold)}}
 .leg small{{display:block;color:var(--muted);font-size:12.5px}}
@@ -327,7 +329,8 @@ document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
 const DONE={json.dumps(DONE)};houses.forEach(h=>{{const d=DONE[h.dataset.id]||[];const a=h.querySelector('.tk1'),b=h.querySelector('.tk2');if(a&&d[0])a.checked=true;if(b&&d[1])b.checked=true;}});
 document.querySelectorAll('.ccard input').forEach(t=>t.addEventListener('change',()=>{{save();legSync();}}));
-function legSync(){{document.querySelectorAll('.leg li[data-hid]').forEach(li=>{{const h=houses.find(x=>x.dataset.id===li.dataset.hid),cs=li.querySelector('.cs');if(!h||!cs)return;const a=(h.querySelector('.tk1')||{{}}).checked,b=(h.querySelector('.tk2')||{{}}).checked,priv=!h.querySelector('.tk1');cs.className='cs'+(b?'':' half');cs.textContent=b?(priv?'Contactado ✓':'Agente ✓'):(a?'Agência ✓':'');}});}}
+function legSync(){{document.querySelectorAll('.leg li[data-hid]').forEach(li=>{{const h=houses.find(x=>x.dataset.id===li.dataset.hid),cs=li.querySelector('.cs');if(!h||!cs)return;const a=(h.querySelector('.tk1')||{{}}).checked,b=(h.querySelector('.tk2')||{{}}).checked,priv=!h.querySelector('.tk1');cs.className='cs'+(b?'':' half');cs.textContent=b?(priv?'Contactado ✓':'Agente ✓'):(a?'Agência ✓':'');const v=val(h.querySelector('.btns'));li.querySelectorAll('.pk button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));li.classList.toggle('off',v==='Niet voorstellen');}});}}
+document.querySelectorAll('.leg .pk button').forEach(b=>b.addEventListener('click',ev=>{{ev.stopPropagation();const li=b.closest('li'),h=houses.find(x=>x.dataset.id===li.dataset.hid);if(!h)return;h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===b.dataset.v)));save();legSync();}}));
 document.querySelectorAll('.leg li[data-hid]').forEach(li=>{{const go=()=>{{const h=houses.find(x=>x.dataset.id===li.dataset.hid);if(h){{show(steps.indexOf(h));window.scrollTo({{top:0}});}}}};li.addEventListener('click',go);li.addEventListener('keydown',ev=>{{if(ev.key==='Enter')go();}});}});
 setTimeout(legSync,0);
 function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
@@ -369,7 +372,7 @@ L.marker([38.7062,-9.1738],{{icon:L.divIcon({{className:'',html:'<div class="lpi
 M.fitBounds(pts,{{padding:[24,24]}});}}catch(e){{}}
 const PRE={{"algesrio":"Voorstellen","casimiro":"Twijfel","boavista":"Twijfel","becoolival":"Twijfel","madragoa":"Twijfel"}};
 if(!localStorage.getItem(KEY)){{houses.forEach(h=>{{const v=PRE[h.dataset.id];if(v)h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));}});}}
-load();show(0);
+load();{{const SUG={json.dumps({k:v[0] for k,v in SUG.items()})},SK=KEY+':sug2311';try{{if(!localStorage.getItem(SK)){{houses.forEach(h=>{{const v=SUG[h.dataset.id];if(v)h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));}});save();localStorage.setItem(SK,'1');}}}}catch(e){{}}}}legSync();show(0);
 if(VW){{const sb=document.getElementById('send');if(sb){{sb.disabled=true;sb.textContent='Respostas enviadas pelo cliente';}}const bn=document.createElement('div');bn.textContent='Respostas de '+CLIENT+' · só para a Pascale';bn.style.cssText='background:#2e7d4f;color:#fff;text-align:center;padding:8px 12px;font:600 14px Inter,Arial,sans-serif';document.body.prepend(bn);}}
 const nb=()=>{{if(document.getElementById('nl-badge-frame'))document.body.classList.add('nlb');}};nb();setTimeout(nb,800);setTimeout(nb,2500);
 }})();
