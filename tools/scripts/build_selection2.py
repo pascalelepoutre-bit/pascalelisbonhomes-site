@@ -246,8 +246,8 @@ textarea[rows="1"]{{min-height:42px}}
     <h1 style="font-size:26px;margin-top:10px">Último passo</h1>
     <div class="box"><h3>A vossa opinião</h3><ul class="sum" id="sum"></ul>
       <h3>Quais querem visitar?</h3><div class="vis">{vis}</div>
-      <h3 style="margin-top:14px">Quando podem visitar?</h3>
-      <div class="btns" id="wBtns"><button type="button" data-v="Semana de 24 de novembro">Semana de 24 nov.</button><button type="button" data-v="Fim de semana 28 e 29 de novembro">28 e 29 nov.</button><button type="button" data-v="Outra data">Outra data</button></div>
+      <h3 style="margin-top:14px">Quando podem visitar?</h3><p class="hint" style="margin:0 0 6px;font-size:14px;color:var(--muted)">Podem escolher mais do que um dia.</p>
+      <div class="btns multi" id="wBtns"><button type="button" data-v="Quinta, 26 de novembro">Quinta 26 nov.</button><button type="button" data-v="Sexta, 27 de novembro">Sexta 27 nov.</button><button type="button" data-v="Sábado, 28 de novembro">Sábado 28 nov.</button><button type="button" data-v="Outra data">Outra data</button></div>
       <h3 style="margin-top:14px">Mais alguma coisa?</h3>
       <textarea id="oTxt" placeholder="Por exemplo: escadas não são problema até ao 2.º andar."></textarea>
       <button type="button" class="send" id="send">Enviar a minha opinião</button>
@@ -304,7 +304,7 @@ document.querySelectorAll('.house').forEach(h=>{{const g=h.querySelector('.gal')
  th.forEach(t=>t.addEventListener('click',()=>set(+t.dataset.i)));set(0);
  let x0=null;m.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{{passive:true}});m.addEventListener('touchend',e=>{{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)set(i+(dx<0?1:-1));x0=null;}});}});
 // reactions
-document.querySelectorAll('.btns').forEach(b=>b.querySelectorAll('button').forEach(x=>{{x.setAttribute('aria-pressed','false');x.addEventListener('click',()=>{{b.querySelectorAll('button').forEach(y=>y.setAttribute('aria-pressed','false'));x.setAttribute('aria-pressed','true');save();}});}}));
+document.querySelectorAll('.btns').forEach(b=>b.querySelectorAll('button').forEach(x=>{{x.setAttribute('aria-pressed','false');x.addEventListener('click',()=>{{if(b.classList.contains('multi')){{x.setAttribute('aria-pressed',String(x.getAttribute('aria-pressed')!=='true'));save();return;}}b.querySelectorAll('button').forEach(y=>y.setAttribute('aria-pressed','false'));x.setAttribute('aria-pressed','true');save();}});}}));
 document.querySelectorAll('textarea,.vis input').forEach(t=>t.addEventListener('input',save));
 function grow(t){{t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}}
 document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
@@ -314,7 +314,8 @@ function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;co
 window.addEventListener('resize',()=>{{place();}});
 function syncBar(){{const h=steps[cur];if(!h.classList.contains('house'))return;const v=val(h.querySelector('.btns'));rbar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===v)));}}
 rbar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{{const h=steps[cur];h.querySelectorAll('.btns button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===b.dataset.v)));syncBar();save();}}));
-const val=b=>(b&&b.querySelector('[aria-pressed="true"]')||{{}}).dataset?.v||'';
+const val=b=>b&&b.classList.contains('multi')?[...b.querySelectorAll('[aria-pressed="true"]')].map(x=>x.dataset.v).join(' · '):val1(b);
+const val1=b=>(b&&b.querySelector('[aria-pressed="true"]')||{{}}).dataset?.v||'';
 function summary(){{const ul=document.getElementById('sum');ul.textContent='';houses.forEach(h=>{{const li=document.createElement('li');li.innerHTML='<span></span><em></em>';li.firstChild.textContent=h.dataset.name;li.lastChild.textContent=val(h.querySelector('.btns'))||'sem opinião';{{const v=val(h.querySelector('.btns'));li.lastChild.className=/Voorstellen|Adoro/.test(v)&&!/Niet/.test(v)?'v-yes':/Twijfel|Talvez/.test(v)?'v-mid':/Niet|Não/.test(v)?'v-no':'v-none';}}ul.appendChild(li);}});}}
 function text(){{const L=['Olá Pascale, a nossa opinião sobre a seleção 2:'];
  const pv=val(document.getElementById('pBtns')),pt=document.getElementById('pTxt').value.trim();L.push('Perfil: '+(pv||'sem resposta')+(pt?' · '+pt:''));
@@ -325,7 +326,7 @@ function text(){{const L=['Olá Pascale, a nossa opinião sobre a seleção 2:']
 function save(){{try{{const st={{c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,w:val(document.getElementById('wBtns')),v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('textarea').value])}};localStorage.setItem(KEY,JSON.stringify(st));}}catch(e){{}}}}
 function load(){{let st;try{{st=JSON.parse(localStorage.getItem(KEY)||'null')}}catch(e){{}}if(!st)return 0;
  const press=(b,v)=>b.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));
- press(document.getElementById('pBtns'),st.p);press(document.getElementById('wBtns'),st.w);document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
+ press(document.getElementById('pBtns'),st.p);{{const W=(st.w||'').split(' · ');document.getElementById('wBtns').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(W.includes(x.dataset.v))));}}document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
  (st.v||[]).forEach((c,k)=>{{const i=document.querySelectorAll('.vis input')[k];if(i)i.checked=c;}});
  (st.h||[]).forEach((x,k)=>{{const h=houses[k];if(!h)return;press(h.querySelector('.btns'),x[0]);h.querySelector('textarea').value=x[1]||'';}});return st.c||0;}}
 // max 3 visits
