@@ -405,3 +405,10 @@ CONTACT['belemt4']=('KW LEAD','KWPT-038224','211 977 898','Sandra Ramos','','Exc
 CONTACT['tristao']=('KW Select','KWPT-040339','','Gonçalo Freitas','','')
 SUG['belemt4']=('Niet voorstellen','Niet · 700 000 € plus werken is 835 000 € of meer')
 SUG['tristao']=('Twijfel','Reserve verder · licht en rivierzicht, weinig karakter')
+# 12:09 status after the Calçada test
+SUG.update({'algesrio':('Voorstellen','Verder, bij de trein · beter dan de Calçada: 137 m², rivierzicht'),
+ 'casimiro185':('Voorstellen','Renoveren · alleen met bod rond 550 000–580 000 € en werken in fases'),
+ 'casimiro':('Twijfel','Te checken · verdieping vragen, gelijkvloers is nee'),
+ 'boahora7':('Twijfel','Wacht op Dimi · ja is voorstellen, nee is niet'),
+ 'madragoa':('Twijfel','Reserve · 95 000 € meer dan de Calçada en nog werken'),
+ 'santost5':('Twijfel','Reserve · maar 2 echte slaapkamers, 770 000 €')})
