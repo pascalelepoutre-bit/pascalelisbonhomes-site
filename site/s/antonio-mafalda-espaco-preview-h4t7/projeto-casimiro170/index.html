@@ -324,40 +324,6 @@ function mkt(p,w){const here=p/AREA,you=(p+w)/AREA,MX=9000;
 ["price","m2"].forEach(id=>$(id).addEventListener("input",upd));
 document.querySelectorAll("#seg-young button").forEach(b=>b.addEventListener("click",()=>{young=b.dataset.y;upd()}));
 document.querySelectorAll("#seg-iva button").forEach(b=>b.addEventListener("click",()=>{iva=+b.dataset.i;upd()}));upd();
-/* Floor-plan planner: choose a use per space; nothing is saved */
-(()=>{const IW=1200,IH=363;
-const SP=[["r1","Lado do parque, 1",950,22,1148,188,0],["r2","Lado do parque, 2",950,190,1148,334,0],["m2","Meio, junto ao parque",805,140,941,333,0],["wc","Casa de banho atual",667,141,795,240,1],["m1","Meio, lado da rua",540,141,660,333,0],["s1","Lado da rua",290,141,526,333,0],["k","Cozinha atual",290,12,462,132,1]];
-const US={sala:["Sala","rgba(63,122,99,.45)"],coz:["Cozinha","rgba(63,122,99,.7)"],suite:["Suite","rgba(168,122,34,.5)"],quarto:["Quarto","rgba(214,180,130,.6)"],esc:["Escritório","rgba(190,170,140,.55)"],dress:["Dressing","rgba(200,190,175,.6)"],wc:["Casa de banho","rgba(70,120,170,.45)"]};
-const ORDER=Object.keys(US);
-const PRE={hoje:{r1:"quarto",r2:"quarto",m2:"quarto",wc:"wc",m1:"quarto",s1:"sala",k:"coz"},A:{r1:"sala",r2:"coz",m2:"suite",wc:"wc",m1:"dress",s1:"quarto",k:"wc"},B:{r1:"sala",r2:"sala",m2:"coz",wc:"wc",m1:"quarto",s1:"suite",k:"wc"}};
-let st={...PRE.A},cur="sala";const Zb=$("pl-z");
-const P=$("pl-pal");ORDER.forEach(u=>{const b=document.createElement("button");b.type="button";b.dataset.u=u;const i=document.createElement("i");i.style.background=US[u][1];b.append(i,US[u][0]);b.onclick=()=>{cur=u;pal()};P.append(b)});
-function pal(){P.querySelectorAll("button").forEach(b=>{const on=b.dataset.u===cur;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)})}pal();
-SP.forEach(([id,nm,x0,y0,x1,y1])=>{const b=document.createElement("button");b.type="button";b.className="pl-z";b.id="z-"+id;
-  Object.assign(b.style,{left:x0/IW*100+"%",top:y0/IH*100+"%",width:(x1-x0)/IW*100+"%",height:(y1-y0)/IH*100+"%"});
-  b.onclick=()=>{st[id]=cur;document.querySelectorAll(".pl-pre button").forEach(x=>x.classList.remove("on"));$("pl-desc").textContent="A vossa ideia.";draw()};Zb.append(b);
-});
-Zb.style.cssText="position:absolute;inset:0";
-var DESC={A:"Sala com cozinha aberta do lado do parque, suite ao lado, um quarto ou escritório e um dressing do lado da rua, e duas casas de banho. O dressing pode voltar a ser quarto: fica T3.",B:"Um grande espaço aberto com sala e cozinha do lado do parque, a suite do lado da rua com casa de banho onde hoje está a cozinha, e um segundo quarto ou escritório.",hoje:"A divisão atual: sala de jantar, cozinha, quatro quartos e uma casa de banho."};
-let last="hoje";const KEY="nec-plano";
-try{const sv=JSON.parse(localStorage.getItem(KEY)||"null");if(sv){PRE.mine=sv;$("pl-mine").hidden=false}}catch(e){}
-DESC.mine="A vossa ideia guardada.";
-function pre(k){last=k;st={...PRE[k]};document.querySelectorAll(".pl-pre button").forEach(b=>b.classList.toggle("on",b.dataset.p===k));$("pl-desc").textContent=DESC[k];draw()}
-document.querySelectorAll(".pl-pre button").forEach(b=>b.onclick=()=>pre(b.dataset.p));
-$("pl-reset").onclick=()=>{pre(last);$("pl-msg").textContent="Voltou ao início."};
-$("pl-save").onclick=()=>{PRE.mine={...st};let ok=true;try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){ok=false}$("pl-mine").hidden=false;
-  document.querySelectorAll(".pl-pre button").forEach(x=>x.classList.toggle("on",x.dataset.p==="mine"));last="mine";
-  $("pl-msg").textContent=ok?"Guardada neste telemóvel ou computador. Encontram-na no botão «A minha ideia».":"Guardada até fecharem a página."};
-function draw(){SP.forEach(([id,nm,,,,,wet])=>{const u=st[id],b=$("z-"+id);b.style.background=US[u][1];b.innerHTML="";const sp=document.createElement("span");sp.textContent=US[u][0];b.append(sp);b.setAttribute("aria-label",nm+": "+US[u][0])});
-  const v=Object.values(st),n=u=>v.filter(x=>x===u).length,beds=n("suite")+n("quarto"),wcs=n("wc")+0;
-  $("pl-sum").textContent=`O vosso plano: T${beds} · ${wcs} casa${wcs===1?"":"s"} de banho`+(n("sala")&&n("coz")?" · sala e cozinha":"");
-  const W=[];if(!n("coz"))W.push("Falta uma cozinha.");if(!n("sala"))W.push("Falta uma sala.");if(!wcs)W.push("Falta uma casa de banho.");
-  if(n("suite")>1)W.push("Mais de uma suite: confirmem se querem mesmo.");
-  SP.forEach(([id,nm,,,,,wet])=>{if(!wet&&(st[id]==="wc"||st[id]==="coz"))W.push(`${US[st[id]][0]} em «${nm}»: precisa de nova canalização, o arquiteto confirma.`)});
-  if(st.r1!=="sala"&&st.r2!=="sala")W.push("A sala não fica do lado do parque, onde estão a vista e as varandas.");
-  if(n("suite")&&!n("wc"))W.push("A suite precisa de casa de banho.");
-  const ul=$("pl-warn");ul.textContent="";W.forEach(w=>{const li=document.createElement("li");li.textContent=w;ul.append(li)})}
-pre("hoje")})();
 </script>
 
 </body></html>

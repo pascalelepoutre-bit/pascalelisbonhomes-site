@@ -63,9 +63,7 @@ for h in sel:
     s = s.replace('["here","Este apartamento hoje, para remodelar",here]', '["here","Esta casa hoje, ao preço de compra",here]')
     # plan section and its script removed
     s = re.sub(r'<section aria-labelledby="h-idea">.*?</section>\s*(?=<section aria-labelledby="h-works">)', '', s, count=1, flags=re.S)
-    i = s.find('(function(){', s.find('<script'))
-    while i != -1 and 'pl-' not in s[i:s.find('})();', i)]:
-        i = s.find('(function(){', i + 10)
+    i = s.find('/* Floor-plan planner')
     if i != -1:
         j = s.find('</script>', i); s = s[:i] + s[j:]
     # works list
