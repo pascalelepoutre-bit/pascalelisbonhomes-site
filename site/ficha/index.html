@@ -66,6 +66,11 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
 .small{font-size:13px;color:var(--muted)}
 @media(max-width:520px){h1{font-size:25px}.scale button{font-size:10.5px;padding:8px 1px}.row2{grid-template-columns:1fr}}
 @font-face{font-family:Caveat;src:url(caveat.ttf) format('truetype');font-display:swap}#obs{font-family:Caveat,cursive;font-size:21px;color:#1c3478;line-height:1.25}
+.wiz>.card:not(#rates),.wiz>#go3,.wiz>#err2{display:none!important}
+.wq{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}.wt{font-size:26px;margin:0 0 14px}
+.wbig{display:grid;gap:10px}.wbig button{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:16px;font:600 18px var(--body);color:var(--ink);text-align:left}
+.wbig button.on{background:var(--ink);color:#fff;border-color:var(--ink)}.wbig button.on.c5,.wbig button.on.c4{background:var(--ok);border-color:var(--ok)}.wbig button.on.c0,.wbig button.on.c1{background:var(--red);border-color:var(--red)}
+.wback{margin-top:14px;background:none;border:0;color:var(--muted);font:500 15px var(--body);padding:6px 0}
 </style>
 </head>
 <body>
@@ -202,6 +207,20 @@ function buildRates(){var h='';ITEMS.forEach(function(it,i){h+='<div class="rate
   SCALE.forEach(function(s,k){h+='<button class="c'+k+(S.rates[it]===k?' on':'')+'" data-i="'+i+'" data-k="'+k+'">'+(L==='en'?SCALE_EN[k]:s)+'</button>'});h+='</div></div>'});
   $('rates').innerHTML=h;
   $('rates').querySelectorAll('button').forEach(function(b){b.onclick=function(){S.rates[ITEMS[+b.dataset.i]]=+b.dataset.k;buildRates()}})}
+/* phones: one question per screen, big buttons, next on tap */
+var WZ=window.matchMedia('(max-width:640px)').matches,WI=0;
+if(WZ){var _br=buildRates;buildRates=function(){
+  var done=ITEMS.filter(function(it){return S.rates[it]!==undefined}).length;
+  if(WI>=ITEMS.length){$('s2').classList.remove('wiz');$('rates').innerHTML='<p class="wq" style="margin:0">✓ '+ITEMS.length+' de '+ITEMS.length+' respondidas</p><button class="link wback" type="button">← Rever as respostas</button>';$('rates').querySelector('.wback').onclick=function(){WI=ITEMS.length-1;buildRates()};return}
+  $('s2').classList.add('wiz');var it=ITEMS[WI];
+  var h='<p class="wq">Pergunta '+(WI+1)+' de '+ITEMS.length+'</p><h2 class="wt">'+(L==='en'?ITEMS_EN[WI]:it)+'</h2><div class="wbig">';
+  for(var k=SCALE.length-1;k>=0;k--)h+='<button class="c'+k+(S.rates[it]===k?' on':'')+'" data-k="'+k+'">'+(L==='en'?SCALE_EN[k]:SCALE[k])+'</button>';
+  h+='</div>'+(WI>0?'<button class="link wback" type="button">← Pergunta anterior</button>':'');
+  $('rates').innerHTML=h;
+  $('rates').querySelectorAll('.wbig button').forEach(function(b){b.onclick=function(){S.rates[it]=+b.dataset.k;b.classList.add('on');
+    setTimeout(function(){WI++;if(WI>=ITEMS.length)WI=ITEMS.length;buildRates();scrollTo(0,0)},220)}});
+  var bk=$('rates').querySelector('.wback');if(bk)bk.onclick=function(){WI--;buildRates()};
+};}
 buildRates();
 document.querySelectorAll('#yn button').forEach(function(b){b.onclick=function(){S.buy=b.dataset.v;document.querySelectorAll('#yn button').forEach(function(x){x.classList.toggle('on',x===b)})}});
 
