@@ -124,6 +124,13 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 #pBox textarea{width:100%;min-height:80px;margin:10px 0;border:1px solid var(--line,#ddd);border-radius:12px;padding:10px;font:inherit;box-sizing:border-box}
 @media(max-width:760px){.lcols{grid-template-columns:1fr}}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#2e7d4f;color:#fff;text-decoration:none;font:600 15px Inter,Arial,sans-serif;padding:13px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.vh{font:600 12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:#a87a22;margin:18px 0 10px}
+.nlist{display:grid;gap:12px}.ncard{display:grid;grid-template-columns:110px 1fr;gap:16px;background:#fbedc4;border:1px solid var(--sun);border-radius:18px;padding:16px;align-items:start}
+.ncard .when{background:#1d2733;color:#fff;border-radius:14px;text-align:center;padding:10px 6px}.ncard .when b{display:block;font-size:26px;line-height:1}.ncard .when span{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}.ncard .when i{display:block;font-style:normal;font-weight:700;font-size:18px;margin-top:8px;color:#f2d68a}
+.ncard h4{margin:0 0 4px;font-size:18px}.ncard .addr{margin:0 0 10px}.ncard .acts{display:flex;gap:8px;flex-wrap:wrap}.ncard .acts a{font:600 14px Inter,Arial,sans-serif;text-decoration:none;color:#1d2733;background:#fff;border:1.5px solid #1d2733;border-radius:999px;padding:8px 14px}.ncard .acts a.prim{background:#1d2733;color:#fff}
+.nextline{margin:0 0 10px;font-weight:700}
+@media(max-width:560px){.ncard{grid-template-columns:1fr}.ncard .when{display:flex;gap:10px;align-items:center;justify-content:center}.ncard .when i{margin:0}}
+.wa-btn{display:inline-block;background:#2e7d4f;color:#fff!important;text-decoration:none!important;font-weight:600;padding:9px 16px;border-radius:999px}
 </style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
 <nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#procura" data-t="procura"><span class="lg">O que procuram</span><span class="sm">Procura</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
@@ -183,7 +190,8 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 
 <section class="pane" id="p-visitas">
   <p class="eyebrow">Visitas</p><h2>O que já vimos</h2>
-  <p class="lead">As visitas feitas e o que acharam. As próximas visitas aparecem aqui assim que as marcarmos.</p>
+  <p class="lead">As próximas visitas, com morada e hora, e as visitas feitas com o que acharam.</p>
+  <div id="nextV" hidden><h3 class="vh">Próximas visitas</h3><div class="nlist" id="nList"></div><h3 class="vh">Visitas feitas</h3></div>
   <div class="vlist"><article class="vcard">
   <div class="vimg" style="background-image:url('/s/antonio-mafalda-r7k2/img/13.jpg')"><span class="tag">Visitada</span></div>
   <div class="vbody">
@@ -224,8 +232,7 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
   <nav class="pn" aria-label="Anterior e seguinte"><a class="pv" href="#visitas"><small>Anterior</small><b>← Visitas</b></a><span></span></nav>
 </section>
 
-<a class="wa-float" href="https://wa.me/351920609225" target="_blank" rel="noopener">WhatsApp à Pascale</a>
-<footer class="foot"><span>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers</span><span><a href="https://wa.me/351920609225">WhatsApp 920 609 225</a> · <a href="https://pascalelisbonhomes.com">pascalelisbonhomes.com</a></span></footer>
+<footer class="foot"><span>Pascale Lepoutre · Consultora Imobiliária, Engel &amp; Völkers</span><span><a class="wa-btn" href="https://wa.me/351920609225">WhatsApp à Pascale</a> · <a href="https://pascalelisbonhomes.com">pascalelisbonhomes.com</a></span></footer>
 </div>
 
 <dialog id="vd"><form class="dlg" id="vf" method="dialog">
@@ -269,5 +276,19 @@ document.getElementById('pSend').onclick=async()=>{const t=document.getElementBy
 try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:CLIENT+' · perfil: acrescentar ou alterar',cliente:CLIENT,perfil:t})});if(!r.ok)throw 0;
 sb.hidden=true;document.getElementById('pNote').hidden=true;document.getElementById('pOk').hidden=false;}
 catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(t);}};})();
+
+/* upcoming visits: fill NEXTV when the visits are booked */
+const NEXTV=[
+ /* {d:'2026-11-26',h:'15:00',name:'Rua Joaquim Casimiro, 185 m²',addr:'Rua Joaquim Casimiro 1, Lisboa',ref:'C0506-00787',price:'639000'}, */
+];
+(()=>{const now=new Date();const up=NEXTV.map(v=>Object.assign({},v,{dt:new Date(v.d+'T'+v.h+':00')})).filter(v=>v.dt>now-3*3600e3).sort((a,b)=>a.dt-b.dt);if(!up.length)return;
+const DW=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],MO=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const ics=v=>{const p=n=>String(n).padStart(2,'0'),f=d=>d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+'T'+p(d.getUTCHours())+p(d.getUTCMinutes())+'00Z',e=new Date(v.dt.getTime()+45*60e3);
+ const t=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//pascalelisbonhomes//PT','BEGIN:VEVENT','UID:'+v.d+v.h.replace(':','')+(v.ref||'')+'@pascalelisbonhomes.com','DTSTAMP:'+f(new Date()),'DTSTART:'+f(v.dt),'DTEND:'+f(e),'SUMMARY:Visita · '+v.name+' · com a Pascale','LOCATION:'+v.addr,'DESCRIPTION:Pascale Lepoutre\, Engel & Völkers · WhatsApp +351 920 609 225','BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Visita amanhã','END:VALARM','BEGIN:VALARM','TRIGGER:-PT1H','ACTION:DISPLAY','DESCRIPTION:Visita daqui a uma hora','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+ return URL.createObjectURL(new Blob([t],{type:'text/calendar'}));};
+const fl=v=>'/ficha/?cl=1&c='+encodeURIComponent(CLIENT)+'&m='+encodeURIComponent(v.addr)+'&id='+encodeURIComponent(v.ref||'')+'&p='+encodeURIComponent(v.price||'')+'&d='+v.d+'&h='+encodeURIComponent(v.h);
+document.getElementById('nList').innerHTML=up.map(v=>'<article class="ncard"><div class="when"><span>'+DW[v.dt.getDay()]+'</span><b>'+v.dt.getDate()+'</b><span>'+MO[v.dt.getMonth()]+'</span><i>'+v.h.replace(':','h')+'</i></div><div><h4>'+v.name+'</h4><p class="addr">'+v.addr+'</p><div class="acts"><a class="prim" href="'+ics(v)+'" download="visita-'+v.d+'.ics">Adicionar ao meu calendário</a><a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(v.addr)+'" target="_blank" rel="noopener">Ver no mapa</a><a href="'+fl(v)+'" target="_blank" rel="noopener">Ficha de visita</a></div></div></article>').join('');
+document.getElementById('nextV').hidden=false;
+const n=up[0],now1=document.querySelector('.now .ntext');if(now1){const p=document.createElement('p');p.className='nextline';p.textContent='Próxima visita: '+DW[n.dt.getDay()]+' '+n.dt.getDate()+' '+MO[n.dt.getMonth()]+', '+n.h.replace(':','h')+' · '+n.addr;now1.parentNode.insertBefore(p,now1);}})();
 document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){a.target='_blank';a.rel='noopener';}});
 </script></body></html>
