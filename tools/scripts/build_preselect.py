@@ -9,6 +9,7 @@ SLUG = os.path.basename(os.path.normpath(OUT))
 MAP = open('/home/claude/work/map_base.svg').read()
 
 exec(open('/home/claude/clients/am_round2.py').read())
+DONE=globals().get('DONE',{})
 KEEP=os.environ.get('KEEP')
 if KEEP:
     order=KEEP.split(',');HOUSES=sorted([h for h in HOUSES if h['id'] in order],key=lambda h:order.index(h['id']))
@@ -51,7 +52,7 @@ def house(h):
   {f'<div class="thumbs">{thumbs}</div>' if thumbs else ''}</div>
   <div class="pad">
     <div class="head"><h2><span class="num{'' if h['ready'] else ' rn'}">{h['n']}</span>{e(h['name'])}</h2><p class="price">{e(h['price'])}<small class="ppm">{e(h['ppm'])}</small></p></div>
-    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}<p class="agb{' priv' if h['agency'].startswith('Particular') else (' ev' if h['agency'].startswith('Engel') else '')}">{'Particular' if h['agency'].startswith('Particular') else 'Agência'} · {e(h['agency'])}</p><label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
+    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}<p class="agb{' priv' if h['agency'].startswith('Particular') else (' ev' if h['agency'].startswith('Engel') else '')}">{'Particular' if h['agency'].startswith('Particular') else 'Agência'} · {e(h['agency'])}</p><div class="ticks">{('' if h['agency'].startswith('Particular') else '<label><input type="checkbox" class="tk1"> Kantoor gebeld</label>')}<label><input type="checkbox" class="tk2"> {'Eigenaar gecontacteerd' if h['agency'].startswith('Particular') else 'Agent gebeld'}</label></div><label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
     <h3>Porquê esta casa</h3>
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
@@ -209,6 +210,7 @@ textarea[rows="1"]{{min-height:42px}}
 .pcap{{position:absolute;right:12px;bottom:48px;font:600 12px var(--body);background:rgba(42,36,32,.82);color:#fff;padding:5px 11px;border-radius:999px}}
 .sum em{{white-space:nowrap;flex:none;font-style:normal;font-weight:600;font-size:13px;padding:4px 12px;border-radius:999px}}.sum em.v-yes{{background:#e3f1e8;color:var(--ok)}}.sum em.v-mid{{background:#fbefc9;color:#8a6516}}.sum em.v-no{{background:#f8dfe2;color:var(--red)}}.sum em.v-none{{background:var(--cream);color:var(--muted)}}
 .mkt{{margin:0 0 6px;font:500 13px var(--body);color:#a4520c}}.agb{{display:inline-block;margin:2px 0 10px;font:600 12.5px var(--body);padding:5px 12px;border-radius:999px;background:#e8eef6;color:#2b4a72}}.agb.priv{{background:#efe4f6;color:#5b2d7a}}.agb.ev{{background:#f8dfe2;color:var(--red)}}
+.ticks{{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 10px}}.ticks label{{display:flex;align-items:center;gap:6px;font:500 14px var(--body);cursor:pointer}}.ticks input{{width:20px;height:20px;accent-color:#2b7a4b}}
 .agl{{display:block;margin:0 0 14px;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:#2b4a72}}.agl textarea{{display:block;width:100%;margin-top:6px;font:400 15px var(--body);letter-spacing:0;text-transform:none;border:1px solid #c9d6e6;background:#f4f7fb;border-radius:12px;padding:10px 12px;color:var(--ink);resize:vertical}}
 </style></head><body>
 <div class="pbanner">Jouw tool · voorselectie voor {e(CLIENT)} · niet naar de klant sturen</div>
@@ -303,6 +305,8 @@ document.querySelectorAll('textarea,.vis input').forEach(t=>t.addEventListener('
 function grow(t){{t.style.height='auto';t.style.height=(t.scrollHeight+2)+'px';}}
 document.querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>grow(t)));
 document.querySelectorAll('.vis input').forEach(t=>t.addEventListener('change',save));
+const DONE={json.dumps(DONE)};houses.forEach(h=>{{const d=DONE[h.dataset.id]||[];const a=h.querySelector('.tk1'),b=h.querySelector('.tk2');if(a&&d[0])a.checked=true;if(b&&d[1])b.checked=true;}});
+document.querySelectorAll('.ticks input').forEach(t=>t.addEventListener('change',save));
 function place(){{const s=steps[cur];if(!s.classList.contains('house'))return;const bar=document.querySelector('.bar'),react=s.querySelector('.react');react.insertBefore(rbar,react.querySelector('textarea'));
  if(window.innerWidth>=900)s.querySelector('.pad').appendChild(bar);else s.after(bar);}}
 window.addEventListener('resize',()=>{{place();}});
@@ -316,12 +320,13 @@ function text(){{const L=['VOORSELECTIE door Pascale, ronda 2:'];
  const v=[...document.querySelectorAll('.vis input:checked')].map(i=>i.value);L.push('Queremos visitar: '+(v.length?v.join(', '):'ainda não sabemos'));
  const w=val(document.getElementById('wBtns'));if(w)L.push('Quando: '+w);
  const o=document.getElementById('oTxt').value.trim();if(o)L.push('Outros: '+o);L.push(CLIENT);return L.join('\\n');}}
-function save(){{try{{const st={{c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,w:val(document.getElementById('wBtns')),v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('.react textarea').value,(h.querySelector('.agnote')||{{}}).value||''])}};localStorage.setItem(KEY,JSON.stringify(st));}}catch(e){{}}}}
+function save(){{try{{const st={{c:cur,p:val(document.getElementById('pBtns')),pt:document.getElementById('pTxt').value,o:document.getElementById('oTxt').value,w:val(document.getElementById('wBtns')),v:[...document.querySelectorAll('.vis input')].map(i=>i.checked),h:houses.map(h=>[val(h.querySelector('.btns')),h.querySelector('.react textarea').value,(h.querySelector('.agnote')||{{}}).value||'',!!(h.querySelector('.tk1')||{{}}).checked,!!(h.querySelector('.tk2')||{{}}).checked,h.dataset.id])}};localStorage.setItem(KEY,JSON.stringify(st));}}catch(e){{}}}}
 function load(){{let st;try{{st=JSON.parse(localStorage.getItem(KEY)||'null')}}catch(e){{}}if(!st)return 0;
  const press=(b,v)=>b.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));
  press(document.getElementById('pBtns'),st.p);press(document.getElementById('wBtns'),st.w);document.getElementById('pTxt').value=st.pt||'';document.getElementById('oTxt').value=st.o||'';
  (st.v||[]).forEach((c,k)=>{{const i=document.querySelectorAll('.vis input')[k];if(i)i.checked=c;}});
- (st.h||[]).forEach((x,k)=>{{const h=houses[k];if(!h)return;press(h.querySelector('.btns'),x[0]);h.querySelector('.react textarea').value=x[1]||'';const an=h.querySelector('.agnote');if(an)an.value=x[2]||'';}});return st.c||0;}}
+ const OLD=['algesrio','casimiro','boahora7','casimiro170','madragoa','boavista','becoolival','cruzq','algesrep','estrela102','santos','olival','santost5'];const byId={{}};houses.forEach(h=>byId[h.dataset.id]=h);
+ (st.h||[]).forEach((x,k)=>{{const h=byId[x[5]||OLD[k]];if(!h)return;press(h.querySelector('.btns'),x[0]);h.querySelector('.react textarea').value=x[1]||'';const an=h.querySelector('.agnote');if(an)an.value=x[2]||'';if(x[3]!==undefined){{const a=h.querySelector('.tk1'),b=h.querySelector('.tk2');if(a)a.checked=!!x[3]||a.checked;if(b)b.checked=!!x[4]||b.checked;}}}});return st.c||0;}}
 // max 3 visits
 document.querySelectorAll('.vis input').forEach(i=>i.addEventListener('change',()=>{{const on=document.querySelectorAll('.vis input:checked').length;document.querySelectorAll('.vis input').forEach(x=>x.disabled=on>=3&&!x.checked);}}));
 // send through the website form (email to Pascale); WhatsApp only as fallback

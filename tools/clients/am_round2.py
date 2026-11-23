@@ -355,3 +355,5 @@ _CALL={'casimiro170':' · ref KWPT-027353 · Catarina Gabriel 913 748 118',
  'santost5':' · ref W-049HVO · só ligar se tiverem interesse'}
 for h in HOUSES:
     if h['id'] in _CALL: h['agency']+=_CALL[h['id']]
+# call round 23/11: [office called, agent called]
+DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0]}
