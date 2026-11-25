@@ -379,7 +379,7 @@ document.getElementById('send').addEventListener('click',async function(){{const
 function VURL(){{try{{save();const j=localStorage.getItem(KEY)||'';return location.origin+location.pathname+'#ver='+btoa(unescape(encodeURIComponent(j))).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');}}catch(e){{return ''}}}}
 const VW=location.hash.indexOf('#ver=')===0;if(VW){{try{{let b=location.hash.slice(5).replace(/-/g,'+').replace(/_/g,'/');while(b.length%4)b+='=';localStorage.setItem(KEY,decodeURIComponent(escape(atob(b))));}}catch(e){{}}}}
 
-try{{const M=L.map('lmap',{{scrollWheelZoom:false}});L.tileLayer('https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager/{{z}}/{{x}}/{{y}}.png',{{attribution:'© OpenStreetMap © CARTO',maxZoom:19}}).addTo(M);
+try{{const M=L.map('lmap',{{scrollWheelZoom:false}});L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{attribution:'© OpenStreetMap',referrerPolicy:'strict-origin-when-cross-origin',maxZoom:19}}).addTo(M);
 const P={json.dumps([[h['n'],h['geo'][0],h['geo'][1],h['ready'],h['name'],h['price']] for h in HOUSES])};const pts=[];
 P.forEach(([n,la,lo,rd,nm,pr])=>{{L.marker([la,lo],{{icon:L.divIcon({{className:'',html:'<div class="lpin'+(rd?'':' rn')+'">'+n+'</div>',iconSize:[28,28],iconAnchor:[14,14]}})}}).addTo(M).bindPopup('<b>'+n+'. '+nm+'</b><br>'+pr);pts.push([la,lo]);}});
 L.marker([38.7075,-9.1702],{{icon:L.divIcon({{className:'',html:'<div class="lpin ref">★</div>',iconSize:[28,28],iconAnchor:[14,14]}})}}).addTo(M).bindPopup('Calçada das Necessidades, 3.º andar');
