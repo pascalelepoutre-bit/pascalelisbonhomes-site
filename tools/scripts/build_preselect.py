@@ -51,12 +51,23 @@ PROFILE = dict(
 
 e = html.escape
 svg=''
+
+FB=globals().get('FEEDBACK',{})
+def _fbk(a): return 'love' if a=='Adoro' else 'maybe' if a=='Talvez' else 'no'
+def fbl(h):
+    f=FB.get(h['id'])
+    if not f: return ''
+    return f'<span class="fbl {_fbk(f[0])}">Cliente: {e(f[0])}{" · wil bezoeken" if f[2] else ""}</span>'
+def fbc(h):
+    f=FB.get(h['id'])
+    if not f: return ''
+    return f'<div class="fbc {_fbk(f[0])}"><b>Feedback António &amp; Mafalda, 24/11: {e(f[0])}</b>{"<span class=vv>✓ Willen bezoeken</span>" if f[2] else ""}{("<p>“"+e(f[1])+"”</p>") if f[1] else ""}</div>'
 def legend():
     def brand(h):
         off=(CONTACT.get(h['id']) or (h['agency'],))[0]
         k='priv' if off=='Particular' else 'kw' if off.startswith('KW') else 'c21' if 'entury' in off else 'remax' if 'RE/MAX' in off else 'jll' if 'JLL' in off else 'ev' if off.startswith('Engel') else 'pf' if 'Christie' in off else 'oth'
         return f'<i class="br {k}">{e(off)}</i>'
-    li = ''.join(f'<li data-hid="{h["id"]}" role="button" tabindex="0"><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])} <em class="go">↗</em><small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small><span class="lb">{brand(h)}<i class="cs"></i></span>{('<span class="sg">'+e(SUG[h['id']][1])+'</span>') if h['id'] in SUG else ''}</span><span class="pk"><button type="button" data-v="Voorstellen" title="Voorstellen">✓</button><button type="button" data-v="Twijfel" title="Twijfel">?</button><button type="button" data-v="Niet voorstellen" title="Niet voorstellen">✕</button></span></li>' for h in HOUSES)
+    li = ''.join(f'<li data-hid="{h["id"]}" role="button" tabindex="0"><b class="{"" if h["ready"] else "rn"}">{h["n"]}</b><span>{e(h["name"])} <em class="go">↗</em><small>{e(h["price"])} · {e(h["ppm"])} · {e(h["state"])}</small><span class="lb">{brand(h)}<i class="cs"></i></span>{fbl(h)}{('<span class="sg">'+e(SUG[h['id']][1])+'</span>') if h['id'] in SUG else ''}</span><span class="pk"><button type="button" data-v="Voorstellen" title="Voorstellen">✓</button><button type="button" data-v="Twijfel" title="Twijfel">?</button><button type="button" data-v="Niet voorstellen" title="Niet voorstellen">✕</button></span></li>' for h in HOUSES)
     return f'<ol class="leg">{li}</ol>'
 
 def house(h):
@@ -74,7 +85,7 @@ def house(h):
   {f'<div class="thumbs">{thumbs}</div>' if thumbs else ''}</div>
   <div class="pad">
     <div class="head"><h2><span class="num{'' if h['ready'] else ' rn'}">{h['n']}</span><a class="hlink" href="{e(h['link'])}" target="_blank" rel="noopener">{e(h['name'])} ↗</a></h2><p class="price">{e(h['price'])}<small class="ppm">{e(h['ppm'])}</small></p></div>
-    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}{ccard(h)}<label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
+    <p class="line">{e(h['line'])}</p>{('<p class="mkt">'+e(h['market'])+'</p>') if h.get('market') else ''}{fbc(h)}{ccard(h)}<label class="agl">Contact met {'de eigenaar' if h['agency'].startswith('Particular') else 'het agentschap'}<textarea class="agnote" rows="2" placeholder="Bijvoorbeeld: gebeld 18/11, partilha ja 50%, prijs bespreekbaar tot 650k, planta volgt"></textarea></label>
     <h3>Porquê esta casa</h3>
     <ul class="why">{why}</ul>
     <ul class="fit" aria-label="O vosso essencial">{fit}</ul>
@@ -237,6 +248,7 @@ textarea[rows="1"]{{min-height:42px}}
 .ccard{{margin:4px 0 12px;padding:10px 14px;border-radius:14px;background:#eef3f9;border-left:4px solid #2b4a72;display:grid;gap:5px}}.ccard.priv{{background:#f4ecf8;border-color:#5b2d7a}}.ccard.ev{{background:#fbecee;border-color:var(--red)}}.cr{{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;font:400 15px var(--body)}}.cr input{{width:20px;height:20px;margin:0;accent-color:#2b7a4b;align-self:center;cursor:pointer}}.cr em{{margin-left:auto;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#6b7a8c;font-style:normal}}.cr em b{{font:600 15px var(--body);letter-spacing:0;text-transform:none;color:#1d2733}}.cr span{{min-width:72px;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#6b7a8c}}.cr b{{font-weight:600}}.cr a{{color:#2b4a72;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor}}.cr .sel{{user-select:all}}.ctip{{margin:2px 0 0;font:500 13px var(--body);color:#a4520c}}.hlink{{color:inherit;text-decoration:none}}.hlink:hover{{text-decoration:underline}}\n.mkt{{margin:0 0 6px;font:500 13px var(--body);color:#a4520c}}.agb{{display:inline-block;margin:2px 0 10px;font:600 12.5px var(--body);padding:5px 12px;border-radius:999px;background:#e8eef6;color:#2b4a72}}.agb.priv{{background:#efe4f6;color:#5b2d7a}}.agb.ev{{background:#f8dfe2;color:var(--red)}}
 .ticks{{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 10px}}.ticks label{{display:flex;align-items:center;gap:6px;font:500 14px var(--body);cursor:pointer}}.ticks input{{width:20px;height:20px;accent-color:#2b7a4b}}
 .agl{{display:block;margin:0 0 14px;font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:#2b4a72}}.agl textarea{{display:block;width:100%;margin-top:6px;font:400 15px var(--body);letter-spacing:0;text-transform:none;border:1px solid #c9d6e6;background:#f4f7fb;border-radius:12px;padding:10px 12px;color:var(--ink);resize:vertical}}
+.fbl{{display:inline-block;margin:4px 0 2px;font:600 12px var(--body);padding:3px 9px;border-radius:999px}}.fbl.love,.fbc.love{{background:#e3f1e8;color:#2f6450}}.fbl.maybe,.fbc.maybe{{background:#fbedc4;color:#7a5a14}}.fbl.no,.fbc.no{{background:#f6e1e1;color:#8a2c2c}}.fbc{{border-radius:14px;padding:12px 14px;margin:10px 0}}.fbc b{{display:block;font-size:15px}}.fbc p{{margin:6px 0 0;font-style:italic}}.fbc .vv{{display:inline-block;margin-top:6px;background:#2f6450;color:#fff;border-radius:999px;padding:3px 10px;font:600 12px var(--body)}}
 </style></head><body>
 <div class="pbanner">Jouw tool · voorselectie voor {e(CLIENT)} · niet naar de klant sturen</div>
 <div class="wrap">
@@ -367,7 +379,7 @@ document.getElementById('send').addEventListener('click',async function(){{const
 function VURL(){{try{{save();const j=localStorage.getItem(KEY)||'';return location.origin+location.pathname+'#ver='+btoa(unescape(encodeURIComponent(j))).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');}}catch(e){{return ''}}}}
 const VW=location.hash.indexOf('#ver=')===0;if(VW){{try{{let b=location.hash.slice(5).replace(/-/g,'+').replace(/_/g,'/');while(b.length%4)b+='=';localStorage.setItem(KEY,decodeURIComponent(escape(atob(b))));}}catch(e){{}}}}
 
-try{{const M=L.map('lmap',{{scrollWheelZoom:false}});L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{attribution:'© OpenStreetMap',maxZoom:19}}).addTo(M);
+try{{const M=L.map('lmap',{{scrollWheelZoom:false}});L.tileLayer('https://{{s}}.basemaps.cartocdn.com/rastertiles/voyager/{{z}}/{{x}}/{{y}}.png',{{attribution:'© OpenStreetMap © CARTO',maxZoom:19}}).addTo(M);
 const P={json.dumps([[h['n'],h['geo'][0],h['geo'][1],h['ready'],h['name'],h['price']] for h in HOUSES])};const pts=[];
 P.forEach(([n,la,lo,rd,nm,pr])=>{{L.marker([la,lo],{{icon:L.divIcon({{className:'',html:'<div class="lpin'+(rd?'':' rn')+'">'+n+'</div>',iconSize:[28,28],iconAnchor:[14,14]}})}}).addTo(M).bindPopup('<b>'+n+'. '+nm+'</b><br>'+pr);pts.push([la,lo]);}});
 L.marker([38.7075,-9.1702],{{icon:L.divIcon({{className:'',html:'<div class="lpin ref">★</div>',iconSize:[28,28],iconAnchor:[14,14]}})}}).addTo(M).bindPopup('Calçada das Necessidades, 3.º andar');

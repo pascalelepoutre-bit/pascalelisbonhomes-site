@@ -431,3 +431,13 @@ for h in HOUSES:
         h['line']='T5 · 145 m² · 4.º andar · vista rio'
         h['facts']=[(k,'4.º' if k=='Piso' else v) for k,v in h['facts']]
 CLIENTNOTE['santost5']='4.º andar: confirmo se o prédio tem elevador. As três divisões interiores servem bem para escritório, closet ou arrumação.'
+
+# Client feedback on selection 2, form of 24/11
+FEEDBACK = {
+ 'algesrio':   ('Adoro', '', True),
+ 'casimiro185':('Não é para nós', 'Fora do budget! Acho que è melhor apontarmos para projetos na gama dos 650-700k total, casa + obras', False),
+ 'casimiro170':('Não é para nós', 'Fora do budget', False),
+ 'casimiro':   ('Talvez', 'Um bocado a cima do budget, gostávamos de ficar pelos 630k para termos a isenção do IMT', True),
+ 'madragoa':   ('Talvez', 'Gostamos, mas o preço está a cima dos 630k', True),
+ 'santost5':   ('Não é para nós', 'Fora do budget', False),
+}
