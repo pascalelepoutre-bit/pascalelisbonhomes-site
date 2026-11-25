@@ -356,7 +356,7 @@ CONTACT={
  'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
  'becoolival':('RE/MAX Siimgroup','120521520-298','','','','Provavelmente o mesmo que a C21 CasaBela, 86 000 € mais caro'),
  'olival':('RE/MAX Telheiras','120181165-409','218 763 674','','969 003 714',''),
- 'madragoa':('JLL Residential','96142','215 564 203','','','23/11: disponível, parceria possível. Visita sáb 5/12 · plan 10h45 a 11h30, nog bellen met ref 96142. Vragen: agent, registo, hoe lang online, propostas, prijsmarge'),
+ 'madragoa':('JLL Residential','96142','215 564 203','','','25/11 gebeld, Márcia Tavares: beschikbaar, partilha ja. Visita en commissie via email naar parcerias@jll.com met ref 96142, datum en uur 5/12 10h45. Zij geven contact van de consultor. 130 m² legaal? Zij denkt van wel: bovenverdieping duplex nog checken bij consultor, caderneta en planta vragen'),
  'boavista':("Porta da Frente Christie's",'PF40846','210 205 683','','',''),
  'santos':('One Advice Real Estate','Idealista 35466924','210 229 389','','',''),
  'boahora7':('Particular','Idealista 35449911','','Dimi','','Pelo chat do Idealista'),
