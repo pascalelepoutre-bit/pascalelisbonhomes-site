@@ -352,7 +352,7 @@ CONTACT={
  'estrela102':('KW LEAD','KWPT-034228','211 977 898','Lourdes Santos','917 546 499','Escritório confirmou partilha por telefone, falta por escrito'),
  'algesrio':('KW Ábaco','KWPT-038048','217 920 620','António Faria Blanc','917 221 639','25/11 gebeld: visita sáb 5/12 12h00, partilha ok, bevestigen via WhatsApp, registo per email mag. Hij bevestigt met de eigenaars. 3.º andar alto sem elevador. Prijsmarge nog niet gevraagd'),
  'casimiro185':('Century 21 CasaBela','C0506-00787','210 207 923','Saúl Ribeiro','',''),
- 'casimiro':('Century 21 Polo Central II','C0492-00176','210 207 655','','','Visita sáb 5/12 · plan 9h45 a 10h30, nog bellen. Vragen: naam en gsm agent, partilha, registo, hoe lang online, propostas, prijsmarge'),
+ 'casimiro':('Century 21 Polo Central II','C0492-00176','210 207 655','Tiago Mourão','926 976 181','25/11 gebeld: partilha ja, sábado ok, uur nog bevestigen, plan 9h45. Registo + partilha per email aan Tiago vragen. Prijs: wat marge, maar niets uitzonderlijks: 630k is moeilijk'),
  'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
  'becoolival':('RE/MAX Siimgroup','120521520-298','','','','Provavelmente o mesmo que a C21 CasaBela, 86 000 € mais caro'),
  'olival':('RE/MAX Telheiras','120181165-409','218 763 674','','969 003 714',''),
