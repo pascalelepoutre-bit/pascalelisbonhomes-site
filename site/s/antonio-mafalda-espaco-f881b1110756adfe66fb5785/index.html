@@ -131,7 +131,8 @@ textarea{width:100%;font:15px/1.4 var(--body);padding:10px 12px;border:1px solid
 .nextline{margin:0 0 10px;font-weight:700}
 @media(max-width:560px){.ncard{grid-template-columns:1fr}.ncard .when{display:flex;gap:10px;align-items:center;justify-content:center}.ncard .when i{margin:0}}
 .wa-btn{display:inline-block;background:#2e7d4f;color:#fff!important;text-decoration:none!important;font-weight:600;padding:9px 16px;border-radius:999px}
-.wa-btn{display:inline;background:none;color:inherit!important;text-decoration:underline!important;font-weight:500;padding:0;border-radius:0;margin:0}</style></head><body><div class="wrap">
+.wa-btn{display:inline;background:none;color:inherit!important;text-decoration:underline!important;font-weight:500;padding:0;border-radius:0;margin:0}.vnote{margin:-4px 0 10px;font-size:14px;color:#5b4a1d}
+</style></head><body><div class="wrap">
 <header class="top"><div class="brand"><img src="/img/pascale-lepoutre-portrait.webp" alt="">Pascale Lepoutre<small>Lisbon Homes · Engel &amp; Völkers</small></div></header>
 <nav class="tabs" aria-label="Menu"><a href="#inicio" data-t="inicio"><span class="lg">Início</span><span class="sm">Início</span></a><a href="#procura" data-t="procura"><span class="lg">O que procuram</span><span class="sm">Procura</span></a><a href="#selecoes" data-t="selecoes"><span class="lg">Seleções</span><span class="sm">Seleções</span></a><a href="#visitas" data-t="visitas"><span class="lg">Visitas</span><span class="sm">Visitas</span></a><a href="#passos" data-t="passos"><span class="lg">Próximos passos</span><span class="sm">Passos</span></a></nav>
 
@@ -279,7 +280,7 @@ catch(e){location.href='https://wa.me/351920609225?text='+encodeURIComponent(t);
 
 /* upcoming visits: fill NEXTV when the visits are booked */
 const NEXTV=[
- /* {d:'2026-11-26',h:'15:00',name:'Rua Joaquim Casimiro, 185 m²',addr:'Rua Joaquim Casimiro 1, Lisboa',ref:'C0506-00787',price:'639000'}, */
+ {d:'2026-12-05',h:'12:00',name:'Algés, vista rio',addr:'Rua João Chagas, Algés',ref:'KWPT-038048',price:'640000',note:'A confirmar pelos proprietários. Perto de escolas e da estação de Algés. Atenção: 3.º andar alto, sem elevador. Confirmo o número da porta antes da visita.'},
 ];
 (()=>{const now=new Date();const up=NEXTV.map(v=>Object.assign({},v,{dt:new Date(v.d+'T'+v.h+':00')})).filter(v=>v.dt>now-3*3600e3).sort((a,b)=>a.dt-b.dt);if(!up.length)return;
 const DW=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],MO=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
@@ -287,7 +288,7 @@ const ics=v=>{const p=n=>String(n).padStart(2,'0'),f=d=>d.getUTCFullYear()+p(d.g
  const t=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//pascalelisbonhomes//PT','BEGIN:VEVENT','UID:'+v.d+v.h.replace(':','')+(v.ref||'')+'@pascalelisbonhomes.com','DTSTAMP:'+f(new Date()),'DTSTART:'+f(v.dt),'DTEND:'+f(e),'SUMMARY:Visita · '+v.name+' · com a Pascale','LOCATION:'+v.addr,'DESCRIPTION:Pascale Lepoutre\, Engel & Völkers · WhatsApp +351 920 609 225','BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Visita amanhã','END:VALARM','BEGIN:VALARM','TRIGGER:-PT1H','ACTION:DISPLAY','DESCRIPTION:Visita daqui a uma hora','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
  return URL.createObjectURL(new Blob([t],{type:'text/calendar'}));};
 const fl=v=>'/ficha/?cl=1&c='+encodeURIComponent(CLIENT)+'&m='+encodeURIComponent(v.addr)+'&id='+encodeURIComponent(v.ref||'')+'&p='+encodeURIComponent(v.price||'')+'&d='+v.d+'&h='+encodeURIComponent(v.h);
-document.getElementById('nList').innerHTML=up.map(v=>'<article class="ncard"><div class="when"><span>'+DW[v.dt.getDay()]+'</span><b>'+v.dt.getDate()+'</b><span>'+MO[v.dt.getMonth()]+'</span><i>'+v.h.replace(':','h')+'</i></div><div><h4>'+v.name+'</h4><p class="addr">'+v.addr+'</p><div class="acts"><a class="prim" href="'+ics(v)+'" download="visita-'+v.d+'.ics">Adicionar ao meu calendário</a><a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(v.addr)+'" target="_blank" rel="noopener">Ver no mapa</a><a href="'+fl(v)+'" target="_blank" rel="noopener">Ficha de visita</a></div></div></article>').join('');
+document.getElementById('nList').innerHTML=up.map(v=>'<article class="ncard"><div class="when"><span>'+DW[v.dt.getDay()]+'</span><b>'+v.dt.getDate()+'</b><span>'+MO[v.dt.getMonth()]+'</span><i>'+v.h.replace(':','h')+'</i></div><div><h4>'+v.name+'</h4><p class="addr">'+v.addr+'</p>'+(v.note?'<p class="vnote">'+v.note+'</p>':'')+'<div class="acts"><a class="prim" href="'+ics(v)+'" download="visita-'+v.d+'.ics">Adicionar ao meu calendário</a><a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(v.addr)+'" target="_blank" rel="noopener">Ver no mapa</a><a href="'+fl(v)+'" target="_blank" rel="noopener">Ficha de visita</a></div></div></article>').join('');
 document.getElementById('nextV').hidden=false;
 const n=up[0],now1=document.querySelector('.now .ntext');if(now1){const p=document.createElement('p');p.className='nextline';p.textContent='Próxima visita: '+DW[n.dt.getDay()]+' '+n.dt.getDate()+' '+MO[n.dt.getMonth()]+', '+n.h.replace(':','h')+' · '+n.addr;now1.parentNode.insertBefore(p,now1);}})();
 document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(h&&!h.startsWith('#')&&!h.startsWith('mailto:')&&!h.startsWith('tel:')){a.target='_blank';a.rel='noopener';}});
