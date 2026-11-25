@@ -350,7 +350,7 @@ DONE={'casimiro170':[1,0],'estrela102':[1,0],'algesrio':[1,0],'madragoa':[1,0]}
 CONTACT={
  'casimiro170':('KW LEAD','KWPT-027353','211 977 898','Catarina Gabriel','913 748 118',''),
  'estrela102':('KW LEAD','KWPT-034228','211 977 898','Lourdes Santos','917 546 499','Escritório confirmou partilha por telefone, falta por escrito'),
- 'algesrio':('KW Ábaco','KWPT-038048','217 920 620','António Faria Blanc','917 221 639',''),
+ 'algesrio':('KW Ábaco','KWPT-038048','217 920 620','António Faria Blanc','917 221 639','25/11 gebeld: visita sáb 5/12 12h00, partilha ok, bevestigen via WhatsApp, registo per email mag. Hij bevestigt met de eigenaars. 3.º andar alto sem elevador. Prijsmarge nog niet gevraagd'),
  'casimiro185':('Century 21 CasaBela','C0506-00787','210 207 923','Saúl Ribeiro','',''),
  'casimiro':('Century 21 Polo Central II','C0492-00176','210 207 655','','',''),
  'algesrep':('RE/MAX Happy','124991002-72','308 803 763','','',''),
