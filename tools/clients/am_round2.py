@@ -441,3 +441,60 @@ FEEDBACK = {
  'madragoa':   ('Talvez', 'Gostamos, mas o preço está a cima dos 630k', True),
  'santost5':   ('Não é para nós', 'Fora do budget', False),
 }
+
+# 26/11 weekly screening: three new houses
+_W26=[
+ dict(id='casimirokw',name='Rua Joaquim Casimiro, T3 com terraço',price='637 500 €',state='Pronta a habitar',ready=True,
+  line='T3 · 100 m² · 1.º andar · terraço privativo',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Iml6aXZna2lvYWMyYi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.MWeT0dhL4MKG1WkYLnmv8408zVD4GwhmNHF-yeQU7OQ',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijg5bTh3eWl1N290czEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.hsnIyh_E8fLV8pPzLsEcKAeNIo-9JmbgyHy-2oDraWA',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFuenh3cGQxdDQycS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.AviPVgdW9LZq2OTVRpdQsmjE678YoeFpIfNbkWMq-EY',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk1c2t3YTdoMmp5cjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.70F9JuocwiHuArtngPFiF3zyHagZ_6MEIuXjWr00eJY',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV5d2tqbmt5Mnh4OTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.t3UI7hZr2YcIMujrCh8BIulcEv35bf0e_0DFsuvbwGg',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlNmFudjJ3a2FqMDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.sdbVE1ZMFk1wH7fiUphdwpnlI7QnzThA5-f48OXTNqo']),
+  caps=['Sala','Sala de jantar','Cozinha','Terraço privativo','Quarto','Planta'],
+  link='https://www.imovirtual.com/pt/anuncio/viver-na-lapa-com-espaco-exterior-remodelado-ID1j9Va',
+  why=['Terraço privativo: uma extensão da sala, raro na Lapa.','Três quartos verdadeiros e duas casas de banho, remodelado mantendo o carácter.','637 500 €: muito perto dos 630 000 €, pronta a habitar.'],
+  fit=[('ok','Perto do orçamento, pronta a habitar'),('ok','Terraço e 3 quartos'),('mid','Cozinha separada da sala, confirmar se abre'),('mid','100 m², mais longe do rio que Santos')],
+  note='KW LEAD, Maria Frazão de Figueiredo, KWPT-038708. Prédio de 1951, 1.º andar. Confirmar pé-direito e se a cozinha pode abrir para a sala.',
+  facts=[('Área','100 m²'),('Quartos','3'),('Casas de banho','2'),('Piso','1.º'),('Construção','1951, remodelado'),('Exterior','Terraço privativo'),('Planta','Planta no anúncio.')],
+  maps='Rua Joaquim Casimiro, Lisboa'),
+ dict(id='casimiro3',name='Rua Joaquim Casimiro 3, 170 m²',price='650 000 €',state='Pronta a habitar',ready=True,
+  line='T5 · 170 m² · rés do chão alto · prédio de 1937',
+  photos=['https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/31/f3/cc/337855712.jpg'],
+  caps=['Interior'],
+  link='https://www.idealista.pt/imovel/35037162/',
+  why=['170 m² num prédio de 1937, com tetos com ornamentos de gesso.','Duas salas que se podem juntar numa sala grande, cinco quartos: espaço para a família toda.','Preço baixou de 920 000 € para 650 000 €: margem real para negociar.'],
+  fit=[('ok','Muito espaço e carácter, tetos trabalhados'),('ok','Preço perto do orçamento'),('mid','Rés do chão alto: confirmar a luz'),('mid','Cozinha independente, fotos em parte feitas por IA')],
+  note='Venda particular, José Lopes, 923 330 223. Não quer imobiliárias: Pascale já o contactou por WhatsApp a 26/11. Provavelmente o mesmo apartamento que a Idealista 35131033 anuncia a 699 000 € com outro agente.',
+  facts=[('Área','170 m² área privativa'),('Divisões','2 salas e 5 quartos'),('Casas de banho','2'),('Piso','Rés do chão alto, sem elevador'),('Construção','1937'),('Exterior','Varanda'),('Planta','Planta a pedir ao proprietário.')],
+  maps='Rua Joaquim Casimiro 3, Lisboa'),
+ dict(id='pampulha',name='Calçada da Pampulha 6, Lapa',price='690 000 €',state='Pronta a habitar',ready=True,
+  line='T4 · 110 m² · terraço de 15 m² · remodelado',
+  photos=iv2(['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxtY3piOWJkOXZ3eTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.TzTrPqvTeuB86PpUxLAwf5emBXNS3c7lqiJEikUzmn0',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRpNG9kaG16N2FoMi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.NY7UJMoHbUDCkO8ONn4kBRLzoSQLra3HiIRwUxMnLb8',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJrOXJpajA3dnNkcTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uMlJZ3G-DxWg-3mRSflHxV2doSy1goFzcSfJqU8NyDA',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImF6YWRocTc2cThtcTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.7yqleH_M5P0IScRlBEuwXUn2E7U6TtNoTHdqgqSizp0',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im8zMW1mZnE3dHZoNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.lmg_DPu_NOnMIdHwlIEak8xZ3K1bq4AF3U-APoYlClc',
+   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ing2YTQwb3l2enNhcS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.bowG-y5pxSouL7Y0pIIczK8LwqCwx9C0ymdyw3LGaEg']),
+  caps=['Sala com gaiola pombalina','Sala','Cozinha','Terraço','Quarto','Planta'],
+  link='https://www.idealista.pt/imovel/35506371/',
+  why=['Sala de 30 m² com a gaiola pombalina original recuperada como elemento da casa.','Quatro quartos, três casas de banho e um terraço de 15 m² junto à cozinha.','Reabilitação profunda e silenciosa: canalização, eletricidade, janelas e isolamento novos.'],
+  fit=[('ok','Carácter e 4 quartos'),('ok','Pronta a habitar, terraço'),('mid','Cozinha separada da sala'),('no','690 000 €, acima dos 630 000 €: só com margem de negociação')],
+  note='Century 21 Realty Art M&J, Filipe Alves, C0364-06638. Prédio de 1951, 2.º andar sem elevador. Anexo com casa de banho própria: confirmar se está legalizado.',
+  facts=[('Área','110 m² área bruta, 109 m² úteis, mais anexo'),('Quartos','4'),('Casas de banho','3'),('Piso','2.º, sem elevador'),('Construção','1951, reabilitado'),('Exterior','Terraço de 15 m² e varandim'),('Planta','Planta no anúncio.')],
+  maps='Calçada da Pampulha 6, Lisboa'),
+]
+HOUSES.extend(_W26)
+GEO.update(casimirokw=(38.70618,-9.16705),casimiro3=(38.7064,-9.1666),pampulha=(38.70459,-9.166886))
+AREA.update(casimirokw=100,casimiro3=170,pampulha=110)
+AG.update(casimirokw='KW LEAD',casimiro3='Particular · José Lopes',pampulha='Century 21 Realty Art M&J')
+for h in _W26:
+    h['geo']=GEO[h['id']];h['agency']=AG[h['id']]
+    p=int(h['price'].replace(' ','').replace('€',''));h['ppm']=f"{round(p/AREA[h['id']]):,}".replace(',',' ')+' €/m²'
+CONTACT['casimirokw']=('KW LEAD','KWPT-038708','211 977 898','Maria Frazão de Figueiredo','','')
+CONTACT['casimiro3']=('Particular','Idealista 35037162','','José Lopes','923 330 223','Quer vender sem imobiliária: WhatsApp enviado 26/11, lido')
+CONTACT['pampulha']=('Century 21 Realty Art M&J','C0364-06638','','Filipe Alves','','')
+SUG['casimirokw']=('Voorstellen','Nieuw 26/11 · bijna op budget, terras, 3 kamers: keuken checken')
+SUG['casimiro3']=('Voorstellen','Nieuw 26/11 · 170 m², stucplafonds, 650k: licht op rés-do-chão checken')
+SUG['pampulha']=('Twijfel','Nieuw 26/11 · karakter en 4 kamers, maar 690k en gesloten keuken')

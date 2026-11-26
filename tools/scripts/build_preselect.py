@@ -41,7 +41,10 @@ MARKET={'casimiro':'Op de markt: volgens de advertentie beschikbaar sinds mei 20
  'casimiro185':'Op de markt: online sinds 15/09, ruim 2 maanden. Waarschijnlijk dezelfde flat als RE/MAX Siimgroup aan 725 000 €.',
  'belemt4':'Op de markt: sinds 4/11. Exclusief bij KW LEAD, deelt 50/50.',
  'tristao':'Op de markt: sinds 9/11.',
- 'santost5':'Op de markt: E&V-pand van Oscar Baptista, op de E&V-site sinds minstens 1/11. Interne deling, geen schriftelijke partilha nodig.'}
+ 'santost5':'Op de markt: E&V-pand van Oscar Baptista, op de E&V-site sinds minstens 1/11. Interne deling, geen schriftelijke partilha nodig.',
+ 'casimirokw':'Op de markt: online sinds 4/11 (Imovirtual), laatste update 25/11, prijs 637 500 €. Nieuw in de screening van 26/11, al drie weken te koop.',
+ 'casimiro3':'Op de markt: particulier, op Idealista gezien op 26/11. Prijs gezakt van 920 000 € naar 650 000 € (-29%). Lijkt dezelfde flat als Idealista 35131033 aan 699 000 € bij een andere makelaar.',
+ 'pampulha':'Op de markt: nieuw, online sinds 25/11 (Imovirtual), Idealista-melding 26/11. Nog geen prijsdaling.'}
 for h in HOUSES:
     if h['id'] in MARKET: h['market']=MARKET[h['id']]
     elif not h.get('market'): h['market']='Op de markt: nog onbekend. Ik volg de prijs vanaf nu elke week.'
