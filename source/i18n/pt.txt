@@ -792,3 +792,24 @@
 @|Yes, every buyer|Sim, todos os compradores
 @|For my clients, I check whether the home is in an ARU and what that means for their plans.|Para os meus clientes, verifico se a casa está numa ARU e o que isso significa para os seus planos.
 @|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. For my clients, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Uma ARU, Área de Reabilitação Urbana, é uma zona que a câmara definiu para ser reabilitada. Grande parte do centro de Lisboa está dentro de uma ARU, incluindo muito da Estrela, da Lapa e de Santos. Se comprar aí uma casa e a remodelar, as obras podem ter IVA a 6% em vez de 23%, desde que sejam feitas por um empreiteiro com contrato de empreitada e sejam uma verdadeira reabilitação do edifício. A câmara emite uma certidão de que o prédio está na ARU, e o seu arquiteto ou engenheiro confirma que as obras se enquadram. Numa grande remodelação, isso pode representar uma poupança de dezenas de milhares de euros. Para os meus clientes, verifico se a casa está numa ARU, e na calculadora de custos da página Comprar vê logo a diferença.
+@|1 to 3 bedrooms|1 a 3 quartos
+@|26 homes|26 casas
+@|63 to 127 m²|63 a 127 m²
+@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 turnkey apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. Every apartment comes with an interior design by Varino. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for early 2027.|Um edifício novo na Avenida 24 de Julho, a poucos passos de Santos e da Madragoa: dois blocos com até cinco pisos e 26 apartamentos chave na mão, de T1 a T3 e um duplex com rooftop. Cada apartamento vem com um projeto de interiores da Varino. Varandas e terraços, vários com vista para o rio, e estacionamento com carregamento para carros elétricos. Conclusão prevista para o início de 2027.
+@|Bedroom with Varino interior design|Quarto com design de interiores Varino
+@|Facade with balconies and planted terraces, Varino 15|Fachada com varandas e terraços ajardinados, Varino 15
+@|Inner courtyard and parking with charging points|Pátio interior e estacionamento com carregadores elétricos
+@|Kitchen with Varino interior design|Cozinha com design de interiores Varino
+@|Living room with Varino interior design|Sala com design de interiores Varino
+@|Price on request|Preço sob consulta
+@|River views|Vista rio
+@|Turnkey interior design|Interiores chave na mão
+@|The building on Avenida 24 de Julho in the evening|O edifício na Avenida 24 de Julho ao fim do dia
+@|Varino 15 on Avenida 24 de Julho at dusk|Varino 15 na Avenida 24 de Julho ao anoitecer
+@|Varino 15 seen from above, with the river Tagus behind, Santos, Lisbon|Varino 15 visto de cima, com o rio Tejo ao fundo, Santos, Lisboa
+@|Varino 15: new apartments between Santos and the river|Varino 15: apartamentos novos entre Santos e o rio
+@|New development|Novo empreendimento
+@|My hidden gem: the Tapada das Necessidades.|A minha pérola escondida: a Tapada das Necessidades.
+@|A walled former royal park with a cactus garden, old trees and views over the river, and on a weekday you often have it almost to yourself. The quiet streets around it, between Prazeres and Necessidades, are Estrela too.|Um antigo parque real, rodeado de muros, com um jardim de cactos, árvores centenárias e vista para o rio, e num dia de semana muitas vezes quase só para si. As ruas tranquilas à volta, entre os Prazeres e as Necessidades, também são Estrela.
+@|Tapada das Necessidades|Tapada das Necessidades
+@|On request|Sob consulta

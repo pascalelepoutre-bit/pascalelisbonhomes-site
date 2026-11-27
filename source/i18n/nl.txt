@@ -790,3 +790,24 @@
 @|Yes, every buyer|Ja, alle kopers
 @|For my clients, I check whether the home is in an ARU and what that means for their plans.|Voor mijn klanten controleer ik of de woning in een ARU ligt en wat dat betekent voor hun plannen.
 @|An ARU, Área de Reabilitação Urbana, is a zone the city has marked for renovation. Large parts of central Lisbon are inside one, including much of Estrela, Lapa and Santos. If you buy a home there and renovate it, the works can be charged at 6% VAT instead of 23%, as long as a builder does them under a works contract and they count as a real renovation of the building. The city issues a certificate that the building is in the ARU, and your architect or engineer confirms that the works qualify. On a big renovation, that can save tens of thousands of euros. For my clients, I check whether the home is in an ARU, and in the cost calculator on the Buying page you can see the difference straight away.|Een ARU, Área de Reabilitação Urbana, is een zone die de stad heeft aangeduid voor renovatie. Grote delen van het centrum van Lissabon liggen in een ARU, waaronder veel van Estrela, Lapa en Santos. Koop je daar een woning en renoveer je ze, dan kunnen de werken gefactureerd worden aan 6% btw in plaats van 23%, op voorwaarde dat een aannemer ze uitvoert met een aannemingscontract en dat het om een echte renovatie van het gebouw gaat. De stad levert een attest dat het gebouw in de ARU ligt, en jouw architect of ingenieur bevestigt dat de werken in aanmerking komen. Bij een grote renovatie kan dat tienduizenden euro's schelen. Voor mijn klanten controleer ik of de woning in een ARU ligt, en in de kostencalculator op de pagina Kopen zie je meteen het verschil.
+@|1 to 3 bedrooms|1 tot 3 slaapkamers
+@|26 homes|26 woningen
+@|63 to 127 m²|63 tot 127 m²
+@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 turnkey apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. Every apartment comes with an interior design by Varino. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for early 2027.|Een nieuw gebouw aan de Avenida 24 de Julho, op wandelafstand van Santos en Madragoa: twee blokken tot vijf verdiepingen met 26 instapklare appartementen, van één tot drie slaapkamers en een duplex met dakterras. Elk appartement krijgt een interieurontwerp van Varino. Balkons en terrassen, verschillende met zicht op de rivier, en parking met laadpunten voor elektrische auto's. Oplevering gepland begin 2027.
+@|Bedroom with Varino interior design|Slaapkamer met interieurontwerp van Varino
+@|Facade with balconies and planted terraces, Varino 15|Gevel met balkons en beplante terrassen, Varino 15
+@|Inner courtyard and parking with charging points|Binnenkoer en parking met laadpunten
+@|Kitchen with Varino interior design|Keuken met interieurontwerp van Varino
+@|Living room with Varino interior design|Woonkamer met interieurontwerp van Varino
+@|Price on request|Prijs op aanvraag
+@|River views|Zicht op de rivier
+@|Turnkey interior design|Instapklaar interieur
+@|The building on Avenida 24 de Julho in the evening|Het gebouw aan de Avenida 24 de Julho 's avonds
+@|Varino 15 on Avenida 24 de Julho at dusk|Varino 15 aan de Avenida 24 de Julho bij schemering
+@|Varino 15 seen from above, with the river Tagus behind, Santos, Lisbon|Varino 15 van bovenaf, met de Taag op de achtergrond, Santos, Lissabon
+@|Varino 15: new apartments between Santos and the river|Varino 15: nieuwe appartementen tussen Santos en de rivier
+@|New development|Nieuwbouwproject
+@|My hidden gem: the Tapada das Necessidades.|Mijn verborgen parel: de Tapada das Necessidades.
+@|A walled former royal park with a cactus garden, old trees and views over the river, and on a weekday you often have it almost to yourself. The quiet streets around it, between Prazeres and Necessidades, are Estrela too.|Een ommuurd voormalig koninklijk park met een cactustuin, oude bomen en uitzicht op de rivier, en op een weekdag heb je het vaak bijna voor jezelf. De rustige straten eromheen, tussen Prazeres en Necessidades, horen ook bij Estrela.
+@|Tapada das Necessidades|Tapada das Necessidades
+@|On request|Op aanvraag
