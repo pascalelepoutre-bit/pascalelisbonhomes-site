@@ -65,12 +65,6 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
 .hide{display:none!important}
 .small{font-size:13px;color:var(--muted)}
 @media(max-width:520px){h1{font-size:25px}.scale button{font-size:10.5px;padding:8px 1px}.row2{grid-template-columns:1fr}}
-@font-face{font-family:Caveat;src:url(caveat.ttf) format('truetype');font-display:swap}#obs{font-family:Caveat,cursive;font-size:21px;color:#1c3478;line-height:1.25}
-.wiz>.card:not(#rates),.wiz>#go3,.wiz>#err2{display:none!important}
-.wq{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}.wt{font-size:26px;margin:0 0 14px}
-.wbig{display:grid;gap:10px}.wbig button{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:16px;font:600 18px var(--body);color:var(--ink);text-align:left}
-.wbig button.on{background:var(--ink);color:#fff;border-color:var(--ink)}.wbig button.on.c5,.wbig button.on.c4{background:var(--ok);border-color:var(--ok)}.wbig button.on.c0,.wbig button.on.c1{background:var(--red);border-color:var(--red)}
-.wback{margin-top:14px;background:none;border:0;color:var(--muted);font:500 15px var(--body);padding:6px 0}
 </style>
 </head>
 <body>
@@ -89,7 +83,6 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
         <div><label class="f">Data</label><input type="date" id="v_date"></div>
         <div><label class="f">Hora da visita</label><input type="time" id="v_time"></div>
       </div>
-      <label class="f">Cliente</label><input type="text" id="v_client" placeholder="Nome do cliente">
       <label class="f">Imóvel, morada</label><input type="text" id="v_addr" placeholder="Rua, n.º, andar, Lisboa">
       <div class="row2">
         <div><label class="f">ID do imóvel</label><input type="text" id="v_id" placeholder="W-0…"></div>
@@ -166,22 +159,22 @@ details{font-size:13px;color:var(--muted);margin:0 0 14px}details summary{cursor
     <button class="btn ghost" id="again">Nova ficha</button>
   </section>
 
-  <form name="ficha-visita" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot" hidden>
-    <input name="bot"><input type="file" name="pdf"><input name="cliente"><input name="imovel"><input name="visita"><input name="compraria"><input name="respostas">
+  <form name="ficha-visita" method="POST" data-netlify="true" netlify-honeypot="bot" hidden>
+    <input name="bot"><input name="cliente"><input name="imovel"><input name="visita"><input name="compraria"><input name="respostas">
   </form>
 </div>
 
-<script src="jspdf.min.js"></script><script src="caveat.js" defer></script>
+<script src="jspdf.min.js"></script>
 <script>
 (function(){
-var Q=new URLSearchParams(location.search);var CL=Q.get('cl')==='1';
+var Q=new URLSearchParams(location.search);
 var ITEMS=['Localização','Preço','Áreas','Qualidade Acabamentos','Exposição Solar','Vista'];
 var ITEMS_EN=['Location','Price','Size of rooms','Quality of finishes','Sun exposure','View'];
 var SCALE=['Muito Mau','Mau','Suficiente','Bom','Muito Bom','Excelente'];
 var SCALE_EN=['Very poor','Poor','Fair','Good','Very good','Excellent'];
-var T={pt:{e2:'Ficha de visita · 2 de 4',h2:'O que achou deste imóvel?',buy:'Compraria este imóvel?',yes:'Sim',no:'Não',obs:'Outras observações',obsp:'O que gostou, o que não gostou…',next:'Seguinte →',back:'← Voltar',e3:'Ficha de visita · 3 de 4',h3:'Os seus dados e assinatura',name:'Nome completo',cc:'Cartão de Cidadão ou Passaporte n.º',ok:'Confirmo que visitei este imóvel através da Engel & Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.',gdpr:'Proteção de dados',sigc:'Assinatura',sighere:'Assine aqui com o dedo',clear:'Limpar',give:(new URLSearchParams(location.search).get('cl')==='1')?'Enviar a ficha à Pascale →':'Concluir e devolver à consultora →',
+var T={pt:{e2:'Ficha de visita · 2 de 4',h2:'O que achou deste imóvel?',buy:'Compraria este imóvel?',yes:'Sim',no:'Não',obs:'Outras observações',obsp:'O que gostou, o que não gostou…',next:'Seguinte →',back:'← Voltar',e3:'Ficha de visita · 3 de 4',h3:'Os seus dados e assinatura',name:'Nome completo',cc:'Cartão de Cidadão ou Passaporte n.º',ok:'Confirmo que visitei este imóvel através da Engel & Völkers e autorizo o tratamento dos meus dados para a intermediação imobiliária.',gdpr:'Proteção de dados',sigc:'Assinatura',sighere:'Assine aqui com o dedo',clear:'Limpar',give:'Concluir e devolver à consultora →',
   mRate:'Falta avaliar: ',mBuy:'Responda se compraria o imóvel.',mName:'Escreva o seu nome.',mCC:'Escreva o n.º do Cartão de Cidadão ou Passaporte.',mOk:'Marque a confirmação.',mSig:'Assine no quadro.'},
- en:{e2:'Viewing form · 2 of 4',h2:'What did you think of this property?',buy:'Would you buy this property?',yes:'Yes',no:'No',obs:'Other comments',obsp:'What you liked, what you didn’t…',next:'Next →',back:'← Back',e3:'Viewing form · 3 of 4',h3:'Your details and signature',name:'Full name',cc:'ID card or passport number',ok:'I confirm I visited this property through Engel & Völkers and I authorise the processing of my data for the real estate brokerage.',gdpr:'Data protection',sigc:'Signature',sighere:'Sign here with your finger',clear:'Clear',give:(new URLSearchParams(location.search).get('cl')==='1')?'Send the form to Pascale →':'Finish and hand back →',
+ en:{e2:'Viewing form · 2 of 4',h2:'What did you think of this property?',buy:'Would you buy this property?',yes:'Yes',no:'No',obs:'Other comments',obsp:'What you liked, what you didn’t…',next:'Next →',back:'← Back',e3:'Viewing form · 3 of 4',h3:'Your details and signature',name:'Full name',cc:'ID card or passport number',ok:'I confirm I visited this property through Engel & Völkers and I authorise the processing of my data for the real estate brokerage.',gdpr:'Data protection',sigc:'Signature',sighere:'Sign here with your finger',clear:'Clear',give:'Finish and hand back →',
   mRate:'Still to rate: ',mBuy:'Please say if you would buy it.',mName:'Please write your name.',mCC:'Please write your ID or passport number.',mOk:'Please tick the confirmation.',mSig:'Please sign in the box.'}};
 var L='pt', S={type:'Venda',rates:{},buy:''};
 function $(i){return document.getElementById(i)}
@@ -192,7 +185,6 @@ function now(){var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.g
 $('v_date').value=Q.get('d')||today(); $('v_time').value=Q.get('h')||now();
 $('v_addr').value=Q.get('m')||''; $('v_id').value=Q.get('id')||''; $('v_price').value=Q.get('p')||'';
 if(Q.get('c')) $('c_name').value=Q.get('c');
-$('v_client').value=$('c_name').value;$('v_client').oninput=function(){$('c_name').value=this.value};$('c_name').addEventListener('input',function(){$('v_client').value=this.value});
 if(Q.get('t')==='a'){S.type='Arrendamento';segSet('v_type','Arrendamento')}
 function segSet(id,v){document.querySelectorAll('#'+id+' button').forEach(function(b){b.classList.toggle('on',b.dataset.v===v)})}
 document.querySelectorAll('#v_type button').forEach(function(b){b.onclick=function(){S.type=b.dataset.v;segSet('v_type',S.type)}});
@@ -207,27 +199,13 @@ function buildRates(){var h='';ITEMS.forEach(function(it,i){h+='<div class="rate
   SCALE.forEach(function(s,k){h+='<button class="c'+k+(S.rates[it]===k?' on':'')+'" data-i="'+i+'" data-k="'+k+'">'+(L==='en'?SCALE_EN[k]:s)+'</button>'});h+='</div></div>'});
   $('rates').innerHTML=h;
   $('rates').querySelectorAll('button').forEach(function(b){b.onclick=function(){S.rates[ITEMS[+b.dataset.i]]=+b.dataset.k;buildRates()}})}
-/* phones: one question per screen, big buttons, next on tap */
-var WZ=window.matchMedia('(max-width:640px)').matches,WI=0;
-if(WZ){var _br=buildRates;buildRates=function(){
-  var done=ITEMS.filter(function(it){return S.rates[it]!==undefined}).length;
-  if(WI>=ITEMS.length){$('s2').classList.remove('wiz');$('rates').innerHTML='<p class="wq" style="margin:0">✓ '+ITEMS.length+' de '+ITEMS.length+' respondidas</p><button class="link wback" type="button">← Rever as respostas</button>';$('rates').querySelector('.wback').onclick=function(){WI=ITEMS.length-1;buildRates()};return}
-  $('s2').classList.add('wiz');var it=ITEMS[WI];
-  var h='<p class="wq">Pergunta '+(WI+1)+' de '+ITEMS.length+'</p><h2 class="wt">'+(L==='en'?ITEMS_EN[WI]:it)+'</h2><div class="wbig">';
-  for(var k=SCALE.length-1;k>=0;k--)h+='<button class="c'+k+(S.rates[it]===k?' on':'')+'" data-k="'+k+'">'+(L==='en'?SCALE_EN[k]:SCALE[k])+'</button>';
-  h+='</div>'+(WI>0?'<button class="link wback" type="button">← Pergunta anterior</button>':'');
-  $('rates').innerHTML=h;
-  $('rates').querySelectorAll('.wbig button').forEach(function(b){b.onclick=function(){S.rates[it]=+b.dataset.k;b.classList.add('on');
-    setTimeout(function(){WI++;if(WI>=ITEMS.length)WI=ITEMS.length;buildRates();scrollTo(0,0)},220)}});
-  var bk=$('rates').querySelector('.wback');if(bk)bk.onclick=function(){WI--;buildRates()};
-};}
 buildRates();
 document.querySelectorAll('#yn button').forEach(function(b){b.onclick=function(){S.buy=b.dataset.v;document.querySelectorAll('#yn button').forEach(function(x){x.classList.toggle('on',x===b)})}});
 
 /* signature pads */
 function Pad(id){var box=$(id),c=box.querySelector('canvas'),ctx=c.getContext('2d'),drawing=false,empty=true,last=null,ph=box.querySelector('.ph');
   function size(){var r=box.getBoundingClientRect(),d=window.devicePixelRatio||1;if(!r.width)return;var img=empty?null:c.toDataURL();
-    c.width=r.width*d;c.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#1a3fa0';ctx.lineWidth=2.4;
+    c.width=r.width*d;c.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#1d2433';ctx.lineWidth=2.4;
     if(img){var im=new Image();im.onload=function(){ctx.drawImage(im,0,0,r.width,r.height)};im.src=img}}
   function pos(e){var r=c.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
   c.addEventListener('pointerdown',function(e){e.preventDefault();c.setPointerCapture(e.pointerId);drawing=true;last=pos(e);empty=false;ph.style.display='none';ctx.beginPath();ctx.arc(last.x,last.y,1.1,0,7);ctx.fillStyle='#1d2433';ctx.fill()});
@@ -251,7 +229,6 @@ $('go3').onclick=function(){var miss=ITEMS.filter(function(it){return S.rates[it
 $('back2').onclick=function(){show(2)};
 $('go4').onclick=function(){var e='';if(!$('c_name').value.trim())e=T[L].mName;else if(!$('c_cc').value.trim())e=T[L].mCC;else if(!$('c_ok').checked)e=T[L].mOk;else if(P.sigC.isEmpty())e=T[L].mSig;
   $('err3').textContent=e;if(e)return;
-  if(CL){try{if($('c_keep')&&$('c_keep').checked)localStorage.setItem('ficha_me',JSON.stringify({n:$('c_name').value.trim(),cc:$('c_cc').value.trim()}));else localStorage.removeItem('ficha_me')}catch(x){}}
   var r=ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('<br>');
   $('sum').innerHTML='<p><b>'+esc($('c_name').value)+'</b> · '+esc($('v_addr').value)+'</p><p class="small">'+r+'</p><p>Compraria: <b>'+S.buy+'</b></p>'+($('obs').value?'<p class="small">“'+esc($('obs').value)+'”</p>':'');
   show(4);setTimeout(function(){P.sigP.size();P.sigO.size();try{var s=localStorage.getItem('ficha_sigP');if(s&&P.sigP.isEmpty())P.sigP.load(s)}catch(x){}},60)};
@@ -291,13 +268,10 @@ function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W
     var k=S.rates[it];if(k!==undefined){doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('X',(hx[k+1]+hx[k+2])/2,yy+5.4,{align:'center'});doc.setFont('helvetica','normal')}});
   y+=hh+rh*6+11;doc.setFontSize(10.5);doc.text('Compraria / arrendaria este imóvel?',x0,y);box(x0+72,y,S.buy==='Sim');doc.text('Sim',x0+78,y);box(x0+112,y,S.buy==='Não');doc.text('Não',x0+118,y);
   y+=9;doc.text('Outras observações:',x0,y);var ox=x0+doc.getTextWidth('Outras observações:')+1.5;doc.line(ox,y+1,x1,y+1);
-  var ol=doc.splitTextToSize($('obs').value||'',x1-x0-2);var HW=false;try{if(window.CAVEAT_B64){if(!doc.getFontList().Caveat){doc.addFileToVFS('Caveat.ttf',window.CAVEAT_B64);doc.addFont('Caveat.ttf','Caveat','normal');}HW=true}}catch(x){}
-  function hw(){if(HW){doc.setFont('Caveat','normal');doc.setFontSize(15);doc.setTextColor(28,52,120)}else{doc.setFont('helvetica','bold');doc.setFontSize(10)}}
-  function hwOff(){doc.setFont('helvetica','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0)}
-  hw();
+  var ol=doc.splitTextToSize($('obs').value||'',x1-x0-2);doc.setFont('helvetica','bold');doc.setFontSize(10);
   var first=doc.splitTextToSize($('obs').value||'',x1-ox-2);doc.text(first[0]||'',ox+1,y-.5);var rest=($('obs').value||'').slice((first[0]||'').length).trim();
-  var more=rest?doc.splitTextToSize(rest,x1-x0-2).slice(0,2):[];hwOff();
-  for(var m=0;m<2;m++){y+=8;doc.line(x0,y+1,x1,y+1);if(more[m]){hw();doc.text(more[m],x0+1,y-.5);hwOff()}}
+  var more=rest?doc.splitTextToSize(rest,x1-x0-2).slice(0,2):[];doc.setFont('helvetica','normal');
+  for(var m=0;m<2;m++){y+=8;doc.line(x0,y+1,x1,y+1);if(more[m]){doc.setFont('helvetica','bold');doc.text(more[m],x0+1,y-.5);doc.setFont('helvetica','normal')}}
   /* signatures */
   var sy=y+24,sw=[44,52,44],sx=[x0,x0+60,x1-44];
   function sig(img,x,w,ratio){if(!img)return;var h=Math.min(w*ratio,20);doc.addImage(img,'PNG',x,sy-h-1,w,h,undefined,'FAST')}
@@ -324,7 +298,7 @@ function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W
   foot(2);
   return doc}
 
-$('make').onclick=function(){if(!CL&&P.sigP.isEmpty()){$('err4').textContent='Assine como consultora.';return}$('err4').textContent='';
+$('make').onclick=function(){if(P.sigP.isEmpty()){$('err4').textContent='Assine como consultora.';return}$('err4').textContent='';
   try{if($('keepP').checked)localStorage.setItem('ficha_sigP',P.sigP.data());else localStorage.removeItem('ficha_sigP')}catch(x){}
   var doc=makePdf();BLOB=doc.output('blob');
   var nm=$('c_name').value.trim().replace(/\s+/g,'_').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^\w-]/g,'');
@@ -335,30 +309,14 @@ $('make').onclick=function(){if(!CL&&P.sigP.isEmpty()){$('err4').textContent='As
   fd.append('cliente',$('c_name').value);fd.append('imovel',$('v_addr').value+($('v_id').value?' · '+$('v_id').value:'')+($('v_price').value?' · '+$('v_price').value+' €':''));
   fd.append('visita',fmtDate($('v_date').value)+' '+$('v_time').value+' · '+S.type);fd.append('compraria',S.buy);
   fd.append('respostas',ITEMS.map(function(it){return it+': '+SCALE[S.rates[it]]}).join('\n')+'\nCompraria: '+S.buy+'\nObservações: '+($('obs').value||'—')+'\nAssinada pelo cliente: sim'+(P.sigO.isEmpty()?'':'\nAssinada pelo proprietário: sim'));
-  (function(){if(/pascalelisbonhomes\.com$/.test(location.hostname)){var mf=new FormData();fd.forEach(function(v,k){mf.append(k,v)});mf.append('pdf',new File([BLOB],FNAME,{type:'application/pdf'}));
-    return fetch('/',{method:'POST',body:mf}).then(function(r){if(!r.ok)throw 0}).catch(function(){$('doneTxt').textContent='A ficha não seguiu automaticamente: enviem o PDF à Pascale com o botão em baixo.'})}
-  var o={access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Ficha de visita'};fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot')o[k]=v});return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)})})().catch(function(){});
+  (function(){var o={access_key:'4947213d-2aed-426f-ae63-a5d337eceac8',from_name:'pascalelisbonhomes.com',subject:'Ficha de visita'};fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot')o[k]=v});return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(o)})})().catch(function(){});
   show(5)};
 $('share').onclick=function(){if(!BLOB)return;var file=new File([BLOB],FNAME,{type:'application/pdf'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:FNAME}).catch(function(){})}else download()};
 function download(){var u=URL.createObjectURL(BLOB),a=document.createElement('a');a.href=u;a.download=FNAME;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove()},1000)}
 $('dl').onclick=download;
 $('again').onclick=function(){location.href=location.pathname+location.search};
-if(CL){$('back1').style.display='none';
- (function(){var cc=$('c_cc'),lb=document.createElement('label');lb.className='small';lb.style.cssText='display:flex;gap:8px;align-items:center;margin:8px 0 4px';
-  lb.innerHTML='<input type="checkbox" id="c_keep" checked> Guardar o nome e o n.º neste telemóvel para as próximas fichas';cc.insertAdjacentElement('afterend',lb);
-  try{var me=JSON.parse(localStorage.getItem('ficha_me')||'null');if(me){if(me.n){$('c_name').value=me.n;}if(me.cc)cc.value=me.cc;}}catch(x){}})();$('go4').textContent='Enviar a ficha à Pascale →';$('s2').querySelector('.eyebrow').textContent='Ficha de visita · 1 de 3';$('s3').querySelector('.eyebrow').textContent='Ficha de visita · 2 de 3';
- var s4=$('s4');s4.querySelector('.hand').style.display='none';s4.querySelector('.eyebrow').textContent='Ficha de visita · 3 de 3';s4.querySelector('h1').textContent='Confirmar e enviar';
- $('sigP').closest('.card').style.display='none';$('make').textContent='Enviar a ficha à Pascale';
- $('doneTxt').textContent='Obrigada! A ficha seguiu para a Pascale. Se quiserem, enviem-lhe também o PDF.';$('share').textContent='Enviar o PDF à Pascale';$('again').style.display='none';
- var sp=document.querySelectorAll('.steps span');if(sp[3])sp[3].style.display='none';
- $('addr2').textContent=$('v_addr').value;
- /* one button: send the record by email and open WhatsApp & co. with the signed PDF */
- var g4=$('go4').onclick;$('go4').onclick=function(){g4();if($('s4').classList.contains('hide'))return;$('make').onclick();if(!BLOB)return;
-   var file=new File([BLOB],FNAME,{type:'application/pdf'});
-   if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:'Ficha de visita',text:'Ficha de visita para a Pascale'}).catch(function(){})}};
- $('doneTxt').textContent='Obrigada! A Pascale já recebeu o aviso. Se ainda não enviaram o PDF, toquem no botão em baixo e escolham a Pascale no WhatsApp.';
- show(2);}else show(1);
+show(1);
 })();
 </script>
 </body>
