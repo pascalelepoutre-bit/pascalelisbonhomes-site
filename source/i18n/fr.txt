@@ -812,3 +812,4 @@
 @|A walled former royal park with a cactus garden, old trees and views over the river, and on a weekday you often have it almost to yourself. The quiet streets around it, between Prazeres and Necessidades, are Estrela too.|Un ancien parc royal entouré de murs, avec un jardin de cactus, de vieux arbres et une vue sur le fleuve, et en semaine on l'a souvent presque pour soi. Les rues calmes autour, entre Prazeres et Necessidades, font aussi partie d'Estrela.
 @|Tapada das Necessidades|Tapada das Necessidades
 @|On request|Sur demande
+@|See the project ↗|Voir le projet ↗
