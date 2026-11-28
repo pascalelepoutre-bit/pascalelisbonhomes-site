@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Simulador Investimento Estrela</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E4EDE5;--card:#FBFCFA;--ink:#1E2B25;--green:#1E4A3B;--mid:#3F6B57;--soft:#C9D6CB;--gold:#A8862E;--muted:#5E6B64;--sun:#F2C14E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13201A;--card:#1B2B23;--ink:#EEF3EF;--green:#BFE0CF;--mid:#9CC7B1;--soft:#2E4439;--gold:#E3C26A;--muted:#A9B8B0}}
+:root[data-theme="dark"]{--bg:#13201A;--card:#1B2B23;--ink:#EEF3EF;--green:#BFE0CF;--mid:#9CC7B1;--soft:#2E4439;--gold:#E3C26A;--muted:#A9B8B0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.45}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 48px}
+.eye{font-weight:600;font-size:13px;letter-spacing:.22em;color:var(--mid);text-transform:uppercase}
+h1{font-family:"EB Garamond",serif;font-weight:500;font-size:clamp(34px,8vw,52px);line-height:1.05;color:var(--green);margin-top:8px}
+.sub{font-family:"EB Garamond",serif;font-style:italic;font-size:21px;color:var(--muted);margin-top:8px}
+.card{background:var(--card);border-radius:18px;padding:22px 20px;margin-top:20px;box-shadow:0 1px 0 var(--soft)}
+.big{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.ret{font-size:clamp(52px,14vw,76px);font-weight:700;color:var(--green);line-height:1}
+.ret small{font-size:22px;font-weight:600;color:var(--muted);margin-left:4px}
+.mult{font-family:"EB Garamond",serif;font-size:24px;color:var(--gold)}
+.lbl{font-size:15px;color:var(--muted);margin-top:6px}
+.row{margin-top:22px}
+.row .top{display:flex;justify-content:space-between;gap:10px;font-size:17px}
+.row .top b{color:var(--green);font-size:19px;white-space:nowrap}
+.row small{display:block;color:var(--muted);font-size:13.5px;margin-top:4px}
+input[type=range]{width:100%;margin-top:10px;accent-color:var(--mid);height:28px}
+.flow{display:grid;grid-template-columns:1fr;gap:10px;margin-top:6px}
+.f{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:12px;background:var(--bg);font-size:16px}
+.f b{font-size:18px;white-space:nowrap;margin-left:10px}
+.f.out b{color:var(--muted)}
+.f.in b{color:var(--green)}
+.f.tot{background:var(--sun);color:#1E2B25}
+.f.tot b{color:#1E2B25}
+.bar{display:flex;height:18px;border-radius:9px;overflow:hidden;margin-top:16px;background:var(--soft)}
+.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13.5px;color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle}
+.note{font-size:13.5px;color:var(--muted);margin-top:18px}
+.ft{margin-top:26px;text-align:center;font-size:13px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+h2{font-family:"EB Garamond",serif;font-weight:500;font-size:26px;color:var(--green)}
+.park{display:flex;gap:16px;align-items:flex-start;background:var(--green);color:#F4F8F5}
+.park h2{color:#F4F8F5}
+.leaf{flex:none;width:58px;height:58px;border-radius:50%;background:var(--sun);color:#1E4A3B;display:flex;align-items:center;justify-content:center}
+.ptxt{font-size:17px;margin-top:6px;line-height:1.5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .park{background:#24493A}}
+:root[data-theme="dark"] .park{background:#24493A}
+.mk{margin-top:14px;display:grid;gap:12px}
+.mk .l{display:flex;justify-content:space-between;gap:10px;font-size:15px}
+.mk .l b{white-space:nowrap}
+.mk .t{height:14px;border-radius:7px;background:var(--bg);margin-top:5px;overflow:hidden}
+.mk .t span{display:block;height:100%;border-radius:7px;background:var(--soft)}
+.mk .here .t span{background:var(--sun)}
+.mk .here .l{font-weight:700;color:var(--green)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eye">T4 arrendado · Calçada das Necessidades · Estrela</p>
+  <h1>Simulador de investimento</h1>
+  <p class="sub">Mexa nos valores e veja o retorno ao longo dos anos.</p>
+
+  <div class="card">
+    <div class="big">
+      <div><div class="ret" id="o-irr">8,3<small>% ao ano</small></div><div class="lbl">Retorno anual estimado</div></div>
+      <div style="text-align:right"><div class="mult" id="o-mult">× 3,0</div><div class="lbl">o que investiu</div></div>
+    </div>
+    <div class="bar" id="bar"><span id="b-rent" style="background:var(--mid)"></span><span id="b-sale" style="background:var(--gold)"></span></div>
+    <div class="legend"><span><i style="background:var(--mid)"></i>Rendas recebidas</span><span><i style="background:var(--gold)"></i>Venda no fim</span></div>
+  </div>
+
+  <div class="card park">
+    <div class="leaf"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-5 3-8 8-9-1 5-4 8-8 9z"/><path d="M12 15c0-4-2.5-6.5-7-7 .5 4 3 6.5 7 7z"/></svg></div>
+    <div>
+      <h2>Um parque à porta</h2>
+      <p class="ptxt">Mesmo ao lado fica a Tapada das Necessidades, um jardim histórico no centro de Lisboa. Verde, sossego e as galinhas que se ouvem de casa. A reabilitação da Tapada, de cerca de 19 M€, está aprovada e vai valorizar ainda mais a zona.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Os seus pressupostos</h2>
+    <div class="row"><div class="top"><span>Preço de compra</span><b id="v-P"></b></div>
+      <input type="range" id="P" min="260000" max="300000" step="1000" value="285000"><small>Preço pedido: 285.000 €</small></div>
+    <div class="row"><div class="top"><span>Anos até ficar livre</span><b id="v-N"></b></div>
+      <input type="range" id="N" min="10" max="25" step="1" value="15"><small>Contrato antigo. Cenário mais provável: 15 a 20 anos.</small></div>
+    <div class="row"><div class="top"><span>Valor livre hoje</span><b id="v-V"></b></div>
+      <input type="range" id="V" min="500000" max="600000" step="5000" value="550000"><small>O mesmo apartamento, vazio e no estado atual.</small></div>
+    <div class="row"><div class="top"><span>Valorização por ano</span><b id="v-g"></b></div>
+      <input type="range" id="g" min="1" max="5" step="0.5" value="3"><small>Lisboa cresceu bem acima disto nos últimos anos. 3 % é prudente.</small></div>
+  </div>
+
+  <div class="card">
+    <h2>Preços na Estrela</h2>
+    <p class="lbl">Preço por m² de T4 e maiores vendidos na Estrela.</p>
+    <div class="mk" id="mk"></div>
+    <p class="note">Fontes: SIR e Micro-SIR, Confidencial Imobiliário. 48 vendas de T4 ou maiores usados na Estrela, 12 meses até agosto de 2026. Vendas perto do prédio: T4 usados, classe energética F ou G. Área bruta privativa deste apartamento: 119,65 m².</p>
+  </div>
+
+  <div class="card">
+    <h2>Contas, passo a passo</h2>
+    <div class="flow" style="margin-top:14px">
+      <div class="f out"><span>Paga hoje, com 8 % de custos</span><b id="o-cost"></b></div>
+      <div class="f in"><span id="t-rent">Rendas recebidas</span><b id="o-rent"></b></div>
+      <div class="f in"><span id="t-sale">Venda livre</span><b id="o-sale"></b></div>
+      <div class="f tot"><span>Total recebido</span><b id="o-tot"></b></div>
+    </div>
+    <p class="note">Rendimento atual 578 €/mês: renda de 206 € mais compensação do IHRU de 372 €, isento de IRS e IMI enquanto durar o contrato. Renda +2 % ao ano, compensação fixa. Venda com 5 % de custos. Simulação com pressupostos prudentes, não é uma garantia.</p>
+  </div>
+
+  <p class="ft">Pascale Lepoutre · Engel &amp; Völkers Lisboa · 920 609 225</p>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const th=n=>Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.');const eur=n=>th(n)+' €';
+function calc(P,N,V,g){const rent0=206.35*12,ihru=371.96*12,cost=P*1.08;let cf=[-cost],rents=0;
+ for(let t=1;t<=N;t++){const r=rent0*Math.pow(1.02,t-1)+ihru;rents+=r;cf.push(r);}
+ const sale=V*Math.pow(1+g/100,N)*0.95;cf[N]+=sale;let lo=-0.5,hi=1;
+ for(let i=0;i<80;i++){const m=(lo+hi)/2;let v=0;cf.forEach((c,t)=>v+=c/Math.pow(1+m,t));v>0?lo=m:hi=m;}
+ return{cost,rents,sale,irr:lo,mult:(rents+sale)/cost};}
+function upd(){const P=+$('P').value,N=+$('N').value,V=+$('V').value,g=+$('g').value;
+ $('v-P').textContent=eur(P);$('v-N').textContent=N+' anos';$('v-V').textContent=eur(V);$('v-g').textContent=(g.toString().replace('.',','))+' %';
+ const r=calc(P,N,V,g);
+ $('o-irr').innerHTML=(r.irr*100).toFixed(1).replace('.',',')+'<small>% ao ano</small>';
+ $('o-mult').textContent='× '+r.mult.toFixed(1).replace('.',',');
+ $('o-cost').textContent='−'+eur(r.cost);$('o-rent').textContent='+'+eur(r.rents);$('o-sale').textContent='+'+eur(r.sale);$('o-tot').textContent=eur(r.rents+r.sale);
+ $('t-rent').textContent='Rendas em '+N+' anos';$('t-sale').textContent='Venda livre no ano '+N;
+ const t=r.rents+r.sale;$('b-rent').style.width=(r.rents/t*100)+'%';$('b-sale').style.width=(r.sale/t*100)+'%';mk(P);}
+function mk(P){const here=P/119.65;const rows=[["here","Este apartamento hoje, arrendado",here],["","Vendas perto do prédio, T4 por renovar",3948],["","25% mais baratos, até",5395],["","Média de todas as vendas",5944],["","25% mais caros, a partir de",6547],["","5% mais caros, a partir de",8824]];
+ const max=8824;$('mk').innerHTML=rows.map(r=>'<div class="'+r[0]+'"><div class="l"><span>'+r[1]+'</span><b>'+th(r[2])+' €/m²</b></div><div class="t"><span style="width:'+(r[2]/max*100)+'%"></span></div></div>').join('');}
+['P','N','V','g'].forEach(id=>$(id).addEventListener('input',upd));upd();
+</script>
+</body>
+</html>
