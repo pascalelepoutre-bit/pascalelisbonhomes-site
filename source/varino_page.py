@@ -5,10 +5,10 @@ import re, pathlib, urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent / "site"
 P = "/photos/varino15/"
-GAL = [("varino-15-facade-balconies.webp", 1183, 1245), ("varino-15-living-room.webp", 1010, 634),
+GAL = [("varino-15-aerial-river-view.webp", 1262, 1474), ("varino-15-facade-balconies.webp", 1183, 1245), ("varino-15-living-room.webp", 1010, 634),
        ("varino-15-kitchen.webp", 1011, 636), ("varino-15-bedroom.webp", 1010, 636),
        ("varino-15-street-evening.webp", 1010, 635), ("varino-15-avenida-24-de-julho.webp", 1182, 1478),
-       ("varino-15-courtyard-parking.webp", 1182, 1216), ("varino-15-aerial-river-view.webp", 1262, 1474)]
+       ("varino-15-courtyard-parking.webp", 1182, 1216)]
 
 T = {
  "en": dict(pre="", title="Varino 15 · New apartments in Santos, Lisbon | Pascale Lepoutre",
@@ -62,7 +62,7 @@ T = {
 }
 
 CSS = """<style>
-.v15-hero{position:relative;min-height:min(82vh,700px);display:grid;align-items:end;background:#1d2430 url(/photos/varino15/varino-15-hero.webp) center 62%/cover no-repeat}
+.v15-hero{position:relative;min-height:min(82vh,700px);display:grid;align-items:end;background:#1d2430 url(/photos/varino15/varino-15-hero.webp) center 40%/cover no-repeat}
 .v15-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.55))}
 .v15-hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:44px;color:#fff}
 .v15-hero .eyebrow{color:#f7d98b}
