@@ -793,7 +793,7 @@
 @|1 to 3 bedrooms|1 tot 3 slaapkamers
 @|26 homes|26 woningen
 @|63 to 127 m²|63 tot 127 m²
-@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 turnkey apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. Every apartment comes with an interior design by Varino. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Een nieuw gebouw aan de Avenida 24 de Julho, op wandelafstand van Santos en Madragoa: twee blokken tot vijf verdiepingen met 26 instapklare appartementen, van één tot drie slaapkamers en een duplex met dakterras. Elk appartement krijgt een interieurontwerp van Varino. Balkons en terrassen, verschillende met zicht op de rivier, en parking met laadpunten voor elektrische auto's. Oplevering gepland in maart 2027, en een modelappartement is al te bezoeken.
+@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 new apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. You choose how you receive it: finished and ready to style yourself, with lighting, with the full Varino interior design, or fully furnished. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Een nieuw gebouw aan de Avenida 24 de Julho, op wandelafstand van Santos en Madragoa: twee blokken tot vijf verdiepingen met 26 nieuwe appartementen, van één tot drie slaapkamers en een duplex met dakterras. Je kiest zelf hoe je het krijgt: afgewerkt om zelf in te richten, met verlichting, met het volledige interieurontwerp van Varino of volledig gemeubeld. Balkons en terrassen, verschillende met zicht op de rivier, en parking met laadpunten voor elektrische auto's. Oplevering gepland in maart 2027, en een modelappartement is al te bezoeken.
 @|Bedroom with Varino interior design|Slaapkamer met interieurontwerp van Varino
 @|Facade with balconies and planted terraces, Varino 15|Gevel met balkons en beplante terrassen, Varino 15
 @|Inner courtyard and parking with charging points|Binnenkoer en parking met laadpunten
@@ -801,7 +801,7 @@
 @|Living room with Varino interior design|Woonkamer met interieurontwerp van Varino
 @|Price on request|Prijs op aanvraag
 @|River views|Zicht op de rivier
-@|Turnkey interior design|Instapklaar interieur
+@|Interior design optional|Interieur naar keuze
 @|The building on Avenida 24 de Julho in the evening|Het gebouw aan de Avenida 24 de Julho 's avonds
 @|Varino 15 on Avenida 24 de Julho at dusk|Varino 15 aan de Avenida 24 de Julho bij schemering
 @|Varino 15 seen from above, with the river Tagus behind, Santos, Lisbon|Varino 15 van bovenaf, met de Taag op de achtergrond, Santos, Lissabon

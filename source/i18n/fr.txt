@@ -794,7 +794,7 @@
 @|1 to 3 bedrooms|1 à 3 chambres
 @|26 homes|26 logements
 @|63 to 127 m²|63 à 127 m²
-@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 turnkey apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. Every apartment comes with an interior design by Varino. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Un nouvel immeuble sur l'Avenida 24 de Julho, à quelques pas de Santos et de Madragoa : deux blocs jusqu'à cinq étages avec 26 appartements clés en main, du T1 au T3 et un duplex avec rooftop. Chaque appartement est livré avec une décoration intérieure signée Varino. Balcons et terrasses, plusieurs avec vue sur le fleuve, et parking avec bornes de recharge pour voitures électriques. Livraison prévue en mars 2027, et un appartement témoin est déjà visitable.
+@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 new apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. You choose how you receive it: finished and ready to style yourself, with lighting, with the full Varino interior design, or fully furnished. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Un nouvel immeuble sur l'Avenida 24 de Julho, à quelques pas de Santos et de Madragoa : deux blocs jusqu'à cinq étages avec 26 appartements neufs, du T1 au T3 et un duplex avec rooftop. Vous choisissez comment le recevoir : fini et prêt à décorer vous-même, avec l'éclairage, avec le design intérieur complet de Varino ou entièrement meublé. Balcons et terrasses, plusieurs avec vue sur le fleuve, et parking avec bornes de recharge pour voitures électriques. Livraison prévue en mars 2027, et un appartement témoin est déjà visitable.
 @|Bedroom with Varino interior design|Chambre avec décoration intérieure Varino
 @|Facade with balconies and planted terraces, Varino 15|Façade avec balcons et terrasses végétalisées, Varino 15
 @|Inner courtyard and parking with charging points|Cour intérieure et parking avec bornes de recharge
@@ -802,7 +802,7 @@
 @|Living room with Varino interior design|Séjour avec décoration intérieure Varino
 @|Price on request|Prix sur demande
 @|River views|Vue sur le fleuve
-@|Turnkey interior design|Intérieurs clés en main
+@|Interior design optional|Intérieur au choix
 @|The building on Avenida 24 de Julho in the evening|L'immeuble sur l'Avenida 24 de Julho le soir
 @|Varino 15 on Avenida 24 de Julho at dusk|Varino 15 sur l'Avenida 24 de Julho au crépuscule
 @|Varino 15 seen from above, with the river Tagus behind, Santos, Lisbon|Varino 15 vu d'en haut, avec le Tage en arrière-plan, Santos, Lisbonne

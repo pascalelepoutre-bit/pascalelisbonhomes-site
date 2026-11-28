@@ -795,7 +795,7 @@
 @|1 to 3 bedrooms|1 a 3 quartos
 @|26 homes|26 casas
 @|63 to 127 m²|63 a 127 m²
-@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 turnkey apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. Every apartment comes with an interior design by Varino. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Um edifício novo na Avenida 24 de Julho, a poucos passos de Santos e da Madragoa: dois blocos com até cinco pisos e 26 apartamentos chave na mão, de T1 a T3 e um duplex com rooftop. Cada apartamento vem com um projeto de interiores da Varino. Varandas e terraços, vários com vista para o rio, e estacionamento com carregamento para carros elétricos. Conclusão prevista para março de 2027, e já há um apartamento modelo para visitar.
+@|A new building on Avenida 24 de Julho, a short walk from Santos and Madragoa: two blocks of up to five floors with 26 new apartments, from one-bedroom flats to three-bedroom homes and a duplex with a rooftop. You choose how you receive it: finished and ready to style yourself, with lighting, with the full Varino interior design, or fully furnished. Balconies and terraces, several with views of the river, and parking with charging points for electric cars. Completion planned for March 2027, and a show apartment is ready to visit.|Um edifício novo na Avenida 24 de Julho, a poucos passos de Santos e da Madragoa: dois blocos com até cinco pisos e 26 apartamentos novos, de T1 a T3 e um duplex com rooftop. Escolhe como o recebe: acabado para decorar ao seu gosto, com iluminação, com o projeto de interiores completo da Varino ou totalmente mobilado. Varandas e terraços, vários com vista para o rio, e estacionamento com carregamento para carros elétricos. Conclusão prevista para março de 2027, e já há um apartamento modelo para visitar.
 @|Bedroom with Varino interior design|Quarto com design de interiores Varino
 @|Facade with balconies and planted terraces, Varino 15|Fachada com varandas e terraços ajardinados, Varino 15
 @|Inner courtyard and parking with charging points|Pátio interior e estacionamento com carregadores elétricos
@@ -803,7 +803,7 @@
 @|Living room with Varino interior design|Sala com design de interiores Varino
 @|Price on request|Preço sob consulta
 @|River views|Vista rio
-@|Turnkey interior design|Interiores chave na mão
+@|Interior design optional|Interiores à escolha
 @|The building on Avenida 24 de Julho in the evening|O edifício na Avenida 24 de Julho ao fim do dia
 @|Varino 15 on Avenida 24 de Julho at dusk|Varino 15 na Avenida 24 de Julho ao anoitecer
 @|Varino 15 seen from above, with the river Tagus behind, Santos, Lisbon|Varino 15 visto de cima, com o rio Tejo ao fundo, Santos, Lisboa
