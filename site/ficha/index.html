@@ -206,7 +206,7 @@ document.querySelectorAll('#yn button').forEach(function(b){b.onclick=function()
 /* signature pads */
 function Pad(id){var box=$(id),c=box.querySelector('canvas'),ctx=c.getContext('2d'),drawing=false,empty=true,last=null,ph=box.querySelector('.ph');
   function size(){var r=box.getBoundingClientRect(),d=window.devicePixelRatio||1;if(!r.width)return;var img=empty?null:c.toDataURL();
-    c.width=r.width*d;c.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#1d2433';ctx.lineWidth=2.4;
+    c.width=r.width*d;c.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#1d4fd8';ctx.lineWidth=2.4;
     if(img){var im=new Image();im.onload=function(){ctx.drawImage(im,0,0,r.width,r.height)};im.src=img}}
   function pos(e){var r=c.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
   c.addEventListener('pointerdown',function(e){e.preventDefault();c.setPointerCapture(e.pointerId);drawing=true;last=pos(e);empty=false;ph.style.display='none';ctx.beginPath();ctx.arc(last.x,last.y,1.1,0,7);ctx.fillStyle='#1d2433';ctx.fill()});
@@ -241,21 +241,22 @@ function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp
 var BLOB=null,FNAME='';
 function fmtDate(d){var p=d.split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:d}
 function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W=210,x0=22,x1=188;
+  function blue(){doc.setTextColor(29,79,216)}function ink(){doc.setTextColor(0,0,0)}
   function logo(){doc.setFont('helvetica','normal');doc.setFontSize(19);var a='ENGEL',b='&',c='VÖLKERS';var wa=doc.getTextWidth(a),wb=doc.getTextWidth(b),wc=doc.getTextWidth(c),sx=(W-wa-wb-wc)/2;
     doc.setTextColor(60,60,60);doc.text(a,sx,24);doc.setTextColor(200,16,46);doc.text(b,sx+wa,24);doc.setTextColor(60,60,60);doc.text(c,sx+wa+wb,24);doc.setTextColor(0,0,0)}
   function foot(n){doc.setFontSize(7.5);doc.setFont('helvetica','normal');doc.text(n+' / 2',W/2,282,{align:'center'});
     doc.text('EV MMC PORTUGAL – MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA., NIPC 514889748,',W/2,287,{align:'center'});doc.text('Sede social Avenida da Liberdade n.º 196-200, 7.º andar, 1250-147 Lisboa',W/2,291,{align:'center'})}
   function field(label,val,x,y,w){doc.setFont('helvetica','normal');doc.setFontSize(10.5);doc.text(label,x,y);var lx=x+doc.getTextWidth(label)+1.5;doc.setLineWidth(.2);doc.line(lx,y+1,x+w,y+1);
-    doc.setFont('helvetica','bold');doc.text(String(val||''),lx+1,y-.5,{maxWidth:x+w-lx-1});doc.setFont('helvetica','normal')}
-  function box(x,y,on){doc.setLineWidth(.3);doc.rect(x,y-3.2,3.6,3.6);if(on){doc.setFont('helvetica','bold');doc.text('X',x+.6,y-.1);doc.setFont('helvetica','normal')}}
+    doc.setFont('helvetica','bold');blue();doc.text(String(val||''),lx+1,y-.5,{maxWidth:x+w-lx-1});ink();doc.setFont('helvetica','normal')}
+  function box(x,y,on){doc.setLineWidth(.3);doc.rect(x,y-3.2,3.6,3.6);if(on){doc.setFont('helvetica','bold');blue();doc.text('X',x+.6,y-.1);ink();doc.setFont('helvetica','normal')}}
   logo();doc.setFont('helvetica','bold');doc.setFontSize(11.5);doc.text('FICHA DE VISITA',W/2,44,{align:'center'});
   var y=58;field('Data:',fmtDate($('v_date').value),x0,y,60);field('Hora da visita:',$('v_time').value,x0+70,y,52);
   y+=12;field('Potencial Comprador/Arrendatário:',$('c_name').value,x0,y,x1-x0);
   y+=8;field('Cartão de Cidadão/Passaporte n.º :',$('c_cc').value,x0,y,105);
   y+=12;doc.setFontSize(10.5);box(x0+2,y,S.type==='Venda');doc.text('Venda',x0+8,y);y+=7;box(x0+2,y,S.type==='Arrendamento');doc.text('Arrendamento',x0+8,y);
   y+=12;var lab='Foi efectuada, nesta data, visita ao imóvel sito na';doc.text(lab,x0,y);var lx=x0+doc.getTextWidth(lab)+1.5;doc.line(lx,y+1,x1,y+1);
-  var addr=$('v_addr').value,a1=doc.splitTextToSize(addr,x1-lx-2);doc.setFont('helvetica','bold');doc.text(a1[0]||'',lx+1,y-.5);
-  y+=8;doc.line(x0,y+1,x0+84,y+1);if(a1.length>1)doc.text(doc.splitTextToSize(a1.slice(1).join(' '),82)[0],x0+1,y-.5);doc.setFont('helvetica','normal');
+  var addr=$('v_addr').value,a1=doc.splitTextToSize(addr,x1-lx-2);doc.setFont('helvetica','bold');blue();doc.text(a1[0]||'',lx+1,y-.5);
+  y+=8;doc.line(x0,y+1,x0+84,y+1);if(a1.length>1)doc.text(doc.splitTextToSize(a1.slice(1).join(' '),82)[0],x0+1,y-.5);ink();doc.setFont('helvetica','normal');
   doc.text('através da',x0+87,y);doc.setFont('helvetica','bold');doc.text('EV MMC PORTUGAL –',x0+106,y);y+=7;doc.text('MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA',x0,y);doc.setFont('helvetica','normal');doc.text('.',x0+doc.getTextWidth('MEDIAÇÃO IMOBILIÁRIA, UNIPESSOAL, LDA')+3,y);
   y+=10;field('ID do Imóvel:',$('v_id').value,x0,y,58);field('Preço do Imóvel:',$('v_price').value,x0+70,y,56);doc.text('€',x0+128,y);
   y+=12;doc.text('A preencher pelo potencial comprador/arrendatário (marcar com um X s.f.f.):',x0,y);
@@ -267,13 +268,13 @@ function makePdf(){var J=window.jspdf.jsPDF,doc=new J({unit:'mm',format:'a4'}),W
   doc.setFontSize(9.5);var heads=[['Muito','Mau'],['Mau'],['Suficiente'],['Bom'],['Muito','Bom'],['Excelente']];
   heads.forEach(function(h,k){var cx=(hx[k+1]+hx[k+2])/2;if(h.length===2){doc.text(h[0],cx,y+5,{align:'center'});doc.text(h[1],cx,y+9.5,{align:'center'})}else doc.text(h[0],cx,y+7.3,{align:'center'})});
   ITEMS.forEach(function(it,r){var yy=y+hh+rh*r;doc.setFont('helvetica','bold');doc.setFontSize(9.8);doc.text(it,x0+1.5,yy+5.2);doc.setFont('helvetica','normal');
-    var k=S.rates[it];if(k!==undefined){doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('X',(hx[k+1]+hx[k+2])/2,yy+5.4,{align:'center'});doc.setFont('helvetica','normal')}});
+    var k=S.rates[it];if(k!==undefined){doc.setFont('helvetica','bold');doc.setFontSize(11);blue();doc.text('X',(hx[k+1]+hx[k+2])/2,yy+5.4,{align:'center'});ink();doc.setFont('helvetica','normal')}});
   y+=hh+rh*6+11;doc.setFontSize(10.5);doc.text('Compraria / arrendaria este imóvel?',x0,y);box(x0+72,y,S.buy==='Sim');doc.text('Sim',x0+78,y);box(x0+112,y,S.buy==='Não');doc.text('Não',x0+118,y);
   y+=9;doc.text('Outras observações:',x0,y);var ox=x0+doc.getTextWidth('Outras observações:')+1.5;doc.line(ox,y+1,x1,y+1);
   var ol=doc.splitTextToSize($('obs').value||'',x1-x0-2);doc.setFont('helvetica','bold');doc.setFontSize(10);
-  var first=doc.splitTextToSize($('obs').value||'',x1-ox-2);doc.text(first[0]||'',ox+1,y-.5);var rest=($('obs').value||'').slice((first[0]||'').length).trim();
+  var first=doc.splitTextToSize($('obs').value||'',x1-ox-2);blue();doc.text(first[0]||'',ox+1,y-.5);ink();var rest=($('obs').value||'').slice((first[0]||'').length).trim();
   var more=rest?doc.splitTextToSize(rest,x1-x0-2).slice(0,2):[];doc.setFont('helvetica','normal');
-  for(var m=0;m<2;m++){y+=8;doc.line(x0,y+1,x1,y+1);if(more[m]){doc.setFont('helvetica','bold');doc.text(more[m],x0+1,y-.5);doc.setFont('helvetica','normal')}}
+  for(var m=0;m<2;m++){y+=8;doc.line(x0,y+1,x1,y+1);if(more[m]){doc.setFont('helvetica','bold');blue();doc.text(more[m],x0+1,y-.5);ink();doc.setFont('helvetica','normal')}}
   /* signatures */
   var sy=y+24,sw=[44,52,44],sx=[x0,x0+60,x1-44];
   function sig(img,x,w,ratio){if(!img)return;var h=Math.min(w*ratio,20);doc.addImage(img,'PNG',x,sy-h-1,w,h,undefined,'FAST')}
